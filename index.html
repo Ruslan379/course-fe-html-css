@@ -3,6 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Убираем стандартные отступы и маркеры для упорядоченных списков */
+            ul {
+                /* margin: 0; */
+                /* padding: 0; */
+                /* list-style: none; */
+                /* text-align: center; */
+                color: blueviolet;
+                font-size: 18px
+            }
+            /* Убираем подчеркивание и стандартные стили для ссылок */
+        a {
+            text-decoration: none; /* Убираем подчеркивание */
+            color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
+            cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+
+        }
+        /* Добавляем стили для ссылки при наведении */
+        a:hover {
+            text-decoration: underline; /* Добавляем подчеркивание при наведении */
+            color: tomato; /* Меняем цвет текста при наведении */
+        }
+        </style>
         <title>HTML/CSS course for FE</title>
     </head>
 
@@ -28,7 +51,7 @@
                     font-size: 20px
                 "
         >
-            Список уроків:
+            <u>Список уроків::</u>
         </h3>
         <br />
         <!--! Список уроків -->
@@ -36,8 +59,9 @@
             style =
                 "
                     /* text-align: center; */
-                    color: rgb(80, 0, 0);
-                    font-size: 18px
+                    /* list-style: none; */
+                    /* color: tomato; */
+                    /* font-size: 18px */
                 "
         >
             <li><a href="./lesson-1/lesson-1.html">Урок-01. <b>Frontend-технології. Знайомство з HTML</b></a></li>
