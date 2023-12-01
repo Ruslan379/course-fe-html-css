@@ -3,32 +3,50 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* ---- */
+            div {
+                text-align: center;
+                color: brown;
+                font-size: 18px;
+                /* outline: 1px solid red */
+            }
+            /* Убираем подчеркивание и стандартные стили для ссылок */
+            a {
+                padding-left: 5px;
+                padding-right: 5px;
+                text-decoration: none; /* Убираем подчеркивание */
+                color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
+                cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+
+            }
+            /* Добавляем стили для ссылки при наведении */
+            a:hover {
+                text-decoration: underline; /* Добавляем подчеркивание при наведении */
+                color: olive; /* Меняем цвет текста при наведении */
+            }
+        </style>
         <title>Lesson-02</title>
     </head>
 
     <body>
         <!--! Це - Элемент: <ім'я_Тега>...</ім'я_Тега> -->
-        <p>Вітаю вас, шановні друзі, це моя друга сторінка!</p>
-        <br/>
-        <a href="../index.html">Це посилання на мою ГОЛОВНУ сторінку</a>
-        <br />
-        
-        <!-- Маркований список -->
-        <ul>
-            <li>хобі-1</li>
-            <li>хобі-2</li>
-            <li>хобі-3</li>
-            <li>хобі-4</li>
-            <li>хобі-5</li>
-        </ul>
-
-        <a href="https://google.com" target="_blank">Це посилання на Google</a>
-
-        <p>Довільна картинка від генератора:</p>
-        <img 
-            src="https://picsum.photos/640/480" 
-            alt="Довільна картинка від генератора" 
-            width="600px" 
-        />
+        <!--! Блок навігації сторінками -->
+        <div>
+            <a href="../lesson-1/lesson-1.html">Pre</a>
+            <a href="../index.html">Main</a>
+            <a href="../lesson-3/lesson-3.html">Next</a>
+        </div>
+        <h2 style ="text-align: center; color: blue"><u>Урок-02:</u></h2>
+        <p 
+            style =
+                "
+                    text-align: center;
+                    color: tomato;
+                    font-size: 32px
+                "
+        >
+            Основні групи та види HTML елементів
+        </p>
     </body>
 </html>
