@@ -7,16 +7,17 @@
             body {
             display: flex;
             flex-direction: column; /* Вертикальная основная ось */
-            justify-content: center; /* Центрирование элементов по вертикали */
+            /* Центрирование элементов по вертикали: */
+            justify-content: center; 
             align-items: center; /* Центрирование элементов по горизонтали */
             height: 100vh; /* Добавляем высоту на весь экран (viewport height) */
             margin: 0; /* Убираем внешние отступы */
             }
             /* Убираем стандартные отступы и маркеры для упорядоченных списков */
             ul, ol{
-                /* margin: 0; */
-                /* padding: 0; */
-                /* list-style: none; */
+                margin: 0;
+                padding: 0;
+                list-style: none;
                 /* text-align: center; */
                 color: blueviolet;
                 font-size: 18px
@@ -78,7 +79,13 @@
         </h3>
         <br />
         <!--! Список уроків -->
-        <ol style ="outline: 1px solid red">
+        <ol 
+            style =
+                "
+                    /* padding: 0px; */
+                    outline: 1px solid red
+                "
+        >
             <li><a href="./lesson-1/lesson-1.html">Урок-01. <b>Frontend-технології. Знайомство з HTML</b></a></li>
             <li><a href="./lesson-2/lesson-2.html">Урок-02. <b>Основні групи та види HTML елементів</b></a></li>
             <li><a href="./lesson-3/lesson-3.html">Урок-03. <b>Блочні та рядкові теги. Теги для позначення форм та таблиць</b></a></li>
