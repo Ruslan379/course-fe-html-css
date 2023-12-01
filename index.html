@@ -4,8 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            body {
+            display: flex;
+            flex-direction: column; /* Вертикальная основная ось */
+            justify-content: center; /* Центрирование элементов по вертикали */
+            align-items: center; /* Центрирование элементов по горизонтали */
+            height: 100vh; /* Добавляем высоту на весь экран (viewport height) */
+            margin: 0; /* Убираем внешние отступы */
+            }
             /* Убираем стандартные отступы и маркеры для упорядоченных списков */
-            ul {
+            ul, ol{
                 /* margin: 0; */
                 /* padding: 0; */
                 /* list-style: none; */
@@ -14,24 +22,31 @@
                 font-size: 18px
             }
             /* Убираем подчеркивание и стандартные стили для ссылок */
-        a {
-            text-decoration: none; /* Убираем подчеркивание */
-            color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
-            cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+            a {
+                text-decoration: none; /* Убираем подчеркивание */
+                color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
+                cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
 
-        }
-        /* Добавляем стили для ссылки при наведении */
-        a:hover {
-            text-decoration: underline; /* Добавляем подчеркивание при наведении */
-            color: tomato; /* Меняем цвет текста при наведении */
-        }
+            }
+            /* Добавляем стили для ссылки при наведении */
+            a:hover {
+                text-decoration: underline; /* Добавляем подчеркивание при наведении */
+                color: tomato; /* Меняем цвет текста при наведении */
+            }
         </style>
         <title>HTML/CSS course for FE</title>
     </head>
 
     <body>
         <!--! Привітання-Заголовок -->
-        <h2 style ="text-align: center; color: green">Вітаю вас, шановні друзі!</h2>
+        <h2 
+            style =
+                "
+                    text-align: center;
+                    color: green
+                "
+        >
+            Вітаю вас, шановні друзі!</h2>
         <p 
             style =
                 "
@@ -42,7 +57,15 @@
         >
             це:<br /><strong>HTML/CSS </strong><i>course for <u>FRONT-END</u> groups</i>
         </p>
-        <h2 style ="text-align: center; color: blue">Я дуже радий бачити вас!</h2>
+        <h2 
+            style =
+                "
+                    text-align: center; 
+                    color: blue
+                "
+        >
+            Я дуже радий бачити вас!
+        </h2>
         <h3 
             style =
                 "
@@ -55,15 +78,7 @@
         </h3>
         <br />
         <!--! Список уроків -->
-        <ul 
-            style =
-                "
-                    /* text-align: center; */
-                    /* list-style: none; */
-                    /* color: tomato; */
-                    /* font-size: 18px */
-                "
-        >
+        <ol style ="outline: 1px solid red">
             <li><a href="./lesson-1/lesson-1.html">Урок-01. <b>Frontend-технології. Знайомство з HTML</b></a></li>
             <li><a href="./lesson-2/lesson-2.html">Урок-02. <b>Основні групи та види HTML елементів</b></a></li>
             <li><a href="./lesson-3/lesson-3.html">Урок-03. <b>Блочні та рядкові теги. Теги для позначення форм та таблиць</b></a></li>
@@ -82,7 +97,7 @@
             <li><a href="./lesson-16/lesson-16.html">Урок-16. <b>Блочні та рядкові теги. Теги для позначення форм та таблиць.</b></a></li>
             <li><a href="./lesson-17/lesson-17.html">Урок-17. <b>Блочні та рядкові теги. Теги для позначення форм та таблиць.</b></a></li>
             <li><a href="./lesson-18/lesson-18.html">Урок-18. <b>Блочні та рядкові теги. Теги для позначення форм та таблиць.</b></a></li>
-        </ul>
+        </ol>
     </body>
 </html>
 
