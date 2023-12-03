@@ -39,7 +39,7 @@
     </head>
 
     <body>
-        <!-- Це - Элемент: <ім'я_Тега>...</ім'я_Тега> -->
+        <!--? Це - Элемент: <ім'я_Тега>...</ім'я_Тега> -->
         <!--! Блок навігації сторінками -->
         <nav>
             <a href="../lesson-1/lesson-1.html">&lArr; Pre</a>
@@ -59,26 +59,18 @@
             Основні групи та види HTML елементів
         </p>
         <!--! Урок -->
-        <h3 
-            style =
-                "
-                    color: royalblue
-                "
-        >
-        <i>Службові теги:</i>
+        <h3 style ="color: royalblue">
+            <i>Службові теги:</i>
         </h3>
         <p>
-            <b><u>&lt;!doctype&gt;</u> , &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
+            <b><u>&lt;!doctype&gt;</u>, &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
         </p>
-        <h3 
-            style =
-                "
-                    color: royalblue
-                "
-        >
+        <h3 style ="color: royalblue">
             <i>Текстові елементи:</i>
         </h3>
-        <p><b>&lt;h1&gt; ... &lt;h6&gt; , &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;span&gt;</b></p>
+        <p>
+            <b>&lt;h1&gt; ... &lt;h6&gt; , &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;span&gt;</b>
+        </p>
         
         <h1>Це написано за допомого тега  &lt;h1&gt;</h1>
         <h2>Це написано за допомого тега  &lt;h2&gt;</h2>
@@ -94,33 +86,21 @@
         <strong>Це написано за допомого тега  &lt;strong&gt;</strong>
         <i>Це написано за допомого тега  &lt;i&gt;</i>
         <em>Це написано за допомого тега  &lt;em&gt;</em>
-        <h3 
-            style =
-                "
-                    color: royalblue
-                "
-        >
+
+        <h3 style ="color: royalblue">
             <i>Текст-риба:</i>
         </h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laborum ex. Similique tenetur, voluptates eligendi provident autem eum minima porro sequi dignissimos? Dolores facilis ipsum minus, ut inventore repellat error.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem.</p>
-        <h3 
-            style =
-                "
-                    color: royalblue
-                "
-        >
+        <p><b>Lorem:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laborum ex. Similique tenetur, voluptates eligendi provident autem eum minima porro sequi dignissimos? Dolores facilis ipsum minus, ut inventore repellat error.</p>
+        <p><b>Lorem10:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem.</p>
+
+        <h3 style ="color: royalblue">
             <i>&lt;sup&gt; і &lt;sub&gt;:</i>
         </h3>
         <p>Formula of water  - H<sub>2</sub>O</p>
         <p>Total area of the room - 150м<sup>2</sup>.</p>
         <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
-        <h3 
-            style =
-                "
-                    color: royalblue
-                "
-        >
+
+        <h3 style ="color: royalblue">
             <i>Посилання:</i>
         </h3>
         <a 
@@ -128,18 +108,46 @@
             target="_blank"
             rel="noreferrer noopener"
         >
-            Це посилання на мою сторінку Linkedin
+            Це посилання на мою сторінку <b>Linkedin</b>
+        </a>
+        <br/>
+        <a 
+            href="../images/coffee.jpg"
+            target="_blank"
+        >
+            Це посилання на <u>локальне зображення </u><b>чашки кави</b>
+        </a>
+        <br/>
+        <a 
+            href="https://cdn.pixabay.com/photo/2023/11/14/15/46/nikon-8388022_1280.jpg"
+            target="_blank"
+            rel="noreferrer noopener"
+        >
+            Це посилання на зображення <b>фотокамери </b><u>з сайта <span style ="color: brown">pixabay.com</span></u>
         </a>
         <p>
-            <i>Посилання на завантаження файлу:</i>
+            Це посилання на завантаження локального файлу зображення <b>"Кар'єр" <u>(quarry.jpg)</u></b>:
             <a 
                 href="../images/quarry.jpg"
                 download
             >
-                Завантажити фото кар'єра
+            <i>Завантажити фото <b>"Кар'єр"</b></i>    
             </a>
         </p>
-
-
+        <p>
+            Це посилання на завантаження файлу зображення <b>"Салют" </b>з сайта <span style ="color: brown">pixabay.com</span></u>:
+            <a 
+                href="https://cdn.pixabay.com/photo/2013/12/12/20/01/fireworks-227383_1280.jpg"
+                download
+            >
+            <i>Завантажити фото <b>"Салют"</b></i>    
+            </a>
+        </p>
+        
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <p>2</p>
     </body>
 </html>
