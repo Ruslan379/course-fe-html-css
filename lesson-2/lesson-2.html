@@ -40,138 +40,146 @@
 
     <body>
         <!--? Це - Элемент: <ім'я_Тега>...</ім'я_Тега> -->
-        <!--! Блок навігації сторінками -->
-        <nav>
-            <a href="../lesson-1/lesson-1.html">&lArr; Pre</a>
-            <a href="../index.html">Main</a>
-            <a href="../lesson-3/lesson-3.html">Next &rArr;</a>
-        </nav>
-        <!--! Заголовок - Урок та Тема уроку -->
-        <h2 style ="text-align: center; color: blue"><u>Урок-02:</u></h2>
-        <p 
-            style =
-                "
-                    text-align: center;
-                    color: tomato;
-                    font-size: 32px
-                "
-        >
-            Основні групи та види HTML елементів
-        </p>
-        <!--! Урок -->
-        <h3 style ="color: royalblue">
-            <i>Службові теги:</i>
-        </h3>
-        <p>
-            <b><u>&lt;!doctype&gt;</u>, &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
-        </p>
-        <h3 style ="color: royalblue">
-            <i>Текстові елементи:</i>
-        </h3>
-        <p>
-            <b>&lt;h1&gt; ... &lt;h6&gt; , &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;span&gt;</b>
-        </p>
+        <!--todo ЗАГОЛОВОК -->
+        <header>
+            <!--! Блок навігації сторінками -->
+            <nav>
+                <a href="../lesson-1/lesson-1.html">&lArr; Pre</a>
+                <a href="../index.html">Main</a>
+                <a href="../lesson-3/lesson-3.html">Next &rArr;</a>
+            </nav>
         
-        <h1>Це написано за допомого тега  &lt;h1&gt;</h1>
-        <h2>Це написано за допомого тега  &lt;h2&gt;</h2>
-        <h3>Це написано за допомого тега  &lt;h3&gt;</h3>
-        <h4>Це написано за допомого тега  &lt;h4&gt;</h4>
-        <h5>Це написано за допомого тега  &lt;h5&gt;</h5>
-        <h6>Це написано за допомого тега  &lt;h6&gt;</h6>
-                
-        <p>Це написано за допомого тега  &lt;p&gt;</p>
-
-        <u>Це написано за допомого тега  &lt;u&gt;</u>
-        <b>Це написано за допомого тега  &lt;b&gt;</b>
-        <strong>Це написано за допомого тега  &lt;strong&gt;</strong>
-        <i>Це написано за допомого тега  &lt;i&gt;</i>
-        <em>Це написано за допомого тега  &lt;em&gt;</em>
-
-        <h3 style ="color: royalblue">
-            <i>Тег &lt;pre&gt; та тег для введення комп'ютерного коду &lt;code&gt;:</i>
-        </h3>
-        <pre>
-            <code style ="color: red">
-                function greet(name) {
-                    console.log("Hello, " + name + "!");
-                }
-                greet("World");
-            </code>
-        </pre>
-        
-        <h3 style ="color: royalblue">
-            <i>Текст-риба:</i>
-        </h3>
-        <p><b>Lorem:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laborum ex. Similique tenetur, voluptates eligendi provident autem eum minima porro sequi dignissimos? Dolores facilis ipsum minus, ut inventore repellat error.</p>
-        <p><b>Lorem10:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem.</p>
-
-        <h3 style ="color: royalblue">
-            <i>&lt;sup&gt; і &lt;sub&gt;:</i>
-        </h3>
-        <p>Formula of water  - H<sub>2</sub>O</p>
-        <p>Total area of the room - 150м<sup>2</sup>.</p>
-        <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
-
-        <h3 style ="color: royalblue">
-            <i>Посилання:</i>
-        </h3>
-        <a 
-            href="https://www.linkedin.com/in/ruslan-dolya/"
-            target="_blank"
-            rel="noreferrer noopener"
-        >
-            Це посилання на мою сторінку <b>Linkedin</b>
-        </a>
-        <br/>
-        <a 
-            href="../images/coffee.jpg"
-            target="_blank"
-        >
-            Це посилання на <u>локальне зображення </u><b>чашки кави</b>
-        </a>
-        <br/>
-        <a 
-            href="https://cdn.pixabay.com/photo/2023/11/14/15/46/nikon-8388022_1280.jpg"
-            target="_blank"
-            rel="noreferrer noopener"
-        >
-            Це посилання на зображення <b>фотокамери </b><u>з сайта <span style ="color: brown">pixabay.com</span></u>
-        </a>
-        <p>
-            Це посилання на завантаження локального файлу зображення <b>"Кар'єр" <u>(quarry.jpg)</u></b>:
-            <a 
-                href="../images/quarry.jpg"
-                download
+            <!--! Заголовок - Урок та Тема уроку -->
+            <h2 style ="text-align: center; color: blue"><u>Урок-02:</u></h2>
+            <p 
+                style =
+                    "
+                        text-align: center;
+                        color: tomato;
+                        font-size: 32px
+                    "
             >
-            <i>Завантажити фото <b>"Кар'єр"</b></i>    
-            </a>
-        </p>
-        <p>
-            Це посилання на завантаження файлу зображення <b>"Салют" </b>з сайта <span style ="color: brown">pixabay.com</span></u>:
+                Основні групи та види HTML елементів
+            </p>
+        </header>
+        <main>
+            <!--! Урок -->
+            <h3 style ="color: royalblue">
+                <i>Службові теги:</i>
+            </h3>
+            <p>
+                <b><u>&lt;!doctype&gt;</u>, &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
+            </p>
+            <h3 style ="color: royalblue">
+                <i>Текстові елементи:</i>
+            </h3>
+            <p>
+                <b>&lt;h1&gt; ... &lt;h6&gt; , &lt;p&gt;, &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;span&gt;</b>
+            </p>
+
+            <h1>Це написано за допомого тега  &lt;h1&gt;</h1>
+            <h2>Це написано за допомого тега  &lt;h2&gt;</h2>
+            <h3>Це написано за допомого тега  &lt;h3&gt;</h3>
+            <h4>Це написано за допомого тега  &lt;h4&gt;</h4>
+            <h5>Це написано за допомого тега  &lt;h5&gt;</h5>
+            <h6>Це написано за допомого тега  &lt;h6&gt;</h6>
+
+            <p>Це написано за допомого тега  &lt;p&gt;</p>
+
+            <u>Це написано за допомого тега  &lt;u&gt;</u>
+            <b>Це написано за допомого тега  &lt;b&gt;</b>
+            <strong>Це написано за допомого тега  &lt;strong&gt;</strong>
+            <i>Це написано за допомого тега  &lt;i&gt;</i>
+            <em>Це написано за допомого тега  &lt;em&gt;</em>
+
+            <h3 style ="color: royalblue">
+                <i>Тег &lt;pre&gt; та тег для введення комп'ютерного коду &lt;code&gt;:</i>
+            </h3>
+            <pre>
+                <code style ="color: red">
+                    function greet(name) {
+                        console.log("Hello, " + name + "!");
+                    }
+                    greet("World");
+                </code>
+            </pre>
+
+            <h3 style ="color: royalblue">
+                <i>Текст-риба:</i>
+            </h3>
+            <p><b>Lorem:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laborum ex. Similique tenetur, voluptates eligendi provident autem eum minima porro sequi dignissimos? Dolores facilis ipsum minus, ut inventore repellat error.</p>
+            <p><b>Lorem10:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, exercitationem.</p>
+
+            <h3 style ="color: royalblue">
+                <i>&lt;sup&gt; і &lt;sub&gt;:</i>
+            </h3>
+            <p>Formula of water  - H<sub>2</sub>O</p>
+            <p>Total area of the room - 150м<sup>2</sup>.</p>
+            <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
+
+            <h3 style ="color: royalblue">
+                <i>Посилання:</i>
+            </h3>
             <a 
-                href="https://cdn.pixabay.com/photo/2013/12/12/20/01/fireworks-227383_1280.jpg"
-                download
+                href="https://www.linkedin.com/in/ruslan-dolya/"
+                target="_blank"
+                rel="noreferrer noopener"
             >
-            <i>Завантажити фото <b>"Салют"</b></i>    
+                Це посилання на мою сторінку <b>Linkedin</b>
             </a>
-        </p>
-        <p>
-            Це посилання на <b>телефонний номер:</b>
-                <a href="tel:+38-067-123-45-67">
-                    <i>+38-067-123-45-67</i>    
+            <br/>
+            <a 
+                href="../images/coffee.jpg"
+                target="_blank"
+            >
+                Це посилання на <u>локальне зображення </u><b>чашки кави</b>
+            </a>
+            <br/>
+            <a 
+                href="https://cdn.pixabay.com/photo/2023/11/14/15/46/nikon-8388022_1280.jpg"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                Це посилання на зображення <b>фотокамери </b><u>з сайта <span style ="color: brown">pixabay.com</span></u>
+            </a>
+            <p>
+                Це посилання на завантаження локального файлу зображення <b>"Кар'єр" <u>(quarry.jpg)</u></b>:
+                <a 
+                    href="../images/quarry.jpg"
+                    download
+                >
+                <i>Завантажити фото <b>"Кар'єр"</b></i>    
                 </a>
-        </p>
-        <p>
-            Це посилання на адресу<b>електронної пошти:</b>
-                <a href="mailto:test@gmail.com">
-                    <i>test@gmail.com</i>    
+            </p>
+            <p>
+                Це посилання на завантаження файлу зображення <b>"Салют" </b>з сайта <span style ="color: brown">pixabay.com</span></u>:
+                <a 
+                    href="https://cdn.pixabay.com/photo/2013/12/12/20/01/fireworks-227383_1280.jpg"
+                    download
+                >
+                <i>Завантажити фото <b>"Салют"</b></i>    
                 </a>
-        </p>
-        
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <p>2</p>
+            </p>
+            <p>
+                Це посилання на <b>телефонний номер:</b>
+                    <a href="tel:+38-067-123-45-67">
+                        <i>+38-067-123-45-67</i>    
+                    </a>
+            </p>
+            <p>
+                Це посилання на адресу<b>електронної пошти:</b>
+                    <a href="mailto:test@gmail.com">
+                        <i>test@gmail.com</i>    
+                    </a>
+            </p>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </main>
+        <footer>
+            <p>Це ПІДВАЛ</p>
+        </footer>
     </body>
 </html>
