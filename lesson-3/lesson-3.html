@@ -25,6 +25,15 @@
                 text-decoration: underline; /* Добавляем подчеркивание при наведении */
                 color: olive; /* Меняем цвет текста при наведении */
             }
+            /* Додаем стили для таблиц */
+            table {
+                border-collapse: collapse;
+            }
+            table th,
+            table td {
+                padding: 10px;
+                border: 1px solid #2a2a2a;
+            }
         </style>
         <title>Lesson-03</title>
     </head>
@@ -49,5 +58,95 @@
             Блочні та рядкові теги. Теги для позначення форм та таблиць
         </p>
 
+        <h3 id="a1" style ="color: royalblue">
+            <i>Таблиці:</i>
+        </h3>
+        <!--? Приклад таблиці з конспекту -->
+        <table>
+            <caption>
+                Train schedule <i>(з конспекту)</i>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Train number</th>
+                    <th>Route</th>
+                    <th>Travel time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>433</td>
+                    <td>London - Paris</td>
+                    <td>5 hours</td>
+                </tr>
+                <tr>
+                    <td>701</td>
+                    <td>New York - Chicago</td>
+                    <td>7 hours</td>
+                </tr>
+                <tr>
+                    <td>258</td>
+                    <td>Oslo - Warsaw</td>
+                    <td>4 hours</td>
+                </tr>
+                </tbody>
+        </table>
+        <br />
+
+        <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
+        <table>
+            <thead>
+                <caption>
+                    Приклад таблиці з ДЗ-3 <b>Бойко Владислава</b>
+                </caption>
+                <tr>
+                    <!-- <th>Розклад пар</th> -->
+                    <th rowspan="4">Розклад пар</th>
+                    <th colspan="5">Дні тижня</th>
+                </tr>
+                <tr>
+                    <!-- <th></th> -->
+                    <th>Понеділок</th>
+                    <th>Вівторок</th>
+                    <th>Середа</th>
+                    <th>Четвер</th>
+                    <th>П'ятниця</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 пара</td>
+                    <td>нема</td>
+                    <td>Фізкультура</td>
+                    <td>Інформатика</td>
+                    <td>Захист України</td>
+                    <td>Математика</td>
+                </tr>
+                <tr>
+                    <td>2 пара</td>
+                    <td>Основи економ теорії/нема</td>
+                    <td>Англійська</td>
+                    <td>Фізкультура/біологія</td>
+                    <td>Екологія</td>
+                    <td>Укр.мова</td>
+                </tr>
+                <tr>
+                    <td>3 пара</td>
+                    <td>Укр.літ</td>
+                    <td>Хімія/заруб. літ</td>
+                    <td>Основи Економічної теорії</td>
+                    <td>Правознавство</td>
+                    <td>Фізика</td>
+                </tr>
+                <tr>
+                    <td>4 пара</td>
+                    <td>Інформатика</td>
+                    <td>математика</td>
+                    <td>Фізика</td>
+                    <td>Всесвітня історія/ історія України</td>
+                    <td>Нема</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
