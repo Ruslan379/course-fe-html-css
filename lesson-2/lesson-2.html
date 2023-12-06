@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            /* Кнопка "наверх" */
-            .up-button {
+            /* Кнопка-стрелка (общие стили) */
+            .arrow-button {
                 position: fixed;
                 right: 30px;
-                bottom: 30px;
+                /* bottom: 30px; */
                 display: inline-block;
                 width: 70px;
                 height: 70px;
@@ -19,6 +19,42 @@
                 background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
                 background-size: contain;
                 cursor: pointer;
+            }
+            /* Кнопка-стрелка "наверх" */
+            .up-button {
+                /* position: fixed;
+                right: 30px; */
+                bottom: 30px;
+                /* display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer; */
+            }
+            /* Кнопка-стрелка "вниз" */
+            .down-button {
+                /* position: fixed;
+                right: 30px; */
+                top: 30px;
+                /* display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer; */
+            }
+            /* Поворот Кнопки-стрелка на 180 градусов */
+            .rotate180 {
+            transform: rotate(180deg);
             }
             /* body */
             body, 
@@ -75,12 +111,15 @@
 
     <body>
         <!--? Це - Элемент: <ім'я_Тега>...</ім'я_Тега> -->
-        <!--! Кнопка "наверх" -->
-        <a href="#u1" class="up-button"></a>
+        <!--todo КНОПКИ-СТРЕЛКИ -->
+        <!--! Кнопка-стрелка "наверх" -->
+        <a href="#up" class="arrow-button up-button"></a>
+        <!--! Кнопка-стрелка "вниз" -->
+        <a href="#down" class="arrow-button down-button rotate180"></a>
         <!--todo ЗАГОЛОВОК -->
         <header>
             <!--! Блок навігації сторінками -->
-            <nav id="u1">
+            <nav id="up">
                 <a href="../lesson-1/lesson-1.html">&lArr; Pre</a>
                 <a href="../index.html">Main</a>
                 <a href="../lesson-3/lesson-3.html">Next &rArr;</a>
@@ -120,8 +159,8 @@
         </header>
 
         <main>
+            <!--todo УРОК-2 -->
             <section>
-                <!--todo Урок -->
                 <!--! Службові теги -->
                 <h3 id="d1" style ="color: royalblue">
                     <i>Службові теги:</i>
@@ -227,7 +266,7 @@
                         href="https://cdn.pixabay.com/photo/2013/12/12/20/01/fireworks-227383_1280.jpg"
                         download
                     >
-                    <i>Завантажити фото <b>"Салют"</b></i>    
+                        <i>Завантажити фото <b>"Салют"</b></i>    
                     </a>
                 </p>
                 <p>
@@ -395,13 +434,19 @@
                 <br/>
                 <br/>
                 <br/>
-                <p>2</p>
             </section>
         </main>
 
-        <footer>
-            <p style ="outline: 2px solid tomato">Це ПІДВАЛ</p>
+        <!--todo ПІДВАЛ -->
+        <footer id="down" style ="outline: 2px solid tomato">
+            <p style =
+                "
+                    outline: 2px solid tomato; 
+                    /* width: 100vw */
+                "
+            >
+                ПІДВАЛ<br>Lesson-2
+            </p>
         </footer>
-
     </body>
 </html>
