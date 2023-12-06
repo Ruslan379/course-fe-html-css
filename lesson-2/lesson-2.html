@@ -4,6 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            /* Кнопка "наверх" */
+            .up-button {
+                position: fixed;
+                right: 40px;
+                bottom: 40px;
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer;
+            }
+            /* body */
             body, 
             header, 
             main, 
@@ -22,7 +39,7 @@
             margin: 0px; /* Убираем внешние отступы */
             padding-left: 10px;
             }
-            /* ---- */
+            /* nav */
             nav {
                 text-align: center;
                 color: brown;
@@ -58,17 +75,21 @@
 
     <body>
         <!--? Це - Элемент: <ім'я_Тега>...</ім'я_Тега> -->
+        <!--! Кнопка "наверх" -->
+        <a href="#u1" class="up-button"></a>
         <!--todo ЗАГОЛОВОК -->
         <header>
             <!--! Блок навігації сторінками -->
-            <nav>
+            <nav id="u1">
                 <a href="../lesson-1/lesson-1.html">&lArr; Pre</a>
                 <a href="../index.html">Main</a>
                 <a href="../lesson-3/lesson-3.html">Next &rArr;</a>
             </nav>
         
             <!--! Заголовок - Урок та Тема уроку -->
-            <h2 style ="text-align: center; color: blue"><u>Урок-02:</u></h2>
+            <h2 style ="text-align: center; color: blue">
+                <u>Урок-02:</u>
+            </h2>
             <p 
                 style =
                     "
@@ -80,24 +101,32 @@
                 Основні групи та види HTML елементів
             </p>
             <!--! Посилання-якір -->
-            <ul>
-                <li><a href="#a1">Службові теги</a></li>
-                <li><a href="#a2">Текстові елементи</a></li>
-                <li><a href="#a3">Тег pre та тег code</a></li>
-                <li><a href="#a4">Текст-риба</a></li>
+            <h3 id="u2" style ="color: blue">
+                <b>ЗМІСТ</b>
+                <!-- <br/> -->
+                <i>(посилання-якір):</i>
+            </h3>
+            <ul style ="color: rgb(127, 0, 212)">
+                <li><a href="#d1">Службові теги</a></li>
+                <li><a href="#d2">Текстові елементи</a></li>
+                <li><a href="#d3">Тег  &lt;pre&gt; та тег &lt;code&gt;</a></li>
+                <li><a href="#d4">Текст-риба</a></li>
+                <li><a href="#d5">Посилання</a></li>
+                <li><a href="#d6" style ="color: red">!_Посилання-кнопка</a></li>
+                <li><a href="#d7">Списки</a></li>
             </ul>
         </header>
 
         <main>
             <section>
                 <!--! Урок -->
-                <h3 id="a1" style ="color: royalblue">
+                <h3 id="d1" style ="color: royalblue">
                     <i>Службові теги:</i>
                 </h3>
                 <p>
                     <b><u>&lt;!doctype&gt;</u>, &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
                 </p>
-                <h3 id="a2" style ="color: royalblue">
+                <h3 id="d2" style ="color: royalblue">
                     <i>Текстові елементи:</i>
                 </h3>
                 <p>
@@ -124,7 +153,7 @@
                 <br/>
                 <em>Це написано за допомого тега  &lt;em&gt;</em>
 
-                <h3 id="a3" style ="color: royalblue">
+                <h3 id="d3" style ="color: royalblue">
                     <i>Тег &lt;pre&gt; та тег для введення комп'ютерного коду &lt;code&gt;:</i>
                 </h3>
                 <pre>
@@ -136,7 +165,7 @@
                     </code>
                 </pre>
 
-                <h3 id="a4" style ="color: royalblue">
+                <h3 id="d4" style ="color: royalblue">
                     <i>Текст-риба:</i>
                 </h3>
                 <p><b>Lorem:</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, laborum ex. Similique tenetur, voluptates eligendi provident autem eum minima porro sequi dignissimos? Dolores facilis ipsum minus, ut inventore repellat error.</p>
@@ -149,7 +178,7 @@
                 <p>Total area of the room - 150м<sup>2</sup>.</p>
                 <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
 
-                <h3 style ="color: royalblue">
+                <h3 id="d5" style ="color: royalblue">
                     <i>Посилання:</i>
                 </h3>
                 <a 
@@ -204,24 +233,34 @@
                             <i>test@gmail.com</i>    
                         </a>
                 </p>
+                <p>
+                    Це посилання на <b><u>посилання-якір</u></b> на початоку сторінки:</b>
+                    <a href="#u2">
+                        <i>Посилання-якір</i>
+                    </a>
+                </p>
 
-                <h3 id="a4" style ="color: royalblue">
-                    <i>Посилання-кнопка:</i>
+                <h3 id="d6" style ="color: red; margin-bottom: 0;">
+                    <i>!_Посилання-кнопка:</i>
                 </h3>
+                <p style ="color: red">
+                    (так працювати буде, але так робити НЕ МОЖНА!)
+                </p>
                 <a href="https://www.linkedin.com/in/ruslan-dolya/" id="myLink">
                     <button type="button" onclick="window.location.href='https://www.linkedin.com/in/ruslan-dolya/'">
-                        Перейти по ссылке
+                        1.Перейти за посиланням на linkedin
                     </button>
                 </a>
+                <br />
                 <button type="button" onclick="window.location.href='https://www.linkedin.com/in/ruslan-dolya/'">
-                    Перейти по ссылке 2
+                    2.Перейти за посиланням на linkedin
                 </button>
                 <br />
                 <button type="button">
                     <a href="https://www.linkedin.com/in/ruslan-dolya/" target="_blank">Це посилання на мою сторінку <b>Linkedin</b></a>
                 </button>
 
-                <h3 id="a4" style ="color: royalblue">
+                <h3 id="d7" style ="color: royalblue">
                     <i>Списки:</i>
                 </h3>
                 <p><b><u>Нумерований список:</u></b></p>
@@ -240,6 +279,7 @@
                     <li>диня</li>
                 </ul>
                 <br/>
+                <p><b><u>Список вкладений у список:</u></b></p>
                 <h2>Серія - TUF Gaming</h2>
                 <ol>
                     <li>
