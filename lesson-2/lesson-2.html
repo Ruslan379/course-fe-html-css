@@ -166,7 +166,7 @@
                     <i>Службові теги:</i>
                 </h3>
                 <p>
-                    <b><u>&lt;!doctype&gt;</u>, &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
+                    <b><u style ="color: red">&lt;!doctype&gt;</u>, &lt;head&gt;, &lt;meta&gt;, &lt;title&gt;</b>
                 </p>
 
                 <!--! Текстові елементи -->
@@ -196,7 +196,24 @@
                 <i>Це написано за допомого тега  &lt;i&gt;</i>
                 <br/>
                 <em>Це написано за допомого тега  &lt;em&gt;</em>
-
+                <br/>
+                <!--? -------------------- -->
+                <p>Це написано за допомого тега <span>&lt;span&gt;</span></p>
+                <p>Це також написано за допомого тега 
+                    <span 
+                        style =
+                            "
+                                font-size: 20px;
+                                color: yellow; 
+                                background-color: darkred;
+                                text-transform: uppercase;
+                                text-decoration: underline;
+                            "
+                    >
+                        &lt;span&gt;
+                    </span>
+                </p>
+                
                 <!--! Тег <pre> та тег <code> -->
                 <h3 id="d3" style ="color: royalblue">
                     <i>Тег &lt;pre&gt; та тег для введення комп'ютерного коду &lt;code&gt;:</i>
