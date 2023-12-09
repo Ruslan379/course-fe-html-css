@@ -4,12 +4,95 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            /* ---- */
+            /* Кнопка-стрелка (общие стили) */
+            .arrow-button {
+                position: fixed;
+                right: 30px;
+                /* bottom: 30px; */
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer;
+            }
+            /* Кнопка-стрелка "наверх" */
+            .up-button {
+                /* position: fixed;
+                right: 30px; */
+                bottom: 30px;
+                /* display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer; */
+            }
+            /* Кнопка-стрелка "вниз" */
+            .down-button {
+                /* position: fixed;
+                right: 30px; */
+                top: 30px;
+                /* display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer; */
+            }
+            /* Поворот Кнопки-стрелка на 180 градусов */
+            .rotate180 {
+            transform: rotate(180deg);
+            }
+            /* body */
+            body, 
+            header, 
+            main, 
+            section,
+            footer
+            {
+            display: flex;
+            flex-direction: column; /* Вертикальная основная ось */
+            /* Центрирование элементов по вертикали: */
+            /* justify-content: center;  */
+            align-items: center; /* Центрирование элементов по горизонтали */
+            /* Добавляем ШИРИНУ на весь экран (viewport height) */
+            /* Так будет горизонтальная полоса прокрутки: */
+            /* width: 100vw; */
+            /* Так НЕ будет горизонтальной полосы прокрутки: */
+            width: 100%;
+            /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+            /* height: 100vh;  */
+            margin: 0px; /* Убираем внешние отступы */
+            /* padding-left: 10px; */
+            }
+            /* nav */
             nav {
                 text-align: center;
                 color: brown;
                 font-size: 18px;
                 /* outline: 1px solid red */
+            }
+            /* Убираем стандартные отступы и маркеры для упорядоченных списков */
+            ul, ol {
+                /* margin: 0; */
+                /* padding: 0; */
+                /* list-style: none; */
+                /* text-align: center; */
+                color: rebeccapurple;
+                font-size: 18px
             }
             /* Убираем подчеркивание и стандартные стили для ссылок */
             a {
@@ -39,32 +122,129 @@
     </head>
 
     <body>
-        <!--! Блок навігації сторінками -->
-        <nav>
-            <a href="../lesson-2/lesson-2.html">&lArr; Pre</a>
+        <!--todo КНОПКИ-СТРЕЛКИ -->
+        <!--! Кнопка-стрелка "наверх" -->
+        <a href="#up" class="arrow-button up-button"></a>
+        <!--! Кнопка-стрелка "вниз" -->
+        <a href="#down" class="arrow-button down-button rotate180"></a>
+        <!--todo ЗАГОЛОВОК -->
+        <header>
+            <!--! Блок навігації сторінками -->
+            <nav id="up">
+                <a href="../lesson-2/lesson-2.html">&lArr; Pre</a>
             <a href="../index.html">Main</a>
             <a href="../lesson-4/lesson-4.html">Next &rArr;</a>
-        </nav>
-        <!--! Заголовок - Урок та Тема уроку -->
-        <h2 style ="text-align: center; color: blue"><u>Урок-03:</u></h2>
-        <p 
-            style =
-                "
-                    text-align: center;
-                    color: tomato;
-                    font-size: 32px
-                "
-        >
+            </nav>
+        
+            <!--! Заголовок - Урок та Тема уроку -->
+            <h2 style ="text-align: center; color: blue">
+                <u>Урок-03:</u>
+            </h2>
+            <p 
+                style =
+                    "
+                        text-align: center;
+                        color: tomato;
+                        font-size: 32px
+                    "
+            >
             Блочні та рядкові теги. Теги для позначення форм та таблиць
-        </p>
+            </p>
+            <!--! Посилання-якір  -->
+            <h3 style ="color: blue">
+                <b>ЗМІСТ</b>
+                <!-- <br/> -->
+                <i>(посилання-якір):</i>
+            </h3>
+            <ul style ="color: rgb(127, 0, 212)">
+                <li><a href="#d1">Блочні та рядкові теги</a></li>
+                <li><a href="#d2">Анонімні елементи</a></li>
+                <li><a href="#d3">Символьні підстановки</a></li>
+                <li><a href="#d4">Таблиці</a></li>
+                <li><a href="#d5">Форми</a></li>
+                <li><a href="#d6">Радіо-кнопки (перемикачі)​</a></li>
+                <li><a href="#d7">Чекбокси (прапорці)</a></li>
+                <li><a href="#d8">Дата та час​</a></li>
+                <li><a href="#d9">Елемент &lt;textarea&gt;</a></li>
+                <li><a href="#d10">Елемент &lt;select&gt;</a></li>
+                <li><a href="#d11">Елемент &lt;datalist&gt;</a></li>
+                <li><a href="#d12">Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;</a></li>
+            </ul>
+        </header>
 
-        <h3 id="a1" style ="color: royalblue">
-            <i>Таблиці:</i>
-        </h3>
-        <!--? Приклад таблиці з конспекту -->
-        <table>
+        <main>
+            <!--todo УРОК-3 -->
+            <>
+                <!--! Блочні та рядкові теги -->
+                <h3 id="d4" style ="color: royalblue">
+                    <i>Блочні та рядкові теги:</i>
+                </h3>
+                <!--? Приклади Блокових елементів  -->
+                <h4><u>Приклади Блокових елементів:</u></h4>
+                <p 
+                    style ="outline: 1px solid red; width: 100%"
+                >
+                    Блоковий елемент <b>&lt;p&gt;</b> — займає повністю увесь рядок
+                </p>
+                <div 
+                    style ="outline: 1px solid red; width: 100%"
+                >
+                    Блоковий елемент <b>&lt;div&gt;</b> — займає повністю увесь рядок
+                </div>
+                <br/>
+                <form 
+                    style ="outline: 1px solid red; width: 100%"
+                >
+                    Блоковий елемент <b>&lt;form&gt;</b> — займає повністю увесь рядок
+                </form>
+                <h1 
+                    style ="outline: 1px solid red; width: 100%"
+                >
+                    Блоковий елемент <b>&lt;h1&gt;</b> — займає повністю увесь рядок
+                </h1>
+                <ul 
+                    style ="outline: 1px solid red; width: 100%"
+                >
+                    Блоковий елемент <b>&lt;ul&gt;</b> — займає повністю увесь рядок
+                </ul>
+                <li 
+                    style ="outline: 1px solid red; width: 100%"
+                >
+                    Блоковий елемент <b>&lt;li&gt;</b> — займає повністю увесь рядок
+                </li>
+                <!--? Приклади Рядкових елемент тегів -->
+                <h4><u>Приклади Рядкових елементів:</u></h4>
+                <div style ="display: flex;">
+                    <a 
+                        style ="outline: 1px solid blue"
+                        href=""
+                    >
+                        Рядковий елемент <b>&lt;a&gt;</b> — займає місце по своєму вмісту
+                    </a>
+                    <b 
+                        style ="outline: 1px solid blue"
+                        href=""
+                    >
+                        Рядковий елемент <b>&lt;b&gt;</b> — займає місце по своєму вмісту
+                    </b>
+                    <span 
+                        style ="outline: 1px solid blue"
+                        href=""
+                    >
+                        Рядковий елемент <b>&lt;span&gt;</b> — займає місце по своєму вмісту
+                    </span>
+                </div>
+                
+                
+                <!--! Таблиці -->
+                <h3 id="d4" style ="color: royalblue">
+                    <i>Таблиці:</i>
+                </h3>
+                <!--? Приклад таблиці з конспекту -->
+                <h4><u>Приклад таблиці з конспекту:</u></h4>
+                <table>
             <caption>
-                Train schedule <i>(з конспекту)</i>
+                Train schedule
             </caption>
             <thead>
                 <tr>
@@ -90,14 +270,15 @@
                     <td>4 hours</td>
                 </tr>
                 </tbody>
-        </table>
-        <br />
-
-        <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
-        <table>
+                </table>
+                <br />
+            
+                <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
+                <h4><u>Приклад таблиці з ДЗ-3 Бойко Владислава:</u></h4>
+                <table>
             <thead>
                 <caption>
-                    Приклад таблиці з ДЗ-3 <b>Бойко Владислава</b>
+                    Таблиця розкладу занять <b>Бойко Владислава</b>
                 </caption>
                 <tr>
                     <!-- <th>Розклад пар</th> -->
@@ -147,6 +328,28 @@
                     <td>Нема</td>
                 </tr>
             </tbody>
-        </table>
+                </table>
+
+
+
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </section>
+        </main>
+
+        <!--todo ПІДВАЛ -->
+        <footer id="down" style ="outline: 2px solid tomato">
+            <p style =
+                "
+                    outline: 1px solid tomato; 
+                    /* width: 100vw */
+                "
+            >
+                ПІДВАЛ<br>Lesson-3
+            </p>
+        </footer>
     </body>
 </html>
