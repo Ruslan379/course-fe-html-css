@@ -118,6 +118,17 @@
                 border: 1px solid #2a2a2a;
             }
         </style>
+        <!--! Додаем стили для таблиц -->
+        <!-- <style>
+            table {
+                border-collapse: collapse;
+            }
+            table th,
+            table td {
+                padding: 10px;
+                border: 1px solid #2a2a2a;
+            }
+        </style> -->
         <title>Lesson-03</title>
     </head>
 
@@ -132,10 +143,9 @@
             <!--! Блок навігації сторінками -->
             <nav id="up">
                 <a href="../lesson-2/lesson-2.html">&lArr; Pre</a>
-            <a href="../index.html">Main</a>
-            <a href="../lesson-4/lesson-4.html">Next &rArr;</a>
+                <a href="../index.html">Main</a>
+                <a href="../lesson-4/lesson-4.html">Next &rArr;</a>
             </nav>
-        
             <!--! Заголовок - Урок та Тема уроку -->
             <h2 style ="text-align: center; color: blue">
                 <u>Урок-03:</u>
@@ -148,7 +158,7 @@
                         font-size: 32px
                     "
             >
-            Блочні та рядкові теги. Теги для позначення форм та таблиць
+                Блочні та рядкові теги. Теги для позначення форм та таблиць
             </p>
             <!--! Посилання-якір  -->
             <h3 style ="color: blue">
@@ -174,9 +184,9 @@
 
         <main>
             <!--todo УРОК-3 -->
-            <>
+            <section>   
                 <!--! Блочні та рядкові теги -->
-                <h3 id="d4" style ="color: royalblue">
+                <h3 id="d1" style ="color: royalblue">
                     <i>Блочні та рядкові теги:</i>
                 </h3>
                 <!--? Приклади Блокових елементів  -->
@@ -202,11 +212,12 @@
                 >
                     Блоковий елемент <b>&lt;h1&gt;</b> — займає повністю увесь рядок
                 </h1>
-                <ul 
+                <article 
                     style ="outline: 1px solid red; width: 100%"
                 >
-                    Блоковий елемент <b>&lt;ul&gt;</b> — займає повністю увесь рядок
-                </ul>
+                    Блоковий елемент <b>&lt;article&gt;</b> — займає повністю увесь рядок
+                </article>
+                <br />
                 <li 
                     style ="outline: 1px solid red; width: 100%"
                 >
@@ -235,6 +246,13 @@
                     </span>
                 </div>
                 
+                <!--! Символьні підстановки -->
+                <h3 id="d3" style ="color: royalblue">
+                    <i>Символьні підстановки:</i>
+                </h3>
+                <!-- html example -->
+                <span>Символ &#8470;</span>
+                <span>Символ &#8471;</span>
                 
                 <!--! Таблиці -->
                 <h3 id="d4" style ="color: royalblue">
@@ -243,91 +261,91 @@
                 <!--? Приклад таблиці з конспекту -->
                 <h4><u>Приклад таблиці з конспекту:</u></h4>
                 <table>
-            <caption>
-                Train schedule
-            </caption>
-            <thead>
-                <tr>
-                    <th>Train number</th>
-                    <th>Route</th>
-                    <th>Travel time</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>433</td>
-                    <td>London - Paris</td>
-                    <td>5 hours</td>
-                </tr>
-                <tr>
-                    <td>701</td>
-                    <td>New York - Chicago</td>
-                    <td>7 hours</td>
-                </tr>
-                <tr>
-                    <td>258</td>
-                    <td>Oslo - Warsaw</td>
-                    <td>4 hours</td>
-                </tr>
-                </tbody>
-                </table>
-                <br />
+                    <caption>
+                        Train schedule
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Train number</th>
+                            <th>Route</th>
+                            <th>Travel time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>433</td>
+                            <td>London - Paris</td>
+                            <td>5 hours</td>
+                        </tr>
+                        <tr>
+                            <td>701</td>
+                            <td>New York - Chicago</td>
+                            <td>7 hours</td>
+                        </tr>
+                        <tr>
+                            <td>258</td>
+                            <td>Oslo - Warsaw</td>
+                            <td>4 hours</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    <br />
             
                 <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
                 <h4><u>Приклад таблиці з ДЗ-3 Бойко Владислава:</u></h4>
                 <table>
-            <thead>
-                <caption>
-                    Таблиця розкладу занять <b>Бойко Владислава</b>
-                </caption>
-                <tr>
-                    <!-- <th>Розклад пар</th> -->
-                    <th rowspan="4">Розклад пар</th>
-                    <th colspan="5">Дні тижня</th>
-                </tr>
-                <tr>
-                    <!-- <th></th> -->
-                    <th>Понеділок</th>
-                    <th>Вівторок</th>
-                    <th>Середа</th>
-                    <th>Четвер</th>
-                    <th>П'ятниця</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1 пара</td>
-                    <td>нема</td>
-                    <td>Фізкультура</td>
-                    <td>Інформатика</td>
-                    <td>Захист України</td>
-                    <td>Математика</td>
-                </tr>
-                <tr>
-                    <td>2 пара</td>
-                    <td>Основи економ теорії/нема</td>
-                    <td>Англійська</td>
-                    <td>Фізкультура/біологія</td>
-                    <td>Екологія</td>
-                    <td>Укр.мова</td>
-                </tr>
-                <tr>
-                    <td>3 пара</td>
-                    <td>Укр.літ</td>
-                    <td>Хімія/заруб. літ</td>
-                    <td>Основи Економічної теорії</td>
-                    <td>Правознавство</td>
-                    <td>Фізика</td>
-                </tr>
-                <tr>
-                    <td>4 пара</td>
-                    <td>Інформатика</td>
-                    <td>математика</td>
-                    <td>Фізика</td>
-                    <td>Всесвітня історія/ історія України</td>
-                    <td>Нема</td>
-                </tr>
-            </tbody>
+                    <thead>
+                        <caption>
+                            Таблиця розкладу занять <b>Бойко Владислава</b>
+                        </caption>
+                        <tr>
+                            <!-- <th>Розклад пар</th> -->
+                            <th rowspan="4">Розклад пар</th>
+                            <th colspan="5">Дні тижня</th>
+                        </tr>
+                        <tr>
+                            <!-- <th></th> -->
+                            <th>Понеділок</th>
+                            <th>Вівторок</th>
+                            <th>Середа</th>
+                            <th>Четвер</th>
+                            <th>П'ятниця</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 пара</td>
+                            <td>нема</td>
+                            <td>Фізкультура</td>
+                            <td>Інформатика</td>
+                            <td>Захист України</td>
+                            <td>Математика</td>
+                        </tr>
+                        <tr>
+                            <td>2 пара</td>
+                            <td>Основи економ теорії/нема</td>
+                            <td>Англійська</td>
+                            <td>Фізкультура/біологія</td>
+                            <td>Екологія</td>
+                            <td>Укр.мова</td>
+                        </tr>
+                        <tr>
+                            <td>3 пара</td>
+                            <td>Укр.літ</td>
+                            <td>Хімія/заруб. літ</td>
+                            <td>Основи Економічної теорії</td>
+                            <td>Правознавство</td>
+                            <td>Фізика</td>
+                        </tr>
+                        <tr>
+                            <td>4 пара</td>
+                            <td>Інформатика</td>
+                            <td>математика</td>
+                            <td>Фізика</td>
+                            <td>Всесвітня історія/ історія України</td>
+                            <td>Нема</td>
+                        </tr>
+                    </tbody>
                 </table>
 
 
