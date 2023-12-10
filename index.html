@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body {
+            body 
+            {
             display: flex;
             flex-direction: column; /* Вертикальная основная ось */
             /* Центрирование элементов по вертикали: */
-            justify-content: center; 
+            /* justify-content: center;  */
             align-items: center; /* Центрирование элементов по горизонтали */
-            height: 100vh; /* Добавляем высоту на весь экран (viewport height) */
-            margin: 0; /* Убираем внешние отступы */
+            /* Добавляем ШИРИНУ на весь экран (viewport height) */
+            /* Так будет горизонтальная полоса прокрутки: */
+            /* width: 100vw; */
+            /* Так НЕ будет горизонтальной полосы прокрутки: */
+            width: 100%;
+            /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+            /* height: 100vh;  */
+            margin: 0px; /* Убираем внешние отступы */
+            /* padding-left: 10px; */
             }
             /* Убираем стандартные отступы и маркеры для упорядоченных списков */
             ul, ol{
@@ -89,6 +97,24 @@
             <u>Список уроків:</u>
         </h3>
         <br />
+        <p>Зображення з відносним посиланням на "quarry.jpg":</p>
+        <img 
+            src="quarry.jpg" 
+            alt="фото кар'єра" 
+            width="400px" 
+        />
+        <p>Зображення з відносним посиланням на "/quarry.jpg":</p>
+        <img 
+            src="/quarry.jpg" 
+            alt="фото кар'єра" 
+            width="400px" 
+        />
+        <p>Зображення з відносним посиланням на "./quarry.jpg":</p>
+        <img 
+            src="./quarry.jpg" 
+            alt="фото кар'єра" 
+            width="400px" 
+        />
         
         <!--! Список уроків -->
         <ol 
