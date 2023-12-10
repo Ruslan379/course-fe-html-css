@@ -308,10 +308,10 @@
                 <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
                 <h4><u>Приклад таблиці з ДЗ-3 Бойко Владислава:</u></h4>
                 <table>
+                    <caption>
+                        Таблиця розкладу занять <b>Бойко Владислава</b>
+                    </caption>
                     <thead>
-                        <caption>
-                            Таблиця розкладу занять <b>Бойко Владислава</b>
-                        </caption>
                         <tr>
                             <!-- <th>Розклад пар</th> -->
                             <th rowspan="4">Розклад пар</th>
@@ -362,6 +362,34 @@
                     </tbody>
                 </table>
 
+                <!--! Форми -->
+                <h3 id="d4" style ="color: royalblue">
+                    <i>Форми:</i>
+                </h3>
+                <!--? Елемент <form>(I варіант) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант)</i>:</h4>
+                <form name="signup_form" autocomplete="on" novalidate>
+                    <label>
+                        Email
+                        <input type="email" name="email" />
+                    </label>
+                    <label>
+                        Password
+                        <input type="password" name="password" />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                <!--? Елемент <form>(II варіант) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант)</i>:</h4>
+                <form>
+                    <label for="user_email">Email</label>
+                    <input type="email" name="email" id="user_email" />
+
+                    <label for="user_password">Password</label>
+                    <input type="password" name="password" id="user_password" />
+
+                    <button type="submit">Submit</button>
+                </form>
 
 
 
