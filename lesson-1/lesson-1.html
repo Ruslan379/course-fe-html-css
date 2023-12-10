@@ -4,7 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">      
         <style>
-            /* ---- */
+            /* body */
+            /* body,  */
+            header,
+            /* main,  */
+            /* section, */
+            footer
+            {
+            display: flex;
+            flex-direction: column; /* Вертикальная основная ось */
+            /* Центрирование элементов по вертикали: */
+            /* justify-content: center;  */
+            align-items: center; /* Центрирование элементов по горизонтали */
+            /* Добавляем ШИРИНУ на весь экран (viewport height) */
+            /* Так будет горизонтальная полоса прокрутки: */
+            /* width: 100vw; */
+            /* Так НЕ будет горизонтальной полосы прокрутки: */
+            width: 100%;
+            /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+            /* height: 100vh;  */
+            margin: 0px; /* Убираем внешние отступы */
+            /* padding-left: 10px; */
+            }
+            /* nav */
             nav {
                 text-align: center;
                 color: brown;
@@ -30,74 +52,189 @@
     </head>
     <!--? <ім'я_Тега>...</ім'я_Тега> -->
     <body>
-        <!--! Блок навігації сторінками -->
-        <nav>
-            <a href="../index.html">&lArr; Pre</a>
-            <a href="../index.html">Main</a>
-            <a href="../lesson-2/lesson-2.html">Next &rArr;</a>
-        </nav>
-        <!--! Заголовок - Урок та Тема уроку -->
-        <h2 style ="text-align: center; color: blue"><u>Урок-01:</u></h2>
-        <p 
-            style =
+        <header>
+            <!--! Блок навігації сторінками -->
+            <nav>
+                <a href="../index.html">&lArr; Pre</a>
+                <a href="../index.html">Main</a>
+                <a href="../lesson-2/lesson-2.html">Next &rArr;</a>
+            </nav>
+            <!--! Заголовок - Урок та Тема уроку -->
+            <h2 style ="text-align: center; color: blue"><u>Урок-01:</u></h2>
+            <p 
+                style =
+                    "
+                        text-align: center;
+                        color: tomato;
+                        font-size: 32px
+                    "
+            >
+                Frontend-технології. Знайомство з HTML
+            </p>
+            <!--! Посилання-якір -->
+
+            <h3 id="u2" style ="color: blue">
+                <b>ЗМІСТ</b>
+            </h3>
+            <ul style ="color: rgb(127, 0, 212)">
+                <li><a href="#d1">Теги та Елементи</a></li>
+                <li><a href="#d2">Приклади HTML тегів та їх атрибутів</a></li>
+                <li><a href="#d3">Парні та Поодинокі (одинарні) теги</a></li>
+                <li><a href="#d4">Вкладеність тегів</a></li>
+            </ul>
+        </header>
+        <main>
+            
+            <!--! Теги та Елементи -->
+            <h3 id="d1" style ="text-align: center; color: royalblue">
+                <i>Теги та Елементи:</i>
+            </h3>
+            <p>
+                Це приклади Тегів: <b>h2, p, b, i, u, span, img, a, section</b>
+            </p>
+            <p>
+                Це відкриваючий Тег: <b>&lt;p&gt;</b>
+            </p>
+            <p>
+                Це закриваючий Тег: <b>&lt;/p&gt;</b>
+            </p>
+            <p>
+                Це конструкція Елемента: <u><b>&lt;ім'я_Тега&gt;</b><i style ="color: green">тут буде контент</i><b>&lt;/ім'я_Тега&gt;</b></u>
+            </p>
+            <p>
+                Це приклади Елементів: 
+                <pre>
+                        <b>&lt;h2&gt;</b><i>контент</i><b>&lt;/h2&gt;, </b>
+                        <b>&lt;p&gt;</b><i>контент</i><b>&lt;/p&gt;, </b>
+                        <b>&lt;span&gt;</b><i>контент</i><b>&lt;/span&gt;, </b>
+                        <b>&lt;img </b><i>src="image.jpg" </i><b>/&gt;, </b>
+                        <b>&lt;input </b><i>type="text" </i><b>/&gt;, </b>
+                        <b>&lt;br /&gt; </b>
+                </pre>
+            </p>
+
+            <!--! Приклади HTML тегів та їх атрибутів -->
+            <h3 id="d2" style ="text-align: center; color: royalblue">
+                <i>Приклади HTML тегів та їх атрибутів та зразок сторінки дозвілля:</i>
+            </h3>
+            <p>Вітаю вас, шановні друзі!</p>
+            <h1>Мене звуть Руслан</h1>
+            <p>Я дуже радий бачити вас</p>
+            <i>Це поле для введення ваших побажань &#9758; </i>
+            <input type="text" />
+            <p>Це довільна картинка від генератора зображень:</p>
+            <img src="https://picsum.photos/640/480" alt="довільна картинка від генератора зображень" width="600px" />
+            <p><u>А це моє фото:</u></p>
+            <img 
+                src="../images/ruslan.jpg" 
+                alt="Ruslan" 
+                width="400px" 
+            />
+            <br />
+            <p>Я дуже люблю подорожувати. А ще я полюбляю займатися фотографією</p>
+            <u>Це деякі з моїх фотографій:</u>
+            <ul>
+                <li>
+                    <h3>Кар'єр "Релакс":</h3>
+                    <img 
+                        src="../images/quarry.jpg" 
+                        alt="фото кар'єра" 
+                        width="400px" 
+                    />
+                </li>
+                <li>
+                    <h3>Народження кави:</h3>
+                    <img 
+                        src="../images/coffee.jpg" 
+                        alt="чашка кави" 
+                        width="400px" 
+                    />
+                </li>
+                <li>
+                    <h3>Захід сонця:</h3>
+                    <img 
+                        src="../images/sunset.jpg" 
+                        alt="захід сонця" 
+                        width="400px" 
+                    />
+                </li>
+                <li>
+                    <h3>Дахи будинків:</h3>
+                    <img 
+                        src="../images/roofs.jpg" 
+                        alt="дахи будинків" 
+                        width="400px" 
+                    />
+                </li>
+            </ul>
+            <a href="https://google.com">Це посилання на Google</a>
+            <br>
+            <a 
+                href="https://www.linkedin.com/in/ruslan-dolya/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                Це посилання на мою сторінку Linkedin
+            </a>
+
+            <!--! Парні та Поодинокі (одинарні) теги -->
+            <h3 id="d3" style ="text-align: center; color: royalblue">
+                <i>Парні та Поодинокі (одинарні) теги:</i>
+            </h3>
+            <p>
+                <b><u>Приклади використання Парних тегів:</u></b>
+                <pre>
+                        <b>&lt;h2&gt;</b><i>контент</i><b>&lt;/h2&gt;, </b>
+                        <b>&lt;p&gt;</b><i>контент</i><b>&lt;/p&gt;, </b>
+                        <b>&lt;span&gt;</b><i>контент</i><b>&lt;/span&gt;</b>
+                </pre>
+            </p>
+            <p>
+                <b><u>Приклади використання Поодиноких тегів:</u></b>
+                <pre>
+                        <b>&lt;img </b><i>src="image.jpg" </i><b>/&gt;, </b>
+                        <b>&lt;input </b><i>type="text" </i><b>/&gt;, </b>
+                        <b>&lt;br /&gt; </b>
+                </pre>
+
+                <!--! Парні та Поодинокі (одинарні) теги -->
+            <h3 id="d4" style ="text-align: center; color: royalblue">
+                <i>Вкладеність тегів:</i>
+            </h3>
+            <a 
+                href="https://html.spec.whatwg.org/multipage/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                Це посилання на специфікацію <b>HTML Living Standard</b> 
+            </a>
+            <br />
+            <br />
+            <a 
+                href="https://caninclude.glitch.me/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+            Це сайт, який <b>швидко</b> та <b>легко</b> підкаже, чи можна один тег вкладати в інший!
+            </a>
+        </main>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!--todo ПІДВАЛ -->
+        <footer id="down" style ="outline: 2px solid tomato">
+            <p style =
                 "
-                    text-align: center;
                     color: tomato;
-                    font-size: 32px
+                    /* outline: 1px solid tomato;  */
+                    /* width: 100% */
                 "
-        >
-            Frontend-технології. Знайомство з HTML
-        </p>
-        <!--! Приклади тегів -->
-        <h3 style ="text-align: center; color: royalblue">
-            <i>Приклади HTML тегів та сторінки дозвілля:</i>
-        </h3>
-        <p>Вітаю вас, шановні друзі!</p>
-        <h1>Мене звуть Руслан </h1>
-        <p>Я дуже радий бачити вас</p>
-        <p><u>Це моє фото:</u></p>
-        <img 
-            src="../images/ruslan.jpg" 
-            alt="Ruslan" 
-            width="400px" 
-        />
-        <br />
-        <p>Я дуже люблю подорожувати. А ще я полюбляю займатися фотографією</p>
-        <p><u>Це деякі з моїх фотографій:</u></p>
-        <ul>
-            <li>
-                <h3>Кар'єр "Релакс":</h3>
-                <img 
-                    src="../images/quarry.jpg" 
-                    alt="фото кар'єра" 
-                    width="400px" 
-                />
-            </li>
-            <li>
-                <h3>Народження кави:</h3>
-                <img 
-                    src="../images/coffee.jpg" 
-                    alt="чашка кави" 
-                    width="400px" 
-                />
-            </li>
-            <li>
-                <h3>Захід сонця:</h3>
-                <img 
-                    src="../images/sunset.jpg" 
-                    alt="захід сонця" 
-                    width="400px" 
-                />
-            </li>
-            <li>
-                <h3>Дахи будинків:</h3>
-                <img 
-                    src="../images/roofs.jpg" 
-                    alt="дахи будинків" 
-                    width="400px" 
-                />
-            </li>
-        </ul>
+            >
+            До зустрічі на наступному уроці &rArr;
+            <b><a style ="color: blue" href="../lesson-2/lesson-2.html"> Урок-2</a></b> 
+            </p>
+        </footer>
     </body>
 </html>
 
