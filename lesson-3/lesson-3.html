@@ -256,7 +256,7 @@
                 <h3 id="d3" style ="color: royalblue">
                     <i>Символьні підстановки:</i>
                 </h3>
-                <i style ="color: red">Так НЕ відображається весь контент:</i>
+                <i style ="color: red">Так відображається НЕ весь контент:</i>
                 <b>Це тег <span></b>
                 <b>Це тег <span></span></b>
                 <br>
@@ -363,36 +363,17 @@
                 </table>
 
                 <!--! Форми -->
-                <h3 id="d4" style ="color: royalblue">
+                <h3 id="d5" style ="color: royalblue">
                     <i>Форми:</i>
                 </h3>
-                <!--? Елемент <form>(I варіант <label>) -->
-                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант &lt;label&gt;)</i>:</h4>
-                <form name="signup_form" autocomplete="on" novalidate>
-                    <label>
-                        Email
-                        <input type="email" name="email" />
-                    </label>
-                    <label>
-                        Password
-                        <input type="password" name="password" />
-                    </label>
-                    <button type="submit">Submit</button>
-                </form>
-                <!--? Елемент <form>(II варіант <label>) -->
-                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант &lt;label&gt;)</i>:</h4>
-                <form>
-                    <label for="user_email">Email</label>
-                    <input type="email" name="email" id="user_email1" />
-
-                    <label for="user_password1">Password</label>
-                    <input type="password" name="password" id="user_password1" />
-
-                    <button type="submit">Submit</button>
-                </form>
+                <img 
+                    src="../images/lessons/form-elements.png" 
+                    alt="Форми, Радіо-кнопки, Чекбокси та інше..."
+                    width="800px" 
+                />
                 <!--? Елемент <input> та значення його полів-->
-                <h4><u>Елемент &lt;input&gt; та значення його полів:</u></h4>
-                <!-- <div style ="display: flex;"> -->
+                <h4 style ="color: tomato"><u>Елемент &lt;input&gt; та значення з його полів з допомогою JS:</u></h4>
+                <div style ="display: block; outline: 2px solid tomato; padding: 10px;">
                     <label for="user_name">Name</label>
                     <input 
                         type="text" 
@@ -410,7 +391,38 @@
                     >
                         SUBMIT
                     </button>
-                <!-- </div> -->
+                    <p id="usernameDisplay">Name:</p>
+                    <p id="userpasswordDisplay">Password:</p>
+                </div>
+                <!--? Елемент <form>(I варіант <label>) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант &lt;label&gt;)</i>:</h4>
+                <form name="signup_form" autocomplete="on" novalidate>
+                    <label>
+                        Email
+                        <input type="email" name="email" />
+                    </label>
+                    <label>
+                        Password
+                        <input type="password" name="password" />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                <!--? Елемент <form>(II варіант <label>) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант &lt;label&gt;)</i>:</h4>
+                <form>
+                    <label for="user_email1">Email</label>
+                    <input type="email" name="email" id="user_email1" />
+
+                    <label for="user_password1">Password</label>
+                    <input type="password" name="password" id="user_password1" />
+
+                    <button type="submit">Submit</button>
+                </form>
+                
+                <!--! Радіо-кнопки (перемикачі) -->
+                <h3 id="d6" style ="color: royalblue">
+                    <i>Радіо-кнопки (перемикачі):</i>
+                </h3>
 
 
 
@@ -434,24 +446,30 @@
             <b><a style ="color: blue" href="../lesson-4/lesson-4.html"> Урок-4</a></b> 
             </p>
         </footer>
-        <!--? JS script який створює об'єкт userObject -->
+        <!--* JS script який створює об'єкт userObject -->
         <script>
             function getUsername() {
                 // Получаем элемент input
-                var usernameInput = document.getElementById("user_name");
-                var userpasswordInput = document.getElementById("user_password");
+                const usernameInput = document.getElementById("user_name");
+                const userpasswordInput = document.getElementById("user_password");
     
                 // Получаем значение из поля ввода
-                var usernameValue = usernameInput.value;
-                var userpasswordValue = userpasswordInput.value;
+                const usernameValue = usernameInput.value;
+                const userpasswordValue = userpasswordInput.value;
     
                 // Создаем объект с полем username и значением
-                var userObject = {
+                const userObject = {
                     username: usernameValue,
                     userpassword: userpasswordValue
                 };
                 // Выводим объект в консоль (можете использовать его как угодно)
                 console.log(userObject);
+                // Отображаем значение username и userpassword на странице
+                const usernameDisplay = document.getElementById("usernameDisplay");
+                usernameDisplay.textContent = "Name: " + usernameValue;
+
+                const userpasswordDisplay = document.getElementById("userpasswordDisplay");
+                userpasswordDisplay.textContent = "Password: " + userpasswordValue;
             }
         </script>
     </body>
