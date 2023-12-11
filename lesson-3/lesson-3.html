@@ -168,7 +168,7 @@
             </h3>
             <ul style ="color: rgb(127, 0, 212)">
                 <li><a href="#d1">Блочні та рядкові теги</a></li>
-                <li style ="color: grey"><a href="#d2">Анонімні елементи</a></li>
+                <li style ="color: rgb(204, 204, 204)"><a href="#d2">Анонімні елементи</a></li>
                 <li><a href="#d3">Символьні підстановки</a></li>
                 <li><a href="#d4">Таблиці</a></li>
                 <li><a href="#d5">Форми</a></li>
@@ -180,15 +180,18 @@
                 <li><a href="#d11">Елемент &lt;datalist&gt;</a></li>
                 <li><a href="#d12">Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;</a></li>
             </ul>
+            <br />
+            <hr style ="color: rgb(127, 0, 212); width: 60%">
         </header>
 
         <main>
             <!--todo УРОК-3 -->
             <section>   
                 <!--! Блочні та рядкові теги -->
-                <h3 id="d1" style ="color: royalblue">
+                <!-- <h3 id="d1" style ="color: royalblue">
                     <i>Блочні та рядкові теги:</i>
-                </h3>
+                </h3> -->
+                <div id="d1"></div>
                 <!--? Приклади Блокових елементів  -->
                 <h4><u>Приклади Блокових елементів:</u></h4>
                 <p 
@@ -253,9 +256,10 @@
                 </div>
                 
                 <!--! Символьні підстановки -->
-                <h3 id="d3" style ="color: royalblue">
+                <!-- <h3 id="d3" style ="color: royalblue">
                     <i>Символьні підстановки:</i>
-                </h3>
+                </h3> -->
+                <div id="d3"></div>
                 <i style ="color: red">Так відображається НЕ весь контент:</i>
                 <b>Це тег <span></b>
                 <b>Це тег <span></span></b>
@@ -269,9 +273,10 @@
                 
                 
                 <!--! Таблиці -->
-                <h3 id="d4" style ="color: royalblue">
+                <!-- <h3 id="d4" style ="color: royalblue">
                     <i>Таблиці:</i>
-                </h3>
+                </h3> -->
+                <div id="d4"></div>
                 <!--? Приклад таблиці з конспекту -->
                 <h4><u>Приклад таблиці з конспекту:</u></h4>
                 <table>
@@ -363,9 +368,10 @@
                 </table>
 
                 <!--! Форми -->
-                <h3 id="d5" style ="color: royalblue">
+                <!-- <h3 id="d5" style ="color: royalblue">
                     <i>Форми:</i>
-                </h3>
+                </h3> -->
+                <div id="d5"></div>
                 <img 
                     src="../images/lessons/form-elements.png" 
                     alt="Форми, Радіо-кнопки, Чекбокси та інше..."
@@ -422,9 +428,10 @@
                 </form>
                 
                 <!--! Радіо-кнопки (перемикачі) -->
-                <h3 id="d6" style ="color: royalblue">
+                <!-- <h3 id="d6" style ="color: royalblue">
                     <i>Радіо-кнопки (перемикачі):</i>
-                </h3>
+                </h3> -->
+                <div id="d6"></div>
                 <form>
                     <p>Choose a color:</p>
                     <label>
@@ -454,6 +461,28 @@
                     </label>
                 </form>
 
+                <!--! Чекбокси (прапорці) -->
+                <!-- <h3 id="d17" style ="color: royalblue">
+                    <i>Чекбокси (прапорці):</i>
+                </h3> -->
+                <div id="d7"></div>
+                <!-- <div id="headerContainer1"></div> -->
+                <!-- <div id="headerContainer2"></div> -->
+                <form>
+                    <p>What are your hobbies?</p>
+                    <label>
+                        <input type="checkbox" name="hobby" value="music" checked />
+                        Music
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobby" value="sports" checked />
+                        Sports
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hobby" value="reading" />
+                        Reading
+                    </label>
+                </form>
 
 
             
@@ -502,5 +531,52 @@
                 userpasswordDisplay.textContent = "Password: " + userpasswordValue;
             }
         </script>
+        <!--* JS script який створює різні заголовки -->
+        <script>
+                // Определяем функцию для создания заголовка
+            function createHeaderElement(headerContent) {
+                    // Создаем новый элемент h3
+                var headerElement = document.createElement("h3");
+                    // Устанавливаем стиль
+                headerElement.style.color = "royalblue";
+                headerElement.style.marginTop = "80px";
+                    // Устанавливаем содержимое с переменной
+                headerElement.innerHTML = "<i>" + headerContent + "</i>";
+                    // Возвращаем созданный элемент
+                return headerElement;
+            }
+                // Получаем контейнеры, куда будем добавлять заголовки
+            // var headerContainer1 = document.getElementById("headerContainer1");
+            // var headerContainer2 = document.getElementById("headerContainer2");
+            var d1 = document.getElementById("d1");
+            // var d2 = document.getElementById("d2");
+            var d3 = document.getElementById("d3");
+            var d4 = document.getElementById("d4");
+            var d5 = document.getElementById("d5");
+            var d6 = document.getElementById("d6");
+            var d7 = document.getElementById("d7");
+            var d8 = document.getElementById("d8");
+            var d9 = document.getElementById("d9");
+            var d10 = document.getElementById("d10");
+            var d11 = document.getElementById("d11");
+            var d12 = document.getElementById("d12");
+
+                // Пример использования функции с разными значениями
+            // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
+            // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
+            d1.appendChild(createHeaderElement("Блочні та рядкові теги:"));
+            // d2.appendChild(createHeaderElement("Анонімні елементи:"));
+            d3.appendChild(createHeaderElement("Символьні підстановки:"));
+            d4.appendChild(createHeaderElement("Таблиці:"));
+            d5.appendChild(createHeaderElement("Форми:"));
+            d6.appendChild(createHeaderElement("Радіо-кнопки (перемикачі):"));
+            d7.appendChild(createHeaderElement("Чекбокси (прапорці):"));
+            d8.appendChild(createHeaderElement("Дата та час:"));
+            d9.appendChild(createHeaderElement("Елемент &lt;textarea&gt;:"));
+            d10.appendChild(createHeaderElement("Елемент &lt;select&gt;:"));
+            d11.appendChild(createHeaderElement("Елемент &lt;datalist&gt;:"));
+            d12.appendChild(createHeaderElement("Групування полів. Елементи <fieldset> і <legend>:"));
+        </script>
+        
     </body>
 </html>
