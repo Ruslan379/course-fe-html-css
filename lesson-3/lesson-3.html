@@ -378,13 +378,15 @@
                     <input 
                         type="text" 
                         name="username" 
-                        id="user_name" 
+                        id="user_name"
+                        placeholder="Your Name"
                     />
                     <label for="user_password">Password</label>
                     <input 
                         type="password" 
                         name="userpassword" 
-                        id="user_password" 
+                        id="user_password"
+                        placeholder="Your password" 
                     />
                     <button 
                         onclick="getUsername()"
@@ -423,6 +425,34 @@
                 <h3 id="d6" style ="color: royalblue">
                     <i>Радіо-кнопки (перемикачі):</i>
                 </h3>
+                <form>
+                    <p>Choose a color:</p>
+                    <label>
+                        <input type="radio" name="color" value="red" />
+                        Red
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="white" checked />
+                        White
+                    </label>
+                    <label>
+                        <input type="radio" name="color" value="green" />
+                        Green
+                    </label>
+                    <p>Select size:</p>
+                    <label>
+                        <input type="radio" name="size" value="sm" />
+                        Small
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="md" />
+                        Medium
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="lg" checked />
+                        Large
+                    </label>
+                </form>
 
 
 
