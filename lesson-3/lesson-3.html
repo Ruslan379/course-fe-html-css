@@ -366,8 +366,8 @@
                 <h3 id="d4" style ="color: royalblue">
                     <i>Форми:</i>
                 </h3>
-                <!--? Елемент <form>(I варіант) -->
-                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант)</i>:</h4>
+                <!--? Елемент <form>(I варіант <label>) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант &lt;label&gt;)</i>:</h4>
                 <form name="signup_form" autocomplete="on" novalidate>
                     <label>
                         Email
@@ -379,36 +379,39 @@
                     </label>
                     <button type="submit">Submit</button>
                 </form>
-                <!--? Елемент <form>(II варіант) -->
-                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант)</i>:</h4>
+                <!--? Елемент <form>(II варіант <label>) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант &lt;label&gt;)</i>:</h4>
                 <form>
                     <label for="user_email">Email</label>
                     <input type="email" name="email" id="user_email1" />
 
-                    <label for="user_password">Password</label>
+                    <label for="user_password1">Password</label>
                     <input type="password" name="password" id="user_password1" />
 
                     <button type="submit">Submit</button>
                 </form>
-                <!--? Елемент <form>(II варіант) -->
-                <h4><u>Елемент</u> &lt;input&gt;</h4>
-                <div style ="display: flex;">
+                <!--? Елемент <input> та значення його полів-->
+                <h4><u>Елемент &lt;input&gt; та значення його полів:</u></h4>
+                <!-- <div style ="display: flex;"> -->
+                    <label for="user_name">Name</label>
                     <input 
                         type="text" 
                         name="username" 
                         id="user_name" 
                     />
+                    <label for="user_password">Password</label>
                     <input 
                         type="password" 
                         name="userpassword" 
                         id="user_password" 
                     />
                     <button 
+                        type="submit"
                         onclick="getUsername()"
                     >
-                        Get Username
+                        SUBMIT
                     </button>
-                </div>
+                <!-- </div> -->
 
 
 
@@ -432,6 +435,7 @@
             <b><a style ="color: blue" href="../lesson-4/lesson-4.html"> Урок-4</a></b> 
             </p>
         </footer>
+        <!--? JS script який створює об'єкт userObject -->
         <script>
             function getUsername() {
                 // Получаем элемент input
