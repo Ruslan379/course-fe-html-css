@@ -549,7 +549,19 @@
                     <i>Числа​:</i>
                 </h3> -->
                 <div id="d8"></div>
-                <p>Числа​</p>
+                <form>
+                    <label>
+                        Ваш вік:
+                        <input 
+                            type="number" 
+                            name="age" 
+                            value="0" 
+                            min="18" 
+                            max="120" 
+                        />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
 
 
                 <!--! Телефонні номери -->
@@ -557,7 +569,17 @@
                     <i>Телефонні номери​:</i>
                 </h3> -->
                 <div id="d9"></div>
-                <p>Телефонні номери</p>
+                <form>
+                    <label>
+                        Phone number:
+                        <input 
+                            type="tel" 
+                            name="phone_number"
+                            placeholder="+38067-123-45-67"
+                        />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
 
 
                 <!--! Повзунки -->
@@ -565,7 +587,21 @@
                     <i>Повзунки:</i>
                 </h3> -->
                 <div id="d10"></div>
-                <p>Повзунки</p>
+                <form>
+                    <label>
+                        Interest rate:
+                        <input
+                            type="range"
+                            name="interest_rate"
+                            value="40"
+                            min="0"
+                            max="100"
+                            step="20"
+                        />
+                    </label>
+                    <button type="submit">Submit</button>
+                </form>
+                <p>Selected value: <span class="js-selected-value">40</span></p>
 
 
                 <!--! Дата та час -->
@@ -593,15 +629,76 @@
                     <i>Елемент &lt;textarea&gt;:</i>
                 </h3> -->
                 <div id="d12"></div>
-                <p>textarea</p>
-
+                    <form 
+                        style =
+                            "
+                                height: 150px;
+                                display: flex; 
+                                flex-direction: column;
+                                justify-content: space-between; 
+                                align-items: flex-end;
+                                outline: 1px solid tomato; 
+                                padding: 20px;
+                            "
+                    >
+                        <label>
+                            Ваше Ім'я:
+                            <input 
+                                type="text" 
+                                name="username" 
+                                placeholder="Jack Meadows"
+                            >
+                        </label>
+                        <!-- rows - встановлює кількість рядків (висоту) -->
+                        <!-- cols - встановлює кількістьстовпчиків (ширину) -->
+                        <!-- resize - для того щоб контролювати можливість зміни розміру користувачем -->
+                        <label>
+                            Ваш відгук:
+                            <textarea 
+                                name="feedback" 
+                                rows="5" 
+                                placeholder="Enter your message here..."
+                            >
+                            </textarea>
+                        </label>
+                        <button type="submit">Submit</button>
+                    </form>
 
                 <!--! Елемент <select> -->
                 <!-- <h3 id="d13" style ="color: royalblue">
                     <i>Елемент &lt;select&gt;:</i>
                 </h3> -->
                 <div id="d13"></div>
-                <p>select</p>
+                <!--? Простий <select> -->
+                <h4><u>Простий &lt;select&gt;</u>:</h4>
+                <form>
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="xs">Extra Small</option>
+                        <option value="s">Small</option>
+                        <option value="m" selected>Medium</option>
+                        <option value="l">Large</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                    </form>
+                <!--? Групування опцій у <select> -->
+                <h4><u>Групування опцій у &lt;select&gt;</u>:</h4>
+                <form>
+                    <label for="month">Month:</label>
+                    <select name="month" id="month">
+                        <optgroup label="Summer">
+                            <option value="s6">June</option>
+                            <option value="s7">July</option>
+                            <option value="s8">August</option>
+                        </optgroup>
+                        <optgroup label="Autumn">
+                            <option value="s9">September</option>
+                            <option value="s10">October</option>
+                            <option value="s11">November</option>
+                        </optgroup>
+                    </select>
+                    <button type="submit">Submit</button>
+                    </form>
 
 
                 <!--! Автозаповнення. Елемент <datalist> -->
@@ -609,20 +706,83 @@
                     <i>Автозаповнення. Елемент &lt;select&gt;:</i>
                 </h3> -->
                 <div id="d14"></div>
-                <p>datalist</p>
-
+                <!--? Простий <datalist> -->
+                <h4><u>Простий &lt;datalist&gt;</u>:</h4>
+                <form>
+                    <label for="fav">Choose your favourite browser:</label>
+                    <input list="browsers" name="fav" id="fav" />
+                    <datalist id="browsers">
+                        <option>Edge</option>
+                        <option>Firefox</option>
+                        <option>Chrome</option>
+                        <option>Opera</option>
+                        <option>Safari</option>
+                    </datalist>
+                    <button type="submit">Submit</button>
+                    </form>
+                <!--? <datalist> де опції та значення не збігаються -->
+                <h4><u>&lt;datalist&gt; де опції та значення не збігаються</u>:</h4>
+                <form>
+                    <label for="state">Choose your state</label>
+                    <input type="text" name="state" id="state" list="states" />
+                    <datalist id="states">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                    </datalist>
+                    <button type="submit">Submit</button>
+                </form>
 
                 <!--! Групування полів. Елементи <fieldset> і <legend> -->
                 <!-- <h3 id="d15" style ="color: royalblue">
                     <i>Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;:</i>
                 </h3> -->
                 <div id="d15"></div>
-                <p>fieldset i legend</p>
-
-
-            
-
-
+                <form class="form">
+                    <fieldset class="form-group">
+                        <legend class="group-title">Enter your contact details</legend>
+                        <label class="form-label">
+                            Name
+                            <input type="text" name="username" />
+                        </label>
+                        <label class="form-label">
+                            Email
+                            <input type="email" name="email" />
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend class="group-title">Your favourite programming language</legend>
+                        <div class="form-field">
+                            <input type="checkbox" name="language" value="python" id="python">
+                            <label class="form-label" for="python">Python</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" name="language" value="js" id="js">
+                            <label class="form-label" for="js">JavaScript</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" name="language" value="ruby" id="ruby">
+                            <label class="form-label" for="ruby">Python</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <legend class="group-title">I want to receive</legend>
+                        <div class="form-field">
+                            <input type="checkbox" name="newsletter" value="weekly" id="weekly">
+                            <label class="form-label" for="weekly">The weekly newsletter</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" name="newsletter" value="offers" id="offers">
+                            <label class="form-label" for="offers">Offers from the company</label>
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" name="newsletter" value="associated_offers" id="associated_offers">
+                            <label class="form-label" for="associated_offers">Offers from associated companies</label>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Subscribe</button>
+                </form>
             </section>
         </main>
         <br/>
@@ -673,7 +833,7 @@
                 // Определяем функцию для создания заголовка
             function createHeaderElement(headerContent) {
                     // Создаем новый элемент h3
-                var headerElement = document.createElement("h3");
+                const headerElement = document.createElement("h3");
                     // Устанавливаем стиль
                 headerElement.style.color = "royalblue";
                 headerElement.style.marginTop = "80px";
@@ -683,23 +843,23 @@
                 return headerElement;
             }
                 // Получаем контейнеры, куда будем добавлять заголовки
-            // var headerContainer1 = document.getElementById("headerContainer1");
-            // var headerContainer2 = document.getElementById("headerContainer2");
-            var d1 = document.getElementById("d1");
-            // var d2 = document.getElementById("d2");
-            var d3 = document.getElementById("d3");
-            var d4 = document.getElementById("d4");
-            var d5 = document.getElementById("d5");
-            var d6 = document.getElementById("d6");
-            var d7 = document.getElementById("d7");
-            var d8 = document.getElementById("d8");
-            var d9 = document.getElementById("d9");
-            var d10 = document.getElementById("d10");
-            var d11 = document.getElementById("d11");
-            var d12 = document.getElementById("d12");
-            var d13 = document.getElementById("d13");
-            var d14 = document.getElementById("d14");
-            var d15 = document.getElementById("d15");
+            // const headerContainer1 = document.getElementById("headerContainer1");
+            // const headerContainer2 = document.getElementById("headerContainer2");
+            const d1 = document.getElementById("d1");
+            // const d2 = document.getElementById("d2");
+            const d3 = document.getElementById("d3");
+            const d4 = document.getElementById("d4");
+            const d5 = document.getElementById("d5");
+            const d6 = document.getElementById("d6");
+            const d7 = document.getElementById("d7");
+            const d8 = document.getElementById("d8");
+            const d9 = document.getElementById("d9");
+            const d10 = document.getElementById("d10");
+            const d11 = document.getElementById("d11");
+            const d12 = document.getElementById("d12");
+            const d13 = document.getElementById("d13");
+            const d14 = document.getElementById("d14");
+            const d15 = document.getElementById("d15");
 
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
@@ -719,6 +879,12 @@
             d13.appendChild(createHeaderElement("Елемент &lt;select&gt;:"));
             d14.appendChild(createHeaderElement("Автозаповнення. Елемент &lt;datalist&gt;:"));
             d15.appendChild(createHeaderElement("Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;:"));
+        </script>
+        <!--* JS script який відтворює значення Повзунка -->
+        <script>
+            const rangeInput = document.querySelector('input[type="range"]')
+            const output = document.querySelector('.js-selected-value');
+            rangeInput.addEventListener('input', e => output.textContent = e.target.value)
         </script>
     </body>
 </html>
