@@ -174,11 +174,14 @@
                 <li><a href="#d5">Форми</a></li>
                 <li><a href="#d6">Радіо-кнопки (перемикачі)​</a></li>
                 <li><a href="#d7">Чекбокси (прапорці)</a></li>
-                <li><a href="#d8">Дата та час​</a></li>
-                <li><a href="#d9">Елемент &lt;textarea&gt;</a></li>
-                <li><a href="#d10">Елемент &lt;select&gt;</a></li>
-                <li><a href="#d11">Елемент &lt;datalist&gt;</a></li>
-                <li><a href="#d12">Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;</a></li>
+                <li><a href="#d8">Числа​</a></li>
+                <li><a href="#d9">Телефонні номери​</a></li>
+                <li><a href="#d10">Повзунки</a></li>
+                <li><a href="#d11">Дата та час​</a></li>
+                <li><a href="#d12">Елемент &lt;textarea&gt;</a></li>
+                <li><a href="#d13">Елемент &lt;select&gt;</a></li>
+                <li><a href="#d14">Автозаповнення. Елемент &lt;datalist&gt;</a></li>
+                <li><a href="#d15">Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;</a></li>
             </ul>
             <br />
             <hr style ="color: rgb(127, 0, 212); width: 60%">
@@ -462,7 +465,7 @@
                 </form>
 
                 <!--! Чекбокси (прапорці) -->
-                <!-- <h3 id="d17" style ="color: royalblue">
+                <!-- <h3 id="d7" style ="color: royalblue">
                     <i>Чекбокси (прапорці):</i>
                 </h3> -->
                 <div id="d7"></div>
@@ -484,10 +487,85 @@
                     </label>
                 </form>
 
+                <!--! Числа​ -->
+                <!-- <h3 id="d8" style ="color: royalblue">
+                    <i>Числа​:</i>
+                </h3> -->
+                <div id="d8"></div>
+                <p>Числа​</p>
+
+
+                <!--! Телефонні номери -->
+                <!-- <h3 id="d9" style ="color: royalblue">
+                    <i>Телефонні номери​:</i>
+                </h3> -->
+                <div id="d9"></div>
+                <p>Телефонні номери</p>
+
+
+                <!--! Повзунки -->
+                <!-- <h3 id="d10" style ="color: royalblue">
+                    <i>Повзунки:</i>
+                </h3> -->
+                <div id="d10"></div>
+                <p>Повзунки</p>
+
+
+                <!--! Дата та час -->
+                <!-- <h3 id="d11" style ="color: royalblue">
+                    <i>Дата та час:</i>
+                </h3> -->
+                <div id="d11"></div>
+                <div style ="display: block; outline: 1px solid tomato; padding: 20px;">
+                    <label>
+                        Date
+                        <input type="date" />
+                    </label>
+                    <label>
+                        Time
+                        <input type="time" />
+                    </label>
+                    <label>
+                        Date and time
+                        <input type="datetime-local" />
+                    </label>
+                </div>
+
+                <!--! Елемент <textarea> -->
+                <!-- <h3 id="d12" style ="color: royalblue">
+                    <i>Елемент &lt;textarea&gt;:</i>
+                </h3> -->
+                <div id="d12"></div>
+                <p>textarea</p>
+
+
+                <!--! Елемент <select> -->
+                <!-- <h3 id="d13" style ="color: royalblue">
+                    <i>Елемент &lt;select&gt;:</i>
+                </h3> -->
+                <div id="d13"></div>
+                <p>select</p>
+
+
+                <!--! Автозаповнення. Елемент <datalist> -->
+                <!-- <h3 id="d14" style ="color: royalblue">
+                    <i>Автозаповнення. Елемент &lt;select&gt;:</i>
+                </h3> -->
+                <div id="d14"></div>
+                <p>datalist</p>
+
+
+                <!--! Групування полів. Елементи <fieldset> і <legend> -->
+                <!-- <h3 id="d15" style ="color: royalblue">
+                    <i>Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;:</i>
+                </h3> -->
+                <div id="d15"></div>
+                <p>fieldset i legend</p>
+
 
             
 
-                
+
             </section>
         </main>
         <br/>
@@ -562,6 +640,11 @@
             var d10 = document.getElementById("d10");
             var d11 = document.getElementById("d11");
             var d12 = document.getElementById("d12");
+            var d13 = document.getElementById("d13");
+            var d14 = document.getElementById("d14");
+            var d15 = document.getElementById("d15");
+
+
 
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
@@ -573,11 +656,14 @@
             d5.appendChild(createHeaderElement("Форми:"));
             d6.appendChild(createHeaderElement("Радіо-кнопки (перемикачі):"));
             d7.appendChild(createHeaderElement("Чекбокси (прапорці):"));
-            d8.appendChild(createHeaderElement("Дата та час:"));
-            d9.appendChild(createHeaderElement("Елемент &lt;textarea&gt;:"));
-            d10.appendChild(createHeaderElement("Елемент &lt;select&gt;:"));
-            d11.appendChild(createHeaderElement("Елемент &lt;datalist&gt;:"));
-            d12.appendChild(createHeaderElement("Групування полів. Елементи <fieldset> і <legend>:"));
+            d8.appendChild(createHeaderElement("Числа:"));
+            d9.appendChild(createHeaderElement("Телефонні номери:"));
+            d10.appendChild(createHeaderElement("Повзунки:"));
+            d11.appendChild(createHeaderElement("Дата та час:"));
+            d12.appendChild(createHeaderElement("Елемент &lt;textarea&gt;:"));
+            d13.appendChild(createHeaderElement("Елемент &lt;select&gt;:"));
+            d14.appendChild(createHeaderElement("Автозаповнення. Елемент &lt;datalist&gt;:"));
+            d15.appendChild(createHeaderElement("Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;:"));
         </script>
     </body>
 </html>
