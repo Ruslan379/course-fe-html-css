@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            /* Кнопка-стрелка (общие стили) */
+            .arrow-button {
+                position: fixed;
+                right: 30px;
+                /* bottom: 30px; */
+                display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer;
+            }
+            /* Кнопка-стрелка "наверх" */
+            .up-button {
+                /* position: fixed;
+                right: 30px; */
+                bottom: 30px;
+                /* display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer; */
+            }
+            /* Кнопка-стрелка "вниз" */
+            .down-button {
+                /* position: fixed;
+                right: 30px; */
+                top: 30px;
+                /* display: inline-block;
+                width: 70px;
+                height: 70px;
+                margin: 0;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+                background-size: contain;
+                cursor: pointer; */
+            }
+            /* Поворот Кнопки-стрелка на 180 градусов */
+            .rotate180 {
+            transform: rotate(180deg);
+            }
+            /* body */
+            body, 
+            header, 
+            main, 
+            section,
+            footer
+            {
+            display: flex;
+            flex-direction: column; /* Вертикальная основная ось */
+            /* Центрирование элементов по вертикали: */
+            /* justify-content: center;  */
+            align-items: center; /* Центрирование элементов по горизонтали */
+            /* Добавляем ШИРИНУ на весь экран (viewport height) */
+            /* Так будет горизонтальная полоса прокрутки: */
+            /* width: 100vw; */
+            /* Так НЕ будет горизонтальной полосы прокрутки: */
+            width: 100%;
+            /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+            /* height: 100vh;  */
+            margin: 0px; /* Убираем внешние отступы */
+            /* padding-left: 10px; */
+            }
+            /* nav */
+            nav {
+                text-align: center;
+                color: brown;
+                font-size: 18px;
+                /* outline: 1px solid red */
+            }
+            /* Убираем стандартные отступы и маркеры для упорядоченных списков */
+            ul, ol {
+                /* margin: 0; */
+                /* padding: 0; */
+                /* list-style: none; */
+                /* text-align: center; */
+                color: rebeccapurple;
+                font-size: 18px
+            }
+            /* Убираем подчеркивание и стандартные стили для ссылок */
+            a {
+                padding-left: 5px;
+                padding-right: 5px;
+                text-decoration: none; /* Убираем подчеркивание */
+                color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
+                cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+
+            }
+            /* Добавляем стили для ссылки при наведении */
+            a:hover {
+                text-decoration: underline; /* Добавляем подчеркивание при наведении */
+                color: olive; /* Меняем цвет текста при наведении */
+            }
+            /* Додаем стили для таблиц */
+            table {
+                border-collapse: collapse;
+            }
+            table th,
+            table td {
+                padding: 10px;
+                border: 1px solid #2a2a2a;
+            }
+        </style>
+        <!--! Додаем стили для таблиц -->
+        <!-- <style>
+            table {
+                border-collapse: collapse;
+            }
+            table th,
+            table td {
+                padding: 10px;
+                border: 1px solid #2a2a2a;
+            }
+        </style> -->
+        <title>Lesson-04</title>
+    </head>
+
+    <body>
+        <!--todo КНОПКИ-СТРЕЛКИ -->
+        <!--! Кнопка-стрелка "наверх" -->
+        <a href="#up" class="arrow-button up-button"></a>
+        <!--! Кнопка-стрелка "вниз" -->
+        <a href="#down" class="arrow-button down-button rotate180"></a>
+        <!--todo ЗАГОЛОВОК -->
+        <header>
+            <!--! Блок навігації сторінками -->
+            <nav id="up">
+                <a href="../lesson-3/lesson-3.html">&lArr; Pre</a>
+                <a href="../index.html">Main</a>
+                <a href="../lesson-5/lesson-5.html">Next &rArr;</a>
+            </nav>
+            <!--! Заголовок - Урок та Тема уроку -->
+            <h2 style ="text-align: center; color: blue">
+                <u>Урок-04:</u>
+            </h2>
+            <p 
+                style =
+                    "
+                        text-align: center;
+                        color: tomato;
+                        font-size: 32px
+                    "
+            >
+                Семантична верстка. Валідація.
+            </p>
+            <!--! Посилання-якір  -->
+            <h3 style ="color: blue">
+                <b>ЗМІСТ</b>
+                <!-- <br/> -->
+                <i>(посилання-якір):</i>
+            </h3>
+            <ul style ="color: rgb(127, 0, 212)">
+                <li><a href="#d1">Заголовок-1</a></li>
+                <li><a href="#d2">Заголовок-2</a></li>
+                <li><a href="#d3">Заголовок-3</a></li>
+                <li><a href="#d4">Заголовок-4</a></li>
+                <li><a href="#d5">Заголовок-5</a></li>
+                <li><a href="#d6">Заголовок-6​</a></li>
+                <li><a href="#d7">Заголовок-7</a></li>
+                <li><a href="#d8">Заголовок-8</a></li>
+                <li><a href="#d9">Заголовок-9</a></li>
+                <li><a href="#d10">Заголовок-10</a></li>
+                <li><a href="#d11">Заголовок-11​</a></li>
+                <li><a href="#d12">Заголовок-12</a></li>
+                <li><a href="#d13">Заголовок-13</a></li>
+                <li><a href="#d14">Заголовок-14</a></li>
+                <li><a href="#d15">Заголовок-15</a></li>
+            </ul>
+            <br />
+            <hr style ="color: rgb(127, 0, 212); width: 60%">
+        </header>
+
+        <main>
+            <!--todo УРОК-4 -->
+            <section>   
+                <!--! Блочні та рядкові теги -->
+                <!-- <h3 id="d1" style ="color: royalblue">
+                    <i>Блочні та рядкові теги:</i>
+                </h3> -->
+                <div id="d1"></div>
+                <!--? Приклади Блокових елементів  -->
+                <h4><u>Приклади Блокових елементів:</u></h4>
+
+                <div id="d2"></div>
+                <!--? Приклади Блокових елементів  -->
+                <h4><u>Приклади Блокових елементів-2:</u></h4>
+                
+                <!--? Приклади Рядкових елемент тегів -->
+                <h4><u>Приклади Рядкових елементів:</u></h4>
+                
+                <!--? корисне джерело інформації -->
+                <br />
+                <b style ="background-color:yellow">
+                    <span style ="color:deeppink">&#9888; </span><i style ="color:crimson"><u>корисне джерело інформації</u></i><span style ="color:deeppink"> &#9888;</span>
+                </b>
+                <ul>
+                    <li>
+                        <a 
+                            href="https://htmlreference.io/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <b>A free guide to HTML</b> - підкаже які тегі <b>рядкові</b> а які <b>блокові</b>
+                        </a>
+                    </li>
+                </ul>
+                
+                <!--! Символьні підстановки -->
+                <!-- <h3 id="d3" style ="color: royalblue">
+                    <i>Символьні підстановки:</i>
+                </h3> -->
+                <div id="d3"></div>
+                
+                <!--? корисне джерело інформації -->
+                <br />
+                <b style ="background-color:yellow">
+                    <span style ="color:deeppink">&#9888; </span><i style ="color:crimson"><u>корисне джерело інформації</u></i><span style ="color:deeppink"> &#9888;</span>
+                </b>
+                <ul>
+                    <li>
+                        <a 
+                            href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <b>HTML Living Standard</b> - Named character references
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://www.toptal.com/designers/htmlarrows/symbols/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            HTML Currency Symbols
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://symbl.cc/ru/html-entities/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            HTML-мнемоніки
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://symbl.cc/en/unicode/table/#khmer"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            List of Unicode Symbols
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://www.w3schools.com/html/html_symbols.asp"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            HTML Symbols
+                        </a>
+                    </li>
+                </ul>
+
+                <!--! Таблиці -->
+                <!-- <h3 id="d4" style ="color: royalblue">
+                    <i>Таблиці:</i>
+                </h3> -->
+                <div id="d4"></div>
+                <!--? Приклад таблиці з конспекту -->
+                <h4><u>Приклад таблиці з конспекту:</u></h4>
+
+                <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
+                <h4><u>Приклад таблиці з ДЗ-3 Бойко Владислава:</u></h4>
+
+                <!--! Форми -->
+                <!-- <h3 id="d5" style ="color: royalblue">
+                    <i>Форми:</i>
+                </h3> -->
+                <div id="d5"></div>
+                
+                <!--? Елемент <input> та значення його за допомогою JS-->
+                <h4 style ="color: tomato"><u>Елемент &lt;input&gt; та значення з його полів за допомогою JS:</u></h4>
+
+                <!--? Елемент <form>(I варіант <label>) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант &lt;label&gt;)</i>:</h4>
+
+        
+                <!--? Елемент <form>(II варіант <label>) -->
+                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант &lt;label&gt;)</i>:</h4>
+
+                <!--! Радіо-кнопки (перемикачі) -->
+                <!-- <h3 id="d6" style ="color: royalblue">
+                    <i>Радіо-кнопки (перемикачі):</i>
+                </h3> -->
+                <div id="d6"></div>
+
+                <!--! Чекбокси (прапорці) -->
+                <!-- <h3 id="d7" style ="color: royalblue">
+                    <i>Чекбокси (прапорці):</i>
+                </h3> -->
+                <div id="d7"></div>
+
+                <!--! Числа​ -->
+                <!-- <h3 id="d8" style ="color: royalblue">
+                    <i>Числа​:</i>
+                </h3> -->
+                <div id="d8"></div>
+
+                <!--! Телефонні номери -->
+                <!-- <h3 id="d9" style ="color: royalblue">
+                    <i>Телефонні номери​:</i>
+                </h3> -->
+                <div id="d9"></div>
+
+                <!--! Повзунки -->
+                <!-- <h3 id="d10" style ="color: royalblue">
+                    <i>Повзунки:</i>
+                </h3> -->
+                <div id="d10"></div>
+
+                <!--! Дата та час -->
+                <!-- <h3 id="d11" style ="color: royalblue">
+                    <i>Дата та час:</i>
+                </h3> -->
+                <div id="d11"></div>
+
+                <!--! Елемент <textarea> -->
+                <!-- <h3 id="d12" style ="color: royalblue">
+                    <i>Елемент &lt;textarea&gt;:</i>
+                </h3> -->
+                <div id="d12"></div>
+
+                <!--! Елемент <select> -->
+                <!-- <h3 id="d13" style ="color: royalblue">
+                    <i>Елемент &lt;select&gt;:</i>
+                </h3> -->
+                <div id="d13"></div>
+                <!--? Простий <select> -->
+                <h4><u>Простий &lt;select&gt;</u>:</h4>
+
+                <!--? Групування опцій у <select> -->
+                <h4><u>Групування опцій у &lt;select&gt;</u>:</h4>
+
+
+
+                <!--! Автозаповнення. Елемент <datalist> -->
+                <!-- <h3 id="d14" style ="color: royalblue">
+                    <i>Автозаповнення. Елемент &lt;select&gt;:</i>
+                </h3> -->
+                <div id="d14"></div>
+                <!--? Простий <datalist> -->
+                <h4><u>Простий &lt;datalist&gt;</u>:</h4>
+
+                <!--? <datalist> де опції та значення не збігаються -->
+                <h4><u>&lt;datalist&gt; де опції та значення не збігаються</u>:</h4>
+
+
+                <!--! Групування полів. Елементи <fieldset> і <legend> -->
+                <!-- <h3 id="d15" style ="color: royalblue">
+                    <i>Групування полів. Елементи &lt;fieldset&gt; і &lt;legend&gt;:</i>
+                </h3> -->
+                <div id="d15"></div>
+            </section>
+        </main>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <!--todo ПІДВАЛ -->
+        <footer id="down" style ="outline: 2px solid tomato">
+            <p style =
+                "
+                    color: tomato;
+                    /* outline: 1px solid tomato;  */
+                    /* width: 100% */
+                "
+            >
+            До зустрічі на наступному уроці &rArr;
+            <b><a style ="color: blue" href="../lesson-4/lesson-5.html"> Урок-4</a></b> 
+            </p>
+        </footer>
+        <!--* JS script який створює різні заголовки -->
+        <script>
+                // Определяем функцию для создания заголовка
+            function createHeaderElement(headerContent) {
+                    // Создаем новый элемент h3
+                const headerElement = document.createElement("h3");
+                    // Устанавливаем стиль
+                headerElement.style.color = "royalblue";
+                headerElement.style.marginTop = "80px";
+                    // Устанавливаем содержимое с переменной
+                headerElement.innerHTML = "<i>" + headerContent + "</i>";
+                    // Возвращаем созданный элемент
+                return headerElement;
+            }
+                // Получаем контейнеры, куда будем добавлять заголовки
+            // const headerContainer1 = document.getElementById("headerContainer1");
+            // const headerContainer2 = document.getElementById("headerContainer2");
+            const d1 = document.getElementById("d1");
+            const d2 = document.getElementById("d2");
+            const d3 = document.getElementById("d3");
+            const d4 = document.getElementById("d4");
+            const d5 = document.getElementById("d5");
+            const d6 = document.getElementById("d6");
+            const d7 = document.getElementById("d7");
+            const d8 = document.getElementById("d8");
+            const d9 = document.getElementById("d9");
+            const d10 = document.getElementById("d10");
+            const d11 = document.getElementById("d11");
+            const d12 = document.getElementById("d12");
+            const d13 = document.getElementById("d13");
+            const d14 = document.getElementById("d14");
+            const d15 = document.getElementById("d15");
+
+                // Пример использования функции с разными значениями
+            // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
+            // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
+            d1.appendChild(createHeaderElement("Заголовок-1:"));
+            d2.appendChild(createHeaderElement("Заголовок-2:"));
+            d3.appendChild(createHeaderElement("Заголовок-3:"));
+            d4.appendChild(createHeaderElement("Заголовок-4:"));
+            d5.appendChild(createHeaderElement("Заголовок-5:"));
+            d6.appendChild(createHeaderElement("Заголовок-6:"));
+            d7.appendChild(createHeaderElement("Заголовок-7:"));
+            d8.appendChild(createHeaderElement("Заголовок-8:"));
+            d9.appendChild(createHeaderElement("Заголовок-9:"));
+            d10.appendChild(createHeaderElement("Заголовок-10:"));
+            d11.appendChild(createHeaderElement("Заголовок-12:"));
+            d12.appendChild(createHeaderElement("Заголовок-12:"));
+            d13.appendChild(createHeaderElement("Заголовок-13:"));
+            d14.appendChild(createHeaderElement("Заголовок-14:"));
+            d15.appendChild(createHeaderElement("Заголовок-15:"));
+        </script>
+    </body>
+</html>
