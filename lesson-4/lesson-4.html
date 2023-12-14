@@ -132,7 +132,7 @@
         <title>Lesson-04</title>
     </head>
 
-    <>
+    <body>
         <!--todo КНОПКИ-СТРЕЛКИ -->
         <!--! Кнопка-стрелка "наверх" -->
         <a href="#up" class="arrow-button up-button"></a>
@@ -196,14 +196,14 @@
                 </h3> -->
                 <div id="d1"></div>
                 <!--? Позаголовок-1  -->
-                <h4><u>Позаголовок-1:</u></h4>
+                <h4 style="color: darkred;"><u>Позаголовок-1:</u></h4>
 
                 <div id="d2"></div>
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
                 
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
                 
                 <!--? корисне джерело інформації -->
                 <br />
@@ -227,50 +227,102 @@
                     <i>Структурна розмітка:</i>
                 </h3> -->
                 <div id="d3"></div>
-                <!--? Тег <header> -->
-                <h4><u>Тег &lt;header&gt;</u>:</h4>
-                
-                <pre>
+                <!--? Структура сторінки -->
+                <h4 style="color: darkred;"><u>Структура сторінки</u>:</h4>
+                <pre style="background-color:rgb(240, 240, 240); padding-right: 330px; width: 1000px">
                     <code style="font-size: 24px;">
                         &lt;body&gt;
-                            <span style="color: lightgrey;">&lt;!-- Шапка сторінки --&gt;</span>
-                            &lt;header&gt;
-                                &lt;a href="/"&gt;<span style="color: cornflowerblue;"><i>Логотип сайту</i></span>&lt;/a&gt;
-                                &lt;ul&gt;
-                                    <span style="color: cornflowerblue;"><i>Меню навігації по інших сторінках</i></span>
-                                &lt;/ul&gt;
-                            &lt;/header&gt;
+                            <span style="color: lightgrey;"><i>&lt;!-- Шапка сторінки --&gt;</i></span>
+                            &lt;<b>header</b>&gt;
+                                <span style="color: cornflowerblue;"><b>Контент Шапки сторінки</b></span>
+                            &lt;<b>/header</b>&gt;
+                            <br/>
+                            <span style="color: lightgrey;"><i>&lt;!-- Унікальний контент сторінки --&gt;</i></span>
+                            &lt;<b>main</b>&gt;
+                                <span style="color: cornflowerblue;"><b>весь Унікальний контент сторінки</b></span>
+                            &lt;<b>/main</b>&gt;
+                            <br/>
+                            <span style="color: lightgrey;"><i>&lt;!-- Підвал сторінки --&gt;</i></span>
+                            &lt;<b>footer</b>&gt;
+                                <span style="color: cornflowerblue;"><b>контент Підвалу сторінки</b></span>
+                            &lt;<b>/footer</b>&gt;
                         &lt;/body&gt;
                     </code>
                 </pre>
-                <!--? Тег <footer> -->
-                    <h4><u>Тег &lt;footer&gt;</u>:</h4>
-                
-                    <pre>
+                <!--? Тег <header> -->
+                <h4 style="color: darkred;"><u>Тег &lt;header&gt;</u>:</h4>
+                <pre style="background-color:rgb(200, 255, 237); padding-right: 330px; width: 1000px">
+                    <code style="font-size: 24px;">
+                        &lt;body&gt;
+                            <span style="color: lightgrey;"><i>&lt;!-- Шапка сторінки --&gt;</i></span>
+                            &lt;<b>header</b>&gt;
+                                &lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Логотип сайту</b></span>&lt;/a&gt;
+                                <span style="color: brown"><b>&lt;nav&gt;</b></span>
+                                    <span style="color: lightgrey;"><i>&lt;!--Меню навігації по інших сторінках --&gt;</i></span>
+                                    &lt;ul&gt;
+                                        &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Page-1</b></span>&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Page-2</b></span>&lt;/a&gt;&lt;/li&gt;
+                                        &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Page-3</b></span>&lt;/a&gt;&lt;/li&gt;
+                                    &lt;/ul&gt;
+                                <span style="color: brown"><b>&lt;/nav&gt;</b></span>
+                            &lt;<b>/header</b>&gt;
+                            <br/>
+                            .
+                            .
+                            .
+                            <br/>
+                        &lt;/body&gt;
+                    </code>
+                </pre>
+                <!--? Тег <main> -->
+                    <h4 style="color: darkred;"><u>Тег &lt;main&gt;</u>:</h4>
+                    <pre style="background-color:rgb(255, 255, 204); padding-right: 330px; width: 1000px">
                         <code style="font-size: 24px;">
                             &lt;body&gt;
-                                <span style="color:lightgrey;">&lt;!-- Шапка сторінки --&gt;</span>
-                                &lt;header&gt;
-                                    &lt;a href="/"&gt;<span style="color:cornflowerblue"><i>Логотип сайту</i></span>&lt;/a&gt;
+                                <br/>
+                                .
+                                .
+                                .
+                                <br/>
+                                <span style="color: lightgrey;"><i>&lt;!-- Унікальний контент сторінки --&gt;</i></span>
+                                &lt;<b>main</b>&gt;
+                                    &lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Логотип сайту</b></span>&lt;/a&gt;
                                     &lt;ul&gt;
-                                        <span style="color: cornflowerblue;"><i>Меню навігації по інших сторінках</i></span>
+                                        <span style="color: cornflowerblue;"><b>Меню навігації по інших сторінках</b></span>
                                     &lt;/ul&gt;
-                                &lt;/header&gt;
-
-                                <span style="color: lightgrey;">&lt;!-- Підвал сторінки --&gt;</span>
-                                &lt;footer&gt;
-                                    <span style="color: lightgrey;">&lt;!-- Копірайт --&gt;</span>
-                                    &lt;p&gt;<span style="color: cornflowerblue;"><i>Всі права захищені &copy; lpj.dev</i></span>&lt;/p&gt;
-                                    <span style="color: lightgrey;">&lt;!-- Посилання на соцмережі --&gt;</span>
-                                    &lt;ul&gt;
-                                        &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><i>Facebook</i></span>&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><i>Twitter</i></span>&lt;/a&gt;&lt;/li&gt;
-                                        &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><i>Instagram</i></span>&lt;/a&gt;&lt;/li&gt;
-                                    &lt;/ul&gt;
-                                &lt;/footer&gt;
+                                &lt;<b>/main</b>&gt;
+                                <br/>
+                                .
+                                .
+                                .
+                                <br/>
                             &lt;/body&gt;
                         </code>
                     </pre>
+                <!--? Тег <footer> -->
+                <h4 style="color: darkred;"><u>Тег &lt;footer&gt;</u>:</h4>
+                <pre style="background-color: rgb(255, 239, 215); padding-right: 330px; width: 1000px">
+                    <code style="font-size: 24px">
+                        &lt;body&gt;
+                            <br/>
+                            .
+                            .
+                            .
+                            <br/>
+                            <span style="color: lightgrey;"><i>&lt;!-- Підвал сторінки --&gt;</i></span>
+                            &lt;<b>footer</b>&gt;
+                                <span style="color: lightgrey;"><i>&lt;!-- Копірайт --&gt;</i></span>
+                                &lt;p&gt;<span style="color: cornflowerblue;"><b>Всі права захищені &copy; lpj.dev</b></span>&lt;/p&gt;
+                                <span style="color: lightgrey;"><i>&lt;!-- ⚠️ Посилання на соцмережі, не &lt;nav&gt; --&gt;</i></span>
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Facebook</b></span>&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Twitter</b></span>&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="/"&gt;<span style="color: cornflowerblue;"><b>Instagram</b></span>&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;<b>/footer</b>&gt;
+                        &lt;/body&gt;
+                    </code>
+                </pre>
                 
                 <!--? корисне джерело інформації -->
                 <br />
@@ -331,10 +383,10 @@
                 </h3> -->
                 <div id="d4"></div>
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
                 <!--! Форми -->
                 <!-- <h3 id="d5" style ="color: royalblue">
@@ -343,14 +395,14 @@
                 <div id="d5"></div>
                 
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
         
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
                 <!--! Радіо-кнопки (перемикачі) -->
                 <!-- <h3 id="d6" style ="color: royalblue">
@@ -400,10 +452,10 @@
                 </h3> -->
                 <div id="d13"></div>
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
 
 
@@ -413,10 +465,10 @@
                 </h3> -->
                 <div id="d14"></div>
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
                 <!--? Позаголовок -->
-                <h4><u>Позаголовок</u>:</h4>
+                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
 
                 <!--! Групування полів. Елементи <fieldset> і <legend> -->
