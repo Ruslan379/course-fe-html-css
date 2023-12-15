@@ -118,17 +118,6 @@
                 border: 1px solid #2a2a2a;
             }
         </style>
-        <!--! Додаем стили для таблиц -->
-        <!-- <style>
-            table {
-                border-collapse: collapse;
-            }
-            table th,
-            table td {
-                padding: 10px;
-                border: 1px solid #2a2a2a;
-            }
-        </style> -->
         <title>Lesson-04</title>
     </head>
 
@@ -167,8 +156,8 @@
                 <i>(посилання-якір):</i>
             </h3>
             <ul style ="color: rgb(127, 0, 212)">
-                <li><a href="#d1">Заголовок-1</a></li>
-                <li><a href="#d2">Заголовок-2</a></li>
+                <li><a href="#d1">Значення та сутність семантики</a></li>
+                <li><a href="#d2">Структура HTML-документу</a></li>
                 <li><a href="#d3">Структурна розмітка</a></li>
                 <li><a href="#d4">Заголовок-4</a></li>
                 <li><a href="#d5">Заголовок-5</a></li>
@@ -190,37 +179,49 @@
         <main>
             <!--todo УРОК-4 -->
             <section>   
-                <!--! Блочні та рядкові теги -->
+                <!--! Значення та сутність семантики -->
                 <!-- <h3 id="d1" style ="color: royalblue">
-                    <i>Блочні та рядкові теги:</i>
+                    <i>Значення та сутність семантики:</i>
                 </h3> -->
                 <div id="d1"></div>
-                <!--? Позаголовок-1  -->
-                <h4 style="color: darkred;"><u>Позаголовок-1:</u></h4>
-
+                <div style ="background-color: rgb(231, 231, 231)">
+                    <img 
+                    src="../images/lessons/semantic_markup.jpeg" 
+                    alt="Значення та сутність семантики"
+                    width="800px" 
+                    
+                    />
+                </div>
+                
+                <!--! Структура HTML-документу -->
+                <!-- <h3 id="d3" style ="color: royalblue">
+                    <i>ССтруктура HTML-документу:</i>
+                </h3> -->
                 <div id="d2"></div>
-                <!--? Позаголовок -->
-                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
+                <div style ="background-color: rgb(231, 231, 231)">
+                    <img 
+                    src="../images/lessons/html_document_structure.webp" 
+                    alt="Значення та сутність семантики"
+                    width="800px" 
+                    
+                    />
+                </div>
+                <!--? Елементи верхнього рівня -->
+                <h4 style="color: darkred"><u>Елементи верхнього рівня</u>:</h4>
+                <p>
+                    <b style ="font-size: 28px; color: green">&lt;html&gt;<i style ="font-size: 20px; color: blue">ВСЯ СТРУКТУРА web-сторінки</i>&lt;/html&gt;</b>
+                </p>
+                <p>
+                    <b style ="font-size: 20px">&lt;head&gt;<i style ="font-size: 16px; color: blue">СЛУЖБОВА ІНФОРМАЦІЯ для браузера та пошукових систем</i>&lt;/head&gt;</b>
+                </p>
+                <p>
+                    <b style ="font-size: 20px">&lt;body&gt;<i style ="font-size: 16px; color: blue">ВЕСЬ КОТЕНТ web-сторінки</i>&lt;/body&gt;</b>
+                </p>
+
+
+
+
                 
-                <!--? Позаголовок -->
-                <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
-                
-                <!--? корисне джерело інформації -->
-                <br />
-                <b style ="background-color:yellow">
-                    <span style ="color:deeppink">&#9888; </span><i style ="color:crimson"><u>корисне джерело інформації</u></i><span style ="color:deeppink"> &#9888;</span>
-                </b>
-                <ul>
-                    <li>
-                        <a 
-                            href="https://htmlreference.io/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            <b>A free guide to HTML</b> - підкаже які тегі <b>рядкові</b> а які <b>блокові</b>
-                        </a>
-                    </li>
-                </ul>
                 
                 <!--! Структурна розмітка -->
                 <!-- <h3 id="d3" style ="color: royalblue">
@@ -228,7 +229,7 @@
                 </h3> -->
                 <div id="d3"></div>
                 <!--? Основні частини структури сторінки -->
-                <h4 style="color: darkred;"><u>Основні частини структури сторінки</u>:</h4>
+                <h4 style="color: darkred"><u>Основні частини структури сторінки</u>:</h4>
                 <pre style="background-color:rgb(240, 240, 240); padding-right: 350px; width: 1000px">
                     <code style="font-size: 20px;">
                         &lt;body&gt;
@@ -250,7 +251,7 @@
                     </code>
                 </pre>
                 <!--? Тег <header> -->
-                <h4 style="color: darkred;"><u>Тег &lt;header&gt;</u>:</h4>
+                <h4 style="color: darkred"><u>Тег &lt;header&gt;</u>:</h4>
                 <pre style="background-color:rgb(200, 255, 237); padding-right: 350px; width: 1000px">
                     <code style="font-size: 20px;">
                         &lt;body&gt;
@@ -315,7 +316,7 @@
                         </code>
                     </pre>
                 <!--? Тег <footer> -->
-                <h4 style="color: darkred;"><u>Тег &lt;footer&gt;</u>:</h4>
+                <h4 style="color: darkred"><u>Тег &lt;footer&gt;</u>:</h4>
                 <pre style="background-color: rgb(255 154 68 / 68%);; padding-right: 350px; width: 1000px">
                     <code style="font-size: 20px">
                         &lt;body&gt;
@@ -544,6 +545,23 @@
                 <!--? Позаголовок -->
                 <h4 style="color: darkred;"><u>Позаголовок</u>:</h4>
 
+                <!--? корисне джерело інформації -->
+                <br />
+                <b style ="background-color:yellow">
+                    <span style ="color:deeppink">&#9888; </span><i style ="color:crimson"><u>корисне джерело інформації</u></i><span style ="color:deeppink"> &#9888;</span>
+                </b>
+                <ul>
+                    <li>
+                        <a 
+                            href="https://htmlreference.io/"
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <b>A free guide to HTML</b> - підкаже які тегі <b>рядкові</b> а які <b>блокові</b>
+                        </a>
+                    </li>
+                </ul>
+
 
                 <!--! Групування полів. Елементи <fieldset> і <legend> -->
                 <!-- <h3 id="d15" style ="color: royalblue">
@@ -605,8 +623,8 @@
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
-            d1.appendChild(createHeaderElement("Заголовок-1:"));
-            d2.appendChild(createHeaderElement("Заголовок-2:"));
+            d1.appendChild(createHeaderElement("Значення та сутність семантики:"));
+            d2.appendChild(createHeaderElement("Структура HTML-документу:"));
             d3.appendChild(createHeaderElement("Структурна розмітка:"));
             d4.appendChild(createHeaderElement("Заголовок-4:"));
             d5.appendChild(createHeaderElement("Заголовок-5:"));
