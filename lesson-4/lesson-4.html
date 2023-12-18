@@ -184,6 +184,7 @@
                 <li><a href="#d4">Алгоритм вибору тегу​</a></li>
                 <li><a href="#d5">Взаємовідносини між тегами</a></li>
                 <li><a href="#d6">Валідація</a></li>
+                <li>⚠️ <i><a href="#d7" style="color: green;">Гарна підказка з ДЗ-4 для розумників</a></i> ⚠️</li>
             </ul>
             <br />
             <hr style ="color: rgb(127, 0, 212); width: 60%">
@@ -661,12 +662,38 @@
                         </a>
                     </li>
                 </ul>
+                <!-- !---------------------------------------- -->
+                <!--? Генерація валідного посилання на код ДЗ-4 -->
+                <h3 
+                    id="d7" 
+                    style="color: green; margin-bottom: 5px; "
+                    >
+                    ⚠️ <b>Гарна підказка з ДЗ-4 для розумників: </b> ⚠️
+                </h3>
+                <h4 style="color: darkred; margin-top: 0"><u>Генерація валідного посилання на приклад коду ДЗ-4</u>:</h4>
+                <form id="myForm" action="">
+                    <label for="inputText">Введіть <u><b style="color: green;">правильне</b></u> значення частини посилання:</label>
+                    <input type="text" id="inputText">
+                    <button onclick="generateLink()">Генерувати посилання</button>
+                </form>
+                <br />
+                <!-- * Додаємо елемент <a> для відображення посилання -->
+                <p><b>Згенероване посилання:</b></p>
+                <a 
+                    style="color: blue;"
+                    id="generatedLink" 
+                    href="" 
+                    target="_blank"
+                >
+                </a>
+                <!-- !---------------------------------------- -->
             </section>
         </main>
         <br/>
         <br/>
         <br/>
         <br/>
+        <a href=""></a>
         <!--todo ПІДВАЛ -->
         <footer id="down" style ="outline: 2px solid tomato">
             <p style =
@@ -722,7 +749,7 @@
             d4.appendChild(createHeaderElement("Алгоритм вибору тегу​:"));
             d5.appendChild(createHeaderElement("Взаємовідносини між тегами:"));
             d6.appendChild(createHeaderElement("Валідація:"));
-            // d7.appendChild(createHeaderElement("Заголовок-7:"));
+            // d7.appendChild(createHeaderElement("Підказка з ДЗ-4 для розумників:"));
             // d8.appendChild(createHeaderElement("Заголовок-8:"));
             // d9.appendChild(createHeaderElement("Заголовок-9:"));
             // d10.appendChild(createHeaderElement("Заголовок-10:"));
@@ -731,6 +758,65 @@
             // d13.appendChild(createHeaderElement("Заголовок-13:"));
             // d14.appendChild(createHeaderElement("Заголовок-14:"));
             // d15.appendChild(createHeaderElement("Заголовок-15:"));
+        </script>
+        <!--* JS script який генерує посилання та виводить його на сторінці -->
+        <script>
+            function generateLink() {
+                document.getElementById('myForm').addEventListener('submit', function (event) {
+                    event.preventDefault(); // Предотвращаем перезагрузку страницы
+
+                    // ------- Код обработки формы здесь -------
+                    // ------- Получаем значение из поля ввода -------
+                    const userInput = document.getElementById("inputText").value;
+                
+                    // ------- Получаем ссылку для обновления -------
+                    const generatedLink = document.getElementById("generatedLink");
+                
+                    // ------- Проверяем, чтобы поле не было пустым -------
+                    if (userInput.trim() !== "") {
+                        // Строим новый адрес с введенным значением
+                        // const newUrl = "https://" + userInput + ".github.io/goit-markup-hw-08/index.html";
+                        const newUrl = "https://ruslan379.github.io/" + userInput + "/index.html";
+                        // Устанавливаем новый адрес в атрибут href
+                        generatedLink.href = newUrl;
+                        // Отображаем ссылку на странице (можно изменить на другой метод отображения)
+                        generatedLink.innerText = newUrl;
+                        // Выводим результат в консоль (можно изменить на вывод в другой элемент или использовать alert)
+                        console.log(newUrl);
+                    } else {
+                        generatedLink.href = "https://ruslan379.github.io/?????????????????/index.html";
+                        generatedLink.innerText = "https://ruslan379.github.io/?????????????????/index.html";
+                        alert("Це поле не може бути пустим!");
+                    }
+
+                    // ------- Пример: получение значения поля username -------
+                    // const usernameValue = document.getElementById('username').value;
+                    // console.log('Username:', usernameValue);
+                });
+            }
+            // ------- Пример: Без использования <form></form> -------
+            // function generateLink() {
+            //     // Получаем значение из поля ввода
+            //     const userInput = document.getElementById("inputText").value;
+    
+            //     // Получаем ссылку для обновления
+            //     const generatedLink = document.getElementById("generatedLink");
+    
+            //     // Проверяем, чтобы поле не было пустым
+            //     if (userInput.trim() !== "") {
+            //         // Строим новый адрес с введенным значением
+            //         // const newUrl = "https://" + userInput + ".github.io/goit-markup-hw-08/index.html";
+            //         const newUrl = "https://ruslan379.github.io/" + userInput + "/index.html";
+            //         // Устанавливаем новый адрес в атрибут href
+            //         generatedLink.href = newUrl;
+            //         // Отображаем ссылку на странице (можно изменить на другой метод отображения)
+            //         generatedLink.innerText = newUrl;
+            //         // Выводим результат в консоль (можно изменить на вывод в другой элемент или использовать alert)
+            //         console.log(newUrl);
+            //     } else {
+            //         alert("Пожалуйста, введите текстовое значение.");
+            //     }
+            // }
         </script>
     </body>
 </html>
