@@ -182,7 +182,7 @@
                 <li><a href="#d2">Встановлення програми контролю версій Git</a></li>
                 <li><a href="#d3">Взаємодія Git та GitHub</a></li>
                 <li><a href="#d4">Покрокова інструкція реєстрації на GitHub</a></li>
-                <li><a href="#d5">Файл .gitignore</a></li>
+                <li><a href="#d5">Файл <b>.gitignore</b></a></li>
                 <li><a href="#d6">Робота з віртуальним (віддаленим) репозиторієм</a></li>
                 <li><a href="#d7">Основні git-команди</a></li>
                 <li><a href="#d8">Хостинг GitHub Pages​</a></li>
@@ -636,15 +636,86 @@
                 </div>
 
 
-
-
                 <!--! Файл .gitignore -->
                 <!-- <h3 id="d5" style ="color: royalblue">
                     <i>Файл .gitignore:</i>
                 </h3> -->
                 <div id="d5"></div>
-                <!--? Позаголовок -->
-                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+                <div style="width: 800px">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Якщо створити файл <b>.gitignore</b> в своєму репозиторії, Git використовує його, щоб визначити, які файли і каталоги (або цілі шаблони) ігнорувати, перш ніж здійснювати commit. 
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Зазвичай він використовується, щоб уникнути передачі тимчасових файлів з вашого робочого каталогу, файли налаштувань проекту, створені середовищем розробки і тощо.
+                    </p>
+                </div>
+                <!--? Приклад запису файлу .gitignore -->
+                <h4 style="color: darkred"><u>Приклад запису файлу .gitignore</u>:</h4>
+                <div style="width: 800px; display: grid; place-items: center">
+                    <pre >
+# Ігнор-лист файлів проекту
+# Ігнорувати всі файли і директорії, включаючи піддиректорії і файли в них<span style="font-size: larger; color: red">
+*
+</span>
+# ---- ФАЙЛИ ----
+# Ігнорування по типу файлу, будуть ігноруватися в АБСОЛЮТНО всіх директоріях
+# Наприклад /files/data.zip, /server.log, /uploads/users/data/info.xls<span style="font-size: larger; color: red">
+*.zip
+*.log
+*.pdf
+*.xls
+</span>
+# Ігнорування файлу у ВСІХ директоріях
+# Наприклад /params/db/config.php, /config.php<span style="font-size: larger; color: red">
+config.php
+</span>
+# Ігнорування конкретного файлу ТІЛЬКИ в корені проекту
+# (корнем вважається розташування файлу .gitignore)
+# Наприклад НЕ БУДЕ проігнорований файл /db/config.php<span style="font-size: larger; color: red">
+/config.php
+</span>
+# Ігнорування конкретного файлу ТІЛЬКИ у вказаній директорії
+# Наприклад НЕ БУДЕ проігнорований файл /prod/params/config.php<span style="font-size: larger; color: red">
+/params/config.php
+</span>
+# ---- Директорії ----
+# Ігнорування всіх файлів і папок ТІЛЬКИ в конкретної директорії (включаючи піддиректорії і файли в них)
+# Наприклад /images/user.jpg, /images/company/logo.png
+# НЕ БУДУТЬ проігноровані файли і папки /prod/images/user.jpg<span style="font-size: larger; color: red"></span>
+/images/*
+</span>
+# Ігнорування всіх файлів і папок в будь-яких директоріях з вказаним ім'ям
+# Наприклад /images/user.jpg, /core/images/user.jpg<span style="font-size: larger; color: red">
+images/*
+</span>
+# Ігнорування ВСІХ html-файлів ОДНІЄЇ ПЕВНОЇ директорії (НЕ ВКЛЮЧАЮЧИ піддиректорії)
+# Наприклад /private/index.html
+# НЕ БУДУТЬ проігноровані файли в /private/ivan/index.html<span style="font-size: larger; color: red">
+/private/*.html
+</span>
+# Ігнорування ВСІХ html-файлів в КОНКРЕТНОЮ директорії ТОМУ ЧИСЛІ піддиректорії
+# Наприклад /private/info.html, /private/users/ivan/info.html<span style="font-size: larger; color: red">
+/private/**/*.html
+</span>
+# ---- РІЗНЕ ----
+# Виняток з ігнорування
+# Ігнорування ВСІХ файлів і папок всередині директорії /secret,
+# за винятком файлу /secret/free.txt, він не буде проігнорований<span style="font-size: larger; color: red">
+/secret/*
+!/secret/free.txt
+</span>
+# Ігнорування файлу з ім'ям, що містить спеціальні символи
+# Наприклад !readme!.txt<span style="font-size: larger; color: red">
+\!readme!.txt
+</span>
+# Ігнорування всіх JPG і JPEG файлів всередині директорій,
+# які починаються на "h" і МОЖУТЬ містити ще один символ після
+# Наприклад /images/h4/user.jpg, /images/h/company.jpeg<span style="font-size: larger; color: red">
+/images/h?/*.jp?g
+</span>
+                    </pre>
+                </div>
+
 
 
                 <!--! Робота з віртуальним (віддаленим) репозиторієм -->
