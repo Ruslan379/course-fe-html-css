@@ -1,42 +1,86 @@
-body {
+/* body {
     background-color: aqua;
     color: red;
-}
+} */
 
 /* Селектор ідентифікатора */
-#title-2 {
+/* #title-2 {
     color: green;
-}
+} */
 
 /* Селектор груп */
-h1,
+/* h1,
 h2,
 h3 {
     color: blue;
-}
+} */
 
 
 /* Селектор нащадку */
-body li {
+/* body li {
     background-color: burlywood;
-}
+} */
 
 /* Дочірний селектор */
-li > p {
+/* li > p {
     color: teal;
-}
+} */
 
 /* Сусідній селектор */
-p + a {
+/* p + a {
     background-color: aliceblue;
-}
+} */
 
 /* Споріднений селектор */
-p ~ a {
+/* p ~ a {
     background-color: aliceblue;
-}
+} */
 
 /* Селектор атрибуту */
-a[href="./"] {
+/* a[href="./"] {
     background-color: yellow
+} */
+
+
+
+
+
+
+:root {
+    /* ============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+    --color-font-body: red;
+    --color-background-body: aqua;
+
+
+    /* ============ ПЕРЕМЕННЫЕ ЦВЕТА ============ */
+    --color-font-main: #212121;
+    --color-font-head: #757575;
+    --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
+    --color-font-footer: rgba(255, 255, 255, 0.6);
+    /* =============================== */
+    --color-background-another: #E5E5E5;
+    --color-background-team: #F5F4FA;
+    --color-background-footer: #2F303A;
+    --color-background-footer-icon: rgba(255, 255, 255, 0.1);
+    --color-background-backdrop: rgba(0, 0, 0, 0.2);
+    --color-background-activity: rgba(47, 48, 58, 0.8);
+    --color-background-overlay: rgba(33, 150, 243, 0.9);
+    /* =============================== */
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    /* =============================== */
+    --color-border-line: #ECECEC;
+    --color-borders-portfolio: #EEEEEE;
+    --color-border-clients: #AFB1B8;
+    --color-border-modal: rgba(33, 33, 33, 0.2);
+    /* =============================== */
+    --color-logo-links-hover: #2196F3;
+    --color-button-hover: #188CE8;
+    /* ========================================== */
+
 }
+
+/* body {
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+} */
