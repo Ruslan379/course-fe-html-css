@@ -1,0 +1,42 @@
+body {
+    background-color: aqua;
+    color: red;
+}
+
+/* Селектор ідентифікатора */
+#title-2 {
+    color: green;
+}
+
+/* Селектор груп */
+h1,
+h2,
+h3 {
+    color: blue;
+}
+
+
+/* Селектор нащадку */
+body li {
+    background-color: burlywood;
+}
+
+/* Дочірний селектор */
+li > p {
+    color: teal;
+}
+
+/* Сусідній селектор */
+p + a {
+    background-color: aliceblue;
+}
+
+/* Споріднений селектор */
+p ~ a {
+    background-color: aliceblue;
+}
+
+/* Селектор атрибуту */
+a[href="./"] {
+    background-color: yellow
+}
