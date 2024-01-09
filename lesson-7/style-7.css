@@ -4,24 +4,22 @@ img {
     height: auto;
 }
 
-.father-box {
-    display: flex;
-    overflow-x: hidden;
+.box {
     position: relative;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-end;
     width: 600px;
     /* height: 311px; */
-    justify-content: flex-end;
-
     border: 2px solid #696969;
     border-radius: 8px;
     /* box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23); */
     box-shadow: 12px 12px 18px rgba(27, 27, 26, 0.47);
-
     /* outline: 2px solid tomato; */
 }
 
 /* ! for test */
-.box-hidden-left {
+.box_hidden-left {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -36,7 +34,7 @@ img {
 }
 
 /* ! for test */
-.box-hidden-right {
+.box_hidden-right {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -50,11 +48,11 @@ img {
     border: #3f51b5 2px solid;
 }
 
-.box-image {
+.box_image {
     animation-name: move;
     /* animation-direction: alternate-reverse; */
     animation-direction: alternate;
-    animation-duration: 50s;
+    animation-duration: 55s;
     animation-timing-function: linear;
     animation-delay: 1000ms;
     animation-iteration-count: infinite;
@@ -64,7 +62,6 @@ img {
     0% {
         transform: translatex(0);
     }
-
     100% {
         transform: translatex(1319px);
         /* transform: translatex(calc(100vw - 166px)); */
