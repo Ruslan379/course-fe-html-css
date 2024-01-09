@@ -182,6 +182,7 @@
             </h2>
             <ul style ="color: rgb(127, 0, 212)">
                 <li><a href="#d1">Магія за допомогою CSS</a></li>
+                <!-- <li><a href="#playAudio">Магія за допомогою CSS</a></li> -->
                 <li><a href="#d2">Заголовок-2</a></li>
                 <li><a href="#d3">Заголовок-3</a></li>
                 <li><a href="#d4">Заголовок-4</a></li>
@@ -220,6 +221,18 @@
                     <!-- <div class="box_hidden-left"></div> -->
                     <!-- <div class="box_hidden-right"></div> -->
                 </div>
+                <br/>
+                <!-- ? autoplay -->
+                <!-- ? controls -->
+                <audio 
+                    id="myAudio"
+                    src="./audio-7/era-dorime-a-vot-eto-original.mp3" 
+                    controls
+                    loop 
+                    preload="auto"
+                    volume="0.5"
+                >
+                </audio>
                 
 
                 <!--? Позаголовок -->
@@ -584,5 +597,17 @@
             d14.appendChild(createHeaderElement("Заголовок-14:"));
             d15.appendChild(createHeaderElement("Заголовок-15:"));
         </script>
+        <!--* JS script який завантажує АУДІО на сторінці  НЕ ПРАЦЮЄ -->
+        <!-- <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              // Получаем элемент аудио
+                const audio = document.getElementById('myAudio');
+                // Проверяем наличие якоря в URL
+                if (window.location.hash === '#playAudio') {
+                    // Если якорь есть, начинаем воспроизведение аудио
+                    audio.play();
+                }
+            });
+        </script> -->
     </body>
 </html>
