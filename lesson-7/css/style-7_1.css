@@ -1,4 +1,10 @@
-img {
+/* img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
+
+.pano_2014-12-14 {
     display: block;
     /* max-width: 100%; */
     height: auto;
