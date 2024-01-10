@@ -1,6 +1,11 @@
-.pano_img_3691-3720 {
+img {
     display: block;
     /* max-width: 100%; */
+    height: auto;
+}
+
+.pano_img_3691-3720 {
+    display: block;
     height: 600px;
 }
 
