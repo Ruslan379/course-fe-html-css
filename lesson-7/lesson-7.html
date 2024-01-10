@@ -186,8 +186,8 @@
                 <li><a href="#d1">Магія за допомогою CSS</a></li>
                 <!-- <li><a href="#playAudio">Магія за допомогою CSS</a></li> -->
                 <li><a href="#d2">Способи підключення стилів CSS (Cascading Style Sheets)</a></li>
-                <li><a href="#d3">Заголовок-3</a></li>
-                <li><a href="#d4">Заголовок-4</a></li>
+                <li><a href="#d3">Будова CSS-правила (синтаксис)</a></li>
+                <li><a href="#d4">Види CSS-селекторів</a></li>
                 <li><a href="#d5">Заголовок-5</a></li>
                 <li><a href="#d6">Заголовок-6​</a></li>
                 <li><a href="#d7">Заголовок-7</a></li>
@@ -351,11 +351,52 @@
                 </div>
                 <br />
 
-                <!--! Заголовок-3 -->
+                <!--! Будова CSS-правила (синтаксис) -->
                 <!-- <h3 id="d3" style ="color: royalblue">
-                    <i>Заголовок-3:</i>
+                    <i>Будова CSS-правила (синтаксис):</i>
                 </h3> -->
                 <div id="d3"></div>
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        <b>Блок CSS-коду</b> називається <b>правилом</b>, яке складається з <span style="color: blue"><b>селектора</b> <i>(selector)</i></span>  і <span style="color: blue"><b>групи оголошень</b> <i>(declaration)</i></span> у фігурних дужках та відповідає на ТРИ запитання:
+                    </p>
+                </div>
+                <ol style="font-size: 32px; text-shadow: 2px 2px 6px #808080">
+                    <li><span style="color: red"><b>КОГО</b></span> стилізуємо?</li>
+                    <li><span style="color: green"><b>ЩО</b></span> стилізуємо?</li>
+                    <li><span style="color: yellow"><b>ЯК</b></span> стилізуємо?</li>
+                </ol>
+                <br />
+                <div style ="outline: 1px solid tomato">
+                    <img 
+                        src="./images-7/css-rule-1.jpg" 
+                        alt="css-rule-1"
+                        width="800px"
+                    />
+                </div>
+                <br />
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        <b style="color: red">Селектор</b> вказує браузеру на те, до яких елементів потрібно застосувати стилі з цього правила.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Кожне оголошення складається з пари <b><code style="background-color:#d5e7ff; padding: 4px;  border: 1px solid gray; border-radius: 4px;"><span style="color: green">властивість</span> :{<span style="color: yellow">значення</span>;}</code></b>, де <b>властивість</b> і його <b>значення</b> розділяються <i><u>двокрапкою з пробілом</u></i> і обов'язково закінчуються <i><u>крапкою з комою</u></i>.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Вони описують, <b style="color: green">ЩО</b > саме потрібно <b style="color: yellow; background-color:#d5e7ff; padding: 4px;">ЗРОБИТИ</b> (або <span  style="color: yellow; background-color:#d5e7ff; padding: 4px;"><b>ЯК</b> зробити</span>) зі стилями елемента.
+                    </p>
+                </div>
+                <pre style="padding: 40px; background-color:#d5e7ff">
+<code style="font-size: 24px; text-shadow: 2px 2px 6px #808080">
+    <b style="color: red">селектор</b> {
+        <b style="color: green">властивість</b>: <b style="color: yellow">значення</b>;
+        <b style="color: green">властивість</b>: <b style="color: yellow">значення</b>;
+        <b style="color: green">властивість</b>: <b style="color: yellow">значення</b>;
+    }
+</code>
+                </pre>
+                
+                
                 <!--? Позаголовок -->
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
@@ -674,8 +715,8 @@
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
             d1.appendChild(createHeaderElement("Магія за допомогою CSS:"));
             d2.appendChild(createHeaderElement("Способи підключення стилів CSS (Cascading Style Sheets):"));
-            d3.appendChild(createHeaderElement("Заголовок-3:"));
-            d4.appendChild(createHeaderElement("Заголовок-4:"));
+            d3.appendChild(createHeaderElement("Будова CSS-правила (синтаксис):"));
+            d4.appendChild(createHeaderElement("Види CSS-селекторів:"));
             d5.appendChild(createHeaderElement("Заголовок-5:"));
             d6.appendChild(createHeaderElement("Заголовок-6:"));
             d7.appendChild(createHeaderElement("Заголовок-7:"));
