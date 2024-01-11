@@ -62,6 +62,11 @@
             .rotate180 {
             transform: rotate(180deg);
             }
+
+            .rotated-text {
+            display: inline-block;
+            transform: rotate(180deg);
+            }
             /* -- body -- */
             body {
                 padding-top: 8px;
@@ -195,6 +200,7 @@
                 <li><a href="#d10" style="color: green">Робота над проектом та збереження нових змін на <b>GitHub</b> за допомогою <b>GitHub Desktop</b></a></li>
                 <li><a href="#d11">Основні <b>git-команди</b></a></li>
                 <li><a href="#d12" style="color: green">Хостинг <b>GitHub Pages</b>​</a></li>
+                <li><a href="#d13">Що потрібно зробити в <b>ДЗ-6</b>​</a></li>
             </ul>
             <br />
             <hr style ="color: rgb(127, 0, 212); width: 60%">
@@ -1293,7 +1299,7 @@ images/*
                 <!-- ?--------------------------------------------------- -->
                 <!--? корисне джерело інформації -->
                 <br />
-                <b style ="background-color:yellow">
+                <b id="example_link_hw-6" style ="background-color:yellow">
                     <span style ="color:deeppink">&#9888; </span><i style ="color:crimson"><u>корисне джерело інформації</u></i><span style ="color:deeppink"> &#9888;</span>
                 </b>
                 <span><i style="font-size: larger">...а також, приклад того, що треба відправити до ДЗ-6:</i></span>
@@ -1321,6 +1327,34 @@ images/*
                     </ul>
                 </div>
                 <!-- ?--------------------------------------------------- -->
+                <!--! Що потрібно зробити в ДЗ-6 -->
+                <!-- <h3 id="d1" style ="color: royalblue">
+                    <i>Що потрібно зробити в ДЗ-6:</i>
+                </h3> -->
+                <div id="d13"></div>
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Запушити зроблений код <b style="color: green;">зарахованих</b> проектів <b>WebStudio</b> та <b>Photoblog</b> в окремі репозиторії на GitHub. Для кожного проекту створити свій репозиторій з відповідними назвами: <b style="color: blue;">webstudio</b> та <b style="color: blue;">photoblog</b>. 
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        <u>Скопіювати такі посилання:</u>
+                    </p>
+                    <p style="font-size: 18px; text-shadow: 2px 2px 6px #808080">
+                        1. Посилання на репозиторій з кодом.
+                        <br />
+                        2. Посилання на деплой github-pages («живу» сторінку проекту).
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Надати цю <b>пару посилань</b> з <b><u>кожним проектом</u></b> (<b>WebStudio</b> та <b>Photoblog</b>), та прикріпити у ДЗ в LMS.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Тобто, в LMS потрібно надіслати <b><u>чотири</u></b> посилання!
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Приклад пари посилань надано<u><a href="#example_link_hw-6">вище <span class="rotated-text" style="font-size: 50px">&#9759;</span></a></u>
+                    </p>
+                </div>
+                <br />
             </section>
         </main>
         <br/>
@@ -1369,6 +1403,7 @@ images/*
             const d10 = document.getElementById("d10");
             const d11 = document.getElementById("d11");
             const d12 = document.getElementById("d12");
+            const d13 = document.getElementById("d13");
 
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
@@ -1385,6 +1420,7 @@ images/*
             d10.appendChild(createHeaderElement("Робота над проектом та збереження нових змін на GitHub за допомогою GitHub Desktop:"));
             d11.appendChild(createHeaderElement("Основні git-команди:"));
             d12.appendChild(createHeaderElement("Хостинг GitHub Pages:"));
+            d13.appendChild(createHeaderElement("Що потрібно зробити в ДЗ-6:"));
         </script>
     </body>
 </html>
