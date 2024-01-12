@@ -1,8 +1,43 @@
-/* ! === Селектор тегу === */
-body {
+/* ! === Селектор класу === */
+.basic-style {
     background-color: gray;
     color: blue;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! === Селектор тегу === */
+/* body {
+    background-color: gray;
+    color: blue;
+} */
 
 
 
