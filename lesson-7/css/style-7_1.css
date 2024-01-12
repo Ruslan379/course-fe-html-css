@@ -72,3 +72,160 @@ img {
         /* transform: translatex(calc(100vw - 166px)); */
     }
 }
+
+
+/* ?================================================================= */
+/* ? Стилізация, яка використалась як ВБУДОВАНА с 1-го по 6-ий уроки */
+
+/* ?Кнопка-стрелка (общие стили) */
+.arrow-button {
+    position: fixed;
+    right: 30px;
+    /* bottom: 30px; */
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* ? Кнопка-стрелка "наверх" */
+.up-button {
+    /* position: fixed;
+    right: 30px; */
+    bottom: 30px;
+    /* display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+    background-size: contain;
+    cursor: pointer; */
+}
+
+/* ? Кнопка-стрелка "вниз" */
+.down-button {
+    /* position: fixed;
+    right: 30px; */
+    top: 30px;
+    /* display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
+    background-size: contain;
+    cursor: pointer; */
+}
+
+/* ? Поворот Кнопки-стрелка на 180 градусов */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+/* ? Поворот текстового элемента на 180 градусов */
+.rotated-text {
+    display: inline-block;
+    transform: rotate(180deg);
+    }
+
+/* ? -- Стилізуємо body -- */
+body {
+    padding-top: 8px;
+}
+
+body,
+header,
+main,
+section,
+footer {
+    display: flex;
+    flex-direction: column;
+    /* Вертикальная основная ось */
+    /* Центрирование элементов по вертикали: */
+    /* justify-content: center;  */
+    align-items: center;
+    /* Центрирование элементов по горизонтали */
+    /* Добавляем ШИРИНУ на весь экран (viewport height) */
+    /* Так будет горизонтальная полоса прокрутки: */
+    /* width: 100vw; */
+    /* Так НЕ будет горизонтальной полосы прокрутки: */
+    width: 100%;
+    /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+    /* height: 100vh;  */
+    margin: 0px;
+    /* Убираем внешние отступы */
+    /* padding-left: 10px; */
+}
+
+/* ? Стилізуємо nav */
+nav {
+    text-align: center;
+    color: brown;
+    font-size: 18px;
+    /* outline: 1px solid red */
+}
+
+/* ? Убираем стандартные отступы и маркеры для упорядоченных списков */
+ul,
+ol {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* list-style: none; */
+    /* text-align: center; */
+    color: rebeccapurple;
+    font-size: 18px
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ? Убираем подчеркивание и стандартные стили для ссылок */
+a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    color: inherit;
+    /* Используем цвет текста родительского элемента (наследование цвета) */
+    cursor: pointer;
+    /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+
+}
+
+/* ? Добавляем стили для ссылки при наведении */
+a:hover {
+    text-decoration: underline;
+    /* Добавляем подчеркивание при наведении */
+    color: olive;
+    /* Меняем цвет текста при наведении */
+}
+
+/* ? Додаем стили для таблиц */
+table {
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
+
+table td:first-child {
+    text-align: center;
+    color: red;
+    font-size: larger;
+}
+/* ?================================================================= */

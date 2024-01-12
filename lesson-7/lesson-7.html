@@ -11,7 +11,7 @@
         >
         <!-- <link rel="stylesheet" href="./css/style-7_1.css"> -->
         <link rel="stylesheet" href="./css/style-7_2.css">
-        <style>
+        <!-- <style>
             /* Кнопка-стрелка (общие стили) */
             .arrow-button {
                 position: fixed;
@@ -62,6 +62,11 @@
             }
             /* Поворот Кнопки-стрелка на 180 градусов */
             .rotate180 {
+            transform: rotate(180deg);
+            }
+            /* Поворот текстового элемента на 180 градусов */
+            .rotated-text {
+            display: inline-block;
             transform: rotate(180deg);
             }
             /* -- body -- */
@@ -131,8 +136,12 @@
                 padding: 10px;
                 border: 1px solid #2a2a2a;
             }
-        </style>
-        
+            table td:first-child {
+                text-align: center;
+                color: red;
+                font-size: larger;
+            }
+        </style> -->
     </head>
 
     <body>
@@ -188,7 +197,7 @@
                 <li><a href="#d2">Способи підключення стилів CSS (Cascading Style Sheets)</a></li>
                 <li><a href="#d3">Будова CSS-правила (синтаксис)</a></li>
                 <li><a href="#d4">Види CSS-селекторів</a></li>
-                <li><a href="#d5">Заголовок-5</a></li>
+                <li><a href="#d5">Види CSS-селекторів <b><i>елемента</i></b> (<b><u>тегу</u></b>)</a></li>
                 <li><a href="#d6">Заголовок-6​</a></li>
                 <li><a href="#d7">Заголовок-7</a></li>
                 <li><a href="#d8">Заголовок-8</a></li>
@@ -454,11 +463,65 @@
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
 
-                <!--! Заголовок-5 -->
+                <!--! Види CSS-селекторів елемента (тегу) -->
                 <!-- <h3 id="d5" style ="color: royalblue">
-                    <i>Заголовок-5:</i>
+                    <i>Види CSS-селекторів елемента (тегу):</i>
                 </h3> -->
                 <div id="d5"></div>
+                <br />
+                <table style="width: 800px; font-size: larger;">
+                    <caption>
+                        <!-- git-команди -->
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Синтаксис команд</th>
+                            <th>Опис команд</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b><code>git init</code></b></td>
+                            <td>Ініціалізує створення локального репозиторію в поточній папці. Створюється прихована папка .git у якій зберігається службова інформація про локальний репозиторій.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git status</code></b></td>
+                            <td>Перевіряє наявність змін у стані файлів проекту з моменту останнього коміту. За умови наявності змін виведе в консоль інформацію про файли, в яких є зміни.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git add [file-name чи .]</code></b></td>
+                            <td>Щоб повідомити Git про необхідність почати відстежувати зміни, внесені у файл, спочатку треба додати їх у staging area, використовуючи git add. При використанні git add . Крапка означає додавання усіх змін</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git commit -m "коментар"</code></b></td>
+                            <td>Створює зліпок поточного стану файлів, які під контролем версій. Кожен commit треба описувати коротким, змістовним коментарем про внесені зміни. Кількість комітів необмежена. Отже, якщо нам колись потрібно буде повернутися до минулої версії проекту, ми зможемо "відкотити" його до певного коміту.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git clone [params]</code></b></td>
+                            <td>Клонує віддалений репозиторій на комп’ютер, автоматично зв’язує його з локальною версією.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git reset [filename]</code></b></td>
+                            <td>Використовується для видалення файлу з-під контролю версій.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git log</code></b></td>
+                            <td>Виводить журнал змін у репозиторії як список усіх комітів, які були зроблені в хронологічному порядку.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git push</code></b></td>
+                            <td>Надсилає усі збережені в комітах зміни з локального репозиторію на віддалений. При виконанні git push -u origin master, прапорець -u вказує Git запам'ятати куди ми пушимо (на віддалений репозиторій, origin, у гілку master). Після цього достатньо буде виконувати git push.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git pull</code></b></td>
+                            <td>Забирає останні зміни з віддаленого репозиторію в локальний, якщо вони зв’язані.</td>
+                        </tr>
+                        <tr>
+                            <td><b><code>git remote add origin [repo-url]</code></b></td>
+                            <td>Пов’язує віддалений репозиторій з локальним по url. Потрібно, щоб існував віддалений репозиторій. Після виконання команди, можна буде пушити зміни на віддалений репозиторій.</td>
+                        </tr>
+                    </tbody>
+                </table>
                 <!--? Позаголовок -->
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
@@ -749,7 +812,7 @@
             d2.appendChild(createHeaderElement("Способи підключення стилів CSS (Cascading Style Sheets):"));
             d3.appendChild(createHeaderElement("Будова CSS-правила (синтаксис):"));
             d4.appendChild(createHeaderElement("Види CSS-селекторів:"));
-            d5.appendChild(createHeaderElement("Заголовок-5:"));
+            d5.appendChild(createHeaderElement("Види CSS-селекторів елемента (тегу):"));
             d6.appendChild(createHeaderElement("Заголовок-6:"));
             d7.appendChild(createHeaderElement("Заголовок-7:"));
             d8.appendChild(createHeaderElement("Заголовок-8:"));
