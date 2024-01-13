@@ -5,13 +5,51 @@
     /* *============================================== */
 }
 /* ?============================================== */
-/* body {
+body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-} */
+}
 /* ?============================================== */
 
+/* ! === Селектор класу === */
+/* li > p {
+    font-size: 40px;
+    color: black;
+    background-color: white;
+} */
 
+/* .text {
+    font-size: 40px;
+    color: yellow;
+    background-color: blue;
+} */
+
+
+/* li .text {
+    font-size: 40px;
+    color: red;
+    background-color: green;
+} */
+
+/* #main-text {
+    font-size: 40px;
+    color: green;
+    background-color: orange;
+} */
+
+
+li #main-text  {
+    font-size: 40px;
+    color: pink;
+    background-color: gray;
+}
+
+
+li #main-text  {
+    font-size: 40px;
+    color: white;
+    background-color: brown;
+}
 
 
 
