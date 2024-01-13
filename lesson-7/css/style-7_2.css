@@ -193,6 +193,7 @@ table td {
 }
 
 table td:first-child {
+    min-width: 240px;
     text-align: center;
     color: red;
     font-size: larger;
