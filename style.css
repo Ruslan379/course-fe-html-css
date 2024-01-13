@@ -55,6 +55,14 @@
     background-color: brown;
 } */
 
+/* ! === !important === */
+/* .text {
+    font-size: 80px !important;
+    color: rgb(95, 95, 16) !important;
+    background-color: rgb(52, 52, 130) !important;
+} */
+
+
 /* ! === Hаслідування === */
 /* ul {
     color: green;
@@ -70,6 +78,12 @@
     color: green;
     background-color: bisque;
 } */
+
+
+
+
+
+
 
 
 
