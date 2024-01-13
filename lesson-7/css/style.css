@@ -1,12 +1,18 @@
-/* 
- ! === Теговый селектор 
- ! (селектор элементу) === 
+/*  
+! Дочірний селектор
+! (Селектор дитини)
 */
-p {
-    font-size: 24px;
-    font-style: italic;
-    color: red;
+li > p {
+    color: yellow;
+    background-color: blue;
 }
+
+
+
+
+
+
+
 
 
 
@@ -38,41 +44,51 @@ p {
     color: blue;
 } */
 
-
-
-
-
-
-
-
-
-
-/* ! === Селектор ідентифікатора === */
-/* Селектор ідентифікатора */
-/* #title-2 {
-    color: green;
+/* 
+! === Теговый селектор 
+! (селектор элементу) === 
+*/
+/* p {
+    font-size: 24px;
+    font-style: italic;
+    color: red;
 } */
 
+/*
+!    Селектор 
+! ідентифікатора  
+ */
+/* #title-2 {
+    color: green;
+    text-decoration: underline;
+} */
 
-/* ! === Селектор груп === */
+/* !  Селектор груп */
 /* h1,
 h2,
 h3 {
-    color: blue;
+    color: orangered;
+    background-color: yellow;
 } */
 
-
-/* ! === Селектор нащадку === */
+/* ! Селектор нащадку  */
 /* body li {
-    background-color: burlywood;
+    background-color: pink;
 } */
 
 
-/* ! === Дочірний селектор (Селектор дитини) === */
-/* li > p {
-    color: rgb(255, 0, 0);
-    background-color: burlywood;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ! === Сусідній селектор (Селектор сусіда) === */
