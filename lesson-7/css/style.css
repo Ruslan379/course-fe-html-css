@@ -1,16 +1,24 @@
-/* ! === Селектор класу === */
-.basic-style {
-    background-color: gray;
-    color: blue;
-}
-
-/* ! === Селектор тегу === */
+/* ! === Універсальний селектор === */
 /* body {
     background-color: gray;
     color: blue;
 } */
 
-/* * === +++++++++++++++++++++++++ === */
+
+
+
+
+
+
+
+
+
+/* ! === Теговый селектор (селектор элементу) === */
+/* body {
+    background-color: gray;
+    color: blue;
+} */
+
 
 /* ! === Селектор ідентифікатора === */
 /* Селектор ідентифікатора */
@@ -58,9 +66,15 @@ h3 {
     background-color: yellow
 } */
 
-
+/* * === +++++++++++++++++++++++++ === */
 /* ! === Селектор класу === */
 /* .text {
     font-size: 40px;
     background-color: rgb(23, 125, 214);
 } */
+
+/* ! === Селектор класу === */
+.basic-style {
+    background-color: gray;
+    color: blue;
+}
