@@ -1,0 +1,8 @@
+a[href="https://validator.w3.org/"]:link,
+a[href="https://www.youtube.com/"]:link {
+    color: red;
+}
+
+.holder ul ~ p {
+    font-size: 24px;
+}
