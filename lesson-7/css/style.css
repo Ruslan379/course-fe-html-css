@@ -3,6 +3,7 @@
 ! (Селектор дитини)
 */
 li > p {
+    font-size: 24px;
     color: yellow;
     background-color: blue;
 }
