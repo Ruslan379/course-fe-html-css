@@ -1,17 +1,21 @@
 :root {
     /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
-    --color-font-body: #ff0000;
+    --color-font-body: red;
+    /* --color-font-body: #ff0000; */
+    /* --color-font-body: rgb(255, 0, 0); */
+    /* --color-font-body: rgba(255, 0, 0, 0.5); */
+
     --color-background-body: #00ffff;
     /* *============================================== */
 }
 /* ?============================================== */
-body {
+/* body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-}
+} */
 /* ?============================================== */
 
-/* ! === Селектор класу === */
+/* ! === Cпецифічність === */
 /* li > p {
     font-size: 40px;
     color: black;
@@ -38,18 +42,35 @@ body {
 } */
 
 
-li #main-text  {
+/* li #main-text  {
     font-size: 40px;
     color: pink;
     background-color: gray;
-}
+} */
 
 
-li #main-text  {
+/* li #main-text  {
     font-size: 40px;
     color: white;
     background-color: brown;
-}
+} */
+
+/* ! === Hаслідування === */
+/* ul {
+    color: green;
+    background-color: bisque;
+} */
+
+/* a {
+    color: green;
+    background-color: bisque;
+} */
+
+/* ul, a {
+    color: green;
+    background-color: bisque;
+} */
+
 
 
 
