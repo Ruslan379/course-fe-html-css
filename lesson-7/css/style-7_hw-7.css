@@ -3,6 +3,6 @@ a[href="https://www.youtube.com/"]:link {
     color: red;
 }
 
-.holder ul ~ p {
+body div.holder ul ~ p {
     font-size: 24px;
 }
