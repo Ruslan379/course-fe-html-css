@@ -1,7 +1,9 @@
 :root {
     /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
-    --color-font-body: red;
-    /* --color-font-body: #ff0000; */
+    /* --color-font-body: red; */
+
+    --color-font-body: #ff0000;
+
     /* --color-font-body: rgb(255, 0, 0); */
     /* --color-font-body: rgba(255, 0, 0, 0.5); */
 
@@ -9,11 +11,12 @@
     /* *============================================== */
 }
 /* ?============================================== */
-/* body {
+body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-} */
+}
 /* ?============================================== */
+
 
 /* ! === Cпецифічність === */
 /* li > p {
@@ -28,7 +31,6 @@
     background-color: blue;
 } */
 
-
 /* li .text {
     font-size: 40px;
     color: red;
@@ -41,19 +43,19 @@
     background-color: orange;
 } */
 
-
 /* li #main-text  {
     font-size: 40px;
     color: pink;
     background-color: gray;
 } */
 
-
 /* li #main-text  {
     font-size: 40px;
     color: white;
     background-color: brown;
 } */
+
+
 
 /* ! === !important === */
 /* .text {

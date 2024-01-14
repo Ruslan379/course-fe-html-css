@@ -1,0 +1,153 @@
+:root {
+    /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+    /* --color-font-body: red; */
+
+    --color-font-body: #ff0000;
+
+    /* --color-font-body: rgb(255, 0, 0); */
+    /* --color-font-body: rgba(255, 0, 0, 0.5); */
+
+    --color-background-body: #00ffff;
+    /* *============================================== */
+}
+/* ?============================================== */
+body {
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+/* ?============================================== */
+
+
+/* ! === Cпецифічність === */
+/* li > p {
+    font-size: 40px;
+    color: black;
+    background-color: white;
+} */
+
+/* .text {
+    font-size: 40px;
+    color: yellow;
+    background-color: blue;
+} */
+
+/* li .text {
+    font-size: 40px;
+    color: red;
+    background-color: green;
+} */
+
+/* #main-text {
+    font-size: 40px;
+    color: green;
+    background-color: orange;
+} */
+
+/* li #main-text  {
+    font-size: 40px;
+    color: pink;
+    background-color: gray;
+} */
+
+/* li #main-text  {
+    font-size: 40px;
+    color: white;
+    background-color: brown;
+} */
+
+
+
+/* ! === !important === */
+/* .text {
+    font-size: 80px !important;
+    color: rgb(95, 95, 16) !important;
+    background-color: rgb(52, 52, 130) !important;
+} */
+
+
+/* ! === Hаслідування === */
+/* ul {
+    color: green;
+    background-color: bisque;
+} */
+
+/* a {
+    color: green;
+    background-color: bisque;
+} */
+
+/* ul, a {
+    color: green;
+    background-color: bisque;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* !============================================== */
+/* ! === Селектор тегу === */
+/* body {
+    color: red;
+    background-color: aqua;
+} */
+
+/* ! === Селектор ідентифікатора === */
+/* Селектор ідентифікатора */
+/* #title-2 {
+    color: green;
+} */
+
+
+/* ! === Селектор груп === */
+/* h1,
+h2,
+h3 {
+    color: blue;
+} */
+
+
+/* ! === Селектор нащадку === */
+/* body li {
+    background-color: burlywood;
+} */
+
+
+/* ! === Дочірний селектор (Селектор дитини) === */
+/* li > p {
+    color: rgb(255, 0, 0);
+    background-color: burlywood;
+} */
+
+
+/* ! === Сусідній селектор (Селектор сусіда) === */
+/* Сусідній селектор */
+/* p + a {
+    background-color: rgb(0, 234, 4);
+} */
+
+
+/* ! === Споріднений селектор === */
+/* p ~ a {
+    background-color: rgb(86, 176, 255);
+} */
+
+
+/* ! === Селектор атрибуту === */
+/* a[href="#"] {
+    background-color: yellow
+} */
+
+
+/* ! === Селектор класу === */
+/* .text {
+    font-size: 40px;
+    background-color: rgb(23, 125, 214);
+} */
