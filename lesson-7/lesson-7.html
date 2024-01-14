@@ -197,9 +197,10 @@
                 <li><a href="#d2">Способи підключення стилів CSS (Cascading Style Sheets)</a></li>
                 <li><a href="#d3">Будова CSS-правила (синтаксис)</a></li>
                 <li><a href="#d4">Види CSS-селекторів</a></li>
-                <li><a href="#d5">Види селекторів <b><i>елемента</i></b> (<b><u>тегу</u></b>)</a></li>
-                <li><a href="#d6">Робота з кольором​</a></li>
-                <li><a href="#d7">CSS-змінні</a></li>
+                <li><a href="#d5">Приклади селекторів <b><i>елемента</i></b> (<b><u>тегу</u></b>)</a></li>
+                <li><a href="#d6">Селектор <b>класу</b></a></li>
+                <li><a href="#d7">Робота з кольором​</a></li>
+                <li><a href="#d8">CSS-змінні</a></li>
             </ul>
             <br />
             <hr style ="color: rgb(127, 0, 212); width: 60%">
@@ -441,12 +442,11 @@
             }
                         </code>
                     </pre>
-                    
                 </div>
 
-                <!--! Види селекторів елемента (тегу) -->
+                <!--! Приклади селекторів елемента (тегу) -->
                 <!-- <h3 id="d5" style ="color: royalblue">
-                    <i>Види селекторів елемента (тегу):</i>
+                    <i>Приклади селекторів елемента (тегу):</i>
                 </h3> -->
                 <div id="d5"></div>
                 <br />
@@ -496,10 +496,6 @@
                         <tr>
                             <td><b><code><a href="#d5-9">input[type="text"] {...}</a></code></b></td>
                             <td><b><a href="#d5-9">Селектор атрибуту</a></b> - звернення до елемента через його атрибут</td>
-                        </tr>
-                        <tr>
-                            <td><b><code style="color: darkred;"><a href="#d5-10">.box {...}</a></code></b></td>
-                            <td><b><a href="#d5-10">Селектор класу</a></b> - звернення до елемента через його клас</td>
                         </tr>
                     </tbody>
                 </table>
@@ -693,12 +689,54 @@
                 </ul>
                 <!-- ?--------------------------------------------------- -->
 
-
-                <!--! Робота з кольором -->
+                <!--! Селектор класу -->
                 <!-- <h3 id="d6" style ="color: royalblue">
-                    <i>Робота з кольором:</i>
+                    <i>Селектор класу:</i>
                 </h3> -->
                 <div id="d6"></div>
+                <br />
+                <table style="width: 800px; font-size: larger;">
+                    <caption>
+                        <!-- git-команди -->
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Синтаксис (<i>приклад</i>)</th>
+                            <th>Селектор</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b><code style="color: red;"><a href="#d5-10">.box {...}</a></code></b></td>
+                            <td><b><a href="#d5-10">Селектор класу</a></b> - звернення до елемента через його клас</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--? Композиція класів -->
+                <h4 style="color: darkred"><u>Композиція класів</u>:</h4>
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        У елемента може бути <b>декілька класів</b>, тоді вони записуються через пробіл.
+                    </p>
+                    <pre style="padding: 40px; background-color:black">
+                        <code style="font-size: 24px; color: #a3a3a3; text-shadow: 2px 2px 6px #646464">
+&lt;<span style="color: red;">element</span> <span style="color: goldenrod;">class=</span><span style="color: green;">"value1 value2 value3"</span> &gt;<i style="color: blue;">контент</i>&lt;<span style="color: red;">/element</span>&gt;
+                        </code>
+                    </pre>
+                </div>
+
+                <!--? Позаголовок -->
+                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+
+                <!--? Позаголовок -->
+                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+
+
+                <!--! Робота з кольором -->
+                <!-- <h3 id="d7" style ="color: royalblue">
+                    <i>Робота з кольором:</i>
+                </h3> -->
+                <div id="d7"></div>
                 <!--? Модель кольору -->
                 <h4 style="color: darkred"><u>Модель кольору</u>:</h4>
                 <div style="width: 800px;">
@@ -793,10 +831,10 @@
                 <!-- ?--------------------------------------------------- -->
 
                 <!--! CSS-змінні -->
-                <!-- <h3 id="d7" style ="color: royalblue">
+                <!-- <h3 id="d8" style ="color: royalblue">
                     <i>CSS-змінні:</i>
                 </h3> -->
-                <div id="d7"></div>
+                <div id="d8"></div>
                 <!--? Позаголовок -->
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
@@ -851,6 +889,7 @@
             const d5 = document.getElementById("d5");
             const d6 = document.getElementById("d6");
             const d7 = document.getElementById("d7");
+            const d8 = document.getElementById("d8");
 
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
@@ -859,9 +898,10 @@
             d2.appendChild(createHeaderElement("Способи підключення стилів CSS (Cascading Style Sheets):"));
             d3.appendChild(createHeaderElement("Будова CSS-правила (синтаксис):"));
             d4.appendChild(createHeaderElement("Види CSS-селекторів:"));
-            d5.appendChild(createHeaderElement("Види селекторів елемента (тегу):"));
-            d6.appendChild(createHeaderElement("Робота з кольором​:"));
-            d7.appendChild(createHeaderElement("CSS-змінні:"));
+            d5.appendChild(createHeaderElement("Приклади селекторів елемента (тегу):"));
+            d6.appendChild(createHeaderElement("Селектор класу​:"));
+            d7.appendChild(createHeaderElement("Робота з кольором​:"));
+            d8.appendChild(createHeaderElement("CSS-змінні:"));
         </script>
         <!--* JS script який завантажує АУДІО на сторінці  НЕ ПРАЦЮЄ -->
         <!-- <script>
