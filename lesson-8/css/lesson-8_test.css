@@ -14,18 +14,19 @@ body {
 
 /* ! === Псевдокласи стану === */
 /* ? === Псевдоклас :hover === */
-/* .link1 {
+.link1 {
     color: teal;
-} */
+}
 
 /* .link1:hover {
     color: tomato;
 } */
 
 /* ? === Псевдоклас :focus === */
-/* .link1:focus {
+.link1:focus,
+.link1:hover {
     color: tomato;
-} */
+}
 
 /* .link1:hover,
 .link1:focus {
@@ -33,15 +34,24 @@ body {
 } */
 
 /* ? === Псевдоклас :active === */
-/* .link1:active {
+.link1:active {
     color: yellow;
     background-color: blue;
-} */
+}
 
 /* ? === Псевдоклас :visited === */
-/* .link1:visited {
+.link1:visited {
     color: wheat;
-} */
+}
+
+.link3:visited {
+    color: wheat;
+}
 
 
+/* A > B > C + X  */
 
+.list-section-1 .text,
+.list-section-2 .text {
+    color: blue;
+} 
