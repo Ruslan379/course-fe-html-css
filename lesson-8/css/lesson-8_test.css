@@ -14,9 +14,9 @@ body {
 
 /* ! === Псевдокласи стану === */
 /* ? === Псевдоклас :hover === */
-.link1 {
+/* .link1 {
     color: teal;
-}
+} */
 
 /* .link1:hover {
     color: tomato;
@@ -27,18 +27,21 @@ body {
     color: tomato;
 } */
 
-.link1:hover,
+/* .link1:hover,
 .link1:focus {
     color: tomato;
-}
+} */
 
 /* ? === Псевдоклас :active === */
-.link1:active {
+/* .link1:active {
     color: yellow;
     background-color: blue;
-}
+} */
 
 /* ? === Псевдоклас :visited === */
-.link1:visited {
+/* .link1:visited {
     color: wheat;
-}
+} */
+
+
+
