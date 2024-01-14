@@ -12,26 +12,94 @@ body {
 /* ?============================================== */
 
 
-/* ! === Псевдокласи стану === */
+
+/* *============================================= */
+/* *============ 8-1. Cпецифічність ============ */
+/* ! === Cпецифічність === */
+/* li > p {
+    font-size: 40px;
+    color: black;
+    background-color: white;
+} */
+
+/* .text {
+    font-size: 40px;
+    color: yellow;
+    background-color: blue;
+} */
+
+/* li .text {
+    font-size: 40px;
+    color: red;
+    background-color: green;
+} */
+
+/* #main-text {
+    font-size: 40px;
+    color: green;
+    background-color: orange;
+} */
+
+/* li #main-text  {
+    font-size: 40px;
+    color: pink;
+    background-color: gray;
+} */
+
+/* li #main-text  {
+    font-size: 40px;
+    color: white;
+    background-color: brown;
+} */
+
+
+/* ! === !important === */
+/* .text {
+    font-size: 80px !important;
+    color: rgb(95, 95, 16) !important;
+    background-color: rgb(52, 52, 130) !important;
+} */
+
+
+/* ! === Hаслідування === */
+/* ul {
+    color: green;
+    background-color: bisque;
+} */
+
+/* a {
+    color: green;
+    background-color: bisque;
+} */
+
+/* ul, a {
+    color: green;
+    background-color: bisque;
+} */
+
+
+
+/* *================================================ */
+/* *============ 8-2. Псевдокласи стану ============ */
+/* ! ======= Псевдокласи стану ======= */
 /* ? === Псевдоклас :hover === */
 .link1 {
     color: teal;
 }
 
-/* .link1:hover {
-    color: tomato;
-} */
-
-/* ? === Псевдоклас :focus === */
-.link1:focus,
 .link1:hover {
     color: tomato;
 }
 
-/* .link1:hover,
-.link1:focus {
+/* ? === Псевдоклас :focus === */
+/* .link1:focus {
     color: tomato;
 } */
+
+.link1:hover,
+.link1:focus {
+    color: tomato;
+}
 
 /* ? === Псевдоклас :active === */
 .link1:active {
@@ -40,18 +108,18 @@ body {
 }
 
 /* ? === Псевдоклас :visited === */
-.link1:visited {
+.link5:visited {
     color: wheat;
 }
 
-.link3:visited {
+/* .link3:visited {
     color: wheat;
-}
+} */
 
 
 /* A > B > C + X  */
 
-.list-section-1 .text,
+/* .list-section-1 .text,
 .list-section-2 .text {
     color: blue;
-} 
+}  */
