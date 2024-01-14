@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewliort" content="width=device-width, initial-scale=1.0">
     <!-- <style>
+        /* v1 */
         a[href^="https"] {
+            color: red;
+        }
+        /* v2 */
+        a:not([href="#"]) {
             color: red;
         }
         ul + p {
