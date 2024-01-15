@@ -107,14 +107,15 @@ body {
     background-color: blue;
 }
 
-/* ? === Псевдоклас :visited === */
-.link7:visited {
-    color: wheat;
+/* ? === Псевдоклас :link === */
+.link-facebook:link {
+    color: red;
 }
 
-/* .link3:visited {
+/* ? === Псевдоклас :visited === */
+.link-facebook:visited {
     color: wheat;
-} */
+}
 
 
 /* A > B > C + X  */
