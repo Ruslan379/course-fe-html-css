@@ -65,13 +65,14 @@
                 <i>(посилання-якір):</i>
             </h2>
             <ul style ="color: rgb(127, 0, 212)">
-                <li><a href="#d1"><b>Каскадність</b> (CSS)</a></li>
-                <li><a href="#d2"><b>Специфічність</b> селектора​</a></li>
-                <li><a href="#d3">Правило <b><i>!important</i></b></a></li>
-                <li><a href="#d4"><b>Наслідування</b> властивостей</a></li>
-                <li><a href="#d5"><b>Уникаємо специфічності</b></a></li>
-                <li><a href="#d6">Псевдокласи <b>стану​</b></a></li>
-                <li><a href="#d7"><b>Структурні</b> псевдокласи (<i>для роботи з <b>дочірніми елементами</b></i>)</a></li>
+                <li><a href="#d1"><b>Каскадність</b> в CSS</a></li>
+                <li><a href="#d2"><b>Ієрархія</b> в CSS</a></li>
+                <li><a href="#d3"><b>Специфічність</b> селектора​</a></li>
+                <li><a href="#d4">Правило <b><i>!important</i></b></a></li>
+                <li><a href="#d5"><b>Наслідування</b> властивостей</a></li>
+                <li><a href="#d6"><b>Уникаємо специфічності</b></a></li>
+                <li><a href="#d7">Псевдокласи <b>стану​</b></a></li>
+                <li><a href="#d8"><b>Структурні</b> псевдокласи (<i>для роботи з <b>дочірніми елементами</b></i>)</a></li>
             </ul>
             <br />
             <hr style ="color: rgb(127, 0, 212); width: 60%">
@@ -80,9 +81,9 @@
         <main>
             <!--todo УРОК-8 -->
             <section>   
-                <!--! Каскадність(CSS) -->
+                <!--! Каскадність в CSS -->
                 <!-- <h3 id="d1" style ="color: royalblue">
-                    <i>Каскадність(CSS):</i>
+                    <i>Каскадність в CSS:</i>
                 </h3> -->
                 <div id="d1"></div>
                 <div style="width: 800px;">
@@ -97,11 +98,28 @@
                     </p>
                 </div>
 
-                <!--! Специфічність селектора -->
+                <!--! Ієрархія в CSS -->
                 <!-- <h3 id="d2" style ="color: royalblue">
-                    <i>Специфічність селектора:</i>
+                    <i>Ієрархія в CSS:</i>
                 </h3> -->
                 <div id="d2"></div>
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Для кожного CSS-правила браузер обчислює <b>специфічність</b> (<b>вагу</b>) селектора.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Якщо до елементу потрібно застосувати властивості з різних правил, та існують конфліктуючі (<b>однакові</b>) властивості, використовується значення властивості з правила з <b>найбільш високою специфічністю селектора</b>.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Значення специфічності складається з <b>чотирьох рангів</b>, важливість яких збільшується <b>справа наліво</b>:
+                    </p>
+                </div>
+
+                <!--! Специфічність селектора -->
+                <!-- <h3 id="d3" style ="color: royalblue">
+                    <i>Специфічність селектора:</i>
+                </h3> -->
+                <div id="d3"></div>
                 <div style="width: 800px;">
                     <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
                         Для кожного CSS-правила браузер обчислює <b>специфічність</b> (<b>вагу</b>) селектора.
@@ -165,23 +183,8 @@
 
 
                 <!--! Правило !important -->
-                <!-- <h3 id="d3" style ="color: royalblue">
-                    <i>Правило !important:</i>
-                </h3> -->
-                <div id="d3"></div>
-                <!--? Позаголовок -->
-                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
-
-                <!--? Позаголовок -->
-                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
-
-                <!--? Позаголовок -->
-                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
-
-
-                <!--! Наслідування властивостей -->
                 <!-- <h3 id="d4" style ="color: royalblue">
-                    <i>Наслідування властивостей:</i>
+                    <i>Правило !important:</i>
                 </h3> -->
                 <div id="d4"></div>
                 <!--? Позаголовок -->
@@ -194,9 +197,9 @@
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
 
-                <!--! Уникаємо специфічності -->
+                <!--! Наслідування властивостей -->
                 <!-- <h3 id="d5" style ="color: royalblue">
-                    <i>Уникаємо специфічності:</i>
+                    <i>Наслідування властивостей:</i>
                 </h3> -->
                 <div id="d5"></div>
                 <!--? Позаголовок -->
@@ -209,9 +212,9 @@
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
 
-                <!--! Псевдокласи стану -->
+                <!--! Уникаємо специфічності -->
                 <!-- <h3 id="d6" style ="color: royalblue">
-                    <i>Псевдокласи стану:</i>
+                    <i>Уникаємо специфічності:</i>
                 </h3> -->
                 <div id="d6"></div>
                 <!--? Позаголовок -->
@@ -224,11 +227,26 @@
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
 
-                <!--! Структурні псевдокласи (для роботи з дочірніми елементами) -->
+                <!--! Псевдокласи стану -->
                 <!-- <h3 id="d7" style ="color: royalblue">
-                    <i>Структурні псевдокласи (для роботи з дочірніми елементами):</i>
+                    <i>Псевдокласи стану:</i>
                 </h3> -->
                 <div id="d7"></div>
+                <!--? Позаголовок -->
+                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+
+                <!--? Позаголовок -->
+                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+
+                <!--? Позаголовок -->
+                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+
+
+                <!--! Структурні псевдокласи (для роботи з дочірніми елементами) -->
+                <!-- <h3 id="d8" style ="color: royalblue">
+                    <i>Структурні псевдокласи (для роботи з дочірніми елементами):</i>
+                </h3> -->
+                <div id="d8"></div>
                 <!--? Позаголовок -->
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
@@ -356,17 +374,19 @@
             const d5 = document.getElementById("d5");
             const d6 = document.getElementById("d6");
             const d7 = document.getElementById("d7");
+            const d8 = document.getElementById("d8");
 
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
-            d1.appendChild(createHeaderElement("Каскадність(CSS):"));
-            d2.appendChild(createHeaderElement("Специфічність селектора:"));
-            d3.appendChild(createHeaderElement("Правило !important:"));
-            d4.appendChild(createHeaderElement("Наслідування властивостей:"));
-            d5.appendChild(createHeaderElement("Уникаємо специфічності:"));
-            d6.appendChild(createHeaderElement("Псевдокласи стану:"));
-            d7.appendChild(createHeaderElement("Структурні псевдокласи (для роботи з дочірніми елементами):"));
+            d1.appendChild(createHeaderElement("Каскадність в CSS:"));
+            d2.appendChild(createHeaderElement("Ієрархія в CSS:"));
+            d3.appendChild(createHeaderElement("Специфічність селектора:"));
+            d4.appendChild(createHeaderElement("Правило !important:"));
+            d5.appendChild(createHeaderElement("Наслідування властивостей:"));
+            d6.appendChild(createHeaderElement("Уникаємо специфічності:"));
+            d7.appendChild(createHeaderElement("Псевдокласи стану:"));
+            d8.appendChild(createHeaderElement("Структурні псевдокласи (для роботи з дочірніми елементами):"));
         </script>
     </body>
 </html>
