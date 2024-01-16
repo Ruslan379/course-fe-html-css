@@ -102,8 +102,60 @@
                     <i>Специфічність селектора:</i>
                 </h3> -->
                 <div id="d2"></div>
-                <!--? Позаголовок -->
-                <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Для кожного CSS-правила браузер обчислює <b>специфічність</b> (<b>вагу</b>) селектора.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Якщо до елементу потрібно застосувати властивості з різних правил, та існують конфліктуючі (<b>однакові</b>) властивості, використовується значення властивості з правила з <b>найбільш високою специфічністю селектора</b>.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        Значення специфічності складається з <b>чотирьох рангів</b>, важливість яких збільшується <b>справа наліво</b>:
+                    </p>
+                </div>
+                <br />
+                <div>
+                    <img 
+                        src="./images-8/css-specificity-1.webp" 
+                        alt="CSS-specificity-1"
+                        width="800px"
+                    />
+                </div>
+                <br />
+                <!--? Специфічність ("вага" селектора): -->
+                <h4 style="color: darkred"><u>Специфічність ("вага" селектора):</u>:</h4>
+                <br />
+                <table style="width: 500px; font-size: larger;">
+                    <caption>
+                        <!-- git-команди -->
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Селектор</th>
+                            <th>Вага селектора</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b><code>Селектор <u>тега</u> (tag name):</code></b></td>
+                            <td><b>1</b></td>
+                        </tr>
+                        <tr>
+                            <td><b><code>Селектор <u>класу</u> (class):</code></b></td>
+                            <td><b>10</b></td>
+                        </tr>
+                        <tr>
+                            <td><b><code>Селектор <u>ID</u>:</code></b></td>
+                            <td><b>100</b></td>
+                        </tr>
+                        <tr>
+                            <td><b><code><u>Inline-стиль</u>:</code></b></td>
+                            <td><b>1000</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
 
                 <!--? Позаголовок -->
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>

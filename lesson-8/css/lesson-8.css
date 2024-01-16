@@ -154,9 +154,14 @@ table td {
     border: 1px solid #2a2a2a;
 }
 
+table td {
+
+    color: green;
+    font-size: larger;
+}
 table td:first-child {
-    min-width: 240px;
-    text-align: center;
+    /* min-width: 240px; */
+    /* text-align: center; */
     color: red;
     font-size: larger;
 }
