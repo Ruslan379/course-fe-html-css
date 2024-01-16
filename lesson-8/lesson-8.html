@@ -9,131 +9,9 @@
             rel="shortcut icon" 
         >
         <style>
-            /* Кнопка-стрелка (общие стили) */
-            .arrow-button {
-                position: fixed;
-                right: 30px;
-                /* bottom: 30px; */
-                display: inline-block;
-                width: 70px;
-                height: 70px;
-                margin: 0;
-                padding: 0;
-                border: none;
-                background-color: transparent;
-                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
-                background-size: contain;
-                cursor: pointer;
-            }
-            /* Кнопка-стрелка "наверх" */
-            .up-button {
-                /* position: fixed;
-                right: 30px; */
-                bottom: 30px;
-                /* display: inline-block;
-                width: 70px;
-                height: 70px;
-                margin: 0;
-                padding: 0;
-                border: none;
-                background-color: transparent;
-                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
-                background-size: contain;
-                cursor: pointer; */
-            }
-            /* Кнопка-стрелка "вниз" */
-            .down-button {
-                /* position: fixed;
-                right: 30px; */
-                top: 30px;
-                /* display: inline-block;
-                width: 70px;
-                height: 70px;
-                margin: 0;
-                padding: 0;
-                border: none;
-                background-color: transparent;
-                background-image: url("https://img.icons8.com/officel/80/circled-up-2.png");
-                background-size: contain;
-                cursor: pointer; */
-            }
-            /* Поворот Кнопки-стрелка на 180 градусов */
-            .rotate180 {
-            transform: rotate(180deg);
-            }
-            /* -- body -- */
-            body {
-                padding-top: 8px;
-            }
-            body, 
-            header, 
-            main, 
-            section,
-            footer
-            {
-            display: flex;
-            flex-direction: column; /* Вертикальная основная ось */
-            /* Центрирование элементов по вертикали: */
-            /* justify-content: center;  */
-            align-items: center; /* Центрирование элементов по горизонтали */
-            /* Добавляем ШИРИНУ на весь экран (viewport height) */
-            /* Так будет горизонтальная полоса прокрутки: */
-            /* width: 100vw; */
-            /* Так НЕ будет горизонтальной полосы прокрутки: */
-            width: 100%;
-            /* Добавляем ВЫСОТУ на весь экран (viewport height) */
-            /* height: 100vh;  */
-            margin: 0px; /* Убираем внешние отступы */
-            /* padding-left: 10px; */
-            }
-            /* nav */
-            nav {
-                text-align: center;
-                color: brown;
-                font-size: 18px;
-                /* outline: 1px solid red */
-            }
-            /* Убираем стандартные отступы и маркеры для упорядоченных списков */
-            ul, ol {
-                /* margin: 0; */
-                /* padding: 0; */
-                /* list-style: none; */
-                /* text-align: center; */
-                color: rebeccapurple;
-                font-size: 18px
-            }
-            li {
-                margin-bottom: 8px;
-            }
-            /* Убираем подчеркивание и стандартные стили для ссылок */
-            a {
-                padding-left: 5px;
-                padding-right: 5px;
-                text-decoration: none; /* Убираем подчеркивание */
-                color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
-                cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
-
-            }
-            /* Добавляем стили для ссылки при наведении */
-            a:hover {
-                text-decoration: underline; /* Добавляем подчеркивание при наведении */
-                color: olive; /* Меняем цвет текста при наведении */
-            }
-            /* Додаем стили для таблиц */
-            table {
-                border-collapse: collapse;
-            }
-            table th,
-            table td {
-                padding: 10px;
-                border: 1px solid #2a2a2a;
-            }
-            table td:first-child {
-                text-align: center;
-                color: red;
-                font-size: larger;
-            }
+            
         </style>
+        <link rel="stylesheet" href="./css/lesson-8.css">
         <title>Lesson-08</title>
     </head>
 
@@ -200,13 +78,24 @@
         </header>
 
         <main>
-            <!--todo УРОК-7 -->
+            <!--todo УРОК-8 -->
             <section>   
                 <!--! Каскадність(CSS) -->
                 <!-- <h3 id="d1" style ="color: royalblue">
                     <i>Каскадність(CSS):</i>
                 </h3> -->
                 <div id="d1"></div>
+                <div style="width: 800px;">
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        <b>Каскадування</b> - це механізм, який керує кінцевими значеннями властивостей елемента, якщо до нього застосовується кілька CSS-правил.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        &#10157; Якщо до елемента застосовується кілька правил, їх властивості комбінуються.
+                    </p>
+                    <p style="font-size: 18px; text-indent: 40px; text-shadow: 2px 2px 6px #808080">
+                        &#10157; Якщо правила містять однакові властивості з різними значеннями, то вони конфліктують.
+                    </p>
+                </div>
                 <!--? Позаголовок -->
                 <h4 style="color: darkred"><u>Позаголовок</u>:</h4>
 
