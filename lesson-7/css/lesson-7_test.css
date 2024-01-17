@@ -72,6 +72,14 @@ h3 {
     background-color: yellow;
 } */
 
+/*todo складноскладовий селектор тега */
+/* ul > li > p:first-child {
+    font-size: 40px;
+    background-color: rgb(253, 106, 101);
+    color: rgb(255, 255, 0);
+} */
+
+
 
 /* * +++++++++++++ Селектори класу +++++++++++++ */
 /* ! === Селектор класу === */
@@ -80,6 +88,7 @@ h3 {
     background-color: rgb(253, 106, 101);
     color: rgb(255, 255, 0);
 } */
+
 
 /* ! === Селектор класу === */
 /* .basic-style {
