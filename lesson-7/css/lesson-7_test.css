@@ -72,7 +72,7 @@ h3 {
     background-color: yellow;
 } */
 
-/*todo складноскладовий селектор тега */
+/* todo складноскладовий селектор тега */
 /* ul > li > p:first-child {
     font-size: 40px;
     background-color: rgb(253, 106, 101);
@@ -89,6 +89,18 @@ h3 {
     color: rgb(255, 255, 0);
 } */
 
+/* .link {
+    font-size: 40px;
+    background-color: rgb(253, 106, 101);
+    color: rgb(255, 255, 0);
+} */
+
+/* .text, .link {
+    font-size: 40px;
+    background-color: rgb(253, 106, 101);
+    color: rgb(255, 255, 0);
+} */
+
 
 /* ! === Селектор класу === */
 /* .basic-style {
@@ -96,6 +108,11 @@ h3 {
     color: rgb(43, 255, 0);
 } */
 
+
+/* p {
+    color: #FFFFFF;
+    background-color: aqua;
+} */
 
 /* * ++++++++++ Формати використання кольорів ++++++++++ */
 /*! Змінити на body */
