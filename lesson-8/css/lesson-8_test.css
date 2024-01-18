@@ -1,7 +1,7 @@
 :root {
     /* *============ CSS-змінні для body ============ */
-    --color-font-body: #800000;
-    --color-background-body: #ffffe1;
+    --color-font-body: #ff0000;
+    --color-background-body: #ffff60;
     /* *============================================== */
 }
 /* ?============================================== */
@@ -83,39 +83,39 @@ body {
 /* *============ 8-2. Псевдокласи стану ============ */
 /* ! ======= Псевдокласи стану ======= */
 /* ? === Псевдоклас :hover === */
-.link1 {
+/* .link1 {
     color: teal;
-}
+} */
 
-.link1:hover {
+/* .link1:hover {
     color: tomato;
-}
+} */
 
 /* ? === Псевдоклас :focus === */
 /* .link1:focus {
     color: tomato;
 } */
 
-.link1:hover,
+/* .link1:hover,
 .link1:focus {
     color: tomato;
-}
+} */
 
 /* ? === Псевдоклас :active === */
-.link1:active {
+/* .link1:active {
     color: yellow;
     background-color: blue;
-}
+} */
 
 /* ? === Псевдоклас :link === */
-.link-facebook:link {
+/* .link-facebook:link {
     color: red;
-}
+} */
 
 /* ? === Псевдоклас :visited === */
-.link-facebook:visited {
+/* .link-facebook:visited {
     color: wheat;
-}
+} */
 
 
 /* A > B > C + X  */
