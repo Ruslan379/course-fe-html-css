@@ -355,11 +355,13 @@
             function createHeaderElement(headerContent) {
                     // Создаем новый элемент h3
                 const headerElement = document.createElement("h3");
-                    // Устанавливаем стиль
-                headerElement.style.color = "royalblue";
-                headerElement.style.marginTop = "80px";
-                    // Устанавливаем содержимое с переменной
-                headerElement.innerHTML = "<i>" + headerContent + "</i>";
+                    // Устанавливаем стиль (переносим стилизацию в style.css)
+                // headerElement.style.color = "royalblue"; // - переносим стилизацию в style.css
+                // headerElement.style.marginTop = "80px"; // - переносим стилизацию в style.css
+                    // Устанавливаем содержимое с переменной + стиль текста - italic
+                // headerElement.innerHTML = "<i>" + headerContent + "</i>"; // - переносим стилизацию в style.css
+                // Устанавливаем содержимое с переменной:
+                headerElement.innerHTML = headerContent; 
                     // Возвращаем созданный элемент
                 return headerElement;
             }
