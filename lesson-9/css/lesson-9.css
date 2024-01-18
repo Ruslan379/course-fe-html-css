@@ -1,0 +1,4 @@
+/* ! Добавляем стили для ссылки при наведении */
+table td:first-child {
+    text-align: left;
+}
