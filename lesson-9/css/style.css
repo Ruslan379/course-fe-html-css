@@ -1,63 +1,97 @@
+/*! Наслідування стилів */
+/* ? -- Стилізуємо body -- */
 body {
+    padding-top: 8px;
     /* color: #2a2a2a; */
     color: #500000;
     background-color: #fffddd;
 }
 
+body,
+header,
+main,
+section,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+}
+
+
+/*! Скидання (налаштування) стилів */
+/* ? Зображення */
 img {
     display: block;
     /* max-width: 100%; */
     height: auto;
 }
 
-/* ? Додаем стили для тексту */
-/* ? header */
-.text-bold {
-    font-weight: bold;
+/* ? Убираем стандартные отступы и маркеры для упорядоченных списков */
+ul,
+ol {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* list-style: none; */
+    /* text-align: center; */
+    color: #663399;
+    font-size: 18px
 }
-.text-italic {
-    font-style: italic;
+
+/*? Єлементи списків */
+li {
+    margin-bottom: 8px;
 }
-.text-underline {
+
+/* ? Убираем подчеркивание и стандартные стили для ссылок */
+a {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    color: inherit;
+    /* Используем цвет текста родительского элемента (наследование цвета) */
+    cursor: pointer;
+    /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+}
+
+/* ? Добавляем стили для ссылки при наведении */
+a:hover {
     text-decoration: underline;
+    /* Добавляем подчеркивание при наведении */
+    color: olive;
+    /* Меняем цвет текста при наведении */
 }
 
-.text-lesson-number {
+/* ? Додаем стили для таблиц */
+table {
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #2a2a2a;
+}
+
+table td {
+
+    color: green;
+    font-size: larger;
+}
+table td:first-child {
+    /* min-width: 240px; */
     text-align: center;
-    color: blue;
-    font-size: 24px;
+    color: red;
+    font-size: larger;
 }
-
-.title-lesson {
-    text-align: center;
-    color: tomato;
-}
-
-.title-content {
-    color: #0000ff;
-}
-
-.list-content {
-    color: #7f00d4;
-}
-
-
-/* ? Cтилізуємо заголовки змісту */
-/* ? main */
-div[id^="d"] {
-    color: #4169e1;
-    margin-top: 80px;
-    font-style: italic;
-    /*! new style */
-    font-size: 24px; 
-}
+/*! ================================================================= */
 
 
 
 
-/* ?================================================================= */
-/* ? Стилізация, яка використалась як ВБУДОВАНА с 1-го по 6-ий уроки */
-
+/*! КНОПКИ-СТРЕЛКИ */
 /* ?Кнопка-стрелка (общие стили) */
 .arrow-button {
     position: fixed;
@@ -109,46 +143,13 @@ div[id^="d"] {
     cursor: pointer; */
 }
 
-/* ? Поворот Кнопки-стрелка на 180 градусов */
+/*? Поворот Кнопки-стрелка на 180 градусов */
 .rotate180 {
     transform: rotate(180deg);
 }
 
-/* ? Поворот текстового элемента на 180 градусов */
-.rotated-text {
-    display: inline-block;
-    transform: rotate(180deg);
-    }
 
-/* ? -- Стилізуємо body -- */
-body {
-    padding-top: 8px;
-}
-
-body,
-header,
-main,
-section,
-footer {
-    display: flex;
-    flex-direction: column;
-    /* Вертикальная основная ось */
-    /* Центрирование элементов по вертикали: */
-    /* justify-content: center;  */
-    align-items: center;
-    /* Центрирование элементов по горизонтали */
-    /* Добавляем ШИРИНУ на весь экран (viewport height) */
-    /* Так будет горизонтальная полоса прокрутки: */
-    /* width: 100vw; */
-    /* Так НЕ будет горизонтальной полосы прокрутки: */
-    width: 100%;
-    /* Добавляем ВЫСОТУ на весь экран (viewport height) */
-    /* height: 100vh;  */
-    margin: 0px;
-    /* Убираем внешние отступы */
-    /* padding-left: 10px; */
-}
-
+/*! header */
 /* ? Стилізуємо nav */
 nav {
     text-align: center;
@@ -157,63 +158,75 @@ nav {
     /* outline: 1px solid red */
 }
 
-/* ? Убираем стандартные отступы и маркеры для упорядоченных списков */
-ul,
-ol {
-    /* margin: 0; */
-    /* padding: 0; */
-    /* list-style: none; */
-    /* text-align: center; */
-    color: rebeccapurple;
-    font-size: 18px
+/* ? Стили для тексту */
+.text-bold {
+    font-weight: bold;
 }
-
-li {
-    margin-bottom: 8px;
+.text-italic {
+    font-style: italic;
 }
-
-/* ? Убираем подчеркивание и стандартные стили для ссылок */
-a {
-    padding-left: 5px;
-    padding-right: 5px;
-    text-decoration: none;
-    /* Убираем подчеркивание */
-    color: inherit;
-    /* Используем цвет текста родительского элемента (наследование цвета) */
-    cursor: pointer;
-    /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
-
-}
-
-/* ? Добавляем стили для ссылки при наведении */
-a:hover {
+.text-underline {
     text-decoration: underline;
-    /* Добавляем подчеркивание при наведении */
-    color: olive;
-    /* Меняем цвет текста при наведении */
 }
 
-/* ? Додаем стили для таблиц */
-table {
-    border-collapse: collapse;
-}
-
-table th,
-table td {
-    padding: 10px;
-    border: 1px solid #2a2a2a;
-}
-
-table td {
-
-    color: green;
-    font-size: larger;
-}
-table td:first-child {
-    /* min-width: 240px; */
+.text-lesson-number {
     text-align: center;
-    color: red;
-    font-size: larger;
+    color: blue;
+    font-size: 24px;
 }
 
-/* ?================================================================= */
+.title-lesson {
+    text-align: center;
+    color: tomato;
+}
+
+.title-content {
+    color: #0000ff;
+}
+
+.list-content {
+    color: #7f00d4;
+}
+
+
+
+
+/*! main */
+/*? Заголовки змісту */
+div[id^="d"] {
+    color: #4169e1;
+    margin-top: 80px;
+    font-style: italic;
+    /*! new style */
+    font-size: 24px; 
+}
+
+/*? Контейнер основного тексту */
+.box-main {
+    width: 800px;
+}
+/* ? Основний текст */
+.text-main {
+    font-size: 18px; 
+    text-indent: 40px; 
+    text-shadow: 2px 2px 6px #808080;
+}
+
+/*? Колір акценту основного тексту */
+.color-accent {
+    color: #dc143c;
+}
+
+/*? Заголовки h4 */
+.subheading-text-main {
+    color: darkred;
+    font-size: 20px;
+}
+
+/* ? Поворот текстового элемента на 180 градусов */
+.rotated-text {
+    display: inline-block;
+    transform: rotate(180deg);
+    }
+
+
