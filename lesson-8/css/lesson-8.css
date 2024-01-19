@@ -3,6 +3,7 @@ table td:first-child {
     text-align: left;
 }
 
+/* * Список з 10-ю єлементами у рядок */
 .list-structural-pseudo-classes {
     height: 40px;
     display: flex;
@@ -31,3 +32,9 @@ table td:first-child {
 
     /* outline: 1px solid tomato; */
 }
+
+.last-child:hover {
+    color: white;
+    background-color: tomato;
+   }
+   
