@@ -24,15 +24,28 @@ table td:first-child {
     text-align: center; 
 }
 
-.link {
+.link1 {
     color: teal;
 }
 
-.link:hover {
+.link1:hover {
     color: red;
     background-color: yellow;
 }
 
+.link2 {
+    color: rgb(255, 0, 255);
+}
+
+.link2:hover {
+    color: rgb(255, 0, 255);
+    text-decoration: none;
+}
+
+.link2:focus {
+    color: orange;
+    background-color: royalblue;
+}
 
 
 /*! Структурні псевдокласи (для роботи з дочірніми елементами) */
