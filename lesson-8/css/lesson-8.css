@@ -31,6 +31,7 @@ table td:first-child {
 .link1:hover {
     color: red;
     background-color: yellow;
+    text-decoration: none;
 }
 
 .link2 {
@@ -43,7 +44,7 @@ table td:first-child {
 }
 
 .link2:focus {
-    color: orange;
+    color: tomato;
     background-color: royalblue;
 }
 
