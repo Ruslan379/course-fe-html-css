@@ -61,6 +61,19 @@ table td:first-child {
     background-color: black;
 }
 
+/** visited */
+.link4 {
+    color: blue;
+}
+.link4:hover {
+    color: blue;
+    text-decoration: none;
+}
+.link4:visited {
+    color: blueviolet;
+    /* background-color: darkgreen; */
+}
+
 
 /*! Структурні псевдокласи (для роботи з дочірніми елементами) */
 /** Головний список з прикладами коду */

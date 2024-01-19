@@ -261,6 +261,9 @@ div[id^="d"] {
 .color-lightseagreen {
     color: #20b2aa;
 }
+.color-violet {
+    color: #b400b4;
+}
 /*? ----- background-colors ----- */
 .bck-color-black {
     background-color: #000000;
