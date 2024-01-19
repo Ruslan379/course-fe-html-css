@@ -258,6 +258,59 @@
                     <i>Псевдокласи стану:</i>
                 </h3> -->
                 <div id="d7"></div>
+                <div class="box-main">
+                    <p class="text-main">
+                        <b>Селектори стану</b> використовуються для застосування стилів до інтерактивних елементів за певної події, наприклад, у разі наведення курсору на посилання або фокусування з клавіатури.
+                    </p>
+                    <p class="text-main">
+                        Псевдоклас визначає конкретний <b>стан елемента</b> і прикріплений до селектора тегу, класу тощо.
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">селектор<span class="color-lightseagreen">:псевдоклас</span></span> <span>{</span>
+    <span class="color-green">властивість</span>: <span class="color-goldenrod">значення</span>;
+    <span class="color-green">властивість</span>: <span class="color-goldenrod">значення</span>;
+    <span class="color-green">властивість</span>: <span class="color-goldenrod">значення</span>;
+<span>}</span>
+                        </code>
+                    </pre>
+                    <ul class="list-main">
+                        <li class="list-main-item01">
+                            <h4 class="subheading-text-main margin-left-10">Перший елемент в колекції сусідів:</h4>
+                            <code>
+                                <pre>
+    .list-item<b>:first-child</b> {
+        color: white;
+        background-color: tomato;
+    }                           
+                                </pre>
+                            </code>
+                        </li>
+                        <li class="list-main-item02">
+                            <h4 class="subheading-text-main margin-left-10">Останній елемент в колекції сусідів:</h4>
+                            <code>
+                                <pre>
+    .list-item<b>:last-child</b> {
+        color: white;
+        background-color: tomato;
+    }
+                                </pre>
+                            </code>
+                        </li>
+                        <li class="list-main-item03">
+                            <h4 class="subheading-text-main margin-left-10">N-й елемент в колекції сусідів:</h4>
+                            <code>
+                                <pre>
+    .list-item<b>:nth-child(5)</b> {
+        color: white;
+        background-color: tomato;
+    }
+                                </pre>
+                            </code>
+                        </li>
+
+                    </ul>
+                </div>
                 <!--? Позаголовок -->
                 <h4 class="subheading-text-main"><u>Позаголовок</u>:</h4>
 
@@ -282,7 +335,7 @@
                     </p>
                     <pre class="box-pre bck-color-black">
                         <code class="box-code">
-&lt;<span class="color-red">ul</span>&gt; <span class="color-goldenrod">class</span>=<span class="color-green">"list"</span>&gt;
+&lt;<span class="color-red">ul</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list"</span>&gt;
     <span class="first-child1">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">1</span>&lt;/<span class="color-red">li</span>&gt;</span>
     <span class="second-child2">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">2</span>&lt;/<span class="color-red">li</span>&gt;</span>
     &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">3</span>&lt;/<span class="color-red">li</span>&gt;

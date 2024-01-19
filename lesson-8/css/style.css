@@ -257,6 +257,9 @@ div[id^="d"] {
 .color-goldenrod {
     color: #daa520;
 }
+.color-lightseagreen {
+    color: #20b2aa;
+}
 /*? ----- background-colors ----- */
 .bck-color-black {
     background-color: #000000;
