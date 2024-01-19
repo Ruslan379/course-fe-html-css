@@ -218,7 +218,7 @@
                 </h3> -->
                 <div id="d1"></div>
                 <!--? Приклади Блокових елементів  -->
-                <h4><u>Приклади Блокових елементів:</u></h4>
+                <h4 style="color: darkred"><u>Приклади Блокових елементів:</u></h4>
                 <p 
                     style ="outline: 1px solid red; width: 100%"
                 >
@@ -252,7 +252,7 @@
                     Блоковий елемент <b>&lt;li&gt;</b> — займає повністю увесь рядок
                 </li>
                 <!--? Приклади Рядкових елемент тегів -->
-                <h4><u>Приклади Рядкових елементів:</u></h4>
+                <h4 style="color: darkred"><u>Приклади Рядкових елементів:</u></h4>
                 <div style ="display: flex;">
                     <a 
                         style ="outline: 1px solid blue"
@@ -373,7 +373,7 @@
                 </h3> -->
                 <div id="d4"></div>
                 <!--? Приклад таблиці з конспекту -->
-                <h4><u>Приклад таблиці з конспекту:</u></h4>
+                <h4 style="color: darkred"><u>Приклад таблиці з конспекту:</u></h4>
                 <table>
                     <caption>
                         Train schedule
@@ -405,7 +405,7 @@
                 </table>
                 <br />
                 <!--? Приклад таблиці з ДЗ-3 Бойко Владислава -->
-                <h4><u>Приклад таблиці з ДЗ-3 Бойко Владислава:</u></h4>
+                <h4 style="color: darkred"><u>Приклад таблиці з ДЗ-3 Бойко Владислава:</u></h4>
                 <table>
                     <caption>
                         Таблиця розкладу занять <b>Бойко Владислава</b>
@@ -476,7 +476,7 @@
                 </div>
                 
                 <!--? Елемент <input> та значення його за допомогою JS-->
-                <h4 style ="color: tomato"><u>Елемент &lt;input&gt; та значення з його полів за допомогою JS:</u></h4>
+                <h4  style="color: darkred"><u>Елемент &lt;input&gt; та значення з його полів за допомогою JS:</u></h4>
                 <div style ="display: block; outline: 2px solid tomato; padding: 10px;">
                     <label for="user_name">Name</label>
                     <input 
@@ -501,7 +501,7 @@
                     <p id="userpasswordDisplay">Password:</p>
                 </div>
                 <!--? Елемент <form>(I варіант <label>) -->
-                <h4><u>Елемент &lt;form&gt;</u> <i>(I варіант &lt;label&gt;)</i>:</h4>
+                <h4 style="color: darkred"><u>Елемент &lt;form&gt;</u> <i>(I варіант &lt;label&gt;)</i>:</h4>
                 <form name="signup_form" autocomplete="on" novalidate>
                     <label>
                         Email
@@ -514,7 +514,7 @@
                     <button type="submit">Submit</button>
                 </form>
                 <!--? Елемент <form>(II варіант <label>) -->
-                <h4><u>Елемент &lt;form&gt;</u> <i>(II варіант &lt;label&gt;)</i>:</h4>
+                <h4 style="color: darkred"><u>Елемент &lt;form&gt;</u> <i>(II варіант &lt;label&gt;)</i>:</h4>
                 <form>
                     <label for="user_email1">Email</label>
                     <input type="email" name="email" id="user_email1" />
@@ -707,7 +707,7 @@
                 </h3> -->
                 <div id="d13"></div>
                 <!--? Простий <select> -->
-                <h4><u>Простий &lt;select&gt;</u>:</h4>
+                <h4 style="color: darkred"><u>Простий &lt;select&gt;</u>:</h4>
                 <form>
                     <label for="size">Size:</label>
                     <select id="size" name="size">
@@ -719,7 +719,7 @@
                     <button type="submit">Submit</button>
                 </form>
                 <!--? Групування опцій у <select> -->
-                <h4><u>Групування опцій у &lt;select&gt;</u>:</h4>
+                <h4 style="color: darkred"><u>Групування опцій у &lt;select&gt;</u>:</h4>
                 <form>
                     <label for="month">Month:</label>
                     <select name="month" id="month">
@@ -744,7 +744,7 @@
                 </h3> -->
                 <div id="d14"></div>
                 <!--? Простий <datalist> -->
-                <h4><u>Простий &lt;datalist&gt;</u>:</h4>
+                <h4 style="color: darkred"><u>Простий &lt;datalist&gt;</u>:</h4>
                 <form>
                     <label for="fav">Choose your favourite browser:</label>
                     <input list="browsers" name="fav" id="fav" />
@@ -758,7 +758,7 @@
                     <button type="submit">Submit</button>
                 </form>
                 <!--? <datalist> де опції та значення не збігаються -->
-                <h4><u>&lt;datalist&gt; де опції та значення не збігаються</u>:</h4>
+                <h4 style="color: darkred"><u>&lt;datalist&gt; де опції та значення не збігаються</u>:</h4>
                 <form>
                     <label for="state">Choose your state</label>
                     <input type="text" name="state" id="state" list="states" />
@@ -874,6 +874,7 @@
                     // Устанавливаем стиль
                 headerElement.style.color = "royalblue";
                 headerElement.style.marginTop = "80px";
+                headerElement.style.fontSize = "24px";
                     // Устанавливаем содержимое с переменной
                 headerElement.innerHTML = "<i>" + headerContent + "</i>";
                     // Возвращаем созданный элемент
