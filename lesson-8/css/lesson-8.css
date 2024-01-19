@@ -1,16 +1,16 @@
-/* * Добавляем стили для ссылки при наведении */
+/*!  Специфічність ("вага" селектора): */
 table td:first-child {
     text-align: left;
 }
 
-/* * Головний список з прикладами коду */
+/*! Структурні псевдокласи (для роботи з дочірніми елементами) */
+/** Головний список з прикладами коду */
     .list-main {
         list-style: none;
         padding: 0;
     }
 
-
-/* * Список з 10-ю єлементами у рядок */
+/** Вкладений список з 10-ю єлементами у рядок */
 /* list-structural-pseudo-classes */
 .list-second {
     height: 60px;
@@ -31,15 +31,9 @@ table td:first-child {
     border-radius: 10px;
     box-shadow: 2px 2px 6px #808080;
     background-color: rgb(255, 230, 225);
-
     /* outline: 1px solid tomato; */
 }
-
-.margin-left-10 {
-    margin-left: 10px;    
-}
-
-
+/** Єлементи вкладеного списоку з 10-ю єлементами */
 /* item-structural-pseudo-classes */
 .list-second-item {
     margin: 0;
@@ -55,6 +49,12 @@ table td:first-child {
     /* outline: 1px solid tomato; */
 }
 
+/** Заголовок h4 */
+.margin-left-10 {
+    margin-left: 10px;    
+}
+
+
 /* .first-child1:hover,
 .first-child1:hover + .second-child2,
 .first-child1:hover ~ .last-child10 {
@@ -62,7 +62,7 @@ table td:first-child {
     background-color: tomato;
 } */
 
-/*? Перший елемент в колекції сусідів */
+/** Перший елемент в колекції сусідів */
 .list-main-item01:hover,
 .list-main-item01:hover ~ li>ul>li.item1 {
     color: white;
@@ -70,7 +70,7 @@ table td:first-child {
     box-shadow: 2px 2px 6px #808080;
 }
 
-/*? Останній елемент в колекції сусідів */
+/** Останній елемент в колекції сусідів */
 .list-main-item02:hover,
 .list-main-item02:hover ~ li>ul>li.item10 {
     color: white;
@@ -78,7 +78,7 @@ table td:first-child {
     box-shadow: 2px 2px 6px #808080;
 }
 
-/*? N-й елемент в колекції сусідів */
+/** N-й елемент в колекції сусідів */
 .list-main-item03:hover,
 .list-main-item03:hover ~ li>ul>li.item5 {
     color: white;
