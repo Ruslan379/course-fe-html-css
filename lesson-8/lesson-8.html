@@ -282,21 +282,60 @@
                     </p>
                     <pre class="box-pre bck-color-black">
                         <code class="box-code">
-&lt;<span class="color-red">ul</span>&gt; <span class="color-goldenrod">class</span>=<span class="color-green">"list-structural-pseudo-classes"</span>&gt;
-    <span class="first-child">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">1</span>&lt;/<span class="color-red">li</span>&gt;</span>
-    <span class="second-child">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">2</span>&lt;/<span class="color-red">li</span>&gt;</span>
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">3</span>&lt;/<span class="color-red">li</span>&gt;
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">4</span>&lt;/<span class="color-red">li</span>&gt;
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">5</span>&lt;/<span class="color-red">li</span>&gt;
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">6</span>&lt;/<span class="color-red">li</span>&gt;
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">7</span>&lt;/<span class="color-red">li</span>&gt;
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">8</span>&lt;/<span class="color-red">li</span>&gt;
-    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">9</span>&lt;/<span class="color-red">li</span>&gt;
-    <span class="last-child">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"item-structural-pseudo-classes"</span>&gt;<span class="color-blue">10</span>&lt;/<span class="color-red">li</span>&gt;</span>
+&lt;<span class="color-red">ul</span>&gt; <span class="color-goldenrod">class</span>=<span class="color-green">"list"</span>&gt;
+    <span class="first-child1">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">1</span>&lt;/<span class="color-red">li</span>&gt;</span>
+    <span class="second-child2">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">2</span>&lt;/<span class="color-red">li</span>&gt;</span>
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">3</span>&lt;/<span class="color-red">li</span>&gt;
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">4</span>&lt;/<span class="color-red">li</span>&gt;
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">5</span>&lt;/<span class="color-red">li</span>&gt;
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">6</span>&lt;/<span class="color-red">li</span>&gt;
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">7</span>&lt;/<span class="color-red">li</span>&gt;
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">8</span>&lt;/<span class="color-red">li</span>&gt;
+    &lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">9</span>&lt;/<span class="color-red">li</span>&gt;
+    <span class="last-child10">&lt;<span class="color-red">li</span> <span class="color-goldenrod">class</span>=<span class="color-green">"list-item"</span>&gt;<span class="color-blue">10</span>&lt;/<span class="color-red">li</span>&gt;</span>
 &lt;/<span class="color-red">ul</span>&gt;
                         </code>
                     </pre>
-                    <ul class="list-structural-pseudo-classes">
+                    <ul class="list-main">
+                        <li class="list-main-item01">
+                            <h4 class="subheading-text-main">Перший елемент в колекції сусідів:</h4>
+                            <code>
+                                <pre>
+    .list-item<b>:first-child</b> {
+        color: white;
+        background-color: tomato;
+    }                           
+                                </pre>
+                            </code>
+                        </li>
+                        <li class="list-main-item02">
+                            <h4 class="subheading-text-main">Останній елемент в колекції сусідів:</h4>
+                            <code>
+                                <pre>
+    .list-item<b>:last-child</b> {
+        color: white;
+        background-color: tomato;
+    }
+                                </pre>
+                            </code>
+                        </li>
+                        <li class="list-main-item03">:nth-child(5)</li>
+                        <li>
+                            <ul class="list-second">
+                                <li class="list-second-item item1">1</li>
+                                <li class="list-second-item item2">2</li>
+                                <li class="list-second-item item3">3</li>
+                                <li class="list-second-item item4">4</li>
+                                <li class="list-second-item item5">5</li>
+                                <li class="list-second-item item6">6</li>
+                                <li class="list-second-item item7">7</li>
+                                <li class="list-second-item item8">8</li>
+                                <li class="list-second-item item9">9</li>
+                                <li class="list-second-item item10">10</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <ul class="list-structural-pseudo-classes">
                         <li class="item-structural-pseudo-classes">1</li>
                         <li class="item-structural-pseudo-classes">2</li>
                         <li class="item-structural-pseudo-classes">3</li>
@@ -306,8 +345,8 @@
                         <li class="item-structural-pseudo-classes">7</li>
                         <li class="item-structural-pseudo-classes">8</li>
                         <li class="item-structural-pseudo-classes">9</li>
-                        <li class="item-structural-pseudo-classes last-child">10</li>
-                    </ul>
+                        <li class="item-structural-pseudo-classes">10</li>
+                    </ul> -->
                 </div>
                 <!--? Позаголовок -->
                 <h4 class="subheading-text-main"><u>Позаголовок</u>:</h4>

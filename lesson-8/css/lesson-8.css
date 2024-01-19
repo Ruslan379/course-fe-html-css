@@ -3,40 +3,72 @@ table td:first-child {
     text-align: left;
 }
 
+/* * Головний список з прикладами коду */
+    .list-main {
+        list-style: none;
+
+    }
+
+
 /* * Список з 10-ю єлементами у рядок */
-.list-structural-pseudo-classes {
-    height: 40px;
+/* list-structural-pseudo-classes */
+.list-second {
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* margin: 0; */
-    padding: 0;
+    /* padding: 0; */
+    padding-inline-start: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     list-style: none;
+    font-weight: 700;
     /* text-align: center; */
     /* color: #663399; */
     /* font-size: 18px; */
+    border: 1px solid tomato;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #808080;
+    background-color: rgb(255, 230, 225);
 
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
-.item-structural-pseudo-classes {
+/* item-structural-pseudo-classes */
+.list-second-item {
     margin: 0;
     padding: 0;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-align: center;
-    line-height: 1.7;
+    line-height: 2.3;
     /* vertical-align: center; */
-    border: 1px solid tomato;
+    border: 2px solid tomato;
     border-radius: 50%;
 
     /* outline: 1px solid tomato; */
 }
 
-.first-child:hover,
-.first-child:hover + .second-child,
-.first-child:hover ~ .last-child {
+/* .first-child1:hover,
+.first-child1:hover + .second-child2,
+.first-child1:hover ~ .last-child10 {
     color: white;
     background-color: tomato;
-   }
-   
+} */
+
+/*? Перший елемент в колекції сусідів */
+.list-main-item01:hover,
+.list-main-item01:hover ~ li>ul>li.item1 {
+    color: white;
+    background-color: tomato;
+    box-shadow: 2px 2px 6px #808080;
+}
+
+/*? Останній елемент в колекції сусідів */
+.list-main-item02:hover,
+.list-main-item02:hover ~ li>ul>li.item10 {
+    color: white;
+    background-color: tomato;
+    box-shadow: 2px 2px 6px #808080;
+}
