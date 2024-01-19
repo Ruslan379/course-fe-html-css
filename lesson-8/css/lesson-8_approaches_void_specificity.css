@@ -97,44 +97,48 @@
 
 /*? Другий підхід уникнення специфічності*/
 /* ?============================================== */
+/* ! */
 /* .navigation>a {
     color: var(--color-logo-links-brand);
 } */
+/* ? */
 /* .navigation>.link {
     color: var(--color-logo-links-brand);
 } */
 
+/* ! */
 /* .navigation>ul>li>a {
     color: var(--color-logo-links-brand);
 } */
+/* ! v.2 */
+/* .page-header a {
+    color: var(--color-logo-links-brand);
+} */
+/* ? */
 /* .navigation>.list>.item>.link {
     color: var(--color-logo-links-brand);
 } */
 
-/* v.2 */
-/* .page-header a {
-    color: var(--color-logo-links-brand);
-} */
 
+/* ! */
 /* .features>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
 } */
-
+/* ! */
 /* .activities>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
 } */
-
+/* ! */
 /* .team>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
 } */
-
-/* v.2 */
+/* ! v.2 */
 /* .features>h2,
 .activities>h2,
 .team>h2 {
@@ -142,26 +146,37 @@
     font-weight: bold;
     color: var(--color-font-main);
 } */
+/* ? v.2 */
+/* .features>.title,
+.activities>.title,
+.team>.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-font-main);
+} */
 
+/* ! */
 /* .team>ul>li>p {
     font-size: 16px;
     color: var(--color-font-main);
 } */
+/* ! v.2 */
+/* .team p {
+    font-size: 16px;
+    color: var(--color-font-main);
+} */
+/* ? */
 /* .team>.list>.item>.text {
     font-size: 16px;
     color: var(--color-font-main);
 } */
 
-/* v.2 */
-/* .team p {
-    font-size: 16px;
-    color: var(--color-font-main);
-} */
-
+/* ! */
 /* .team>ul>li>h3 {
     font-size: 16px;
     color: var(--color-font-head);
 } */
+/* ? */
 /* .team>.list>.item>.title {
     font-size: 16px;
     color: var(--color-font-head);
@@ -181,44 +196,61 @@
 
 /** Третій підхід уникнення специфічності*/
 /* *============================================== */
+/* ! */
 /* .navigation>a {
     color: var(--color-logo-links-brand);
 } */
+/* ? */
 /* .navigation>.link {
     color: var(--color-logo-links-brand);
 } */
+/*  */
+/* .logo-link-header {
+    color: var(--color-logo-links-brand);
+} */
 
+/* ! */
 /* .navigation>ul>li>a {
     color: var(--color-logo-links-brand);
 } */
-/* .navigation>.list>.item>.link {
-    color: var(--color-logo-links-brand);
-} */
-
-/* v.2 */
+/* ! v.2 */
 /* .page-header a {
     color: var(--color-logo-links-brand);
 } */
+/* ? */
+/* .navigation>.list>.item>.link {
+    color: var(--color-logo-links-brand);
+} */
+/*  */
+/* .nav-link {
+    color: var(--color-logo-links-brand);
+} */
+/*  */
+/* .contacts-link {
+    color: var(--color-logo-links-brand);
+} */
 
+
+
+/* ! */
 /* .features>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
 } */
-
+/* ! */
 /* .activities>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
 } */
-
+/* ! */
 /* .team>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
 } */
-
-/* v.2 */
+/* ! v.2 */
 /* .features>h2,
 .activities>h2,
 .team>h2 {
@@ -226,33 +258,59 @@
     font-weight: bold;
     color: var(--color-font-main);
 } */
+/* ? v.2 */
+/* .features>.title,
+.activities>.title,
+.team>.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-font-main);
+} */
+/*  */
+/* .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--color-font-main);
+}  */
 
+/* ! */
 /* .team>ul>li>p {
     font-size: 16px;
     color: var(--color-font-main);
 } */
-/* .team>.list>.item>.text {
-    font-size: 16px;
-    color: var(--color-font-main);
-} */
-
-/* v.2 */
+/* ! v.2 */
 /* .team p {
     font-size: 16px;
     color: var(--color-font-main);
 } */
+/* ? */
+/* .team>.list>.item>.text {
+    font-size: 16px;
+    color: var(--color-font-main);
+} */
+/*  */
+/* .team-name {
+    font-size: 16px;
+    color: var(--color-font-main);
+} */
 
+/* ! */
 /* .team>ul>li>h3 {
     font-size: 16px;
     color: var(--color-font-head);
 } */
+/* ! v.2 */
+/* .team h3 {
+    font-size: 16px;
+    color: var(--color-font-head);
+} */
+/* ? */
 /* .team>.list>.item>.title {
     font-size: 16px;
     color: var(--color-font-head);
 } */
-
-/* v.2 */
-/* .team h3 {
+/*  */
+/* .team-position {
     font-size: 16px;
     color: var(--color-font-head);
 } */
