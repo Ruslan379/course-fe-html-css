@@ -97,11 +97,17 @@
 
 /*? Другий підхід уникнення специфічності*/
 /* ?============================================== */
-.navigation>a {
+/* .navigation>a {
     color: var(--color-logo-links-brand);
-}
+} */
+/* .navigation>.link {
+    color: var(--color-logo-links-brand);
+} */
 
-.navigation>ul>li>a {
+/* .navigation>ul>li>a {
+    color: var(--color-logo-links-brand);
+} */
+.navigation>.list>.item>.link {
     color: var(--color-logo-links-brand);
 }
 
@@ -110,23 +116,23 @@
     color: var(--color-logo-links-brand);
 } */
 
-.features>h2 {
+/* .features>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
-}
+} */
 
-.activities>h2 {
+/* .activities>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
-}
+} */
 
-.team>h2 {
+/* .team>h2 {
     font-size: 36px;
     font-weight: bold;
     color: var(--color-font-main);
-}
+} */
 
 /* v.2 */
 /* .features>h2,
@@ -137,7 +143,11 @@
     color: var(--color-font-main);
 } */
 
-.team>ul>li>p {
+/* .team>ul>li>p {
+    font-size: 16px;
+    color: var(--color-font-main);
+} */
+.team>.list>.item>.text {
     font-size: 16px;
     color: var(--color-font-main);
 }
@@ -148,6 +158,10 @@
     color: var(--color-font-main);
 } */
 
+/* .team>ul>li>h3 {
+    font-size: 16px;
+    color: var(--color-font-head);
+} */
 .team>ul>li>h3 {
     font-size: 16px;
     color: var(--color-font-head);
