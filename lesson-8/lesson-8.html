@@ -260,7 +260,7 @@
                 <div id="d7"></div>
                 <div class="box-main">
                     <p class="text-main">
-                        <b>Селектори стану</b> використовуються для застосування стилів до інтерактивних елементів за певної події, наприклад, у разі наведення курсору на посилання або фокусування з клавіатури.
+                        <b>Псевдокласи стану</b> (<i><b>cелектори стану</b></i>) використовуються для застосування стилів до інтерактивних елементів за певної події, наприклад, у разі наведення курсору на посилання або фокусування з клавіатури.
                     </p>
                     <p class="text-main">
                         Псевдоклас визначає конкретний <b>стан елемента</b> і прикріплений до селектора тегу, класу тощо.
@@ -274,9 +274,33 @@
 <span>}</span>
                         </code>
                     </pre>
+                    <br>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+&lt;p&gt;
+    Хорошу шпаргалку з тегів можна знайти
+        &lt;a 
+            class="link" 
+            href="https://htmlreference.io"
+        >
+            за цим посиланням
+        &lt;/a&gt;
+&lt;/p&gt;
+                        </code>
+                    </pre>
+                    <p class="text-main">
+                        Додамо посиланню базовий стиль:
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">.link</span> <span>{</span>
+    <span class="color-green">color</span>: <span class="color-goldenrod">teal</span>;
+<span>}</span>
+                        </code>
+                    </pre>
                     <ul class="list-main">
                         <li class="list-main-item01">
-                            <h4 class="subheading-text-main margin-left-10">Перший елемент в колекції сусідів:</h4>
+                            <h4 class="subheading-text-main margin-left-10">Псевдоклас :hover</h4>
                             <code>
                                 <pre>
     .list-item<b>:first-child</b> {
