@@ -24,28 +24,41 @@ table td:first-child {
     text-align: center; 
 }
 
+/** hover */
 .link1 {
     color: teal;
 }
-
 .link1:hover {
     color: red;
     background-color: yellow;
     text-decoration: none;
 }
 
+/** focus */
 .link2 {
-    color: rgb(255, 0, 255);
-}
+    color: #ff00ff;
 
+}
 .link2:hover {
-    color: rgb(255, 0, 255);
+    color: #ff00ff;
     text-decoration: none;
 }
-
 .link2:focus {
     color: tomato;
     background-color: royalblue;
+}
+
+/** active */
+.link3 {
+    color: #00c700;
+}
+.link3:hover {
+    color: #00c700;
+    text-decoration: none;
+}
+.link3:active {
+    color: white;
+    background-color: black;
 }
 
 

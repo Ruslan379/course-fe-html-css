@@ -334,6 +334,13 @@
                         <p class="text-main">
                             Активується, коли <b>інтерактивний елемент</b> (<b><i>посилання, кнопка, поле форми</i></b>) отримує <b>фокус</b> під час навігації по сторінці клавіатурою (клавішею <b>Tab</b>).
                         </p>
+                        <pre class="box-pre bck-color-black">
+                            <code class="box-code">
+    <span class="color-red">.link</span> <span>{</span>
+        <span class="color-green">color</span>: <span class="color-goldenrod">violet</span>;
+    <span>}</span>
+                            </code>
+                        </pre>
                         <p class="text-main">
                             Додамо посиланню стиль наведення - стан <b>:focus</b>
                         </p>
@@ -350,6 +357,43 @@
                                 Хорошу шпаргалку з тегів можна знайти
                                     <a 
                                         class="link2" 
+                                        href="https://htmlreference.io"
+                                    >
+                                        за цим посиланням
+                                    </a>
+                            </p>
+                        </div>
+                </div>
+                <br />
+                <!--? Псевдоклас :active -->
+                <h4 class="subheading-text-main text-align">Псевдоклас :active</h4>
+                <div class="box-main">
+                        <p class="text-main">
+                            Відбувається під час <b>активації</b> елемента. Наприклад, посилання стає активним, якщо навести на нього курсор і <b>клацнути</b> мишкою. 
+                        </p>
+                        <p class="text-main">
+                            Незважаючи на те, що <b>активним</b> може стати практично <b>будь-який елемент</b>, псевдоклас <b class="color-red">:active</b> використовується в основному для <b>посилань</b> і <b>кнопок</b>.
+                        </p>
+                        <pre class="box-pre bck-color-black">
+                            <code class="box-code">
+    <span class="color-red">.link</span> <span>{</span>
+        <span class="color-green">color</span>: <span class="color-goldenrod">green</span>;
+    <span>}</span>
+                            </code>
+                        </pre>
+                        <pre class="box-pre bck-color-black">
+                            <code class="box-code">
+    <span class="color-red">.link</span><span class="color-lightseagreen">:active</span> <span>{</span>
+        <span class="color-green">color</span>: <span class="color-goldenrod">white</span>;
+        <span class="color-green">background-color</span>: <span class="color-goldenrod">black</span>;
+    <span>}</span>
+                            </code>
+                        </pre>
+                        <div class="box-link">
+                            <p class="text-main inherit-font">
+                                Хорошу шпаргалку з тегів можна знайти
+                                    <a 
+                                        class="link3" 
                                         href="https://htmlreference.io"
                                     >
                                         за цим посиланням
