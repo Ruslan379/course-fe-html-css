@@ -3,6 +3,38 @@ table td:first-child {
     text-align: left;
 }
 
+
+/*! Структурні псевдокласи (для роботи з дочірніми елементами) */
+.box-link {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: bisque;
+    text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #444444;
+}
+.text-main.inherit-font  {
+    font-size: inherit; 
+}
+
+.subheading-text-main.text-align  {
+    text-align: center; 
+}
+
+.link {
+    color: teal;
+}
+
+.link:hover {
+    color: red;
+    background-color: yellow;
+}
+
+
+
 /*! Структурні псевдокласи (для роботи з дочірніми елементами) */
 /** Головний список з прикладами коду */
     .list-main {
