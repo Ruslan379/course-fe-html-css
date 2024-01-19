@@ -33,7 +33,9 @@ table td:first-child {
     /* outline: 1px solid tomato; */
 }
 
-.last-child:hover {
+.first-child:hover,
+.first-child:hover + .second-child,
+.first-child:hover ~ .last-child {
     color: white;
     background-color: tomato;
    }
