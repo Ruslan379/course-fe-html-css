@@ -2,3 +2,32 @@
 table td:first-child {
     text-align: left;
 }
+
+.list-structural-pseudo-classes {
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 0; */
+    padding: 0;
+    list-style: none;
+    /* text-align: center; */
+    /* color: #663399; */
+    /* font-size: 18px; */
+
+    outline: 1px solid tomato;
+}
+
+.item-structural-pseudo-classes {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 1.7;
+    /* vertical-align: center; */
+    border: 1px solid tomato;
+    border-radius: 50%;
+
+    /* outline: 1px solid tomato; */
+}
