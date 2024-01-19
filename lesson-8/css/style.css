@@ -229,4 +229,22 @@ div[id^="d"] {
     transform: rotate(180deg);
     }
 
+.helpful-source-information-bck {
+    background-color:#ffff00;
+}
 
+.helpful-source-information-icon {
+    color:#ff1493;
+}
+
+.border-outline {
+    outline: 2px solid tomato;
+}
+
+.color-tomato {
+    color: #ff6347;
+}
+
+.color-blue {
+    color: #0000ff;
+}
