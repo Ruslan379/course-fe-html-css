@@ -4,7 +4,7 @@ table td:first-child {
 }
 
 
-/*! Структурні псевдокласи (для роботи з дочірніми елементами) */
+/*! Псевдокласи стану​ */
 .box-link {
     height: 80px;
     display: flex;
@@ -81,6 +81,7 @@ table td:first-child {
     list-style: none;
     padding: 0;
 }
+/** Єлементи Головного списку */
 .list-main>li>h4 {
     margin-top: 0;
 }
@@ -112,7 +113,6 @@ table td:first-child {
     background-color: rgb(255, 230, 225);
     /* outline: 1px solid tomato; */
 }
-
 /** Єлементи вкладеного списоку з 10-ю єлементами */
 /* item-structural-pseudo-classes */
 .list-second-item {
