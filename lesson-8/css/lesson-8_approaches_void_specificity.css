@@ -33,6 +33,31 @@
 
 
 
+
+
+
+
+
+
+
+
+
+/** стилізация заголовків h2 */
+/* .section-title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-align: center;
+    color: #212121;
+} */
+
+
+
+
+
 /*! Перший підхід уникнення специфічності*/
 /* !============================================== */
 /* .navigation>a {
