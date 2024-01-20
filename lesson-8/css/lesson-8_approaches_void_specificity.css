@@ -176,14 +176,13 @@
     font-size: 16px;
     color: var(--color-font-head);
 } */
-/* ? */
-/* .team>.list>.item>.title {
+/* ! v.2 */
+/* .team h3 {
     font-size: 16px;
     color: var(--color-font-head);
 } */
-
-/* v.2 */
-/* .team h3 {
+/* ? */
+/* .team>.list>.item>.title {
     font-size: 16px;
     color: var(--color-font-head);
 } */
