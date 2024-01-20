@@ -77,10 +77,17 @@ table td:first-child {
 
 /*! Структурні псевдокласи (для роботи з дочірніми елементами) */
 /** Головний список з прикладами коду */
-    .list-main {
-        list-style: none;
-        padding: 0;
-    }
+.list-main {
+    list-style: none;
+    padding: 0;
+}
+.list-main>li>h4 {
+    margin-top: 0;
+}
+.list-main>li {
+    border-radius: 5px;
+    padding-top: 5px;
+}
 
 /** Вкладений список з 10-ю єлементами у рядок */
 /* list-structural-pseudo-classes */
@@ -105,6 +112,7 @@ table td:first-child {
     background-color: rgb(255, 230, 225);
     /* outline: 1px solid tomato; */
 }
+
 /** Єлементи вкладеного списоку з 10-ю єлементами */
 /* item-structural-pseudo-classes */
 .list-second-item {

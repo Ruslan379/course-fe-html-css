@@ -150,7 +150,7 @@
                 </div>
                 <br />
                 <!--? Специфічність ("вага" селектора) -->
-                <h4 class="subheading-text-main"><u>Специфічність ("вага" селектора)</u>:</h4>
+                <h4 class="subheading-text-main"><i>Специфічність ("вага" селектора)</i>:</h4>
                 <table style="width: 500px; font-size: larger;">
                     <caption>
                         <!-- заголовок -->
@@ -258,7 +258,7 @@
                     </p>
                 </div>
                 <!--? Перший підхід уникнення специфічності -->
-                <h4 class="subheading-text-main"><u>Перший підхід уникнення специфічності</u>:</h4>
+                <h4 class="subheading-text-main"><i>Перший підхід уникнення специфічності</i>:</h4>
                 <div class="box-main">
                     <p class="text-main">
                         <b>Перший підхід</b> - це присвоєння <b><u>класу</u></b> <b class="color-red">загальному блоку-батькові</b> та використання <b class="color-green">селекторів <u>тегів</u> дитини і нащадка</b>.
@@ -272,22 +272,24 @@
                     Посилання на WebStudio
                 </a>
                 <br />
-
-
                 <!--? Другий підхід уникнення специфічності -->
-                <h4 class="subheading-text-main"><u>Другий підхід уникнення специфічності</u>:</h4>
+                <h4 class="subheading-text-main"><i>Другий підхід уникнення специфічності</i>:</h4>
                 <div class="box-main">
                     <p class="text-main">
                         <b>Другий підхід</b> - це додавання <b><u>описових класів</u></b> <b class="color-red">блоку-батькові</b> і <b class="color-green">тегам всередині</b> нього та використання <b class="color-green">селекторів <u>класів</u> дитини і нащадка</b>..
                     </p>
                 </div>
-
-
                 <!--? Третій підхід уникнення специфічності -->
-                <h4 class="subheading-text-main"><u>Третій підхід уникнення специфічності</u>:</h4>
+                <h4 class="subheading-text-main"><i>Третій підхід уникнення специфічності</i>:</h4>
                 <div class="box-main">
                     <p class="text-main">
                         <b>Третій підхід</b> полягає у встановленні <b><u>унікальних класів</u></b> <b class="color-red">блоку-батькові</b> і <b class="color-green">кожному тегу всередині</b> нього за принципом <b class="color-red text-larger">імя_батька</b> - <b class="color-green text-larger">імя_дитини</b> та використання цих <b><u>унікальних класів</u></b>.
+                    </p>
+                </div>
+                <br />
+                <div class="box-main">
+                    <p class="text-main color-accent">
+                        <i>Не варто обмежувати себе у виборі лише одного підходу. Усі три методи іменування розмітки класами і написання стилів можна використовувати разом, залежно від ситуації.</i>
                     </p>
                 </div>
 
@@ -340,7 +342,7 @@
                         </code>
                     </pre>
                     <!--? Псевдоклас :hover -->
-                    <h4 class="subheading-text-main text-align">Псевдоклас :hover</h4>
+                    <h4 class="subheading-text-main text-align"><i>Псевдоклас :hover</i></h4>
                     <p class="text-main">
                         Потім додамо посиланню стиль наведення - стан <b>:hover</b>
                     </p>
@@ -367,7 +369,7 @@
                 </div>
                 <br />
                 <!--? Псевдоклас :focus -->
-                <h4 class="subheading-text-main text-align">Псевдоклас :focus</h4>
+                <h4 class="subheading-text-main text-align"><i>Псевдоклас :focus</i></h4>
                 <div class="box-main">
                         <p class="text-main">
                             Активується, коли <b>інтерактивний елемент</b> (<b><i>посилання, кнопка, поле форми</i></b>) отримує <b>фокус</b> під час навігації по сторінці клавіатурою (клавішею <b>Tab</b>).
@@ -404,7 +406,7 @@
                 </div>
                 <br />
                 <!--? Псевдоклас :active -->
-                <h4 class="subheading-text-main text-align">Псевдоклас :active</h4>
+                <h4 class="subheading-text-main text-align"><i>Псевдоклас :active</i></h4>
                 <div class="box-main">
                         <p class="text-main">
                             Відбувається під час <b>активації</b> елемента. Наприклад, посилання стає активним, якщо навести на нього курсор і <b>клацнути</b> мишкою. 
@@ -441,7 +443,7 @@
                 </div>
                 <br />
                 <!--? Псевдоклас :visited -->
-                <h4 class="subheading-text-main text-align">Псевдоклас :visited</h4>
+                <h4 class="subheading-text-main text-align"><i>Псевдоклас :visited</i></h4>
                 <div class="box-main">
                         <p class="text-main">
                             Цей псевдоклас активується на <b>посиланнях</b>, які вже <b>були відвідані</b>.
@@ -566,78 +568,6 @@
                         <li class="item-structural-pseudo-classes">10</li>
                     </ul> -->
                 </div>
-
-                <!-- ?--------------------------------------------------- -->
-                <!--? корисне джерело інформації -->
-                <br />
-                <b class="helpful-source-information-bck">
-                    <span class="helpful-source-information-icon">&#9888; </span><i class="color-accent"><u>корисне джерело інформації</u></i><span class="helpful-source-information-icon"> &#9888;</span>
-                </b>
-                <ul>
-                    <li>
-                        <a 
-                            href="https://htmlreference.io/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            <b>A free guide to HTML</b> - підкаже які тегі <b>рядкові</b> а які <b>блокові</b>
-                        </a>
-                    </li>
-                </ul>
-                <!-- ?--------------------------------------------------- -->
-                <!--? корисне джерело інформації -->
-                <br />
-                <b class="helpful-source-information-bck">
-                    <span class="helpful-source-information-icon">&#9888; </span><i class="color-accent"><u>корисне джерело інформації</u></i><span class="helpful-source-information-icon"> &#9888;</span>
-                </b>
-                <ul>
-                    <li>
-                        <a 
-                            href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            <b>HTML Living Standard</b> - Named character references
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://www.toptal.com/designers/htmlarrows/symbols/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            HTML Currency Symbols
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://symbl.cc/ru/html-entities/"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            HTML-мнемоніки
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://symbl.cc/en/unicode/table/#khmer"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            List of Unicode Symbols
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href="https://www.w3schools.com/html/html_symbols.asp"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                        >
-                            HTML Symbols
-                        </a>
-                    </li>
-                </ul>
-                <!-- ?--------------------------------------------------- -->
             </section>
         </main>
         <br/>
