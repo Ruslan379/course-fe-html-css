@@ -10,12 +10,13 @@ body {
     background-color: var(--color-background-body);
 }
 
-/*? ===== Загальний клас стилізації шрифтів ===== */
+/*?  ===== Загальний клас стилізації шрифтів ===== */
 /* ?============================================== */
-.general-font-stylization {
+.general-style {
     font-weight: 700;
-    font-size: 32px;
-    color: inherit;
+    font-size: 28px;
+    /* color: inherit; */
+    /* color: red; */
 }
 /* ?============================================== */
 
