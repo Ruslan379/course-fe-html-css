@@ -153,17 +153,24 @@ li[class="list-main-itemlast"] {
     border: 2px solid whitesmoke;
 }
 /** Заголовок h4 кожної картки */
-.list-main-item01:hover > h4,
+/* .list-main-item01:hover > h4,
 .list-main-item02:hover > h4,
 .list-main-item03:hover > h4,
 .list-main-item04:hover > h4 {
     color: #a6ff00;
+} */
+li[class^="list-main-item0"]:hover > .subheading-text-main {
+    color: #a6ff00;
 }
-/** Псевдоклас h4 кожної картки */
-.list-main-item01:hover .pseudo-accent,
+
+/** Псевдоклас кожної картки */
+/* .list-main-item01:hover .pseudo-accent,
 .list-main-item02:hover .pseudo-accent,
 .list-main-item03:hover .pseudo-accent,
 .list-main-item04:hover .pseudo-accent {
+    color: #096800; 
+} */
+li[class^="list-main-item0"]:hover .pseudo-accent {
     color: #096800; 
 }
 
