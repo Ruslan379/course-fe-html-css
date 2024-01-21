@@ -26,7 +26,22 @@
     /* *========================================== */
 }
 
-
+/* ! === 1.Властивість font-family === */
+/*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
+h1 {
+    /* font-family: 'Roboto'; */
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px; /* 136.364% */
+    line-height: 1.36;
+    font-style: normal;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
 
 
 

@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5 {
     /* color: red; */
 }
 /** ============= Варіанти font-family ============= */
-/* .courier {
+.courier {
     font-family: 'Courier New', Courier, monospace;
 }
 .verdana {
@@ -39,17 +39,22 @@ h1,h2,h3,h4,h5 {
 }
 .impact {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-} */
+}
 /* ?============================================== */
 
 
 
-/* ! === Властивість font-family === */
+/* ! === 1.Властивість font-family === */
+/*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
 .general-style1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto';
+    /* font-weight: 400; */
+    /* font-weight: 500; */
+    /* font-weight: 700; */
+    /* font-weight: 900; */
 }
 
-/* ! === Властивість font-weight === */
+/* ! === 2.Властивість font-weight === */
 .general-style1 {
     /* font-weight: 400; normal  */
     font-weight: 400;
@@ -67,15 +72,15 @@ h1,h2,h3,h4,h5 {
     /* font-weight: 900; */
 }
 
-/* ! === Властивість font-size === */
+/* ! === 3.Властивість font-size === */
 .general-style1 {
     font-size: 10px;
-    /* font-size: 20px; */
-    /* font-size: 30px; */
-    /* font-size: 40px; */
+    font-size: 20px;
+    font-size: 30px;
+    font-size: 40px;
 }
 
-/* ! === Властивість line-height === */
+/* ! === 4.Властивість line-height === */
 .general-style1 {
     /* line-height = auto (або normal) це 1.2 */
     line-height: normal; /* 1.2 */
@@ -87,26 +92,33 @@ h1,h2,h3,h4,h5 {
     /* line-height: 4;  */
 }
 
-/* ! === Властивість font-style === */
+/* ! === 5.Властивість font-style === */
 .general-style1 {
     font-style: normal;
     /* font-style: italic; аналог тегу <i> */
     /* font-style: italic;  */
 }
 
-/* ! === Властивість text-decoration === */
+/* ! === 5.Властивість text-decoration === */
 .general-style1 {
     /* text-decoration: underline; аналог тегу <u> */
     text-decoration: underline;
     /* text-decoration: none; */
 }
 
-/* ! === Властивість text-shadow === */
+/* ! === 6.Властивість text-shadow === */
 .general-style1 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* ! === Властивість text-transform === */
+/* ! === 7.Властивість text-align === */
+.general-style1 {
+    text-align: center;
+    /* text-align: left; */
+    /* text-align: right; */
+}
+
+/* ! === 8.Властивість text-transform === */
 .general-style1 {
     text-transform: uppercase;
     /* text-transform: lowercase ; */
@@ -114,16 +126,9 @@ h1,h2,h3,h4,h5 {
     /* text-transform: none; */
 }
 
-/* ! === Властивість text-align === */
-.general-style1 {
-    text-align: center;
-    /* text-align: left; */
-    /* text-align: right; */
-}
-
-/* ! === Властивість text-indent === */
+/* ! === 9.Властивість text-indent === */
 .general-style-text {
     text-indent: 40px;
-    text-indent: 10%;
-    text-indent: inherit;
+    /* text-indent: 10%; */
+    /* text-indent: inherit; */
 }
