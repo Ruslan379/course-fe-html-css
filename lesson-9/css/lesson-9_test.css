@@ -1,22 +1,44 @@
 :root {
-    /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+    /** =============== CSS-змінні ============== */
     --color-font-body: rgb(118, 51, 0);
     --color-background-body: #bbffff;
-    /* *============================================== */
+    /* *========================================= */
 }
 
+/** ========== Номалізация (+ наслідування) ====== */
 body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
+/* *============================================== */
 
-/*?  ===== Загальний клас стилізації шрифтів ===== */
-/* ?============================================== */
+
+/*?  ===== Загальнi класи стилізації шрифтів ===== */
+/** ============= Основна стилізація ============= */
 .general-style {
-    font-weight: 700;
+    font-family: inherit;
+    font-weight: 400;
     font-size: 28px;
-    /* color: inherit; */
+
+    /* font-weight: 400; normal  */
+    /* font-weight: 700; bold - аналог тегу <b> */
+    /* font-weight: 700; */
+    
+    color: inherit;
     /* color: red; */
+}
+/** ============= Основна стилізація ============= */
+.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.monospace {
+    font-family: monospace;
+}
+.impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 /* ?============================================== */
 
