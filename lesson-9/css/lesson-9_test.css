@@ -106,3 +106,17 @@ h1,h2,h3,h4,h5 {
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* ! === Властивість text-transform === */
+.general-style1 {
+    text-transform: uppercase;
+    /* text-transform: lowercase ; */
+    /* text-transform: capitalize; */
+    /* text-transform: none; */
+}
+
+/* ! === Властивість text-align === */
+.general-style1 {
+    text-align: center;
+    /* text-align: left; */
+    /* text-align: right; */
+}
