@@ -1,3 +1,4 @@
+/*! ----- ДЗ-7 (Завдання_1 HW-7) ----- */
 a[href="https://validator.w3.org/"]:link,
 a[href="https://www.youtube.com/"]:link {
     color: red;
@@ -5,4 +6,26 @@ a[href="https://www.youtube.com/"]:link {
 
 body div.holder ul ~ p {
     font-size: 24px;
+}
+
+
+/*! ----- ДЗ-8 (Завдання_1 HW-8) ----- */
+.text-box h3 {
+    color: pink;
+}
+
+#grеycol {
+    color: grey;
+}
+
+div p {
+    color: red;
+}
+
+.yеllow {
+    color: yellow;
+}
+
+h3+p {
+    color: green;
 }
