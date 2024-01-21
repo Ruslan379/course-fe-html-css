@@ -1,24 +1,27 @@
 :root {
     /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
-    /* --color-font-body: red; */
-
-    --color-font-body: #ff0000;
-
-    /* --color-font-body: rgb(255, 0, 0); */
-    /* --color-font-body: rgba(255, 0, 0, 0.5); */
-
-    --color-background-body: #00ffff;
+    --color-font-body: rgb(118, 51, 0);
+    --color-background-body: #bbffff;
     /* *============================================== */
 }
-/* ?============================================== */
+
 body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
+
+/*? ===== Загальний клас стилізації шрифтів ===== */
+/* ?============================================== */
+.general-font-stylization {
+    font-weight: 700;
+    font-size: 32px;
+    color: inherit;
+}
 /* ?============================================== */
 
 
-/* ! === Cпецифічність === */
+
+/* ! === Властивість font-family === */
 /* li > p {
     font-size: 40px;
     color: black;
