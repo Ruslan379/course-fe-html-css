@@ -140,7 +140,7 @@ li[class="list-main-itemlast"] {
 .list-main-item02:hover ~ li>ul>li.item10,
 /** N-й елемент в колекції сусідів */
 .list-main-item03:hover,
-.list-main-item03:hover ~ li>ul>li.item5,
+.list-main-item03:hover ~ li>ul>li.item3,
 /** Кожен N-й елемент в колекції сусідів */
 .list-main-item04:hover,
 .list-main-item04:hover ~ li>ul>li.item1,
