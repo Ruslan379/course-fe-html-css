@@ -6,20 +6,20 @@
 }
 
 /** ========== Номалізация (+ наслідування) ====== */
-body {
+/* body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-}
-h1,h2,h3,h4,h5 { 
+} */
+/* h1,h2,h3,h4,h5 { 
     padding: 0;
     margin: 0;
-}
+} */
 /* *============================================== */
 
 
 /*?  ===== Загальнi класи стилізації шрифтів ===== */
 /** ============= Основна стилізація ============= */
-.general-style {
+.general-style1 {
     font-family: inherit;
     font-weight: 400;
     font-size: 28px;
@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5 {
     /* color: red; */
 }
 /** ============= Варіанти font-family ============= */
-.courier {
+/* .courier {
     font-family: 'Courier New', Courier, monospace;
 }
 .verdana {
@@ -39,13 +39,13 @@ h1,h2,h3,h4,h5 {
 }
 .impact {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+} */
 /* ?============================================== */
 
 
 
 /* ! === 1.Властивість font-family === */
-/*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
+/** перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
 .general-style1 {
     font-family: 'Roboto';
     /* font-weight: 400; */
@@ -92,30 +92,25 @@ h1,h2,h3,h4,h5 {
     /* line-height: 4;  */
 }
 
-/* ! === 5.Властивість font-style === */
+/* ! === 5.Властивість letter-spacing === */
+.general-style1 {
+    letter-spacing: normal;
+    /* letter-spacing: inherit; */
+    /* letter-spacing: 5px; */
+}
+
+/* ! === 6.Властивість font-style === */
 .general-style1 {
     font-style: normal;
     /* font-style: italic; аналог тегу <i> */
     /* font-style: italic;  */
 }
 
-/* ! === 5.Властивість text-decoration === */
+/* ! === 7.Властивість text-decoration === */
 .general-style1 {
     /* text-decoration: underline; аналог тегу <u> */
     text-decoration: underline;
     /* text-decoration: none; */
-}
-
-/* ! === 6.Властивість text-shadow === */
-.general-style1 {
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* ! === 7.Властивість text-align === */
-.general-style1 {
-    text-align: center;
-    /* text-align: left; */
-    /* text-align: right; */
 }
 
 /* ! === 8.Властивість text-transform === */
@@ -126,7 +121,39 @@ h1,h2,h3,h4,h5 {
     /* text-transform: none; */
 }
 
-/* ! === 9.Властивість text-indent === */
+/* ! === 9.Властивість text-align === */
+.general-style1 {
+    text-align: center;
+    /* text-align: left; */
+    /* text-align: right; */
+}
+
+/* ! === 10.Властивість word-spacing === */
+.general-style1 {
+    word-spacing: normal;
+    /* word-spacing: inherit; */
+    /* word-spacing: 10px; */
+}
+
+/* ! === 11.Властивість white-space === */
+.general-style1 {
+    white-space: normal;
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    /* white-space: pre-wrap; */
+}
+
+/* ! === 12.Властивість text-shadow === */
+.general-style1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+/* ! === 12-1.Властивість text-shadow === */
+/* ! === Багатошарова тінь === */
+.general-style1 {
+    text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
+
+/* ! === 13.Властивість text-indent === */
 .general-style-text {
     text-indent: 40px;
     /* text-indent: 10%; */
