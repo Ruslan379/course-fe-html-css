@@ -10,6 +10,10 @@ body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
+h1,h2,h3,h4,h5 { 
+    padding: 0;
+    margin: 0;
+}
 /* *============================================== */
 
 
@@ -18,7 +22,7 @@ body {
 .general-style {
     font-family: inherit;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 28px;
 
     color: inherit;
     /* color: red; */
@@ -73,11 +77,14 @@ body {
 
 /* ! === Властивість line-height === */
 .general-style {
-    /* line-height-auto це 1.2 */
-    line-height: normal; /* 1.5 */
+    /* line-height = auto (або normal) це 1.2 */
+    line-height: normal; /* 1.2 */
     /* line-height: 42px; то це = 1.5, якщо font-size: 28px */
-    line-height: 42px; 
-    
+    /* line-height: 42px;  */
+    /* line-height: 1.2;  */
+    /* line-height: 1.5;  */
+    /* line-height: 2;  */
+    /* line-height: 4;  */
 }
 
 /* ! === Властивість font-style === */
