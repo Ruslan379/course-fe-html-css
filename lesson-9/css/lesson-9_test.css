@@ -20,15 +20,11 @@ body {
     font-weight: 400;
     font-size: 28px;
 
-    /* font-weight: 400; normal  */
-    /* font-weight: 700; bold - аналог тегу <b> */
-    /* font-weight: 700; */
-    
     color: inherit;
     /* color: red; */
 }
-/** ============= Основна стилізація ============= */
-.courier {
+/** ============= Варіанти font-family ============= */
+/* .courier {
     font-family: 'Courier New', Courier, monospace;
 }
 .verdana {
@@ -39,141 +35,39 @@ body {
 }
 .impact {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+} */
 /* ?============================================== */
 
 
 
 /* ! === Властивість font-family === */
-/* li > p {
-    font-size: 40px;
-    color: black;
-    background-color: white;
-} */
+.general-style1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
-/* .text {
-    font-size: 40px;
-    color: yellow;
-    background-color: blue;
-} */
+/* ! === Властивість font-weight === */
+.general-style1 {
+    /* font-weight: 400; normal  */
+    font-weight: 400;
+    /* font-weight: 700; bold - аналог тегу <b> */
+    /* font-weight: 700; */
 
-/* li .text {
-    font-size: 40px;
-    color: red;
-    background-color: green;
-} */
+    /* font-weight: 100; */
+    /* font-weight: 200; */
+    /* font-weight: 300; */
+    /* font-weight: 400; */
+    /* font-weight: 500; */
+    /* font-weight: 600; */
+    /* font-weight: 700; */
+    /* font-weight: 800; */
+    /* font-weight: 900; */
+}
 
-/* #main-text {
-    font-size: 40px;
-    color: green;
-    background-color: orange;
-} */
+/* ! === Властивість font-weight === */
+.general-style1 {
+    font-size: 10px;
+    /* font-size: 20px; */
+    /* font-size: 30px; */
+    /* font-size: 40px; */
+}
 
-/* li #main-text  {
-    font-size: 40px;
-    color: pink;
-    background-color: gray;
-} */
-
-/* li #main-text  {
-    font-size: 40px;
-    color: white;
-    background-color: brown;
-} */
-
-
-
-/* ! === !important === */
-/* .text {
-    font-size: 80px !important;
-    color: rgb(95, 95, 16) !important;
-    background-color: rgb(52, 52, 130) !important;
-} */
-
-
-/* ! === Hаслідування === */
-/* ul {
-    color: green;
-    background-color: bisque;
-} */
-
-/* a {
-    color: green;
-    background-color: bisque;
-} */
-
-/* ul, a {
-    color: green;
-    background-color: bisque;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-/* !============================================== */
-/* ! === Селектор тегу === */
-/* body {
-    color: red;
-    background-color: aqua;
-} */
-
-/* ! === Селектор ідентифікатора === */
-/* Селектор ідентифікатора */
-/* #title-2 {
-    color: green;
-} */
-
-
-/* ! === Селектор груп === */
-/* h1,
-h2,
-h3 {
-    color: blue;
-} */
-
-
-/* ! === Селектор нащадку === */
-/* body li {
-    background-color: burlywood;
-} */
-
-
-/* ! === Дочірний селектор (Селектор дитини) === */
-/* li > p {
-    color: rgb(255, 0, 0);
-    background-color: burlywood;
-} */
-
-
-/* ! === Сусідній селектор (Селектор сусіда) === */
-/* Сусідній селектор */
-/* p + a {
-    background-color: rgb(0, 234, 4);
-} */
-
-
-/* ! === Споріднений селектор === */
-/* p ~ a {
-    background-color: rgb(86, 176, 255);
-} */
-
-
-/* ! === Селектор атрибуту === */
-/* a[href="#"] {
-    background-color: yellow
-} */
-
-
-/* ! === Селектор класу === */
-/* .text {
-    font-size: 40px;
-    background-color: rgb(23, 125, 214);
-} */
