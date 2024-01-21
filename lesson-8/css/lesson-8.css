@@ -125,6 +125,7 @@ li[class="list-main-itemlast"] {
     height: 40px;
     text-align: center;
     line-height: 2.3;
+    color: blue;
     border: 2px solid tomato;
     border-radius: 50%;
 }
