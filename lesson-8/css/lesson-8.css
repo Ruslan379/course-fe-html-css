@@ -18,7 +18,6 @@ table td:first-child {
 .text-main.inherit-font  {
     font-size: inherit; 
 }
-
 .subheading-text-main.text-align  {
     text-align: center; 
 }
@@ -36,7 +35,6 @@ table td:first-child {
 /** focus */
 .link2 {
     color: #ff00ff;
-
 }
 .link2:hover {
     color: #ff00ff;
@@ -86,10 +84,12 @@ table td:first-child {
     justify-content: space-between;
 }
 /** ЄЛЕМЕНТИ Головного списку */
-.list-main>li>h4 {
+/* .list-main>li>h4 { */
+.subheading-text-main {
     margin-top: 0;
 }
-.list-main>li {
+/* .list-main>li { */
+li[class^="list-main-item"] {
     width: 340px;
     height: 135px;
     margin: 0;
@@ -98,7 +98,8 @@ table td:first-child {
     border-radius: 10px;
     box-shadow: 2px 2px 6px #808080;
 }
-.list-main>li:last-child {
+/* .list-main>li:last-child { */
+li[class="list-main-itemlast"] {
     width: 800px;
     height: 78px;
     padding: 0;
