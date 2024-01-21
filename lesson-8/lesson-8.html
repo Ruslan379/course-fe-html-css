@@ -508,7 +508,7 @@
                     </pre>
                     <ul class="list-main">
                         <li class="list-main-item01">
-                            <h4 class="subheading-text-main margin-left-10">Перший елемент в колекції сусідів:</h4>
+                            <h4 class="subheading-text-main text-align-center">Перший елемент в колекції сусідів:</h4>
                             <code>
                                 <pre>
     .list-item<b>:first-child</b> {
@@ -519,7 +519,7 @@
                             </code>
                         </li>
                         <li class="list-main-item02">
-                            <h4 class="subheading-text-main margin-left-10">Останній елемент в колекції сусідів:</h4>
+                            <h4 class="subheading-text-main text-align-center">Останній елемент в колекції сусідів:</h4>
                             <code>
                                 <pre>
     .list-item<b>:last-child</b> {
@@ -530,10 +530,21 @@
                             </code>
                         </li>
                         <li class="list-main-item03">
-                            <h4 class="subheading-text-main margin-left-10">N-й елемент в колекції сусідів:</h4>
+                            <h4 class="subheading-text-main text-align-center">N-й елемент в колекції сусідів:</h4>
                             <code>
                                 <pre>
     .list-item<b>:nth-child(5)</b> {
+        color: white;
+        background-color: tomato;
+    }
+                                </pre>
+                            </code>
+                        </li>
+                        <li class="list-main-item04">
+                            <h4 class="subheading-text-main text-align-center">Кожен N-й елемент в колекції сусідів:</h4>
+                            <code>
+                                <pre>
+    .list-item<b>:nth-child(3n + 1)</b> {
         color: white;
         background-color: tomato;
     }
