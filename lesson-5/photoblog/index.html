@@ -3,26 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--! назва вкладки -->
+    <!--! назва сторінки (вкладки) -->
     <title>Photoblog</title>
-    <!--! завантаження іконки до назви вкладки title -->
+    <!--! завантаження іконки до назви сторінки (вкладки) title -->
     <link 
         href="https://img.icons8.com/officel/16/stack-of-photos.png"
         type="image/x-icon"
         rel="shortcut icon" 
     >
     <!--! завантаження modern-normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
+    
     <!--! завантаження шрифта 'Playfair Display' Regular 400 -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
-    <!--! Вбудована стилізация -->
+    
+    <!--! завантаження шрифта 'Tangerine' Bold 700 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> -->
+    
+    <!--! вбудована стилізация -->
     <!-- <style>
+        /* завантаження шрифта Playfair Display' Regular 400 з локальної папки */
+        @font-face {
+            font-family: 'Playfair_Display';
+            src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('woff2');
+            src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('woff2');
+            /* font-weight: normal; */
+            /* font-style: normal; */
+        }
+        /* завантаження шрифта 'Tangerine' Bold 700 з локальної папки */
+        @font-face {
+            font-family: 'Tangerine_Style';
+            src: url('./fonts/Tangerine-Bold.ttf') format('woff2');
+            src: url('./fonts/Tangerine-Bold.ttf') format('woff2');
+            /* font-weight: normal; */
+            /* font-style: normal; */
+        }
+        
         /*? стилізация заголовків h2 */
         h2 {
             /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-            font-family: "Playfair Display";
+            /* font-family: "Playfair_Display"; */
+            font-family: "Tangerine_Style";
 
             font-size: 30px;
 
@@ -45,6 +70,9 @@
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
     </style> -->
+
+    <!--! зовнішній файл стилів -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
 </head>
 <body>
     <!-- <a 
