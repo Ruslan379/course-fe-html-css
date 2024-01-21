@@ -140,7 +140,11 @@ table td:first-child {
 .text-align-center {
     text-align: center;  
 }
-
+/** Акцент ваги та кольору на псевдокласі */
+.pseudo-accent {
+    font-weight: 700;
+    color: goldenrod; 
+}
 
 /* .first-child1:hover,
 .first-child1:hover + .second-child2,
@@ -161,6 +165,9 @@ table td:first-child {
 .list-main-item01:hover > h4 {
     color: #a6ff00;
 }
+.list-main-item01:hover .pseudo-accent {
+    color: #096800; 
+}
 
 /** Останній елемент в колекції сусідів */
 .list-main-item02:hover,
@@ -173,6 +180,9 @@ table td:first-child {
 .list-main-item02:hover > h4 {
     color: #a6ff00;
 }
+.list-main-item02:hover .pseudo-accent {
+    color: #096800; 
+}
 
 /** N-й елемент в колекції сусідів */
 .list-main-item03:hover,
@@ -184,6 +194,9 @@ table td:first-child {
 }
 .list-main-item03:hover > h4 {
     color: #a6ff00;
+}
+.list-main-item03:hover .pseudo-accent {
+    color: #096800; 
 }
 
 /** Кожен N-й елемент в колекції сусідів */
@@ -199,4 +212,7 @@ table td:first-child {
 }
 .list-main-item04:hover > h4 {
     color: #a6ff00;
+}
+.list-main-item04:hover .pseudo-accent {
+    color: #096800; 
 }
