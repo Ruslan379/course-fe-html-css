@@ -144,10 +144,15 @@ table td:first-child {
 
 /** Перший елемент в колекції сусідів */
 .list-main-item01:hover,
+/* .list-main-item01:hover > h4, */
 .list-main-item01:hover ~ li>ul>li.item1 {
     color: white;
     background-color: tomato;
+    text-shadow: 2px 2px 6px #616161;
     box-shadow: 2px 2px 6px #808080;
+}
+.list-main-item01:hover > h4 {
+    color: #a6ff00;
 }
 
 /** Останній елемент в колекції сусідів */
@@ -155,7 +160,11 @@ table td:first-child {
 .list-main-item02:hover ~ li>ul>li.item10 {
     color: white;
     background-color: tomato;
+    text-shadow: 2px 2px 6px #616161;
     box-shadow: 2px 2px 6px #808080;
+}
+.list-main-item02:hover > h4 {
+    color: #a6ff00;
 }
 
 /** N-й елемент в колекції сусідів */
@@ -163,5 +172,9 @@ table td:first-child {
 .list-main-item03:hover ~ li>ul>li.item5 {
     color: white;
     background-color: tomato;
+    text-shadow: 2px 2px 6px #616161;
     box-shadow: 2px 2px 6px #808080;
+}
+.list-main-item03:hover > h4 {
+    color: #a6ff00;
 }
