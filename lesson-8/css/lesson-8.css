@@ -132,7 +132,7 @@ li[class="list-main-itemlast"] {
 /** ----------- hover на елементах ----------- */
 /** Перший елемент в колекції сусідів */
 .list-main-item01:hover,
-.list-main-item01:hover .item1, 
+.list-main-item01:hover .item1, /* ! так не работает */
 .list-main-item01:hover ~ li>ul>li.item1,
 /** Останній елемент в колекції сусідів */
 .list-main-item02:hover,
