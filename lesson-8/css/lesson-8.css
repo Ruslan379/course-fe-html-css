@@ -80,19 +80,27 @@ table td:first-child {
 .list-main {
     list-style: none;
     padding: 0;
-
+    margin: 0;
+    /* ! */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around
+    gap: 20px;
+    /* justify-content: space-around; */
+    justify-content: space-between;
 }
 /** Єлементи Головного списку */
 .list-main>li>h4 {
     margin-top: 0;
 }
 .list-main>li {
-    border-radius: 5px;
-    /* padding-top: 5px; */
+    width: 340px;
+    height: 135px;
+    border-radius: 10px;
+    margin: 0;
     padding: 25px;
+}
+.list-main>li:last-child {
+    padding: 0;
 }
 
 /** Вкладений список з 10-ю єлементами у рядок */
