@@ -55,7 +55,7 @@
                 ЗМІСТ <span class="text-italic">(посилання-якір):</span>
             </h2>
             <ul class="list-content">
-                <li><a href="#d1">Заголовок-1</a></li>
+                <li><a href="#d1">Властивості шрифту та оформлення тексту</a></li>
                 <li><a href="#d2">Заголовок-2</a></li>
                 <li><a href="#d3">Заголовок-3</a></li>
                 <li><a href="#d4">Заголовок-4</a></li>
@@ -78,23 +78,36 @@
         <main>
             <!--todo УРОК-9 -->
             <section>   
-                <!--! Заголовок-1 -->
+                <!--! Властивості шрифту та оформлення тексту -->
                 <!-- <h3 id="d1" style ="color: royalblue">
-                    <i>Заголовок-1:</i>
+                    <i>Властивості шрифту та оформлення тексту:</i>
                 </h3> -->
                 <div id="d1"></div>
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
+                <div class="box-main">
+                    <p class="text-main">
+                        Для стилізації шрифтів та тексту використовують набір CSS властивостей (правил):
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">.section-title</span> {
+    <span class="color-green">font-family</span>: <span class="color-goldenrod">"Tangerine"</span>;
+    <span class="color-green">font-size</span>: <span class="color-goldenrod">70px</span>;
+    <span class="color-green">font-weight</span>: <span class="color-goldenrod">700</span>;
+    <span class="color-green">font-style</span>: <span class="color-goldenrod">normal</span>;
+    <span class="color-green">line-height</span>: <span class="color-goldenrod">1.5</span>;
+    <span class="color-green">text-align</span>: <span class="color-goldenrod">center</span>;
+    <span class="color-green">color</span>: <span class="color-goldenrod">#ffa9bf</span>;
+    <span class="color-green">text-shadow</span>: <span class="color-goldenrod">2px 2px 4px rgba(12, 12, 12, 0.5)</span>;
+    <span class="color-green">border</span>: <span class="color-goldenrod">4px solid #ffa9bf</span>;
+    <span class="color-green">border-radius</span>: <span class="color-goldenrod">10px</span>;
+    <span class="color-green">box-shadow</span>: <span class="color-goldenrod">2px 2px 4px rgba(12, 12, 12, 0.7)</span>;
+    <span class="color-green">background-color</span>: <span class="color-goldenrod">#6495ed</span>;
+}
+                        </code>
+                    </pre>
+                </div>
+                <p class="not-stylized">Цей текст НЕ стилізований за допомогою CSS властивостей</p>
+                <p class="section-title">This text is styled using the CSS properties from the example code above</p>
 
                 <!--! Заголовок-2 -->
                 <!-- <h3 id="d2" style ="color: royalblue">
@@ -469,7 +482,7 @@
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
-            d1.appendChild(createHeaderElement("Заголовок-1:"));
+            d1.appendChild(createHeaderElement("Властивості шрифту та оформлення тексту:"));
             d2.appendChild(createHeaderElement("Заголовок-2:"));
             d3.appendChild(createHeaderElement("Заголовок-3:"));
             d4.appendChild(createHeaderElement("Заголовок-4:"));

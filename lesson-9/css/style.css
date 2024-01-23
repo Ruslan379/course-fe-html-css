@@ -87,6 +87,13 @@ table td:first-child {
     color: red;
     font-size: larger;
 }
+
+/* ? определяем модель размеров для элемента */
+*{
+	box-sizing: border-box;
+	/* margin: 0; */
+	padding: 0;
+}
 /*! ================================================================= */
 
 

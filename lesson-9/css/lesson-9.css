@@ -1,4 +1,31 @@
-/*!  Специфічність ("вага" селектора): */
-table td:first-child {
-    text-align: left;
+/*!  Властивості шрифту та оформлення тексту */
+/** завантаження шрифта 'Tangerine' Bold 700 з локальної папки */
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../../lesson-5/photoblog/fonts/Tangerine-Regular.ttf') format('woff2');
+    src: url('../../lesson-5/photoblog/fonts/Tangerine-Bold.ttf') format('woff2');
 }
+
+.not-stylized {
+    padding: 5px;
+    outline: 1px solid tomato;
+}
+
+.section-title {
+    width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "Tangerine";
+    font-size: 70px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: #ffa9bf;
+    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
+    border: 4px solid #ffa9bf;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(12, 12, 12, 0.7);
+    background-color: #6495ed;
+}
+
