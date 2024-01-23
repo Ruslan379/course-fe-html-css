@@ -26,6 +26,17 @@
     /* *========================================== */
 }
 
+/** Бортник Владислав - CSS-змінні */
+/* :root{
+    --color-black:#000000;
+    --color-white:#ffffff;
+    --color-text-p:#212121;
+    --color-adresses:#757575;
+    --color-logo-web:#2196F3 ;
+    --color-background-section-first:#2F303A;
+    --color-background-section-fourth:#F5F4FA;
+    } */
+
 /* ! === 1.Властивість font-family === */
 /*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
 h1 {
