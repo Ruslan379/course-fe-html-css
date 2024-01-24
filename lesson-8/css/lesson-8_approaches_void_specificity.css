@@ -39,7 +39,7 @@
 
 /* ! === 1.Властивість font-family === */
 /*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
-h1 {
+.h1 {
     /* font-family: 'Roboto'; */
     font-family: Roboto;
     font-weight: 900;
