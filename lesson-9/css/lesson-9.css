@@ -29,6 +29,7 @@
     background-color: #6495ed;
 }
 
+
 /*!  Властивість font-size */
 .form-selected-value {
     /* width: 300px; */
@@ -45,7 +46,6 @@
     color: #004400;
     
 }
-
 
 .box-main-add-style {
     height: 100px;
@@ -79,7 +79,6 @@
     scale: 1;
     transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-selected-value-btn:hover {
     color: wheat;
     background-color: #0083da;
