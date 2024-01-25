@@ -9,8 +9,11 @@
             type="image/x-icon"
             rel="shortcut icon" 
         >
-        <!-- <style>
-        </style> -->
+        <style>
+            #font-size {
+                font-size: 20px;
+            }
+        </style>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/lesson-9.css">
     </head>
@@ -56,7 +59,7 @@
             </h2>
             <ul class="list-content">
                 <li><a href="#d1">Властивості шрифту та оформлення тексту</a></li>
-                <li><a href="#d2">Заголовок-2</a></li>
+                <li><a href="#d2">Властивість <b>font-size</b></a></li>
                 <li><a href="#d3">Заголовок-3</a></li>
                 <li><a href="#d4">Заголовок-4</a></li>
                 <li><a href="#d5">Заголовок-5</a></li>
@@ -109,22 +112,47 @@
                 <p class="not-stylized">Цей текст НЕ стилізований за допомогою CSS властивостей</p>
                 <p class="section-title">This text is styled using the CSS properties from the example code above</p>
 
-                <!--! Заголовок-2 -->
+                <!--! Властивість font-size -->
                 <!-- <h3 id="d2" style ="color: royalblue">
-                    <i>Заголовок-2:</i>
+                    <i>Властивість font-size:</i>
                 </h3> -->
                 <div id="d2"></div>
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+                <div class="box-main">
+                    <p class="text-main">
+                        Задає розмір шрифту елемента в <b>абсолютних</b> або <b>відносних</b> одиницях виміру.
+                    </p>
+                    <p class="text-main">
+                        Поки що подивимось приклад з <b>абсолютними</b> одиницями - <b>px</b> (<i>пікселями</i>).
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">.section-title</span> {
+    <span class="color-green">font-size</span>: <span class="color-goldenrod"><span class="js-selected-value">20</span>px</span>;
+}
+                        </code>
+                    </pre>
+                    
+                    <form>
+                        <label>
+                                font-size:
+                                <!-- font-size: <span class="js-selected-value">20</span> -->
+                            <input
+                                type="range"
+                                name="font_size"
+                                value="10"
+                                min="20"
+                                max="70"
+                                step="10"
+                                oninput="changeFontSize(this.value)"
+                            />
+                        </label>
+                        <button type="submit">Reset</button>
+                    </form>
+                    <!-- <p>font-size: <span class="js-selected-value">20</span></p> -->
+                </div>
+                <div style="outline: 2px solid tomato;" class="box-main">
+                    <h1 id="font-size">ЗАГОЛОВОК h1</h1>
+                </div>
 
 
                 <!--! Заголовок-3 -->
@@ -483,7 +511,7 @@
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
             d1.appendChild(createHeaderElement("Властивості шрифту та оформлення тексту:"));
-            d2.appendChild(createHeaderElement("Заголовок-2:"));
+            d2.appendChild(createHeaderElement("Властивість font-size:"));
             d3.appendChild(createHeaderElement("Заголовок-3:"));
             d4.appendChild(createHeaderElement("Заголовок-4:"));
             d5.appendChild(createHeaderElement("Заголовок-5:"));
@@ -498,5 +526,20 @@
             d14.appendChild(createHeaderElement("Заголовок-14:"));
             d15.appendChild(createHeaderElement("Заголовок-15:"));
         </script>
+        <!--* JS script, який оновлює розмір шрифта  -->
+        <script>
+            function changeFontSize(value) {
+                document.getElementById('font-size').style.fontSize = value + 'px';
+            }
+            const rangeInput = document.querySelector('input[type="range"]')
+            const output = document.querySelector('.js-selected-value');
+            rangeInput.addEventListener('input', e => output.textContent = e.target.value)
+        </script>
+        <!--* JS script який відтворює значення Повзунка -->
+        <!-- <script>
+            const rangeInput = document.querySelector('input[type="range"]')
+            const output = document.querySelector('.js-selected-value');
+            rangeInput.addEventListener('input', e => output.textContent = e.target.value)
+        </script> -->
     </body>
 </html>
