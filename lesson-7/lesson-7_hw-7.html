@@ -61,36 +61,55 @@
         }
 
         /* ДЗ-8 (Завдання_2 HW-8) */
+        /* ------- Оформлення таблиці ------- */
         table {
                 border-collapse: collapse;
+                font-size: 24px;
         }
         table th,
         table td {
             padding: 10px;
             border: 1px solid #2a2a2a;
         }
-        /* ------------ */
+        /* ---------------------------------- */
         tr:only-child {
-            background-color: #ff8080;
+            background-color: #ff6f6f;
         }
         td:first-child {
-            background-color: #7979ff;
+            background-color: #6d6dfd;
         }
         td:nth-child(2) {
             background-color: #ff79d2;
         }
         td:nth-child(3n + 3) {
-            background-color: #bd83ff;
+            background-color: #b472ff;
         }
 
         td:nth-last-child(2) {
-            background-color: #fdff79;
+            background-color: #fdff6d;
         }
         td:last-child {
-            background-color: #79ffde;
+            background-color: #6effdb;
         }
-        
-
+        /* +++++++++ hover +++++++++++ */
+        td:not(:last-child):hover {
+            color: white;
+            outline: 4px dotted red;
+        }
+        tr:not(:last-child):hover {
+            text-shadow: 4px 4px 6px rgb(75, 75, 75);
+            outline: 2px solid white;
+        }
+        tr:not(td):hover {
+            background-color: peru;
+        }
+        tr:only-child:hover {
+            color: wheat;
+        }
+        tr:only-of-type:hover {
+            text-shadow: 2px 2px 2px rgb(83, 83, 83);
+        }
+        /* +++++++++++++++++++++++++ */
     </style>
     </head>
 
