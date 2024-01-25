@@ -11,6 +11,7 @@
         >
         <style>
             #font-size {
+                margin: 0;
                 font-size: 20px;
             }
         </style>
@@ -131,8 +132,7 @@
 }
                         </code>
                     </pre>
-                    
-                    <form>
+                    <form class="form-selected-value">
                         <label>
                                 font-size:
                                 <!-- font-size: <span class="js-selected-value">20</span> -->
@@ -146,11 +146,11 @@
                                 oninput="changeFontSize(this.value)"
                             />
                         </label>
-                        <button type="submit">Reset</button>
+                        <button type="submit" class="form-selected-value-btn">Reset</button>
                     </form>
                     <!-- <p>font-size: <span class="js-selected-value">20</span></p> -->
                 </div>
-                <div style="outline: 2px solid tomato;" class="box-main">
+                <div class="box-main box-main-add-style">
                     <h1 id="font-size">ЗАГОЛОВОК h1</h1>
                 </div>
 
