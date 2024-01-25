@@ -14,6 +14,11 @@
                 margin: 0;
                 font-size: 20px;
             }
+            #font-family {
+                margin: 0;
+                font-family:'Courier New';
+                font-size: 40px;
+            }
         </style>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/lesson-9.css">
@@ -120,22 +125,39 @@
                 <div id="d2"></div>
                 <div class="box-main">
                     <p class="text-main">
-                        Задає розмір шрифту елемента в <b>абсолютних</b> або <b>відносних</b> одиницях виміру.
+                        <b>Шрифт</b> — це набір друкарських літер, цифр і спеціальних знаків певного стилю для набору тексту.
                     </p>
                     <p class="text-main">
-                        Поки що подивимось приклад з <b>абсолютними</b> одиницями - <b>px</b> (<i>пікселями</i>):
+                        Шрифти ділять на кілька основних груп (сімейств):
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157; шрифти із зарубками (<b>serif</b>)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157; шрифти без зарубок (<b>sans-serif</b>)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157; моноширинні (<b>monospace</b>)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157;  <b>декоративні</b> та <b>рукописні</b>
+                    </p>
+                    <p class="text-main">
+                        За замовчуванням, якщо жоден інший шрифт не заданий, браузер використовує <b>Times New Roman</b> з сімейства <b>із зарубками</b> (<b>serif</b>).
+                    </p>
+                    <p class="text-main">
+                        Властивість <b>font-family</b> задає шрифт тексту елемента:
                     </p>
                     <pre class="box-pre bck-color-black">
                         <code class="box-code">
-<span class="color-red">.section-title</span> {
-    <span class="color-green">font-family</span>: <span class="color-goldenrod"><span class="js-selected-value">20</span>px</span>;
+<span class="color-red">body</span> {
+    <span class="color-green">font-family</span>: <span class="color-goldenrod"><span class="js-selected-value">Courier New</span></span>;
 }
                         </code>
                     </pre>
-                    <form class="form-selected-value">
+                    <!-- <form class="form-selected-value">
                         <label>
                                 font-size:
-                                <!-- font-size: <span class="js-selected-value">20</span> -->
                             <input
                                 type="range"
                                 name="font_size"
@@ -147,11 +169,10 @@
                             />
                         </label>
                         <button type="submit" class="form-selected-value-btn">Reset</button>
-                    </form>
-                    <!-- <p>font-size: <span class="js-selected-value">20</span></p> -->
+                    </form> -->
                 </div>
                 <div class="box-main box-main-add-style">
-                    <h1 id="font-size">ЗАГОЛОВОК h1</h1>
+                    <h1 id="font-family">ЗАГОЛОВОК h1</h1>
                 </div>
 
 
