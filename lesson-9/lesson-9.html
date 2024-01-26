@@ -337,17 +337,87 @@
                     <i>Властивість line-height:</i>
                 </h3> -->
                 <div id="d4"></div>
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+                <div class="box-main">
+                    <p class="text-main">
+                        Встановлює <b>міжрядковий інтервал</b> (<i>інтерлін'яж</i>, <i>висоту рядка</i>) тексту.
+                    </p>
+                    <p class="text-main">
+                        За замовчуванням відстань між рядками залежить від виду шрифту і його розмірів, і визначається браузером <b>автоматично</b>.
+                    </p>
+                    <p class="text-main">
+                        <b>line-height</b>:
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157; значення (60px)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157; відсотки (150%)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157; множник (1.5)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157;  normal (<i>це множник = 1.2</i>)
+                    </p>
+                    <p class="text-main color-accent">
+                        &#10157;  inherit 
+                    </p>
+                    <p class="text-main">
+                        Використання множника гарантує рівномірне масштабування міжрядкового інтервалу при зміні розміру тексту.
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">body</span> {
+    <span class="color-green">font-family</span>: <span class="color-goldenrod"><span class="js-selected-font-family">Century</span></span>;
+}
+                        </code>
+                    </pre>
+                    <p class="form-label-text text-add-style">font-family:</p>
+                    <form class="form-font-family">
+                        
+                        <label class="century label-hover-focus-active">
+                            <input
+                                
+                                type="radio"
+                                name="font-family"
+                                value="Century"
+                                checked
+                                onchange="changeFontFamily(this.value)"
+                            />
+                                Century
+                        </label>
+                        <label class="arial label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="font-family"
+                                value="Impact"
+                                onchange="changeFontFamily(this.value)"
+                            />
+                                Impact
+                        </label>
+                        <label class="courier-new label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="font-family"
+                                value="Courier New"
+                                onchange="changeFontFamily(this.value)"
+                            />
+                                Courier New
+                        </label>
+                        <label class="monotype-corsiva label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="font-family"
+                                value="Monotype Corsiva"
+                                onchange="changeFontFamily(this.value)"
+                            />
+                                Monotype Corsiva
+                        </label>
+                    </form>
+                </div>
+                <div class="box-main box-main-add-style">
+                    <h1 id="font-family">ЗАГОЛОВОК h1</h1>
+                </div>>
 
 
                 <!--! Властивість letter-spacing -->
