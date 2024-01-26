@@ -165,3 +165,7 @@
     margin: 0;
 }
 
+/*!  Властивість line-height */
+.box-main-change-height {
+    height: 350px;
+}

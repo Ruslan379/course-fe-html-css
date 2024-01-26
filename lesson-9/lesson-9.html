@@ -47,9 +47,10 @@
                 font-weight: 100;
                 font-size: 40px;
             }
-            #fline-height {
+            #line-height {
                 margin: 0;
                 font-size: 40px;
+                line-height: 60px;
             }
         </style>
         <link rel="stylesheet" href="./css/style.css">
@@ -189,7 +190,6 @@
                     </pre>
                     <p class="form-label-text text-add-style">font-family:</p>
                     <form class="form-font-family">
-                        
                         <label class="century label-hover-focus-active">
                             <input
                                 
@@ -372,21 +372,20 @@
                     <pre class="box-pre bck-color-black">
                         <code class="box-code">
 <span class="color-red">.section-title</span> {
-    <span class="color-green">line-height</span>: <span class="color-goldenrod"><span class="js-selected-font-family">60px</span></span>;
+    <span class="color-green">line-height</span>: <span class="color-goldenrod"><span class="js-selected-line-height">60px</span></span>;
 }
                         </code>
                     </pre>
                     <p class="form-label-text text-add-style">line-height:</p>
                     <form class="form-font-family">
-                        
-                        <label class="value-px label-hover-focus-active">
+                        <label class="value-pixels label-hover-focus-active">
                             <input
                                 
                                 type="radio"
                                 name="line-height"
                                 value="60px"
                                 checked
-                                onchange="changeFontFamily(this.value)"
+                                onchange="changeLineHeight(this.value)"
                             />
                                 60px
                         </label>
@@ -395,7 +394,7 @@
                                 type="radio"
                                 name="line-height"
                                 value="150%"
-                                onchange="changeFontFamily(this.value)"
+                                onchange="changeLineHeight(this.value)"
                             />
                                 150%
                         </label>
@@ -403,17 +402,44 @@
                             <input
                                 type="radio"
                                 name="line-height"
+                                value="1.17"
+                                onchange="changeLineHeight(this.value)"
+                            />
+                                1.17
+                        </label>
+                        <label class="multiplier label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="line-height"
                                 value="1.5"
-                                onchange="changeFontFamily(this.value)"
+                                onchange="changeLineHeight(this.value)"
                             />
                                 1.5
+                        </label>
+                        <label class="multiplier label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="line-height"
+                                value="2.0"
+                                onchange="changeLineHeight(this.value)"
+                            />
+                                2.0
+                        </label>
+                        <label class="multiplier label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="line-height"
+                                value="3.0"
+                                onchange="changeLineHeight(this.value)"
+                            />
+                                3.0
                         </label>
                         <label class="normal label-hover-focus-active">
                             <input
                                 type="radio"
                                 name="line-height"
                                 value="normal"
-                                onchange="changeFontFamily(this.value)"
+                                onchange="changeLineHeight(this.value)"
                             />
                                 normal
                         </label>
@@ -422,15 +448,15 @@
                                 type="radio"
                                 name="line-height"
                                 value="inherit"
-                                onchange="changeFontFamily(this.value)"
+                                onchange="changeLineHeight(this.value)"
                             />
                                 inherit
                         </label>
                     </form>
                 </div>
-                <div class="box-main box-main-add-style">
-                    <h1 id="font-family">ЗАГОЛОВОК h1</h1>
-                </div>>
+                <div class="box-main box-main-add-style box-main-change-height">
+                    <h1 id="line-height">Перший рядок ЗАГОЛОВКУ<br>Другий рядок ЗАГОЛОВКУ<br>Третій рядок ЗАГОЛОВКУ</h1>
+                </div>
 
 
                 <!--! Властивість letter-spacing -->
@@ -786,6 +812,13 @@
             // const rangeInput = document.querySelector('input[type="range"]')
             // const output = document.querySelector('.js-selected-font-size');
             // rangeInput.addEventListener('input', e => output.textContent = e.target.value)
+        </script>
+        <!--* Властивість line-height - JS script, який змінює інтерлін'яж (висоту рядка) шрифта  -->
+        <script>
+            function changeLineHeight(value) {
+                document.getElementById('line-height').style.lineHeight = value;
+                document.querySelector('.js-selected-line-height').textContent = value;
+            }
         </script>
         
     </body>
