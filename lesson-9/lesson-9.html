@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lesson-09</title>
+        <!--! завантаження шрифтів 'Roboto' 100, 300, 400, 500, 700, 900 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link 
             href="https://img.icons8.com/material-rounded/24/sentence-case.png" 
             type="image/x-icon"
@@ -17,6 +21,12 @@
             #font-family {
                 margin: 0;
                 font-family:'Century';
+                font-size: 40px;
+            }
+            #font-weight {
+                margin: 0;
+                font-family:'Roboto';
+                font-weight: 100;
                 font-size: 40px;
             }
         </style>
@@ -66,8 +76,8 @@
             <ul class="list-content">
                 <li><a href="#d1">Властивості шрифту та оформлення тексту</a></li>
                 <li><a href="#d2">Властивість <b>font-family</b></a></li>
-                <li><a href="#d3">Властивість <b>font-size</b></a></li>
-                <li><a href="#d4">Заголовок-4</a></li>
+                <li><a href="#d3">Властивість <b>font-weight</b></a></li>
+                <li><a href="#d4">Властивість <b>font-size</b></a></li>
                 <li><a href="#d5">Заголовок-5</a></li>
                 <li><a href="#d6">Заголовок-6​</a></li>
                 <li><a href="#d7">Заголовок-7</a></li>
@@ -203,11 +213,52 @@
                 </div>
 
 
-                <!--! Властивість font-size -->
+                <!--! Властивість font-weight -->
                 <!-- <h3 id="d3" style ="color: royalblue">
-                    <i>Властивість font-size:</i>
+                    <i>Властивість font-weight:</i>
                 </h3> -->
                 <div id="d3"></div>
+                <div class="box-main">
+                    <p class="text-main">
+                        Контролює <b><u>товщину накреслення</u></b> (<b>жирність</b>, <b>вагу</b>) літер шрифту.
+                    </p>
+                    <p class="text-main">
+                        Значення властивості можна задавати набором зарезервованих слів або цифрами від <b>100</b> до <b>900</b> з кроком <b><u>100</u></b>, які задають ступінь товщини гліфа від тонкого <b><i>100</i></b> до товстого <b><i>900</i></b>.
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">.section-title</span> {
+    <span class="color-green">font-weight</span>: <span class="color-goldenrod"><span class="js-selected-font-weight">100</span>px</span>;
+}
+                        </code>
+                    </pre>
+                    <form class="form-font-weight form-font-size">
+                        <label>
+                                <span class="form-label-text">font-weight:</span>
+                            <input
+                                type="range"
+                                name="font-weight"
+                                value="100"
+                                min="100"
+                                max="900"
+                                step="100"
+                                oninput="changeFontWeight(this.value)"
+                            />
+                        </label>
+                        <button type="submit" class="form-button">Reset</button>
+                    </form>
+                    <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
+                </div>
+                <div class="box-main box-main-add-style">
+                    <h1 id="font-weight">ЗАГОЛОВОК h1</h1>
+                </div>
+
+
+                <!--! Властивість font-size -->
+                <!-- <h3 id="d4" style ="color: royalblue">
+                    <i>Властивість font-size:</i>
+                </h3> -->
+                <div id="d4"></div>
                 <div class="box-main">
                     <p class="text-main">
                         Задає розмір шрифту елемента в <b>абсолютних</b> або <b>відносних</b> одиницях виміру.
@@ -236,31 +287,13 @@
                                 oninput="changeFontSize(this.value)"
                             />
                         </label>
-                        <button type="submit" class="form-font-size-btn">Reset</button>
+                        <button type="submit" class="form-button">Reset</button>
                     </form>
                     <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
                 </div>
                 <div class="box-main box-main-add-style">
                     <h1 id="font-size">ЗАГОЛОВОК h1</h1>
                 </div>
-
-
-                <!--! Заголовок-4 -->
-                <!-- <h3 id="d4" style ="color: royalblue">
-                    <i>Заголовок-4:</i>
-                </h3> -->
-                <div id="d4"></div>
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
                 <!--! Заголовок-5 -->
@@ -584,8 +617,8 @@
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
             d1.appendChild(createHeaderElement("Властивості шрифту та оформлення тексту:"));
             d2.appendChild(createHeaderElement("Властивість font-family:"));
-            d3.appendChild(createHeaderElement("Властивість font-size:"));
-            d4.appendChild(createHeaderElement("Заголовок-4:"));
+            d3.appendChild(createHeaderElement("Властивість font-weight:"));
+            d4.appendChild(createHeaderElement("Властивість font-size:"));
             d5.appendChild(createHeaderElement("Заголовок-5:"));
             d6.appendChild(createHeaderElement("Заголовок-6:"));
             d7.appendChild(createHeaderElement("Заголовок-7:"));
@@ -611,7 +644,14 @@
                 document.querySelector('.js-selected-font-family').textContent = value;
             }
         </script>
-        <!--* Властивість font-size - JS script, який оновлює розмір шрифта  -->
+        <!--* Властивість font-weight - JS script, який змінює жирність (вагу) шрифта  -->
+        <script>
+            function changeFontWeight(value) {
+                document.getElementById('font-weight').style.fontWeight = value;
+                document.querySelector('.js-selected-font-weight').textContent = value;
+            }
+        </script>
+        <!--* Властивість font-size - JS script, який змінює розмір шрифта  -->
         <script>
             function changeFontSize(value) {
                 document.getElementById('font-size').style.fontSize = value + 'px';

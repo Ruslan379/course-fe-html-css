@@ -31,7 +31,7 @@
 
 
 /*!  Властивість font-family */
-/** -----  Загальні стилі -----*/
+/** -----  Загальні стилі для всіх властивостей шрифтів -----*/
 .box-main-add-style {
     height: 100px;
     display: flex;
@@ -41,7 +41,7 @@
     text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
     border: 3px solid #0083da;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px rgba(12, 12, 12, 0.7);
+    box-shadow: 6px 6px 10px rgba(12, 12, 12, 0.7);
     background-color: #f8ff93;
 }
 
@@ -51,10 +51,41 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.1;
-    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
+    text-shadow: 4px 4px 6px rgba(12, 12, 12, 0.5);
     color: #004400;
 }
-/** -------------------------*/
+
+.form-button {
+    width: 90px;
+    height: 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #0083da;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    color: #0083da;
+    background-color:transparent;
+    scale: 1;
+    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover {
+    color: wheat;
+    background-color: #0083da;
+    scale: 1.03;
+}
+.form-button:active {
+    border-color: #0083da;
+    color: #f5deb3;
+    background-color: #ff6347;
+    scale: 1;
+}
+/** ---------------------------------------------------------*/
 .text-add-style {
     text-align: center;
     margin-bottom: 8px;
@@ -73,6 +104,7 @@
     text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
     border: 1px solid #ff6347;
     border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(12, 12, 12, 0.5);
     /* outline: 2px solid tomato; */
 }
 
@@ -124,34 +156,9 @@
     margin: 0;
 }
 
-.form-font-size-btn {
-    width: 90px;
-    height: 40px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font: inherit;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    outline: none;
-    border: 2px solid #0083da;
-    border-radius: 10.3108px;
-    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
-    color: #0083da;
-    background-color:transparent;
-    scale: 1;
-    transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-font-size-btn:hover {
-    color: wheat;
-    background-color: #0083da;
-    scale: 1.03;
-}
-.form-font-size-btn:active {
-    border-color: #0083da;
-    color: #f5deb3;
-    background-color: #ff6347;
-    scale: 1;
+/*!  Властивість font-weight */
+.form-font-weight input {
+    width: 400px;
+    margin: 0;
 }
 
