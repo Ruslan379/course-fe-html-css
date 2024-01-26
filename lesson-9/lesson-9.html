@@ -47,6 +47,10 @@
                 font-weight: 100;
                 font-size: 40px;
             }
+            #fline-height {
+                margin: 0;
+                font-size: 40px;
+            }
         </style>
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/lesson-9.css">
@@ -363,55 +367,64 @@
                         &#10157;  inherit 
                     </p>
                     <p class="text-main">
-                        Використання множника гарантує рівномірне масштабування міжрядкового інтервалу при зміні розміру тексту.
+                        Використання <b>множника</b> гарантує рівномірне масштабування міжрядкового інтервалу при зміні розміру тексту.
                     </p>
                     <pre class="box-pre bck-color-black">
                         <code class="box-code">
-<span class="color-red">body</span> {
-    <span class="color-green">font-family</span>: <span class="color-goldenrod"><span class="js-selected-font-family">Century</span></span>;
+<span class="color-red">.section-title</span> {
+    <span class="color-green">line-height</span>: <span class="color-goldenrod"><span class="js-selected-font-family">60px</span></span>;
 }
                         </code>
                     </pre>
-                    <p class="form-label-text text-add-style">font-family:</p>
+                    <p class="form-label-text text-add-style">line-height:</p>
                     <form class="form-font-family">
                         
-                        <label class="century label-hover-focus-active">
+                        <label class="value-px label-hover-focus-active">
                             <input
                                 
                                 type="radio"
-                                name="font-family"
-                                value="Century"
+                                name="line-height"
+                                value="60px"
                                 checked
                                 onchange="changeFontFamily(this.value)"
                             />
-                                Century
+                                60px
                         </label>
-                        <label class="arial label-hover-focus-active">
+                        <label class="percentage label-hover-focus-active">
                             <input
                                 type="radio"
-                                name="font-family"
-                                value="Impact"
+                                name="line-height"
+                                value="150%"
                                 onchange="changeFontFamily(this.value)"
                             />
-                                Impact
+                                150%
                         </label>
-                        <label class="courier-new label-hover-focus-active">
+                        <label class="multiplier label-hover-focus-active">
                             <input
                                 type="radio"
-                                name="font-family"
-                                value="Courier New"
+                                name="line-height"
+                                value="1.5"
                                 onchange="changeFontFamily(this.value)"
                             />
-                                Courier New
+                                1.5
                         </label>
-                        <label class="monotype-corsiva label-hover-focus-active">
+                        <label class="normal label-hover-focus-active">
                             <input
                                 type="radio"
-                                name="font-family"
-                                value="Monotype Corsiva"
+                                name="line-height"
+                                value="normal"
                                 onchange="changeFontFamily(this.value)"
                             />
-                                Monotype Corsiva
+                                normal
+                        </label>
+                        <label class="inherit label-hover-focus-active">
+                            <input
+                                type="radio"
+                                name="line-height"
+                                value="inherit"
+                                onchange="changeFontFamily(this.value)"
+                            />
+                                inherit
                         </label>
                     </form>
                 </div>
