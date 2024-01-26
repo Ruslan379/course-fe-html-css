@@ -31,6 +31,7 @@
 
 
 /*!  Властивість font-family */
+/** -----  Загальні стилі -----*/
 .box-main-add-style {
     height: 100px;
     display: flex;
@@ -44,8 +45,61 @@
     background-color: #f8ff93;
 }
 
+.form-label-text {
+    margin: 0;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
+    color: #004400;
+}
+/** -------------------------*/
+.text-add-style {
+    text-align: center;
+    margin-bottom: 8px;
+}
 
+.form-font-family {
+    height: 40px;
+    margin-bottom: 13px;
+    display: flex;
+    /* flex-direction: column; */
+    /* gap: 30px; */
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
+    border: 1px solid #ff6347;
+    border-radius: 10px;
+    /* outline: 2px solid tomato; */
+}
 
+/** font-family label */
+.century {
+    font-family: 'Century';
+}
+.arial {
+    font-family: 'Impact';
+}
+.courier-new {
+    font-family: 'Courier New';
+}
+.monotype-corsiva {
+    font-family: 'Monotype Corsiva';
+    font-size: larger;
+}
+
+.label-hover-focus-active:hover,
+.label-hover-focus-active:focus {
+    font-weight: 700;
+    color: #0083da;
+}
+.label-hover-focus-active:active {
+    font-weight: 400;
+    color: #0099ff;
+}
 
 
 /*!  Властивість font-size */
@@ -56,14 +110,8 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
-    font-family: monospace;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1;
-    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.5);
-    color: #004400;
-    
 }
+
 .form-font-size>label {
     height: 30px;
     display: flex;
@@ -106,3 +154,4 @@
     background-color: #ff6347;
     scale: 1;
 }
+

@@ -155,44 +155,46 @@
 }
                         </code>
                     </pre>
-                    <form>
-                        <p>font-family:</p>
-                        <label>
-                            <input 
+                    <p class="form-label-text text-add-style">font-family:</p>
+                    <form class="form-font-family">
+                        
+                        <label class="century label-hover-focus-active">
+                            <input
+                                
                                 type="radio"
                                 name="font-family"
                                 value="Century"
                                 checked
                                 onchange="changeFontFamily(this.value)"
                             />
-                            Century
+                                Century
                         </label>
-                        <label>
+                        <label class="arial label-hover-focus-active">
                             <input
                                 type="radio"
                                 name="font-family"
-                                value="Arial"
+                                value="Impact"
                                 onchange="changeFontFamily(this.value)"
                             />
-                            Arial
+                                Impact
                         </label>
-                        <label>
+                        <label class="courier-new label-hover-focus-active">
                             <input
                                 type="radio"
                                 name="font-family"
                                 value="Courier New"
                                 onchange="changeFontFamily(this.value)"
                             />
-                            Courier New
+                                Courier New
                         </label>
-                        <label>
+                        <label class="monotype-corsiva label-hover-focus-active">
                             <input
                                 type="radio"
                                 name="font-family"
                                 value="Monotype Corsiva"
                                 onchange="changeFontFamily(this.value)"
                             />
-                            Monotype Corsiva
+                                Monotype Corsiva
                         </label>
                     </form>
                 </div>
@@ -222,7 +224,7 @@
                     </pre>
                     <form class="form-font-size">
                         <label>
-                                <span>font-size:</span>
+                                <span class="form-label-text">font-size:</span>
                                 <!-- font-size: <span class="js-selected-font-size">20</span> -->
                             <input
                                 type="range"
