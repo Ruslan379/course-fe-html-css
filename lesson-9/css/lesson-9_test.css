@@ -160,23 +160,22 @@
     /* white-space: pre-wrap; */
 }
 
-/* ! === 12.Властивість text-shadow === */
-.general-style1 {
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-}
-/* ! === 12-1.Властивість text-shadow === */
-/* ! === Багатошарова тінь === */
-.general-style1 {
-    text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
-}
-
-/* ! === 13.Властивість text-indent === */
+/* ! === 12.Властивість text-indent === */
 .general-style-text {
     text-indent: 40px;
     /* text-indent: 10%; */
     /* text-indent: inherit; */
 }
 
+/* ! === 13.Властивість text-shadow === */
+.general-style1 {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+/* ! === 13-1.Властивість text-shadow === */
+/* ! === Багатошарова тінь === */
+.general-style1 {
+    text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
 /*! завантаження шрифта 'Tangerine' Bold 700 з локальної папки */
 /* @font-face {
     font-family: 'Tangerine';

@@ -8,12 +8,30 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!--! завантаження шрифтів 'M PLUS Code Latin' Regular 400, Bold 700 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&display=swap" rel="stylesheet">
+        <!--! завантаження іконки сторінки -->
         <link 
             href="https://img.icons8.com/material-rounded/24/sentence-case.png" 
             type="image/x-icon"
             rel="shortcut icon" 
         >
         <style>
+            /*!  header */
+            /** додаткова стилизация єлементів з акцентом */
+            .list-content-code-accent {
+                font-family:'M PLUS Code Latin';
+                font-weight: 700;
+                font-size: larger;
+                color: #742fb9;
+            }
+            .list-content-code-accent:hover {
+                color: #808000;
+            }
+
+            /*! стилізация властивостей */
             #font-size {
                 margin: 0;
                 font-size: 20px;
@@ -74,21 +92,21 @@
                 ЗМІСТ <span class="text-italic">(посилання-якір):</span>
             </h2>
             <ul class="list-content">
-                <li><a href="#d1">Властивості <b>шрифту</b> та оформлення <b>тексту</b></a></li>
-                <li><a href="#d2">Властивість <b style="font-size: larger;">font-family</b></a></li>
-                <li><a href="#d3">Властивість <b style="font-size: larger;">font-weight</b></a></li>
-                <li><a href="#d4">Властивість <b style="font-size: larger;">font-size</b></a></li>
-                <li><a href="#d5">Заголовок-5</a></li>
-                <li><a href="#d6">Заголовок-6​</a></li>
-                <li><a href="#d7">Заголовок-7</a></li>
-                <li><a href="#d8">Заголовок-8</a></li>
-                <li><a href="#d9">Заголовок-9</a></li>
-                <li><a href="#d10">Заголовок-10</a></li>
-                <li><a href="#d11">Заголовок-11​</a></li>
-                <li><a href="#d12">Заголовок-12</a></li>
-                <li><a href="#d13">Заголовок-13</a></li>
+                <li><a href="#d0">Властивості <b>шрифту</b> та оформлення <b>тексту</b></a></li>
+                <li><a href="#d1">Властивість <span class="list-content-code-accent">font-family</span></a></li>
+                <li><a href="#d2">Властивість <span class="list-content-code-accent">font-weight</span></a></li>
+                <li><a href="#d3">Властивість <span class="list-content-code-accent">font-size</span></a></li>
+                <li><a href="#d4">Властивість <span class="list-content-code-accent">line-height</span></a></li>
+                <li><a href="#d5">Властивість <span class="list-content-code-accent">letter-spacing</span></a></li>
+                <li><a href="#d6">Властивість <span class="list-content-code-accent">font-style</span></a></li>
+                <li><a href="#d7">Властивість <span class="list-content-code-accent">text-decoration</span></a></li>
+                <li><a href="#d8">Властивість <span class="list-content-code-accent">text-transform</span></a></li>
+                <li><a href="#d9">Властивість <span class="list-content-code-accent">text-align</span></a></li>
+                <li><a href="#d10">Властивість <span class="list-content-code-accent">word-spacing</span></a></li>
+                <li><a href="#d11">Властивість <span class="list-content-code-accent">white-space</span></a></li>
+                <li><a href="#d12">Властивість <span class="list-content-code-accent">text-indent</span></a></li>
+                <li><a href="#d13">Властивість <span class="list-content-code-accent">text-shadow</span></a></li>
                 <li><a href="#d14">Заголовок-14</a></li>
-                <li><a href="#d15">Заголовок-15</a></li>
             </ul>
             <br />
             <hr align="center" color="#7f00d4" size="2" width="60%">
@@ -98,10 +116,10 @@
             <!--todo УРОК-9 -->
             <section>   
                 <!--! Властивості шрифту та оформлення тексту -->
-                <!-- <h3 id="d1" style ="color: royalblue">
+                <!-- <h3 id="d0" style ="color: royalblue">
                     <i>Властивості шрифту та оформлення тексту:</i>
                 </h3> -->
-                <div id="d1"></div>
+                <div id="d0"></div>
                 <div class="box-main">
                     <p class="text-main">
                         Для стилізації шрифтів та тексту використовують <b>набір CSS властивостей</b> (<i>правил</i>):
@@ -129,10 +147,10 @@
                 <p class="section-title">This text is styled using the CSS properties from the example code above</p>
 
                 <!--! Властивість font-family -->
-                <!-- <h3 id="d2" style ="color: royalblue">
+                <!-- <h3 id="d1" style ="color: royalblue">
                     <i>Властивість font-family:</i>
                 </h3> -->
-                <div id="d2"></div>
+                <div id="d1"></div>
                 <div class="box-main">
                     <p class="text-main">
                         <b>Шрифт</b> — це набір друкарських літер, цифр і спеціальних знаків певного стилю для набору тексту.
@@ -210,7 +228,7 @@
                 </div>
                 <div class="box-main box-main-add-style">
                     <h1 id="font-family">ЗАГОЛОВОК h1</h1>
-                </div>.,mnnm,jklyui87
+                </div>
                 <br />
                 <!-- ?--------------------------------------------------- -->
                 <!--? корисне джерело інформації -->
@@ -232,10 +250,10 @@
                 <!-- ?--------------------------------------------------- -->
 
                 <!--! Властивість font-weight -->
-                <!-- <h3 id="d3" style ="color: royalblue">
+                <!-- <h3 id="d2" style ="color: royalblue">
                     <i>Властивість font-weight:</i>
                 </h3> -->
-                <div id="d3"></div>
+                <div id="d2"></div>
                 <div class="box-main">
                     <p class="text-main">
                         Контролює <b><u>товщину накреслення</u></b> (<b>жирність</b>, <b>вагу</b>) літер шрифту.
@@ -273,10 +291,10 @@
 
 
                 <!--! Властивість font-size -->
-                <!-- <h3 id="d4" style ="color: royalblue">
+                <!-- <h3 id="d3" style ="color: royalblue">
                     <i>Властивість font-size:</i>
                 </h3> -->
-                <div id="d4"></div>
+                <div id="d3"></div>
                 <div class="box-main">
                     <p class="text-main">
                         Задає розмір шрифту елемента в <b>абсолютних</b> або <b>відносних</b> одиницях виміру.
@@ -314,9 +332,27 @@
                 </div>
 
 
-                <!--! Заголовок-5 -->
+                <!--! Властивість line-height -->
+                <!-- <h3 id="d4" style ="color: royalblue">
+                    <i>Властивість line-height:</i>
+                </h3> -->
+                <div id="d4"></div>
+                <!--? Позаголовок -->
+                <br />
+                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+
+                <!--? Позаголовок -->
+                <br />
+                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+
+                <!--? Позаголовок -->
+                <br />
+                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+
+
+                <!--! Властивість letter-spacing -->
                 <!-- <h3 id="d5" style ="color: royalblue">
-                    <i>Заголовок-5:</i>
+                    <i>Властивість letter-spacing:</i>
                 </h3> -->
                 <div id="d5"></div>
                 <!--? Позаголовок -->
@@ -332,9 +368,9 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-6 -->
+                <!--! Властивість font-style -->
                 <!-- <h3 id="d6" style ="color: royalblue">
-                    <i>Заголовок-6:</i>
+                    <i>Властивість font-style:</i>
                 </h3> -->
                 <div id="d6"></div>
                 <!--? Позаголовок -->
@@ -350,9 +386,9 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-7 -->
+                <!--! Властивість text-decoration -->
                 <!-- <h3 id="d7" style ="color: royalblue">
-                    <i>Заголовок-7:</i>
+                    <i>Властивість text-decoration:</i>
                 </h3> -->
                 <div id="d7"></div>
                 <!--? Позаголовок -->
@@ -368,9 +404,9 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-8 -->
+                <!--! Властивість text-transform -->
                 <!-- <h3 id="d8" style ="color: royalblue">
-                    <i>Заголовок-8:</i>
+                    <i>Властивість text-transform:</i>
                 </h3> -->
                 <div id="d8"></div>
                 <!--? Позаголовок -->
@@ -386,9 +422,9 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-9 -->
+                <!--! Властивість text-align -->
                 <!-- <h3 id="d9" style ="color: royalblue">
-                    <i>Заголовок-9:</i>
+                    <i>Властивість text-align:</i>
                 </h3> -->
                 <div id="d9"></div>
                 <!--? Позаголовок -->
@@ -404,9 +440,9 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-10 -->
+                <!--! Властивість word-spacing -->
                 <!-- <h3 id="d10" style ="color: royalblue">
-                    <i>Заголовок-10:</i>
+                    <i>Властивість word-spacing:</i>
                 </h3> -->
                 <div id="d10"></div>
                 <!--? Позаголовок -->
@@ -422,10 +458,11 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-11 -->
+                <!--! Властивість white-space -->
                 <!-- <h3 id="d11" style ="color: royalblue">
-                    <i>Заголовок-11:</i>
+                    <i>Властивість white-space:</i>
                 </h3> -->
+                <div id="d11"></div>
                 <!--? Позаголовок -->
                 <br />
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
@@ -439,9 +476,9 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-12 -->
+                <!--! Властивість text-indent -->
                 <!-- <h3 id="d12" style ="color: royalblue">
-                    <i>Заголовок-12:</i>
+                    <i>Властивість text-indent:</i>
                 </h3> -->
                 <div id="d12"></div>
                 <!--? Позаголовок -->
@@ -457,14 +494,14 @@
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
 
-                <!--! Заголовок-13 -->
+                <!--! Властивість text-shadow -->
                 <!-- <h3 id="d13" style ="color: royalblue">
-                    <i>Заголовок-13:</i>
+                    <i>Властивість text-shadow:</i>
                 </h3> -->
                 <div id="d13"></div>
-                <!--? Позаголовок -->
+                <!--? Багатошарова тінь -->
                 <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+                <h4 class="subheading-text-main"><i>Багатошарова тінь</i>:</h4>
 
                 <!--? Позаголовок -->
                 <br />
@@ -473,6 +510,9 @@
                 <!--? Позаголовок -->
                 <br />
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
+
+
+                
 
 
                 <!--! Заголовок-14 -->
@@ -480,23 +520,7 @@
                     <i>Заголовок-14:</i>
                 </h3> -->
                 <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-
-                <!--! Заголовок-15 -->
-                <!-- <h3 id="d15" style ="color: royalblue">
-                    <i>Заголовок-15:</i>
-                </h3> -->
-                <!--? Позаголовок -->
+                <div id="d14"></div>
                 <br />
                 <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
 
@@ -614,6 +638,7 @@
                 // Получаем контейнеры, куда будем добавлять заголовки
             // const headerContainer1 = document.getElementById("headerContainer1");
             // const headerContainer2 = document.getElementById("headerContainer2");
+            const d0 = document.getElementById("d0");
             const d1 = document.getElementById("d1");
             const d2 = document.getElementById("d2");
             const d3 = document.getElementById("d3");
@@ -628,26 +653,26 @@
             const d12 = document.getElementById("d12");
             const d13 = document.getElementById("d13");
             const d14 = document.getElementById("d14");
-            const d15 = document.getElementById("d15");
+
 
                 // Пример использования функции с разными значениями
             // headerContainer1.appendChild(createHeaderElement("Заголовок 1"));
             // headerContainer2.appendChild(createHeaderElement("Заголовок 2"));
-            d1.appendChild(createHeaderElement("Властивості шрифту та оформлення тексту:"));
-            d2.appendChild(createHeaderElement("Властивість font-family:"));
-            d3.appendChild(createHeaderElement("Властивість font-weight:"));
-            d4.appendChild(createHeaderElement("Властивість font-size:"));
-            d5.appendChild(createHeaderElement("Заголовок-5:"));
-            d6.appendChild(createHeaderElement("Заголовок-6:"));
-            d7.appendChild(createHeaderElement("Заголовок-7:"));
-            d8.appendChild(createHeaderElement("Заголовок-8:"));
-            d9.appendChild(createHeaderElement("Заголовок-9:"));
-            d10.appendChild(createHeaderElement("Заголовок-10:"));
-            d11.appendChild(createHeaderElement("Заголовок-11:"));
-            d12.appendChild(createHeaderElement("Заголовок-12:"));
-            d13.appendChild(createHeaderElement("Заголовок-13:"));
+            d0.appendChild(createHeaderElement("Властивості шрифту та оформлення тексту:"));
+            d1.appendChild(createHeaderElement("Властивість font-family:"));
+            d2.appendChild(createHeaderElement("Властивість font-weight:"));
+            d3.appendChild(createHeaderElement("Властивість font-size:"));
+            d4.appendChild(createHeaderElement("Властивість line-height:"));
+            d5.appendChild(createHeaderElement("Властивість letter-spacing:"));
+            d6.appendChild(createHeaderElement("Властивість font-style:"));
+            d7.appendChild(createHeaderElement("Властивість text-decoration::"));
+            d8.appendChild(createHeaderElement("Властивість text-transform::"));
+            d9.appendChild(createHeaderElement("Властивість text-align:"));
+            d10.appendChild(createHeaderElement("Властивість word-spacing:"));
+            d11.appendChild(createHeaderElement("Властивість white-space:"));
+            d12.appendChild(createHeaderElement("Властивість text-indent:"));
+            d13.appendChild(createHeaderElement("Властивість text-shadow:"));
             d14.appendChild(createHeaderElement("Заголовок-14:"));
-            d15.appendChild(createHeaderElement("Заголовок-15:"));
         </script>
         <!--* JS script який відтворює значення Повзунка -->
         <!-- <script>
