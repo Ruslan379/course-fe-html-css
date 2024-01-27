@@ -641,22 +641,63 @@
                     <i>Властивість text-shadow:</i>
                 </h3> -->
                 <div id="d13"></div>
+                <div class="box-main">
+                    <p class="text-main">
+                        Контролює тінь тексту, а також встановлює її параметри: <b>зміщення</b>, <b>радіус розмиття</b> та <b>колір</b>.
+                    </p>
+                    <p class="text-main">
+                        &#10157; <b class="color-accent">зміщення по x</b> - зміщення тіні за <b class="color-accent">горизонталлю</b> щодо тексту. <u>Позитивне</u> значення задає зміщення тіні <b><u>вправо</u></b>, <u>негативне</u> - <b><u>вліво</u></b>.
+                    </p>
+                    <p class="text-main">
+                        &#10157; <b class="color-accent">зміщення по y</b> - зміщення тіні за <b class="color-accent">вертикаллю</b> щодо тексту. <u>Позитивне</u> значення задає зміщення тіні <b><u>вниз</u></b>, <u>негативне</u> - <b><u>вгору</u></b>.
+                    </p>
+                    <p class="text-main">
+                        &#10157; <b class="color-accent">радіус розмиття</b> - чим <u>більше значення</u>, тим <b><u>сильніше тінь розмивається</u></b> і <b><u>стає світлішою</u></b>. <i>За замовчуванням, якщо не заданий, буде дорівнювати <b>0</b></i>.
+                    </p>
+                    <p class="text-main">
+                        &#10157; <b class="color-accent">колір</b> - задається в <b>будь-якому форматі</b>. <i>За замовчуванням колір тіні збігається з кольором тексту</i>.
+                    </p>
+                    <pre class="box-pre bck-color-black">
+                        <code class="box-code">
+<span class="color-red">.section-title</span> {
+    <span class="color-green">text-shadow</span>: <span class="color-goldenrod"><span class="js-selected-text-shadow-x">2 </span>px<span class="js-selected-text-shadow-y">2 </span>px<span class="js-selected-text-shadow-radius">4 </span>px<span class="js-selected-text-shadow-color">#000000</span></span>;
+}
+                        </code>
+                    </pre>
+                    <form class="form-font-weight form-font-size">
+                        <label>
+                                <span class="form-label-text">font-weight:</span>
+                            <input
+                                type="range-х"
+                                name="font-weight"
+                                value="2"
+                                min="-6"
+                                max="6"
+                                step="2"
+                                oninput="changeTextShadowX(this.value)"
+                            />
+                        </label>
+                        <button
+                            class="form-button"
+                            type="reset"
+                            onclick="changeFontWeight(100)"
+                        >
+                            Reset
+                        </button>
+                    </form>
+                    <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
+                </div>
+                <div class="box-main box-main-add-style">
+                    <h1 id="font-weight">ЗАГОЛОВОК h1</h1>
+                </div>
+
+
+
                 <!--? Багатошарова тінь -->
                 <br />
                 <h4 class="subheading-text-main"><i>Багатошарова тінь</i>:</h4>
 
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-                <!--? Позаголовок -->
-                <br />
-                <h4 class="subheading-text-main"><i>Позаголовок</i>:</h4>
-
-
                 
-
-
                 <!--! Заголовок-14 -->
                 <!-- <h3 id="d14" style ="color: royalblue">
                     <i>Заголовок-14:</i>
