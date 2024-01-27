@@ -273,7 +273,7 @@
                     <pre class="box-pre bck-color-black">
                         <code class="box-code">
 <span class="color-red">.section-title</span> {
-    <span class="color-green">font-weight</span>: <span class="color-goldenrod"><span class="js-selected-font-weight">100</span>px</span>;
+    <span class="color-green">font-weight</span>: <span class="color-goldenrod"><span class="js-selected-font-weight">100</span></span>;
 }
                         </code>
                     </pre>
@@ -290,7 +290,13 @@
                                 oninput="changeFontWeight(this.value)"
                             />
                         </label>
-                        <button type="submit" class="form-button">Reset</button>
+                        <button
+                            class="form-button"
+                            type="reset"
+                            onclick="changeFontWeight(100)"
+                        >
+                            Reset
+                        </button>
                     </form>
                     <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
                 </div>
@@ -332,7 +338,14 @@
                                 oninput="changeFontSize(this.value)"
                             />
                         </label>
-                        <button type="submit" class="form-button">Reset</button>
+                        <!-- <button type="submit" class="form-button">Reset</button> -->
+                        <button
+                            class="form-button"
+                            type="reset"
+                            onclick="changeFontSize(20)"
+                        >
+                            Reset
+                        </button>
                     </form>
                     <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
                 </div>
