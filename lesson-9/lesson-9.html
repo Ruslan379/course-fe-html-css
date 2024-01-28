@@ -413,7 +413,6 @@
                     <form class="form-font-family">
                         <label class="value-pixels label-hover-focus-active">
                             <input
-                                
                                 type="radio"
                                 name="line-height"
                                 value="60px"
@@ -664,12 +663,13 @@
 }
                         </code>
                     </pre>
-                    <form class="form-font-weight form-font-size">
+                    <form class="form-text-shadow form-font-size">
                         <label>
-                                <span class="form-label-text">font-weight:</span>
+                                <span class="form-label-text">зміщення по x:</span>
                             <input
-                                type="range-х"
-                                name="font-weight"
+                                class="input-text-shadow"
+                                type="range"
+                                name="text-shadow-x"
                                 value="2"
                                 min="-6"
                                 max="6"
@@ -677,10 +677,113 @@
                                 oninput="changeTextShadowX(this.value)"
                             />
                         </label>
+                        <label>
+                                <span class="form-label-text">зміщення по y:</span>
+                            <input
+                                class="input-text-shadow"
+                                type="range"
+                                name="text-shadow-y"
+                                value="2"
+                                min="-6"
+                                max="6"
+                                step="2"
+                                oninput="changeTextShadowY(this.value)"
+                            />
+                        </label>
+                        <label>
+                                <span class="form-label-text">радіус розмиття:</span>
+                            <input
+                                class="input-text-shadow"
+                                type="range"
+                                name="text-shadow-radius"
+                                value="2"
+                                min="-6"
+                                max="6"
+                                step="2"
+                                oninput="changeTextShadowRadius(this.value)"
+                            />
+                        </label>
+                        <!--! color -->
+                        <div>
+                            <label class="color-black label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="black"
+                                    checked
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    black
+                            </label>
+                            <label class="color-grey label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="grey"
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    grey
+                            </label>
+                            <label class="color-red label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="red
+                                    onchange="changeLineHeight(this.value)"
+                                />
+                                    red
+                            </label>
+                            <label class="color-green label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="green"
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    green
+                            </label>
+                            <label class="color-blue label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="blue"
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    blue
+                            </label>
+                            <label class="color-yellow label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="yellow"
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    yellow
+                            </label>
+                            <label class="color-pink label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="pink"
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    pink
+                            </label>
+                            <label class="color-violet label-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="violet"
+                                    onchange="changeTextShadowColor(this.value)"
+                                />
+                                    violet
+                            </label>
+                        </div>
+                        
                         <button
                             class="form-button"
                             type="reset"
-                            onclick="changeFontWeight(100)"
+                            onclick="changeFontWeight1(100)"
                         >
                             Reset
                         </button>
@@ -688,7 +791,7 @@
                     <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
                 </div>
                 <div class="box-main box-main-add-style">
-                    <h1 id="font-weight">ЗАГОЛОВОК h1</h1>
+                    <h1 id="text-shadow">ЗАГОЛОВОК h1</h1>
                 </div>
 
 

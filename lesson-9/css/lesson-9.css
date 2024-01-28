@@ -134,6 +134,13 @@
 }
 
 
+/*!  Властивість font-weight */
+.form-font-weight input[name="font-weight"] {
+    width: 400px;
+    margin: 0;
+}
+
+
 /*!  Властивість font-size */
 .form-font-size {
     height: 40px;
@@ -151,16 +158,12 @@
     align-items: normal;
     justify-content: center;
 }
-.form-font-size input {
+.form-font-size input[name="font-size"] {
     width: 200px;
     margin: 0;
 }
 
-/*!  Властивість font-weight */
-.form-font-weight input {
-    width: 400px;
-    margin: 0;
-}
+
 
 /*!  Властивість line-height */
 .box-main-change-height {
@@ -176,4 +179,30 @@
     /* font-weight: 700; */
     /* font-size: larger; */
     /* color: #742fb9; */
+}
+
+
+
+
+
+
+
+
+
+
+/*!  Властивість text-shadow */
+.form-text-shadow {
+    width: 650px;
+    height: 300px;
+    /* margin-bottom: 13px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    align-items: flex-end;
+    /* justify-content: center; */
+}
+
+.input-text-shadow {
+    width: 300px;
+    margin: 0;
 }
