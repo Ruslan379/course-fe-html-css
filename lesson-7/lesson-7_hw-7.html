@@ -50,15 +50,22 @@
         color: red;
         }
         /* v2 */
-        div:nth-child(5) {
+        :nth-child(5) {
 			color: red;
 		}
-        :nth-child(7) {
-            color: green;
+        /* v3 */
+        p:only-of-type {
+            color: red;
         }
-        /* v2 */
+        /* v4 */
+        p:first-child {
+            color: red;
+        }
         p:nth-of-type(3) {
         color: green;
+        }
+        :nth-child(7) {
+            color: green;
         }
         .yellow {
             color: yellow;
