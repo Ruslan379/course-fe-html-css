@@ -14,15 +14,20 @@
     <!--! завантаження modern-normalize -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"> -->
     
-    <!--! завантаження шрифта 'Playfair Display' Regular 400 -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
-    
     <!--! завантаження шрифта 'Tangerine' Bold 700 -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"> -->
+
+    <!--! завантаження шрифта 'Playfair Display' Regular 400 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> -->
+
+    <!--! завантаження шрифтів 'Playfair Display' Regular 400  + 'Ubuntu' 300-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
     
     <!--! вбудована стилізация -->
     <!-- <style>
@@ -72,7 +77,7 @@
     </style> -->
 
     <!--! зовнішній файл стилів -->
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- <a 
@@ -84,32 +89,33 @@
     </a> -->
 
     <!-- Шапка сторінки -->
-    <header>
-    <!-- <header class="gallery"> -->
+    <header  class="header">
         <!-- The logo is always a link -->
-        <a href="./">
+        <a class="header-link-logo" href="./">
             <img 
+                class="header-link-logo-img"
                 src="https://img.icons8.com/officel/40/stack-of-photos.png" 
                 alt="Logo Photoblog" 
                 width="40" 
             />
             <br/>
-            Photoblog.dev
+                Photoblog.dev
         </a>
-        <nav>
+        <nav class="header-nav">
             <!--Меню навігації по інших сторінках -->
-            <ul>
-                <li><a href="./lifestyle.html">LIFESTYLE</a></li>
-                <li><a href="./photodiary.html">PHOTODIARY</a></li>
-                <li><a href="./music.html">MUSIC</a></li>
-                <li><a href="./travel.html">TRAVEL</a></li>
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a class="header-nav-list-item-link" href="./lifestyle.html">LIFESTYLE</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-item-link" href="./photodiary.html">PHOTODIARY</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-item-link" href="./music.html">MUSIC</a></li>
+                <li class="header-nav-list-item"><a class="header-nav-list-item-link" href="./travel.html">TRAVEL</a></li>
             </ul>
         </nav>
     </header>
     <!-- Унікальний контент сторінки -->
     <main>
-        <section>
+        <section class="gallery">
             <h1 
+                class="gallery-title"
                 style=
                     "
                         /* visibility: hidden; */
@@ -119,17 +125,17 @@
                 Photoblog
             </h1>
             <!-- <ul style="display: flex; flex-wrap: wrap; justify-content: space-evenly"> -->
-            <ul>
-                <li>
-                    <img 
+            <ul class="gallery-title-list">
+                <li class="gallery-title-list-item">
+                    <img class="gallery-title-list-item-img"
                         src="./images/image-1.jpg" 
                         alt="дівчина над натовпом"
                         width="420px"
                     >
                     <div>
-                        <a href="./lifestyle.html">LIFESTYLE</a>
-                        <h2>More than just a music festival</h2>
-                        <p>
+                        <a class="gallery-title-list-item-link" href="./lifestyle.html">LIFESTYLE</a>
+                        <h2 class="gallery-title-list-item-title">More than just a music festival</h2>
+                        <p class="gallery-title-list-item-text">
                             <pre>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
