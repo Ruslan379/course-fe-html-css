@@ -192,13 +192,11 @@
 
 /*!  Властивість text-shadow */
 .form-text-shadow {
-    /* width: 650px; */
     height: 300px;
+    margin-top: 20px;
     padding-right: 150px;
     flex-direction: column;
-    /* gap: 30px; */
     align-items: flex-end;
-    /* justify-content: center; */
 }
 
 .input-text-shadow {
@@ -244,4 +242,8 @@ label.color-violet {
 
 .box-main-add-style-bck {
     background-color: #323232;
+}
+
+.button-margin-right {
+    margin-right: 205px;
 }
