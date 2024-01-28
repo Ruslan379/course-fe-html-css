@@ -707,7 +707,7 @@
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
-                                    value="black"
+                                    value="#000000"
                                     checked
                                 />
                                     black
@@ -716,9 +716,9 @@
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
-                                    value="grey"
+                                    value="white"
                                 />
-                                    grey
+                                    white
                             </label>
                             <label class="color-red label-no-color-hover-focus-active">
                                 <input
@@ -772,7 +772,7 @@
                         <button
                             class="form-button button-margin-right"
                             type="reset"
-                            onclick="resetTextShadow(2, 2, 4,'black')"
+                            onclick="resetTextShadow(2, 2, 4,'#000000')"
                         >
                             Reset
                         </button>
@@ -1024,10 +1024,8 @@
             
                 document.getElementById('text-shadow').style.textShadow = spanText;
                 document.querySelector('.js-selected-text-shadow').innerText = spanText;
-                
             }
-        </script>
-        <script>
+            // Сброс параметров text-shadow в первоначальные 
             function resetTextShadow(defaultX, defaultY, defaultRadius, defaultColor) {
                 // Ваш код сброса значений, используйте переданные параметры
                 document.querySelector('[name="text-shadow-x"]').value = defaultX;
