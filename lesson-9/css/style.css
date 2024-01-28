@@ -271,6 +271,9 @@ div[id^="d"] {
 .color-green {
     color: #008000;
 }
+.color-lime {
+    color: #00ff00;
+}
 .color-blue {
     color: #0000ff;
 }
@@ -287,7 +290,7 @@ div[id^="d"] {
     color: #20b2aa;
 }
 .color-teal {
-    color: teal;
+    color: #008080;
 }
 .color-violet {
     color: #b400b4;
