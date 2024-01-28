@@ -696,14 +696,13 @@
                                 class="input-text-shadow"
                                 type="range"
                                 name="text-shadow-radius"
-                                value="2"
-                                min="-6"
-                                max="6"
+                                value="4"
+                                min="0"
+                                max="8"
                                 step="2"
                                 oninput="changeTextShadowRadius(this.value)"
                             />
                         </label>
-                        
                         <!--! color -->
                         <div>
                             <span class="form-label-text">колір:</span>
@@ -730,8 +729,8 @@
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
-                                    value="red
-                                    onchange="changeLineHeight(this.value)"
+                                    value="red"
+                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     red
                             </label>
@@ -781,16 +780,14 @@
                                     violet
                             </label>
                         </div>
-                        
                         <button
                             class="form-button"
                             type="reset"
-                            onclick="changeFontWeight1(100)"
+                            onclick="resetTextShadow(2, 2, 4,'black')"
                         >
                             Reset
                         </button>
                     </form>
-                    <!-- <p>font-size: <span class="js-selected-font-size">20</span></p> -->
                 </div>
                 <div class="box-main box-main-add-style">
                     <h1 id="text-shadow">ЗАГОЛОВОК h1</h1>
@@ -999,6 +996,69 @@
                 document.querySelector('.js-selected-line-height').textContent = value;
             }
         </script>
+
+
+
+
+        <!--* Властивість text-shadow - JS script, який змінює тінь тексту  -->
+        <script>
+            // Обработчик события для изменения значения по оси x
+            document.querySelector('[name="text-shadow-x"]').addEventListener('input', function () {
+                document.querySelector('.js-selected-text-shadow-x').innerText = this.value;
+                updateTextShadow();
+            });
+            // Обработчик события для изменения значения по оси y
+            document.querySelector('[name="text-shadow-y"]').addEventListener('input', function () {
+                document.querySelector('.js-selected-text-shadow-y').innerText = this.value;
+                updateTextShadow();
+            });
+            // Обработчик события для изменения значения радиуса розмытия
+            document.querySelector('[name="text-shadow-radius"]').addEventListener('input', function () {
+                document.querySelector('.js-selected-text-shadow-radius').innerText = this.value;
+                updateTextShadow();
+            });
+            // Обработчик события для изменения цвета тени текста
+            document.querySelectorAll('[name="text-shadow-color"]').forEach(function (input) {
+                input.addEventListener('change', function () {
+                    document.querySelector('.js-selected-text-shadow-color').innerText = this.value;
+                    updateTextShadow();
+                });
+            });
+            // Функция обновления значения в span
+            function updateTextShadow() {
+                var textShadowX = document.querySelector('[name="text-shadow-x"]').value;
+                var textShadowY = document.querySelector('[name="text-shadow-y"]').value;
+                var textShadowRadius = document.querySelector('[name="text-shadow-radius"]').value;
+                var textShadowColor = document.querySelector('[name="text-shadow-color"]:checked').value;
+            
+                var spanText = textShadowX + 'px ' + textShadowY + 'px ' + textShadowRadius + 'px ' + textShadowColor;
+            
+                document.getElementById('text-shadow').style.textShadow = spanText;
+                document.querySelector('.js-selected-text-shadow').innerText = spanText;
+                
+            }
+        </script>
+        <script>
+            function resetTextShadow(defaultX, defaultY, defaultRadius, defaultColor) {
+                // Ваш код сброса значений, используйте переданные параметры
+                document.querySelector('[name="text-shadow-x"]').value = defaultX;
+                document.querySelector('.js-selected-text-shadow-x').innerText = defaultX;
         
+                document.querySelector('[name="text-shadow-y"]').value = defaultY;
+                document.querySelector('.js-selected-text-shadow-y').innerText = defaultY;
+        
+                document.querySelector('[name="text-shadow-radius"]').value = defaultRadius;
+                document.querySelector('.js-selected-text-shadow-radius').innerText = defaultRadius;
+        
+                // Выбор радио-кнопки по значению
+                document.querySelector('[name="text-shadow-color"][value="' + defaultColor + '"]').checked = true;
+                document.querySelector('.js-selected-text-shadow-color').innerText = defaultColor;
+        
+                // Дополнительный код для обновления тени текста
+                updateTextShadow();
+            }
+        </script>
+
+
     </body>
 </html>
