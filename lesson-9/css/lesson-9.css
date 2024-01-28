@@ -192,10 +192,9 @@
 
 /*!  Властивість text-shadow */
 .form-text-shadow {
-    width: 650px;
+    /* width: 650px; */
     height: 300px;
-    /* margin-bottom: 13px; */
-    display: flex;
+    padding-right: 150px;
     flex-direction: column;
     /* gap: 30px; */
     align-items: flex-end;
@@ -205,4 +204,44 @@
 .input-text-shadow {
     width: 300px;
     margin: 0;
+}
+
+.box-text-shadow-color {
+    height: 60px;
+    width: 700px;
+    padding-left: 15px;
+    margin-right: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgb(12 12 12 / 50%);
+    border: 1px solid #ff6347;
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgb(12 12 12 / 50%);
+}
+
+label.color-black,
+label.color-grey,
+label.color-red,
+label.color-green,
+label.color-blue,
+label.color-goldenrod,
+label.color-teal,
+label.color-violet {
+    font-family:'M PLUS Code Latin';
+}
+.label-no-color-hover-focus-active:hover,
+.label-no-color-hover-focus-active:focus {
+    font-weight: 700;
+    /* color: #0083da; */
+}
+.label-no-color-hover-focus-active:active {
+    font-weight: 400;
+    /* color: #0099ff; */
+}
+
+.box-main-add-style-bck {
+    background-color: #323232;
 }

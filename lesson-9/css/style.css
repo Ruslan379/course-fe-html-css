@@ -254,6 +254,12 @@ div[id^="d"] {
 }
 
 /*? ----- colors ----- */
+.color-black {
+    color: #000000;
+}
+.color-grey {
+    color: #808080;
+}
 .color-red {
     color: #ff0000;
 }
@@ -269,8 +275,14 @@ div[id^="d"] {
 .color-goldenrod {
     color: #daa520;
 }
+.color-yellow {
+    color: #ffff00;
+}
 .color-lightseagreen {
     color: #20b2aa;
+}
+.color-teal {
+    color: teal;
 }
 .color-violet {
     color: #b400b4;

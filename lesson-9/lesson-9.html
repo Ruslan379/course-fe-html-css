@@ -674,7 +674,6 @@
                                 min="-6"
                                 max="6"
                                 step="2"
-                                oninput="changeTextShadowX(this.value)"
                             />
                         </label>
                         <label>
@@ -687,7 +686,6 @@
                                 min="-6"
                                 max="6"
                                 step="2"
-                                oninput="changeTextShadowY(this.value)"
                             />
                         </label>
                         <label>
@@ -700,84 +698,75 @@
                                 min="0"
                                 max="8"
                                 step="2"
-                                oninput="changeTextShadowRadius(this.value)"
                             />
                         </label>
                         <!--! color -->
-                        <div>
+                        <div class="box-text-shadow-color">
                             <span class="form-label-text">колір:</span>
-                            <label class="color-black label-hover-focus-active">
+                            <label class="color-black label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
                                     value="black"
                                     checked
-                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     black
                             </label>
-                            <label class="color-grey label-hover-focus-active">
+                            <label class="color-grey label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
                                     value="grey"
-                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     grey
                             </label>
-                            <label class="color-red label-hover-focus-active">
+                            <label class="color-red label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
                                     value="red"
-                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     red
                             </label>
-                            <label class="color-green label-hover-focus-active">
+                            <label class="color-green label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
                                     value="green"
-                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     green
                             </label>
-                            <label class="color-blue label-hover-focus-active">
+                            <label class="color-blue label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
                                     value="blue"
-                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     blue
                             </label>
-                            <label class="color-yellow label-hover-focus-active">
+                            <label class="color-goldenrod label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
-                                    value="yellow"
-                                    onchange="changeTextShadowColor(this.value)"
+                                    value="goldenrod"
                                 />
-                                    yellow
+                                    goldenrod
                             </label>
-                            <label class="color-pink label-hover-focus-active">
-                                <input
-                                    type="radio"
-                                    name="text-shadow-color"
-                                    value="pink"
-                                    onchange="changeTextShadowColor(this.value)"
-                                />
-                                    pink
-                            </label>
-                            <label class="color-violet label-hover-focus-active">
+                            <label class="color-violet label-no-color-hover-focus-active">
                                 <input
                                     type="radio"
                                     name="text-shadow-color"
                                     value="violet"
-                                    onchange="changeTextShadowColor(this.value)"
                                 />
                                     violet
+                            </label>
+                            <label class="color-teal label-no-color-hover-focus-active">
+                                <input
+                                    type="radio"
+                                    name="text-shadow-color"
+                                    value="teal"
+                                />
+                                teal
                             </label>
                         </div>
                         <button
@@ -789,7 +778,7 @@
                         </button>
                     </form>
                 </div>
-                <div class="box-main box-main-add-style">
+                <div class="box-main box-main-add-style box-main-add-style-bck">
                     <h1 id="text-shadow">ЗАГОЛОВОК h1</h1>
                 </div>
 
