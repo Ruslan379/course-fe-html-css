@@ -235,6 +235,17 @@ div[id^="d"] {
     font-size: 20px;
 }
 
+/*? Зменшити розмір шрифта */
+.box-code.font-size-smaller {
+    /* font-size: inherit; */
+    /* font-size: 1em; */
+
+    /* font-size: 1rem; */
+    
+    font-size: 20px;
+}
+
+
 /* ? Поворот текстового элемента на 180 градусов */
 .rotated-text {
     display: inline-block;
