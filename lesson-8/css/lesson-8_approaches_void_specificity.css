@@ -39,6 +39,16 @@
 
 /* ! === 1.Властивість font-family === */
 /*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
+.logo-link-header1 {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 0.78px;
+    color: var(--color-logo-links-brand);
+}
+
 .h1 {
     /* font-family: 'Roboto'; */
     font-family: Roboto;
