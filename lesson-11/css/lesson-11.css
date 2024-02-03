@@ -1,0 +1,4 @@
+/*!  Специфічність ("вага" селектора): */
+table td:first-child {
+    text-align: left;
+}

@@ -1,0 +1,19 @@
+:root {
+    /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+    --color-font-body: #ff0000;
+    --color-background-body: #00ffff;
+    /* *============================================== */
+}
+/* ?============================================== */
+body {
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+    font-family: sans-serif;
+}
+/* ?============================================== */
+
+.text {
+    border: 2px dashed #2196F3;
+    padding: 15px;
+    margin: 20px;
+}
