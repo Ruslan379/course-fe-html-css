@@ -4,6 +4,20 @@
     --color-background-body: #00ffff;
     /* *============================================== */
 }
+/* ! content-box — дефолтне значення, 
+    !   властивості width і height 
+    !   задають ширину і висоту 
+    !   області вмісту і не включають 
+    !   розміри полів (padding), 
+    !   меж (border) і відступів (margin). 
+*/
+
+/* *,
+*::before,
+*::after {
+    box-sizing: border-box;
+} */
+
 /* ?============================================== */
 body {
     color: var(--color-font-body);
@@ -17,3 +31,18 @@ body {
     padding: 15px;
     margin: 20px;
 }
+
+/* box-sizing: content-box | border-box | inherit */
+
+.box {
+    /* box-sizing: content-box; */
+    /* box-sizing: border-box; */
+    width: 150px;
+    height: 150px;
+    
+    border: 5px solid #f44336;
+    padding: 30px;
+    margin: 40px;
+    background-color: #ffeb3b;
+}
+
