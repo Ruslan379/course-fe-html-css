@@ -40,51 +40,12 @@ body {
     width: 150px;
     height: 150px;
 
-    /* border: 5px solid #f44336; */
+    
     /* padding: 30px; */
     /* margin: 40px; */
-
+    /* border: 5px solid #f44336; */
     /* background-color: #ffeb3b; */
     
-
-    /*! border  
-    - контролює ширину, 
-    стиль 
-    і колір рамки 
-    (межі) елемента: 
-    */
-    /* border: 5px solid #f44336; */
-    /* * Також існують властивості для того, щоб задати ці значення окремо: */
-    /* border-width: 5px;
-    border-style: solid;
-    border-color: #f44336; */
-    /** Індивідуальні рамки​ — можна задати індивідуальні стилі рамці з кожної сторони елемента */
-    /*? Встановить стилі верхньої рамки */
-    /* border-top-width: 3px;
-    border-top-style: solid;
-    border-top-color: blue; */
-    /*? Встановить стилі правої рамки */
-    /* border-right-width: 5px;
-    border-right-style: dotted;
-    border-right-color: black; */
-    /*? Встановить стилі нижньої рамки */
-    /* border-bottom-width: 7px;
-    border-bottom-style: dashed;
-    border-bottom-color: palevioletred; */
-    /*? Встановить стилі лівої рамки */
-    /* border-left-width: 9px;
-    border-left-style: dashed;
-    border-left-color: green; */
-    /** Закруглена рамка​ — для того щоб закруглити всі кути рамки */
-    /*? верхній лівий кут */
-    /* border-top-left-radius: 15%; */
-    /*? верхній правий кут */
-    /* border-top-right-radius: 10px; */
-    /*? нижній правий кут */
-    /* border-bottom-right-radius: 40px; */
-    /*? нижній лівий кут */
-    /* border-bottom-left-radius: 50%; */
-
 
     /*! padding 
     - Збірна властивість контролює 
@@ -126,6 +87,45 @@ body {
     margin-right: 10px;
     margin-bottom: 15px;
     margin-left: 30px; */
+
+
+    /*! border  
+    - контролює ширину, 
+    стиль 
+    і колір рамки 
+    (межі) елемента: 
+    */
+    /* border: 5px solid #f44336; */
+    /* * Також існують властивості для того, щоб задати ці значення окремо: */
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: #f44336; */
+    /** Індивідуальні рамки​ — можна задати індивідуальні стилі рамці з кожної сторони елемента */
+    /*? Встановить стилі верхньої рамки */
+    /* border-top-width: 3px;
+    border-top-style: solid;
+    border-top-color: blue; */
+    /*? Встановить стилі правої рамки */
+    /* border-right-width: 5px;
+    border-right-style: dotted;
+    border-right-color: black; */
+    /*? Встановить стилі нижньої рамки */
+    /* border-bottom-width: 7px;
+    border-bottom-style: dashed;
+    border-bottom-color: palevioletred; */
+    /*? Встановить стилі лівої рамки */
+    /* border-left-width: 9px;
+    border-left-style: dashed;
+    border-left-color: green; */
+    /** Закруглена рамка​ — для того щоб закруглити всі кути рамки */
+    /*? верхній лівий кут */
+    /* border-top-left-radius: 15%; */
+    /*? верхній правий кут */
+    /* border-top-right-radius: 10px; */
+    /*? нижній правий кут */
+    /* border-bottom-right-radius: 40px; */
+    /*? нижній лівий кут */
+    /* border-bottom-left-radius: 50%; */
 
 }
 
