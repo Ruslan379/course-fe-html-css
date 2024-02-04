@@ -159,15 +159,15 @@ body {
 }
 
 
-.box-parent {
+/* .box-parent {
     display: flex;
     border: 5px solid blue;
-    /* outline: 5px solid blue; */
-}
+    outline: 5px solid blue;
+} */
 
 
 .box-inline {
-    display: inline;
+    /* display: inline; */
     width: 120px;
     height: 120px;
     padding: 10px;
