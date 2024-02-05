@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! назва сторінки (вкладки) -->
+    <title>Photoblog</title>
+    <!--! завантаження іконки до назви сторінки (вкладки) title -->
+    <link 
+        href="https://img.icons8.com/officel/16/stack-of-photos.png"
+        type="image/x-icon"
+        rel="shortcut icon" 
+    >
+    
+    <!-- <style>
+        /* завантаження шрифта Playfair Display' Regular 400 з локальної папки */
+        @font-face {
+            font-family: 'Playfair_Display';
+            src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('woff2');
+            src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('woff2');
+            /* font-weight: normal; */
+            /* font-style: normal; */
+        }
+        /* завантаження шрифта 'Tangerine' Bold 700 з локальної папки */
+        @font-face {
+            font-family: 'Tangerine_Style';
+            src: url('./fonts/Tangerine-Bold.ttf') format('woff2');
+            src: url('./fonts/Tangerine-Bold.ttf') format('woff2');
+            /* font-weight: normal; */
+            /* font-style: normal; */
+        }
+        
+        /*? стилізация заголовків h2 */
+        h2 {
+            /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+            /* font-family: "Playfair_Display"; */
+            font-family: "Tangerine_Style";
+
+            font-size: 30px;
+
+            /* font-weight: 400; normal  */
+            font-weight: 400; 
+            /* font-weight: 700; bold - аналог тегу <b> */
+            /* font-weight: 700; */
+
+            font-style: normal;
+            /* font-style: italic; аналог тегу <i> */
+            /* font-style: italic;  */
+
+            /* text-decoration: underline; аналог тегу <u> */
+            /* text-decoration: underline; */
+
+            line-height: normal; /* 1.5 */
+            /* line-height-auto це 1.2 */
+
+            color: #626262;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    </style> -->
+
+    <!--! зовнішній файл стилів -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сторінки -->
+    <header  class="header">
+        <!-- The logo is always a link -->
+        <a href="./">
+            <img 
+                src="https://img.icons8.com/officel/40/stack-of-photos.png" 
+                alt="Logo Photoblog" 
+                width="40" 
+            />
+            <br/>
+                Photoblog.dev
+        </a>
+        <nav>
+            <!--Меню навігації по інших сторінках -->
+            <ul>
+                <li><a href="./lifestyle.html">LIFESTYLE</a></li>
+                <li><a href="./photodiary.html">PHOTODIARY</a></li>
+                <li><a href="./music.html">MUSIC</a></li>
+                <li><a href="./travel.html">TRAVEL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Унікальний контент сторінки -->
+    <main>
+        <section>
+            <h1>
+                Photoblog
+            </h1>
+            <ul>
+                <li>
+                    <img
+                        src="./images/image-1.jpg" 
+                        alt="дівчина над натовпом"
+                        width="420px"
+                    >
+                    <div>
+                        <a href="./lifestyle.html">LIFESTYLE</a>
+                        <h2>More than just a music festival</h2>
+                        <p>
+                            <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea.
+                            </pre>
+                        </p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img 
+                        src="./images/image-2.jpg" 
+                        alt="чашка кави у долонях"
+                        width="420px"
+                    >
+                    <div>
+                        <a href="./lifestyle.html">LIFESTYLE</a>
+                        <h2>Life tastes better with coffee</h2>
+                        <p>
+                            <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea.
+                            </pre>
+                        </p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img 
+                        src="./images/image-3.jpg" 
+                        alt="дві дівчини дівляться у небо"
+                        width="420px"
+                    >
+                    <div>
+                        <a href="./photodiary.html">PHOTODIARY</a>
+                        <h2>American dream</h2>
+                        <p>
+                            <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea.
+                            </pre>
+                        </p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img 
+                        src="./images/image-4.jpg" 
+                        alt="дівчина дівиться у небо"
+                        width="420px"
+                    >
+                    <div>
+                        <a href="./photodiary.html">PHOTODIARY</a>
+                        <h2>A day exploring the Alps</h2>
+                        <p>
+                            <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea.
+                            </pre>
+                        </p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img 
+                        src="./images/image-5.jpg" 
+                        alt="дівчина в капелюсі дивиться в небо"
+                        width="420px"
+                    >
+                    <div>
+                        <a href="./lifestyle.html">LIFESTYLE</a>
+                        <h2>Top 10 song for running</h2>
+                        <p>
+                            <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea.
+                            </pre>
+                        </p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img 
+                        src="./images/image-6.jpg" 
+                        alt="звивистий шлях"
+                        width="420px"
+                    >
+                    <div>
+                        <a href="./lifestyle.html">LIFESTYLE</a>
+                        <h2>Cold winter days</h2>
+                        <p>
+                            <pre>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+enim ad minim veniam, quis nostrud exercitation ullamco laboris
+nisi ut aliquip ex ea.
+                            </pre>
+                        </p>
+                    </div>
+                    
+                </li>
+            </ul>
+            <button type="button">
+                Load more
+            </button>
+        </section>
+    </main>
+    <!-- Підвал сторінки -->
+    <footer>
+        <!-- Копірайт -->
+        <!-- <p>Всі права захищені © lpj.dev</p> -->
+        <!-- ⚠️ Посилання на соцмережі, не <nav> -->
+        <address>
+            <!-- Список адресних посилань -->
+            <!-- <ul>
+                <li><a href="./">Facebook</a></li>
+                <li><a href="./">Twitter</a></li>
+                <li><a href="./">Instagram</a></li>
+            </ul> -->
+        </address>
+        <p style ="color: tomato">
+            Повернутися до  &rArr; &nbsp;
+            <b>
+                <a 
+                    style ="color: blue" 
+                    href="../lesson-5.html"
+                > 
+                    Урок-5
+                </a>
+            </b> 
+        </p>
+    </footer>
+</body>
+</html>
