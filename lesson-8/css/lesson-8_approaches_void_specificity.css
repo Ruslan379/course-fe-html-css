@@ -37,6 +37,13 @@
     --color-background-section-fourth:#F5F4FA;
     } */
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
 /* ! === 1.Властивість font-family === */
 /*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
 .logo-link-header1 {
