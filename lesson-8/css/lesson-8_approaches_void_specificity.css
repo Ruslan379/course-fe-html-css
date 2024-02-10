@@ -47,7 +47,7 @@
 
 /* ! === 1.Властивість font-family === */
 /*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
-.logo-link-header1 {
+.logo-link-header {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -57,7 +57,7 @@
     color: var(--color-logo-links-brand);
 }
 
-.h1 {
+.hero-title {
     /* font-family: 'Roboto'; */
     font-family: Roboto;
     font-weight: 900;
@@ -73,21 +73,8 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /** стилізация заголовків h2 */
-/* .section-title {
+.section-title {
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
@@ -96,7 +83,7 @@
     letter-spacing: 1.08px;
     text-align: center;
     color: #212121;
-} */
+}
 
 
 
