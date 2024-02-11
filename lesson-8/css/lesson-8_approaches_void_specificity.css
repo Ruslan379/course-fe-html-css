@@ -5,7 +5,7 @@
     --color-font-main: #212121;
     --color-font-second: #757575;
     --color-brand-main: #2196F3;
-    --color-button-active: #188CE8;
+    --color-brand-active: #188CE8;
     --color-background-dark: #2F303A;
     --color-background-light: #F5F4FA;
     /* *========================================== */
@@ -26,9 +26,11 @@
     /* *========================================== */
 }
 
+/** === 1.Властивість font-family === */
+/** перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
 /*!  Виносимо однакові властивості єлементів до body  */
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 /*!  Контейнер - обгортає відразу увесь контент сторінки (або секції)  */
@@ -40,45 +42,173 @@ body {
 }
 
 
-/* ! === 1.Властивість font-family === */
-/*! перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
-.logo-link-header {
-    font-family: Raleway;
+/*? header */
+.logo {
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: normal;
     font-style: normal;
     letter-spacing: 0.78px;
-    color: var(--color-logo-links-brand);
+    color: var(--color-dark);
 }
 
+.logo-dark {
+    color: var(--color-brand-main);
+}
+
+.nav-link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    /* letter-spacing: 0.02em; */
+    letter-spacing: 0.28px;
+    color: var(--color-font-main); 
+}
+
+.active-link {
+    color: var(--color-brand-main); 
+}
+
+.contacts-link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    /* letter-spacing: 0.28px; */
+    color: var(--color-font-main); 
+}
+
+.contacts-link:hover {
+    color: var(--color-brand-main); 
+}
+
+
+/*? main */
+/*? section hero */
 .hero-title {
-    /* font-family: 'Roboto'; */
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 60px; /* 136.364% */
     line-height: 1.36;
     font-style: normal;
-    letter-spacing: 2.64px;
+    letter-spacing: 0.06em;
+    /* letter-spacing: 2.64px; */
     text-transform: uppercase;
     text-align: center;
     color: var(--color-light);
     background-color: var(--color-dark);
 }
 
+.hero-button {
+    display: block;
+    margin: 0 auto;
 
-/** стилізация заголовків h2 */
-.section-title {
-    font-family: Roboto;
-    font-size: 36px;
+    font-family: 'Roboto';
     font-weight: 700;
+    font-size: 16px;
+    /* line-height: 187%; */
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    /* letter-spacing: 0.96px; */
+    text-align: center;
+    color: var(--color-light);
+    background-color: var(--color-brand-main);
+}
+
+
+/*? section features */
+/** стилізация  заголовків h2 у ВСІХ секціях */
+.section-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
     font-style: normal;
     line-height: normal;
-    letter-spacing: 1.08px;
+    letter-spacing: 0.03em;
+    /* letter-spacing: 1.08px; */
     text-align: center;
-    color: #212121;
+    color: var(--color-font-main);
 }
+
+.features-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-font-main);
+}
+
+.features-description {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    /* line-height: 171%; */
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-font-second);
+}
+
+.features-list {
+    text-align: center;
+}
+
+.features-item {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*? section activities */
+.activities-list {
+    text-align: center;
+}
+
+.activities-item {
+    display: inline-block;
+}
+
+/*? section team */
+.team-name {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-font-main);
+}
+
+.team-position {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-font-second);
+}
+
+/* .team-image {
+    margin: 0 auto;
+} */
+
+.team-list {
+    text-align: center;
+}
+
+.team-item {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
 
 
 
