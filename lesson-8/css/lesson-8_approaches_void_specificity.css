@@ -84,6 +84,22 @@ body {
     color: var(--color-brand-main); 
 }
 
+.features-list1 {
+    text-align: center;
+}
+
+.navigation,
+.nav-list,
+.nav-item,
+.contacts-item,
+.contacts-list {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
