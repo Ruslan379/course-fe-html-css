@@ -1,47 +1,42 @@
 :root {
     /* *============ CSS-змінні ============ */
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
     --color-font-main: #212121;
-    --color-font-head: #757575;
-    --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
-    --color-font-footer: rgba(255, 255, 255, 0.6);
-    /* *=============================== */
+    --color-font-second: #757575;
+    --color-brand-main: #2196F3;
+    --color-button-active: #188CE8;
+    --color-background-dark: #2F303A;
+    --color-background-light: #F5F4FA;
+    /* *========================================== */
     --color-background-another: #E5E5E5;
-    --color-background-team: #F5F4FA;
     --color-background-footer: #2F303A;
     --color-background-footer-icon: rgba(255, 255, 255, 0.1);
     --color-background-backdrop: rgba(0, 0, 0, 0.2);
     --color-background-activity: rgba(47, 48, 58, 0.8);
     --color-background-overlay: rgba(33, 150, 243, 0.9);
-    /* *=============================== */
-    --color-light: #FFFFFF;
-    --color-dark: #000000;
-    /* *=============================== */
+    /* *========================================== */
+    --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
+    --color-font-footer: rgba(255, 255, 255, 0.6);
+    /* *========================================== */
     --color-border-line: #ECECEC;
     --color-borders-portfolio: #EEEEEE;
     --color-border-clients: #AFB1B8;
     --color-border-modal: rgba(33, 33, 33, 0.2);
-    /* *=============================== */
-    --color-logo-links-brand: #2196F3;
-    --color-button-active: #188CE8;
     /* *========================================== */
 }
 
-/** Бортник Владислав - CSS-змінні */
-/* :root{
-    --color-black:#000000;
-    --color-white:#ffffff;
-    --color-text-p:#212121;
-    --color-adresses:#757575;
-    --color-logo-web:#2196F3 ;
-    --color-background-section-first:#2F303A;
-    --color-background-section-fourth:#F5F4FA;
-    } */
+/* !  Виносимо однакові властивості до body  */
+body {
+    font-family: 'Roboto';
+}
 
+/* !  Контейнер -обгортає відразу увесь контент сторінки (або секції)  */
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    /* border: 2px dashed #2a2a2a; */
+    border: 2px dashed #2a2a2a;
 }
 
 
