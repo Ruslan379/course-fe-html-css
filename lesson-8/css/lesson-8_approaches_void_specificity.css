@@ -139,6 +139,11 @@ body {
     background-color: var(--color-brand-main);
 }
 
+.hero-button:active {
+    background-color: var(--color-brand-active);
+    /* background-color: red; */
+}
+
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
