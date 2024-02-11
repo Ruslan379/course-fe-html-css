@@ -87,7 +87,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    background-color: #82c7ff;
+    background-color: #d2fff2;
 }
 
 /*? main */
@@ -124,8 +124,11 @@ body {
 }
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--color-background-dark);
 }
+
 
 
 /*? section features */
@@ -171,6 +174,13 @@ body {
     vertical-align: top;
 }
 
+.section-features {
+    padding-top: 94px;
+    /* padding-bottom: 94px; */
+    background-color: #fffbd2;
+}
+
+
 /*? section activities */
 .activities-list {
     text-align: center;
@@ -178,6 +188,12 @@ body {
 
 .activities-item {
     display: inline-block;
+}
+
+.section-activities {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #d2e4ff;
 }
 
 /*? section team */
@@ -212,6 +228,8 @@ body {
 }
 
 .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--color-background-light);
 }
 
@@ -239,11 +257,10 @@ body {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
     background-color: var(--color-background-dark);
 }
-
-
-
 
 
 
