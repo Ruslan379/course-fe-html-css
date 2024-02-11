@@ -31,6 +31,7 @@
 /*!  Виносимо однакові властивості єлементів до body  */
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--color-light);
 }
 
 /*!  Контейнер - обгортає відразу увесь контент сторінки (або секції)  */
@@ -38,7 +39,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    border: 2px dashed #2a2a2a;
+    outline: 1px dashed tomato;
 }
 
 
@@ -50,11 +51,11 @@ body {
     line-height: normal;
     font-style: normal;
     letter-spacing: 0.78px;
-    color: var(--color-dark);
+    color: var(--color-brand-main);
 }
 
 .logo-dark {
-    color: var(--color-brand-main);
+    color: var(--color-dark);
 }
 
 .nav-link {
@@ -83,6 +84,11 @@ body {
     color: var(--color-brand-main); 
 }
 
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: #82c7ff;
+}
 
 /*? main */
 /*? section hero */
@@ -98,7 +104,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: var(--color-light);
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
 }
 
 .hero-button {
@@ -115,6 +121,10 @@ body {
     text-align: center;
     color: var(--color-light);
     background-color: var(--color-brand-main);
+}
+
+.hero {
+    background-color: var(--color-background-dark);
 }
 
 
@@ -201,11 +211,15 @@ body {
     display: inline-block;
 }
 
+.section-team {
+    background-color: var(--color-background-light);
+}
+
 
 /*? section footer */
 .logo-light {
     color: var(--color-light);
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
 }
 
 .footer-link {
@@ -217,14 +231,16 @@ body {
     font-style: normal;
     letter-spacing: 0.03em;
     color: var(--color-font-third);
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
 }
 
 .white-color {
     color: var(--color-light);
 }
 
-
+.footer {
+    background-color: var(--color-background-dark);
+}
 
 
 
