@@ -205,7 +205,8 @@ body {
 .box-4 {
     width: 350px;
     height: 220px;
-    margin: 0px 0px 30px;
+    /* margin: 0px 0px 30px; */
+    margin-bottom: 30px;
     padding: 15px 10px 20px;
     border: 2px dotted red;
     background-color: green;
