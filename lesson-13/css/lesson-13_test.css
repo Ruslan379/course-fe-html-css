@@ -28,23 +28,64 @@ body {
 }
 
 .box-parent-flex {
+    /* width: 200px; */
+    height: 600px;
+
     padding: 5px;
     display: flex;
 
+    /** flex-direction */
     /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
     /* flex-direction: column; */
-    
+    /* flex-direction: column-reverse; */
+
+    /** justify-content */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+
+    /** align-items */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+
+    /** flex-wrap */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /** align-content */
+    /** для багаторядкового контейнера */
+    /* align-content: center; */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
+    /* align-content: stretch; */
+
+
     border: 1px solid tomato;
     background-color: rgb(202, 132, 255);
     margin-bottom: 10px;
 }
+
+
 
 .box-parent-inline-flex {
     padding: 5px;
     display: inline-flex;
 
     /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
     /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
 
     border: 1px solid rgb(71, 218, 255);
     background-color: rgb(255, 171, 171);
