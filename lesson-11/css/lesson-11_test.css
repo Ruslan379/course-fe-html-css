@@ -159,15 +159,19 @@ body {
 
 .box-parent {
     /* ! */
-    display: none;
+    /* display: none; */
     padding: 20px;
     border: 5px solid blue;
     /* outline: 5px solid blue; */
 }
 .box-inline {
+    /* display: block; */
     /* display: inline; */
+    /* display: inline-block; */
+
     width: 120px;
     height: 120px;
+    margin-bottom: 20px;
     padding: 10px;
     border: 5px solid #f44336;
     background-color: #4caf50;
