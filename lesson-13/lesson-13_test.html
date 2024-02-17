@@ -7,7 +7,7 @@
 
         <!--! Спочатку нормалізатор -->
         <!--! завантаження modern-normalize -->
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
         
         <!--! завантаження шрифтів: 'Roboto' 400, 700 -->
         <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,22 +22,17 @@
     </head>
 
     <body>
-        <p class="text">This is the content of an element, such as text, image, video, or nested elements. By default, the height of the content area is determined by the content, and the width is determined by the element type.</p>
-
-        <div class="box">
-            <span style="color: white; background-color: orange;">
-                content
-            </span>
+        
+        <div class="box-parent-flex">
+            <div class="box">box-flex</div>
+            <div class="box">box-flex</div>
+            <div class="box">box-flex</div>
         </div>
-
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-3"></div>
-
-        <div class="box-parent">
-            <div class="box-inline">1</div>
-            <div class="box-inline">2</div>
-            <div class="box-inline">3</div>
+        
+        <div class="box-parent-inline-flex">
+            <div class="box">box-inline-flex</div>
+            <div class="box">box-inline-flex</div>
+            <div class="box">box-inline-flex</div>
         </div>
         
     </body>

@@ -141,7 +141,7 @@ body {
 
 .hero-button:active {
     background-color: var(--color-brand-active);
-    /* background-color: red; */
+    background-color: red;
 }
 
 .hero {
