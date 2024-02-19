@@ -17,8 +17,9 @@ body {
     line-height: 1.5;
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-    
+
 }
+
 /* ?============================================== */
 
 
@@ -27,4 +28,41 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     border: 2px dashed #2a2a2a;
+}
+
+
+/*! ---------------------------------------- */
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+.page-header,
+.page-footer,
+.hero,
+.about,
+.features {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page-header {
+    background-color: #e0e0e0;
+}
+
+.hero {
+    background-color: #4caf50;
+}
+
+.about {
+    background-color: #ffc107;
+}
+
+.features {
+    background-color: #2196f3;
+}
+
+.page-footer {
+    background-color: #90a4ae;
 }
