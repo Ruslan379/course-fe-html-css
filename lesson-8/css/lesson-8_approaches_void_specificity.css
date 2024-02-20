@@ -24,12 +24,15 @@
     --color-border-clients: #AFB1B8;
     --color-border-modal: rgba(33, 33, 33, 0.2);
     /* *========================================== */
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
 }
 
 /** === 1.Властивість font-family === */
 /** перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
 /*!  Виносимо однакові властивості єлементів до body  */
 body {
+    font-family: var(--font-family);
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-light);
 }
@@ -59,7 +62,7 @@ body {
 }
 
 .nav-link {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 500;
     font-size: 14px;
     /* letter-spacing: 0.02em; */
@@ -72,7 +75,7 @@ body {
 }
 
 .contacts-link {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -109,7 +112,7 @@ body {
 /*? main */
 /*? section hero */
 .hero-title {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 900;
     font-size: 44px;
     line-height: 60px; /* 136.364% */
@@ -127,7 +130,7 @@ body {
     display: block;
     margin: 0 auto;
 
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 700;
     font-size: 16px;
     /* line-height: 187%; */
@@ -137,6 +140,9 @@ body {
     text-align: center;
     color: var(--color-light);
     background-color: var(--color-brand-main);
+}
+.hero-button:active {
+    color: var(--color-brand-active);
 }
 
 .hero-button:active {
@@ -155,7 +161,7 @@ body {
 /*? section features */
 /** стилізация  заголовків h2 у ВСІХ секціях */
 .section-title {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 700;
     font-size: 36px;
     font-style: normal;
@@ -167,7 +173,7 @@ body {
 }
 
 .features-title {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -176,7 +182,7 @@ body {
 }
 
 .features-description {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 400;
     font-size: 14px;
     /* line-height: 171%; */
@@ -219,7 +225,7 @@ body {
 
 /*? section team */
 .team-name {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -228,7 +234,7 @@ body {
 }
 
 .team-position {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -262,7 +268,7 @@ body {
 }
 
 .footer-link {
-    font-family: 'Roboto';
+    /* font-family: 'Roboto'; */
     font-weight: 400;
     font-size: 14px;
     /* line-height: 171%; */
