@@ -46,15 +46,17 @@
 } */
 
 .container {
-    width: 1100px;
+    width: 906px;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     border: 2px dashed #2a2a2a;
 }
 
 .gallery-title {
     display: none;
 }
+
+
 
 /* .gallery-list-item-box {
     display: flex;
