@@ -152,6 +152,8 @@ body {
 .gallery-button {
     display: block;
     margin: 0 auto;
+    margin-top: -40px;
+    cursor: pointer;
     padding: 20px 48px 21px 48px;
     /* font-family: var(--font-family); */
     /* font-weight: 400; */
