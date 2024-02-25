@@ -45,11 +45,15 @@
     background-color: aqua;
 } */
 
-.container1 {
+.container {
     width: 1100px;
     margin: 0 auto;
     padding: 0 15px;
-    /* border: 2px dashed #2a2a2a; */
+    border: 2px dashed #2a2a2a;
+}
+
+.gallery-title {
+    display: none;
 }
 
 /* .gallery-list-item-box {
