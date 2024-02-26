@@ -119,6 +119,10 @@ body {
 /*? main */
 /*? section hero */
 .hero-title {
+    max-width: 696px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin: 0 auto;
     /* font-family: 'Roboto'; */
     font-weight: 900;
     font-size: 44px;
