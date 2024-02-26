@@ -179,6 +179,13 @@ body {
     color: var(--color-font-main);
 }
 
+.visually-hidden {
+    display: none;
+    /* visibility: hidden;
+    pointer-events: none;
+    position: absolute; */
+}
+
 .features-title {
     /* font-family: 'Roboto'; */
     font-weight: 700;
