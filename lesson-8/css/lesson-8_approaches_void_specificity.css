@@ -37,7 +37,14 @@ body {
     background-color: var(--color-light);
 }
 
-/*!  Контейнер - обгортає відразу увесь контент сторінки (або секції)  */
+/*!  ГОЛОВНИЙ Контейнер - обгортає відразу увесь контент сторінки */
+.main-container {
+    width: 1600px;
+    margin: 0 auto;
+    border: 3px double #ff0000;
+}
+
+/*!  Контейнер - обгортає відразу увесь контент або секції  */
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -45,11 +52,6 @@ body {
     outline: 1px dashed tomato;
 }
 
-.main-container {
-    width: 1600px;
-    margin: 0 auto;
-    border: 3px double #ff0000;
-}
 
 /*? header */
 .logo {
