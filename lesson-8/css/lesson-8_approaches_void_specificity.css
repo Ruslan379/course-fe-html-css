@@ -41,7 +41,7 @@ body {
 .main-container {
     width: 1600px;
     margin: 0 auto;
-    border: 3px double #ff0000;
+    outline: 3px double #ff0000;
 }
 
 /*!  Контейнер - обгортає відразу увесь контент або секції  */
@@ -55,6 +55,7 @@ body {
 
 /*? header */
 .logo {
+    margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -69,6 +70,7 @@ body {
 }
 
 .nav-link {
+    /* margin-right: 50px; */
     /* font-family: 'Roboto'; */
     font-weight: 500;
     font-size: 14px;
@@ -79,6 +81,22 @@ body {
 
 .active-link {
     color: var(--color-brand-main); 
+}
+
+.nav-item {
+    margin-right: 50px
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-list {
+    margin-right: 344px;
+    margin-right: 324px;
+}
+
+.contacts-item:first-child {
+    margin-right: 50px;
 }
 
 .contacts-link {
@@ -106,9 +124,9 @@ body {
     display: inline-block;
 }
 
-.text-align-center {
+/* .text-align-center {
     text-align: center;
-}
+} */
 
 .header {
     padding-top: 24px;
@@ -120,9 +138,11 @@ body {
 /*? section hero */
 .hero-title {
     max-width: 696px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    margin: 0 auto;
+    margin: 0 auto 30px;
+    /* margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; */
     /* font-family: 'Roboto'; */
     font-weight: 900;
     font-size: 44px;
@@ -172,6 +192,7 @@ body {
 /*? section features */
 /** стилізация  заголовків h2 у ВСІХ секціях */
 .section-title {
+    margin-bottom: 50px;
     /* font-family: 'Roboto'; */
     font-weight: 700;
     font-size: 36px;
@@ -242,7 +263,12 @@ body {
 }
 
 /*? section team */
+.team-image {
+    margin-bottom: 30px;
+}
+
 .team-name {
+    margin-bottom: 10px;
     /* font-family: 'Roboto'; */
     font-weight: 500;
     font-size: 16px;
@@ -252,6 +278,7 @@ body {
 }
 
 .team-position {
+    margin-bottom: 30px;
     /* font-family: 'Roboto'; */
     font-weight: 400;
     font-size: 16px;
@@ -260,16 +287,18 @@ body {
     color: var(--color-font-second);
 }
 
-/* .team-image {
-    margin: 0 auto;
+/* .team-list {
+    text-align: center;
 } */
 
-.team-list {
-    text-align: center;
+.team-item {
+    margin-right: 30px;
+    margin-right: 26px;
+    display: inline-block;
 }
 
-.team-item {
-    display: inline-block;
+.team-item:last-child {
+    margin-right: 0;
 }
 
 .section-team {
@@ -307,7 +336,16 @@ body {
     background-color: var(--color-background-dark);
 }
 
+.footer-list {
+    margin-top: 20px;
+}
 
+.footer-item {
+    margin-bottom: 9px;
+}
+.footer-item:last-child {
+    margin-bottom: 0;
+}
 
 /*! Перший підхід уникнення специфічності*/
 /* !============================================== */
