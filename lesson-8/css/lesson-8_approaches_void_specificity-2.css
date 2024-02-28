@@ -78,7 +78,6 @@ body {
     letter-spacing: 0.28px;
     color: var(--color-font-main); 
 }
-
 .active-link {
     color: var(--color-brand-main); 
 }
@@ -92,7 +91,7 @@ body {
 
 .nav-list {
     margin-right: 344px;
-    margin-right: 324px;
+    /* margin-right: 324px; */
 }
 
 .contacts-item:first-child {
@@ -112,16 +111,15 @@ body {
     color: var(--color-brand-main); 
 }
 
-.features-list1 {
-    text-align: center;
-}
-
+.flex,
 .navigation,
 .nav-list,
-.nav-item,
-.contacts-item,
+/* .nav-item, */
+/* .contacts-item, */
 .contacts-list {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
 }
 
 /* .text-align-center {
@@ -133,6 +131,7 @@ body {
     padding-bottom: 25px;
     background-color: #d2fff2;
 }
+
 
 /*? main */
 /*? section hero */

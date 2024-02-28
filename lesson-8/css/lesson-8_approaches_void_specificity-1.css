@@ -112,16 +112,13 @@ body {
     color: var(--color-brand-main); 
 }
 
-.features-list1 {
-    text-align: center;
-}
-
 .navigation,
 .nav-list,
 .nav-item,
 .contacts-item,
 .contacts-list {
     display: inline-block;
+    vertical-align: middle;
 }
 
 /* .text-align-center {
