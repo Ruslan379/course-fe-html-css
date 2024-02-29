@@ -14,20 +14,24 @@ body {
 
 }
 
-.box {
-    width: 150px;
-    height: 150px;
+.item {
+    /* width: 100px; */
+    height: 100px;
+
+    min-width: 100px;
+    max-width: 300px;
+    flex-basis: 200px;
     border: 1px solid rgb(24, 0, 179);
     background-color: rgb(255, 255, 159);
 }
 
-.box-parent-flex {
+.parent-list {
     /* width: 200px; */
     /* height: 600px; */
 
     /* padding: 5px; */
     display: flex;
 
-    border: 1px solid tomato;
+    border: 10px solid tomato;
     background-color: rgb(202, 132, 255);
 }
