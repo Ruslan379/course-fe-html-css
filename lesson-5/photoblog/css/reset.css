@@ -3,11 +3,11 @@
 /** убирает стили списков и т. д. */
 
 /*! Reset styles */
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: inherit;
-}
+} */
 
 body {
     margin: 0;
