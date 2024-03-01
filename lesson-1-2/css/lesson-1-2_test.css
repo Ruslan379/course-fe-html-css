@@ -12,6 +12,7 @@ body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 
+    padding-bottom: 20px;
     min-height: 100vh;
     display: flex;
     /* flex-direction: column; */
@@ -42,10 +43,7 @@ body {
     color: green;
 }
 
-/* #sym01 {
+#sym01 {
     fill-opacity: 0.5;
-    stroke: black;
-    stroke-width: 2;
-    color: green;
-} */
+}
 

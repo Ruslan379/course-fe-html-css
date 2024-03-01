@@ -247,12 +247,13 @@
             />
         </svg>
 
-        <!--! Елемент  <symbol> -->
+        <!--! Елемент  <symbol> ПРИМЕР-1 -->
         <svg 
             width="400" 
             height="210" 
             style="outline: 2px dashed #2a2a2a"
         >
+            <text x="20" y="20">Елемент symbol ПРИМЕР-1</text>
             <symbol 
                 id="sym01" 
                 viewBox="0 0 150 110"
@@ -263,7 +264,7 @@
                     r="40"
                     fill="tomato"
                     stroke="#2a2a2a"
-                    stroke-width="8"
+                    stroke-width="6"
                 />
                 <circle 
                     cx="90" 
@@ -271,31 +272,75 @@
                     r="40" 
                     fill="red" 
                     stroke="green" 
-                    stroke-width="8" 
+                    stroke-width="10" 
                 />
             </symbol>
         </svg>
+        <!--! Елемент  <use> ПРИМЕР-1 -->
+            <svg 
+            width="500" 
+            height="300" 
+            style="outline: 2px dashed #2a2a2a"
+        >
+            <text x="20" y="20">Елемент use ПРИМЕР-1</text>
+            <use 
+                x="50" 
+                y="10" 
+                xlink:href="#sym01"
+            >
+            <use 
+                x="50" 
+                y="30" 
+                xlink:href="#sym01"
+            >
+            <use 
+                x="50" 
+                y="50" 
+                xlink:href="#sym01" 
+                style="fill:blue"
+            >
+        </svg>
 
-        <!--! Елемент  <use> -->
-        <text y="15">black</text>
-        <use 
-            x="50" 
-            y="10" 
-            xlink:href="#Port"
+        <!--! Елемент  <symbol> ПРИМЕР-2 -->
+        <svg 
+            width="400" 
+            height="210" 
+            style="outline: 2px dashed #2a2a2a"
         >
-        <text y="35">red</text>
-        <use 
-            x="50" 
-            y="30" 
-            xlink:href="#Port"
+            <text x="30" y="30">Елемент symbol ПРИМЕР-2</text>
+            <symbol 
+                id="mySymbol" 
+                viewBox="0 0 100 100"
+            >
+                <circle 
+                    cx="50" 
+                    cy="50" 
+                    r="40" 
+                    fill="blue" 
+                />
+            </symbol>
+        </svg>
+        <!--! Елемент  <use> ПРИМЕР-2 -->
+        <svg 
+            width="500" 
+            height="500" 
+            style="outline: 2px dashed #2a2a2a"
         >
-        <text y="55">blue</text>
-        <use 
-            x="50" 
-            y="50" 
-            xlink:href="#Port" 
-            style="fill:blue"
-        >
+            <text x="20" y="20">Елемент use ПРИМЕР-1</text>
+            <use
+                x="0" 
+                y="0"
+                xlink:href="#mySymbol"
+                fill-opacity="0.5"
+            />
+            <use
+                x="50" 
+                y="50"
+                xlink:href="#mySymbol"
+                fill-opacity="0.5"
+            />
+        </svg>
+
 
     </body>
 </html>
