@@ -47,3 +47,7 @@ body {
     fill-opacity: 0.5;
 }
 
+/*! Файл_icon.svg */
+.svg-icon {
+    outline: 1px solid blue;
+}
