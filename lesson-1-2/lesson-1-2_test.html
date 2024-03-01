@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewliort" content="width=device-width, initial-scale=1.0">
         <title>lesson-1-2_test</title>
+        <link 
+            href="https://img.icons8.com/officel/16/stack-of-photos.png"
+            type="image/x-icon"
+            rel="shortcut icon"
+        >
 
         <!--! Спочатку нормалізатор -->
         <!--! завантаження modern-normalize -->
@@ -23,17 +28,49 @@
     </head>
 
     <body>
-        <ul class="parent-list">
-            <li class="item">item-1</li>
-            <li class="item">item-2</li>
-            <li class="item">item-3</li>
+        <svg 
+            width="400" 
+            height="300" 
+            style="outline: 2px dashed #2a2a2a;" 
+            xmlns="https://img.icons8.com/officel/16/stack-of-photos.png"
+            >
+            <!--! Тут буде розмітка фігур -->
+            <!-- <ul class="parent-list">
+                <li class="item">item-1</li>
+                <li class="item">item-2</li>
+                <li class="item">item-3</li>
+            </ul> -->
+        </svg>
 
-            <li class="item">item-4</li>
-            <li class="item">item-5</li>
-            <li class="item">item-6</li>
-            <li class="item">item-7</li>
-            <li class="item">item-8</li>
-            <li class="item">item-9</li>
-        </>
+        <g>
+            <title>background</title>
+            <rect
+                width="402"
+                height="158250"
+                fill="tomato"
+                id="canvas_backgrond"
+                x="-1"
+                y="-1"
+                rx="40"
+            />
+            <g
+                display="none"
+                overflow="visible"
+                width="100%"
+                height="100%"
+                id="canvasGrid"
+                x="0"
+                y="0"
+            >
+                <rect
+                    width="100%"
+                    height="100%"
+                    fill="url|(#gridpattern)"
+                    x="0"
+                    y="0"
+                    stroke-width="0"
+                />
+            </g>
+        </g>
     </body>
 </html>
