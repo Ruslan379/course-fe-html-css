@@ -92,6 +92,7 @@ body {
     /* align-items: center; */
     outline: 2px solid green;
 }
+
 .card {
     display: flex;
     flex-direction: column;
@@ -104,6 +105,7 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
+
 .content2 {
     flex-grow: 1;
     margin-bottom: 10px;
@@ -111,6 +113,7 @@ body {
     border: 2px dashed tomato;
     border-radius: 4px;
 }
+
 .meta {
     padding: 10px;
     text-align: center;
@@ -130,6 +133,7 @@ body {
     /* align-items: center; */
     outline: 2px solid red;
 }
+
 .square-one {
     /* flex: flex-grow flex-shrink flex-basis */
     /* flex: 2 1 300px; */
@@ -138,10 +142,79 @@ body {
     flex-basis: 300px;
     border: 2px solid blue;
 }
+
 .square-two {
     /* flex: 1 2 300px; */
     flex-grow: 1;
     flex-shrink: 2;
     flex-basis: 300px;
     border: 2px solid green;
+}
+
+
+/*! align-self​ */
+.card3 {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fffdee;
+    border-radius: 4px;
+}
+.img-2 {
+    align-self: flex-start;
+    /* align-self: center; */
+    /* align-self: flex-end; */
+    /* align-self: stretch; */
+}
+
+
+/*! order​​​ */
+.item.item2 {
+    font-weight: 700;
+    font-size: larger;
+    display: flex;
+    flex-basis: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.item2:nth-child(1) {
+    order: -1;
+    border-top-left-radius: 40px;
+    background-color: red;
+}
+
+.item.item2:nth-child(2) {
+    order: 4;
+    max-width: 200px;
+    background-color: skyblue;
+}
+
+.item.item2:nth-child(3) {
+    order: 3;
+    max-width: 200px;
+    background-color: violet;
+}
+
+.item.item2:nth-child(4) {
+    order: 5;
+    max-width: 200px;
+    background-color: green;
+}
+
+.item.item2:nth-child(5) {
+    order: 2;
+    border-top-right-radius: 40px;
+    background-color: orange;
+}
+
+.parent-list.wrap {
+    margin: 0 auto;
+    width: 610px;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
 }
