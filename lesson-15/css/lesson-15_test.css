@@ -69,7 +69,6 @@ body {
 .content {
     /* flex-basis: 760px; */
     flex-grow: 1;
-
 }
 
 .sidebar,
@@ -83,7 +82,7 @@ body {
 }
 
 
-/*! Гумовий контент​ */
+/*! Футер картки​ */
 .container2 {
     display: flex;
     /* gap: 16px; */
@@ -217,4 +216,26 @@ body {
     border: 5px solid black;
     border-top-right-radius: 45px;
     border-top-left-radius: 45px;
+}
+
+
+/*! Техніка grids — cітка елементів */
+.card-set {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
+
+    border: 10px solid tomato;
+    background-color: rgb(202, 132, 255);
+}
+
+.item3 {
+    height: 100px;
+    flex-basis: calc((100% - 20px) / 3);
+    border: 1px solid rgb(24, 0, 179);
+    background-color: rgb(255, 255, 159);
 }
