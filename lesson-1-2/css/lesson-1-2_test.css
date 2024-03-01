@@ -1,0 +1,37 @@
+:root {
+    /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+    --color-font-body: #220c0c;
+    --color-background-body: #fff8de;
+    /* *============================================== */
+}
+
+
+body {
+    font-family: 'Montserrat', serif;
+    /* color: #1f373d; */
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+
+}
+
+.item {
+    /* width: 100px; */
+    height: 100px;
+
+    min-width: 100px;
+    max-width: 300px;
+    flex-basis: 200px;
+    border: 1px solid rgb(24, 0, 179);
+    background-color: rgb(255, 255, 159);
+}
+
+.parent-list {
+    /* width: 200px; */
+    /* height: 600px; */
+
+    /* padding: 5px; */
+    display: flex;
+
+    border: 10px solid tomato;
+    background-color: rgb(202, 132, 255);
+}
