@@ -192,6 +192,7 @@
                 stroke-width="64" 
             />
         </svg>
+
         <!--! Елемент  <polygon> -->
         <svg 
             width="600" 
@@ -220,6 +221,7 @@
                 stroke-width="4" 
             />
         </svg>
+
         <!--! Елемент  <polygon> -->
             <!--? Трикутник -->
         <svg 
@@ -245,6 +247,55 @@
             />
         </svg>
 
+        <!--! Елемент  <symbol> -->
+        <svg 
+            width="400" 
+            height="210" 
+            style="outline: 2px dashed #2a2a2a"
+        >
+            <symbol 
+                id="sym01" 
+                viewBox="0 0 150 110"
+            >
+                <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    fill="tomato"
+                    stroke="#2a2a2a"
+                    stroke-width="8"
+                />
+                <circle 
+                    cx="90" 
+                    cy="60" 
+                    r="40" 
+                    fill="red" 
+                    stroke="green" 
+                    stroke-width="8" 
+                />
+            </symbol>
+        </svg>
+
+        <!--! Елемент  <use> -->
+        <text y="15">black</text>
+        <use 
+            x="50" 
+            y="10" 
+            xlink:href="#Port"
+        >
+        <text y="35">red</text>
+        <use 
+            x="50" 
+            y="30" 
+            xlink:href="#Port"
+        >
+        <text y="55">blue</text>
+        <use 
+            x="50" 
+            y="50" 
+            xlink:href="#Port" 
+            style="fill:blue"
+        >
 
     </body>
 </html>
