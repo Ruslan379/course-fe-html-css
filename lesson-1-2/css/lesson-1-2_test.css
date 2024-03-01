@@ -18,3 +18,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/*! Елемент  <g> ПРИМЕРЫ */
+#myGroup {
+    fill-opacity: 0.5;
+    stroke: black;
+    stroke-width: 2;
+}
+
