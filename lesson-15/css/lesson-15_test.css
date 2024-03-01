@@ -210,7 +210,7 @@ body {
     background-color: orange;
 }
 
-.parent-list.wrap {
+.parent-list.holder {
     margin: 0 auto;
     width: 610px;
     flex-wrap: wrap;
