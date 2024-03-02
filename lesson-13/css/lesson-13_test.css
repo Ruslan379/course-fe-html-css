@@ -62,15 +62,14 @@ body {
 
     /** align-content */
     /** для багаторядкового контейнера */
+    /* align-content: stretch; */
     /* align-content: center; */
     /* align-content: flex-start; */
     /* align-content: flex-end; */
     /* align-content: space-between; */
     /* align-content: space-around; */
     /* align-content: space-evenly; */
-    /* align-content: stretch; */
-
-
+    
     border: 1px solid tomato;
     background-color: rgb(202, 132, 255);
     margin-bottom: 10px;

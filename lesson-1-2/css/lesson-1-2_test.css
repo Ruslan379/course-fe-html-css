@@ -2,9 +2,7 @@
     /* *============ CSS-змінні ============ */
     --color-font-body: #220c0c;
     --color-background-body: #fff8de;
-    /* *===================================== */
 }
-
 
 body {
     font-family: 'Montserrat', serif;
@@ -19,6 +17,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* *======================================= */
+
 
 /*! Елемент  <svg> */
 .parent-list {

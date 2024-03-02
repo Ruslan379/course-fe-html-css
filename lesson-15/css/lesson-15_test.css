@@ -1,19 +1,17 @@
 :root {
-    /* *============ ПЕРЕМЕННЫЕ ЦВЕТА body ============ */
+    /* *============ CSS-змінні ============ */
     --color-font-body: #2a2a2a;
     --color-background-body: #fcdeff;
-    /* *============================================== */
 }
-
 
 body {
     padding: 10px;
     font-family: 'Montserrat', serif;
-    /* color: #1f373d; */
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-
 }
+/* *========================================= */
+
 
 .item {
     width: 100px;
@@ -30,6 +28,7 @@ body {
 }
 
 .item:nth-child(1) {
+    /* align-self: flex-start; */
     /* flex-grow: 2; */
     /* flex-shrink: 2; */
     background-color: #e7ffba;
