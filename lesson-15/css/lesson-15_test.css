@@ -63,6 +63,7 @@ body {
 }
 
 .sidebar {
+    /* width: 200px; */
     flex-basis: 200px;
 }
 
@@ -123,6 +124,7 @@ body {
 
 /*! flex-shrink: частка​ */
 .container3 {
+    width: 95vw;
     width: 600px;
     margin-top: 10px;
     display: flex;
@@ -132,7 +134,6 @@ body {
     /* align-items: center; */
     outline: 2px solid red;
 }
-
 .square-one {
     /* flex: flex-grow flex-shrink flex-basis */
     /* flex: 2 1 300px; */
@@ -141,7 +142,6 @@ body {
     flex-basis: 300px;
     border: 2px solid blue;
 }
-
 .square-two {
     /* flex: 1 2 300px; */
     flex-grow: 1;
