@@ -3,13 +3,6 @@
 /** убирает стили списков и т. д. */
 
 /*! Reset styles */
-/* *,
-*::before,
-*::after {
-    box-sizing: inherit;
-    box-sizing: border-box;
-} */
-
 body {
     margin: 0;
 }

@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Montserrat', serif;
-    /* color: #1f373d; */
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 
