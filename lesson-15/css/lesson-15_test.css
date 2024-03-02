@@ -19,19 +19,20 @@ body {
     width: 100px;
     height: 100px;
 
-    min-width: 100px;
-    max-width: 300px;
-    flex-basis: 200px;
+    /* min-width: 100px; */
+    /* max-width: 300px; */
+    /* flex-basis: 200px; */
 
     /* flex-grow: 1; */
 
     border: 1px solid rgb(24, 0, 179);
-    background-color: rgb(255, 255, 159);
+    background-color: #ffff9f;
 }
 
 .item:nth-child(1) {
     /* flex-grow: 2; */
-    flex-shrink: 2;
+    /* flex-shrink: 2; */
+    background-color: #e7ffba;
 }
 
 .parent-list {
