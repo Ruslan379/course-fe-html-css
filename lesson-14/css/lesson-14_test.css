@@ -110,10 +110,24 @@ nav {
     outline: 4px double teal;
 }
 
+.main-text {
+    padding: 10px;
+    margin-bottom: 10px;
+
+    /* display: inline; */
+    /* display: inline-block; */
+    /* display: block; */
+
+    background-color: rgb(255, 251, 203);
+    outline: 1px solid green;
+}
+
 .main-button {
     /* width: 100%; */
     padding: 10px;
-    margin-bottom: 10px;
+    
+    /* display: inline; */
+    /* display: inline-block; */
     /* display: block; */
 
     /* align-self: stretch; */
@@ -123,13 +137,4 @@ nav {
     
     background-color: aqua;
     outline: 1px solid red;
-}
-
-.main-text {
-    padding: 10px;
-    /* display: inline; */
-    /* display: inline-block; */
-    /* display: block; */
-    background-color: rgb(255, 251, 203);
-    outline: 1px solid green;
 }
