@@ -162,10 +162,10 @@ body {
     border-radius: 4px;
 }
 .img-2 {
+    /* align-self: stretch; */
     align-self: flex-start;
     /* align-self: center; */
     /* align-self: flex-end; */
-    /* align-self: stretch; */
 }
 
 

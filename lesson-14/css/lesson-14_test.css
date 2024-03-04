@@ -92,13 +92,18 @@ nav {
 
 .join:hover,
 .started:hover {
-    opacity: .7;
+    opacity: 0.7;
     cursor: pointer;
 }
 
-/*! КНОПКА */
+/*! КНОПКА (inline-block/flex) */
 /*? container-button */
 .container-button {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+
     margin: 10px auto;
     padding: 20px;
     width: 70%;
@@ -107,15 +112,24 @@ nav {
 
 .main-button {
     /* width: 100%; */
+    padding: 10px;
     margin-bottom: 10px;
-    display: block;
+    /* display: block; */
+
+    /* align-self: stretch; */
+    /* align-self: flex-start; */
+    /* align-self: center; */
+    /* align-self: flex-end; */
+    
     background-color: aqua;
     outline: 1px solid red;
 }
 
 .main-text {
+    padding: 10px;
+    /* display: inline; */
     /* display: inline-block; */
-    display: block;
+    /* display: block; */
     background-color: rgb(255, 251, 203);
     outline: 1px solid green;
 }
