@@ -95,3 +95,27 @@ nav {
     opacity: .7;
     cursor: pointer;
 }
+
+/*! КНОПКА */
+/*? container-button */
+.container-button {
+    margin: 10px auto;
+    padding: 20px;
+    width: 70%;
+    outline: 4px double teal;
+}
+
+.main-button {
+    /* width: 100%; */
+    margin-bottom: 10px;
+    display: block;
+    background-color: aqua;
+    outline: 1px solid red;
+}
+
+.main-text {
+    /* display: inline-block; */
+    display: block;
+    background-color: rgb(255, 251, 203);
+    outline: 1px solid green;
+}
