@@ -40,6 +40,8 @@ body {
 
     /* padding: 5px; */
     display: flex;
+    /* flex-direction: column; */
+    
 
     /* display: grid; */
     /*? Три столбца шириной 100px каждый */
@@ -224,11 +226,21 @@ body {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: column; */
 
-    gap: 10px;
-    /* row-gap: 10px; */
-    /* column-gap: 10px; */
-
+    /** grid */
+    /* display: grid; */
+    /* Три колонки шириной по 100px каждая */
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: calc((100% - 20px) / 3) calc((100% - 20px) / 3) calc((100% - 20px) / 3); */
+    /* Три строки высотой по 50px каждая */
+    /* grid-template-rows: 50px 50px 50px;  */
+    
+    /* Расстояние между элементами в сетке */
+    gap: 10px; 
+    /* column-gap: 60px; */
+    /* row-gap: 20px; */
+    
     border: 10px solid tomato;
     background-color: rgb(202, 132, 255);
 }
@@ -236,6 +248,6 @@ body {
 .item3 {
     height: 100px;
     flex-basis: calc((100% - 20px) / 3);
-    border: 1px solid rgb(24, 0, 179);
+    outline: 1px solid rgb(24, 0, 179);
     background-color: rgb(255, 255, 159);
 }
