@@ -13,6 +13,7 @@
 }
 
 body {
+    margin: 10px;
     font-family: 'Montserrat', serif;
     /* color: #1f373d; */
     color: var(--color-font-body);
@@ -30,11 +31,12 @@ a {
 header {
     width: 1024px;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 35px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    outline: 4px double red;
 }
 
 h1 {
@@ -42,6 +44,7 @@ h1 {
     font-weight: 600;
     font-size: 25px;
     color: rgb(142, 77, 65);
+    outline: 1px dashed blue;
 }
 
 /* .logo {
@@ -52,6 +55,7 @@ h1 {
 nav {
     /* width: 65%; */
     flex-grow: 3;
+    outline: 1px dashed blue;
 }
 
 .nav_menu {
@@ -71,6 +75,7 @@ nav {
 .join_block {
     flex-grow: 1;
     text-align: right;
+    outline: 1px dashed blue;
 }
 
 .join {
