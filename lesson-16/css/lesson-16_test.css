@@ -17,6 +17,7 @@ body {
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
+
 /* *========================================= */
 
 /*! Одиниці вимірювання в CSS: px, %, em, rem */
@@ -61,11 +62,13 @@ body {
     font-size: 20px;
     color: blue;
 }
+
 strong {
     font-size: 2em;
     /* font-size: 200%; */
     color: red;
 }
+
 span {
     font-size: 2rem;
     color: green;
@@ -89,11 +92,11 @@ span {
     /* margin-right: 400px; */
     width: 100px;
     height: 100px;
-    
+
     font-size: 20px;
     color: rgb(255, 0, 0);
     background-color: orange;
-}   
+}
 
 .main-item::after {
     /* content: 'Це текст в ::before'; */
@@ -105,4 +108,49 @@ span {
     font-size: 20px;
     color: rgb(0, 255, 179);
     background-color: rgb(255, 0, 208);
-} 
+}
+
+
+/*! Псевдоелементи​ (приклад) */
+.list {
+    margin: 0;
+    list-style: none;
+}
+
+.list-item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.list-link {
+    display: inline-flex;
+    align-items: center;
+    color: currentColor;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.list-link:hover {
+    color: #2196f3;
+}
+
+.list-link::before,
+.list-link::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-color: rgb(0, 166, 255);
+    
+}
+
+/* Adds and hides eyes icon after the link text */
+.list-link::after {
+    display: none;
+    margin-left: 16px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png")
+}
+
+/* Show arrow icon on hover */
+.list-link:hover::after {
+    display: block;
+}
