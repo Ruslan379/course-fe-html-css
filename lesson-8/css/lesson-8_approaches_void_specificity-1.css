@@ -74,6 +74,11 @@ body {
     vertical-align: middle;
 }
 
+.navigation {
+    /* margin-right: 344px; */
+    margin-right: 324px;
+}
+
 .logo {
     margin-right: 93px;
     font-family: 'Raleway';
@@ -89,9 +94,11 @@ body {
     color: var(--color-dark);
 }
 
-.nav-list {
-    /* margin-right: 344px; */
-    margin-right: 324px;
+.nav-item {
+    margin-right: 50px
+}
+.nav-item:last-child {
+    margin-right: 0;
 }
 
 .nav-link {
@@ -102,18 +109,9 @@ body {
     letter-spacing: 0.28px;
     color: var(--color-font-main); 
 }
-
 .active-link {
     color: var(--color-brand-main); 
 }
-
-.nav-item {
-    margin-right: 50px
-}
-.nav-item:last-child {
-    margin-right: 0;
-}
-
 
 .contacts-item:first-child {
     margin-right: 50px;
@@ -127,7 +125,6 @@ body {
     /* letter-spacing: 0.28px; */
     color: var(--color-font-main); 
 }
-
 .contacts-link:hover {
     color: var(--color-brand-main); 
 }
