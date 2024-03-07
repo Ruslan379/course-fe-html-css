@@ -33,7 +33,8 @@
 /*!  Виносимо однакові властивості єлементів до body  */
 body {
     font-family: var(--font-family);
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 14px;
     background-color: var(--color-light);
 }
 
@@ -61,7 +62,7 @@ body {
 }
 
 .navigation,
-.logo,
+/* .logo, */
 .nav-list,
 .nav-item,
 .contacts-item,
@@ -76,11 +77,12 @@ body {
 
 .navigation {
     /* margin-right: 344px; */
-    margin-right: 324px;
+    margin-right: 340px;
 }
 
 .logo {
-    margin-right: 93px;
+    /* margin-right: 93px; */
+    margin-right: 89px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -95,7 +97,8 @@ body {
 }
 
 .nav-item {
-    margin-right: 50px
+    /* margin-right: 50px; */
+    margin-right: 46px;
 }
 .nav-item:last-child {
     margin-right: 0;
@@ -104,7 +107,7 @@ body {
 .nav-link {
     /* font-family: 'Roboto'; */
     font-weight: 500;
-    font-size: 14px;
+    /* font-size: 14px; */
     /* letter-spacing: 0.02em; */
     letter-spacing: 0.28px;
     color: var(--color-font-main); 
@@ -114,13 +117,14 @@ body {
 }
 
 .contacts-item:first-child {
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    margin-right: 46px;
 }
 
 .contacts-link {
     /* font-family: 'Roboto'; */
     font-weight: 500;
-    font-size: 14px;
+    /* font-size: 14px; */
     letter-spacing: 0.02em;
     /* letter-spacing: 0.28px; */
     color: var(--color-font-main); 
@@ -153,12 +157,6 @@ body {
     /* background-color: var(--color-dark); */
 }
 
-.hero-p {
-    display: inline;
-    display: inline-block;
-    color: var(--color-light);
-    background-color: var(--color-brand-main);
-}
 
 .hero-button {
     display: block;
@@ -222,7 +220,7 @@ body {
     margin-bottom: 10px;
     /* font-family: 'Roboto'; */
     font-weight: 700;
-    font-size: 14px;
+    /* font-size: 14px; */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-font-main);
@@ -231,7 +229,7 @@ body {
 .features-description {
     /* font-family: 'Roboto'; */
     font-weight: 400;
-    font-size: 14px;
+    /* font-size: 14px; */
     /* line-height: 171%; */
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -336,7 +334,7 @@ body {
 .footer-link {
     /* font-family: 'Roboto'; */
     font-weight: 400;
-    font-size: 14px;
+    /* font-size: 14px; */
     /* line-height: 171%; */
     line-height: 1.71;
     font-style: normal;
