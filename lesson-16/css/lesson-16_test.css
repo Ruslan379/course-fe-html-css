@@ -73,3 +73,36 @@ span {
 
 
 /*! Псевдоелементи​ */
+.main-item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: #baccff;
+}
+
+.main-item::before {
+    /* content: 'Це текст в ::before'; */
+    content: '';
+    display: inline-block;
+    /* margin-left: -120px; */
+    /* margin-right: 400px; */
+    width: 100px;
+    height: 100px;
+    
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+    background-color: orange;
+}   
+
+.main-item::after {
+    /* content: 'Це текст в ::before'; */
+    content: '';
+    display: inline-block;
+    /* margin-left: 200px; */
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    color: rgb(0, 255, 179);
+    background-color: rgb(255, 0, 208);
+} 
