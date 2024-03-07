@@ -1,0 +1,75 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-font-body: #7b00ab;
+    --color-background-body: #defff5;
+}
+
+/* html {
+    font-size: 40px;
+} */
+
+body {
+    padding: 20px;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    /* font-size: 20px; */
+    font-size: 32px;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+/* *========================================= */
+
+/*! Одиниці вимірювання в CSS: px, %, em, rem */
+.item {
+    height: 200px;
+    outline: 2px dashed rgb(24, 0, 179);
+    background-color: #ffff9f;
+}
+
+.item:nth-child(1) {
+    width: 400px;
+    background-color: #e7ffba;
+}
+
+.item:nth-child(2) {
+    width: 30%;
+    background-color: #faffba;
+}
+
+.item:nth-child(3) {
+    width: 10em;
+    background-color: #ffe3ba;
+}
+
+.item:nth-child(4) {
+    width: 10rem;
+    background-color: #baccff;
+}
+
+.parent-list {
+    /* width: 1000px; */
+    /* height: 600px; */
+    display: flex;
+    /* outline: 4px double tomato; */
+    background-color: rgb(202, 132, 255);
+}
+
+
+/*! Приклади одиниць вимірювання */
+.text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: blue;
+}
+strong {
+    font-size: 2em;
+    /* font-size: 200%; */
+    color: red;
+}
+span {
+    font-size: 2rem;
+    color: green;
+}
+
+
+/*! Псевдоелементи​ */
