@@ -77,35 +77,35 @@ span {
 
 /*! Псевдоелементи​ */
 .main-item {
-    /* display: inline-block; */
-    display: inline-flex;
+    /* display: flex; */
+    /* display: inline-flex; */
     /* align-items: center; */
-    width: 200px;
-    height: 200px;
+    /* width: 200px; */
+    /* height: 200px; */
     margin-top: 20px;
     margin-left: 200px;
     background-color: #baccff;
+    outline: 4px double red;
 }
 
-.main-item::before {
+.main-item1::before {
     /* margin-left: -100px; */
-    margin-right: 20px;
+    /* margin-right: 20px; */
     font-size: 20px;
-    /* content: 'Це текст в ::before'; */
     content: '';
+    content: '::before';
     min-width: 100px;
     height: 100px;
     background-color: orange;
     outline: 1px dashed rgb(24, 0, 179);
 }
 
-/* .main-item::before, */
-.main-item::after {
+.main-item1::after {
     /* margin-left: 200px; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 20px;
-    /* content: 'Це текст в ::after'; */
     content: '';
+    content: '::after';
     min-width: 100px;
     height: 100px;
     background-color: rgb(255, 0, 208);
@@ -115,7 +115,7 @@ span {
 
 /*! Псевдоелементи​ (приклад) */
 .list {
-    margin: 0;
+    margin: 20px 0 0;
     list-style: none;
 }
 
@@ -145,14 +145,14 @@ span {
     
 }
 
-/* Adds and hides eyes icon after the link text */
+/** Adds and hides eyes icon after the link text */
 .list-link::after {
-    display: none;
+    /* display: none; */
     margin-left: 16px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png")
+    /* background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png") */
 }
 
-/* Show arrow icon on hover */
+/** Show arrow icon on hover */
 .list-link:hover::after {
     display: block;
 }
