@@ -142,7 +142,7 @@ span {
     height: 24px;
     background-size: contain;
     background-color: rgb(0, 166, 255);
-    
+
 }
 
 /** Adds and hides eyes icon after the link text */
@@ -155,4 +155,39 @@ span {
 /** Show arrow icon on hover */
 .list-link:hover::after {
     display: block;
+}
+
+/*!  Властивості фону — background */
+.hero {
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #b1ae00;
+    border: 2px solid #fd7e14;
+    background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg);
+    background-position: center;
+    background-color: #2a2a2a;
+}
+
+.hero.no-image {
+    background-image: none;
+}
+
+.hero.no-bg {
+    background-color: initial;
+}
+
+.hero+.hero {
+    margin-top: 10px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.text {
+    margin: 0;
+    text-transform: uppercase;
 }

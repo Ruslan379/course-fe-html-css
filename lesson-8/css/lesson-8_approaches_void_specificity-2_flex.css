@@ -100,15 +100,20 @@ body {
     color: var(--color-dark);
 }
 
+/** var. 1 */
 /* .nav-item {
     margin-right: 50px;
-    margin-right: 46px
 }
 .nav-item:last-child {
     margin-right: 0;
 } */
-.nav-item:not(:last-child) {
+/** var. 2 */
+/* .nav-item:not(:last-child) {
     margin-right: 50px
+} */
+/** var. 3 */
+.nav-item+.nav-item {
+    margin-left: 50px
 }
 
 .nav-link {
@@ -123,9 +128,17 @@ body {
     color: var(--color-brand-main); 
 }
 
-.contacts-item:first-child {
+/** var. 1 */
+/* .contacts-item:first-child {
     margin-right: 50px;
-    /* margin-right: 46px; */
+} */
+/** var. 2 */
+/* .contacts-item:not(:last-child) {
+    margin-right: 50px
+} */
+/** var. 3 */
+.contacts-item + .contacts-item {
+    margin-left: 50px;
 }
 
 .contacts-link {
@@ -234,14 +247,25 @@ body {
 }
 
 .features-item {
-    width: 270px;
-    margin-right: 30px;
+    min-width: 270px;
+    flex-basis: 270px;
+    /** var. 1 */
+    /* margin-right: 30px; */
     /* margin-right: 26px; */
     /* display: inline-block; */
     /* vertical-align: top; */
 }
-.features-item:last-child {
+/** var. 1 */
+/* .features-item:last-child {
     margin-right: 0;
+} */
+/** var. 2 */
+/* .features-item:not(:last-child) {
+    margin-right: 30px
+} */
+/** var. 3 */
+.features-item+.features-item {
+    margin-left: 30px;
 }
 
 .features-title {
@@ -281,6 +305,7 @@ body {
     display: flex;
 }
 
+/** var. 1 */
 /* .activities-item {
     margin-right: 30px;
     margin-right: 26px;
@@ -289,9 +314,13 @@ body {
 .activities-item:last-child {
     margin-right: 0;
 } */
-
-.activities-item:not(:last-child) {
+/** var. 2 */
+/* .activities-item:not(:last-child) {
     margin-right: 30px
+} */
+/** var. 3 */
+.activities-item+.activities-item {
+    margin-left: 30px
 }
 
 
@@ -311,6 +340,7 @@ body {
 }
 
 .team-item {
+    /** var. 1 */
     /* margin-right: 30px; */
     /* margin-right: 26px; */
     /* display: inline-block; */
@@ -319,8 +349,13 @@ body {
 /* .team-item:last-child {
     margin-right: 0;
 } */
-.team-item:not(:last-child) {
+/** var. 2 */
+/* .team-item:not(:last-child) {
     margin-right: 30px
+} */
+/** var. 3 */
+.team-item+.team-item {
+    margin-left: 30px
 }
 
 .team-image {
