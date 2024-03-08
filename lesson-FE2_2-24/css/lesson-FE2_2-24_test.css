@@ -1,0 +1,98 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-font-body: #0c220c;
+    --color-background-body: #ffe3de;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+
+    padding-bottom: 20px;
+    min-height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* *======================================= */
+
+
+/*! Елемент  <svg> */
+.parent-list {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    outline: 1px solid tomato;
+}
+.item {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid blue;
+}
+
+/*! Елемент  <g> ПРИКЛАДИ */
+#myGroup {
+    fill-opacity: 0.5;
+    stroke: black;
+    stroke-width: 2;
+}
+#sym01 {
+    fill-opacity: 0.5;
+}
+
+/*! Елемент  <polygon> */
+.hidden {
+    display: none;
+}
+
+/*! Файл_icon.svg */
+.svg-icon {
+    outline: 1px solid blue;
+}
+
+/*! Оформлення фігур */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    outline: 4px double red;
+}
+.icon {
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 8px;
+    fill: red;
+    stroke: #00aeff;
+}
+.icon:last-child {
+    fill-opacity: 0.5;
+    stroke-opacity: 0.5;
+}
+.icon:hover {
+    fill: #00aeff;
+    fill-opacity: 0.7;
+    stroke: red;
+    stroke-width: 2px;
+}
+
+/*! Файл_instagram.svg */
+.instagram-icon {
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 8px;
+    fill: red;
+    stroke: #00aeff;
+}
+
+.instagram-icon {
+    border: 2px dashed #2a2a2a;
+    border-radius: 8px;
+    /* fill: red; */
+    /* stroke: #00aeff; */
+}
