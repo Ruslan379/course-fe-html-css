@@ -266,24 +266,32 @@ body {
 
 
 /*? section activities */
+.section-activities {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* padding-bottom: 90px; */
+    background-color: #d2e4ff;
+}
+
+/* .activities-list {
+    text-align: center;
+} */
+
 .activities-list {
     display: flex;
 }
 
-.activities-item {
+/* .activities-item {
     margin-right: 30px;
-    /* margin-right: 26px; */
-    /* display: inline-block; */
-
+    margin-right: 26px;
+    display: inline-block;
 }
 .activities-item:last-child {
     margin-right: 0;
-}
+} */
 
-.section-activities {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: #d2e4ff;
+.activities-item:not(:last-child) {
+    margin-right: 30px
 }
 
 
