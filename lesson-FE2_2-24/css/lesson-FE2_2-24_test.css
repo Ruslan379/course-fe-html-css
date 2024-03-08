@@ -42,7 +42,7 @@ img {
 }
 
 
-/*! Підключення векторної графіки як як вбудований SVG​*/
+/*! Підключення векторної графіки як як вбудований SVG ​*/
 .icon {
     width: 100px;
     height: 100px;
@@ -57,6 +57,23 @@ img {
     stroke: black;
     stroke-width: 2;
 }
+
+
+/*! Підключення векторної графіки як як SVG-спрайт ​*/
+.icon2 {
+    border: 2px dashed #2a2a2a;
+    border-radius: 8px;
+    fill: #2a2a2a;
+}
+
+.icon2:hover {
+    fill: #03a9f4;
+    stroke: crimson;
+    stroke-width: 2;
+}
+
+
+
 
 
 /*! Елемент  <polygon> */
