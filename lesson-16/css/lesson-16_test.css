@@ -337,7 +337,7 @@ span {
 
     /*  фон прокручується разом із вмістом. 
         Це значення за замовчуванням  */
-    /* background-attachment: scroll; */
+    background-attachment: scroll;
 
     /*  фон НЕ прокручується, зафіксований на місці  */
     /* background-attachment: fixed; */
@@ -373,7 +373,7 @@ span {
     max-width: 1000px;
     height: 400px;
     margin-top: 20px;
-    
+
     background-image: 
         url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
         url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
