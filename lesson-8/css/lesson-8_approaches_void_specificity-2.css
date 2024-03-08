@@ -201,6 +201,11 @@ body {
 
 
 /*? section features */
+.section-features {
+    padding-top: 94px;
+    background-color: #fffbd2;
+}
+
 /** стилізация  заголовків h2 у ВСІХ секціях */
 .section-title {
     margin-bottom: 50px;
@@ -214,12 +219,29 @@ body {
     text-align: center;
     color: var(--color-font-main);
 }
-
 .visually-hidden {
+    /** var. 1 */
     display: none;
+    /** var. 2 */
     /* visibility: hidden;
     pointer-events: none;
     position: absolute; */
+}
+
+.features-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.features-item {
+    width: 270px;
+    margin-right: 30px;
+    /* margin-right: 26px; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+}
+.features-item:last-child {
+    margin-right: 0;
 }
 
 .features-title {
@@ -240,27 +262,6 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-font-second);
-}
-
-/* .features-list {
-    text-align: center;
-} */
-
-.features-item {
-    width: 270px;
-    margin-right: 30px;
-    margin-right: 26px;
-    display: inline-block;
-    vertical-align: top;
-}
-.features-item:last-child {
-    margin-right: 0;
-}
-
-.section-features {
-    padding-top: 94px;
-    /* padding-bottom: 94px; */
-    background-color: #fffbd2;
 }
 
 
