@@ -157,7 +157,7 @@ span {
     display: block;
 }
 
-/*!  Властивості фону — background */
+/*!  Властивості фону — background-image */
 .hero {
     min-height: 100px;
     display: flex;
@@ -171,12 +171,8 @@ span {
     background-color: #2a2a2a;
 }
 
-.hero.no-image {
-    background-image: none;
-}
-
-.hero.no-bg {
-    background-color: initial;
+.hero {
+    margin-top: 50px;
 }
 
 .hero+.hero {
@@ -190,4 +186,213 @@ span {
 .text {
     margin: 0;
     text-transform: uppercase;
+}
+
+.hero.no-image {
+    background-image: none;
+}
+
+.hero.no-bg {
+    background-color: initial;
+}
+
+
+/*!  Властивості фону — background-repeat */
+.container {
+    max-width: 960px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tile-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 30px;
+}
+
+.tile {
+    position: relative;
+    height: 120px;
+    flex-basis: calc(100% / 2 - 40px);
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+    background-color: #fff;
+
+    background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
+    background-size: 40px;
+}
+
+.tile::before {
+    position: absolute;
+    top: -32px;
+    width: 100%;
+    content: "";
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
+.no-repeat {
+    background-repeat: no-repeat;
+}
+
+.no-repeat::before {
+    content: "no-repeat";
+    font-family: monospace;
+}
+
+.repeat-x {
+    background-repeat: repeat-x;
+}
+
+.repeat-x::before {
+    content: "repeat-x";
+}
+
+.repeat-y {
+    background-repeat: repeat-y;
+}
+
+.repeat-y::before {
+    content: "repeat-y";
+}
+
+.repeat {
+    background-repeat: repeat;
+}
+
+.repeat::before {
+    content: "repeat";
+}
+
+
+/*!  Властивості фону — background-position */
+.wrapper {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background:
+        green url("https://image.ibb.co/n0M0cQ/red90x90.jpg") no-repeat;
+    /* Поставить фонове зображення по центру */
+    background-position: center;
+    /* Поставить фонове зображення по центру */
+    /* background-position: 50% 50%; */
+    /* Поставить фонове зображення 100px від лівого краю і 200px від верху */
+    /* background-position: 100px 200px; */
+    /* Поставить фонове зображення у нижній правий кут */
+    /* background-position: right bottom; */
+    /* Поставить фонове зображення у верхній лівий кут */
+    /* background-position: left top; */
+    /* Поставить фонове зображення від меж на 30px справа і 20px знизу */
+    /* background-position: right 100px bottom 20px; */
+}
+
+
+/*!  Властивості фону — background-size */
+.wrapper1 {
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+    background:
+        rgb(255, 213, 196) url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat center;
+    /* Вихідні розміри зображення, значення за замовчуванням */
+    background-size: auto auto;
+
+    /* Ширина 200px, висота буде пропорційна */
+    /* background-size: 400px; */
+
+    /* Ширина 200px, висота 300px */
+    /* background-size: 200px 300px; */
+
+    /* Гарантовано зберігає пропорції зображення */
+    /* Зображенню задаються максимально можливі 
+        розміри (не більші за оригінал), 
+        за яких воно повністю поміщається в елемент. */
+    /* background-size: contain; */
+
+    /* Гарантовано зберігає пропорції зображення */
+    /* Зображенню задаються максимально можливі 
+        розміри (не більші за оригінал), 
+        за яких воно повністю поміщається в елемент. */
+    /* background-size: cover; */
+}
+
+
+/*!  Властивості фону — background-attachment */
+.container2 {
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/07/10/51/mountains-5634817_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*  фон прокручується разом із вмістом. 
+        Це значення за замовчуванням  */
+    /* background-attachment: scroll; */
+
+    /*  фон НЕ прокручується, зафіксований на місці  */
+    /* background-attachment: fixed; */
+}
+
+.box {
+    height: 300px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+.box:nth-child(1) {
+    background-color: #2196f3;
+}
+
+.box:nth-child(2) {
+    background-color: #4caf50;
+}
+
+.box:nth-child(3) {
+    background-color: #ff9800;
+}
+
+.box:nth-child(4) {
+    background-color: #e91e63;
+}
+
+
+/*!  Властивості фону — Багатошаровий фон */
+.canvas {
+    max-width: 1000px;
+    height: 400px;
+    margin-top: 20px;
+    
+    background-image: 
+        url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+        url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+        url("https://cdn-icons-png.flaticon.com/512/814/814513.png"), url('https://stickerswiki.ams3.cdn.digitaloceanspaces.com/Pig_Valera/223715.512.webp'),
+        url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+
+    background-size: 
+        80px, 
+        100px, 
+        150px, 
+        130px, 
+        cover;
+
+    background-repeat: no-repeat;
+
+    background-position: 
+        top 120px right 130px, 
+        top 270px left 130px, 
+        center, 
+        100px 60px,
+        center;
 }
