@@ -349,7 +349,7 @@ h2 {
 
     /*  фон прокручується разом із вмістом. 
         Це значення за замовчуванням  */
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
 
     /*  фон НЕ прокручується, зафіксований на місці  */
     /* background-attachment: fixed; */
@@ -362,19 +362,15 @@ h2 {
     margin-right: auto;
     border-radius: 4px;
 }
-
 .box:nth-child(1) {
     background-color: #2196f3;
 }
-
 .box:nth-child(2) {
     background-color: #4caf50;
 }
-
 .box:nth-child(3) {
     background-color: #ff9800;
 }
-
 .box:nth-child(4) {
     background-color: #e91e63;
 }
