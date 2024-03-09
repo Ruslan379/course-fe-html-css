@@ -312,7 +312,7 @@ h2 {
     background:
         rgb(255, 213, 196) url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat center;
     /* Вихідні розміри зображення, значення за замовчуванням */
-    background-size: auto auto;
+    /* background-size: auto auto; */
 
     /* Ширина 200px, висота буде пропорційна */
     /* background-size: 400px; */
