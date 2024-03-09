@@ -416,20 +416,19 @@ h2 {
     height: 400px;
     margin: 20px auto;
 
+    /*? Окремі властивісті */
     background-color: green;
     background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
     background-repeat: no-repeat;
-    background-size: 80px;
     background-position: 100px 200px;
+    background-size: 80px;
     background-attachment: scroll;
 
-    /* background: green url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png") no-repeat 80px 100px 200px; */
-
+    /*? Збірна властивість */
     /* background:
-        green
+        green 
         url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png") 
-        repeat-x
-        top 120px right 130px
-        center
+        no-repeat 
+        100px 200px/80px 
         scroll; */
 }
