@@ -229,9 +229,9 @@ h2 {
     border: 2px dashed #2a2a2a;
     border-radius: 4px;
     background-color: #fff;
-
     background-image: url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png");
     background-size: 40px;
+    /* background-size: cover; */
 }
 
 .tile::before {
@@ -244,19 +244,16 @@ h2 {
     text-align: center;
 }
 
-.no-repeat {
-    background-repeat: no-repeat;
+.repeat {
+    background-repeat: repeat;
 }
-
-.no-repeat::before {
-    content: "no-repeat";
-    font-family: monospace;
+.repeat::before {
+    content: "repeat";
 }
 
 .repeat-x {
     background-repeat: repeat-x;
 }
-
 .repeat-x::before {
     content: "repeat-x";
 }
@@ -264,17 +261,16 @@ h2 {
 .repeat-y {
     background-repeat: repeat-y;
 }
-
 .repeat-y::before {
     content: "repeat-y";
 }
 
-.repeat {
-    background-repeat: repeat;
+.no-repeat {
+    background-repeat: no-repeat;
 }
-
-.repeat::before {
-    content: "repeat";
+.no-repeat::before {
+    content: "no-repeat";
+    font-family: monospace;
 }
 
 
