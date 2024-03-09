@@ -21,6 +21,14 @@ body {
 /* *========================================= */
 
 /*! Одиниці вимірювання в CSS: px, %, em, rem */
+.parent-list {
+    /* width: 1000px; */
+    /* height: 600px; */
+    display: flex;
+    /* outline: 4px double tomato; */
+    background-color: rgb(202, 132, 255);
+}
+
 .item {
     height: 200px;
     background-color: #ffff9f;
@@ -45,14 +53,6 @@ body {
 .item:nth-child(4) {
     width: 10rem;
     background-color: #baccff;
-}
-
-.parent-list {
-    /* width: 1000px; */
-    /* height: 600px; */
-    display: flex;
-    /* outline: 4px double tomato; */
-    background-color: rgb(202, 132, 255);
 }
 
 
