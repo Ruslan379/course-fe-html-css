@@ -310,7 +310,11 @@ h2 {
     height: 600px;
     margin: 20px auto;
     background:
-        rgb(255, 213, 196) url("https://image.ibb.co/mjdbZ5/bg5.jpg") no-repeat center;
+        rgb(255, 213, 196) 
+        url("https://image.ibb.co/mjdbZ5/bg5.jpg") 
+        no-repeat 
+        center;
+
     /* Вихідні розміри зображення, значення за замовчуванням */
     /* background-size: auto auto; */
 
@@ -417,6 +421,15 @@ h2 {
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: 100px 200px;
+    background-attachment: scroll;
 
     /* background: green url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png") no-repeat 80px 100px 200px; */
+
+    /* background:
+        green
+        url("https://cdn0.iconfinder.com/data/icons/essentials-volume-6/128/apple-512.png") 
+        repeat-x
+        top 120px right 130px
+        center
+        scroll; */
 }
