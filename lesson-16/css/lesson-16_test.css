@@ -279,25 +279,33 @@ h2 {
     width: 400px;
     height: 400px;
     margin: 20px auto;
-    background:
-        green url("https://image.ibb.co/n0M0cQ/red90x90.jpg") no-repeat;
-    /* Поставить фонове зображення по центру */
-    background-position: center;
-    /* Поставить фонове зображення по центру */
-    /* background-position: 50% 50%; */
-    /* Поставить фонове зображення 100px від лівого краю і 200px від верху */
-    /* background-position: 100px 200px; */
-    /* Поставить фонове зображення у нижній правий кут */
-    /* background-position: right bottom; */
+
+    background-color: green;
+    background-image: url("https://image.ibb.co/n0M0cQ/red90x90.jpg");
+    background-repeat: no-repeat;
+
     /* Поставить фонове зображення у верхній лівий кут */
     /* background-position: left top; */
+
+    /* Поставить фонове зображення у нижній правий кут */
+    /* background-position: right bottom; */
+    
+    /* Поставить фонове зображення по центру */
+    /* background-position: center; */
+
+    /* Поставить фонове зображення по центру */
+    /* background-position: 50% 50%; */
+
+    /* Поставить фонове зображення 100px від лівого краю і 200px від верху */
+    /* background-position: 100px 200px; */
+
     /* Поставить фонове зображення від меж на 30px справа і 20px знизу */
     /* background-position: right 100px bottom 20px; */
 }
 
 
 /*!  Властивості фону — background-size */
-.wrapper1 {
+.wrapper2 {
     width: 600px;
     height: 600px;
     margin: 20px auto;
@@ -400,4 +408,30 @@ h2 {
         center, 
         100px 60px,
         center;
+}
+
+/*! Властивості фону — Збірна властивість */
+.wrapper3 {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    background-color: green;
+    background-image: url("https://image.ibb.co/n0M0cQ/red90x90.jpg");
+    background-repeat: no-repeat;
+    /* background: 
+        green 
+        url("https://image.ibb.co/n0M0cQ/red90x90.jpg") 
+        no-repeat; */
+    /* Поставить фонове зображення по центру */
+    background-position: center;
+    /* Поставить фонове зображення по центру */
+    /* background-position: 50% 50%; */
+    /* Поставить фонове зображення 100px від лівого краю і 200px від верху */
+    /* background-position: 100px 200px; */
+    /* Поставить фонове зображення у нижній правий кут */
+    /* background-position: right bottom; */
+    /* Поставить фонове зображення у верхній лівий кут */
+    /* background-position: left top; */
+    /* Поставить фонове зображення від меж на 30px справа і 20px знизу */
+    /* background-position: right 100px bottom 20px; */
 }
