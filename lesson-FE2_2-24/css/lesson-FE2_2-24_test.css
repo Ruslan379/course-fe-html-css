@@ -86,5 +86,34 @@ img:hover {
     stroke-width: 2;
 }
 
+/*! Підключення іконок з макету WebStudio як SVG-спрайт ​*/
+.icon-webstudio {
+    width: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* align-items: center; */
+    align-content: flex-start;
+    outline: 4px double tomato;
+}
 
+/* li {
+    outline: 1px solid blue;
+} */
+
+.icon3 {
+    display: block;
+    border: 1px dashed #212121;
+    border-radius: 8px;
+    /* border-radius: 50%; */
+    fill: #2383ff;
+    background-color: rgb(255, 235, 208);
+}
+/* ✅ */
+.icon3:hover {
+    fill: #c9eeff;
+    stroke: crimson;
+    /* stroke-width: 2; */
+    background-color: rgb(252, 156, 255);
+}
 
