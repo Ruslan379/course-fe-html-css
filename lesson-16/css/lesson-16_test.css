@@ -160,16 +160,16 @@ span {
 
 /*!  Властивості фону — background-image */
 .hero {
-    min-height: 100px;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: #b1ae00;
     border: 2px solid #fd7e14;
+    background-color: #2a2a2a;
     background-image: url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg);
     background-position: center;
-    background-color: #2a2a2a;
 }
 
 .hero {
@@ -180,8 +180,15 @@ span {
     margin-top: 10px;
 }
 
+h2 {
+    color: tomato;
+}
+
 .title {
     margin-top: 0;
+    /* color: inherit; */
+    /* color: currentColor; */
+    /* color: initial; */
 }
 
 .text2 {
