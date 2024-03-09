@@ -111,7 +111,7 @@ img:hover {
 }
 /* ✅ */
 .icon3:hover {
-    fill: #c9eeff;
+    fill: #b2ff85;
     stroke: crimson;
     /* stroke-width: 2; */
     background-color: rgb(252, 156, 255);
