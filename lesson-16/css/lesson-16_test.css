@@ -119,7 +119,6 @@ span {
 /*! Псевдоелементи​ (приклад) */
 .list {
     margin: 20px 0 0;
-    list-style: none;
 }
 
 .list-item:not(:last-child) {
@@ -133,13 +132,12 @@ span {
     text-decoration: none;
     font-size: 32px;
 }
-
 .list-link:hover {
     color: #2196f3;
 }
 
-.list-link::before,
-.list-link::after {
+.list-link1::before,
+.list-link1::after {
     content: "";
     width: 24px;
     height: 24px;
