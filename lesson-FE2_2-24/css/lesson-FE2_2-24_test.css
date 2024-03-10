@@ -12,11 +12,11 @@ body {
     padding: 20px;
     min-height: 100vh;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
     /* justify-content: center; */
-    /* align-items: center; */
+    align-items: center;
 }
 /* *======================================= */
 
@@ -42,32 +42,36 @@ img:hover {
     height: 240px;
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
+    background-color: rgb(255, 238, 193);
     background-image: url("https://res.cloudinary.com/goit-academy/image/upload/v1614773221/codepen/cat_segyum.svg");
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
 }
-/* ❌ */
+
 .box:hover {
+    /* ❌ */
     fill: green;
-    stroke: black;
     stroke: yellow;
     stroke-width: 5;
+    /* ✅ */
+    border: 2px solid red;
+    background-color: rgb(157, 255, 255);
 }
 
 
 /*! Підключення векторної графіки як як вбудований SVG (inline SVG) ​*/
 .icon {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
 }
 /* ✅ */
 .icon:hover .letter {
     fill: palevioletred;
 }
+/* ✅ */
 .icon:hover .background {
     fill: green;
-    stroke: black;
     stroke: yellow;
     stroke-width: 5;
 }
@@ -117,6 +121,30 @@ img:hover {
     background-color: rgb(252, 156, 255);
 }
 
+/*! Підключення векторної графіки ​*/
+/*! як фон елемента за  допомогою SVG-спрайт */
+.box2 {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed blueviolet;
+    border-radius: 8px;
+    background-image: url("../svg-omg/astronaut.svg");
+    /*! ❌ - SVG-спрайт НЕ ПРАЦЮЄ!!!*/ 
+    /* background-image: url("../images/icons-sprite.svg#astronaut"); */
+    background-repeat: no-repeat;
+    background-size: 180px;
+    background-position: center;
+}
+
+.box2:hover {
+    /* ❌ */
+    fill: green;
+    stroke: yellow;
+    stroke-width: 5;
+    /* ✅ */
+    background-color: #b2ff85;
+}
+
 
 /*! Іконочний шрифт ​*/
 .social-networks {
@@ -126,3 +154,8 @@ img:hover {
 .link-compass2 {
     color: brown;
 }
+.link-compass2:hover {
+    font-size: 60px;
+    color: rgb(42, 165, 85);
+}
+
