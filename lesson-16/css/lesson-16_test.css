@@ -77,40 +77,41 @@ span {
 
 /*! Псевдоелементи​ */
 .main-item {
-    /* display: flex; */
     /* display: inline-flex; */
-    /* align-items: center; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
     /* width: 200px; */
     /* height: 200px; */
     margin-top: 20px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
     /* text-align: center; */
     background-color: #baccff;
     outline: 4px double red;
 }
 
-.main-item1::before {
+.main-item::before {
     /* margin-left: -100px; */
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* display: inline-block; */
     font-size: 20px;
     content: '';
     content: '::before';
-    min-width: 100px;
-    height: 100px;
+    /* width: 100px; */
+    /* height: 100px; */
     background-color: orange;
     outline: 1px dashed rgb(24, 0, 179);
 }
 
-.main-item1::after {
+.main-item::after {
     /* margin-left: 200px; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     /* display: inline-block; */
     font-size: 20px;
     content: '';
     content: '::after';
-    min-width: 100px;
-    height: 100px;
+    /* width: 100px; */
+    /* height: 100px; */
     background-color: rgb(255, 0, 208);
     outline: 1px dashed rgb(24, 0, 179);
 }
@@ -118,7 +119,7 @@ span {
 
 /*! Псевдоелементи​ (приклад) */
 .list {
-    margin: 20px 0 0;
+    margin: 20px 0 0 40px;
 }
 
 .list-item:not(:last-child) {
@@ -128,16 +129,17 @@ span {
 .list-link {
     display: inline-flex;
     align-items: center;
-    color: currentColor;
-    text-decoration: none;
+    /* color: currentColor; */
+    color: inherit;
+    /* text-decoration: none; */
     font-size: 32px;
 }
 .list-link:hover {
     color: #2196f3;
 }
 
-.list-link1::before,
-.list-link1::after {
+.list-link::before,
+.list-link::after {
     content: "";
     width: 24px;
     height: 24px;
@@ -309,14 +311,13 @@ h2 {
     width: 600px;
     height: 600px;
     margin: 20px auto;
-    background:
-        rgb(255, 213, 196) 
-        url("https://image.ibb.co/mjdbZ5/bg5.jpg") 
-        no-repeat 
-        center;
+
+    background-image: url("https://image.ibb.co/mjdbZ5/bg5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 
     /* Вихідні розміри зображення, значення за замовчуванням */
-    /* background-size: auto auto; */
+    background-size: auto auto;
 
     /* Ширина 200px, висота буде пропорційна */
     /* background-size: 400px; */
