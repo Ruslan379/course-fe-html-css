@@ -87,14 +87,14 @@ img:hover {
 }
 
 /*! Підключення іконок з макету WebStudio як SVG-спрайт ​*/
-.icon-webstudio1 {
+.icon-webstudio {
     width: 430px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     /* align-items: center; */
     align-content: flex-start;
-    outline: 4px double tomato;
+    outline: 4px double #ffcfc6;
 }
 
 /* li {
