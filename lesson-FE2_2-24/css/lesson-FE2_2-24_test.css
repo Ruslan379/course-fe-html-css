@@ -87,7 +87,7 @@ img:hover {
 }
 
 /*! Підключення іконок з макету WebStudio як SVG-спрайт ​*/
-.icon-webstudio {
+.icon-webstudio1 {
     width: 430px;
     display: flex;
     flex-wrap: wrap;
@@ -117,3 +117,12 @@ img:hover {
     background-color: rgb(252, 156, 255);
 }
 
+
+/*! Іконочний шрифт ​*/
+.social-networks {
+    font-size: 40px;
+}
+
+.link-compass2 {
+    color: brown;
+}
