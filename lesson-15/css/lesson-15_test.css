@@ -55,6 +55,7 @@ body {
     background-color: rgb(202, 132, 255);
 }
 
+
 /*! Гумовий контент​ */
 .container {
     display: flex;
@@ -123,6 +124,7 @@ body {
     color: white;
     border-radius: 4px;
 }
+
 
 /*! flex-shrink: частка​ */
 .container3 {
@@ -287,9 +289,8 @@ body {
 }
 
 
-
-/* ---------------------- */
-/* .holder {
+/*?  order​​ (ДЗ-15.1 Шмідт Валерій) */
+.holder2s {
     border: 1px solid #212121;
     border-radius: 10px 10px 0 0;
     display: flex;
@@ -299,39 +300,39 @@ body {
     width: 300px;
     margin-bottom: 400px;
 }
-    .item {
-        text-align: center;
+    .item2s {
+        /* text-align: center; */
         flex-basis: 25%;
-        flex-shrink: 1;
+        /* flex-shrink: 1; */
         flex-grow: 1;
         height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .item:nth-child(1) {
+    .item2s:nth-child(1) {
         background-color: #fd644d;
         order: 1;
         flex-basis: 50%;
         border-radius: 10px 0 0 0;
     }
-    .item:nth-child(2) {
+    .item2s:nth-child(2) {
         background-color: #4983b2;
         order: 4;
     }
-    .item:nth-child(3) {
+    .item2s:nth-child(3) {
         background-color: #663797;
         order: 3;
     }
-    .item:nth-child(4) {
+    .item2s:nth-child(4) {
         background-color: #0e7f12;
         order: 5;
     }
-    .item:nth-child(5) {
+    .item2s:nth-child(5) {
         background-color: #fda429;
         order: 2;
         flex-basis: 50%;
         border-radius: 0 10px 0 0;
-    } */
+    }
 
 
