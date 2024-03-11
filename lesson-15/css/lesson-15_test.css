@@ -172,40 +172,39 @@ body {
 
 
 /*! order​​​ */
-.item.item2 {
-    font-weight: 700;
-    font-size: larger;
-    display: flex;
+.item2 {
+    height: 100px;
     flex-basis: 300px;
+    /* flex-basis: 33%; */
+    /* flex-grow: 1; */
+    display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
+    font-size: larger;
 }
 
-.item.item2:nth-child(1) {
-    order: -1;
+.item2:nth-child(1) {
+    order: 1;
     border-top-left-radius: 40px;
     background-color: red;
 }
-
-.item.item2:nth-child(2) {
+.item2:nth-child(2) {
     order: 4;
     max-width: 200px;
     background-color: skyblue;
 }
-
-.item.item2:nth-child(3) {
+.item2:nth-child(3) {
     order: 3;
     max-width: 200px;
     background-color: violet;
 }
-
-.item.item2:nth-child(4) {
+.item2:nth-child(4) {
     order: 5;
     max-width: 200px;
     background-color: green;
 }
-
-.item.item2:nth-child(5) {
+.item2:nth-child(5) {
     order: 2;
     border-top-right-radius: 40px;
     background-color: orange;
@@ -251,3 +250,53 @@ body {
     outline: 1px solid rgb(24, 0, 179);
     background-color: rgb(255, 255, 159);
 }
+
+
+
+/* ---------------------- */
+/* .holder {
+    border: 1px solid #212121;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 300px;
+    margin-bottom: 400px;
+}
+    .item {
+        text-align: center;
+        flex-basis: 25%;
+        flex-shrink: 1;
+        flex-grow: 1;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item:nth-child(1) {
+        background-color: #fd644d;
+        order: 1;
+        flex-basis: 50%;
+        border-radius: 10px 0 0 0;
+    }
+    .item:nth-child(2) {
+        background-color: #4983b2;
+        order: 4;
+    }
+    .item:nth-child(3) {
+        background-color: #663797;
+        order: 3;
+    }
+    .item:nth-child(4) {
+        background-color: #0e7f12;
+        order: 5;
+    }
+    .item:nth-child(5) {
+        background-color: #fda429;
+        order: 2;
+        flex-basis: 50%;
+        border-radius: 0 10px 0 0;
+    } */
+
+
