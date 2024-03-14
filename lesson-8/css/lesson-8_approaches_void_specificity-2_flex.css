@@ -62,7 +62,21 @@ body {
 }
 
 /** Додаткові flex-властивості до container */
+/** var. 1 */
 .flex,
+.navigation,
+/* .logo, */
+.nav-list,
+/* .nav-item, */
+/* .contacts-item, */
+.contacts-list {
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+}
+
+/** var. 2 */
+.header .container,
 .navigation,
 /* .logo, */
 .nav-list,
