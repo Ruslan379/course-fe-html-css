@@ -246,7 +246,7 @@ body {
     /* height: 100px; */
     margin-bottom: 20px;
     color: red;
-    background: #fffdd6;
+    background: #d6ffe7;
     outline: 4px double rgb(61, 56, 0);
 }
 
@@ -257,7 +257,7 @@ body {
     /* left: 10px; */
     font-size: 1.5rem;
     color: var(--color-font-body);
-    background: #b8f1ff;
+    background: #ffb8f2;
     outline: 1px dashed green;
 }
 .title6::after {
@@ -273,6 +273,6 @@ body {
     width: 70%;
     /* height: 3rem; */
     color: initial;
-    background: #fffaa5;
+    background: #9cfec5;
     outline: 1px dotted blue;
 }
