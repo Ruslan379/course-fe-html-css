@@ -23,15 +23,36 @@ body {
 
 
 /*! 1.position:static */
-.holder {
-    background: #fee;
+.father1 {
+    color: red;
+    background: #fffdd6;
     width: 500px;
+    outline: 4px double rgb(61, 56, 0);
 }
 
-h2 {
+.title1 {
     position: static;
     left: -10%;
+    top: -10%;
+    color: var(--color-font-body);
     background: #b8f1ff;
-    margin: 0;
+    outline: 1px dashed green;
+}
+.title1::after {
+    content: '(без позиціонування)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+
+}
+
+.child1 {
+    width: 70%;
+    height: 3rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
 }
 
