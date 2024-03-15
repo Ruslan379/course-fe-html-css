@@ -138,8 +138,15 @@ body {
 
 
 /*! 4.position:absolute від <father4> */
+.original-father4 {
+    width: 500px;
+    height: 100px;
+    outline: 4px double rgb(4, 0, 61);
+}
 .father4 {
     position: relative;
+    /* left: 10%;
+    top: 10%; */
     width: 500px;
     height: 100px;
     margin-bottom: 20px;
