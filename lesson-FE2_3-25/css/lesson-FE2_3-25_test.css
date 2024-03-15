@@ -46,7 +46,6 @@ body {
     font-style: italic;
     color: initial;
     outline: 1px dashed #ff6d6d;
-
 }
 
 .child1 {
@@ -85,7 +84,6 @@ body {
     font-style: italic;
     color: initial;
     outline: 1px dashed #ff6d6d;
-
 }
 
 .child2 {
@@ -125,7 +123,6 @@ body {
     font-style: italic;
     color: initial;
     outline: 1px dashed #ff6d6d;
-
 }
 
 .child3 {
@@ -143,6 +140,7 @@ body {
     height: 100px;
     outline: 4px double rgb(4, 0, 61);
 }
+
 .father4 {
     position: relative;
     /* left: 10%;
@@ -174,7 +172,6 @@ body {
     font-style: italic;
     color: initial;
     outline: 1px dashed #ff6d6d;
-
 }
 
 .child4 {
@@ -185,3 +182,62 @@ body {
     outline: 1px dotted blue;
 }
 
+
+/*! 4.position:absolute від <father4> */
+.father5 {
+    width: 500px;
+    /* height: 100px; */
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.title5 {
+    position: static;
+    left: 10%;
+    top: 10%;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+.title5::after {
+    content: '(без позиціонування)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.child5 {
+    width: 70%;
+    /* height: 3rem; */
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+/*? КНОПКИ */
+/*? Кнопка-догори (загальні стили) */
+.arrow-button {
+    position: fixed;
+    right: 30px;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    border: 2px solid red;
+    border-radius: 8px;
+    background-color: #a2cfff;
+    cursor: pointer;
+}
+/* ? Кнопка-донизу */
+.down-button {
+    bottom: 30px;
+
+}
