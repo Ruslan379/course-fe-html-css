@@ -22,11 +22,11 @@ body {
 
 /*! 1.position:static */
 .father1 {
+    width: 500px;
     height: 100px;
     margin-bottom: 20px;
     color: red;
     background: #fffdd6;
-    width: 500px;
     outline: 4px double rgb(61, 56, 0);
 }
 
@@ -60,16 +60,16 @@ body {
 
 /*! 2.position:relative */
 .father2 {
+    width: 500px;
     height: 100px;
     margin-bottom: 20px;
     color: red;
     background: #fffdd6;
-    width: 500px;
     outline: 4px double rgb(61, 56, 0);
 }
 
 .title2 {
-    position: static;
+    /* position: static; */
     position: relative;
     left: 10%;
     top: 10%;
@@ -89,6 +89,88 @@ body {
 }
 
 .child2 {
+    width: 70%;
+    height: 3rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+
+/*! 3.position:absolute від <body> */
+.father3 {
+    width: 500px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.title3 {
+    /* position: static; */
+    /* position: relative; */
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+.title3::after {
+    content: '(left: 10%; top: 10%; від <body>)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+
+}
+
+.child3 {
+    width: 70%;
+    height: 3rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+
+/*! 4.position:absolute від <father4> */
+.father4 {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.title4 {
+    /* position: static; */
+    /* position: relative; */
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 516px;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+.title4::after {
+    content: '(left: 10%; top: 10%; від <father4>)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+
+}
+
+.child4 {
     width: 70%;
     height: 3rem;
     color: initial;
