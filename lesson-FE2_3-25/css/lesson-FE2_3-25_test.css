@@ -1,0 +1,37 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-font-body: #005600;
+    --color-background-body: #ffdbdb;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* *======================================= */
+
+
+/*! 1.position:static */
+.holder {
+    background: #fee;
+    width: 500px;
+}
+
+h2 {
+    position: static;
+    left: -10%;
+    background: #b8f1ff;
+    margin: 0;
+}
+
