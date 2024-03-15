@@ -183,7 +183,7 @@ body {
 }
 
 
-/*! 4.position:absolute від <father4> */
+/*! 5.position:fixed */
 .father5 {
     width: 500px;
     /* height: 100px; */
@@ -195,8 +195,6 @@ body {
 
 .title5 {
     position: static;
-    left: 10%;
-    top: 10%;
     font-size: 1.5rem;
     color: var(--color-font-body);
     background: #b8f1ff;
@@ -239,5 +237,42 @@ body {
 /* ? Кнопка-донизу */
 .down-button {
     bottom: 30px;
+}
 
+
+/*! 6.position:sticky */
+.father6 {
+    width: 500px;
+    /* height: 100px; */
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.title6 {
+    width: 500px;
+    position: sticky;
+    top: 0;
+    /* left: 10px; */
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+.title6::after {
+    content: '(без позиціонування)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.child6 {
+    width: 70%;
+    /* height: 3rem; */
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
 }
