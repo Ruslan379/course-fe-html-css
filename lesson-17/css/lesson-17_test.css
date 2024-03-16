@@ -22,6 +22,26 @@ body {
 
 /*! Контентні зображення */
 /*! 1.Властивість object-fit */
+.thumb0 {
+    margin: 0 auto;
+    height: 400px;
+    width: 300px;
+    outline: 4px double green;
+}
+
+.thumb1-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    /* object-fit: fill; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    /* object-fit: scale-down; */
+    /* object-fit: none; */
+}
+
+/*! ---------------------------- */
 .base {
     width: 480px;
     margin-bottom: 30px;
@@ -35,6 +55,11 @@ body {
     height: auto;
     border: 2px dashed #2a2a2a;
     border-radius: 4px;
+
+    /* object-fit: fill; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    /* object-fit: scale-down; */
 }
 
 .container {
