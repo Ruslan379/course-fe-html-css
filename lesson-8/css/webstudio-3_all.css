@@ -62,6 +62,7 @@ body {
     background-color: #d2fff2;
 }
 
+/*todo --- block, inline, inline-block --- */
 .navigation,
 .logo,
 .nav-list,
@@ -75,15 +76,31 @@ body {
 .logo {
     vertical-align: middle;
 }
+/*todo ------------------------------------ */
+
+/** ------- flex ------- */
+/* .flex,
+.navigation,
+.nav-list,
+.contacts-list {
+    display: flex;
+    align-items: center;
+} */
+/** ------------------------ */
 
 .navigation {
-    /* margin-right: 344px; */
+    /*todo --- block, inline, inline-block --- */
     margin-right: 340px;
+    /** ------- flex ------- */
+    /* margin-right: 344px; */
 }
 
 .logo {
-    /* margin-right: 93px; */
+    /*todo --- block, inline, inline-block --- */
     margin-right: 89px;
+    /** ------- flex ------- */
+    /* margin-right: 93px; */
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -98,8 +115,10 @@ body {
 }
 
 .nav-item {
-    /* margin-right: 50px; */
+    /*todo --- block, inline, inline-block --- */
     margin-right: 46px;
+    /** ------- flex ------- */
+    /* margin-right: 50px; */
 }
 .nav-item:last-child {
     margin-right: 0;
@@ -118,8 +137,10 @@ body {
 }
 
 .contacts-item:first-child {
-    /* margin-right: 50px; */
+    /*todo --- block, inline, inline-block --- */
     margin-right: 46px;
+    /** ------- flex ------- */
+    /* margin-right: 50px; */
 }
 
 .contacts-link {
