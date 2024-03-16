@@ -22,6 +22,10 @@ body {
 
 /*! Контентні зображення */
 /*! 1.Властивість object-fit */
+.original-img {
+    margin: 20px auto;
+}
+
 .thumb0 {
     margin: 0 auto;
     height: 400px;
