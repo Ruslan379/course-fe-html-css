@@ -18,6 +18,7 @@ body {
     /* justify-content: center; */
     align-items: center;
 }
+
 /* *======================================= */
 
 /*! 1.position:static */
@@ -39,6 +40,7 @@ body {
     background: #b8f1ff;
     outline: 1px dashed green;
 }
+
 .title1::after {
     content: '(без позиціонування)';
     margin-left: 5px;
@@ -77,6 +79,7 @@ body {
     background: #b8f1ff;
     outline: 1px dashed green;
 }
+
 .title2::after {
     content: '(left: 10%; top: 10%;)';
     margin-left: 5px;
@@ -95,7 +98,7 @@ body {
 }
 
 
-/*! 3.position:absolute від <body> */
+/*! 3-1.position:absolute від <body> */
 .father3 {
     width: 500px;
     height: 100px;
@@ -116,6 +119,7 @@ body {
     background: #b8f1ff;
     outline: 1px dashed green;
 }
+
 .title3::after {
     content: '(left: 10%; top: 10%; від <body>)';
     margin-left: 5px;
@@ -134,7 +138,7 @@ body {
 }
 
 
-/*! 4.position:absolute від <father4> */
+/*! 3-2.position:absolute від <father4> */
 .original-father4 {
     width: 500px;
     height: 100px;
@@ -165,6 +169,7 @@ body {
     background: #b8f1ff;
     outline: 1px dashed green;
 }
+
 .title4::after {
     content: '(left: 10%; top: 10%; від <father4>)';
     margin-left: 5px;
@@ -183,7 +188,7 @@ body {
 }
 
 
-/*! 5.position:fixed */
+/*! 4.position:fixed */
 .father5 {
     width: 500px;
     /* height: 100px; */
@@ -200,6 +205,7 @@ body {
     background: #b8f1ff;
     outline: 1px dashed green;
 }
+
 .title5::after {
     content: '(без позиціонування)';
     margin-left: 5px;
@@ -220,7 +226,8 @@ body {
 /*? КНОПКИ */
 /*? Кнопка-догори (загальні стили) */
 .arrow-button {
-    position: fixed;
+    /* ! */
+    /* position: fixed; */
     right: 30px;
     display: inline-block;
     margin: 0;
@@ -234,13 +241,14 @@ body {
     background-color: #a2cfff;
     cursor: pointer;
 }
+
 /* ? Кнопка-донизу */
 .down-button {
     bottom: 30px;
 }
 
 
-/*! 6.position:sticky */
+/*! 5.position:sticky */
 .father6 {
     width: 500px;
     /* height: 100px; */
@@ -260,6 +268,7 @@ body {
     background: #ffb8f2;
     outline: 1px dashed green;
 }
+
 .title6::after {
     content: '(без позиціонування)';
     margin-left: 5px;
@@ -275,4 +284,54 @@ body {
     color: initial;
     background: #9cfec5;
     outline: 1px dotted blue;
+}
+
+
+/*! 6.Властивість z-index */
+.container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.box {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 64px;
+    color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.box:nth-child(1) {
+    top: 20px;
+    left: 130px;
+    background-color: #1789fc;
+    z-index: 2;
+}
+
+.box:nth-child(2) {
+    top: 30px;
+    left: 230px;
+    background-color: #ef233c;
+    z-index: 2;
+}
+
+.box:nth-child(3) {
+    top: 140px;
+    left: 220px;
+    background-color: #ffd07b;
+    z-index: 1;
+}
+
+.box:nth-child(4) {
+    top: 120px;
+    left: 120px;
+    background-color: #4caf50;
 }

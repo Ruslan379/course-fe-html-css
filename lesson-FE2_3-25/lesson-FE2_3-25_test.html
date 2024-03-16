@@ -33,7 +33,7 @@
 
     <body>
         <!--! 1.position:static -->
-        <h2>STATIC</h2>
+        <h2>1. STATIC</h2>
         <div class="father1">
             Це контент елемента (div class="child1"): {"position: static";}
                 <h3 class="title1">Заголовок (class="title1")</h3>
@@ -46,7 +46,7 @@
 
 
         <!--! 2.position:relative -->
-        <h2>RELATIVE</h2>
+        <h2>2. RELATIVE</h2>
         <div class="father2">
             Це контент елемента (div class="child2"): {"position: relative";}
                 <h3 class="title2">Заголовок (class="title2")</h3>
@@ -58,8 +58,8 @@
         </div>
 
 
-        <!--! 3.position:absolute від <body> -->
-        <h2>ABSOLUTE (від body)</h2>
+        <!--! 3-1.position:absolute від <body> -->
+        <h2>3-1. ABSOLUTE (від body)</h2>
         <div class="father3">
             Це контент елемента (div class="child3"): {"position: absolute";}
                 <h3 class="title3">Заголовок (class="title3")</h3>
@@ -71,8 +71,8 @@
         </div>
 
 
-        <!--! 4.position:absolute від <father4> -->
-        <h2>ABSOLUTE (від father4)</h2>
+        <!--! 3-2.position:absolute від <father4> -->
+        <h2>3-2. ABSOLUTE (від father4)</h2>
         <div class="original-father4">
             <div class="father4">
                 Це контент елемента (div class="child4"): {"position: absolute";}
@@ -86,8 +86,8 @@
         </div>
 
 
-        <!--! 5.position:fixed  -->
-            <h2 id="up">FIXED</h2>
+        <!--! 4.position:fixed  -->
+            <h2 id="up">4. FIXED</h2>
             <a href="#up" class="arrow-button">догори</a>
             <div class="father5">
                 Це контент елемента (div class="child5"): {"position: fixed";}
@@ -103,7 +103,8 @@
             <a  href="#down" class="arrow-button down-button rotate180">донизу</a>
 
             
-            <!--! 6.position:sticky   -->
+            <!--! 5.position:sticky   -->
+            <h2>5. STICKY</h2>
             <div class="father6">
                 Це контент елемента (div class="child6"): {"position: sticky";}
                     <!-- <h3 class="title6">Фіксований заголовок-1</h3> -->
@@ -117,7 +118,16 @@
                     </div>
                     
             </div>
-        
+
+
+            <!--! 6.Властивість z-index   -->
+            <h2>6. Z-INDEX</h2>
+            <div class="container">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+            </div>
 
 
     </body>
