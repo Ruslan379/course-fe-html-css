@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewliort" content="width=device-width, initial-scale=1.0">
+    <title>lesson-17_test</title>
+
+    <!--! Спочатку нормалізатор -->
+    <!--! завантаження modern-normalize -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+
+    <!--! завантаження шрифтів: 'Roboto' 400, 700 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+
+    <!--! файл reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!--! зовнішній файл стилів -->
+    <link rel="stylesheet" href="./css/lesson-17_test.css">
+    </head>
+
+    <body>
+    <!--! Контентні зображення -->
+    <!--! 1.Властивість object-fit -->
+    <figure class="base">
+        <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240"
+            alt="">
+        <figcaption class="label">Original image</figcaption>
+    </figure>
+
+    <div class="container">
+        <div class="card-set">
+            <figure class="card">
+                <div class="thumb">
+                    <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240"
+                        alt="">
+                </div>
+                <figcaption class="label">object-fit: fill</figcaption>
+            </figure>
+
+            <figure class="card">
+                <div class="thumb">
+                    <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240"
+                        alt="">
+                </div>
+                <figcaption class="label">object-fit: contain</figcaption>
+            </figure>
+
+            <figure class="card">
+                <div class="thumb">
+                    <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240"
+                        alt="">
+                </div>
+                <figcaption class="label">object-fit: cover</figcaption>
+            </figure>
+
+            <figure class="card">
+                <div class="thumb">
+                    <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240"
+                        alt="">
+                </div>
+                <figcaption class="label">object-fit: scale-down</figcaption>
+            </figure>
+
+            <figure class="card">
+                <div class="thumb">
+                    <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=320&w=240"
+                        alt="">
+                </div>
+                <figcaption class="label">object-fit: none</figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+    </body>
+</html>

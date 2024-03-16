@@ -1,0 +1,116 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-font-body: #416600;
+    --color-background-body: #f4d1ff;
+}
+
+/* html {
+    font-size: 40px;
+} */
+
+body {
+    padding: 20px;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+    /* font-size: 20px; */
+    font-size: 28px;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+/* *========================================= */
+
+/*! Контентні зображення */
+/*! 1.Властивість object-fit */
+.base {
+    width: 480px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.base>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 4px double tomato;
+}
+
+.card-set {
+    padding: 0;
+    margin: 0;
+    /* margin-top: -20px; */
+    /* margin-left: -20px; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 40px;
+}
+
+.card {
+    /* margin: 20px 0 0 20px; */
+    /* flex-basis: calc(100% / 2 - 20px); */
+    margin: 0;
+    flex-basis: calc((100% - 40px) / 2);
+}
+
+.card,
+.base {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.card>.label,
+.base>.label {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.card>.label {
+    color: blue;
+    font-family: monospace;
+    letter-spacing: -0.05em;
+}
+
+.thumb {
+    position: relative;
+    height: 380px;
+    width: 100%;
+    /* border: 2px dashed #2a2a2a; */
+    border-radius: 4px;
+}
+
+.thumb>img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.card:nth-child(1) img {
+    object-fit: fill;
+}
+
+.card:nth-child(2) img {
+    object-fit: contain;
+}
+
+.card:nth-child(3) img {
+    object-fit: cover;
+}
+
+.card:nth-child(4) img {
+    object-fit: scale-down;
+}
+
+.card:nth-child(5) img {
+    object-fit: none;
+}
