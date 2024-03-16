@@ -24,14 +24,14 @@ body {
 /*! 1.Властивість object-fit */
 .thumb0 {
     margin: 0 auto;
-    height: 800px;
-    width: 600px;
+    height: 400px;
+    width: 300px;
     outline: 4px double green;
 }
 
 .thumb0>img {
     display: block;
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
 
     /* object-fit: fill; */
