@@ -611,58 +611,118 @@ body {
         );
 }
 
+.tile10:nth-child(2) {
+    background-image: 
+        repeating-linear-gradient(
+            to bottom,
+            var(--start-color),
+            var(--start-color) 20px,
+            var(--end-color) 20px,
+            var(--end-color) 40px
+        );
+}
+
+.tile10:nth-child(3) {
+    background-image: 
+        repeating-linear-gradient(
+            to top right,
+            var(--start-color),
+            var(--start-color) 20px,
+            var(--end-color) 20px,
+            var(--end-color) 40px
+        );
+}
+
+.tile10:nth-child(4) {
+    background-image: 
+        repeating-linear-gradient(
+            to bottom right,
+            var(--start-color),
+            var(--start-color) 20px,
+            var(--end-color) 20px,
+            var(--end-color) 40px
+        );
+}
+
+.tile10:nth-child(5) {
+    background-image: 
+        repeating-radial-gradient(
+            circle at center,
+            var(--start-color),
+            var(--start-color) 20px,
+            var(--end-color) 20px,
+            var(--end-color) 40px
+        );
+}
+.tile10:nth-child(6) {
+    background-image: 
+        repeating-radial-gradient(
+            circle at top right,
+            var(--start-color),
+            var(--start-color) 20px,
+            var(--end-color) 20px,
+            var(--end-color) 40px
+        );
+}
+
+/*! 10.Декоративні зображення — Повторюваний градієнт */
+.post {
+    box-shadow: 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.post + .post {
+    margin-top: 20px;
+}
+
+.post-title {
+    margin: 0;
+    padding: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.post-text {
+    margin: 0;
+    padding: 16px;
+}
+
+.post-title.angled {
+    color: #fff;
+    background-image: 
+        repeating-linear-gradient(
+            -45deg,
+            #606dbc,
+            #606dbc 10px,
+            #465298 10px,
+            #465298 20px
+        );
+}
+
+.post-title.vertical {
+    background-image: 
+        repeating-linear-gradient(
+            to right,
+            #f6ba52,
+            #f6ba52 10px,
+            #ffd180 10px,
+            #ffd180 20px
+        );
+}
+
+.post-title.radial {
+    color: #fff;
+    background-image: 
+        repeating-radial-gradient(
+            circle,
+            purple,
+            purple 10px,
+            #4b026f 10px,
+            #4b026f 20px
+        );
+}
 
 
-
-
-
-  .tile10:nth-child(2) {
-    background-image: repeating-linear-gradient(
-      to bottom,
-      var(--start-color),
-      var(--start-color) 20px,
-      var(--end-color) 20px,
-      var(--end-color) 40px
-    );
-  }
-  
-  .tile10:nth-child(3) {
-    background-image: repeating-linear-gradient(
-      to top right,
-      var(--start-color),
-      var(--start-color) 20px,
-      var(--end-color) 20px,
-      var(--end-color) 40px
-    );
-  }
-  
-  .tile10:nth-child(4) {
-    background-image: repeating-linear-gradient(
-      to bottom right,
-      var(--start-color),
-      var(--start-color) 20px,
-      var(--end-color) 20px,
-      var(--end-color) 40px
-    );
-  }
-  
-  .tile10:nth-child(5) {
-    background-image: repeating-radial-gradient(
-      circle at center,
-      var(--start-color),
-      var(--start-color) 20px,
-      var(--end-color) 20px,
-      var(--end-color) 40px
-    );
-  }
-  
-  .tile10:nth-child(6) {
-    background-image: repeating-radial-gradient(
-      circle at top right,
-      var(--start-color),
-      var(--start-color) 20px,
-      var(--end-color) 20px,
-      var(--end-color) 40px
-    );
-  }
-  
