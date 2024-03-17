@@ -357,6 +357,7 @@ body {
     /* margin-right: 30px; */
     /* margin-right: 26px; */
     /* display: inline-block; */
+    padding-bottom: 30px;
     border-radius: 0 0 4px 4px;
     background-color: var(--color-light);
 }
@@ -387,7 +388,6 @@ body {
 }
 
 .team-position {
-    margin-bottom: 30px;
     /* font-family: 'Roboto'; */
     font-weight: 400;
     font-size: 16px;
