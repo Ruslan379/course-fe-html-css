@@ -469,12 +469,12 @@ body {
     background-image: 
         radial-gradient(
             circle at top right,
-            f44336 15%,
-            09792b 15%,
-            09792b 40%,
-            00b9ff 40%,
-            00b9ff 65%,
-            ffb800 65%
+            #f44336 15%,
+            #09792b 15%,
+            #09792b 40%,
+            #00b9ff 40%,
+            #00b9ff 65%,
+            #ffb800 65%
         );
 }
 
