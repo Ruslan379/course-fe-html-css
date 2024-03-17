@@ -267,54 +267,69 @@ body {
     font-family: monospace;
     font-size: 24px;
     letter-spacing: -0.05em;
-    box-shadow: 
-        0px 2px 1px -1px rgba(0, 0, 0, 0.2), 
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    box-shadow:
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 .tile1:nth-child(1) {
-    background-image: 
+    background-image:
         linear-gradient(to bottom,
             var(--start-color),
             var(--end-color));
 }
 
 .tile1:nth-child(2) {
-    background-image: 
-        linear-gradient
-            (
-                to top,
-                var(--start-color),
-                var(--end-color)
-            );
+    background-image:
+        linear-gradient(to top,
+            var(--start-color),
+            var(--end-color));
 }
 
 .tile1:nth-child(3) {
-    background-image: 
-        linear-gradient
-            (
-                to right,
-                var(--start-color),
-                var(--end-color)
-            );
+    background-image:
+        linear-gradient(to right,
+            var(--start-color),
+            var(--end-color));
 }
 
 .tile1:nth-child(4) {
-    background-image: 
-    linear-gradient
-        (
-            to top left,
+    background-image:
+        linear-gradient(to top left,
             var(--start-color),
-            var(--end-color)
-        );
+            var(--end-color));
 }
 
 
 /*! 5.Декоративні зображення — Колорстоп (color-stop) --> */
 .linear-gradient1 {
-    margin: 0 auto;
+    margin: 20px auto;
     width: 95vw;
     height: 90vh;
+    background-image:
+        linear-gradient(to right,
+            #f44336 15%,
+            #09792b 40%,
+            #00b9ff 65%,
+            #ffb800);
     outline: 4px double blueviolet;
+}
+
+
+/*! 6.Декоративні зображення — Суцільний градієнт --> */
+.gradient2 {
+    margin: 20px auto;
+    width: 95vw;
+    height: 90vh;
+    background-image: 
+    linear-gradient(
+        to right,
+        #f44336 15%,
+        #09792b 15%,
+        #09792b 40%,
+        #00b9ff 40%,
+        #00b9ff 65%,
+        #ffb800 65%
+    );
 }
