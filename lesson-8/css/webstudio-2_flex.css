@@ -281,6 +281,46 @@ body {
     margin-left: 30px;
 }
 
+/** додаєм іконки */
+.features-item::before {
+    margin-bottom: 30px;
+    content: "";
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-background-light);
+}
+.features-item:nth-child(1)::before { 
+    content: "";
+    /** var. 1 */
+    /* background-image: url(../images/antenna-full.png); */
+    /** var. 2 */
+    background-image: url(../images/antenna.svg);
+}
+.features-item:nth-child(2)::before { 
+    content: "";
+    /** var. 1 */
+    /* background-image: url(../images/clock-full.png); */
+    /** var. 2 */
+    background-image: url(../images/clock.svg);
+}
+.features-item:nth-child(3 )::before { 
+    content: "";
+    /** var. 1 */
+    /* background-image: url(../images/diagram-full.png); */
+    /** var. 2 */
+    background-image: url(../images/diagram.svg);
+}
+.features-item:nth-child(4)::before { 
+    content: "";
+    /** var. 1 */
+    /* background-image: url(../images/astronaut-full.png); */
+    /** var. 2 */
+    background-image: url(../images/astronaut.svg);
+}
+
 .features-title {
     margin-bottom: 10px;
     /* font-family: 'Roboto'; */
@@ -291,11 +331,7 @@ body {
     color: var(--color-font-main);
 }
 
-.features-title::before {
-    content: "";
 
-    background-color: chocolate;
-}
 
 .features-description {
     /* font-family: 'Roboto'; */
