@@ -248,14 +248,14 @@ body {
 
 
 /*! 4.Декоративні зображення — Лінійний градієнт --> */
-.tile-set {
+.tile-set1 {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
 }
 
-.tile {
+.tile1 {
     height: 200px;
     flex-basis: calc(50% - 10px);
     margin: 5px;
@@ -273,32 +273,41 @@ body {
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.tile:nth-child(1) {
+.tile1:nth-child(1) {
     background-image: 
         linear-gradient(to bottom,
             var(--start-color),
             var(--end-color));
 }
 
-.tile:nth-child(2) {
+.tile1:nth-child(2) {
     background-image: 
-        linear-gradient(to top,
-            var(--start-color),
-            var(--end-color));
+        linear-gradient
+            (
+                to top,
+                var(--start-color),
+                var(--end-color)
+            );
 }
 
-.tile:nth-child(3) {
+.tile1:nth-child(3) {
     background-image: 
-        linear-gradient(to right,
-            var(--start-color),
-            var(--end-color));
+        linear-gradient
+            (
+                to right,
+                var(--start-color),
+                var(--end-color)
+            );
 }
 
-.tile:nth-child(4) {
+.tile1:nth-child(4) {
     background-image: 
-    linear-gradient(to top left,
+    linear-gradient
+        (
+            to top left,
             var(--start-color),
-            var(--end-color));
+            var(--end-color)
+        );
 }
 
 
