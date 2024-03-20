@@ -336,7 +336,9 @@ h2 {
     width: 600px;
     height: 600px;
     margin: 20px auto;
+    outline: 2px dotted red;
 
+    background-color: lightgray;
     background-image: url("https://image.ibb.co/mjdbZ5/bg5.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -345,7 +347,7 @@ h2 {
     background-size: auto auto;
 
     /* Ширина 200px, висота буде пропорційна */
-    /* background-size: 400px; */
+    background-size: 400px;
 
     /* Ширина 200px, висота 300px */
     /* background-size: 200px 300px; */
