@@ -22,7 +22,7 @@ body {
 
 /*! Одиниці вимірювання в CSS: px, %, em, rem */
 .parent-list {
-    /* width: 1300px; */
+    width: 1300px;
     /* height: 600px; */
     display: flex;
     /* outline: 4px double tomato; */
@@ -74,8 +74,27 @@ span {
     color: green;
 }
 
+/*! Псевдоелементи-2​ */
+.text12 {
+    margin-top: 20px;
+    color: darkred;
+}
+.sel::selection {
+    color: blue;
+    background-color: yellow;
+}
+.fl::first-letter {
+    color: red;
+    font-size: 40px;
+}
+.fline::first-line {
+    color: blue;
+    font-size: 40px;
+    font-style: italic;
+}
 
-/*! Псевдоелементи​ */
+
+/*! Псевдоелементи-2​ */
 .main-item {
     /* display: inline-flex; */
         /* display: flex; */
