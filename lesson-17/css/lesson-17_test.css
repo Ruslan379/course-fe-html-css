@@ -727,21 +727,27 @@ body {
 
 
 /*! 12.Тінь елементу box-shadow​​ */
-.post12 {
+.container3 {
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.post12 {
     position: relative;
-    max-width: 600px;
+    max-width: 400px;
     padding: 20px;
     font-size: 1.2rem;
     border-radius: 4px;
     line-height: 1.5;
     font-family: sans-serif;
     background-color: #fff;
-    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+    
 }
 
-.post-title12 {
-    margin-top: 0;
+.post12:not(:first-child) {
+    box-shadow: 16px 16px 12px 6px rgba(0, 0, 0, 0.3);
 }
 
 .post-text12 {
