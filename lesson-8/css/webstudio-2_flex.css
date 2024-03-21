@@ -412,7 +412,7 @@ body {
 } */
 /** var. 3 */
 .team-item+.team-item {
-    margin-left: 30px
+    margin-left: 30px;
 }
 
 .team-image {
