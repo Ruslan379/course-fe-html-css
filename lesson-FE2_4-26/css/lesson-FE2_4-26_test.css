@@ -10,11 +10,11 @@ body {
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
     padding: 20px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
     align-items: center;
     color: var(--color-font-body);
@@ -67,15 +67,23 @@ body {
 
 /*! 2.Робота з формами */
 /*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
-.fieldset1 {
+.fieldset1 { /* ! */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* display: none; */
+}
+.fieldset-title {
+    font-family: monospace;
+    color: brown;
 }
 
 /*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
-.checkbox-container {
+/* ! */
+/* .checkbox-container>label>input {
+    display: none;
+} */
+/* ! */
+/* .checkbox-container {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -90,7 +98,6 @@ body {
     height: 25px;
     margin-right: 20px;
     outline: 1px dotted green;
-    /* display: none; */
 }
 .checkbox-label-description {
     display: inline-block;
@@ -98,7 +105,6 @@ body {
     padding: 5px 10px;
     text-align: center;
     font-weight: 700;
-    
     border: 1px solid darkgreen;
     border-radius: 5px;
     color: inherit;
@@ -109,5 +115,5 @@ body {
     border: 1px solid lightseagreen;
     color: darkgreen;
     background-color: yellow;
-}
+} */
 
