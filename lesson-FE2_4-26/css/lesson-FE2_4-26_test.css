@@ -73,3 +73,22 @@ body {
     align-items: flex-start;
     /* display: none; */
 }
+
+/*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
+.checkbox-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    color: lightseagreen;
+    outline: 2px dashed tomato;
+}
+.checkbox-container>label>input {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+    outline: 1px dotted green;
+    
+}

@@ -1,3 +1,4 @@
+//! 1.Модальне вікно
 (() => {
     const refs = {
         openModalBtn: document.querySelector("[data-modal-open]"),
