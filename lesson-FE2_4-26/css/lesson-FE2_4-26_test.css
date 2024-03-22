@@ -59,3 +59,12 @@ body {
 }
 
 /*! 2.Робота з формами */
+/* .fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+/* .fieldset input,
+.fieldset label {
+    display: block;
+} */

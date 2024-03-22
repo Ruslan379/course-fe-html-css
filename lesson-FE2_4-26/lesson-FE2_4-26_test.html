@@ -62,7 +62,48 @@
 
         <!--! 2.Робота з формами -->
         <h2 class="title-section">2.Робота з формами</h2>
-        
+        <form class="js-form">
+            <label for="username">Ім’я</label>
+            <input 
+                    type="text"
+                    name="user-name"
+                    id="username"
+                />
+            <label>
+                Пароль
+                <input 
+                    type="password"
+                    name="user-password"
+                />
+            </label>
+            <br />
+            <br />
+
+            <fieldset class="fieldset">
+                <input type="checkbox" name="topic" value="HTML" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="topic" value="CSS" id="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="topic" value="JS" id="js">
+                <label for="js">JS</label>
+
+                <label>
+                    <input 
+                        type="checkbox" 
+                        name="topic" 
+                        value="PHP"
+                    >
+                    PHP
+                </label>
+            </fieldset>
+            <br>
+            <br>
+
+            <button type="submit">SUBMIT-button</button>
+            <!-- <input type="button" value="SUBMIT-input"> -->
+        </form>
 
 
 
@@ -70,6 +111,7 @@
         <!--? Скрипт модалки -->
         <script src="./js/modal.js"></script>
         <script src="./js/modal-2.js"></script>
+        <script src="./js/form.js"></script>
     </body>
 
 </html>
