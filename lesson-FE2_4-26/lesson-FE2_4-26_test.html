@@ -32,16 +32,35 @@
         Урок-4. “Реалізація стилів для модальних вікон через позиціонування. Форми”
 
         <!--! 1.Модальне вікно -->
-        <button class="btn-open" data-open-modal>Відкрити модалку</button>
-        <div class="backdrop is-hidden">
+        <button class="btn-open" data-modal-open>Відкрити модалку</button>
+        <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="btn" data-close-modal>Закрити</button>
+                <button class="btn" data-modal-close>Закрити</button>
                 <p>....</p>
             </div>
         </div>
 
+        <!--? ========================= Модалка modal-2.js ============================== -->
+        <!-- <button type="button" class="button-main buttons" data-open-modal>Заказать услугу</button> -->
+        <div class="backdrop is-hidden" data-backdrop="">
+            <div class="modal">
+                    <button
+                        class="button-modal" 
+                        type="button" 
+                        data-close-modal=""
+                    >
+                        CLOSE
+                    </button>
+                <p class="modal-title">
+                    Оставьте свои данные, мы вам перезвоним
+                </p>
+            </div>
+        </div>
+        <!--? ========================= Модалка modal-2.js ============================== -->
+
         <!--? Скрипт модалки -->
         <script src="./js/modal.js"></script>
+        <script src="./js/modal-2.js"></script>
     </body>
 
 </html>
