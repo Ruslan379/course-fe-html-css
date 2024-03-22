@@ -90,5 +90,24 @@ body {
     height: 25px;
     margin-right: 20px;
     outline: 1px dotted green;
-    
+    /* display: none; */
 }
+.checkbox-label-description {
+    display: inline-block;
+    min-width: 100px;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: 700;
+    
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    color: inherit;
+    background-color: rgb(183, 183, 183);
+}
+.checkbox-label-description:hover {
+    cursor: pointer;
+    border: 1px solid lightseagreen;
+    color: darkgreen;
+    background-color: yellow;
+}
+
