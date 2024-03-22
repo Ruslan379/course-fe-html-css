@@ -1,0 +1,52 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-font-body: #564c00;
+    --color-background-body: #dbe2ff;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+/* *======================================= */
+
+/*! 1.Модальне вікно */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    background-color: skyblue;
+    transform: translate(-50%, -50%);
+}
