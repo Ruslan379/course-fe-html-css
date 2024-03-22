@@ -117,3 +117,47 @@ body {
     background-color: yellow;
 } */
 
+/*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
+/* ! */
+.button-submit1 {
+    /* padding: 0; */
+    padding: 15px;
+    font-family: monospace;
+    font-weight: 700;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    color: darkgreen;
+    fill: darkgreen;
+    background-color: antiquewhite;
+}
+.button-submit:hover {
+    border-color: darkgreen;
+    border-radius: 10px;
+    color: darkred;
+    fill: red;
+    background-color: lightblue;
+}
+
+.button-text {
+    outline: 1px dashed green;
+}
+
+.button-icon {
+    fill: inherit;
+    vertical-align: middle;
+    outline: 1px dashed red;
+}
+/* !  */
+/* .button-icon:hover {
+    fill: red;
+} */
+.button-submit:hover .button-icon {
+    cursor: pointer;
+    fill: inherit;
+    fill-opacity: 0.8;
+    stroke: blue;
+    stroke-width: 1px;
+    background-color: aqua;
+    outline: none;
+}
+
