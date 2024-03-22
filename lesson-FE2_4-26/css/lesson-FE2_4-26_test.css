@@ -3,6 +3,7 @@
     --color-font-body: #564c00;
     --color-background-body: #dbe2ff;
     --color-title-section: red;
+    --color-title-subsection: blue;
 }
 
 body {
@@ -23,6 +24,12 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     color: var(--color-title-section);
+}
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: var(--color-title-subsection);
 }
 
 /* *======================================= */
@@ -59,12 +66,10 @@ body {
 }
 
 /*! 2.Робота з формами */
-/* .fieldset {
+/*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
+.fieldset1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-} */
-/* .fieldset input,
-.fieldset label {
-    display: block;
-} */
+    /* display: none; */
+}
