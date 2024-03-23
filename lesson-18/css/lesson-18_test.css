@@ -90,4 +90,50 @@ body {
 
 
 /*! 2.Реалізація багатошарового фону */
+.overlay {
+    width: 1600px;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(255, 0, 0, 0.2),
+            rgba(0, 255, 0, 0.2)
+        ),
+        url("../images/fish.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+
+
+/*! 3.Застосування декоративних елементів через псевдоелементи */
+/*? декор-іконка у кнопці */
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: teal;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+.button::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    margin-right: 5px;
+    background-image: url(../images/turtle.webp);
+    background-size: contain;
+}
+.button:hover,
+.button:focus {
+    background-color: palevioletred;
+  }
