@@ -61,8 +61,14 @@ body {
     min-width: 400px;
     min-height: 300px;
     padding: 15px;
+    text-align: center;
     background-color: skyblue;
     transform: translate(-50%, -50%);
+}
+.modal .btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 /*! 2.Робота з формами */
@@ -136,9 +142,9 @@ body {
 
 /*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
 /* ! */
-/* .button-submit {
+.button-submit {
     display: none;
-} */
+}
 /* ! */
 .button-submit {
     margin: 0 auto;
@@ -200,11 +206,86 @@ body {
     cursor: not-allowed;
 } */
 
-/*? 5-1.:enabled і :disabled. Кнопка SUBMIT-input (disabled) */
-.form-input:checked {
+
+/*? 5-2.:checked​ */
+/* .form-input:checked {
     outline: 2px solid #2196f3;
     outline-offset: 2px;
 }
 .form-input:checked + .form-label {
     color: #2196f3;
+} */
+
+
+/*? 5-3.:in-range і :out-of-range​ */
+/* .input-age:in-range {
+    border-color: #4caf50;
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
 }
+.input-age:out-of-range {
+    border-color: #f44336;
+    outline: 2px solid #f44336;
+    outline-offset: 2px;
+} */
+
+
+/*? 5-4.:required і :optional */
+/* .input-name:required {
+    border-color: #f4d836;
+    outline: 2px solid #f4d836;
+    outline-offset: 2px;
+} */
+
+
+/*? 5-5.:valid і :invalid */
+/* .input-name:valid  {
+    border-color: #4caf50;
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}
+.input-name:invalid {
+    border-color: #f44336;
+    outline: 2px solid #f44336;
+    outline-offset: 2px;
+}  */
+
+/*? 5-6.:placeholder-shown */
+/* .input-name:required {
+    border-color: #f4d836;
+    outline: 2px solid #f4d836;
+    outline-offset: 2px;
+}
+.input-name:not(:placeholder-shown) {
+    border-color: blue;
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+.input-name:not(:placeholder-shown):valid  {
+    border-color: #4caf50;
+    outline: 2px solid #4caf50;
+    outline-offset: 2px;
+}
+.input-name:not(:placeholder-shown):invalid {
+    border-color: #f44336;
+    outline: 2px solid #f44336;
+    outline-offset: 2px;
+}  */
+
+/*? 5-7.:focus-within​ */
+/* .js-form:focus-within {
+    border: 2px solid #8fa6ff;
+    border-radius: 20px;
+} */
+
+/* .js-form:focus-within  { 
+    min-width: 400px;
+    display: grid;
+    border: 2px solid #8fa6ff;
+    border-radius: 20px;
+    padding: 25px 20px;
+    box-shadow: 
+        8px 8px 12px 8px rgba(30, 36, 55, 0.5),
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    background-color: #c5d1ff;
+} */

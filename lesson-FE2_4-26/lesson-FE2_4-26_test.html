@@ -32,11 +32,26 @@
 
         <!--! 1.Модальне вікно -->
         <h2 class="title-section">1.Модальне вікно</h2>
-        <button class="btn-open" data-modal-open>Відкрити модалку</button>
+        <!-- <button class="btn-open" data-modal-open>Відкрити модалку</button> -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="btn" data-modal-close>Закрити</button>
-                <p>....</p>
+                <br />
+                <br />
+                <p class="modal-text">Тут буде ФОРМА:</p>
+                <br />
+                <!-- <form>
+                    <label for="username">Ім’я</label>
+                    <input type="text" name="user-name" id="username"/>
+                    <br />
+                    <br />
+                    <label for="useremail">Email</label>
+                    <input type="email" name="user-email" id="useremail"/>
+                    <br />
+                    <br />
+                    <br />
+                    <button type="submit">Підтвердити</button>
+                </form> -->
             </div>
         </div>
 
@@ -63,12 +78,14 @@
         <h2 class="title-section">2.Робота з формами</h2>
         <form class="js-form">
             <!--? 2-1.Поля форми -->
-            <h3 class="title-subsection">2-1.Поля форми</h3>
+            <!-- <h3 class="title-subsection">2-1.Поля форми</h3>
             <label for="username">Ім’я</label>
-            <input 
+            <input
+                class="input-name"
                 type="text"
                 name="user-name"
                 id="username"
+                placeholder="Jac7"
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                 title="Вкажіть хоча б 1 символ верхнього регістру, 1 символ нижнього регістру англійскими літерами та 1 цифру "
                 required
@@ -86,9 +103,9 @@
                 />
             </label>
             <br />
-            <br />
+            <br /> -->
             <!--? 2-2.Чекбокси (прапорці) {inline} -->
-            <h3 class="title-subsection">2-2.Чекбокси (прапорці) {inline}</h3>
+            <!-- <h3 class="title-subsection">2-2.Чекбокси (прапорці) {inline}</h3>
             <fieldset class="fieldset">
                 <legend class="fieldset-title">Чекбокси {inline}</legend>
                 <input class="form-input" type="checkbox" name="topic" value="HTML" id="html">
@@ -111,9 +128,9 @@
                 </label>
             </fieldset>
             <br>
-            <br>
+            <br> -->
             <!--? 2-3.Чекбокси (прапорці) {block} -->
-            <h3 class="title-subsection">2-3.Чекбокси (прапорці) {block}</h3>
+            <!-- <h3 class="title-subsection">2-3.Чекбокси (прапорці) {block}</h3>
             <fieldset class="fieldset">
                 <label>
                     1.
@@ -145,9 +162,9 @@
                 </label>
             </fieldset>
             <br>
-            <br>
+            <br> -->
             <!--? 2-4.Радіо-кнопки (перемикачі) -->
-            <h3 class="title-subsection">2-4.Радіо-кнопки (перемикачі)</h3>
+            <!-- <h3 class="title-subsection">2-4.Радіо-кнопки (перемикачі)</h3>
             <p>Choose a color:</p>
             <div class="checkbox-container" role="group">
                 <label>
@@ -181,15 +198,17 @@
             <br>
             <label>
                 Вкажіть ваш вік
-                <input 
+                <input
+                    class="input-age"
                     type="number" 
-                    name="user-age" 
+                    name="user-age"
+                    value="0" 
                     min="16" 
                     max="30"
                 />
             </label>
             <br>
-            <br>
+            <br> -->
             <!--? 2-5.Кнопка SUBMIT-button -->
             <button class="button-submit" type="submit">
                 SUBMIT-button
@@ -212,7 +231,6 @@
                 value="SUBMIT-input (disabled)"
                 disabled
             /> -->
-
         </form>
 
 
@@ -233,12 +251,19 @@
         <!--! 5.Псевдокласи стану у формах -->
         <h2 class="title-section">5.Псевдокласи стану у формах</h2>
         <!--? 5-1.enabled і disabled​ дозволяють зробити елемент в активному або відключеному стані -->
-        <!-- Застосовуються до елементів <input>, <select> і <button> -->
-        <!--? 5-2.checked​ застосовується до радіокнопок і чекбоксів, -->
-        <!-- Дозволяє вибрати та стилізувати тільки відзначені поля. -->
+            <!-- Застосовуються до елементів <input>, <select> і <button> -->
+        <!--? 5-2.checked​ застосовується до радіокнопок і чекбоксів -->
+            <!-- Дозволяє вибрати та стилізувати тільки відзначені поля. -->
+        <!--? 5-3.in-range і out-of-range​ - ці псевдокласи застосовуються до елементів <range>, <number> і <date> -->
+            <!--якщо у них вказані атрибути min і max -->
+        <!--? 5-4.required і optional​ застосовуються до елементів, залежно від присутності або відсутності атрибута required -->
+        <!--? 5-5.:valid і :invalid​ дозволяють вибрати елементи з валідним або невалідним введеним значенням -->
+            <!--Перевірочні обмеження задаються атрибутами type, minlength, maxlength і pattern. -->
+        <!--? 5-6.:placeholder-shown​ застосовується, залежно від видимості плейсхолдера -->
+        <!--? 5-7.:focus-within​ застосовується до елемента, коли він сам або елементи всередині нього отримують фокус -->
 
 
-        <!--? Скрипт модалки -->
+        <!--! Скрипт модалки -->
         <script src="./js/modal.js"></script>
         <script src="./js/modal-2.js"></script>
         <script src="./js/form.js"></script>
