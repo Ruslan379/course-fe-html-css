@@ -16,6 +16,7 @@ body {
     gap: 20px;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
+    text-align: center;
     align-items: center;
     color: var(--color-font-body);
     background-color: var(--color-background-body);
