@@ -69,6 +69,8 @@
                 type="text"
                 name="user-name"
                 id="username"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                title="Вкажіть хоча б 1 символ верхнього регістру, 1 символ нижнього регістру англійскими літерами та 1 цифру "
                 required
             />
             <br />
@@ -78,6 +80,8 @@
                 <input 
                     type="password"
                     name="user-password"
+                    minlength="3"
+                    maxlength="5"
                     required
                 />
             </label>
@@ -87,17 +91,18 @@
             <h3 class="title-subsection">2-2.Чекбокси (прапорці) {inline}</h3>
             <fieldset class="fieldset">
                 <legend class="fieldset-title">Чекбокси {inline}</legend>
-                <input type="checkbox" name="topic" value="HTML" id="html">
-                <label for="html">HTML</label>
+                <input class="form-input" type="checkbox" name="topic" value="HTML" id="html">
+                <label class="form-label" for="html">HTML</label>
 
-                <input type="checkbox" name="topic" value="CSS" id="css">
-                <label for="css">CSS</label>
+                <input class="form-input" type="checkbox" name="topic" value="CSS" id="css">
+                <label class="form-label" for="css">CSS</label>
 
-                <input type="checkbox" name="topic" value="JS" id="js">
-                <label for="js">JS</label>
+                <input class="form-input" type="checkbox" name="topic" value="JS" id="js">
+                <label class="form-label" for="js">JS</label>
 
-                <label>
-                    <input 
+                <label class="form-label">
+                    <input
+                        class="form-input" 
                         type="checkbox" 
                         name="topic" 
                         value="PHP"
@@ -174,6 +179,17 @@
             </div>
             <br>
             <br>
+            <label>
+                Вкажіть ваш вік
+                <input 
+                    type="number" 
+                    name="user-age" 
+                    min="16" 
+                    max="30"
+                />
+            </label>
+            <br>
+            <br>
             <!--? 2-5.Кнопка SUBMIT-button -->
             <button class="button-submit" type="submit">
                 SUBMIT-button
@@ -185,13 +201,41 @@
             </button>
             <!--? 2-6.Кнопка SUBMIT-input (поганий варіант)-->
             <!-- <input class="button-submit" type="submit" value="SUBMIT-input"> -->
+            
+            <!--? 4-1.enabled і disabled. Кнопка SUBMIT-button (disabled) -->
+            <!-- <button class="btn" disabled>Disabled button</button> -->
+
+            <!--? 4-1.enabled і disabled. Кнопка SUBMIT-input (disabled) -->
+            <!-- <input 
+                class="button-submit" 
+                type="submit"
+                value="SUBMIT-input (disabled)"
+                disabled
+            /> -->
+
         </form>
 
 
-        <!--! 3.Валідація форм -->
-        <h2 class="title-section">3.Валідація форм</h2>
+        <!--! 3.Стилізація форм -->
+        <h2 class="title-section">3.Стилізація форм</h2>
+
+
+        <!--! 4.Валідація форм -->
+        <h2 class="title-section">4.Валідація форм</h2>
+        <!--? 4-1.Обов'язкові поля - логічний атрибут required -->
+        <!--? 4-2.Обмеження довжини​ - атрибути minlength і maxlength -->
+        <!--? 4-2.Обмеження значення​ - атрибути min і max -->
+        <!-- Можуть використовуватися тільки в полях з типом number, range або date -->
+        <!--? 4-3.Регулярний вираз​ - атрибут pattern -->
+        <!-- Додатковий текст-підказку, можна вказати в атрибуті title. -->
 
         
+        <!--! 5.Псевдокласи стану у формах -->
+        <h2 class="title-section">5.Псевдокласи стану у формах</h2>
+        <!--? 5-1.enabled і disabled​ дозволяють зробити елемент в активному або відключеному стані -->
+        <!-- Застосовуються до елементів <input>, <select> і <button> -->
+        <!--? 5-2.checked​ застосовується до радіокнопок і чекбоксів, -->
+        <!-- Дозволяє вибрати та стилізувати тільки відзначені поля. -->
 
 
         <!--? Скрипт модалки -->

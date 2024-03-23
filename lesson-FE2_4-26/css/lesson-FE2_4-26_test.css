@@ -192,3 +192,19 @@ body {
     outline: none;
 }
 
+
+/*! 5.Псевдокласи стану у формах */
+/*? 5-1.:enabled і :disabled. Кнопка SUBMIT-input (disabled) */
+/* .button-submit:disabled  {
+    background-color: lightgray;
+    cursor: not-allowed;
+} */
+
+/*? 5-1.:enabled і :disabled. Кнопка SUBMIT-input (disabled) */
+.form-input:checked {
+    outline: 2px solid #2196f3;
+    outline-offset: 2px;
+}
+.form-input:checked + .form-label {
+    color: #2196f3;
+}
