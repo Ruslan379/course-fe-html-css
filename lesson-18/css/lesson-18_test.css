@@ -1,0 +1,43 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-font-body: #5d5200;
+    --color-background-body: #dbf3ff;
+    --color-title-section: red;
+    --color-title-subsection: blue;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    padding: 20px;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--color-title-section);
+}
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+}
+
+/* *======================================= */
+
+/*! Фон елементу */
+
+
+
+/*! 2.Робота з формами */
+/*? 2-1.Поля форми - Стилізація форми */
