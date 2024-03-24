@@ -1,0 +1,462 @@
+:root {
+    /* *============ CSS-змінні ============ */
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-font-main: #212121;
+    --color-font-second: #757575;
+    --color-font-third: rgba(255, 255, 255, 0.6);
+    --color-brand-main: #2196F3;
+    --color-brand-active: #188CE8;
+    --color-background-dark: #2F303A;
+    --color-background-light: #F5F4FA;
+    /* *========================================== */
+    --color-background-another: #E5E5E5;
+    --color-background-footer: #2F303A;
+    --color-background-footer-icon: rgba(255, 255, 255, 0.1);
+    --color-background-backdrop: rgba(0, 0, 0, 0.2);
+    --color-background-activity: rgba(47, 48, 58, 0.8);
+    --color-background-overlay: rgba(33, 150, 243, 0.9);
+    /* *========================================== */
+    --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
+    /* *========================================== */
+    --color-border-line: #ECECEC;
+    --color-borders-portfolio: #EEEEEE;
+    --color-border-clients: #AFB1B8;
+    --color-border-modal: rgba(33, 33, 33, 0.2);
+    /* *========================================== */
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+
+/** === 1.Властивість font-family === */
+/** перевірка завантаження шрифта'Roboto' 400, 500, 700, 900 */
+/*!  Виносимо однакові властивості єлементів до body  */
+body {
+    font-family: var(--font-family);
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 14px;
+    background-color: var(--color-light);
+}
+
+/*!  ГОЛОВНИЙ Контейнер - обгортає відразу увесь контент сторінки */
+.main-container {
+    width: 1600px;
+    margin: 0 auto;
+    outline: 4px double #ff0000;
+}
+
+/*!  Контейнер - обгортає відразу увесь контент або секції  */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 1px dashed tomato;
+}
+
+/*! portfolio.html */
+/*? header */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: #d2fff2;
+}
+
+/** Додаткові flex-властивості до container */
+/** var. 1 */
+.flex,
+.navigation,
+.nav-list,
+.contacts-list {
+    display: flex;
+    align-items: center;
+}
+
+/** var. 2 */
+.header .container,
+.navigation,
+.nav-list,
+.contacts-list {
+    display: flex;
+    align-items: center;
+}
+
+/* .navigation {
+    margin-right: 344px;
+} */
+
+.logo {
+    /* margin-right: 93px; */
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: normal;
+    font-style: normal;
+    letter-spacing: 0.78px;
+    color: var(--color-brand-main);
+}
+
+.logo-dark {
+    color: var(--color-dark);
+}
+
+/* .nav-item:not(:last-child) {
+    margin-right: 50px
+} */
+
+.nav-link {
+    /* font-family: 'Roboto'; */
+    font-weight: 500;
+    /* font-size: 14px; */
+    /* letter-spacing: 0.02em; */
+    letter-spacing: 0.28px;
+    color: var(--color-font-main); 
+}
+.active-link {
+    color: var(--color-brand-main); 
+}
+
+/* .contacts-item:not(:last-child) {
+    margin-right: 50px
+} */
+
+.contacts-link {
+    /* font-family: 'Roboto'; */
+    font-weight: 500;
+    /* font-size: 14px; */
+    letter-spacing: 0.02em;
+    /* letter-spacing: 0.28px; */
+    color: var(--color-font-main); 
+}
+.contacts-link:hover {
+    color: var(--color-brand-main); 
+}
+
+
+/*? main */
+/*? section hero */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--color-background-dark);
+}
+
+/** Додаткові flex-властивості до container */
+.flex-column {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    max-width: 696px;
+    /* margin: 0 auto 30px; */
+    margin-bottom: 30px;
+    /* font-family: 'Roboto'; */
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px; /* 136.364% */
+    line-height: 1.36;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    /* letter-spacing: 2.64px; */
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-light);
+    /* background-color: var(--color-dark); */
+}
+
+.hero-button {
+    /* display: block; */
+    /* margin: 0 auto; */
+    padding: 10px 32px;
+    /* font-family: 'Roboto'; */
+    font-weight: 700;
+    font-size: 16px;
+    /* line-height: 187%; */
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    /* letter-spacing: 0.96px; */
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    color: var(--color-light);
+    background-color: var(--color-brand-main);
+}
+.hero-button:active {
+    background-color: var(--color-brand-active);
+    background-color: red;
+}
+
+
+/*? section features */
+.section-features {
+    padding-top: 94px;
+    background-color: #fffbd2;
+}
+
+/** стилізация  заголовків h2 у ВСІХ секціях */
+.section-title {
+    margin-bottom: 50px;
+    /* font-family: 'Roboto'; */
+    font-weight: 700;
+    font-size: 36px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.03em;
+    /* letter-spacing: 1.08px; */
+    text-align: center;
+    color: var(--color-font-main);
+}
+.visually-hidden {
+    /** var. 1 */
+    display: none;
+    /** var. 2 */
+    /* visibility: hidden;
+    pointer-events: none;
+    position: absolute; */
+}
+
+.features-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.features-item {
+    min-width: 270px;
+    flex-basis: 270px;
+    /** var. 1 */
+    /* margin-right: 30px; */
+    /* margin-right: 26px; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+}
+/** var. 1 */
+/* .features-item:last-child {
+    margin-right: 0;
+} */
+/** var. 2 */
+/* .features-item:not(:last-child) {
+    margin-right: 30px
+} */
+/** var. 3 */
+.features-item+.features-item {
+    margin-left: 30px;
+}
+
+/** додаєм іконки */
+.features-item::before {
+    margin-bottom: 30px;
+    content: "";
+    display: block;
+    height: 120px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-background-light);
+}
+.features-item:nth-child(1)::before { 
+    /** var. 1 */
+    /* background-image: url(../images/antenna-full.png); */
+    /** var. 2 */
+    background-image: url(../images/antenna.svg);
+}
+.features-item:nth-child(2)::before { 
+    /** var. 1 */
+    /* background-image: url(../images/clock-full.png); */
+    /** var. 2 */
+    background-image: url(../images/clock.svg);
+}
+.features-item:nth-child(3 )::before { 
+    /** var. 1 */
+    /* background-image: url(../images/diagram-full.png); */
+    /** var. 2 */
+    background-image: url(../images/diagram.svg);
+}
+.features-item:nth-child(4)::before { 
+    /** var. 1 */
+    /* background-image: url(../images/astronaut-full.png); */
+    /** var. 2 */
+    background-image: url(../images/astronaut.svg);
+}
+
+.features-title {
+    margin-bottom: 10px;
+    /* font-family: 'Roboto'; */
+    font-weight: 700;
+    /* font-size: 14px; */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-font-main);
+}
+
+
+
+.features-description {
+    /* font-family: 'Roboto'; */
+    font-weight: 400;
+    /* font-size: 14px; */
+    /* line-height: 171%; */
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-font-second);
+}
+
+
+/*? section activities */
+.section-activities {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* padding-bottom: 90px; */
+    background-color: #d2e4ff;
+}
+
+/* .activities-list {
+    text-align: center;
+} */
+
+.activities-list {
+    display: flex;
+}
+
+/** var. 1 */
+/* .activities-item {
+    margin-right: 30px;
+    margin-right: 26px;
+    display: inline-block;
+}
+.activities-item:last-child {
+    margin-right: 0;
+} */
+/** var. 2 */
+/* .activities-item:not(:last-child) {
+    margin-right: 30px
+} */
+/** var. 3 */
+.activities-item+.activities-item {
+    margin-left: 30px
+}
+
+
+/*? section team */
+.section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--color-background-light);
+}
+
+/* .team-list {
+    text-align: center;
+} */
+
+.team-list {
+    display: flex;
+}
+
+.team-item {
+    /** var. 1 */
+    /* margin-right: 30px; */
+    /* margin-right: 26px; */
+    /* display: inline-block; */
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 
+        0 2px 1px 0 rgba(0, 0, 0, 0.2), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.14), 
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background-color: var(--color-light);
+}
+/* .team-item:last-child {
+    margin-right: 0;
+} */
+/** var. 2 */
+/* .team-item:not(:last-child) {
+    margin-right: 30px;
+} */
+/** var. 3 */
+.team-item+.team-item {
+    margin-left: 30px;
+}
+
+.team-image {
+    margin-bottom: 30px;
+}
+
+.team-name {
+    margin-bottom: 10px;
+    /* font-family: 'Roboto'; */
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-font-main);
+}
+
+.team-position {
+    /* font-family: 'Roboto'; */
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-font-second);
+}
+
+
+/*? footer */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--color-background-dark);
+}
+
+/* .address {
+    margin-top: 20px;
+} */
+
+.footer .logo {
+    display: inline-block;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.logo-light {
+    color: var(--color-light);
+    /* margin-bottom: 20px; */
+    /* background-color: var(--color-dark); */
+}
+
+/* .footer-item {
+    margin-bottom: 9px;
+}
+.footer-item:last-child {
+    margin-bottom: 0;
+} */
+.footer-item:not(:last-child) {
+    margin-bottom: 9px
+}
+
+.footer-link {
+    /* font-family: 'Roboto'; */
+    /* font-weight: 400; */
+    /* font-size: 14px; */
+    /* line-height: 171%; */
+    line-height: 1.71;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: var(--color-font-third);
+    /* background-color: var(--color-dark); */
+}
+.white-color {
+    color: var(--color-light);
+}
+
+/*? ____________________________________________ */
+
+/*! portfolio.html */
+/*? section portfolio */
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: rgb(192, 233, 255);
+}
