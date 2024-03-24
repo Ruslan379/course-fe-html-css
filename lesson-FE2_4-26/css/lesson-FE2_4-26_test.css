@@ -101,7 +101,7 @@ body {
     color: brown;
 }
 
-/*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
+/*? 2-4.Радіо-кнопки (перемикачі) */
 /* ! */
 /* .checkbox-container>label>input {
     display: none;
@@ -141,11 +141,11 @@ body {
     background-color: yellow;
 } */
 
-/*? 2-3.Радіо-кнопки (перемикачі) {inline} {block} */
+/*? 2-5.Кнопка SUBMIT-button */
 /* ! */
-.button-submit {
+/* .button-submit {
     display: none;
-}
+} */
 /* ! */
 .button-submit {
     margin: 0 auto;
@@ -176,7 +176,18 @@ body {
     box-shadow: 2px 2px 6px 2px rgba(30, 36, 55, 0.5);
 }
 
-.button-text {
+.button-text-1 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 28px;
+    color: blueviolet;
+    outline: 1px dashed green;
+}
+.button-text-2 {
+    font-family: 'Tangerine';
+    font-weight: 700;
+    font-size: 32px;
+    color: rgb(255, 0, 221);
     outline: 1px dashed green;
 }
 
@@ -185,6 +196,7 @@ body {
     vertical-align: middle;
     outline: 1px dashed red;
 }
+
 /* !  */
 /* .button-icon:hover {
     fill: red;
