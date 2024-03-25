@@ -461,61 +461,102 @@ h2 {
         100px 200px/80px 
         scroll; */
 }
-
-
-
-
-
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
+/* todo */
 /* * ----------------------------------------------- */
-/*! Властивості фону — hw-16_1 */
+/*todo  Властивості фону — Багатошаровий фон (hw-16_1) */
 .bg-box {
-    width: 1200px;
-    height: 675px;
+    /* width: 1200px; */
+    /* height: 675px; */
+    width: 50vw;
+    height: calc(50vw*9/16);
     margin: 20px auto;
+
+    /** background-властивості */
     background-color: green;
 
-    background-image: 
-        url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
-        url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
-        /*? hedgehog */
-        url("../images/hedgehog.webp"),
-        /* url("https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru"), */
+    background-image:
+        /*? lamp */
+        /* url("../images/lamp.png"), */
+        url("https://www.freeiconspng.com/uploads/lamp-png-0.png"),
         /*? green-grass */
         /* url("../images/green-grass.png"), */
         url("https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png"),
+        /*? cupcake */
+        url("../images/cupcake.png"),
+        /* url("https://avatanplus.com/files/resources/mid/58eb07b830eab15b56162788.png"), */
+        /*? hedgehog */
+        url("../images/hedgehog.webp"),
+        /* url("https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru"), */
         /*? landscape */
         url("../images/landscape.webp");
         /* url("https://img.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.webp"); */
 
     background-repeat:
-        no-repeat,
-        no-repeat,
-        /*? hedgehog */
-        repeat-y,
+        /*? lamp */
+        repeat-x,
         /*? green-grass */
         repeat-x,
+        /*? cupcake */
+        repeat-y,
+        /*? hedgehog */
+        repeat-y,
         /*? landscape */
         no-repeat;
 
-    background-size: 
-        80px, 
-        100px,
-        /*? hedgehog */
-        /* auto 4%,  */
-        auto calc(100% / 25),
+    background-size:
+        /*? lamp */
+        /* 4%, */
+        calc(100% / 25),
         /*? green-grass */
         /* 22.22%, */
         calc(100% / 4.5),
+        /*? cupcake */
+        /* auto 5%,  */
+        auto calc(100% / 20),
+        /*? hedgehog */
+        /* auto 4%,  */
+        auto calc(100% / 25),
         /*? landscape */
+        /* cover; */
+        /* contain; */
         auto;
 
-    background-position: 
-        top 120px right 130px, 
-        top 270px left 130px,
-        /*? hedgehog */ 
+    background-position:
+        /*? lamp */
         left top,
         /*? green-grass */ 
         left bottom,
+        /*? cupcake */
+        right top,
+        /*? hedgehog */ 
+        left top,
         /*? landscape */
         center;
 }
