@@ -421,7 +421,8 @@ h2 {
         url('https://stickerswiki.ams3.cdn.digitaloceanspaces.com/Pig_Valera/223715.512.webp'),
         url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
 
-    background-repeat: no-repeat;
+    background-repeat: 
+        no-repeat;
 
     background-size: 
         80px, 
@@ -459,4 +460,62 @@ h2 {
         no-repeat 
         100px 200px/80px 
         scroll; */
+}
+
+
+
+
+
+/* * ----------------------------------------------- */
+/*! Властивості фону — hw-16_1 */
+.bg-box {
+    width: 1200px;
+    height: 675px;
+    margin: 20px auto;
+    background-color: green;
+
+    background-image: 
+        url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+        url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+        /*? hedgehog */
+        url("../images/hedgehog.webp"),
+        /* url("https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/%D0%81%D0%B6%D0%B8%D0%BA.png/revision/latest?cb=20180209130328&path-prefix=ru"), */
+        /*? green-grass */
+        /* url("../images/green-grass.png"), */
+        url("https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png"),
+        /*? landscape */
+        url("../images/landscape.webp");
+        /* url("https://img.goodfon.ru/wallpaper/big/0/5b/pole-zelen-trava-dom-derevya.webp"); */
+
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        /*? hedgehog */
+        repeat-y,
+        /*? green-grass */
+        repeat-x,
+        /*? landscape */
+        no-repeat;
+
+    background-size: 
+        80px, 
+        100px,
+        /*? hedgehog */
+        /* auto 4%,  */
+        auto calc(100% / 25),
+        /*? green-grass */
+        /* 22.22%, */
+        calc(100% / 4.5),
+        /*? landscape */
+        auto;
+
+    background-position: 
+        top 120px right 130px, 
+        top 270px left 130px,
+        /*? hedgehog */ 
+        left top,
+        /*? green-grass */ 
+        left bottom,
+        /*? landscape */
+        center;
 }
