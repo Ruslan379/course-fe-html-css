@@ -62,8 +62,8 @@ body {
     background-color: #d2fff2;
 }
 
-/** Додаткові flex-властивості до container */
-/** var. 1 */
+/** --- Додаткові flex-властивості до container ---- */
+/*todo var. 1 */
 .flex,
 .navigation,
 /* .logo, */
@@ -76,7 +76,7 @@ body {
     align-items: center;
 }
 
-/** var. 2 */
+/*todo var. 2 */
 .header .container,
 .navigation,
 /* .logo, */
@@ -88,6 +88,7 @@ body {
     display: flex;
     align-items: center;
 }
+/** _________________________________________________ */
 
 /* .navigation, 
 .logo {
@@ -177,13 +178,14 @@ body {
     background-color: var(--color-background-dark);
 }
 
-/** Додаткові flex-властивості до container */
+/** --- Додаткові flex-властивості до container ---- */
 .flex-column {
     /* display: inline-block; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/** _________________________________________________ */
 
 .hero-title {
     max-width: 696px;
@@ -233,6 +235,10 @@ body {
     background-color: #fffbd2;
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
+
 /** стилізация  заголовків h2 у ВСІХ секціях */
 .section-title {
     margin-bottom: 50px;
@@ -246,6 +252,8 @@ body {
     text-align: center;
     color: var(--color-font-main);
 }
+
+/*todo Приховуємо заговок */
 .visually-hidden {
     /** var. 1 */
     display: none;
@@ -328,8 +336,6 @@ body {
     color: var(--color-font-main);
 }
 
-
-
 .features-description {
     /* font-family: 'Roboto'; */
     font-weight: 400;
@@ -348,6 +354,10 @@ body {
     /* padding-bottom: 90px; */
     background-color: #d2e4ff;
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
 
 /* .activities-list {
     text-align: center;
@@ -382,6 +392,10 @@ body {
     padding-bottom: 94px;
     background-color: var(--color-background-light);
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
 
 /* .team-list {
     text-align: center;
@@ -447,6 +461,10 @@ body {
     background-color: var(--color-background-dark);
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
+
 /* .address {
     margin-top: 20px;
 } */
@@ -498,16 +516,19 @@ body {
     background-color: rgb(192, 233, 255);
 }
 
-/** Додаткові flex-властивості до container */
-/* flex-column */
+/** --- Додаткові flex-властивості до container ---- */
+/*todo flex-column */
+/** _________________________________________________ */
 
-
-/*todo Список карток */
+/*todo Список кнопок */
 .portfolio-button-list {
+    padding-bottom: 16px;
+    margin-bottom: 34px;
     display: flex;
     outline: 2px dotted blue;
 }
 
+/*todo Список карток */
 .portfolio-card-list {
     display: flex;
     flex-wrap: wrap;
