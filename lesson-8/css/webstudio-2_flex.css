@@ -185,18 +185,18 @@ body {
     /* max-width: 1600px; */
     /* height: 600px; */
     background-color: var(--color-background-overlay-hero);
-    /*todo var.1 */
-    /* background-image: 
+    /*todo var.1 (ДЗ-18)*/
+    background-image: 
         linear-gradient(
             to right, 
             var(--color-background-overlay-img), 
             var(--color-background-overlay-img)
         ), 
-        url(../images/background-img-hero.jpg); */
-    /*todo var.2 */
-    background-image:
-        url(../images/overlay-img.png),
         url(../images/background-img-hero.jpg);
+    /*todo var.2 */
+    /* background-image:
+        url(../images/overlay-img.png),
+        url(../images/background-img-hero.jpg); */
     /*todo ______________________________________________________ */
     background-position: center;
     background-size: cover;
