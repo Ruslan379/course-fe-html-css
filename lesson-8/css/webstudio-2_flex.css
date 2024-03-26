@@ -182,8 +182,12 @@ body {
 
 /*todo Фонове зображення з градієнтним накладенням */
 .overlay {
-    /* max-width: 1600px; */
-    /* height: 600px; */
+    /** --- задати, якщо нема <div class="main-container">: --- */
+    /* max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat; */
+    /** ________________________________________________________ */
     background-color: var(--color-background-overlay-hero);
     /*todo var.1 (ДЗ-18)*/
     background-image: 
@@ -293,7 +297,6 @@ body {
 }
 
 .features-item {
-    min-width: 270px;
     flex-basis: 270px;
     /** var. 1 */
     /* margin-right: 30px; */
@@ -314,7 +317,7 @@ body {
     margin-left: 30px;
 } */
 
-/** додаєм іконки */
+/** ----------- додаєм зображення-іконки ----------- */
 .features-item::before {
     margin-bottom: 30px;
     content: "";
@@ -333,22 +336,23 @@ body {
 }
 .features-item:nth-child(2)::before { 
     /** var. 1 */
-    /* background-image: url(../images/clock-full.png); */
+    background-image: url(../images/clock-full.png);
     /** var. 2 */
-    background-image: url(../images/clock.svg);
+    /* background-image: url(../images/clock.svg); */
 }
 .features-item:nth-child(3 )::before { 
     /** var. 1 */
-    /* background-image: url(../images/diagram-full.png); */
+    background-image: url(../images/diagram-full.png);
     /** var. 2 */
-    background-image: url(../images/diagram.svg);
+    /* background-image: url(../images/diagram.svg); */
 }
 .features-item:nth-child(4)::before { 
     /** var. 1 */
-    /* background-image: url(../images/astronaut-full.png); */
+    background-image: url(../images/astronaut-full.png);
     /** var. 2 */
-    background-image: url(../images/astronaut.svg);
+    /* background-image: url(../images/astronaut.svg); */
 }
+/** ________________________________________________ */
 
 .features-title {
     margin-bottom: 10px;

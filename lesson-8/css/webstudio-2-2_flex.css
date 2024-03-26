@@ -36,6 +36,7 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     font-size: 14px;
     background-color: var(--color-light);
+    background-color: #d6efff;
 }
 
 /*!  ГОЛОВНИЙ Контейнер - обгортає відразу увесь контент сторінки */
@@ -70,6 +71,8 @@ body {
 .contacts-list {
     display: flex;
     align-items: center;
+    /** для розташування без margin */
+    justify-content: space-between;
 }
 
 /*todo. var. 2 */
@@ -79,7 +82,7 @@ body {
 .contacts-list {
     display: flex;
     align-items: center;
-    /* ! для розташування без margin */
+    /** для розташування без margin */
     justify-content: space-between;
 }
 
@@ -97,10 +100,11 @@ body {
     color: var(--color-dark);
 }
 
-/* ! для розташування без margin */
+/** для розташування без margin */
 .nav-list {
     min-width: 281px;
-    /* flex-basis: calc(100% / 4 + 50px); */
+    gap: 50px;
+    outline: 1px dotted blue;
 }
 
 .nav-link {
@@ -115,10 +119,11 @@ body {
     color: var(--color-brand-main); 
 }
 
-/* ! для розташування без margin */
+/** для розташування без margin */
 .contacts-list {
     min-width: 307px;
-    /* flex-basis: calc(100% / 2 + 50px); */
+    gap: 50px;
+    outline: 1px dotted blue;
 }
 
 .contacts-link {
@@ -144,7 +149,6 @@ body {
 
 /** Додаткові flex-властивості до container */
 .flex-column {
-    /* display: inline-block; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,6 +215,8 @@ body {
     text-align: center;
     color: var(--color-font-main);
 }
+
+/*todo Приховуємо заговок */
 .visually-hidden {
     /** var. 1 */
     display: none;
@@ -223,31 +229,15 @@ body {
 .features-list {
     display: flex;
     align-items: flex-start;
+    /** для розташування без margin */
+    justify-content: space-between;
 }
 
 .features-item {
-    min-width: 270px;
     flex-basis: 270px;
-    /** var. 1 */
-    /* margin-right: 30px; */
-    /* margin-right: 26px; */
-    /* display: inline-block; */
-    /* vertical-align: top; */
-}
-/** var. 1 */
-/* .features-item:last-child {
-    margin-right: 0;
-} */
-/** var. 2 */
-/* .features-item:not(:last-child) {
-    margin-right: 30px
-} */
-/** var. 3 */
-.features-item+.features-item {
-    margin-left: 30px;
 }
 
-/** додаєм іконки */
+/** ----------- додаєм зображення-іконки ----------- */
 .features-item::before {
     margin-bottom: 30px;
     content: "";
@@ -282,6 +272,7 @@ body {
     /** var. 2 */
     background-image: url(../images/astronaut.svg);
 }
+/** ________________________________________________ */
 
 .features-title {
     margin-bottom: 10px;
@@ -292,8 +283,6 @@ body {
     text-transform: uppercase;
     color: var(--color-font-main);
 }
-
-
 
 .features-description {
     /* font-family: 'Roboto'; */
@@ -310,34 +299,13 @@ body {
 .section-activities {
     padding-top: 94px;
     padding-bottom: 94px;
-    /* padding-bottom: 90px; */
     background-color: #d2e4ff;
 }
 
-/* .activities-list {
-    text-align: center;
-} */
-
 .activities-list {
     display: flex;
-}
-
-/** var. 1 */
-/* .activities-item {
-    margin-right: 30px;
-    margin-right: 26px;
-    display: inline-block;
-}
-.activities-item:last-child {
-    margin-right: 0;
-} */
-/** var. 2 */
-/* .activities-item:not(:last-child) {
-    margin-right: 30px
-} */
-/** var. 3 */
-.activities-item+.activities-item {
-    margin-left: 30px
+    /** для розташування без margin */
+    justify-content: space-between;
 }
 
 
@@ -348,19 +316,13 @@ body {
     background-color: var(--color-background-light);
 }
 
-/* .team-list {
-    text-align: center;
-} */
-
 .team-list {
     display: flex;
+    /** для розташування без margin */
+    justify-content: space-between;
 }
 
 .team-item {
-    /** var. 1 */
-    /* margin-right: 30px; */
-    /* margin-right: 26px; */
-    /* display: inline-block; */
     padding-bottom: 30px;
     border-radius: 0 0 4px 4px;
     box-shadow: 
@@ -368,17 +330,6 @@ body {
         0 1px 1px 0 rgba(0, 0, 0, 0.14), 
         0 1px 3px 0 rgba(0, 0, 0, 0.12);
     background-color: var(--color-light);
-}
-/* .team-item:last-child {
-    margin-right: 0;
-} */
-/** var. 2 */
-/* .team-item:not(:last-child) {
-    margin-right: 30px;
-} */
-/** var. 3 */
-.team-item+.team-item {
-    margin-left: 30px;
 }
 
 .team-image {
@@ -412,10 +363,6 @@ body {
     background-color: var(--color-background-dark);
 }
 
-/* .address {
-    margin-top: 20px;
-} */
-
 .footer .logo {
     display: inline-block;
     margin-right: 0;
@@ -424,16 +371,9 @@ body {
 
 .logo-light {
     color: var(--color-light);
-    /* margin-bottom: 20px; */
     /* background-color: var(--color-dark); */
 }
 
-/* .footer-item {
-    margin-bottom: 9px;
-}
-.footer-item:last-child {
-    margin-bottom: 0;
-} */
 .footer-item:not(:last-child) {
     margin-bottom: 9px
 }
