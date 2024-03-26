@@ -9,6 +9,7 @@
     --color-brand-active: #188CE8;
     --color-background-dark: #2F303A;
     --color-background-light: #F5F4FA;
+    --color-border-portfolio: #EEEEEE;
     /* *========================================== */
     --color-background-another: #E5E5E5;
     --color-background-footer: #2F303A;
@@ -20,7 +21,6 @@
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
     /* *========================================== */
     --color-border-line: #ECECEC;
-    --color-borders-portfolio: #EEEEEE;
     --color-border-clients: #AFB1B8;
     --color-border-modal: rgba(33, 33, 33, 0.2);
     /* *========================================== */
@@ -216,7 +216,7 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     /* letter-spacing: 0.96px; */
-    text-align: center;
+    /* text-align: center; */
     border: none;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -282,13 +282,13 @@ body {
     margin-right: 0;
 } */
 /** var. 2 */
-/* .features-item:not(:last-child) {
+.features-item:not(:last-child) {
     margin-right: 30px
-} */
-/** var. 3 */
-.features-item+.features-item {
-    margin-left: 30px;
 }
+/** var. 3 */
+/* .features-item+.features-item {
+    margin-left: 30px;
+} */
 
 /** додаєм іконки */
 .features-item::before {
@@ -513,7 +513,7 @@ body {
 .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: rgb(192, 233, 255);
+    /* background-color: rgb(192, 233, 255); */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -525,7 +525,35 @@ body {
     padding-bottom: 16px;
     margin-bottom: 34px;
     display: flex;
-    outline: 2px dotted blue;
+    /* outline: 2px dotted blue; */
+}
+
+.button-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-button {
+    padding: 6px 22px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 162%; */
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    /* text-align: center; */
+    border: none;
+    border-radius: 4px;
+    color: var(--color-font-main);
+    background-color: var(--color-background-light);
+}
+.portfolio-button:hover {
+    color: var(--color-light);
+    background-color: var(--color-brand-main);
+    box-shadow: 
+        1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
 }
 
 /*todo Список карток */
@@ -537,16 +565,13 @@ body {
     /* margin-bottom: -30px; */
     /** var. 2 */
     gap: 30px;
-    outline: 2px dotted green;
+    /* outline: 2px dotted green; */
 }
 
 .card-item {
-    padding-bottom: 20px;
-    /*? var.1 with flex-grow: 1;*/
+    /* padding-bottom: 20px; */
     display: flex;
     flex-direction: column;
-    /*? var.2 w/o flex-grow: 1;*/
-    /* display: grid; */
     /** var. 1 */
     /* margin-left: 30px; */
     /* margin-bottom: 30px; */
@@ -554,20 +579,37 @@ body {
     /* width: 370px; */
     /** var. 3 */
     flex-basis: calc((100% - 60px) / 3);
-    
-    outline: 2px dotted rgb(255, 247, 94);
+    /*todo ❌ border var. 1 - невірний */
+    /* border: 1px solid var(--color-border-portfolio); */
+    /* outline: 1px dotted rgb(255, 94, 247); */
+}
+
+.card-item:hover {
+    box-shadow: 
+        1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .card-text-box {
-    /*? var.2 w/o flex-grow: 1;*/
     flex-grow: 1;
-    
     padding: 20px 24px;
-    outline: 1px dotted rgb(255, 94, 247);
+    /*todo ✅ border var. 2 - вірний */
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--color-border-portfolio);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-border-portfolio);
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--color-border-portfolio);
+    /* outline: 2px dotted rgb(255, 247, 94); */
 }
 
 .card-title {
     margin-bottom: 4px;
+    /* font-family: var(--font-family); */
     font-weight: 700;
     font-size: 18px;
     /* line-height: 200%; */
@@ -577,6 +619,7 @@ body {
 }
 
 .card-description {
+    /* font-family: var(--font-family); */
     font-size: 16px;
     /* line-height: 187%; */
     line-height: 1.87;
