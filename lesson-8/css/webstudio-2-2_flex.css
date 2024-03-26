@@ -63,7 +63,7 @@ body {
 }
 
 /** Додаткові flex-властивості до container */
-/** var. 1 */
+/*todo var. 1 */
 .flex,
 .navigation,
 .nav-list,
@@ -72,21 +72,19 @@ body {
     align-items: center;
 }
 
-/** var. 2 */
+/*todo. var. 2 */
 .header .container,
 .navigation,
 .nav-list,
 .contacts-list {
     display: flex;
     align-items: center;
+    /* ! для розташування без margin */
+    justify-content: space-between;
 }
 
-/* .navigation {
-    margin-right: 344px;
-} */
-
 .logo {
-    /* margin-right: 93px; */
+    margin-right: 93px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -95,14 +93,15 @@ body {
     letter-spacing: 0.78px;
     color: var(--color-brand-main);
 }
-
 .logo-dark {
     color: var(--color-dark);
 }
 
-/* .nav-item:not(:last-child) {
-    margin-right: 50px
-} */
+/* ! для розташування без margin */
+.nav-list {
+    min-width: 281px;
+    /* flex-basis: calc(100% / 4 + 50px); */
+}
 
 .nav-link {
     /* font-family: 'Roboto'; */
@@ -116,9 +115,11 @@ body {
     color: var(--color-brand-main); 
 }
 
-/* .contacts-item:not(:last-child) {
-    margin-right: 50px
-} */
+/* ! для розташування без margin */
+.contacts-list {
+    min-width: 307px;
+    /* flex-basis: calc(100% / 2 + 50px); */
+}
 
 .contacts-link {
     /* font-family: 'Roboto'; */
