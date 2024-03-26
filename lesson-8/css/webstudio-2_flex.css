@@ -53,7 +53,8 @@ body {
     outline: 1px dashed tomato;
 }
 
-/*! portfolio.html */
+/*! -------------- webstudio.html --------------*/
+/*! -------------- (index.html) --------------*/
 /*? header */
 .header {
     padding-top: 24px;
@@ -489,10 +490,75 @@ body {
 
 /*? ____________________________________________ */
 
-/*! portfolio.html */
+/*! -------------- portfolio.html --------------*/
 /*? section portfolio */
 .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: rgb(192, 233, 255);
+}
+
+/** Додаткові flex-властивості до container */
+/* flex-column */
+
+
+/*todo Список карток */
+.portfolio-button-list {
+    display: flex;
+    outline: 2px dotted blue;
+}
+
+.portfolio-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    /** var. 1 */
+    /* margin-left: -30px; */
+    /* margin-bottom: -30px; */
+    /** var. 2 */
+    gap: 30px;
+    outline: 2px dotted green;
+}
+
+.card-item {
+    padding-bottom: 20px;
+    /*? var.1 with flex-grow: 1;*/
+    display: flex;
+    flex-direction: column;
+    /*? var.2 w/o flex-grow: 1;*/
+    /* display: grid; */
+    /** var. 1 */
+    /* margin-left: 30px; */
+    /* margin-bottom: 30px; */
+    /** var. 2 */
+    /* width: 370px; */
+    /** var. 3 */
+    flex-basis: calc((100% - 60px) / 3);
+    
+    outline: 2px dotted rgb(255, 247, 94);
+}
+
+.card-text-box {
+    /*? var.2 w/o flex-grow: 1;*/
+    flex-grow: 1;
+    
+    padding: 20px 24px;
+    outline: 1px dotted rgb(255, 94, 247);
+}
+
+.card-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    /* line-height: 200%; */
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--color-font-main);
+}
+
+.card-description {
+    font-size: 16px;
+    /* line-height: 187%; */
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--color-font-second);
 }
