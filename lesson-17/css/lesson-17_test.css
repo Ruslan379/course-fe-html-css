@@ -479,11 +479,11 @@ body {
 
 .tile8:nth-child(1) {
     background-image: 
-    radial-gradient(
+        radial-gradient(
             at center,
             var(--start-color8) 10%,
             var(--end-color8) 50%
-    );
+        );
 }
 
 .tile8:nth-child(2) {

@@ -574,7 +574,7 @@ body {
     color: var(--color-font-main);
     background-color: var(--color-background-light);
 }
-.portfolio-button:hover {
+.portfolio-button:active {
     color: var(--color-light);
     background-color: var(--color-brand-main);
     box-shadow: 
