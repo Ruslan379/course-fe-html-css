@@ -726,8 +726,8 @@ body {
 }
 
 
-/*! 12.Тінь елементу box-shadow​​ */
-.container3 {
+/*! 12.Тінь елементу (box-shadow)​ */
+.container12 {
     margin: 20px auto;
     display: flex;
     justify-content: center;
@@ -752,7 +752,175 @@ body {
 
 .post-text12 {
     margin-top: 10px;
-    margin-bottom: 0;
+    color: #212121;
+    font-size: small;
 }
 
 
+/*! 13.Тінь з однієї сторони (box-shadow)​ */
+.card-set13 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.post13 {
+    flex-basis: calc(50% - 30px);
+    min-width: 320px;
+    padding: 20px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+.post13:nth-child(1) {
+    box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.post13:nth-child(2) {
+    box-shadow: 10px 0 5px 0px rgba(0, 0, 0, 0.3);
+}
+.post13:nth-child(3) {
+    box-shadow: -10px 0 5px 0px rgba(0, 0, 0, 0.3);
+}
+.post13:nth-child(4) {
+    box-shadow: 0 -10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.post-title13 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post-text13 {
+    color: #212121;
+    font-size: small;
+}
+
+
+/*! 14.Внутрішня тінь (box-shadow)​ */
+.post14 {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    box-shadow: inset 0 0 16px 8px rgba(0, 0, 0, 0.3);
+}
+
+.post-title14 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post-text14 {
+    color: #212121;
+    font-size: small;
+}
+
+
+/*! 15.Багатошарова тінь (box-shadow)​ */
+.post15 {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    box-shadow:
+        /* inset 0 0 16px 8px rgba(0, 0, 0, 0.3), */
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.post-title15 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post-text15 {
+    color: #212121;
+    font-size: small;
+}
+
+/*! 16.Кольорова багатошарова тінь (box-shadow)​ */
+.post16 {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    box-shadow:
+        /* inset 0 0 16px 8px rgba(0, 0, 0, 0.3), */
+        0 2.8px 2.2px red, 
+        0 6.7px 5.3px blue, 
+        0 12.5px 10px green,
+        0 22.3px 17.9px purple, 
+        0 41.8px 33.4px orange, 
+        0 100px 80px teal;
+}
+
+.post-title16 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post-text16 {
+    color: #212121;
+    font-size: small;
+}
+
+
+/*! 17.Ефект візуально загнутих кутів картки (box-shadow)​ */
+.post17 {
+    margin: 20px auto;
+    position: relative;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 4px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.post17:before,
+.post17:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    box-shadow: 0 15px 10px #777;
+    transform: rotate(-3deg);
+    outline: 1px solid red;
+}
+
+.post17:after {
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+.post-title17 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post-text17 {
+    font-size: small;
+    color: #212121;
+}
