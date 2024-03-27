@@ -44,7 +44,7 @@ body {
     /** задаємо border */
     border: 2px solid #2a2a2a;
     border-radius: 30px;
-    /** застосовуємо властивість object-fit. */
+    /** застосовуємо властивість object-fit: */
     /* object-fit: fill; */
     /* object-fit: contain; */
     /* object-fit: cover; */
@@ -69,7 +69,7 @@ body {
     /** задаємо border */
     border: 2px solid #2a2a2a;
     border-radius: 30px;
-    /** ❌ застосовуємо властивість object-fit. */
+    /** ❌ застосовуємо властивість object-fit: */
     /* object-fit: fill; */
     /* object-fit: contain; */
     /* object-fit: cover; */
@@ -138,7 +138,7 @@ body {
     /** задаємо border */
     border: 2px solid #2a2a2a;
     border-radius: 30px;
-    /** застосовуємо властивість object-fit. */
+    /** застосовуємо властивість object-fit: */
     /* object-fit: fill; */
     /* object-fit: contain; */
     /* object-fit: cover; */
@@ -212,19 +212,24 @@ body {
     text-align: center;
 }
 
+/* ! +++++++++++++++++++++++ */
 .thumb2 {
     position: relative;
     height: 380px;
     width: 100%;
-    border: 2px dashed #2a2a2a;
-    border-radius: 4px;
 }
 
 .thumb2>img {
     display: block;
     height: 100%;
     width: 100%;
+    /** задаємо border */
+    border: 2px solid #2a2a2a;
+    border-radius: 30px;
+    /** застосовуємо властивість object-fit: */
+    /** застосовуємо властивість object-position: */
 }
+/* ! _________________________ */
 
 .card2:nth-child(1) img {
     object-fit: fill;
