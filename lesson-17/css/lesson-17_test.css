@@ -34,7 +34,7 @@ body {
     margin: 0 auto;
     height: 400px;
     width: 300px;
-    outline: 4px double green;
+    outline: 4px double red;
 }
 
 .thumb0>img {
