@@ -8,16 +8,19 @@
     --end-color8: #ff5722;
 }
 
-/* html {
-    font-size: 40px;
-} */
-
 body {
     padding: 20px;
     font-family: 'Montserrat', serif;
     font-weight: 700;
     /* font-size: 20px; */
     font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    text-align: center;
+    align-items: center;
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
@@ -26,12 +29,11 @@ body {
 
 /*! Контентні зображення */
 /*! 1.Властивість object-fit */
-.original-img {
+/* .original-img {
     margin: 20px auto;
-}
+} */
 /*! ---------------------------- */
 .thumb0 {
-    margin: 0 auto;
     height: 400px;
     width: 400px;
     outline: 4px double red;
@@ -80,8 +82,6 @@ body {
 
 .container {
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .card-set {
@@ -170,10 +170,7 @@ body {
 
 /*! 2.Властивість object-position */
 .container2 {
-    margin-top: 20px;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .card-set2 {
@@ -254,7 +251,7 @@ body {
 
 /*! 3.Декоративні зображенняу — Багатошаровий фон */
 .canvas3 {
-    max-width: 1000px;
+    width: 1000px;
     height: 400px;
     margin-top: 20px;
 
@@ -282,10 +279,9 @@ body {
 
 /*! 4.Декоративні зображення — Лінійний градієнт --> */
 .tile-set4 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tile4 {
@@ -345,7 +341,6 @@ body {
 
 /*! 5.Декоративні зображення — Колорстоп (color-stop) --> */
 .linear-gradient5 {
-    margin: 20px auto;
     width: 95vw;
     height: 90vh;
     background-image:
@@ -362,7 +357,6 @@ body {
 
 /*! 6.Декоративні зображення — Суцільний градієнт-1 --> */
 .gradient6 {
-    margin: 20px auto;
     width: 95vw;
     height: 90vh;
     background-image:
@@ -380,10 +374,9 @@ body {
 
 /*! 7.Декоративні зображення — Суцільний градієнт-1 --> */
 .tile-set7 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tile7 {
@@ -459,11 +452,9 @@ body {
 
 /*! 8.Декоративні зображення — Радіальний градієнт --> */
 .tile-set8 {
-    margin-top: 20px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tile8 {
@@ -525,10 +516,9 @@ body {
 
 /*! 9.Декоративні зображення — Суцільний радіальний градієнт --> */
 .tile-set9 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tile9 {
@@ -604,10 +594,9 @@ body {
 
 /*! 10.Декоративні зображення — Повторюваний градієнт */
 .tile-set10 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tile10 {
@@ -715,8 +704,10 @@ body {
 }
 
 .post-text11 {
-    margin: 0;
     padding: 16px;
+    margin-top: 10px;
+    color: #212121;
+    font-size: 20px;
 }
 
 .post-title11.angled11 {
