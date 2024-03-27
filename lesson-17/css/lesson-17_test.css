@@ -29,19 +29,22 @@ body {
 .original-img {
     margin: 20px auto;
 }
-
+/*! ---------------------------- */
 .thumb0 {
     margin: 0 auto;
     height: 400px;
-    width: 300px;
+    width: 400px;
     outline: 4px double red;
 }
 
-.thumb0>img {
+.thumb0-img {
     display: block;
     height: 100%;
     width: 100%;
-
+    /** задаємо border */
+    border: 2px solid #2a2a2a;
+    border-radius: 30px;
+    /** застосовуємо властивість object-fit. */
     /* object-fit: fill; */
     /* object-fit: contain; */
     /* object-fit: cover; */
@@ -49,27 +52,36 @@ body {
     /* object-fit: none; */
 }
 
-/*! ---------------------------- */
+/*! ----------Original image---------- */
 .base {
     width: 480px;
+    /* height: 320px; */
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    outline: 4px double blue;
 }
 
 .base>img {
     display: block;
     max-width: 100%;
-    height: auto;
-    border: 2px dashed #2a2a2a;
-    border-radius: 4px;
+    /* height: auto; */
+    /** задаємо border */
+    border: 2px solid #2a2a2a;
+    border-radius: 30px;
+    /** ❌ застосовуємо властивість object-fit. */
+    /* object-fit: fill; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    /* object-fit: scale-down; */
+    /* object-fit: none; */
 }
+/*! __________________________________ */
 
 .container {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    outline: 4px double tomato;
 }
 
 .card-set {
@@ -88,12 +100,15 @@ body {
     /* flex-basis: calc(100% / 2 - 20px); */
     margin: 0;
     flex-basis: calc((100% - 40px) / 2);
+    outline: 4px double red;
 }
 
 .card,
 .base {
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     text-align: center;
 }
 
@@ -108,38 +123,47 @@ body {
     font-family: monospace;
     letter-spacing: -0.05em;
 }
-
+/* ! +++++++++++++++++++++++ */
 .thumb {
     position: relative;
     height: 380px;
     width: 100%;
-    /* border: 2px dashed #2a2a2a; */
-    border-radius: 4px;
+    
 }
 
-.thumb>img {
+.thumb-img {
     display: block;
     height: 100%;
     width: 100%;
+    /** задаємо border */
+    border: 2px solid #2a2a2a;
+    border-radius: 30px;
+    /** застосовуємо властивість object-fit. */
+    /* object-fit: fill; */
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    /* object-fit: scale-down; */
+    /* object-fit: none; */
 }
+/* ! _________________________ */
 
-.card:nth-child(1) img {
+.card:nth-child(1) .thumb-img {
     object-fit: fill;
 }
 
-.card:nth-child(2) img {
+.card:nth-child(2) .thumb-img {
     object-fit: contain;
 }
 
-.card:nth-child(3) img {
+.card:nth-child(3) .thumb-img {
     object-fit: cover;
 }
 
-.card:nth-child(4) img {
+.card:nth-child(4) .thumb-img {
     object-fit: scale-down;
 }
 
-.card:nth-child(5) img {
+.card:nth-child(5) .thumb-img {
     object-fit: none;
 }
 
