@@ -19,8 +19,6 @@
     --color-background-backdrop: rgba(0, 0, 0, 0.2);
     --color-background-activity: rgba(47, 48, 58, 0.8);
     --color-background-overlay: rgba(33, 150, 243, 0.9);
-    --color-background-dark: #2F303A;
-    --color-background-light: #F5F4FA;
     /* *========================================== */
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
     /* *========================================== */
@@ -40,6 +38,7 @@ body {
     /* font-family: 'Roboto', sans-serif; */
     font-size: 14px;
     background-color: var(--color-light);
+    /* background-color: #afff97; */
 }
 
 /*!  ГОЛОВНИЙ Контейнер - обгортає відразу увесь контент сторінки */
@@ -115,7 +114,6 @@ body {
     letter-spacing: 0.78px;
     color: var(--color-brand-main);
 }
-
 .logo-dark {
     color: var(--color-dark);
 }
@@ -182,6 +180,16 @@ body {
     background-color: var(--color-background-dark);
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+.flex-column {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/** _________________________________________________ */
+
+
 /*todo Фонове зображення з градієнтним накладенням */
 .overlay {
     /** --- задати, якщо нема <div class="main-container">: --- */
@@ -207,15 +215,6 @@ body {
     background-position: center;
     background-size: cover;
 }
-
-/** --- Додаткові flex-властивості до container ---- */
-.flex-column {
-    /* display: inline-block; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-/** _________________________________________________ */
 
 .hero-title {
     max-width: 696px;

@@ -9,6 +9,9 @@
     --color-brand-active: #188CE8;
     --color-background-dark: #2F303A;
     --color-background-light: #F5F4FA;
+    --color-border-portfolio: #EEEEEE;
+    --color-background-overlay-hero: #c4c4c4;
+    --color-background-overlay-img: rgba(47, 48, 58, 0.4);
     /* *========================================== */
     --color-background-another: #E5E5E5;
     --color-background-footer: #2F303A;
@@ -20,7 +23,6 @@
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
     /* *========================================== */
     --color-border-line: #ECECEC;
-    --color-borders-portfolio: #EEEEEE;
     --color-border-clients: #AFB1B8;
     --color-border-modal: rgba(33, 33, 33, 0.2);
     /* *========================================== */
@@ -63,7 +65,7 @@ body {
     background-color: #d2fff2;
 }
 
-/** Додаткові flex-властивості до container */
+/** --- Додаткові flex-властивості до container ---- */
 /*todo var. 1 */
 .flex,
 .navigation,
@@ -85,6 +87,7 @@ body {
     /** для розташування без margin */
     justify-content: space-between;
 }
+/** _________________________________________________ *
 
 .logo {
     margin-right: 93px;
@@ -99,6 +102,8 @@ body {
 .logo-dark {
     color: var(--color-dark);
 }
+
+
 
 /** для розташування без margin */
 .nav-list {
@@ -147,11 +152,38 @@ body {
     background-color: var(--color-background-dark);
 }
 
-/** Додаткові flex-властивості до container */
+/** --- Додаткові flex-властивості до container ---- */
 .flex-column {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+/** _________________________________________________ */
+
+/*todo Фонове зображення з градієнтним накладенням */
+.overlay {
+    /** --- задати, якщо нема <div class="main-container">: --- */
+    /* max-width: 1600px;
+    height: 600px;
+    margin: 0 auto;
+    background-repeat: no-repeat; */
+    /** ________________________________________________________ */
+    background-color: var(--color-background-overlay-hero);
+    /*todo var.1 (ДЗ-18)*/
+    background-image: 
+        linear-gradient(
+            to right, 
+            var(--color-background-overlay-img), 
+            var(--color-background-overlay-img)
+        ), 
+        url(../images/background-img-hero.jpg);
+    /*todo var.2 */
+    /* background-image:
+        url(../images/overlay-img.png),
+        url(../images/background-img-hero.jpg); */
+    /*todo ______________________________________________________ */
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
