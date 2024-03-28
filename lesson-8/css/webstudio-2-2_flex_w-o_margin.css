@@ -516,9 +516,9 @@ body {
     flex-wrap: wrap;
     /** var. 1 */
     /** для розташування без margin */
-    /* justify-content: space-between;
-    align-content: space-between;
-    min-height: 1272px; */
+    /* justify-content: space-between; */
+    /* align-content: space-between; */
+    /* min-height: 1272px; */
     /** var. 3 */
     gap: 30px;
 
