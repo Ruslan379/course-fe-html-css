@@ -19,6 +19,8 @@
     --color-background-backdrop: rgba(0, 0, 0, 0.2);
     --color-background-activity: rgba(47, 48, 58, 0.8);
     --color-background-overlay: rgba(33, 150, 243, 0.9);
+    --color-background-dark: #2F303A;
+    --color-background-light: #F5F4FA;
     /* *========================================== */
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
     /* *========================================== */
