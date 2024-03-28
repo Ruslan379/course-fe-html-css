@@ -73,8 +73,6 @@ body {
 .contacts-list {
     display: flex;
     align-items: center;
-    /** для розташування без margin */
-    justify-content: space-between;
 }
 
 /*todo. var. 2 */
@@ -84,10 +82,8 @@ body {
 .contacts-list {
     display: flex;
     align-items: center;
-    /** для розташування без margin */
-    justify-content: space-between;
 }
-/** _________________________________________________ *
+/** _________________________________________________ */
 
 .logo {
     margin-right: 93px;
@@ -103,12 +99,20 @@ body {
     color: var(--color-dark);
 }
 
-
+/** для розташування без margin */
+/** var. 1, 2 */
+.header .container {
+    justify-content: space-between;
+}
 
 /** для розташування без margin */
 .nav-list {
-    min-width: 281px;
+    /** var. 1 */
+    /* justify-content: space-between;
+    min-width: 281px; */
+    /** var. 2 */
     gap: 50px;
+    
     outline: 1px dotted blue;
 }
 
@@ -126,8 +130,12 @@ body {
 
 /** для розташування без margin */
 .contacts-list {
-    min-width: 307px;
+    /** var. 1 */
+    /* justify-content: space-between;
+    min-width: 307px; */
+    /** var. 2 */
     gap: 50px;
+
     outline: 1px dotted blue;
 }
 
@@ -234,6 +242,10 @@ body {
     background-color: #fffbd2;
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
+
 /** стилізация  заголовків h2 у ВСІХ секціях */
 .section-title {
     margin-bottom: 50px;
@@ -262,7 +274,10 @@ body {
     display: flex;
     align-items: flex-start;
     /** для розташування без margin */
+    /** var. 1 */
     justify-content: space-between;
+    /** var. 2 */
+    gap: 30px;
 }
 
 .features-item {
@@ -282,9 +297,9 @@ body {
 }
 .features-item:nth-child(1)::before { 
     /** var. 1 */
-    /* background-image: url(../images/antenna-full.png); */
+    background-image: url(../images/antenna-full.png);
     /** var. 2 */
-    background-image: url(../images/antenna.svg);
+    /* background-image: url(../images/antenna.svg); */
 }
 .features-item:nth-child(2)::before { 
     /** var. 1 */
@@ -334,10 +349,17 @@ body {
     background-color: #d2e4ff;
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
+
 .activities-list {
     display: flex;
     /** для розташування без margin */
+    /** var. 1 */
     justify-content: space-between;
+    /** var. 2 */
+    gap: 30px;
 }
 
 
@@ -347,6 +369,10 @@ body {
     padding-bottom: 94px;
     background-color: var(--color-background-light);
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
 
 .team-list {
     display: flex;
@@ -395,6 +421,10 @@ body {
     background-color: var(--color-background-dark);
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
+
 .footer .logo {
     display: inline-block;
     margin-right: 0;
@@ -427,10 +457,124 @@ body {
 
 /*? ____________________________________________ */
 
-/*! portfolio.html */
+/*! -------------- portfolio.html --------------*/
 /*? section portfolio */
 .section-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: rgb(192, 233, 255);
+    background-color: #ade2ff;
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/*todo flex-column */
+/** _________________________________________________ */
+
+/*todo Список кнопок */
+.portfolio-button-list {
+    padding-bottom: 16px;
+    margin-bottom: 34px;
+    display: flex;
+    /** для розташування без margin */
+    justify-content: space-between;
+    min-width: 575px;
+    gap: 8px;
+
+    outline: 2px dotted blue;
+}
+
+/* .button-item:not(:last-child) {
+    margin-right: 8px;
+} */
+
+.portfolio-button {
+    padding: 6px 22px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 162%; */
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    /* text-align: center; */
+    border: none;
+    border-radius: 4px;
+    color: var(--color-font-main);
+    background-color: var(--color-background-light);
+}
+.portfolio-button:active {
+    color: var(--color-light);
+    background-color: var(--color-brand-main);
+    box-shadow: 
+        1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+/*todo Список карток */
+.portfolio-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    /** var. 1 */
+    /* margin-left: -30px; */
+    /* margin-bottom: -30px; */
+    /** var. 2 */
+    /** для розташування без margin */
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 1272px;
+    /** var. 3 */
+    /* gap: 30px; */
+
+    /* outline: 2px dotted green; */
+}
+
+.card-item {
+    /* padding-bottom: 20px; */
+    display: flex;
+    flex-direction: column;
+    /** var. 1 */
+    /* margin-left: 30px; */
+    /* margin-bottom: 30px; */
+    /** для розташування без margin */
+    /** var. 2 */
+    flex-basis: calc((100% - 60px) / 3);
+    /*todo ❌ border var. 1 - невірний */
+    /* border: 1px solid #fffa69;; */
+    /* outline: 1px dotted rgb(255, 94, 247); */
+}
+
+.card-item:hover {
+    box-shadow: 
+        1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
+        0 4px 4px 0 rgba(0, 0, 0, 0.06), 
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-text-box {
+    flex-grow: 1;
+    padding: 20px 24px;
+    /*todo ✅ border var. 2 - вірний */
+    border-right: 1px solid var(--color-border-portfolio);
+    border-bottom: 1px solid var(--color-border-portfolio);
+    border-left: 1px solid var(--color-border-portfolio);
+    /* outline: 2px dotted rgb(255, 247, 94); */
+}
+
+.card-title {
+    margin-bottom: 4px;
+    /* font-family: var(--font-family); */
+    font-weight: 700;
+    font-size: 18px;
+    /* line-height: 200%; */
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--color-font-main);
+}
+
+.card-description {
+    /* font-family: var(--font-family); */
+    font-size: 16px;
+    /* line-height: 187%; */
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--color-font-second);
 }
