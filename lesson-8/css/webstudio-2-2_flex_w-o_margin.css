@@ -275,7 +275,7 @@ body {
     align-items: flex-start;
     /** для розташування без margin */
     /** var. 1 */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /** var. 2 */
     gap: 30px;
 }
@@ -357,7 +357,7 @@ body {
     display: flex;
     /** для розташування без margin */
     /** var. 1 */
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /** var. 2 */
     gap: 30px;
 }
@@ -377,7 +377,10 @@ body {
 .team-list {
     display: flex;
     /** для розташування без margin */
-    justify-content: space-between;
+    /** var. 1 */
+    /* justify-content: space-between; */
+    /** var. 2 */
+    gap: 30px;
 }
 
 .team-item {
@@ -475,16 +478,14 @@ body {
     margin-bottom: 34px;
     display: flex;
     /** для розташування без margin */
-    justify-content: space-between;
-    min-width: 575px;
+    /** var. 1 */
+    /* justify-content: space-between;
+    min-width: 575px; */
+    /** var. 2 */
     gap: 8px;
 
     outline: 2px dotted blue;
 }
-
-/* .button-item:not(:last-child) {
-    margin-right: 8px;
-} */
 
 .portfolio-button {
     padding: 6px 22px;
@@ -514,15 +515,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     /** var. 1 */
-    /* margin-left: -30px; */
-    /* margin-bottom: -30px; */
-    /** var. 2 */
     /** для розташування без margin */
-    justify-content: space-between;
+    /* justify-content: space-between;
     align-content: space-between;
-    min-height: 1272px;
+    min-height: 1272px; */
     /** var. 3 */
-    /* gap: 30px; */
+    gap: 30px;
 
     /* outline: 2px dotted green; */
 }
@@ -531,11 +529,8 @@ body {
     /* padding-bottom: 20px; */
     display: flex;
     flex-direction: column;
-    /** var. 1 */
-    /* margin-left: 30px; */
-    /* margin-bottom: 30px; */
     /** для розташування без margin */
-    /** var. 2 */
+    /** var. 1, 2 */
     flex-basis: calc((100% - 60px) / 3);
     /*todo ❌ border var. 1 - невірний */
     /* border: 1px solid #fffa69;; */
