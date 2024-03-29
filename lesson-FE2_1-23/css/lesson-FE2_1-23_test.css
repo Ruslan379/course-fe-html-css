@@ -49,7 +49,8 @@ body {
     display: none;
 }
 
-/*! Файл_icon.svg */
+/*! SVG-документ */
+/*? Файл_icon.svg */
 .svg-icon {
     outline: 1px solid blue;
 }
@@ -73,6 +74,7 @@ body {
     fill-opacity: 0.5;
     stroke-opacity: 0.5;
 }
+/* ✅ */
 .icon:hover {
     fill: #00aeff;
     fill-opacity: 0.7;
@@ -87,6 +89,25 @@ body {
     margin-right: 12px;
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
-    fill: red;
+    /* ❌ */
+    fill: rgb(51, 255, 0);
     stroke: #00aeff;
+}
+
+
+/*! SVG-документ: іконка-instagram */
+.instagram-icon-svg {
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 8px;
+    /* ✅ */
+    fill: blue;
+    stroke: #ff0000;
+    stroke-width: 1px;
+}
+/* ✅ */
+.instagram-icon-svg:hover {
+    fill: red;
+    stroke: green;
 }
