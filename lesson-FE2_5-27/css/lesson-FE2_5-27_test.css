@@ -42,11 +42,6 @@ body {
 
 /* *======================================= */
 /* ! */
-.part_0 {
-    display: none;
-}
-
-/* ! */
 /* .part_1 {
     display: none;
 } */
@@ -102,3 +97,38 @@ p>strong {
     color: rgb(153, 48, 0);
 }
 
+
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 2.Властивість overflow: visible; */
+.box2 {
+    padding: 10px;
+    width: 600px;
+    /* height: 200px; */
+    font-style: italic;
+    border: 2px solid tomato;
+}
+
+.button2 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 140px;
+    width: 600px;
+    font: inherit;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #009;
+    /* opacity: 0.8; */
+    /* background-color: transparent; */
+}
+  
+
+
+
+/* ! */
+.part_0 {
+    display: none;
+}
+/*! 0.Заголовок */
