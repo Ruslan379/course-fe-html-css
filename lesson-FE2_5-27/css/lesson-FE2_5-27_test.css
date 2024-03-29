@@ -110,7 +110,7 @@ p>strong {
     width: 200px;
     width: 600px;
     /* ? */
-    height: 200px;
+    /* height: 200px; */
     font-style: italic;
     border: 2px solid tomato;
     /* ? */
@@ -138,16 +138,53 @@ p>strong {
 }
 
 
-
-
-
-/*! 0.Заголовок */
-.part_0 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* ! */
+.part_2 {
+    display: none;
 }
+/*! 2.Заокруглене зображення */
+img {
+    display: block;
+    max-width: 100%;
+    /* ? */
+    /* max-width: 115%; */
+}
+
+.thumb2 {
+    margin-top: 10px;
+    width: 960px;
+    /* ? */
+    height: 495px;
+
+    border: 15px solid green;
+    border-radius: 50px;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 41.8px 33.4px rgba(202, 73, 18, 0.429),
+        0 100px 80px rgba(202, 94, 18, 0.466);
+    /* ? */
+    /* overflow: hidden; */
+}
+
+
+/* ! */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Декоративний оверлей */
+
+
+
+
+
+
+
+
 /* ! */
 .part_0 {
     display: none;
 }
+/*! 0.Заголовок */
