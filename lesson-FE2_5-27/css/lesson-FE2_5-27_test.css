@@ -9,7 +9,7 @@
 body {
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 0 20px 150px;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
@@ -36,16 +36,18 @@ body {
     color: var(--color-title-subsection);
 }
 
-/* .part {
-    text-align: center;
-} */
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* *======================================= */
 /* ! */
-/* .part_1 {
+.part_1 {
     display: none;
-} */
-/*! 1.Модальне вікно */
+}
+/*! 1.Властивість overflow */
 .holder1 {
     max-width: 1200px;
     /* margin: 0 auto; */
@@ -65,7 +67,7 @@ body {
     min-height: 200px;
 }
 
-/*?   Значення overflow   */
+/*todo   Значення overflow   */
 .visible1 {
     overflow: visible;
 }
@@ -99,36 +101,53 @@ p>strong {
 
 
 /* ! */
-/* .part_2 {
+.part_1-2 {
     display: none;
-} */
-/*! 2.Властивість overflow: visible; */
-.box2 {
-    padding: 10px;
+}
+/*! 1-2.Властивість overflow: visible; overflow: hidden; */
+.box1-2 {
+    padding: 15px;
+    width: 200px;
     width: 600px;
-    /* height: 200px; */
+    /* ? */
+    height: 200px;
     font-style: italic;
     border: 2px solid tomato;
+    /* ? */
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    /* overflow-y: auto; */
+    /* overflow-x: auto; */
 }
 
-.button2 {
+.button1-2 {
     display: inline-block;
     margin-top: 30px;
-    margin-bottom: 140px;
+    padding: 15px 20px;
+    /* margin-bottom: 140px; */
     width: 600px;
     font: inherit;
     border-radius: 10px;
     font-weight: 700;
     color: #009;
-    /* opacity: 0.8; */
+    /* ? */
+    /* opacity: 0.7; */
     /* background-color: transparent; */
 }
-  
 
 
 
+
+
+/*! 0.Заголовок */
+.part_0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* ! */
 .part_0 {
     display: none;
 }
-/*! 0.Заголовок */
