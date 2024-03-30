@@ -2,6 +2,7 @@
     /* *============ CSS-змінні ============ */
     --color-font-body: #4b4200;
     --color-background-body: #ffe8c1;
+    --color-title-lesson: #4b4200;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
@@ -22,11 +23,18 @@ body {
     background-color: var(--color-background-body);
 }
 
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+}
+
 .title-section {
     margin-top: 20px;
     margin-bottom: 10px;
     text-align: center;
     color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
 }
 
 .title-subsection {
@@ -34,6 +42,7 @@ body {
     margin-bottom: 10px;
     font-style: italic;
     color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
 }
 
 .part {
@@ -57,7 +66,7 @@ body {
 .textBox1 {
     width: 240px;
     height: 100px;
-    border: 3px dotted red;
+    border: 2px dashed red;
     float: left;
     margin: 10px;
 }
@@ -101,9 +110,9 @@ p>strong {
 
 
 /* ! */
-.part_1-2 {
+/* .part_1-2 {
     display: none;
-}
+} */
 /*! 1-2.Властивість overflow: visible; overflow: hidden; */
 .box1-2 {
     padding: 15px;
@@ -171,9 +180,9 @@ img {
 
 
 /* ! */
-/* .part_3 {
+.part_3 {
     display: none;
-} */
+}
 /*! 3.Декоративний оверлей */
 .box3 {
     position: relative;
@@ -261,9 +270,92 @@ h3 {
 }
 
 
+/* ! */
+.part_4 {
+    display: none;
+}
+/*! 4.Випадаюче меню */
+.menu4 {
+    display: flex;
+}
+
+.menu-item4 {
+    position: relative;
+    margin-right: 15px;
+    border-radius: 8px 8px 0 0;
+    border-top: 2px solid tomato; 
+    border-right: 2px solid tomato; 
+    border-left: 2px solid tomato;
+    /*todo var.2 */
+    /* overflow: hidden; */
+}
+
+/*todo var.1 */
+.menu-item4:hover .submenu4 {
+    display: block;
+}
+/*todo var.2 */
+/* .menu-item4:hover {
+    border-color: teal;
+    overflow: visible;
+} */
+
+.menu-item4:hover .menu-link4 {
+    background-color: palevioletred;
+}
+
+.menu-link4 {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px 6px 0 0;
+    background-color: teal;
+    color: white;
+}
+
+.submenu4 {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    list-style: none;
+    padding: 10px;
+    border-right: 2px solid #525252; 
+    border-bottom: 2px solid #525252;   
+    border-left: 2px solid #525252;
+    border-radius: 0 0 8px 8px;
+    background-color: #ccc;
+    /*todo var.1 */
+    display: none;
+}
+
+.submenu a {
+    text-decoration: none;
+}
+
+.part_4>p {
+    margin-top: 20px;
+    width: 50%;
+}
+
+
+/* ! */
+.part_5 {
+    display: none;
+}
+/*! 5.Фіксований header */
 
 
 
+/* ! */
+.part_6 {
+    display: none;
+}
+/*! 5.6.Навігація сайту через якорі та scroll-to-top */
+
+
+/** ______________________________________________________ */
 /* ! */
 .part_0 {
     display: none;

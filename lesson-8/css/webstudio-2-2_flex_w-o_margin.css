@@ -69,17 +69,6 @@ body {
     top: 0;
 }
 
-
-/** --- +++++++++++ Фіксований header +++++++++++ ---- */
-/* .header {
-    position: fixed;
-    width: 100%;
-    width: 1600px;
-    top: 0;
-} */
-
-
-
 /** --- Додаткові flex-властивості до container ---- */
 /*todo var. 1 */
 .flex,
