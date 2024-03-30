@@ -53,68 +53,11 @@ body {
 
 /* *======================================= */
 /* ! */
-.part_1 {
-    display: none;
-}
-/*! 1.Властивість overflow */
-.holder1 {
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    /* outline: 1px dashed */
-}
-
-.textBox1 {
-    width: 240px;
-    height: 100px;
-    border: 2px dashed red;
-    float: left;
-    margin: 10px;
-}
-
-.exemple1 {
-    overflow: hidden;
-    min-height: 200px;
-}
-
-/*todo   Значення overflow   */
-.visible1 {
-    overflow: visible;
-}
-.hidden1 {
-    overflow: hidden;
-}
-.scroll1 {
-    overflow: scroll;
-}
-.auto1 {
-    overflow: auto;
-}
-
-.rule1 {
-    padding-top: 50px;
-}
-
-.rule1 em {
-    display: inline-block;
-    width: 180px;
-    color: #009;
-    font-weight: bold;
-}
-
-p>strong {
-    display: block;
-    font-style: italic;
-    text-align: justify;
-    color: rgb(153, 48, 0);
-}
-
-
-/* ! */
-/* .part_1-2 {
+/* .part_1 {
     display: none;
 } */
-/*! 1-2.Властивість overflow: visible; overflow: hidden; */
-.box1-2 {
+/*! 1.Властивість overflow: visible; overflow: hidden; */
+.box1 {
     padding: 15px;
     width: 200px;
     width: 600px;
@@ -131,7 +74,7 @@ p>strong {
     /* overflow-x: auto; */
 }
 
-.button1-2 {
+.button1 {
     display: inline-block;
     margin-top: 30px;
     padding: 15px 20px;
@@ -144,6 +87,68 @@ p>strong {
     /* ? */
     /* opacity: 0.7; */
     /* background-color: transparent; */
+}
+
+
+/* ! */
+.part_1-2 {
+    display: none;
+}
+/*! 1.Властивість overflow */
+.margintop {
+    margin-top: 200px;
+}
+
+.holder1-2 {
+    
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    /* outline: 1px dashed */
+}
+
+.textBox1-2 {
+    width: 240px;
+    height: 100px;
+    border: 2px dashed red;
+    float: left;
+    margin: 10px;
+}
+
+.exemple1-2 {
+    overflow: hidden;
+    min-height: 200px;
+}
+
+/*todo   Значення overflow   */
+.visible1-2 {
+    overflow: visible;
+}
+.hidden1-2 {
+    overflow: hidden;
+}
+.scroll1-2 {
+    overflow: scroll;
+}
+.auto1-2 {
+    overflow: auto;
+}
+
+.rule1-2 {
+    padding-top: 50px;
+}
+
+.rule1-2 em {
+    display: inline-block;
+    width: 180px;
+    color: #009;
+    font-weight: bold;
+}
+
+p>strong {
+    display: block;
+    font-style: italic;
+    text-align: justify;
+    color: rgb(153, 48, 0);
 }
 
 

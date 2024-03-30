@@ -67,6 +67,7 @@ body {
     position: fixed;
     width: 1600px;
     top: 0;
+    /* display: none; */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -162,6 +163,8 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--color-background-dark);
+    /*todo --- Фіксований header --- */
+    margin-top: 79px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -502,6 +505,8 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #ade2ff;
+    /*todo --- Фіксований header --- */
+    margin-top: 79px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
