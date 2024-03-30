@@ -179,7 +179,7 @@ img {
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background-color: #bdbdbd;
     /* ? */
     overflow: hidden;
@@ -193,13 +193,22 @@ img {
     width: 100%;
     height: 100%;
     background-color: #3f51b5;
+    /* ? по y */
     transform: translatey(100%);
+    /* ? по x */
+    /* transform: translatex(100%); */
+    /* transform: translatex(-100%); */
+
     transition: transform 250ms ease-in-out;
 }
 
 /*todo var.1 */
 .box3:hover .overlay3 {
-    transform: translatey(0);
+    transform: translate(0);
+    /* ? по y */
+    /* transform: translatey(0); */
+    /* ? по x */
+    /* transform: translatex(0); */
 }
 /*todo var.2 */
 /* .box3:hover .overlay3-1 {
