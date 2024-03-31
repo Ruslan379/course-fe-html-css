@@ -46,6 +46,8 @@ body {
     width: 1600px;
     margin: 0 auto;
     outline: 4px double #ff0000;
+    /*todo --- Фіксований header --- */
+    padding-top: 79px;
 }
 
 /*!  Контейнер - обгортає відразу увесь контент або секції  */
@@ -163,8 +165,6 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--color-background-dark);
-    /*todo --- Фіксований header --- */
-    margin-top: 79px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -505,8 +505,6 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #ade2ff;
-    /*todo --- Фіксований header --- */
-    margin-top: 79px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
