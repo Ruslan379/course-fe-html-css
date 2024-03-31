@@ -294,7 +294,6 @@ body {
 
 .features-list {
     display: flex;
-    align-items: flex-start;
 }
 
 .features-item {

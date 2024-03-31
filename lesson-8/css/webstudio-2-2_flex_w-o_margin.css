@@ -279,7 +279,6 @@ body {
 
 .features-list {
     display: flex;
-    align-items: flex-start;
     /** для розташування без margin */
     /** var. 1 */
     /* justify-content: space-between; */
