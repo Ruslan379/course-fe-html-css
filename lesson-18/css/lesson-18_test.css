@@ -2,49 +2,67 @@
     /* *============ CSS-змінні ============ */
     --color-font-body: #5d5200;
     --color-background-body: #dbf3ff;
+    --color-title-lesson: #4b4200;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
 
 body {
-    padding: 20px;
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
+    padding: 20px 20px 150px;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     gap: 20px;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+}
+
 .title-section {
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: center;
     color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
 }
+
 .title-subsection {
     margin-top: 10px;
     margin-bottom: 10px;
     font-style: italic;
     color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* *======================================= */
-
+.part_1 {
+    display: none;
+}
 /*! 1.Фон елементу */
-.container {
+.container1 {
     width: 940px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.box {
+.box1 {
     height: 190px;
     width: calc(50% - 20px);
     margin: 10px;
@@ -57,7 +75,7 @@ body {
 
 /** bgi -> bgr -> bgp -> bgs */
 /*? cat */
-.box:nth-child(1) {
+.box1:nth-child(1) {
     background-color: #9c27b0;
     background-image: url(https://www.freeiconspng.com/uploads/grass-png-images-pictures-transparent-28.png);
     background-repeat: no-repeat;
@@ -66,7 +84,7 @@ body {
 }
 
 /*? bird */
-.box:nth-child(2) {
+.box1:nth-child(2) {
     background-color: #009688;
     background-image: url(https://vignette.wikia.nocookie.net/mashaandthebear/images/e/e0/Ёжик.png/revision/latest?cb=20180209130328&path-prefix=ru);
     background-repeat: repeat-x;
@@ -75,7 +93,7 @@ body {
 }
 
 /*? dog */
-.box:nth-child(3) {
+.box1:nth-child(3) {
     background-color: skyblue;
     background-image: url("../images/dog.webp");
     background-repeat: repeat-y;
@@ -83,14 +101,17 @@ body {
 }
 
 /*? turtle */
-.box:nth-child(4) {
+.box1:nth-child(4) {
     background-color: #3f51b5;
     background-image: url("../images/turtle.webp");
 }
 
 
+.part_2 {
+    display: none;
+}
 /*! 2.Реалізація багатошарового фону */
-.overlay {
+.overlay2 {
     width: 1600px;
     height: 480px;
     margin-left: auto;
@@ -109,31 +130,131 @@ body {
 }
 
 
-
-/*! 3.Застосування декоративних елементів через псевдоелементи */
+.part_3-1 {
+    display: none;
+}
+/*! 3-1.Застосування декоративних елементів через псевдоелементи */
 /*? декор-іконка у кнопці */
-.button {
+.button3-1 {
     display: inline-flex;
     align-items: center;
-    padding: 20px 30px;
-    background-color: teal;
-    color: #fff;
-    border-radius: 3px;
+    padding: 25px 50px;
+    font-size: 32px;
     text-decoration: none;
     cursor: pointer;
     border: none;
-    font-size: 14px;
+    border-radius: 12px;
+    color: #ffcadc;
+    background-color: teal;
+    box-shadow:
+        inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.button::before {
+
+.button3-1::before {
     content: "";
-    width: 20px;
-    height: 20px;
-    background-color: aquamarine;
-    margin-right: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #bbffe8;
+    margin-right: 25px;
     background-image: url(../images/turtle.webp);
-    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    background-size: 45px 45px;
+    background-position: center;
 }
-.button:hover,
-.button:focus {
+.button3-1:hover {
+    color: #bbffe8;
     background-color: palevioletred;
-  }
+}
+
+.button3-1:hover::before {
+    background-color: #ffcadc;
+}
+
+.button3-1:active {
+    color: #a55517;
+    text-shadow: #2c1e13;
+    background-color: #d89d70;
+    box-shadow: none;
+}
+
+.button3-1:active::before {
+    background-color: #d89d70;
+}
+
+
+/* ! */
+.part_3-2 {
+    display: none;
+}
+/*! 3-2.Застосування декоративних елементів через псевдоелементи */
+/* CARDS-DECORS (::before) */
+.list3-2 {
+    display: flex;
+    /* align-items: flex-start; */
+    /* align-items: stretch; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+}
+
+.list-item3-2 {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #bbffe8;
+    border-radius: 4px;
+    box-shadow:
+        0px 2px 1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.list-item3-2::before {
+    content: "";
+    height: 120px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-item3-2:nth-child(1)::before {
+    background-image: url("../images/cat.webp");
+}
+
+.list-item3-2:nth-child(2)::before {
+    background-image: url("../images/dog.webp");
+}
+
+.list-item3-2:nth-child(3)::before {
+    background-image: url("../images/bird.webp");
+}
+
+.list-item3-2:nth-child(3) {
+    /* align-content: end; */
+    align-self: flex-start;
+}
+
+.title3-2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/*? ______________________________________________________ */
+/* ! */
+.part_0 {
+    display: none;
+}
+/*! 0.Заголовок */
+
+
