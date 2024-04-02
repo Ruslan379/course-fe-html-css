@@ -202,14 +202,19 @@ body {
     /** var.1 */
     /* flex-basis: 300px; */
     /** var.2 */
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
+    flex-basis: calc(100% / 3);
     flex-grow: 1;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-family: monospace;
     font-weight: 700;
-    font-size: larger;
+    font-size: 3rem;
+    color: wheat;
+    text-shadow: 4px 4px 6px #212121;
 }
 
 .item2:nth-child(1) {
