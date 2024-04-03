@@ -52,9 +52,10 @@ body {
 }
 
 /* *======================================= */
-.part_1 {
+/* ! */
+/* .part_1 {
     display: none;
-}
+} */
 /*! 1.Фон елементу */
 .container1 {
     width: 940px;
@@ -107,16 +108,18 @@ body {
 }
 
 
-.part_2 {
+/* ! */
+/* .part_2 {
     display: none;
-}
+} */
 /*! 2.Реалізація багатошарового фону */
 .overlay2 {
     width: 1600px;
     height: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid black;
+    /* margin-left: auto;
+    margin-right: auto; */
+    outline: 2px solid rgb(23, 53, 0);
+    outline-offset: 4px;
     background-image: 
         linear-gradient(
             to right,
@@ -130,9 +133,10 @@ body {
 }
 
 
-.part_3-1 {
+/* ! */
+/* .part_3-1 {
     display: none;
-}
+} */
 /*! 3-1.Застосування декоративних елементів через псевдоелементи */
 /*? декор-іконка у кнопці */
 .button3-1 {
@@ -191,9 +195,9 @@ body {
 
 
 /* ! */
-.part_3-2 {
+/* .part_3-2 {
     display: none;
-}
+} */
 /*! 3-2.Застосування декоративних елементів через псевдоелементи */
 /* CARDS-DECORS (::before) */
 .list3-2 {
@@ -251,10 +255,44 @@ body {
 
 
 /* ! */
-.part_4 {
+/* .part_4 {
     display: none;
-}
+} */
 /*! 4.Реалізація багатошарового фону (overlay) за допомогою псевдоелементів */
+.box4 {
+    width: 500px;
+    position: relative;
+}
+/* ! */
+.box4::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    /*todo var.1 */
+    width: 100%;
+    height: 100%;
+    /*todo var.2 */
+    /* top: 20px;
+    right: -20px;
+    bottom: -20px;
+    left: 20px; */
+
+    background: 
+        linear-gradient(
+            /* 135deg, */
+            315deg,
+            rgba(239, 139, 138, 0.8),
+            rgba(229, 207, 130, 0.8) 100%
+        );
+    /* box-shadow: -10px -10px 30px #333333; */
+    box-shadow: 10px 10px 30px #333333;
+}
+
+
+
+
+
 
 
 /*? ______________________________________________________ */
