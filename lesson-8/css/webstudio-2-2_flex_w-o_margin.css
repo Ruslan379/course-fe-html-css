@@ -137,6 +137,7 @@ body {
 
 /** для розташування без margin */
 .contacts-list {
+    display: flex;
     /** var. 1 */
     /* justify-content: space-between;
     min-width: 307px; */
@@ -152,10 +153,16 @@ body {
     /* font-size: 14px; */
     letter-spacing: 0.02em;
     /* letter-spacing: 0.28px; */
-    color: var(--color-font-main); 
+    color: var(--color-font-main);
+    /* todo +++++ 2 семетр +++++ */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .contacts-link:hover {
-    color: var(--color-brand-main); 
+    color: var(--color-brand-main);
+    /* todo +++++ 2 семетр +++++ */
+    fill: var(--color-brand-main);
 }
 
 
@@ -423,6 +430,7 @@ body {
     color: var(--color-font-second);
 }
 
+/* todo +++++ 2 семетр +++++ */
 /* todo Список соціальних контактів */
 .team-social-list {
     display: flex;
@@ -437,7 +445,8 @@ body {
     outline: 1px dotted tomato;
 }
 
-.instagram-icon-svg, /*! inline SVG  */
+
+.instagram-icon-svg, /*! inline SVG  */ 
 .team-social-link {
     display: flex;
     width: 100%;
@@ -449,11 +458,12 @@ body {
     /* fill: teal; */
     /* background-color: #188CE8; */
 }
-.instagram-icon-svg:hover,
+.instagram-icon-svg:hover, /*! inline SVG  */
 .team-social-link:hover {
     fill: var(--color-light);
     background-color: var(--color-brand-main);
 }
+/* todo_____________________ */
 
 /*? footer */
 .footer {
