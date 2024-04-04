@@ -434,14 +434,14 @@ body {
 
 /* todo +++++ 2 семеcтр +++++ */
 /* todo Список соціальних контактів */
-.team-social-list {
+.social-list {
     display: flex;
     justify-content: center;
     gap: 10px;
     outline: 1px dashed blue;
 }
 
-.team-social-item {
+.social-item {
     width: 44px;
     height: 44px;
     outline: 1px dotted tomato;
@@ -449,7 +449,7 @@ body {
 
 
 .instagram-icon-svg, /*! inline SVG  */ 
-.team-social-link {
+.social-link {
     display: flex;
     width: 100%;
     height: 100%;
@@ -461,7 +461,7 @@ body {
     /* background-color: #188CE8; */
 }
 .instagram-icon-svg:hover, /*! inline SVG  */
-.team-social-link:hover {
+.social-link:hover {
     fill: var(--color-light);
     background-color: var(--color-brand-main);
 }
