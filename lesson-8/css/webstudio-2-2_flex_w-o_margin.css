@@ -313,7 +313,8 @@ body {
 }
 
 .features-item {
-    flex-basis: 270px;
+    /* flex-basis: 270px; */
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 /** ----------- додаєм зображення-іконки ----------- */
@@ -403,6 +404,7 @@ body {
 /* todo +++++ 2 семеcтр +++++ */
 .activities-item {
     position: relative;
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .activities-title {
@@ -421,6 +423,7 @@ body {
     background-color: var(--color-background-activity-title);
 }
 /* todo_____________________ */
+
 
 /*? section team */
 .section-team {
@@ -444,6 +447,7 @@ body {
 
 .team-item {
     padding-bottom: 30px;
+    flex-basis: calc((100% - 90px) / 4);
     border-radius: 0 0 4px 4px;
     box-shadow: 
         0 2px 1px 0 rgba(0, 0, 0, 0.2), 
@@ -533,12 +537,12 @@ body {
 }
 .clients-item {
     /* width: 170px; */
-    flex-basis: calc((100% - 60px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
 }
 
 .clients-link {
     height: 92px;
-    padding: 16px 32px;
+    padding: 16px 32px; /*! можна без нього */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -634,9 +638,11 @@ body {
     fill: var(--color-light);
     background-color: var(--color-background-icon-footer);
 }
-
+/* todo_____________________ */
 
 /*? ____________________________________________ */
+
+
 
 /*! -------------- portfolio.html --------------*/
 /*? section portfolio */
