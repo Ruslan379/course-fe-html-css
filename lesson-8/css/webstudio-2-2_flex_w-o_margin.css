@@ -12,10 +12,9 @@
     --color-border-portfolio: #EEEEEE;
     --color-background-overlay-hero: #c4c4c4;
     --color-background-overlay-img: rgba(47, 48, 58, 0.4);
+    --color-background-icon-footer: rgba(255, 255, 255, 0.1);
     /* *========================================== */
     --color-background-another: #E5E5E5;
-    --color-background-footer: #2F303A;
-    --color-background-footer-icon: rgba(255, 255, 255, 0.1);
     --color-background-backdrop: rgba(0, 0, 0, 0.2);
     --color-background-activity: rgba(47, 48, 58, 0.8);
     --color-background-overlay: rgba(33, 150, 243, 0.9);
@@ -479,6 +478,19 @@ body {
 /* відсутні */
 /** ________________________________________________ */
 
+/* todo +++++ 2 семетр +++++ */
+/** --- Додаткові flex-властивості до container ---- */
+.flex-footer {
+    display: flex;
+}
+/** ________________________________________________ */
+
+.footer-address-box{
+    margin-right: 70px;
+    outline: 1px dashed green;
+}
+/* todo_____________________ */
+
 .footer .logo {
     display: inline-block;
     margin-right: 0;
@@ -508,6 +520,32 @@ body {
 .white-color {
     color: var(--color-light);
 }
+
+/* todo +++++ 2 семетр +++++ */
+.footer-social-box {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    outline: 1px dashed yellow;
+}
+
+.footer-social-title {
+    margin-bottom: 20px;
+    /* font-family: var(--font-family); */
+    font-weight: 700;
+    /* font-size: 14px; */
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-social {
+    fill: var(--color-light);
+    background-color: var(--color-background-icon-footer);
+}
+
 
 /*? ____________________________________________ */
 
