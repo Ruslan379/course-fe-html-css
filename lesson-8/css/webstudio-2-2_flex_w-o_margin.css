@@ -13,6 +13,7 @@
     --color-background-overlay-hero: #c4c4c4;
     --color-background-overlay-img: rgba(47, 48, 58, 0.4);
     --color-background-icon-footer: rgba(255, 255, 255, 0.1);
+    --color-clients: #AFB1B8;
     /* *========================================== */
     --color-background-another: #E5E5E5;
     --color-background-backdrop: rgba(0, 0, 0, 0.2);
@@ -22,7 +23,6 @@
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
     /* *========================================== */
     --color-border-line: #ECECEC;
-    --color-border-clients: #AFB1B8;
     --color-border-modal: rgba(33, 33, 33, 0.2);
     /* *========================================== */
     --font-family: "Roboto", sans-serif;
@@ -433,7 +433,7 @@ body {
 }
 
 /* todo +++++ 2 семеcтр +++++ */
-/* todo Список соціальних контактів */
+/* todo -------- Список соціальних контактів -------- */
 .social-list {
     display: flex;
     justify-content: center;
@@ -446,7 +446,6 @@ body {
     height: 44px;
     outline: 1px dotted tomato;
 }
-
 
 .instagram-icon-svg, /*! inline SVG  */ 
 .social-link {
@@ -465,7 +464,53 @@ body {
     fill: var(--color-light);
     background-color: var(--color-brand-main);
 }
+/* todo_________Список соціальних контактів_________ */
 /* todo_____________________ */
+
+
+/* todo +++++ 2 семеcтр +++++ */
+/*? section clients */
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: rgb(239, 230, 255);
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/* відсутні */
+/** ________________________________________________ */
+
+.clients-list {
+    display: flex;
+    /** var. 1 */
+    /* justify-content: space-between; */
+    /** var. 2 */
+    gap: 30px;
+}
+.clients-item {
+    /* width: 170px; */
+    flex-basis: calc((100% - 60px) / 6);
+}
+
+.clients-link {
+    height: 92px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--color-clients);
+    border: 1px solid var(--color-clients);
+    border-radius: 4px;
+    /* outline: 1px dotted darkred; */
+}
+
+.clients-link:hover {
+    border-color: var(--color-brand-main);
+    fill: var(--color-brand-main);
+}
+/* todo_____________________ */
+
+
 
 /*? footer */
 .footer {
