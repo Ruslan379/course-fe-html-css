@@ -552,7 +552,7 @@ body {
     fill: var(--color-clients);
     border: 1px solid var(--color-clients);
     border-radius: 4px;
-    outline: 1px dotted darkred;
+    /* outline: 1px dotted darkred; */
 }
 .clients-link:hover {
     border-color: var(--color-brand-main);
