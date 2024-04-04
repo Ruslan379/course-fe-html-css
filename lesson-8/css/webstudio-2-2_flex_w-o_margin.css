@@ -14,10 +14,10 @@
     --color-background-overlay-img: rgba(47, 48, 58, 0.4);
     --color-background-icon-footer: rgba(255, 255, 255, 0.1);
     --color-clients: #AFB1B8;
+    --color-background-activity-title: rgba(47, 48, 58, 0.8);
     /* *========================================== */
     --color-background-another: #E5E5E5;
     --color-background-backdrop: rgba(0, 0, 0, 0.2);
-    --color-background-activity: rgba(47, 48, 58, 0.8);
     --color-background-overlay: rgba(33, 150, 243, 0.9);
     /* *========================================== */
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
@@ -377,6 +377,27 @@ body {
     gap: 30px;
 }
 
+/* todo +++++ 2 семеcтр +++++ */
+.activities-item {
+    position: relative;
+}
+
+.activities-title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    /* font-family: var(--font-family); */
+    /* font-weight: 700; */
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-light);
+    background-color: var(--color-background-activity-title);
+}
+/* todo_____________________ */
 
 /*? section team */
 .section-team {
