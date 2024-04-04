@@ -320,19 +320,25 @@ body {
     /** var. 1 */
     /* background-image: url(../images/clock-full.png); */
     /** var. 2 */
+    /* todo +++++ 2 семеcтр +++++ */
     background-image: url(../images/clock.svg);
+    /* todo_____________________ */
 }
 .features-item:nth-child(3 )::before { 
     /** var. 1 */
     /* background-image: url(../images/diagram-full.png); */
     /** var. 2 */
+    /* todo +++++ 2 семеcтр +++++ */
     background-image: url(../images/diagram.svg);
+    /* todo_____________________ */
 }
 .features-item:nth-child(4)::before { 
     /** var. 1 */
     /* background-image: url(../images/astronaut-full.png); */
     /** var. 2 */
+    /* todo +++++ 2 семеcтр +++++ */
     background-image: url(../images/astronaut.svg);
+    /* todo_____________________ */
 }
 /** ________________________________________________ */
 
