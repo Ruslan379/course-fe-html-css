@@ -153,14 +153,14 @@ body {
     letter-spacing: 0.02em;
     /* letter-spacing: 0.28px; */
     color: var(--color-font-main);
-    /* todo +++++ 2 семетр +++++ */
+    /* todo +++++ 2 семеcтр +++++ */
     display: flex;
     align-items: center;
     gap: 10px;
 }
 .contacts-link:hover {
     color: var(--color-brand-main);
-    /* todo +++++ 2 семетр +++++ */
+    /* todo +++++ 2 семеcтр +++++ */
     fill: var(--color-brand-main);
 }
 
@@ -432,7 +432,7 @@ body {
     color: var(--color-font-second);
 }
 
-/* todo +++++ 2 семетр +++++ */
+/* todo +++++ 2 семеcтр +++++ */
 /* todo Список соціальних контактів */
 .team-social-list {
     display: flex;
@@ -478,7 +478,7 @@ body {
 /* відсутні */
 /** ________________________________________________ */
 
-/* todo +++++ 2 семетр +++++ */
+/* todo +++++ 2 семеcтр +++++ */
 /** --- Додаткові flex-властивості до container ---- */
 .flex-footer {
     display: flex;
@@ -487,7 +487,7 @@ body {
 
 .footer-address-box{
     margin-right: 70px;
-    outline: 1px dashed green;
+    outline: 1px dashed yellowgreen;
 }
 /* todo_____________________ */
 
@@ -521,7 +521,7 @@ body {
     color: var(--color-light);
 }
 
-/* todo +++++ 2 семетр +++++ */
+/* todo +++++ 2 семеcтр +++++ */
 .footer-social-box {
     margin-top: 12px;
     display: flex;
