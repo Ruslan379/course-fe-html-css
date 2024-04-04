@@ -270,23 +270,24 @@ body {
     position: absolute;
 
     /*todo var.1 */
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     /*todo var.2 */
-    /* top: 20px;
+    top: 20px;
     right: -20px;
     bottom: -20px;
-    left: 20px; */
+    left: 20px;
 
     background: 
         linear-gradient(
-            /* 135deg, */
             315deg,
+            /* 135deg, */
             rgba(239, 139, 138, 0.8),
-            rgba(229, 207, 130, 0.8) 100%
+            rgba(229, 207, 130, 0.8)
         );
-    /* box-shadow: -10px -10px 30px #333333; */
     box-shadow: 10px 10px 30px #333333;
+    /* box-shadow: -10px -10px 30px #333333; */
+    
 }
 
 
