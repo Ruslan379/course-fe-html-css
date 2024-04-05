@@ -82,6 +82,51 @@ body {
 }
 
 
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 2.CSS-переходи (приклад) */
+.box2 {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 10px;
+    color: #f2ffd6;
+    background-color: tomato;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*todo  Встановлює значення переходу:  */
+    /* transition-property: background-color; */
+    /* transition-property: background-color, transform; */
+    /* transition-duration: 500ms; */
+    /* transition-duration: 1500ms; */
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    /* transition-delay: 0; */
+    /* transition-delay: 500ms; */
+}
+
+  /*todo При наведенні змінюється значення анімованих властивостей. */
+.box2:hover {
+    cursor: pointer;
+    background-color: teal;
+    /* transform: rotate(180deg); */
+}
+
+
+
+
 
 /*? ______________________________________________________ */
 /* ! */
