@@ -91,9 +91,9 @@ body {
 
 
 /* ! */
-.part_1-2 {
+/* .part_1-2 {
     display: none;
-}
+} */
 /*! 1.Властивість overflow */
 .margintop {
     margin-top: 200px;
@@ -153,9 +153,9 @@ p>strong {
 
 
 /* ! */
-.part_2 {
+/* .part_2 {
     display: none;
-}
+} */
 /*! 2.Заокруглене зображення */
 img {
     display: block;
@@ -185,9 +185,9 @@ img {
 
 
 /* ! */
-.part_3 {
+/* .part_3 {
     display: none;
-}
+} */
 /*! 3.Декоративний оверлей */
 .box3 {
     position: relative;
@@ -219,20 +219,21 @@ img {
 /*todo var.1 */
 .box3:hover .overlay3 {
     transform: translate(0);
-    /* ? по y */
-    /* transform: translatey(0); */
-    /* ? по x */
-    /* transform: translatex(0); */
 }
 /*todo var.2 */
-/* .box3:hover .overlay3-1 {
+.box3:hover .overlay3-1 {
+    /* ? по y */
     transform: translatey(-100%);
-} */
+    /* ? по x */
+    /* transform: translatex(-100%); */
+    /* transform: translatex(100%); */
+}
 /*todo var.2 */
 /* .box3:active .overlay3 {
     transform: translatey(0);
 } */
 
+/*todo overlay-текст */
 .overlay3 p {
     color: #ffffff;
     padding: 10px;
@@ -251,13 +252,6 @@ img {
     color: #2a2a2a;
 }
 
-/*todo overlay-текст */
-h3 {
-    margin-bottom: 5px;
-    text-align: center;
-    font-size: 24px;
-}
-
 /*todo overlay-зображення */
 .overlay3 img {
     display: block;
@@ -274,11 +268,17 @@ h3 {
     /* object-fit: none; */
 }
 
+h3 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+
 
 /* ! */
-.part_4 {
+/* .part_4 {
     display: none;
-}
+} */
 /*! 4.Випадаюче меню */
 .menu4 {
     display: flex;
@@ -346,17 +346,17 @@ h3 {
 
 
 /* ! */
-.part_5 {
+/* .part_5 {
     display: none;
-}
+} */
 /*! 5.Фіксований header */
 
 
 
 /* ! */
-.part_6 {
+/* .part_6 {
     display: none;
-}
+} */
 /*! 5.6.Навігація сайту через якорі та scroll-to-top */
 
 
