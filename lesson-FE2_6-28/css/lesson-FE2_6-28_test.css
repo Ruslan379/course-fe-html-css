@@ -89,40 +89,101 @@ body {
 /*! 2.CSS-переходи (приклад) */
 .box2 {
     margin-top: 30px;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 4rem;
     border-radius: 10px;
     color: #f2ffd6;
     background-color: tomato;
     box-shadow: 
+    inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*todo  Встановлює значення переходу:  */
+        /** transition-property */
+    /* transition-property: all; */
     /* transition-property: background-color; */
     /* transition-property: background-color, transform; */
+        /** transition-duration */
+    /* transition-duration: 0ms; */
     /* transition-duration: 500ms; */
     /* transition-duration: 1500ms; */
+    /* transition-duration: 2500ms; */
+        /** transition-timing-function */
     /* transition-timing-function: linear; */
     /* transition-timing-function: ease; */
     /* transition-timing-function: ease-in; */
     /* transition-timing-function: ease-out; */
     /* transition-timing-function: ease-in-out; */
     /* transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+        /** transition-delay */
     /* transition-delay: 0; */
     /* transition-delay: 500ms; */
+    /* transition-delay: 1500ms; */
 }
 
   /*todo При наведенні змінюється значення анімованих властивостей. */
 .box2:hover {
     cursor: pointer;
     background-color: teal;
-    /* transform: rotate(180deg); */
+    transform: rotate(180deg);
 }
+
+
+/* ! */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.CSS-переходи (transition-duration​) */
+.box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 40px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 12px;
+}
+
+.circle3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+    border-radius: 50%;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+}
+
+.box3:hover .circle3 {
+    transform: scale(1.5);
+}
+
+.circle3:nth-child(1) {
+    background-color: orange;
+    transition-duration: 500ms;
+}
+
+.circle3:nth-child(2) {
+    background-color: #03a9f4;
+    transition-duration: 1500ms;
+}
+
+.circle3:nth-child(3) {
+    background-color: palevioletred;
+    transition-duration: 3000ms;
+}
+
 
 
 
