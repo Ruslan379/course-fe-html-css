@@ -114,12 +114,12 @@ body {
     /* transition-duration: 1500ms; */
     /* transition-duration: 2500ms; */
         /** transition-timing-function */
-    /* transition-timing-function: linear; */
     /* transition-timing-function: ease; */
+    /* transition-timing-function: linear; */
     /* transition-timing-function: ease-in; */
     /* transition-timing-function: ease-out; */
     /* transition-timing-function: ease-in-out; */
-    /* transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    /* transition-timing-function: cubic-beziercubic-bezier(0.39, 1.03, 0.82, 0.08); */
         /** transition-delay */
     /* transition-delay: 0; */
     /* transition-delay: 500ms; */
@@ -185,6 +185,148 @@ body {
 }
 
 
+
+/* ! */
+/* .part_4 {
+    display: none;
+} */
+/*! 4.CSS-переходи (transition-timing-function​) */
+.box4 {
+    width: 80vw;
+    border: 2px dashed #2a2a2a;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.circle4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow:
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    transform: translatex(0);
+    transition-property: transform;
+    transition-duration: 2000ms;
+}
+
+.circle4:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.box4:hover .circle4 {
+    transform: translatex(calc(80vw - 80px));
+}
+
+.circle4:nth-child(1) {
+    background-color: #f44336;
+    transition-timing-function: ease;
+}
+
+.circle4:nth-child(2) {
+    background-color: #3f51b5;
+    transition-timing-function: linear;
+}
+
+.circle4:nth-child(3) {
+    background-color: #00bcd4;
+    transition-timing-function: ease-in;
+}
+
+.circle4:nth-child(4) {
+    background-color: #4caf50;
+    transition-timing-function: ease-out;
+}
+
+.circle4:nth-child(5) {
+    background-color: #ffeb3b;
+    transition-timing-function: ease-in-out;
+}
+
+.circle4:nth-child(6) {
+    background-color: #e91e63;
+    transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08);
+}
+
+
+/* ! */
+/* .part_5 {
+    display: none;
+} */
+/*! 5.CSS-переходи (transition-delay) */
+.box5 {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: 10px;
+    color: #f2ffd6;
+    background-color: green;
+    box-shadow: 
+    inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*todo  Встановлює значення переходу:  */
+        /** transition-property */
+    transition-property: background-color, transform;
+        /** transition-duration */
+    transition-duration: 1500ms;
+        /** transition-timing-function */
+    transition-timing-function: linear;
+        /** transition-delay */
+    /* transition-delay: 0; */
+    transition-delay: 500ms;
+    /* transition-delay: 1500ms; */
+}
+
+  /*todo При наведенні змінюється значення анімованих властивостей. */
+.box5:hover {
+    cursor: pointer;
+    background-color: red;
+    transform: rotate(180deg);
+}
+
+
+/* ! */
+/* .part_6 {
+    display: none;
+} */
+/*! 5.CSS-переходи (transition-delay) */
+.box6 {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: 10px;
+    color: #f2ffd6;
+    background-color: yellow;
+    box-shadow: 
+    inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*todo  Встановлює значення всіх переходів:  */
+    transition: 
+        background-color 1000ms linear, 
+        transform 500ms ease-in-out 1000ms;
+}
+
+
+  /*todo При наведенні змінюється значення анімованих властивостей. */
+.box6:hover {
+    /* cursor: pointer; */
+    background-color: blue;
+    transform: rotate(-180deg);
+}
 
 
 
