@@ -319,11 +319,12 @@ body {
 
 /** ----------- додаєм зображення-іконки ----------- */
 .features-item::before {
-    margin-bottom: 30px;
     content: "";
     display: block;
     height: 120px;
+    margin-bottom: 30px;
     border-radius: 4px;
+    background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--color-background-light);
@@ -336,19 +337,19 @@ body {
 }
 .features-item:nth-child(2)::before { 
     /** var. 1 */
-    background-image: url(../images/clock-full.png);
+    background-image: url(../images/clock.png);
     /** var. 2 */
     /* background-image: url(../images/clock.svg); */
 }
 .features-item:nth-child(3 )::before { 
     /** var. 1 */
-    background-image: url(../images/diagram-full.png);
+    background-image: url(../images/diagram.png);
     /** var. 2 */
     /* background-image: url(../images/diagram.svg); */
 }
 .features-item:nth-child(4)::before { 
     /** var. 1 */
-    background-image: url(../images/astronaut-full.png);
+    background-image: url(../images/astronaut.png);
     /** var. 2 */
     /* background-image: url(../images/astronaut.svg); */
 }
