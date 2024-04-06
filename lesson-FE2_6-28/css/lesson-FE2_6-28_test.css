@@ -27,6 +27,8 @@ body {
     text-align: center;
     color: var(--color-title-lesson);
     text-shadow: 4px 2px 6px #43300088;
+    /* ! */
+    margin-bottom: 350px;
 }
 
 .title-section {
@@ -53,11 +55,43 @@ body {
 
 /* *======================================= */
 /* ! */
-/* .part_0-1 {
+.part_1 {
+    display: none;
+    position: fixed;
+    top: 100px;
+}
+/*! 1.CSS-переходи */
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px 30px;
+    border: 2px solid #363636;
+    border-radius: 20px;
+    box-shadow: 6px 6px 12px rgba(69, 69, 69, 0.7);
+    background-color: #ebffc1;
+
+    /* outline: 1px dotted red; */
+}
+.code1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 110, 0);
+}
+
+.span1 {
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(195, 0, 0)
+}
+
+
+/* ! */
+/* .part_1-1 {
     display: none;
 } */
-/*! 0-1.Магія за допомогою CSS */
-.box0-1 {
+/*! 1-1.Магія за допомогою CSS */
+.box1-1 {
     overflow: hidden;
     width: 1060px;
     height: 629px;
@@ -75,8 +109,8 @@ body {
     outline: 2px solid rgba(255, 99, 71, 0.5);
 }
 
-.box_image0-1 {
-    /*todo var.1 Декоративне зображення*/
+.box_image1-1 {
+    /*todo var.1 Декоративне зображення */
     width: 5235px;
     height: 600px;
     background-position: left top;
@@ -107,46 +141,16 @@ body {
     }
 }
 
-.image0-1 {
+.image1-1 {
     display: block;
     max-width: max-content;
     height: 600px;
 }
 
-.audio0-1 {
+.audio1-1 {
     margin-top: 20px;
     display: block;
     width: 800px;
-}
-
-
-/* ! */
-/* .part_1 {
-    display: none;
-} */
-/*! 1.CSS-переходи */
-.box1 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 15px 30px;
-    border: 2px solid #363636;
-    border-radius: 20px;
-    box-shadow: 6px 6px 12px rgba(69, 69, 69, 0.7);
-    background-color: #ebffc1;
-
-    /* outline: 1px dotted red; */
-}
-.code1 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: rgb(0, 110, 0);
-}
-
-.span1 {
-    font-weight: 400;
-    font-style: italic;
-    color: rgb(195, 0, 0)
 }
 
 
@@ -405,10 +409,200 @@ body {
 /* .part_7 {
     display: none;
 } */
-/*! 7.2D-трансформації - властивість transform */
+/*! 2D-трансформації */
+/*! 7.Властивість transform (Масштабування) */
+.container7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 40px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 12px;
+}
+
+.box7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    font-weight: 700;
+    border-radius: 50%;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+}
+
+.box7:nth-child(1) {
+    background-color: orange;
+    transition-duration: 1000ms;
+}
+.container7:hover .box7:nth-child(1) {
+    transform: scale(1.25);
+}
+
+.box7:nth-child(2) {
+    background-color: #03a9f4;
+    transition-duration: 1000ms;
+}
+.container7:hover .box7:nth-child(2) {
+    transform: scale(1.0);
+}
+
+.box7:nth-child(3) {
+    background-color: palevioletred;
+    
+    transition-duration: 1000ms;
+}
+.container7:hover .box7:nth-child(3) {
+    transform: scale(0.75);
+}
 
 
+/* ! */
+/* .part_8 {
+    display: none;
+} */
+/*! 8.Властивість transform (Поворот) */
+.container8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 40px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 12px;
+}
 
+.box8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+}
+
+.box8:nth-child(1) {
+    background-color: orange;
+    transition-duration: 1000ms;
+}
+.container8:hover .box8:nth-child(1) {
+    transform: rotate(30deg);
+}
+
+.box8:nth-child(2) {
+    background-color: #03a9f4;
+    transition-duration: 1000ms;
+}
+.container8:hover .box8:nth-child(2) {
+    transform: rotate(115deg);
+}
+
+.box8:nth-child(3) {
+    background-color: palevioletred;
+    
+    transition-duration: 1000ms;
+}
+.container8:hover .box8:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+
+/* ! */
+/* .part_9 {
+    display: none;
+} */
+/*! 9.Властивість transform (Зміщення) */
+.container9 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 40px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 12px;
+}
+
+.box9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 125px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+}
+
+.box9:nth-child(1) {
+    background-color: orange;
+    transition-duration: 1000ms;
+}
+.container9:hover .box9:nth-child(1) {
+    transform: translateX(50px);
+}
+
+.box9:nth-child(2) {
+    background-color: #03a9f4;
+    transition-duration: 1000ms;
+}
+.container9:hover .box9:nth-child(2) {
+    transform: translateY(110px);
+}
+
+.box9:nth-child(3) {
+    background-color: palevioletred;
+    
+    transition-duration: 1000ms;
+}
+.container9:hover .box9:nth-child(3) {
+    transform: translate(-50px, -100px);
+}
+
+
+/* ! */
+/* .part_10 {
+    display: none;
+} */
+/*! 10.Центрування елемента */
+.parent10 {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 10px solid #165d10;
+    border-radius: 10px;
+    background-color: #4db53f;
+}
+
+.box10 {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 10px solid #d74400;
+    border-radius: 10px;
+    background-color: #8b1e00;
+}
 
 
 
