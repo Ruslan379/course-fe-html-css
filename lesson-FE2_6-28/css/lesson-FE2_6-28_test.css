@@ -119,11 +119,15 @@ body {
     /* transition-timing-function: ease-in; */
     /* transition-timing-function: ease-out; */
     /* transition-timing-function: ease-in-out; */
-    /* transition-timing-function: cubic-beziercubic-bezier(0.39, 1.03, 0.82, 0.08); */
+    /* transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08); */
         /** transition-delay */
     /* transition-delay: 0; */
     /* transition-delay: 500ms; */
     /* transition-delay: 1500ms; */
+
+    /*todo Зміна властивостей transition-property без єфекту over */
+    /* background-color: teal;
+    transform: rotate(180deg); */
 }
 
   /*todo При наведенні змінюється значення анімованих властивостей. */
