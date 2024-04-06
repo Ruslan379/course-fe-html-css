@@ -53,6 +53,74 @@ body {
 
 /* *======================================= */
 /* ! */
+/* .part_0-1 {
+    display: none;
+} */
+/*! 0-1.Магія за допомогою CSS */
+.box0-1 {
+    overflow: hidden;
+    width: 1060px;
+    height: 629px;
+    border: 15px solid rgb(0, 66, 0);
+    border-radius: 50px;
+    box-shadow:
+    /* inset 0 0 6px 12px rgba(0, 0, 0, 0.4), */
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.06),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+    41.8px 41.8px 33.4px rgba(202, 73, 18, 0.429),
+    00px 100px 80px rgba(202, 94, 18, 0.466);
+    /* ? */
+    outline: 2px solid rgba(255, 99, 71, 0.5);
+}
+
+.box_image0-1 {
+    /*todo var.1 Декоративне зображення*/
+    width: 5235px;
+    height: 600px;
+    background-position: left top;
+    background-size: auto 600px;
+    background-image: 
+        linear-gradient(
+            to right,
+            rgba(255, 241, 91, 0.1),
+            rgba(27, 29, 88, 0.45)
+        ),
+        url("../images/pano_img_3691-3720_for_tl.jpg");
+    /* todo____________________________ */
+    animation-name: move;
+    animation-direction: alternate;
+    /* animation-direction: alternate-reverse; */
+    /* animation-direction: reverse; */
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    animation-delay: 1500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0% {
+        transform: translatex(0);
+    }
+    100% {
+        transform: translatex(-4205px);
+    }
+}
+
+.image0-1 {
+    display: block;
+    max-width: max-content;
+    height: 600px;
+}
+
+.audio0-1 {
+    margin-top: 20px;
+    display: block;
+    width: 800px;
+}
+
+
+/* ! */
 /* .part_1 {
     display: none;
 } */
@@ -349,4 +417,4 @@ body {
 .part_0 {
     display: none;
 }
-/*! 0.CSS-переходи */
+/*! 0.Заголовок */
