@@ -576,7 +576,7 @@ body {
 }
 
 
-/* ! */
+/* ! ✌ */
 /* .part_10 {
     display: none;
 } */
@@ -598,6 +598,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /*todo декілька трансформацій одного елемента */
+    /* transform: translate(-50%, -50%) rotate(90deg) scale(2.0); */
 
     border: 10px solid #d74400;
     border-radius: 10px;
