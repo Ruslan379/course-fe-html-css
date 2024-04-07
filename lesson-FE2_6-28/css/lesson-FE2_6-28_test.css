@@ -605,6 +605,66 @@ body {
 }
 
 
+/* ! */
+/* .part_11 {
+    display: none;
+} */
+/*! 11.Властивість transform (Викривлення) */
+.container11 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 40px 40px;
+    border: 2px dashed #2a2a2a;
+    border-radius: 12px;
+}
+
+.box11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 125px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    transition-property: transform;
+}
+
+.box11:nth-child(1) {
+    background-color: orange;
+    transition-duration: 1000ms;
+}
+.container11:hover .box11:nth-child(1) {
+    transform: skewX(30deg);
+}
+
+.box11:nth-child(2) {
+    background-color: #03a9f4;
+    transition-duration: 1000ms;
+}
+.container11:hover .box11:nth-child(2) {
+    transform: skewY(30deg);
+}
+
+.box11:nth-child(3) {
+    background-color: palevioletred;
+    
+    transition-duration: 1000ms;
+}
+.container11:hover .box11:nth-child(3) {
+    transform: skew(30deg, 30deg);
+    /* transform: skew(30deg, -30deg); */
+}
+
+
+
 
 /*? ______________________________________________________ */
 /* ! */
