@@ -585,15 +585,20 @@ body {
     position: relative;
     width: 500px;
     height: 300px;
+    
     border: 10px solid #165d10;
     border-radius: 10px;
     background-color: #4db53f;
 }
 
 .box10 {
-    width: 100px;
-    height: 100px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: wheat;
+    width: 150px;
+    height: 150px;
     position: absolute;
     top: 50%;
     left: 50%;
