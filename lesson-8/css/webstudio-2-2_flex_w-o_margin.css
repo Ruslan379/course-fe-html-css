@@ -71,6 +71,7 @@ body {
     position: fixed;
     width: 1600px;
     top: 0;
+    z-index: 1;
     /* display: none; */
 }
 
