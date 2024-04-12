@@ -182,7 +182,6 @@ body {
 }
 
 .menu-item2:hover .menu-link2::after{
-    /* cursor: pointer; */
     opacity: 1;
     transform: scaleX(1);
 }
