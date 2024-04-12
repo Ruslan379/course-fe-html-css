@@ -188,6 +188,116 @@ body {
 }
 
 
+/* ! */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Анімація на оверлей статті: */
+.product3 {
+    width: 370px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    box-shadow:
+        0px 2px 1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.product-thumb3 {
+    position: relative;
+    /* ! */
+    overflow: hidden;
+}
+
+.product-overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: skyblue;
+    /* ! */
+    opacity: 0;
+    /* ! */
+    transform: translateX(-100%);
+    /* ! */
+    transition:
+        transform 
+        500ms 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        1000ms,
+        opacity 
+        500ms 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        1000ms;
+}
+
+/*? блок кнопки-іконки */
+.product-actions3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    outline: 3px solid orange;
+    /* ! */
+    opacity: 0;
+    /* ! */
+    transition: 
+        opacity 
+        500ms 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        1000ms;
+}
+
+.button3 {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button3 .icon3 {
+    width: 32px;
+    height: 32px;
+}
+
+/*? блок інформації */
+.product-meta3 {
+    padding: 15px;
+}
+
+.product-name3,
+.product-price3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/** hovers */
+/* ? */
+/* .product-thumb:hover::before {
+    opacity: 1;
+} */
+
+.product3:hover .product-overlay3 {
+    opacity: 0.7;
+    transform: translateX(0);
+}
+
+/*? hover на блоці кнопки-іконки */
+.product3:hover .product-actions3 {
+    opacity: 1;
+}
+
+.button3:hover {
+    fill: red;
+}
+
+
+
+
+
+
 /*? ______________________________________________________ */
 /* ! */
 .part_0 {
