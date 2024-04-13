@@ -338,7 +338,7 @@ body {
 /* ! */
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
-  }
+}
 
 .no-scroll {
     overflow: hidden;
