@@ -189,6 +189,10 @@ body {
         opacity: 1;
     }
 }
+/* ? +++++ Пауза в анімації +++++ */
+.nav-link.active-link:hover::after  {
+    animation-play-state: paused;
+}
 /* todo_____________________ */
 
 /** для розташування без margin */
