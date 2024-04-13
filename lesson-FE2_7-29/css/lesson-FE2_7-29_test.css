@@ -54,7 +54,7 @@ body {
 }
 
 /* *======================================= */
-/* ! */
+/*! =============================== */
 /* .part_1 {
     display: none;
 } */
@@ -158,7 +158,7 @@ body {
 
 
 
-/* ! */
+/*! =============================== */
 /* .part_1-1 {
     display: none;
 } */
@@ -227,7 +227,7 @@ body {
 }
 
 
-/* ! */
+/*! =============================== */
 /* .part_2 {
     display: none;
 } */
@@ -295,8 +295,7 @@ body {
 }
 
 
-
-/* ! */
+/*! =============================== */
 /* .part_3 {
     display: none;
 } */
@@ -386,11 +385,6 @@ body {
 }
 
 /** hovers */
-/* ? */
-/* .product-thumb:hover::before {
-    opacity: 1;
-} */
-
 .product3:hover .product-overlay3 {
     opacity: 0.7;
     transform: translateX(0);
@@ -406,7 +400,7 @@ body {
 }
 
 
-/* ! */
+/*! =============================== */
 /* .part_4 {
     display: none;
 } */
@@ -421,20 +415,21 @@ body {
     opacity: 1;
 }
 
+/*? Анімація-1 - тригер */
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-    /* ! */
-    opacity: 0;
-}
-
-/* ! */
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
 }
 
 .no-scroll {
     overflow: hidden;
+}
+
+/* ! */
+.backdrop.is-hidden .modal {
+    /*? Анімація-1 - початковий стан-2 */
+    /* transform: scale(0); */
+    transform: translate(-50%, -50%) scale(0);
 }
 
 .modal {
@@ -446,10 +441,12 @@ body {
     padding: 15px;
     text-align: center;
     background-color: skyblue;
-    transform: translate(-50%, -50%) scale(1);;
+    /*? Анімація-1 - кінцевий стан */
+    transform: translate(-50%, -50%) scale(1);
+    /*? Анімація-1 - шлях */
     transition:
         transform 
-        1000ms 
+        1000ms
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         500ms,
         opacity 
@@ -467,7 +464,7 @@ body {
 
 
 /*? ______________________________________________________ */
-/* ! */
+/*! =============================== */
 .part_0 {
     display: none;
 }
