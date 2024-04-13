@@ -9,6 +9,13 @@
             type="image/x-icon" 
             rel="shortcut icon"
         >
+        <!--! Бібліотека анімації animate -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!--! Бібліотека анімації AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!--! Спочатку нормалізатор -->
         <!--! завантаження modern-normalize -->
@@ -105,7 +112,14 @@
 
 
         <!--! 4.Анімація модального вікна -->
-        <div class="part part_4">
+        <!--? Бібліотека анімації при скролі сторінки AOS  -->
+        <!-- https://michalsnik.github.io/aos/ -->
+                <div 
+            class="part part_4"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+        >
             <h3 class="title-subsection">4-1.Анімація модального вікна</h3>
             <button class="btn-open" data-modal-open>Відкрити модалку</button>
             <div class="backdrop is-hidden" data-modal>
@@ -132,6 +146,19 @@
         </div>
 
 
+        <!--! 5.2-1.Бібліотека анімацій animate.style -->
+        <!-- https://animate.style/#documentation -->
+        <div class="part part_5">
+            <h2 class="title-section">2.Бібліотеки анімацій</h2>
+            <h3 class="title-subsection">2-1.Бібліотеки анімацій animate.style</h3>
+            <h3 class="animate__animated animate__bounce">An animated element</h3>
+            <!-- <h3 class="animate__jackInTheBox">An animated element - jackInTheBox</h3> -->
+            <!-- <h3 class="animate__zoomInLeft">An animated element - zoomInLeft</h3> -->
+            <!-- <h3 class="animate__slideOutRight">An animated element - slideOutRight</h3> -->
+            <h3 class="animate__flipOutY">An animated element - flipOutY</h3>
+        </div>
+
+
 
 
 
@@ -144,6 +171,11 @@
         
         <!--! Скрипт модалки -->
         <script src="./js/modal.js"></script>
+        <!--! Скрипт бібліотекі анімації AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
