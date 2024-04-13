@@ -59,75 +59,101 @@ body {
     display: none;
 } */
 /*! 1.Анімовані властивості події hover на кнопці */
-.box1 {
+/* .box1 {
     margin-top: 30px;
-}
+} */
 .btn1 {
     position: relative;
-    /* ! */
-    overflow: hidden;
-
     display: inline-flex;
     align-items: center;
-    border: none;
-    margin: 0;
-    padding: 10px 30px;
-    border-radius: 3px;
-    color: #fff;
-    background-color: #008080;
-    cursor: pointer;
-    font: inherit;
+    height: 100px;
+    margin: 50px 0;
+    padding: 0 30px;
     /* ! */
-    transition-property: background-color;
-    /* transition-property: background-color, color; */
-    transition-duration: 500ms;
+    overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    /* font: inherit; */
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #008080;
+    text-shadow:
+    1px 1px 2px rgba(0, 0, 0, 0.4),
+    2px 2px 4px rgba(0, 0, 0, 0.2),
+    4px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow:
+        inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    /*? Анімація-1 - шлях */
+    /* transition-property: background-color; */
+    transition-property: background-color, color;
+    transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
-    transition-delay: 1000ms;
+    transition-delay: 500ms;
 }
 
 .btn1::before,
 .btn1::after {
     content: "";
-    /* display: inline-block; */
-    width: 20px;
-    height: 20px;
-    /* background-color: #d87093; */
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    /* ! */
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #a9bdff;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    background-position: center;
+    /*? Анімація-1 - шлях (збірна властивість) */
     transition: 
         transform 
-        500ms 
+        1000ms 
         cubic-bezier(0.83, -0.08, 0.32, 1) 
-        1000ms;
+        500ms,
+        opacity 
+        1000ms 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        500ms;
 }
 
 .btn1::before {
-    margin-right: 5px;
+    margin-right: 20px;
+    opacity: 1;
     background-image: url(../images/cat.webp);
 }
 
 .btn1::after {
     position: absolute;
-    top: 50%;
-    /* left: 30px; */
+    opacity: 0;
+    /*? Анімація-1 - початковий стан-1 */
+    top: 100%;
+    /*! або: */
+    /* top: 100px; */
     background-image: url(../images/dog.webp);
-    transform: translateY(calc(-50% + 35px));
-    /* transform: translateY(calc(-50% + 0px)); */
+    /*? Анімація-1 - початковий стан-2 */
+    /* transform: translateY(calc(-100% + 50px)); */
+    /* transform: translateY(-50px); */
 }
 
-/* .btn1:focus::before, */
+/*? Анімація-1 - кінцевий стан + тригер */
 .btn1:hover::before {
-    transform: translateY(-35px);
+    transform: translateY(-150%);
+    opacity: 0;
 }
 
-/* .btn1:focus::after, */
+/*? Анімація-1 - кінцевий стан + тригер */
 .btn1:hover::after {
-    transform: translateY(-50%);
-    /* transform: translateY(-35px); */
+    transform: translateY(-150%);
+    opacity: 1;
 }
 
-/* .btn1:focus, */
+/*? Анімація-1 - кінцевий стан + тригер */
 .btn1:hover {
     background-color: #d87093;
     color: #25ffff;
