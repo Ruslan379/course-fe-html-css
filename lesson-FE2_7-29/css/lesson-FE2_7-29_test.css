@@ -304,11 +304,10 @@ body {
     display: none;
 } */
 /*! 3.Анімація на оверлей статті: */
-.product3 {
-    overflow: hidden;
+.article3 {
     width: 370px;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
+    /* ! */
+    overflow: hidden;
     border-radius: 12px;
     box-shadow:
         2px 2px 1px rgba(0, 0, 0, 0.2),
@@ -316,24 +315,24 @@ body {
         1px 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-.product-thumb3 {
+.thumb3 {
     position: relative;
-    /* ! */
-    overflow: hidden;
+    /* ! (дублюэться у .article3) */
+    /* overflow: hidden; */
 }
 
-.product-overlay3 {
+.overlay3 {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: skyblue;
+    /*? Анімація-1-overlay - початковий стан */
     /* ! */
     opacity: 0;
-    /* ! */
     transform: translateX(-100%);
-    /* ! */
+    /*? Анімація-1-overlay - шлях (збірна властивість) */
     transition:
         transform 
         1000ms 
@@ -345,17 +344,18 @@ body {
         500ms;
 }
 
-/*? блок кнопки-іконки */
-.product-actions3 {
+/*todo блок кнопки-іконки */
+.buttons-box {
     position: absolute;
     top: 50%;
     left: 50%;
     display: flex;
     transform: translate(-50%, -50%);
     outline: 3px solid orange;
+    /*? Анімація-1-box - початковий стан */
     /* ! */
     opacity: 0;
-    /* ! */
+    /*? Анімація-1-box - шлях (збірна властивість) */
     transition: 
         opacity 
         1000ms 
@@ -363,6 +363,7 @@ body {
         500ms;
 }
 
+/*todo кнопки та іконки */
 .button3 {
     padding: 5px;
     display: flex;
@@ -375,27 +376,28 @@ body {
     height: 32px;
 }
 
-/*? блок інформації */
-.product-meta3 {
+/*todo блок інформації */
+.meta3 {
     padding: 15px;
     background-color: skyblue;
 }
 
-.product-name3,
-.product-price3 {
+.name3,
+.price3 {
     margin-bottom: 10px;
     text-align: center;
     color: #6a0000;
 }
 
-/** hovers */
-.product3:hover .product-overlay3 {
+/*todo all hovers */
+/*? Анімація-1-overlay - кінцевий стан + тригер */
+.article3:hover .overlay3 {
     opacity: 0.7;
     transform: translateX(0);
 }
 
-/*? hover на блоці кнопки-іконки */
-.product3:hover .product-actions3 {
+/*? Анімація-1-box - кінцевий стан + тригер */
+.article3:hover .buttons-box {
     opacity: 1;
 }
 
@@ -450,11 +452,11 @@ body {
     /*? Анімація-1 - шлях */
     transition:
         transform 
-        1000ms
+        3000ms
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         500ms,
         opacity 
-        1000ms 
+        3000ms 
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         500ms;
 }
@@ -470,7 +472,9 @@ body {
     display: none;
 } */
 /*! 5.2-1.Бібліотека анімацій animate.style */
-
+.part_5 p {
+    font-size: 3rem;
+}
 
 
 
