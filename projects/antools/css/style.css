@@ -1,0 +1,40 @@
+:root {
+    /** colors */
+    --background-color: #1E252B;
+    --color-white: #FFFFFF;
+    --color-white-90: #e6e6e6;
+    /** fonts */
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Lora", sans-serif;
+    --third-family: "Roboto", sans-serif;
+}
+
+
+.container{
+    width: 1224px;
+    margin: 0 auto;
+    outline: 1px dashed tomato;
+}
+
+/*? header */
+.header {
+    /* padding-top: 24px; */
+    /* padding-bottom: 25px; */
+    background-color: #d2fff2;
+}
+
+
+/*? main */
+/*? section hero */
+.hero {
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    background-color: rgb(168, 168, 168);
+}
+
+/*? section tools */
+.tools {
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    background-color: rgb(209, 196, 255);
+}
