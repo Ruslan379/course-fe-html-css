@@ -58,10 +58,11 @@ section .flex {
 
 /* HEADER */
 .header {
-    border-bottom: 3px solid (255, 255, 255, 1);
+    /* border-bottom: 3px solid (255, 255, 255, 1); */
     background: url(../images/header-footer-back.png)rgba(43, 74, 97, 0.87);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 120%;
+    /* background-size: cover; */
 
 }
 
@@ -69,12 +70,14 @@ section .flex {
     padding: 39px 0px;
 }
 
-/* ! */
+/** ======================================= */
 .header-logo{
     width: 186px;
     height: 72px;
     margin-right: 168px;
 }
+/** ______________________________________________ */
+
 
 .flex,
 .navigation,
@@ -86,7 +89,7 @@ section .flex {
 
 /*todo var. 2 */
 .flex {
-    margin-top: 80px;
+    margin-top: 61px;
 }
 
 
