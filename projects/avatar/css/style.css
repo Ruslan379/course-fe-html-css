@@ -84,6 +84,12 @@ section .flex {
     align-items: center;
 }
 
+/*todo var. 2 */
+.flex {
+    margin-top: 80px;
+}
+
+
 .nav-list {
     margin-right: 212px;
 }
@@ -118,31 +124,32 @@ section .flex {
 
 
 
-
-
-
+/** ======================================= */
 .lang-list {
-    position: absolute;
-    top: 65px;
-    right: 48px;
     display: flex;
+    /*todo var. 1 */
+    /* position: absolute;
+    top: 65px;
+    right: 48px; */
+    /*todo var. 2 */
+    margin-left: 1285px;
+    margin-top: -80px;
 }
 
 .lang-item {
+    display: flex;
     color: rgba(255, 255, 255, 1);
 }
 
-.lang-item:first-child {
+.lang-item:first-child::after {
     content: "";
     width: 36px;
     height: 20px;
+    margin: 0 10px;
+    background-image: url(../images/lang-switcher.png);
     background-repeat: no-repeat;
-    text-align: center;
-    padding-right: 86px;
-    background-image: url(../images/switcher.png);
-    background-position: 40px;
 }
-
+/** ______________________________________________ */
 
 /* HERO */
 .hero {
