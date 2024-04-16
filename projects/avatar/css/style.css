@@ -52,14 +52,22 @@ body {
     align-items: center;
 }
 
+.navigation {
+    margin-right: 212px;
+}
+/*! для англомовної сторінки */
+.navigation.change-margin-nav {
+    margin-right: 228px;
+}
+
 .header-logo{
     width: 186px;
     height: 72px;
     margin-right: 168px;
 }
-
-.navigation {
-    margin-right: 212px;
+/*! для англомовної сторінки */
+.header-logo.change-margin-logo {
+    margin-right: 184px;
 }
 
 .nav-list {
