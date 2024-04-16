@@ -215,6 +215,7 @@ body {
 /** _________________________________________________ */
 
 .dictionary-title {
+    height: 40px;
     margin-bottom: 45px;
     font-family: var(--second-family);
     /* font-weight: 400; */
@@ -228,7 +229,7 @@ body {
     flex-wrap: wrap;
     column-gap: 37px;
     row-gap: 24px;
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
 }
 
 .dictionary-item {
@@ -253,7 +254,7 @@ body {
     align-items: center;
 
     margin-bottom: 40px;
-    outline: 1px dotted rgb(57, 57, 57);
+    /* outline: 1px dotted rgb(57, 57, 57); */
 }
 
 .dictionary-text:first-child::after {
@@ -270,13 +271,27 @@ body {
     text-align: center;
     margin-top: 40px;
     /* transform: rotate(-180deg); */
-    background-image: url(../images/dictionary-arrow-left.png);
+    /* background-image: url(../images/dictionary-arrow-left.png); */
     background-repeat: no-repeat;
     background-position: center;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
+.dictionary-item:nth-child(3n + 1) .dictionary-text:first-child::after {
+    background-image: url(../images/dictionary-arrow-left.png);
+    /* background-color: tomato; */
+}
 
+.dictionary-item:nth-child(3n + 2) .dictionary-text:first-child::after {
+    background-image: url(../images/dictionary-img-center.png);
+    /* background-color: yellow; */
+}
+
+.dictionary-item:nth-child(3n + 3) .dictionary-text:first-child::after {
+    transform: rotate(-180deg);
+    background-image: url(../images/dictionary-arrow-left.png);
+    /* background-color: rgb(0, 255, 81); */
+}
 
 
 .dictionary-text {
