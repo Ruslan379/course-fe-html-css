@@ -391,6 +391,9 @@ body {
 }
 
 .dictionary-item:nth-child(3n + 3) .dictionary-text:first-child::after {
+    /*todo var. 1 */
+    /* background-image: url(../images/dictionary-arrow-right.png); */
+    /*todo var. 2 */
     transform: rotate(-180deg);
     background-image: url(../images/dictionary-arrow-left.png);
     /* background-color: rgb(0, 255, 81); */
