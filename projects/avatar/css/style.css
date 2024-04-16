@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    width: 1033px;
+    width: 1034px;
     margin: 0 auto;
     outline: 1px dashed tomato;
 }
@@ -115,9 +115,18 @@ body {
 
 }
 
+
+/*? main */
+/*? section hero */
+.hero {
+    padding-top: 180px;
+    padding-bottom: 179px;
+    background-color: rgb(168, 168, 168);
+}
+
 /** ______________________________________________ */
 
-/*! FOOTER */
+/*? footer */
 .footer {
     padding-top: 35px;
     padding-bottom: 31px;
@@ -184,3 +193,4 @@ body {
     line-height: 0.65;
     color: #FFFFFF;
 }
+
