@@ -18,13 +18,13 @@ body {
     position: relative;
     width: 1440px;
     margin: 0 auto;
-    outline: 1px dashed #0ceb17;
+    /* outline: 1px dashed #0ceb17; */
 }
 
 .container {
     width: 1034px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    /* outline: 1px dashed tomato; */
 }
 
 /*? header */
@@ -201,7 +201,7 @@ body {
 .quote {
     padding-top: 75px;
     padding-bottom: 10px;
-    background-color: gray;
+    /* background-color: gray; */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -211,13 +211,36 @@ body {
     align-items: center;
 }
 /** _________________________________________________ */
+/*todo ================== var. 1 ✅======================= */
+.quote-text-item {
+    height: 44px;
+    /* font-family: var(--font-family); */
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #141414;
+}
+.quote-text-item:first-child {
+    margin-bottom: 4px;
+}
+.quote-text-item:last-child {
+    margin-bottom: 16px;
+}
 
+.first .quote-text-item {
+    color: #0a3853;
+}
+/*todo __________________ var. 1 _______________________ */
+
+
+/*todo ================== var. 2 ❌======================= */
 .quote-text {
-    height: 88px;
+    height: 92px;
     margin-bottom: 16px;
     /* font-family: var(--font-family); */
     font-weight: 400;  /* ! тут треба, бо це - h2 */
     font-size: 36px;
+    line-height: 1.3;
     text-align: center;
     color: #141414;
 }
@@ -225,6 +248,7 @@ body {
 .first .quote-text {
     color: #0a3853;
 }
+/*todo __________________ var. 2 _______________________ */
 
 .quote-author {
     /* font-family: var(--font-family); */
@@ -243,7 +267,7 @@ body {
     background-image: url(../images/quote-img.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
 }
 
 
@@ -290,7 +314,6 @@ body {
     flex-direction: column;
     align-items: center;
 } */
-
 /*! Відсутні */
 /** _________________________________________________ */
 
