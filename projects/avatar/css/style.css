@@ -11,6 +11,7 @@
 /*! GENERAL */
 body {
     font-family: var(--font-family);
+    padding-bottom: 10px;
 }
 
 .main-container {
@@ -194,7 +195,40 @@ body {
     margin-bottom: 27px;
 }
 
-/** ______________________________________________ */
+
+
+
+/*? section trailer */
+.trailer {
+    height:741px;
+    background-color: gray;
+    background-image:url(../images/trailer-background.jpg);
+    background-repeat: no-repeat; 
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+.trailer .flex {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/** _________________________________________________ */
+
+
+.trailer-button-link {
+    width: 260px;
+    height: 80px;
+    padding: 25px 20px 25px 19px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+
+
+
 /*? section dictionary */
 .dictionary {
     padding-top: 58px;
@@ -302,10 +336,6 @@ body {
     /* text-align: justify; */
     color: #141414;
 }
-
-
-
-
 
 
 
