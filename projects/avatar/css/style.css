@@ -30,13 +30,14 @@ body {
 .header {
     padding-top: 39px;
     padding-bottom: 39px;
+    border-bottom: 3px solid #FFFFFF;
     background-color: gray;
     background-image:
         linear-gradient(
             rgba(43, 74, 97, 0.87),
             rgba(43, 74, 97, 0.87)
         ),
-        url(../images/background-hero.jpg);
+        url(../images/background-header.jpg);
     background-repeat: no-repeat; 
 }
 
@@ -121,7 +122,9 @@ body {
 .hero {
     padding-top: 180px;
     padding-bottom: 179px;
-    background-color: rgb(168, 168, 168);
+    background-color: gray;
+    background-image:url(../images/background-hero.jpg);
+    background-repeat: no-repeat; 
 }
 
 /** ______________________________________________ */
