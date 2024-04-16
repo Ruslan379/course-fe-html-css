@@ -37,7 +37,7 @@ body {
             rgba(43, 74, 97, 0.87),
             rgba(43, 74, 97, 0.87)
         ),
-        url(../images/background-header.jpg);
+        url(../images/header-background.jpg);
     background-repeat: no-repeat; 
 }
 
@@ -90,7 +90,7 @@ body {
     width: 36px;
     height: 20px;
     margin: 0 10px;
-    background-image: url(../images/lang-switcher.png);
+    background-image: url(../images/header-lang-switcher.png);
     background-repeat: no-repeat;
 }
 
@@ -126,7 +126,7 @@ body {
     padding-top: 180px;
     padding-bottom: 179px;
     background-color: gray;
-    background-image:url(../images/background-hero.jpg);
+    background-image:url(../images/hero-background.jpg);
     background-repeat: no-repeat; 
 }
 
@@ -136,9 +136,6 @@ body {
 }
 /** _________________________________________________ */
 
-.hero-box {
-    /* outline: 1px solid yellow; */
-}
 
 .hero-item {
     font-family: var(--font-family);
@@ -161,7 +158,7 @@ body {
     height: 40px;
     margin-top: 4px;
     margin-left: 53px;
-    background-image: url(../images/arrow-hero.png);
+    background-image: url(../images/hero-arrow.png);
     background-repeat: no-repeat;
     background-position: center;
     /* background-color: gray; */
@@ -197,8 +194,109 @@ body {
     margin-bottom: 27px;
 }
 
-
 /** ______________________________________________ */
+/*? section dictionary */
+.dictionary {
+    padding-top: 58px;
+    padding-bottom: 57px;
+    background-color: gray;
+    background-image:url(../images/dictionary-background.jpg);
+    background-repeat: no-repeat; 
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/* .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* Відсутні */
+/** _________________________________________________ */
+
+.dictionary-title {
+    margin-bottom: 45px;
+    font-family: var(--second-family);
+    /* font-weight: 400; */
+    font-size: 32px;
+    text-align: center;
+    color: #141414;
+}
+
+.dictionary-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 37px;
+    row-gap: 24px;
+    outline: 1px solid yellow;
+}
+
+.dictionary-item {
+    /* width: 320px;
+    height: 240px; */
+    flex-basis: calc((100% - 74px) / 3);
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.dictionary-text:first-child {
+    /*todo var. 1 */
+    /* text-align: center; */
+
+    /*todo var. 2 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+    outline: 1px dotted rgb(57, 57, 57);
+}
+
+.dictionary-text:first-child::after {
+    content: "";
+    /*todo var. 1 */
+    /* display: block;
+    min-width: 152px;
+    background-size: 152px 40px; */
+
+    /*todo var. 2 */
+    width: 152px;
+    
+    height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    /* transform: rotate(-180deg); */
+    background-image: url(../images/dictionary-arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+}
+
+
+
+
+.dictionary-text {
+    font-family: var(--second-family);
+    /* font-weight: 400; */
+    font-size: 24px;
+    line-height: 100%;
+    /* text-align: justify; */
+    color: #141414;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*? footer */
 .footer {
@@ -210,7 +308,7 @@ body {
             rgba(43, 74, 97, 0.87),
             rgba(43, 74, 97, 0.87)
         ),
-        url(../images/background-footer.jpg);
+        url(../images/footer-background.jpg);
     background-repeat: no-repeat; 
 }
 
