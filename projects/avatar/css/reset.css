@@ -1,27 +1,25 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
+/** Этот файл обнуляет стандартные отступы и отступы отступов,  */
+/** устанавливает базовый размер шрифта в 100%,  */
+/** убирает стили списков и т. д. */
 
 /*! Reset styles */
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+    box-sizing: border-box;
+} */
+
 body {
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
 
-ol,
-ul {
+ol, ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -36,3 +34,6 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+
+
