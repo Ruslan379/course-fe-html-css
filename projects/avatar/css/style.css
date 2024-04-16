@@ -88,11 +88,21 @@ body {
 }
 
 .nav-link {
+    display: flex;
     /* font-family: var(--font-family); */
     font-weight: 300;
     font-size: 20px;
     /* text-align: center; */
     color: var(--color-light);
+    transition:
+        transform, color,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+}
+.nav-link:hover {
+    color: var(--color-buttons-hover);
+    transform: scale(1.1);
 }
 
 .active-link {
@@ -127,9 +137,15 @@ body {
     /* font-size: 16px; */
     text-align: center;
     color: var(--color-light);
+    transition:
+        transform, color,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
 }
 .lang-link:hover {
     color: var(--color-buttons-hover);
+    transform: scale(1.1);
 }
 
 /** загальні стилі для головних кнопок */
@@ -233,11 +249,18 @@ body {
     margin-bottom: 27px;
 }
 
-.social-link {
+.social-link svg {
+    transform: scale(1);
+    transition:
+        transform, fill,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
     fill: var(--color-light)
 }
-.social-link:hover {
+.social-link:hover svg {
     fill: var(--color-buttons-hover);
+    transform: scale(1.2);
 }
 
 /*? section first quote */
@@ -525,6 +548,15 @@ body {
 
 .mails-link {
     color: var(--color-light);
+    transition:
+        transform, color,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+}
+.mails-link:hover {
+    color: var(--color-buttons-hover);
+    transform: scale(1.1);
 }
 
 .copywrite {
