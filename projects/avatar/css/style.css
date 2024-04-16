@@ -7,8 +7,11 @@
     --color-font-second: #0a3853;
     --color-active-link: #94cfff;
     --color-buttons: #26c6ea;
+    --color-buttons-hover: #71f3ff;
     --color-background-buttons: #0B0E66;
+    --color-background-buttons-hover: #070648;
     --color-background-gradient: rgba(43, 74, 97, 0.87);
+    --color-background-light: #e7f6ff;
     /** ================= fonts =================== */
     --font-family: "Inter", sans-serif;
     --second-family: "Headland One", sans-serif;
@@ -125,6 +128,9 @@ body {
     text-align: center;
     color: var(--color-light);
 }
+.lang-link:hover {
+    color: var(--color-buttons-hover);
+}
 
 /** загальні стилі для головних кнопок */
 .buttons {
@@ -134,6 +140,11 @@ body {
     border-radius: 35px 0;
     color: var(--color-buttons);
     background-color: var(--color-background-buttons);
+}
+.buttons:hover {
+    color: var(--color-buttons-hover);
+    border-color: var(--color-buttons-hover);
+    background-color: var(--color-background-buttons-hover);
 }
 
 .header-button-link {
@@ -222,6 +233,12 @@ body {
     margin-bottom: 27px;
 }
 
+.social-link {
+    fill: var(--color-light)
+}
+.social-link:hover {
+    fill: var(--color-buttons-hover);
+}
 
 /*? section first quote */
 /*? section second quote */
@@ -229,6 +246,7 @@ body {
 .quote {
     padding-top: 75px;
     padding-bottom: 10px;
+    background-color: var(--color-background-light);
     /* background-color: gray; */
 }
 
