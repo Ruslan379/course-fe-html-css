@@ -137,12 +137,12 @@ body {
 /** _________________________________________________ */
 
 .hero-box {
-    outline: 1px solid yellow;
+    /* outline: 1px solid yellow; */
 }
 
 .hero-item {
     font-family: var(--font-family);
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 20px;
     color: #FFFFFF;
 }
@@ -151,14 +151,27 @@ body {
     width: 298px;
     height: 96px;
     margin-bottom: 40px;
-    outline: 1px dotted white;
+    /* outline: 1px dotted white; */
+}
+
+.hero-item:first-child::after {
+    content: "";
+    display: flex;
+    width: 152px;
+    height: 40px;
+    margin-top: 4px;
+    margin-left: 53px;
+    background-image: url(../images/arrow-hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: gray; */
 }
 
 .hero-item:last-child {
     width: 376px;
     height: 123px;
     margin-bottom: 42px;
-    outline: 1px dotted white;
+    /* outline: 1px dotted white; */
 }
 
 .hero-button-link {
