@@ -1,8 +1,11 @@
 :root {
-    /*? ============ CSS-змінні ============ */
-    /** =================colors================== */
-    --test-name: red;
-    /** =================fonts=================== */
+    /*? =============== CSS-змінні ====================== */
+    /** ================= colors ================== */
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-font-main: #141414;
+    --color-font-second: #0a3853;
+    /** ================= fonts =================== */
     --font-family: "Inter", sans-serif;
     --second-family: "Headland One", sans-serif;
     --third-family: "Hammersmith One", sans-serif;
@@ -234,11 +237,12 @@ body {
     /* outline: 1px dashed tomato; */
 }
 /** _________________________________________________ */
+
 /*todo ================== var. 1 ✅======================= */
 .quote-text-item {
     height: 44px;
     /* font-family: var(--font-family); */
-    font-weight: 400;
+    /* font-weight: 400; */
     font-size: 36px;
     text-align: center;
     color: #141414;
