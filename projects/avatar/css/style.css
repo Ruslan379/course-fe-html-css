@@ -17,7 +17,7 @@ body {
     position: relative;
     width: 1440px;
     margin: 0 auto;
-    outline: 1px dashed rgb(12, 235, 23);
+    outline: 1px dashed #0ceb17;
 }
 
 .container {
@@ -30,7 +30,14 @@ body {
 .header {
     padding-top: 39px;
     padding-bottom: 39px;
-    background-color: #a9a9a9;
+    background-color: gray;
+    background-image:
+        linear-gradient(
+            rgba(43, 74, 97, 0.87),
+            rgba(43, 74, 97, 0.87)
+        ),
+        url(../images/background-hero.jpg);
+    background-repeat: no-repeat; 
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -47,6 +54,27 @@ body {
     width: 186px;
     height: 72px;
     margin-right: 168px;
+}
+
+.navigation {
+    margin-right: 212px;
+}
+
+.nav-list {
+    gap: 39px;
+}
+
+.nav-link {
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 20px;
+    /* text-align: center; */
+    color: #fff;
+}
+
+.active-link {
+    font-weight: 600;
+    color: #94cfff;
 }
 
 /** блок кнопок-перемикачів мови */
@@ -73,5 +101,86 @@ body {
     color: #fff;
 }
 
+.header-button-link {
+    width: 141px;
+    padding: 9px 38px 8px;
+    font-family: var(--second-family);
+    /* font-weight: 400; */
+    font-size: 20px;
+    /* text-align: justify; */
+    border: 2px solid #26c6ea;
+    border-radius: 35px 0;
+    color: #26c6ea;
+    background-color: #0B0E66;
+
+}
+
 /** ______________________________________________ */
 
+/*! FOOTER */
+.footer {
+    padding-top: 35px;
+    padding-bottom: 31px;
+    background-color: gray;
+    background-image:
+        linear-gradient(
+            rgba(43, 74, 97, 0.87),
+            rgba(43, 74, 97, 0.87)
+        ),
+        url(../images/background-footer.jpg);
+    background-repeat: no-repeat; 
+}
+
+.box-logo-address {
+    height: 153px;
+    display: flex;
+    align-items: center;
+    /* outline: 1px solid green; */
+}
+
+.footer-logo {
+    width: 183px;
+    height: 70px;
+    margin-right: 80px;
+    /* outline: 2px dotted violet; */
+}
+
+.address {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
+
+.address::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    margin-right: 80px;
+    background-color: #FFFFFF;
+}
+
+.mails-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 0.93;
+}
+
+.mails-text,
+.mails-svg {
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+
+.mails-link {
+    color: #FFFFFF;
+}
+
+.copywrite {
+    margin-top: -5px;
+    margin-left: 474px;
+    font-size: 14px;
+    line-height: 0.65;
+    color: #FFFFFF;
+}
