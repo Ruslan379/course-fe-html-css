@@ -5,6 +5,10 @@
     --color-dark: #000000;
     --color-font-main: #141414;
     --color-font-second: #0a3853;
+    --color-active-link: #94cfff;
+    --color-buttons: #26c6ea;
+    --color-background-buttons: #0B0E66;
+    --color-background-gradient: rgba(43, 74, 97, 0.87);
     /** ================= fonts =================== */
     --font-family: "Inter", sans-serif;
     --second-family: "Headland One", sans-serif;
@@ -13,8 +17,10 @@
 
 /*! GENERAL */
 body {
-    font-family: var(--font-family);
     padding-bottom: 10px;
+    font-family: var(--font-family);
+    color: var(--color-font-main);
+    
 }
 
 .main-container {
@@ -34,12 +40,12 @@ body {
 .header {
     padding-top: 39px;
     padding-bottom: 39px;
-    border-bottom: 3px solid #FFFFFF;
+    border-bottom: 3px solid var(--color-light);
     background-color: gray;
     background-image:
         linear-gradient(
-            rgba(43, 74, 97, 0.87),
-            rgba(43, 74, 97, 0.87)
+            var(--color-background-gradient),
+            var(--color-background-gradient)
         ),
         url(../images/header-background.jpg);
     background-repeat: no-repeat; 
@@ -54,6 +60,7 @@ body {
     display: flex;
     align-items: center;
 }
+/** _________________________________________________ */
 
 .navigation {
     margin-right: 212px;
@@ -82,12 +89,12 @@ body {
     font-weight: 300;
     font-size: 20px;
     /* text-align: center; */
-    color: #fff;
+    color: var(--color-light);
 }
 
 .active-link {
     font-weight: 600;
-    color: #94cfff;
+    color: var(--color-active-link);
 }
 
 /** блок кнопок-перемикачів мови */
@@ -116,17 +123,17 @@ body {
     /* font-weight: 400; */ 
     /* font-size: 16px; */
     text-align: center;
-    color: #fff;
+    color: var(--color-light);
 }
 
 /** загальні стилі для головних кнопок */
 .buttons {
     font-family: var(--second-family);
     /* font-weight: 400; */
-    border: 2px solid #26c6ea;
+    border: 2px solid var(--color-buttons);
     border-radius: 35px 0;
-    color: #26c6ea;
-    background-color: #0B0E66;
+    color: var(--color-buttons);
+    background-color: var(--color-background-buttons);
 }
 
 .header-button-link {
@@ -158,7 +165,7 @@ body {
     /* font-family: var(--font-family); */
     /* font-weight: 400; */
     font-size: 20px;
-    color: #FFFFFF;
+    color: var(--color-light);
 }
 
 .hero-item:first-child {
@@ -245,7 +252,7 @@ body {
     /* font-weight: 400; */
     font-size: 36px;
     text-align: center;
-    color: #141414;
+    /* color: var(--color-font-main); */
 }
 .quote-text-item:first-child {
     margin-bottom: 4px;
@@ -255,10 +262,9 @@ body {
 }
 
 .first .quote-text-item {
-    color: #0a3853;
+    color: var(--color-font-second);
 }
 /*todo __________________ var. 1 _______________________ */
-
 
 /*todo ================== var. 2 ❌======================= */
 .quote-text {
@@ -269,11 +275,11 @@ body {
     font-size: 36px;
     line-height: 1.3;
     text-align: center;
-    color: #141414;
+    /* color: var(--color-font-main); */
 }
 
 .first .quote-text {
-    color: #0a3853;
+    color: var(--color-font-second);
 }
 /*todo __________________ var. 2 _______________________ */
 
@@ -282,7 +288,7 @@ body {
     /* font-weight: 400; */
     font-size: 24px;
     text-align: center;
-    color: #000000;
+    color: var(--color-dark);
 }
 
 .quote-author::after {
@@ -355,7 +361,7 @@ body {
     /* font-weight: 400; */
     font-size: 32px;
     text-align: center;
-    color: #141414;
+    /* color: var(--color-font-main); */
 }
 
 .dictionary-list {
@@ -436,7 +442,7 @@ body {
     font-size: 24px;
     line-height: 100%;
     /* text-align: justify; */
-    color: #141414;
+    /* color: var(--color-font-main); */
 }
 
 
@@ -450,8 +456,8 @@ body {
     background-color: gray;
     background-image:
         linear-gradient(
-            rgba(43, 74, 97, 0.87),
-            rgba(43, 74, 97, 0.87)
+            var(--color-background-gradient),
+            var(--color-background-gradient)
         ),
         url(../images/footer-background.jpg);
     background-repeat: no-repeat; 
@@ -483,7 +489,7 @@ body {
     width: 2px;
     height: 100%;
     margin-right: 80px;
-    background-color: #FFFFFF;
+    background-color: var(--color-light);
 }
 
 .mails-item {
@@ -496,11 +502,11 @@ body {
 .mails-text,
 .mails-svg {
     margin-right: 20px;
-    color: #FFFFFF;
+    color: var(--color-light);
 }
 
 .mails-link {
-    color: #FFFFFF;
+    color: var(--color-light);
 }
 
 .copywrite {
@@ -508,6 +514,6 @@ body {
     margin-left: 474px;
     font-size: 14px;
     line-height: 0.65;
-    color: #FFFFFF;
+    color: var(--color-light);
 }
 
