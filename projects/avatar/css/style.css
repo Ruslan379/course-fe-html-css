@@ -1,11 +1,16 @@
 :root {
+    /*? ============ CSS-змінні ============ */
+    /** =================colors================== */
     --test-name: red;
+    /** =================fonts=================== */
+    --font-family: "Inter", sans-serif;
+    --second-family: "HeadlandOne", sans-serif;
+    --third-family: "Hammersmith One", sans-serif;
 }
 
-/* GENERAL */
+/*! GENERAL */
 body {
-    font-family: Inter;
-    font-weight: 400;
+    font-family: var(--font-family);
 }
 
 .main-container {
@@ -21,127 +26,34 @@ body {
     outline: 1px dashed tomato;
 }
 
-/* .flex {
+/*? header */
+.header {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    background-color: #a9a9a9;
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+.flex,
+.navigation,
+.nav-list,
+.lang-list,
+.lang-item {
     display: flex;
     align-items: center;
-} */
-
-section .flex {
-    flex-direction: row;
 }
 
-.hero-div-column {
-    flex-direction: column;
-    margin: 0px 660px 0px 0px;
-}
-
-.button {
-    border-radius: 45px 0px 45px 0px;
-    color: rgba(38, 198, 234, 1);
-    /* --button-color */
-    border: 2px solid rgba(38, 199, 234, 1);
-    background-color: rgba(11, 14, 102, 1);
-    font-weight: 400;
-    /* font-family:HeadlandOne; НЕ ПРАЦЮЄ В ФІГМІ І ВСЮДИ */
-    font-family: Inter;
-}
-
-
-
-.hero-list+.button {
-    font-size: 24px;
-    line-height: 1.15;
-    width: 260px;
-}
-
-
-
-/* HEADER */
-.header {
-    /* border-bottom: 3px solid (255, 255, 255, 1); */
-    background: url(../images/header-footer-back.png)rgba(43, 74, 97, 0.87);
-    background-repeat: no-repeat;
-    background-size: 120%;
-    /* background-size: cover; */
-
-}
-
-.header .container {
-    padding: 39px 0px;
-}
-
-/** ======================================= */
 .header-logo{
     width: 186px;
     height: 72px;
     margin-right: 168px;
 }
-/** ______________________________________________ */
 
-
-.flex,
-.navigation,
-.nav-list,
-.contacts-list {
-    display: flex;
-    align-items: center;
-}
-
-/*todo var. 2 */
-.flex {
-    margin-top: 61px;
-}
-
-
-.nav-list {
-    margin-right: 212px;
-}
-
-
-.nav-item:not(:last-child) {
-    margin-right: 38px;
-}
-
-.nav-link {
-    color: rgba(255, 255, 255, 1);
-    /*var(--nav-link); */
-    letter-spacing: 0.02em;
-    font-style: normal;
-    line-height: 0.93;
-    font-size: 20px;
-    font-weight: 300;
-
-}
-
-.nav-link:active {
-    color: rgba(148, 207, 255, 1);
-    font-weight: 600;
-    /*var(--nav-link-actvive); */
-}
-
-.navigation+.button {
-    font-size: 24px;
-    line-height: 1.15;
-    padding: 9px 38px 7.69px;
-}
-
-
-
-/** ======================================= */
+/** блок кнопок-перемикачів мови */
 .lang-list {
-    display: flex;
-    /*todo var. 1 */
-    /* position: absolute;
+    position: absolute;
     top: 65px;
-    right: 48px; */
-    /*todo var. 2 */
-    margin-left: 1285px;
-    margin-top: -80px;
-}
-
-.lang-item {
-    display: flex;
-    color: rgba(255, 255, 255, 1);
+    right: 48px;
 }
 
 .lang-item:first-child::after {
@@ -152,269 +64,14 @@ section .flex {
     background-image: url(../images/lang-switcher.png);
     background-repeat: no-repeat;
 }
+
+.lang-link {
+    font-family: var(--third-family);
+    /* font-weight: 400; */ 
+    /* font-size: 16px; */
+    text-align: center;
+    color: #fff;
+}
+
 /** ______________________________________________ */
 
-/* HERO */
-.hero {
-    background-image: url(../images/hero-background.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero-item:nth-child(2)::before {
-    margin-left: 31px;
-    content: "";
-    display: flex;
-    height: 40px;
-    width: 152px;
-    background-position: center;
-    background-image: url(../images/arrow-white.png);
-    background-repeat: no-repeat;
-    padding: 0px 0px 0px 57px;
-    text-align: center;
-    float: center;
-}
-
-.hero .container {
-    padding: 180px 0px 179px 0px;
-}
-
-
-
-.hero-text {
-    font-size: 20px;
-    line-height: 0.93;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-    white-space: pre-line;
-}
-
-.social-list {
-    padding: 120px 0px 0px 0px;
-}
-
-.social-img:not(:first-of-type) {
-    padding: 24px 0px 0px 0px;
-}
-
-.hero-list {
-    padding: 0px 0px 42px 0px;
-}
-
-.hero-list+button {
-    border: 3px solid rgba(38, 199, 234, 1)
-}
-
-/* TRAILER */
-
-.trailer {
-    background-image: url(../images/navi.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.trailer .container {
-    display: flex;
-    justify-content: center;
-    padding: 330px 0px 331px;
-
-
-}
-
-.trailer .container .button {
-    font-size: 24px;
-    line-height: 1.15;
-    padding: 25px 20px 19px;
-}
-
-
-/* QUOTE SECTION */
-.quote-section {
-    display: flex;
-    color: rgba(20, 20, 20, 1);
-    justify-items: center;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.quote-section:nth-child(2) {
-    color: rgba(10, 56, 83, 1);
-}
-
-.quote-text {
-    font-size: 36px;
-    line-height: 1.67;
-
-}
-
-.quote-author {
-    padding: 16px 0px 8px 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 24px;
-    line-height: 0.92;
-    color: rgb(0, 0, 0, 1)
-}
-
-.quote-author::after {
-    content: "";
-    align-self: center;
-    width: 400px;
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-
-.quote-author:nth-child(1)::after {
-    background-image: url(../images/bird.png);
-}
-
-.quote-author:nth-child(2)::after {
-    background-image: url(../images/bird.png);
-}
-
-.quote-author:nth-child(13)::after {
-    background-image: url(../images/bird.png);
-}
-
-
-/* DICTIONARY */
-.section-dictionary .container {
-    padding: 58px 0px 57px 0px;
-}
-
-.dictionary-title {
-    font-family: HeadlandOne;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 40.08px;
-    text-align: center;
-    color: rgb(20, 20, 20, 1);
-}
-
-.section-dictionary {
-    background-image: url(../images/islands.jpg);
-}
-
-.dictionary-list {
-    display: flex;
-    flex-direction: row;
-}
-
-.dictionary-item {
-    background-color: rgba(255, 255, 255, 0.7);
-    margin-right: 36px;
-    margin-bottom: 24px;
-}
-
-.dictionary-text {
-    font-family: "HeadlandOne";
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 0.92;
-    text-align: center;
-}
-
-.dictionary-text:nth-child(1) {
-    padding: 36px 122px 40px 123px;
-}
-
-.dictionary-text:nth-child(2) {
-    padding: 40px 122px 36px 123px;
-}
-
-/* IMAGES DICTIONARY */
-
-.dictionary-text:first-child::after {
-    margin: 0px;
-    content: "";
-    display: flex;
-    align-self: center;
-    width: 152px;
-    height: 40px;
-    background-position: center;
-    background-image: url(../images/arrow-left.png);
-    background-repeat: no-repeat;
-    text-align: center;
-}
-
-/* IMAGES DICTIONARY */
-
-
-/*! FOOTER */
-.footer {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: rgb(255, 255, 255, 1);
-    background-color: gray;
-    background-image:
-        linear-gradient(
-            rgba(43, 74, 97, 0.87),
-            rgba(43, 74, 97, 0.87)
-        ),
-        url(../images/header-footer-back.png);
-    background-repeat: no-repeat; 
-}
-
-.box-logo-address {
-    height: 153px;
-    display: flex;
-    align-items: center;
-    /* outline: 1px solid green; */
-}
-
-.footer-logo {
-    width: 180px;
-    height: 70px;
-    margin-right: 80px;
-    /* outline: 2px dotted violet; */
-}
-
-.address {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    font-style: normal;
-}
-
-.address::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    margin-right: 80px;
-    background-color: #FFFFFF;
-}
-
-.mails-item {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    font-size: 20px;
-    line-height: 0.93;
-}
-/* .mails-item:first-child {
-    width: 665px;
-}
-.mails-item:last-child {
-    width: 689px;
-} */
-
-.mails-text,
-.mails-svg {
-    margin-right: 20px;
-}
-
-.mails-link {
-    color: rgba(255, 255, 255, 1)
-}
-
-.copywrite {
-    margin-top: -5px;
-    margin-left: 474px;
-    font-size: 14px;
-    line-height: 0.65;
-}

@@ -1,5 +1,6 @@
 :root {
-    /* *============ CSS-змінні ============ */
+    /*? ============ CSS-змінні ============ */
+    /** =================colors================== */
     --color-light: #FFFFFF;
     --color-dark: #000000;
     --color-font-main: #212121;
@@ -25,7 +26,7 @@
     --color-border-line: #ECECEC;
     --color-border-clients: #AFB1B8;
     --color-border-modal: rgba(33, 33, 33, 0.2);
-    /* *========================================== */
+    /** =================fonts=================== */
     --font-family: "Roboto", sans-serif;
     --second-family: "Raleway", sans-serif;
 }
