@@ -121,19 +121,29 @@ body {
     right: 48px;
 }
 
-.lang-item:first-child::after {
+/* todo +++++ var.1 Кнопока-перемикач мови мови за допомогою :after +++++ */
+/* .lang-item:first-child::after {
     content: "";
     width: 36px;
     height: 20px;
     margin: 0 10px;
     background-image: url(../images/header-lang-switcher.png);
     background-repeat: no-repeat;
-}
-
-/*! для англомовної сторінки */
+} */
+/*! var.1 для англомовної сторінки */
 .eng.lang-item:first-child::after {
     transform: rotate(-180deg);
 }
+
+/* todo +++++ var.2  Кнопока-перемикач мови за допомогою svg +++++ */
+.lang-link {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    color: #0059ff;
+    margin-right: 10px;
+}
+/* todo __________________________ Кнопока-перемикач мови _________________________ */
 
 .lang-link {
     font-family: var(--third-family);
@@ -149,7 +159,7 @@ body {
 }
 .lang-link:hover {
     color: var(--color-buttons-hover);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 /** загальні стилі для головних кнопок */
