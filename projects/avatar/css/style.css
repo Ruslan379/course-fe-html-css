@@ -136,13 +136,19 @@ body {
 }
 
 /* todo +++++ var.2  Кнопока-перемикач мови за допомогою svg +++++ */
-.lang-link {
+/* .lang-link {
     display: flex;
     align-items: flex-end;
     gap: 10px;
     color: #0059ff;
     margin-right: 10px;
+} */
+
+/* todo +++++ var.2  Кнопока-перемикач мови за допомогою svg +++++ */
+.lang-list {
+    gap: 10px;
 }
+
 /* todo __________________________ Кнопока-перемикач мови _________________________ */
 
 .lang-link {
@@ -159,7 +165,7 @@ body {
 }
 .lang-link:hover {
     color: var(--color-buttons-hover);
-    /* transform: scale(1.1); */
+    transform: scale(1.1);
 }
 
 /** загальні стилі для головних кнопок */
