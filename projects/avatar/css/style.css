@@ -373,13 +373,19 @@ body {
 .trailer-button-link {
     width: 260px;
     height: 80px;
-    padding: 25px 20px 25px 19px;
+    /*todo з макету: */
+    /* padding: 25px 20px 25px 19px; */
+    /*todo  так краще: */
+    padding: 24px 25px 24px 25px;
     font-size: 24px;
     text-align: center;
 }
 /*! Інші стилі для ENG */
 .trailer-button-eng {
-    padding: 25px 15px 25px 16px;
+    /*todo з макету: */
+    /* padding: 25px 18px 25px 17px; */
+    /*todo  так краще: */
+    padding: 24px 15px 24px 16px;
 }
 
 
