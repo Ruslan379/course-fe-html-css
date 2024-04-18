@@ -130,23 +130,15 @@ body {
     background-image: url(../images/header-lang-switcher.png);
     background-repeat: no-repeat;
 } */
-/*! var.1 для англомовної сторінки */
-.eng.lang-item:first-child::after {
+/*! +++++ var.1 для англомовної сторінки +++++ */
+/* .eng.lang-item:first-child::after {
     transform: rotate(-180deg);
-}
-
-/* todo +++++ var.2  Кнопока-перемикач мови за допомогою svg +++++ */
-/* .lang-link {
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    color: #0059ff;
-    margin-right: 10px;
 } */
 
 /* todo +++++ var.2  Кнопока-перемикач мови за допомогою svg +++++ */
 .lang-list {
     gap: 10px;
+    color: #b60000;
 }
 
 /* todo __________________________ Кнопока-перемикач мови _________________________ */
