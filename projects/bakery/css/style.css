@@ -389,3 +389,12 @@ body {
     color: var(--color-light);
     background-color: var(--color-background-buttons);
 }
+
+
+/*? quality */
+.quality {
+    /* padding-top: 21px; */
+    /* padding-bottom: 73px; */
+    background-color: darkblue;
+    background-color: var(--color-background-main)
+}
