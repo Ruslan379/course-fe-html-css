@@ -27,13 +27,17 @@ body {
     padding: 5px 0;
     font-family: var(--font-family);
     color: var(--color-light);
-
 }
 
 .main-container {
     width: 1440px;
     margin: 0 auto;
     outline: 1px dashed #0ceb17;
+    /* todo var.1 Загальний фон для header та hero  */
+    background-image: url(../images/header-hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+    
 }
 
 .container {
@@ -44,9 +48,11 @@ body {
 
 /*? header */
 .header {
-    padding-top: 50px;
-    background-color: lightcyan;
-    ;
+    padding-top: 55px;
+    /* background-color: lightcoral; */
+    /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
+    /* background-image: url(../images/header-hero-background.jpg); */
+    /* background-repeat: no-repeat; */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -60,22 +66,28 @@ body {
     gap: 30px;
 }
 
+.nav-link {
+    /* font-family: var(--font-family); */
+    font-weight: 200;
+    font-size: 24px;
+    color: var(--color-light);
+}
+
+
 /*? hero */
 .hero {
     padding-top: 71px;
     padding-bottom: 36px;
-    background-color: lightgray;
-    /* background-image:
-        linear-gradient(
-            var(--color-background-gradient),
-            var(--color-background-gradient)
-        ),
-    url(../images/header-background.jpg);
-  background-repeat: no-repeat;  */
+    /* background-color: lightgray; */
+    /* todo var.2(1) Загальний фон для header та hero  - 2-га частина */
+    /* background-image: url(../images/header-hero-background.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 0 -79px; */
 }
 
 .hero-title {
     width: 561px;
+    height: 170px;
     margin-bottom: 22px;
     /* font-family: var(--font-family); */
     font-weight: 200;
@@ -85,6 +97,7 @@ body {
 
 .hero-text {
     width: 570px;
+    height: 200px;
     margin-bottom: 33px;
     /* font-family: var(--font-family); */
     font-weight: 300;
