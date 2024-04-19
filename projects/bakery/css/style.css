@@ -1,0 +1,222 @@
+:root {
+    /*? =============== CSS-змінні ====================== */
+    /** ================= colors ================== */
+    --color-light: #FFFFFF;
+    /* --color-light: #e7f6ff; */
+    /* --color-dark: #000000; */
+    /* --color-font-main: #141414; */
+    /* --color-font-second: #0a3853; */
+    /* --color-active-link: #94cfff; */
+    /* --color-buttons: #26c6ea; */
+    /* --color-buttons-hover: #71f3ff; */
+    --color-background-buttons: #b47b48;
+    --color-background-buttons-cards: #c85312;
+    --color-background-hero-card: rgb(39, 39, 39);
+    /* --color-background-buttons-hover: #070648; */
+    /* --color-background-gradient: rgba(43, 74, 97, 0.87); */
+    /* --color-background-light: #e7f6ff; */
+    /* --color-background-dictionary-card: rgba(255, 255, 255, 0.7); */
+    /* --color-background-dictionary-card-2: rgba(231, 246, 255, 0.55); */
+    /** ================= fonts =================== */
+    --font-family: "Inter", sans-serif;
+    --second-family: "Italiana", sans-serif;
+}
+
+/*! GENERAL */
+body {
+    padding: 5px 0;
+    font-family: var(--font-family);
+    color: var(--color-light);
+
+}
+
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    outline: 1px dashed #0ceb17;
+}
+
+.container {
+    width: 1154px;
+    margin: 0 auto;
+    outline: 1px dashed tomato;
+}
+
+/*? header */
+.header {
+    padding-top: 50px;
+    background-color: lightcyan;
+    ;
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.nav-list {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/*? hero */
+.hero {
+    padding-top: 71px;
+    padding-bottom: 36px;
+    background-color: lightgray;
+    /* background-image:
+        linear-gradient(
+            var(--color-background-gradient),
+            var(--color-background-gradient)
+        ),
+    url(../images/header-background.jpg);
+  background-repeat: no-repeat;  */
+}
+
+.hero-title {
+    width: 561px;
+    margin-bottom: 22px;
+    /* font-family: var(--font-family); */
+    font-weight: 200;
+    font-size: 70px;
+    /* color: var(--color-light); */
+}
+
+.hero-text {
+    width: 570px;
+    margin-bottom: 33px;
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 21px;
+    /* color: var(--color-light); */
+}
+
+.hero-button {
+    width: 207px;
+    height: 57px;
+    margin-bottom: 125px;
+    /*todo з макету: */
+    /* padding: 16px 34px 16px 34px; */
+    /*todo так краще: */
+    padding: 15px 48px 14px 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    border: none;
+    border-radius: 17px;
+    color: var(--color-light);
+    background-color: var(--color-background-buttons)
+}
+
+/*todo Приховуємо заговок */
+.visually-hidden {
+    /** var. 1 */
+    /* display: none; */
+    /** var. 2 */
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+.hero-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-item {
+    width: 310px;
+    /* height: 225px; */
+    /* outline: 1px dashed violet; */
+}
+
+.card {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-background-hero-card);
+    /* outline: 1px dashed tomato; */
+}
+
+.img-box {
+    position: relative;
+    height: 100%;
+    display: flex;
+    /* outline: 1px solid blue; */
+}
+
+.img-box::before {
+    content: "";
+    /* display: block; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(
+            55deg,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgb(39, 39, 39, 0) 70%
+        );
+}
+
+/* .card-img {
+    outline: 1px dotted yellow;
+} */
+
+.hero-item:last-child .card-img {
+    align-self: flex-end;
+    /* align-self: center; */
+}
+
+.description-box {
+    flex-grow: 1;
+    flex-basis: min-content;
+    height: 100%;
+    padding-top: 51px;
+    padding-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* outline: 1px dotted green; */
+}
+
+.hero-item:last-child .description-box {
+    padding-top: 25px;
+}
+
+.card-price {
+    /* font-family: var(--font-family); */
+    font-weight: 200;
+    font-size: 24px;
+    text-align: center;
+    /* color: var(--color-light); */
+}
+
+.card-name {
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    /* font-size: 16px; */
+    font-size: 14px;
+    text-align: center;
+    /* color: var(--color-light); */
+}
+
+.card-button {
+    width: 79px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: var(--font-family); */
+    font-weight: 900;
+    /* font-size: 16px; */
+    border: none;
+    border-radius: 4px;
+    color: var(--color-light);
+    background-color: var(--color-background-buttons-cards);
+}

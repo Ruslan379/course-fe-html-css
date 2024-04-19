@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! Назва вкладки -->
+    <title>BAKERY</title>
+
+    <!--! Завантаження іконки до назви сторінки (вкладки) title -->
+    <link
+        href="https://img.icons8.com/external-soft-fill-juicy-fish/16/external-bakery-supermarket-soft-fill-soft-fill-juicy-fish.png"
+        type="image/x-icon" rel="shortcut icon" <!--! Завантаження modern-normalize -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!--todo Another variant modern-normalize -->
+    <!-- <link 
+        rel="stylesheet" 
+        href="https://cdnjs./8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    /> --  
+
+    <!--! Завантаження шрифтів: 'Inter' 100...900 + 'Italiana' 400  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Italiana&display=swap"
+        rel="stylesheet">
+
+    <!--! Підкючення reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--! Підкючення файла стилів -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="container">
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#delivery">Delivery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Contacts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reviews</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero-title">TRADITIONAL ARTISAX BAKERY</h1>
+                    <p class="hero-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.<br>
+                        Lorem Ipsum has been the industry's standard dummy 
+                        text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, 
+                        but also the leap into electronic typesetting, remaining 
+                        essentially unchanged.
+                    </p>
+                    <button class="hero-button">Shop now</button>
+                                                    <!-- todo Приховуємо заговок -->
+                    <h2 class="hero-proposal-title visually-hidden">Hot proposal</h2>
+                    <ul class="hero-list">
+                        <li class="hero-item">
+                            <article class="card">
+                                <div class="img-box">
+                                    <img 
+                                        class="card-img" 
+                                        src="./images/american-cockie.png" 
+                                        alt="American Cockie"
+                                    />
+                                </div>
+                                <div class="description-box">
+                                    <p class="card-price">$8.00(kg)</p>
+                                    <h3 class="card-name">American Cockie</h3>
+                                    <button class="card-button" type="button">BUY</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="hero-item">
+                            <article class="card">
+                                <div class="img-box">
+                                    <img
+                                        class="card-img"  
+                                        src="./images/crushed-chockolate.png" 
+                                        alt="Crushed with chockolate"
+                                    />
+                                </div>
+                                <div class="description-box">
+                                    <p class="card-price">$4.00</p>
+                                    <h3 class="card-name">Crushed with chockolate</h3>
+                                    <button class="card-button" type="button">BUY</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="hero-item">
+                            <article class="card">
+                                <div class="img-box">
+                                    <img
+                                        class="card-img"
+                                        src="./images/blackberry-pie.png" 
+                                        alt="Blackberry pie"
+                                    />
+                                </div>
+                                <div class="description-box">
+                                    <p class="card-price">For piece $4.00</p>
+                                    <h3 class="card-name">Blackberry pie</h3>
+                                    <button class="card-button" type="button">BUY</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- <section class="menu" id="menu">
+                <div class="wrapper">
+                    <div class="menu__wrapper">
+                        <h2 class="menu__title">Menu</h2>
+                        <ul class="menu__lists">
+                            <li>
+                                <a href="./index.html">
+                                    <div>
+                                        <img src="./assets/images/bread.png" alt="bread" />
+                                        <h3>Breads</h3>
+                                    </div>
+                                    <button>Order</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html">
+                                    <img src="./assets/images/Bekary.png" alt="Bekary" />
+                                    <button>Order</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html">
+                                    <div>
+                                        <img src="./assets/images/CakesCapcakes.png" alt="Cakes" />
+                                        <h3>Cakes & Capcakes</h3>
+                                    </div>
+                                    <button>Order</button>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./index.html">
+                                    <div>
+                                        <img src="./assets/images/Coockies.png" alt="Coockies&Pretzels" />
+                                        <h3>Coockies&Pretzels</h3>
+                                    </div>
+                                    <button>Order</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section class="quality">
+                <div class="wrapper">
+                    <div class="quality__wrapper">
+                        <h2 class="quality__title">Quality our bekary</h2>
+                        <ul class="quality__menu">
+                            <li>
+                                <img src="./assets/images/bread.png" alt="bread" />
+                                <ul class="quality__menu__recept">
+                                    <li>1.Flour with fresh wheat</li>
+                                    <li>2.New drozzhi</li>
+                                    <li>3.Fresh eggs</li>
+                                    <li>4.Water from the well</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="./assets/images/one_cookie.png" alt="coocki" />
+                                <ul class="quality__menu__recept">
+                                    <li>1.Flour with fresh wheat</li>
+                                    <li>2.New drozzhi</li>
+                                    <li>3.Fresh eggs</li>
+                                    <li>4.Water from the well</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <img src="./assets/images/pie_red.png" alt="pie" />
+                                <ul class="quality__menu__recept">
+                                    <li>1.Flour with fresh wheat</li>
+                                    <li>2.New drozzhi</li>
+                                    <li>3.Fresh eggs</li>
+                                    <li>4.Water from the well</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section class="tradition">
+                <div class="wrapper">
+                    <div class="tradition__wrapper">
+                        <h2 class="tradition__title">Why TRADITIONALARTISAX BAKERY ?</h2>
+                        <ul class="tradition__menu">
+                            <li>
+                                <img src="./assets/images/button.svg" alt="Order at home" />
+                                <h3>Order at home</h3>
+                            </li>
+                            <li>
+                                <img src="./assets/images/freshFood.svg" alt="Fresh food" />
+                                <h3>Fresh food</h3>
+                            </li>
+                            <li>
+                                <img src="./assets/images/benvery.svg" alt="Speed Delivery 24 h" />
+                                <h3>Speed Delivery 24 h</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section class="info">
+                <div class="wrapper">
+                    <div class="info__wrapper">
+                        <h2 class="info__title">Where</h2>
+                        <ul class="info__menu">
+                            <li><img src="./assets/images/mapa.png" alt="map" /></li>
+                            <li>
+                                <ul class="info__more">
+                                    <li class="info__how">
+                                        <h3>How</h3>
+                                        <ul>
+                                            <li><a href="./index.html">+38 055 123 13 12</a></li>
+                                            <li><a href="./index.html">Tik tok.:@TR.Bekary</a></li>
+                                            <li><a href="./index.html">Inst:@TR.Bekar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="info__when">
+                                        <h3>When</h3>
+                                        <ul>
+                                            <li>with 8:30 to 20:30</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+        <!-- <footer class="footer" id="footer">
+            <div class="wrapper">
+                <div class="footer__wrapper">
+                    <ul class="footer__titles">
+                        <li>
+                            <a href="./index.html" class="footer__title">TRADITIONAL ARTISAX BAKERY</a>
+                        </li>
+                        <li>
+                            <p>We want be helthy</p>
+                        </li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu__info">
+                            <h3 class="footer__menu__title">About</h3>
+                            <ul>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">About us</a>
+                                </li>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">Features</a>
+                                </li>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">News & Blog</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__menu__info">
+                            <h3 class="footer__menu__title">Movement</h3>
+                            <ul>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">What Eatly</a>
+                                </li>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">Support Us</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__menu__info">
+                            <h3 class="footer__menu__title">Company</h3>
+                            <ul>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">Why Eatly</a>
+                                </li>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">Capital</a>
+                                </li>
+                                <li class="footer__menu__link">
+                                    <a href="./index.html">Securaty</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="footer__info">@2022 Eatly.All right riserved.</p>
+                </div>
+            </div>
+        </footer> -->
+    </div>
+</body>
+
+</html>
