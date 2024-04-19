@@ -12,6 +12,7 @@
     --color-background-buttons: #b47b48;
     --color-background-buttons-cards: #c85312;
     --color-background-hero-card: rgb(39, 39, 39);
+    --color-background-main: #202023;
     /* --color-background-buttons-hover: #070648; */
     /* --color-background-gradient: rgba(43, 74, 97, 0.87); */
     /* --color-background-light: #e7f6ff; */
@@ -33,11 +34,6 @@ body {
     width: 1440px;
     margin: 0 auto;
     outline: 1px dashed #0ceb17;
-    /* todo var.1 Загальний фон для header та hero  */
-    background-image: url(../images/header-hero-background.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 -1px;
-    
 }
 
 .container {
@@ -46,13 +42,33 @@ body {
     outline: 1px dashed tomato;
 }
 
+/* todo var.1 Загальний фон для header та hero  */
+/* .main-container.background-img {
+    background-image: 
+    linear-gradient(
+        89deg, 
+        rgba(0, 0, 0, 0.5) 0%, 
+        rgba(3, 3, 3, 0.2) 60%
+        ),
+    url(../images/header-hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+} */
+
+
 /*? header */
 .header {
     padding-top: 55px;
-    /* background-color: lightcoral; */
+    background-color: lightcoral;
     /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
-    /* background-image: url(../images/header-hero-background.jpg); */
-    /* background-repeat: no-repeat; */
+    background-image: 
+    linear-gradient(
+        89deg, 
+        rgba(0, 0, 0, 0.5) 0%, 
+        rgba(3, 3, 3, 0.2) 60%
+        ),
+    url(../images/header-hero-background.jpg);
+    background-repeat: no-repeat;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -78,11 +94,17 @@ body {
 .hero {
     padding-top: 71px;
     padding-bottom: 36px;
-    /* background-color: lightgray; */
-    /* todo var.2(1) Загальний фон для header та hero  - 2-га частина */
-    /* background-image: url(../images/header-hero-background.jpg); */
-    /* background-repeat: no-repeat; */
-    /* background-position: 0 -79px; */
+    background-color: lightgray;
+    /* todo var.2(2) Загальний фон для header та hero  - 2-га частина */
+    background-image: 
+    linear-gradient(
+        89deg, 
+        rgba(0, 0, 0, 0.5) 0%, 
+        rgba(3, 3, 3, 0.2) 60%
+        ),
+    url(../images/header-hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 -84px;
 }
 
 .hero-title {
@@ -92,6 +114,7 @@ body {
     /* font-family: var(--font-family); */
     font-weight: 200;
     font-size: 70px;
+    text-transform: uppercase;
     /* color: var(--color-light); */
 }
 
@@ -112,13 +135,14 @@ body {
     /*todo з макету: */
     /* padding: 16px 34px 16px 34px; */
     /*todo так краще: */
-    padding: 15px 48px 14px 47px;
+    padding: 15px 38px 14px 37px;
     display: flex;
     align-items: center;
     justify-content: center;
     /* font-family: var(--font-family); */
     font-weight: 300;
     font-size: 24px;
+    text-transform: uppercase;
     border: none;
     border-radius: 17px;
     color: var(--color-light);
@@ -232,4 +256,136 @@ body {
     border-radius: 4px;
     color: var(--color-light);
     background-color: var(--color-background-buttons-cards);
+}
+
+
+/*? menu */
+.menu {
+    padding-top: 21px;
+    padding-bottom: 73px;
+    background-color: var(--color-background-main)
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.menu-title {
+    height: 77px;
+    margin-bottom: 18px;
+    /* font-family: var(--font-family); */
+    font-weight: 100;
+    font-size: 64px;
+    text-align: center;
+    /* color: var(--color-light); */
+}
+
+.menu-list {
+    /* height: 29px; */
+    padding: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 197px;
+    row-gap: 9px;
+    /* outline: 1px solid yellow; */
+}
+
+.menu-item {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* outline: 1px dotted blue; */
+}
+
+.menu-link {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.menu-card-box {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 1px solid var(--color-light)
+}
+
+.menu-item:nth-child(1) .menu-card-box,
+.menu-item:nth-child(2) .menu-card-box  {
+    height: 229px;
+}
+
+.menu-card-box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: 1px solid var(--color-light);
+}
+
+.menu-img {
+    position: absolute;
+}
+
+.menu-item:nth-child(1) .menu-img {
+    top: 14px;
+    left: 20px;
+}
+
+.menu-item:nth-child(2) .menu-img:nth-child(1) {
+    top: -42px;
+    right: -19px;
+}
+.menu-item:nth-child(2) .menu-img:nth-child(2) {
+    top: 10px;
+    left: -13px;
+}
+.menu-item:nth-child(2) .menu-img:nth-child(3) {
+    top: 59px;
+    right: 1px;
+}
+
+.menu-item:nth-child(3) .menu-img:nth-child(1) {
+    top: -17px;
+    left: 40px;
+}
+.menu-item:nth-child(3) .menu-img:nth-child(2) {
+    top: 91px;
+    left: 65px;
+}
+
+.menu-item:nth-child(4) .menu-img:nth-child(1) {
+    top: -4px;
+    left: 47px;
+}
+.menu-item:nth-child(4) .menu-img:nth-child(2) {
+    top: 66px;
+    left: 30px;
+}
+
+.menu-description {
+    /* font-family: var(--font-family); */
+    font-weight: 800;
+    font-size: 25px;
+    color: var(--color-light);
+}
+
+.menu-button {
+    width: 160px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-family: var(--font-family); */
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 17px;
+    color: var(--color-light);
+    background-color: var(--color-background-buttons);
 }
