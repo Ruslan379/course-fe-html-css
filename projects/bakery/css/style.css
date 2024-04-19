@@ -11,8 +11,10 @@
     /* --color-buttons-hover: #71f3ff; */
     --color-background-buttons: #b47b48;
     --color-background-buttons-cards: #c85312;
-    --color-background-hero-card: rgb(39, 39, 39);
     --color-background-main: #202023;
+    --color-background-hero-card: rgb(39, 39, 39);
+    --color-background-quality-card: rgba(242, 242, 242, 0.3);
+    --color-box-shadow: rgba(0, 0, 0, 0.25);
     /* --color-background-buttons-hover: #070648; */
     /* --color-background-gradient: rgba(43, 74, 97, 0.87); */
     /* --color-background-light: #e7f6ff; */
@@ -393,8 +395,56 @@ body {
 
 /*? quality */
 .quality {
-    /* padding-top: 21px; */
-    /* padding-bottom: 73px; */
-    background-color: darkblue;
-    background-color: var(--color-background-main)
+    padding-top: 90px;
+    padding-bottom: 48px;
+    /* background-color: darkblue; */
+    background-color: var(--color-background-main);
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.quality-title {
+    height: 75px;
+    margin-bottom: 84px;
+    margin-left: 451px;
+    font-family: var(--second-family);
+    font-weight: 400; /* ! тут треба, бо це - h2 */
+    font-size: 64px;
+    /* color: var(--color-light); */
+}
+
+.quality-base-list {
+    padding-left: 29px;
+    padding-right: 66px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quality-base-item {
+    width: 310px;
+    /* height: 225px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px dashed yellow;
+}
+
+.quality-list {
+    width: 292px;
+    height: 198;
+    padding: 32px 4px 50px 10px;
+    
+    backdrop-filter: blur(36px);
+    box-shadow: 0 4px 20px 0 var(--color-box-shadow);
+    background-color: var(--color-background-quality-card);
+    /* transform: rotate(-90deg);   */
+}
+
+.quality-item {
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 24px;
+    /* color: var(--color-light); */
 }
