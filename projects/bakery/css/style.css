@@ -399,6 +399,30 @@ body {
     padding-bottom: 48px;
     /* background-color: darkblue; */
     background-color: var(--color-background-main);
+    background-image:
+        linear-gradient(
+            50deg,
+            /*! Суцільній КОЛЬОРОВИЙ градіент */
+            /* #f4433684 58%,
+            #09792b6d 58%,
+            #09792b61 100% */
+            /*! Суцільній СІРИЙ градіент */
+            /* rgba(0, 0, 0, 0.5) 58%, 
+            rgba(3, 3, 3, 0.1) 58%,
+            rgba(3, 3, 3, 0.1) 100% */
+            /*! КІНЦЕВИЙ градіент */
+            rgba(0, 0, 0, 0.5) 50%, 
+            rgba(3, 3, 3, 0.1) 60%
+        ),
+        url(../images/quality-background-first.png),
+        url(../images/quality-background-second.png),
+        url(../images/quality-background-third.png);
+    background-repeat: no-repeat;
+    background-position:
+        left 0px top 0px, /*! linear-gradient */
+        left 0px top 211px, /*! background-first */
+        left 162px top 211px, /*! background-second */
+        left 783px top 211px;  /*! background-third */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -407,7 +431,7 @@ body {
 
 .quality-title {
     height: 75px;
-    margin-bottom: 84px;
+    /* margin-bottom: 84px; */
     margin-left: 451px;
     font-family: var(--second-family);
     font-weight: 400; /* ! тут треба, бо це - h2 */
@@ -430,6 +454,15 @@ body {
     align-items: center;
     outline: 1px dashed yellow;
 }
+.quality-base-item:nth-child(1) {
+    margin-top: -61px;
+}
+.quality-base-item:nth-child(2) {
+    margin-top: 84px;
+}
+.quality-base-item:nth-child(3) {
+    margin-top: 123px;
+}
 
 .quality-list {
     width: 292px;
@@ -440,6 +473,13 @@ body {
     box-shadow: 0 4px 20px 0 var(--color-box-shadow);
     background-color: var(--color-background-quality-card);
     /* transform: rotate(-90deg);   */
+}
+
+.quality-base-item:nth-child(1) .quality-img {
+    margin-bottom: 20px;
+}
+.quality-base-item:nth-child(3) .quality-img {
+    margin-bottom: -13px;
 }
 
 .quality-item {
