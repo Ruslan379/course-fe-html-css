@@ -5,7 +5,7 @@
     /* --color-light: #e7f6ff; */
     /* --color-dark: #000000; */
     /* --color-font-main: #141414; */
-    /* --color-font-second: #0a3853; */
+    --color-font-second: #d9d9d9;
     /* --color-active-link: #94cfff; */
     /* --color-buttons: #26c6ea; */
     /* --color-buttons-hover: #71f3ff; */
@@ -47,12 +47,12 @@ body {
 /* todo var.1 Загальний фон для header та hero  */
 /* .main-container.background-img {
     background-image: 
-    linear-gradient(
-        89deg, 
-        rgba(0, 0, 0, 0.5) 0%, 
-        rgba(3, 3, 3, 0.2) 60%
-        ),
-    url(../images/header-hero-background.jpg);
+        linear-gradient(
+            89deg, 
+            rgba(0, 0, 0, 0.5) 0%, 
+            rgba(3, 3, 3, 0.2) 60%
+            ),
+        url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
     background-position: 0 -1px;
 } */
@@ -64,12 +64,12 @@ body {
     background-color: lightcoral;
     /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
     background-image: 
-    linear-gradient(
-        89deg, 
-        rgba(0, 0, 0, 0.5) 0%, 
-        rgba(3, 3, 3, 0.2) 60%
-        ),
-    url(../images/header-hero-background.jpg);
+        linear-gradient(
+            89deg, 
+            rgba(0, 0, 0, 0.5) 0%, 
+            rgba(3, 3, 3, 0.2) 60%
+            ),
+        url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
 }
 
@@ -99,12 +99,12 @@ body {
     background-color: lightgray;
     /* todo var.2(2) Загальний фон для header та hero  - 2-га частина */
     background-image: 
-    linear-gradient(
-        89deg, 
-        rgba(0, 0, 0, 0.5) 0%, 
-        rgba(3, 3, 3, 0.2) 60%
-        ),
-    url(../images/header-hero-background.jpg);
+        linear-gradient(
+            89deg, 
+            rgba(0, 0, 0, 0.5) 0%, 
+            rgba(3, 3, 3, 0.2) 60%
+            ),
+        url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
     background-position: 0 0, 0 -84px;
 }
@@ -394,7 +394,8 @@ body {
 
 
 /*? quality */
-.quality {
+/* todo var.1 Градіент частини фону (плавний) */
+.quality1 {
     padding-top: 90px;
     padding-bottom: 48px;
     /* background-color: darkblue; */
@@ -425,6 +426,38 @@ body {
         left 783px top 211px;  /*! background-third */
 }
 
+/* todo var.2 Градіент частини фону (чіткий) */
+.quality {
+    padding-top: 90px;
+    padding-bottom: 48px;
+    /* background-color: darkblue; */
+    background-color: var(--color-background-main);
+    background-image:
+        url(../images/quality-background-third.png),
+        linear-gradient(
+            /* rgba(0, 0, 0, 0.3), 
+            rgba(0, 0, 0, 0.3) */
+            /*! КІНЦЕВИЙ градіент */
+            rgba(32, 32, 35, 0.5), 
+            rgba(32, 32, 35, 0.5)
+        ),
+        url(../images/quality-background-first.png),
+        url(../images/quality-background-second.png);
+        
+    background-repeat: no-repeat;
+    background-position:
+        left 783px top 211px,  /*! background-third */
+        left 0px top 0px, /*! linear-gradient */
+        left 0px top 211px, /*! background-first */
+        left 162px top 211px; /*! background-second */
+    /** можна без цього */
+    background-size: 
+        46% 73%, /*! background-third */
+        100%, /*! linear-gradient */
+        40% 73%, /*! background-first */
+        73% 73%; /*! background-second */
+}
+
 /** --- Додаткові flex-властивості до container ---- */
 /*! Відсутні */
 /** _________________________________________________ */
@@ -452,7 +485,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    outline: 1px dashed yellow;
+    /* outline: 1px dashed yellow; */
 }
 .quality-base-item:nth-child(1) {
     margin-top: -61px;
@@ -487,4 +520,99 @@ body {
     font-weight: 500;
     font-size: 24px;
     /* color: var(--color-light); */
+}
+
+
+/*? traditions */
+.traditions {
+    /* ! */
+    /* height: 580px;  */
+    padding-top: 55px;
+    padding-bottom: 57px;
+    background-color: var(--color-background-main);
+    /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
+    background-image:
+        /** figma's variant */
+        /* linear-gradient(
+            89deg,
+            #000 0%, 
+            #030303 100%
+        ); */
+        /** my variant */
+        linear-gradient(
+            89deg, 
+            rgba(0, 0, 0, 1) 35%, 
+            rgba(3, 3, 3, 0.4) 80%
+        ),
+        url(../images/traditions-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.traditions-title {
+    width: 735px;
+    height: 114px;
+    margin-bottom: 111px;
+    margin-left: 22px;
+    font-family: var(--second-family);
+    font-weight: 400; /* ! тут треба, бо це - h2 */
+    font-size: 48px;
+    color: var(--color-font-second);
+}
+
+.traditions-list {
+    padding-left: 109px;
+    padding-right: 20px;
+    display: flex;
+}
+
+/* .traditions-item {
+    outline: 1px dashed yellow;
+} */
+.traditions-item:nth-child(1) {
+    padding-top: 21px;
+    margin-right: 172px;
+}
+.traditions-item:nth-child(2) {
+    padding-top: 8px;
+    margin-right: 210px;
+}
+
+.traditions-item:nth-child(1) .traditions-img {
+    margin-bottom: 10px;
+}
+.traditions-item:nth-child(2) .traditions-img {
+    margin-bottom: 13px;
+}
+.traditions-item:nth-child(3) .traditions-img {
+    margin-bottom: 9px;
+}
+
+.traditions-description {
+    /* font-family: var(--font-family); */
+    /* font-weight: 700; */
+    font-size: 24px;
+    /* color: var(--color-light); */
+}
+
+.traditions-item:nth-child(1) .traditions-description {
+    margin-left: -22px;
+}
+.traditions-item:nth-child(2) .traditions-description {
+    margin-left: 61px;
+}
+.traditions-item:nth-child(3) .traditions-description {
+    margin-left: -30px;
+}
+
+
+/*? footer */
+.footer {
+    /* padding-top: 35px; */
+    /* padding-bottom: 31px; */
+    background-color: var(--color-background-main);
 }
