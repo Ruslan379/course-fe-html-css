@@ -141,8 +141,6 @@ body {
     /* animation-play-state:paused; */
 }
 
-
-
 /** Анімація-2 - зміна стану + тригер */
 @keyframes bouncing {
     0% {
@@ -156,9 +154,6 @@ body {
     }
 }
 
-.loading-button {
-    animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
-}
 
 /*? ______________________________________________________ */
 /*! =============================== */
