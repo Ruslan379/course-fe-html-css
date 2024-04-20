@@ -138,8 +138,11 @@ body {
     /*! 8.Дозволяє призупинити відтворення анімації */
     /*? за замовчуванням встановлено значення running */
     animation-play-state:running;
-    /*? анімація буде припинена */
+    /*? анімація буде припинена (наприклад, при hover)*/
     /* animation-play-state:paused; */
+    /*! 9.Збірна властивість animation */
+    /*? дозволяє коротше записати властивості анімації */
+    /* animation: bouncing 3000ms linear 1s infinite alternate forwards paused; */
 }
 
 /** Анімація-2 - зміна стану + тригер */
@@ -159,7 +162,7 @@ body {
 
 
 /*! =============================== */
-.part_0 {
+.part_3 {
     display: none;
 }
 .button3 {
@@ -195,12 +198,181 @@ body {
 }
 
 
+/*! =============================== */
+.part_0 {
+    display: none;
+}
+/*! 4.Анімація СВІТЛОФОР при події hover */
+.traffic-lights {
+    margin-top: 20px;
+    width: 200px;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border-radius: 20px;
+    background-color: #5e7272;
+    outline: 8px double darkblue;
+}
 
+.traffic-lights li {
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgb(46, 46, 46);
+    border-radius: 50%;
+}
 
+.traffic-signal {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0.1;
+}
 
+.red {
+    background-color: red;
+    /*! Анімація при завантаженні сторінки */
+    /* animation-name: pulse-traffic-lights;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1; */
+}
+.yellow {
+    background-color: yellow;
+    /*todo Анімація при завантаженні сторінки */
+    /* animation-name: pulse-traffic-lights;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+    animation-iteration-count: 1; */
+}
+.green {
+    background-color: #08fc00;
+    /** Анімація при завантаженні сторінки */
+    /* animation-name: pulse-traffic-lights;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 11s;
+    animation-iteration-count: 1; */
+}
 
+/* сценарій анімації */
+@keyframes pulse-traffic-lights {
+    0% {
+        opacity: 0.1;
+    }
 
+    5% {
+        opacity: 1;
+    }
 
+    65% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+.traffic-lights:hover {
+    cursor: pointer;
+}
+/* анімація при події hover */
+.traffic-lights:hover .red{
+    animation-name: pulse-traffic-lights;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+}
+.traffic-lights:hover .yellow{
+    animation-name: pulse-traffic-lights;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 6s;
+    animation-iteration-count: 1;
+}
+.traffic-lights:hover .green{
+    /* * var.1 - в кінці гасне (як всі)*/
+    animation-name: pulse-traffic-lights;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 11s;
+    animation-iteration-count: 1;
+    /* * var.2 - в кінці постійно горить */
+    /* animation-name: pulse-traffic-lights-green;
+    animation-fill-mode: forwards; */
+}
+
+/* * var.2 - зелений в кінці постійно горить */
+@keyframes pulse-traffic-lights-green {
+    0% {
+        opacity: 0.1;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+    /* * var.2 - в кінці постійно горить */
+    100% {
+        opacity: 1;
+    }
+}
 
 
 /*? ______________________________________________________ */
