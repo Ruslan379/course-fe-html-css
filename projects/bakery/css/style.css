@@ -697,3 +697,25 @@ body {
     padding-bottom: 44px;
     background-color: var(--color-background-main);
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.footer-info-list,
+.footer-info-box-main {
+    display: flex;
+}
+
+.footer-info-title-link {
+    display: flex;
+    width: 322px;
+    height: 96px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    /* font-family: var(--font-family); */
+    font-weight: 200;
+    font-size: 40px;
+    color: var(--color-light);
+}
+
