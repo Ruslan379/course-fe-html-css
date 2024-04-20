@@ -613,8 +613,52 @@ body {
 
 
 /*? footer */
-.footer {
-    /* padding-top: 35px; */
-    /* padding-bottom: 31px; */
+.footer-contacts .container,
+.footer-info .container {
+    padding-left: 17px;
+}
+/*? footer-contacts */
+.footer-contacts {
+    padding-top: 66px;
+    padding-bottom: 50px;
+    background-color: var(--color-background-main);
+}
+
+** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.footer-contacts-title {
+    height: 57px;
+    margin-bottom: 111px;
+    font-family: var(--second-family);
+    font-weight: 400; /* ! тут треба, бо це - h2 */
+    font-size: 48px;
+    /* color: var(--color-light); */
+    color: #c85312;
+}
+
+/* .traditions-list {
+    padding-left: 109px;
+    padding-right: 20px;
+    display: flex;
+} */
+
+/* .traditions-item {
+    outline: 1px dashed yellow;
+} */
+
+
+
+
+
+
+
+
+
+/*? footer-info */
+.footer-info {
+    padding-top: 40px;
+    padding-bottom: 44px;
     background-color: var(--color-background-main);
 }
