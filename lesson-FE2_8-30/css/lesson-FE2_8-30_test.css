@@ -1,8 +1,8 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #4b2500;
-    --color-background-body: #f1e7ff;
-    --color-title-lesson: #4b4200;
+    --color-background-body: #d2feff;
+    --color-title-lesson: #6b5f00;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
@@ -58,10 +58,36 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.CSS-анімація */
+/*! 1.Зміна кольору за допомогою анімації */
+.box1 {
+    width: 400px;
+    height: 400px;
+    outline: 4px double #c40000;
+    /** Анімація-2 - шлях */
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    /* animation-iteration-count: infinite; */
+    animation-direction: normal;
+    animation-direction: alternate;
+}
 
+/** Анімація-2 - зміна стану + тригер */
+@keyframes changeBgColor {
+    0% {
+        background-color: teal;
+    }
 
+    50% {
+        background-color: orange;
+    }
 
+    100% {
+        background-color: deepskyblue;
+    }
+}
 
 
 /*? ______________________________________________________ */
@@ -69,4 +95,5 @@ body {
 .part_0 {
     display: none;
 }
+
 /*! 0.Заголовок */
