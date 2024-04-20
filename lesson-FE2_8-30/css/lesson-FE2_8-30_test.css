@@ -104,14 +104,45 @@ body {
     /** Анімація-2 - шлях */
     /*! 1.Назва анімації */
     animation-name: bouncing;
-    animation-duration: 3000ms;
+    /*! 2.Тривалість анімації */
+    animation-duration: 5000ms;
+    /*! 3.Функція розподілу часу */
+    /*todo https://cubic-bezier.com/#.17,.67,.83,.67 */
     animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
+    /*! 4.Затримка перед початком анімації */
     animation-delay: 0ms;
-    /* animation-iteration-count: 1; */
-    animation-iteration-count: infinite;
+    /*! 5.Кількість повних повторень анімації (або постійно)*/
+    animation-iteration-count: 1;
+    /* animation-iteration-count: infinite; */
+    /*! 6.Напрямок відтворення анімації*/
+    /*? починається з 0%, закінчується на 100% */
     animation-direction: normal;
-    animation-direction: alternate;
+    /*? починається зі 100%, закінчується на 0% */
+    /* animation-direction: reverse; */
+    /*? починається з 0%, йде до 100% */
+    /*? після чого відбувається зміна напрямку на кожному наступному повторенні */
+    /* animation-direction: alternate; */
+    /*? починається зі 100%, закінчується на 0% */
+    /*? після чого відбувається зміна напрямку на кожному наступному повторенні */
+    /* animation-direction: alternate-reverse; */
+    /*! 7.Визначає, що відбувається зі стилями елемента до початку анімації і після її завершення */
+    /*? стилі анімації впливають на елемент тільки під час анімації */
+    /* animation-fill-mode: none; */
+    /*? стилі, застосовані в кінці анімації, залишаються на елементі після її завершення */
+    /* animation-fill-mode: forwards; */
+    /*? стартові стилі анімації будуть застосовані до елемента ще до старту анімації */
+    /* animation-fill-mode: backwards; */
+    /*? поєднує forwards і backwards, стилі застосовуються до і після анімації */
+    /* animation-fill-mode: both; */
+    /*! 8.Дозволяє призупинити відтворення анімації */
+    /*? за замовчуванням встановлено значення running */
+    animation-play-state:running;
+    /*? анімація буде припинена */
+    /* animation-play-state:paused; */
 }
+
+
+
 /** Анімація-2 - зміна стану + тригер */
 @keyframes bouncing {
     0% {
