@@ -617,6 +617,8 @@ body {
 .footer-info .container {
     padding-left: 17px;
 }
+
+
 /*? footer-contacts */
 .footer-contacts {
     padding-top: 66px;
@@ -624,36 +626,74 @@ body {
     background-color: var(--color-background-main);
 }
 
-** --- Додаткові flex-властивості до container ---- */
+/** --- Додаткові flex-властивості до container ---- */
 /*! Відсутні */
 /** _________________________________________________ */
 
 .footer-contacts-title {
     height: 57px;
-    margin-bottom: 111px;
+    margin-bottom: 44px;
     font-family: var(--second-family);
     font-weight: 400; /* ! тут треба, бо це - h2 */
     font-size: 48px;
     /* color: var(--color-light); */
-    color: #c85312;
 }
 
-/* .traditions-list {
-    padding-left: 109px;
-    padding-right: 20px;
+.footer-contacts-address,
+.footer-contacts-list {
     display: flex;
-} */
+    font-style: normal;
+}
 
-/* .traditions-item {
-    outline: 1px dashed yellow;
-} */
+.footer-contacts-map {
+    margin-right: 132px;
+}
 
+.footer-contacts-item:nth-child(1) {
+    margin-top: 13px;
+    /* margin-right: 23px; */
+}
+.footer-contacts-item:nth-child(2) {
+    width: 200px;
+    margin-top: 18px;
+    margin-left: -8px;
+    text-align: center;
+}
 
+.footer-contacts-item-title {
+    /* font-family: var(--font-family); */
+    font-weight: 400; /* ! тут треба, бо це - h3 */
+    font-size: 40px;
+    /* color: var(--color-light); */
+}
+.footer-contacts-item:nth-child(1) .footer-contacts-item-title {
+    margin-bottom: 49px;
+}
+.footer-contacts-item:nth-child(2) .footer-contacts-item-title {
+    margin-bottom: 40px;
+}
 
+.footer-contacts-item-link {
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--color-light);
+}
 
+.footer-contacts-item:nth-child(2) .footer-contacts-item-item {
+    /* font-family: var(--font-family); */
+    font-weight: 200;
+    font-size: 24px;
+    /* color: var(--color-light); */
+}
 
+.footer-contacts-item:nth-child(1) .footer-contacts-item-item:nth-child(1) {
+    margin-bottom: 65px;
+}
 
-
+.footer-contacts-item:nth-child(1) .footer-contacts-item-item:nth-child(2) {
+    margin-bottom: 32px;
+}
 
 
 /*? footer-info */
