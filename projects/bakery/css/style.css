@@ -51,7 +51,8 @@ body {
 /*? header */
 .header {
     padding-top: 55px;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    background-color: var(--color-background-main);
     /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
     background-image: 
         linear-gradient(
@@ -86,7 +87,8 @@ body {
 .hero {
     padding-top: 71px;
     padding-bottom: 36px;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color: var(--color-background-main);
     /* todo var.2(2) Загальний фон для header та hero  - 2-га частина */
     background-image: 
         linear-gradient(
@@ -260,7 +262,7 @@ body {
 .menu {
     padding-top: 21px;
     padding-bottom: 73px;
-    background-color: var(--color-background-main)
+    background-color: var(--color-background-main);
 }
 
 /** --- Додаткові flex-властивості до container ---- */
