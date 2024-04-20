@@ -55,9 +55,9 @@ body {
 
 /* *======================================= */
 /*! =============================== */
-/* .part_1 {
+.part_1 {
     display: none;
-} */
+}
 /*! 1.Зміна кольору за допомогою анімації */
 .box1 {
     width: 400px;
@@ -92,9 +92,10 @@ body {
 
 
 /*! =============================== */
-/* .part_2 {
+.part_2 {
     display: none;
-} */
+}
+/*! 2.Зміна розташування за допомогою анімації */
 .box2 {
     width: 100px;
     height: 100px;
@@ -145,14 +146,54 @@ body {
 @keyframes bouncing {
     0% {
         margin-top: 0;
+        margin-right: 0;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
 
     100% {
         margin-top: 100px;
+        margin-right: 100px;
         box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
     }
 }
+
+
+/*! =============================== */
+.part_0 {
+    display: none;
+}
+/*! 3.Анімація при події hover */
+@keyframes pulse-button {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Применяем анимацию при наведении на элемент */
+.button3:hover {
+    /*! 1.Назва анімації */
+    animation-name: pulse-button;
+    /*! 2.Тривалість анімації */   
+    animation-duration: 1s;
+    /*! 3.Функція розподілу часу */
+    animation-timing-function: ease-in-out;
+    /*! 5.Кількість повних повторень анімації - постійно */
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
+
+
 
 
 /*? ______________________________________________________ */
@@ -160,5 +201,4 @@ body {
 .part_0 {
     display: none;
 }
-
 /*! 0.Заголовок */
