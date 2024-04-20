@@ -174,10 +174,45 @@ body {
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         0ms;
 }
+/*todo Анімація на кнопці при події hover */
+@keyframes pulse-button {
+    0% {
+        transform: scale(1);
+        color: var(--color-buttons);
+        border-color: var(--color-buttons);
+        background-color: var(--color-background-buttons);
+    }
+    50% {
+        transform: scale(1.05);
+        color: var(--color-buttons-hover);
+        border-color: var(--color-buttons-hover);
+        background-color: var(--color-background-buttons-hover);
+    }
+    100% {
+        transform: scale(1);
+        /* transform: scale(0.9); */
+        color: var(--color-buttons);
+        border-color: var(--color-buttons);
+        background-color: var(--color-background-buttons);
+    }
+}
 .buttons:hover {
-    color: var(--color-buttons-hover);
+    /*todo var.1 Зміна кольорів на кнопці при події hover */
+    /* color: var(--color-buttons-hover);
     border-color: var(--color-buttons-hover);
-    background-color: var(--color-background-buttons-hover);
+    background-color: var(--color-background-buttons-hover); */
+    /*todo var.2 Анімація на кнопці при події hover */
+    /*! 1.Назва анімації */
+    animation-name: pulse-button;
+    /*! 2.Тривалість анімації */   
+    animation-duration: 2s;
+    /*! 3.Функція розподілу часу */
+    animation-timing-function: ease-in-out;
+    /*! 5.Кількість повних повторень анімації - постійно */
+    animation-iteration-count: infinite;
+    /*! 6.Напрямок відтворення анімації*/
+    animation-direction: normal;
+    animation-direction: alternate;
 }
 
 .header-button-link {

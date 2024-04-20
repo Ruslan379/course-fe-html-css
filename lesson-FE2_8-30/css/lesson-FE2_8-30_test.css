@@ -162,7 +162,11 @@ body {
 .part_0 {
     display: none;
 }
-/*! 3.Анімація при події hover */
+.button3 {
+    padding: 15px 25px; 
+    font-size: 3rem;
+}
+/*! 3.Анімація на кнопці при події hover */
 @keyframes pulse-button {
     0% {
         transform: scale(1);
@@ -172,19 +176,22 @@ body {
     }
     100% {
         transform: scale(1);
+        /* transform: scale(0.9); */
     }
 }
 
-/* Применяем анимацию при наведении на элемент */
 .button3:hover {
     /*! 1.Назва анімації */
     animation-name: pulse-button;
     /*! 2.Тривалість анімації */   
-    animation-duration: 1s;
+    animation-duration: 2s;
     /*! 3.Функція розподілу часу */
     animation-timing-function: ease-in-out;
     /*! 5.Кількість повних повторень анімації - постійно */
     animation-iteration-count: infinite;
+    /*! 6.Напрямок відтворення анімації*/
+    animation-direction: normal;
+    /* animation-direction: alternate; */
 }
 
 
