@@ -25,13 +25,13 @@ body {
 .main-container {
     width: 1440px;
     margin: 0 auto;
-    outline: 1px dashed #0ceb17;
+    /* outline: 1px dashed #0ceb17; */
 }
 
 .container {
     width: 1154px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    /* outline: 1px dashed tomato; */
 }
 
 /* todo var.1 Загальний фон для header та hero  */
@@ -707,6 +707,14 @@ body {
     display: flex;
 }
 
+.footer-info-box-main {
+    margin-bottom: 85px;
+}
+
+.footer-info-box {
+    margin-right: 77px;
+}
+
 .footer-info-title-link {
     display: flex;
     width: 322px;
@@ -719,3 +727,49 @@ body {
     color: var(--color-light);
 }
 
+.footer-info-text {
+    margin-left: 17px;
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 20px;
+    /* color: var(--color-light); */
+}
+
+/* .footer-info-item {
+    outline: 1px dotted yellow;
+} */
+
+.footer-info-item:nth-child(1) {
+    margin-right: 141px;
+}
+
+.footer-info-item:nth-child(2) {
+    margin-right: 147px;
+}
+
+.footer-info-item-title {
+    margin-bottom: 41px;
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    /* color: var(--color-light); */
+}
+
+.footer-info-item-link {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--color-light);
+}
+
+.footer-info-item:nth-child(3) .footer-info-item-list{
+    margin-left: 7px;
+}
+
+.footer-info-trademark {
+    /* font-family: var(--font-family); */
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+    /* color: var(--color-light); */
+}
