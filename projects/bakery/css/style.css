@@ -2,24 +2,14 @@
     /*? =============== CSS-змінні ====================== */
     /** ================= colors ================== */
     --color-light: #FFFFFF;
-    /* --color-light: #e7f6ff; */
-    /* --color-dark: #000000; */
-    /* --color-font-main: #141414; */
     --color-font-second: #d9d9d9;
-    /* --color-active-link: #94cfff; */
-    /* --color-buttons: #26c6ea; */
-    /* --color-buttons-hover: #71f3ff; */
     --color-background-buttons: #b47b48;
     --color-background-buttons-cards: #c85312;
     --color-background-main: #202023;
     --color-background-hero-card: rgb(39, 39, 39);
+    --color-background-hero-card-hover: #ebad51;
     --color-background-quality-card: rgba(242, 242, 242, 0.3);
     --color-box-shadow: rgba(0, 0, 0, 0.25);
-    /* --color-background-buttons-hover: #070648; */
-    /* --color-background-gradient: rgba(43, 74, 97, 0.87); */
-    /* --color-background-light: #e7f6ff; */
-    /* --color-background-dictionary-card: rgba(255, 255, 255, 0.7); */
-    /* --color-background-dictionary-card-2: rgba(231, 246, 255, 0.55); */
     /** ================= fonts =================== */
     --font-family: "Inter", sans-serif;
     --second-family: "Italiana", sans-serif;
@@ -181,6 +171,9 @@ body {
     background-color: var(--color-background-hero-card);
     /* outline: 1px dashed tomato; */
 }
+.card:hover {
+    background-color: var(--color-background-hero-card-hover);
+}
 
 .img-box {
     position: relative;
@@ -197,7 +190,7 @@ body {
     height: 100%;
     background: 
         linear-gradient(
-            55deg,
+            65deg,
             rgba(0, 0, 0, 0.5) 0%,
             rgb(39, 39, 39, 0) 70%
         );
