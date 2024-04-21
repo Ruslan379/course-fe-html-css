@@ -33,7 +33,7 @@ img {
     height: auto;
 }
 
-button {
+button:hover {
     cursor: pointer;
 }
 
