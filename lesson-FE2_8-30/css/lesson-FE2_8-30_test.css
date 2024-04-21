@@ -55,9 +55,9 @@ body {
 
 /* *======================================= */
 /*! =============================== */
-.part_1 {
+/* .part_1 {
     display: none;
-}
+} */
 /*! 1.Зміна кольору за допомогою анімації */
 .box1 {
     width: 400px;
@@ -92,9 +92,9 @@ body {
 
 
 /*! =============================== */
-.part_2 {
+/* .part_2 {
     display: none;
-}
+} */
 /*! 2.Зміна розташування за допомогою анімації */
 .box2 {
     width: 100px;
@@ -162,9 +162,9 @@ body {
 
 
 /*! =============================== */
-.part_3 {
+/* .part_3 {
     display: none;
-}
+} */
 .button3 {
     padding: 15px 25px; 
     font-size: 3rem;
@@ -199,9 +199,62 @@ body {
 
 
 /*! =============================== */
-.part_0 {
+/* .part_4 {
     display: none;
+} */
+/*! 4.Анімація форми та руху, яка припиняеться при події hover */
+.content {
+    padding: 50px;
 }
+
+.content-cube-ball {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    /** Анімація-2 - шлях */
+    animation-name: cube-ball;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/** Анімація-2 - зміна стану + тригер */
+@keyframes cube-ball {
+    0% {
+        left: 0;
+    }
+
+    40% {
+        border-radius: 0;
+        background-color: chocolate;
+    }
+
+    60% {
+        border-radius: 0;
+        background-color: coral;
+    }
+
+    100% {
+        left: 500px;
+        background-color: cornflowerblue;
+        
+    }
+}
+
+/** Анімація-2 - пауза в анімації при події hover */
+.content:hover .content-cube-ball {
+    animation-play-state: paused;
+}
+
+
+/*! =============================== */
+/* .part_5 {
+    display: none;
+} */
 /*! 4.Анімація СВІТЛОФОР при події hover */
 .traffic-lights {
     margin-top: 20px;
@@ -341,7 +394,7 @@ body {
         opacity: 1;
     }
 
-    65% {
+    /* 65% {
         opacity: 1;
     }
 
@@ -363,16 +416,24 @@ body {
 
     90% {
         opacity: 0.1;
-    }
+    } */
 
     95% {
         opacity: 1;
     }
     /* * var.2 - в кінці постійно горить */
     100% {
+        /* opacity: 0.1; */
         opacity: 1;
     }
 }
+
+
+
+
+
+
+
 
 
 /*? ______________________________________________________ */
