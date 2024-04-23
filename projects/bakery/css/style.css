@@ -22,7 +22,7 @@ body {
     color: var(--color-light);
 }
 
-.main-container {
+.main-container1 {
     width: 1440px;
     margin: 0 auto;
     /* outline: 1px dashed #0ceb17; */
@@ -31,11 +31,12 @@ body {
 .container {
     width: 1154px;
     margin: 0 auto;
-    /* outline: 1px dashed tomato; */
+    outline: 1px dashed tomato;
 }
 
 /* todo var.1 Загальний фон для header та hero  */
 /* .main-container.background-img {
+    background-color: var(--color-background-main);
     background-image: 
         linear-gradient(
             89deg, 
@@ -44,16 +45,16 @@ body {
             ),
         url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
-    background-position: 0 -1px;
+    background-position: center -1px;
+    background-size: 1440px;
 } */
 
 
 /*? header */
 .header {
     padding-top: 55px;
-    /* background-color: lightcoral; */
-    background-color: var(--color-background-main);
     /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
+    background-color: var(--color-background-main);
     background-image: 
         linear-gradient(
             89deg, 
@@ -62,6 +63,8 @@ body {
             ),
         url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -87,9 +90,8 @@ body {
 .hero {
     padding-top: 71px;
     padding-bottom: 36px;
-    /* background-color: lightgray; */
-    background-color: var(--color-background-main);
     /* todo var.2(2) Загальний фон для header та hero  - 2-га частина */
+    background-color: var(--color-background-main);
     background-image: 
         linear-gradient(
             89deg, 
@@ -98,7 +100,8 @@ body {
             ),
         url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
-    background-position: 0 0, 0 -84px;
+    background-position: center 0, center -84px;
+    background-size: 1440px;
 }
 
 .hero-title {
@@ -189,12 +192,26 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: 
-        linear-gradient(
+    background:
+        /** figma's variant */
+        /* linear-gradient(
+            66deg, 
+            rgb(0, 0, 0, 1) 0%, 
+            rgba(0, 0, 0, 0) 100%
+        ); */
+        /** my variant-1 */
+        /* linear-gradient(
             65deg,
             rgba(0, 0, 0, 0.5) 0%,
             rgb(39, 39, 39, 0) 70%
+        ); */
+        /** my variant-2 */
+        linear-gradient(
+            67deg, 
+            rgba(0, 0, 0, 0.5) 0%, 
+            rgba(3, 3, 3, 0) 50%
         );
+
 }
 
 /* .card-img {
@@ -388,9 +405,20 @@ body {
 
 
 /*? quality */
-/* todo var.1 Градіент частини фону (плавний) */
-.quality1 {
+.quality {
     padding-top: 90px;
+    background-color: var(--color-background-main);
+}
+
+.quality-background-container {
+    width: 1440px;
+    margin: 0 auto;
+    outline: 1px dashed #820055;
+}
+
+/* todo var.1 Градіент частини фону (плавний) */
+.quality-background-container1 {
+    /* padding-top: 90px; */
     padding-bottom: 48px;
     /* background-color: darkblue; */
     background-color: var(--color-background-main);
@@ -421,8 +449,8 @@ body {
 }
 
 /* todo var.2 Градіент частини фону (чіткий) */
-.quality {
-    padding-top: 90px;
+.quality-background-container {
+    /* padding-top: 90px; */
     padding-bottom: 48px;
     /* background-color: darkblue; */
     background-color: var(--color-background-main);
@@ -440,16 +468,20 @@ body {
         
     background-repeat: no-repeat;
     background-position:
-        left 783px top 211px,  /*! background-third */
+        left 783px top 121px,  /*! background-third */
         left 0px top 0px, /*! linear-gradient */
-        left 0px top 211px, /*! background-first */
-        left 162px top 211px; /*! background-second */
+        left 0px top 121px, /*! background-first */
+        left 162px top 121px; /*! background-second */
     /** можна без цього */
-    background-size: 
-        46% 73%, /*! background-third */
-        100%, /*! linear-gradient */
-        40% 73%, /*! background-first */
-        73% 73%; /*! background-second */
+    /* background-size: */
+        /*! background-third */
+        /* 46% 73%, */
+        /*! linear-gradient */ 
+        /* 100%, */
+        /*! background-first */ 
+        /* 40% 73%, */
+        /*! background-second */ 
+        /* 73% 73%;  */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -468,13 +500,13 @@ body {
 
 .quality-base-list {
     padding-left: 29px;
-    padding-right: 66px;
+    /* padding-right: 66px; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .quality-base-item {
-    width: 310px;
+    /* width: 310px; */
     /* height: 225px; */
     display: flex;
     flex-direction: column;
@@ -483,23 +515,14 @@ body {
 }
 .quality-base-item:nth-child(1) {
     margin-top: -61px;
+    margin-right: 13px;
 }
 .quality-base-item:nth-child(2) {
-    margin-top: 84px;
+    margin-top: 85px;
+    margin-right: 66px;
 }
 .quality-base-item:nth-child(3) {
     margin-top: 123px;
-}
-
-.quality-list {
-    width: 292px;
-    height: 198px;
-    padding: 32px 4px 50px 10px;
-    
-    backdrop-filter: blur(36px);
-    box-shadow: 0 4px 20px 0 var(--color-box-shadow);
-    background-color: var(--color-background-quality-card);
-    /* transform: rotate(-90deg);   */
 }
 
 .quality-base-item:nth-child(1) .quality-img {
@@ -509,12 +532,35 @@ body {
     margin-bottom: -13px;
 }
 
+.quality-list {
+    width: 292px;
+    /* height: 198px; */
+    padding: 32px 4px 55px 10px;
+    backdrop-filter: blur(36px);
+    box-shadow: 0 4px 20px 0 var(--color-box-shadow);
+    background-color: var(--color-background-quality-card);
+    /* transform: rotate(-90deg);   */
+}
+
+.quality-base-item:nth-child(1) .quality-list {
+    margin-left: 33px;
+}
+.quality-base-item:nth-child(2) .quality-list {
+    margin-left: 5px;
+}
+.quality-base-item:nth-child(3) .quality-list{
+    margin-left: 7px;
+    padding-top: 14px;
+    padding-bottom: 45px;
+}
+
 .quality-item {
     /* font-family: var(--font-family); */
     font-weight: 500;
     font-size: 24px;
     /* color: var(--color-light); */
 }
+
 
 
 /*? traditions */
@@ -526,21 +572,29 @@ body {
     background-color: var(--color-background-main);
     /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
     background-image:
-        /** figma's variant */
+        /** figma's variant-1+ */
         /* linear-gradient(
             89deg,
-            #000 0%, 
-            #030303 100%
-        ); */
+            rgb(0, 0, 0, 1) 0%, 
+            rgba(3, 3, 3, 0) 100%
+        ), */
+        /** figma's variant-2 */
+        /* linear-gradient(
+            66deg, 
+            rgb(0, 0, 0, 1) 0%, 
+            rgba(0, 0, 0, 0) 100%
+        ), */
         /** my variant */
         linear-gradient(
             89deg, 
-            rgba(0, 0, 0, 1) 35%, 
+            rgba(0, 0, 0, 0.9) 25%, 
             rgba(3, 3, 3, 0.4) 80%
         ),
         url(../images/traditions-background.jpg);
     background-repeat: no-repeat;
+    background-position: center 0;
     background-size: 1440px;
+    
 }
 
 /** --- Додаткові flex-властивості до container ---- */
