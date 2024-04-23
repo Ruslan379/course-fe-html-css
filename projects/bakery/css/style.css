@@ -22,7 +22,7 @@ body {
     color: var(--color-light);
 }
 
-.main-container1 {
+.main-container {
     width: 1440px;
     margin: 0 auto;
     /* outline: 1px dashed #0ceb17; */
@@ -31,7 +31,7 @@ body {
 .container {
     width: 1154px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    /* outline: 1px dashed tomato; */
 }
 
 /* todo var.1 Загальний фон для header та hero  */
@@ -39,10 +39,10 @@ body {
     background-color: var(--color-background-main);
     background-image: 
         linear-gradient(
-            89deg, 
-            rgba(0, 0, 0, 0.5) 0%, 
-            rgba(3, 3, 3, 0.2) 60%
-            ),
+            89deg,
+            rgb(0, 0, 0, 0.7) 0%, 
+            rgba(3, 3, 3, 0) 60.64%
+        ),
         url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center -1px;
@@ -55,12 +55,19 @@ body {
     padding-top: 55px;
     /* todo var.2(1) Загальний фон для header та hero  - 1-ша частина */
     background-color: var(--color-background-main);
-    background-image: 
+    background-image:
+        /** figma's variant */
         linear-gradient(
+            89deg,
+            rgb(0, 0, 0, 0.7) 0%, 
+            rgba(3, 3, 3, 0) 60.64%
+        ),
+        /** my variant */
+        /* linear-gradient(
             89deg, 
-            rgba(0, 0, 0, 0.5) 0%, 
+            rgba(0, 0, 0, 0.9) 0%, 
             rgba(3, 3, 3, 0.2) 60%
-            ),
+            ), */
         url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
@@ -93,11 +100,18 @@ body {
     /* todo var.2(2) Загальний фон для header та hero  - 2-га частина */
     background-color: var(--color-background-main);
     background-image: 
+        /** figma's variant */
         linear-gradient(
+            89deg,
+            rgb(0, 0, 0, 0.7) 0%, 
+            rgba(3, 3, 3, 0) 60.64%
+        ),
+        /** my variant */
+        /* linear-gradient(
             89deg, 
-            rgba(0, 0, 0, 0.5) 0%, 
+            rgba(0, 0, 0, 0.9) 0%, 
             rgba(3, 3, 3, 0.2) 60%
-            ),
+            ), */
         url(../images/header-hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center 0, center -84px;
@@ -413,7 +427,7 @@ body {
 .quality-background-container {
     width: 1440px;
     margin: 0 auto;
-    outline: 1px dashed #820055;
+    /* outline: 1px dashed #0739ff; */
 }
 
 /* todo var.1 Градіент частини фону (плавний) */
@@ -770,7 +784,7 @@ body {
     display: flex;
     width: 322px;
     height: 96px;
-    margin-top: 12px;
+    margin-top: 22px;
     margin-bottom: 16px;
     /* font-family: var(--font-family); */
     font-weight: 200;
@@ -783,6 +797,7 @@ body {
     /* font-family: var(--font-family); */
     font-weight: 300;
     font-size: 20px;
+    line-height: 1.25;
     /* color: var(--color-light); */
 }
 
@@ -810,6 +825,7 @@ body {
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 24px;
+    line-height: 1.22;
     color: var(--color-light);
 }
 
