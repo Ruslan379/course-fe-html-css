@@ -30,7 +30,6 @@ body {
 }
 
 .main-container {
-    position: relative;
     width: 1440px;
     margin: 0 auto;
     /* outline: 1px dashed #0ceb17; */
@@ -48,14 +47,17 @@ body {
     padding-bottom: 39px;
     /* border-bottom: 3px solid var(--color-light); */
     border-bottom: 3px solid var(--color-background-light);
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: var(--color-background-light);
     background-image:
         linear-gradient(
             var(--color-background-gradient),
             var(--color-background-gradient)
         ),
         url(../images/header-background.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -115,10 +117,24 @@ body {
 }
 
 /** блок кнопок-перемикачів мови */
+/* todo var.1 */
+/* body>.main-container {
+    position: relative;
+} */
+
+/* todo var.2 */
+.header>.container {
+    position: relative;
+}
+
 .lang-list {
     position: absolute;
-    top: 65px;
-    right: 48px;
+    /*todo var.1 - для main-container */
+    /* top: 65px;
+    right: 48px; */
+    /*todo var.2 - для container */
+    top: 26px;
+    left: 1083px;
 }
 
 /* todo +++++ var.1 Кнопока-перемикач мови мови за допомогою :after +++++ */
@@ -141,7 +157,7 @@ body {
     color: #b60000;
 }
 
-/* todo __________________________ Кнопока-перемикач мови _________________________ */
+/* todo __________________ Кнопока-перемикач мови _________________ */
 
 .lang-link {
     font-family: var(--third-family);
@@ -228,9 +244,12 @@ body {
 .hero {
     padding-top: 180px;
     padding-bottom: 179px;
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: var(--color-background-light);
     background-image:url(../images/hero-background.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -322,7 +341,6 @@ body {
     padding-top: 75px;
     padding-bottom: 10px;
     background-color: var(--color-background-light);
-    /* background-color: gray; */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -400,9 +418,12 @@ body {
 /*? section trailer */
 .trailer {
     height:741px;
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: var(--color-background-light);
     background-image:url(../images/trailer-background.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -439,9 +460,12 @@ body {
 .dictionary {
     padding-top: 58px;
     padding-bottom: 57px;
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: var(--color-background-light);
     background-image:url(../images/dictionary-background.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -554,14 +578,17 @@ body {
 .footer {
     padding-top: 35px;
     padding-bottom: 31px;
-    background-color: gray;
+    /* background-color: gray; */
+    background-color: var(--color-background-light);
     background-image:
         linear-gradient(
             var(--color-background-gradient),
             var(--color-background-gradient)
         ),
         url(../images/footer-background.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 .box-logo-address {
