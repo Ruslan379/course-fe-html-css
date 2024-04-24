@@ -43,5 +43,33 @@
 .brands {
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
-    background-color: green;
+    background-color: rgb(0, 82, 0);
+}
+
+/*? section newcomer */
+.newcomer {
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    background-color: rgb(117, 104, 0);
+}
+
+/*? section team */
+.team {
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    background-color: rgb(0, 114, 88);
+}
+
+/*? section join */
+.join {
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    background-color: rgb(255, 149, 149);
+}
+
+/*? footer */
+.footer {
+    /* padding-top: 200px; */
+    /* padding-bottom: 200px; */
+    background-color: rgb(99, 99, 99);
 }

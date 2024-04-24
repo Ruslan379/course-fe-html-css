@@ -4,28 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! Назва вкладки -->
     <title>Antools</title>
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <!--! Завантаження іконки до назви сторінки (вкладки) title -->
+    <link href="./images/logo-antools.svg" type="image/x-icon" rel="shortcut icon">
 
+    <!--! Завантаження modern-normalize -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" 
+    />
+    <!--todo Another variant modern-normalize -->
+    <!-- <link 
+        rel="stylesheet" 
+        href="https://cdnjs./8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    /> --  
+
+    <!--! Завантаження шрифтів: 'Inter' 100...900 + 'Italiana' 400  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Italiana&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!--! Підкючення reset.css -->
     <link rel="stylesheet" href="./css/reset.css">
+    <!--! Підкючення файла стилів -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container flex">
             <nav class="nav">
-                <a class="logo-link" href="./">
-                    <!-- ! -->
-                    <img class="logo-img" src="./images/logo.png" width="20" alt="logo">
+                <a class="logo-header-link" href="#">
+                    <img class="logo-header-img" src="./images/logo-header.png" alt="logo-header">
                     antools.
                 </a>
                 <ul class="nav-list">
@@ -36,8 +51,6 @@
                 </ul>
             </nav>
             <ul class="auth-list">
-                <!-- ! -->
-                <!-- <li class="header-list-item">Login</li> -->
                 <li class="auth-item">
                     <a class="login-link">Login</a>
                 </li>
@@ -181,7 +194,7 @@
                         </div>
                     </li>
                     <li class="tools-item">
-                        <img class="tools-img" src="./images/logo-vsc" alt="Logo >Visual Studio Code">
+                        <img class="tools-img" src="./images/logo-vsc" alt="Logo Visual Studio Code">
                         <h3 class="tools-titel">Visual Studio Code</h3>
                         <p class="tools-cost">Free</p>
                         <p class="tools-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -408,102 +421,228 @@
                 </ul>
             </div>
         </section>
-
-
-
-
         <section class="newcomer">
             <div class="container">
                 <h3 class="newcomer-titel">Newcomer Tools</h3>
-                </li>
-                <p class="newcomer-text">Wow! see the latest update of the most recommended tools
-                    from reliable designers and developers</p>
+                <p class="newcomer-text">
+                    Wow! see the latest update of the most
+                    recommended tools from reliable designers 
+                    and developers
+                </p>
+                <a href="#">Explore more</a>
                 <ul class="newcomer-list">
                     <li class="newcomer-item">
-                        <h3 class="newcomer-item-titel">Zeplin</h3>
-                        <p class="newcomer-item-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.</p>
+                        <img class="newcomer-img" src="./images/zeplin" alt="Logo Zeplin">
+                        <h3 class="newcomer-titel">Zeplin</h3>
+                        <p class="newcomer-cost">Free & Paid</p>
+                        <p class="tonewcomerols-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="newcomer-box">
+                            <ul class="newcomer-list">
+                                <li>
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5 16.25H16.25V15C16.25 14.6685 16.1183 14.3505 15.8839 14.1161C15.6495 13.8817 15.3315 13.75 15 13.75C14.6685 13.75 14.3505 13.8817 14.1161 14.1161C13.8817 14.3505 13.75 14.6685 13.75 15V16.25H12.5C12.1685 16.25 11.8505 16.3817 11.6161 16.6161C11.3817 16.8505 11.25 17.1685 11.25 17.5C11.25 17.8315 11.3817 18.1495 11.6161 18.3839C11.8505 18.6183 12.1685 18.75 12.5 18.75H13.75V20C13.75 20.3315 13.8817 20.6495 14.1161 20.8839C14.3505 21.1183 14.6685 21.25 15 21.25C15.3315 21.25 15.6495 21.1183 15.8839 20.8839C16.1183 20.6495 16.25 20.3315 16.25 20V18.75H17.5C17.8315 18.75 18.1495 18.6183 18.3839 18.3839C18.6183 18.1495 18.75 17.8315 18.75 17.5C18.75 17.1685 18.6183 16.8505 18.3839 16.6161C18.1495 16.3817 17.8315 16.25 17.5 16.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                        <path
+                                            d="M24.375 8.81249H15.625L12.3375 4.83749C12.2212 4.6941 12.0745 4.57825 11.9081 4.49829C11.7417 4.41832 11.5596 4.37621 11.375 4.37499H5.625C4.80826 4.36496 4.02083 4.67898 3.43512 5.24829C2.84942 5.8176 2.51317 6.59579 2.5 7.41249V22.5875C2.51317 23.4042 2.84942 24.1824 3.43512 24.7517C4.02083 25.321 4.80826 25.635 5.625 25.625H24.375C25.1917 25.635 25.9792 25.321 26.5649 24.7517C27.1506 24.1824 27.4868 23.4042 27.5 22.5875V11.85C27.4868 11.0333 27.1506 10.2551 26.5649 9.68579C25.9792 9.11648 25.1917 8.80246 24.375 8.81249ZM25 22.5625C24.9953 22.6392 24.9753 22.7142 24.9411 22.783C24.9069 22.8518 24.8593 22.9131 24.801 22.9632C24.7427 23.0133 24.675 23.0512 24.6019 23.0747C24.5287 23.0982 24.4515 23.1068 24.375 23.1H5.625C5.54846 23.1068 5.47132 23.0982 5.39815 23.0747C5.32498 23.0512 5.25726 23.0133 5.199 22.9632C5.14073 22.9131 5.0931 22.8518 5.05892 22.783C5.02474 22.7142 5.00471 22.6392 5 22.5625V7.41249C5.00471 7.33578 5.02474 7.2608 5.05892 7.19197C5.0931 7.12315 5.14073 7.06187 5.199 7.01176C5.25726 6.96165 5.32498 6.92373 5.39815 6.90024C5.47132 6.87675 5.54846 6.86816 5.625 6.87499H10.7875L14.0375 10.85C14.1538 10.9934 14.3005 11.1092 14.4669 11.1892C14.6333 11.2692 14.8154 11.3113 15 11.3125H24.375C24.4515 11.3057 24.5287 11.3142 24.6019 11.3377C24.675 11.3612 24.7427 11.3992 24.801 11.4493C24.8593 11.4994 24.9069 11.5606 24.9411 11.6295C24.9753 11.6983 24.9953 11.7733 25 11.85V22.5625Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="likes-link" href="">Visit</a>
+                        </div>
                     </li>
                     <li class="newcomer-item">
-                        <h3 class="newcomer-item-titel">PHPStorm</h3>
-                        <p class="newcomer-item-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.</p>
+                        <img class="newcomer-img" src="./images/phpstorm" alt="Logo PHPStorm">
+                        <h3 class="newcomer-titel">PHPStorm</h3>
+                        <p class="newcomer-cost">Free</p>
+                        <p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="newcomer-box">
+                            <ul class="newcomer-list">
+                                <li>
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5 16.25H16.25V15C16.25 14.6685 16.1183 14.3505 15.8839 14.1161C15.6495 13.8817 15.3315 13.75 15 13.75C14.6685 13.75 14.3505 13.8817 14.1161 14.1161C13.8817 14.3505 13.75 14.6685 13.75 15V16.25H12.5C12.1685 16.25 11.8505 16.3817 11.6161 16.6161C11.3817 16.8505 11.25 17.1685 11.25 17.5C11.25 17.8315 11.3817 18.1495 11.6161 18.3839C11.8505 18.6183 12.1685 18.75 12.5 18.75H13.75V20C13.75 20.3315 13.8817 20.6495 14.1161 20.8839C14.3505 21.1183 14.6685 21.25 15 21.25C15.3315 21.25 15.6495 21.1183 15.8839 20.8839C16.1183 20.6495 16.25 20.3315 16.25 20V18.75H17.5C17.8315 18.75 18.1495 18.6183 18.3839 18.3839C18.6183 18.1495 18.75 17.8315 18.75 17.5C18.75 17.1685 18.6183 16.8505 18.3839 16.6161C18.1495 16.3817 17.8315 16.25 17.5 16.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                        <path
+                                            d="M24.375 8.81249H15.625L12.3375 4.83749C12.2212 4.6941 12.0745 4.57825 11.9081 4.49829C11.7417 4.41832 11.5596 4.37621 11.375 4.37499H5.625C4.80826 4.36496 4.02083 4.67898 3.43512 5.24829C2.84942 5.8176 2.51317 6.59579 2.5 7.41249V22.5875C2.51317 23.4042 2.84942 24.1824 3.43512 24.7517C4.02083 25.321 4.80826 25.635 5.625 25.625H24.375C25.1917 25.635 25.9792 25.321 26.5649 24.7517C27.1506 24.1824 27.4868 23.4042 27.5 22.5875V11.85C27.4868 11.0333 27.1506 10.2551 26.5649 9.68579C25.9792 9.11648 25.1917 8.80246 24.375 8.81249ZM25 22.5625C24.9953 22.6392 24.9753 22.7142 24.9411 22.783C24.9069 22.8518 24.8593 22.9131 24.801 22.9632C24.7427 23.0133 24.675 23.0512 24.6019 23.0747C24.5287 23.0982 24.4515 23.1068 24.375 23.1H5.625C5.54846 23.1068 5.47132 23.0982 5.39815 23.0747C5.32498 23.0512 5.25726 23.0133 5.199 22.9632C5.14073 22.9131 5.0931 22.8518 5.05892 22.783C5.02474 22.7142 5.00471 22.6392 5 22.5625V7.41249C5.00471 7.33578 5.02474 7.2608 5.05892 7.19197C5.0931 7.12315 5.14073 7.06187 5.199 7.01176C5.25726 6.96165 5.32498 6.92373 5.39815 6.90024C5.47132 6.87675 5.54846 6.86816 5.625 6.87499H10.7875L14.0375 10.85C14.1538 10.9934 14.3005 11.1092 14.4669 11.1892C14.6333 11.2692 14.8154 11.3113 15 11.3125H24.375C24.4515 11.3057 24.5287 11.3142 24.6019 11.3377C24.675 11.3612 24.7427 11.3992 24.801 11.4493C24.8593 11.4994 24.9069 11.5606 24.9411 11.6295C24.9753 11.6983 24.9953 11.7733 25 11.85V22.5625Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="likes-link" href="">Visit</a>
+                        </div>
                     </li>
                     <li class="newcomer-item">
-                        <h3 class="newcomer-item-titel">Toolbox</h3>
-                        <p class="newcomer-item-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.</p>
+                        <img class="newcomer-img" src="./images/toolbox" alt="Logo Toolbox">
+                        <h3 class="newcomer-titel">Toolbox</h3>
+                        <p class="newcomer-cost">Free</p>
+                        <p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="newcomer-box">
+                            <ul class="newcomer-list">
+                                <li>
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5 16.25H16.25V15C16.25 14.6685 16.1183 14.3505 15.8839 14.1161C15.6495 13.8817 15.3315 13.75 15 13.75C14.6685 13.75 14.3505 13.8817 14.1161 14.1161C13.8817 14.3505 13.75 14.6685 13.75 15V16.25H12.5C12.1685 16.25 11.8505 16.3817 11.6161 16.6161C11.3817 16.8505 11.25 17.1685 11.25 17.5C11.25 17.8315 11.3817 18.1495 11.6161 18.3839C11.8505 18.6183 12.1685 18.75 12.5 18.75H13.75V20C13.75 20.3315 13.8817 20.6495 14.1161 20.8839C14.3505 21.1183 14.6685 21.25 15 21.25C15.3315 21.25 15.6495 21.1183 15.8839 20.8839C16.1183 20.6495 16.25 20.3315 16.25 20V18.75H17.5C17.8315 18.75 18.1495 18.6183 18.3839 18.3839C18.6183 18.1495 18.75 17.8315 18.75 17.5C18.75 17.1685 18.6183 16.8505 18.3839 16.6161C18.1495 16.3817 17.8315 16.25 17.5 16.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                        <path
+                                            d="M24.375 8.81249H15.625L12.3375 4.83749C12.2212 4.6941 12.0745 4.57825 11.9081 4.49829C11.7417 4.41832 11.5596 4.37621 11.375 4.37499H5.625C4.80826 4.36496 4.02083 4.67898 3.43512 5.24829C2.84942 5.8176 2.51317 6.59579 2.5 7.41249V22.5875C2.51317 23.4042 2.84942 24.1824 3.43512 24.7517C4.02083 25.321 4.80826 25.635 5.625 25.625H24.375C25.1917 25.635 25.9792 25.321 26.5649 24.7517C27.1506 24.1824 27.4868 23.4042 27.5 22.5875V11.85C27.4868 11.0333 27.1506 10.2551 26.5649 9.68579C25.9792 9.11648 25.1917 8.80246 24.375 8.81249ZM25 22.5625C24.9953 22.6392 24.9753 22.7142 24.9411 22.783C24.9069 22.8518 24.8593 22.9131 24.801 22.9632C24.7427 23.0133 24.675 23.0512 24.6019 23.0747C24.5287 23.0982 24.4515 23.1068 24.375 23.1H5.625C5.54846 23.1068 5.47132 23.0982 5.39815 23.0747C5.32498 23.0512 5.25726 23.0133 5.199 22.9632C5.14073 22.9131 5.0931 22.8518 5.05892 22.783C5.02474 22.7142 5.00471 22.6392 5 22.5625V7.41249C5.00471 7.33578 5.02474 7.2608 5.05892 7.19197C5.0931 7.12315 5.14073 7.06187 5.199 7.01176C5.25726 6.96165 5.32498 6.92373 5.39815 6.90024C5.47132 6.87675 5.54846 6.86816 5.625 6.87499H10.7875L14.0375 10.85C14.1538 10.9934 14.3005 11.1092 14.4669 11.1892C14.6333 11.2692 14.8154 11.3113 15 11.3125H24.375C24.4515 11.3057 24.5287 11.3142 24.6019 11.3377C24.675 11.3612 24.7427 11.3992 24.801 11.4493C24.8593 11.4994 24.9069 11.5606 24.9411 11.6295C24.9753 11.6983 24.9953 11.7733 25 11.85V22.5625Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="likes-link" href="">Visit</a>
+                        </div>
                     </li>
                     <li class="newcomer-item">
-                        <h3 class="newcomer-item-titel">Procreate</h3>
-                        <p class="newcomer-item-text">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit.</p>
+                        <img class="newcomer-img" src="./images/procreate" alt="Logo Procreate">
+                        <h3 class="newcomer-titel">Procreate</h3>
+                        <p class="newcomer-cost">Paid</p>
+                        <p class="newcomer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="newcomer-box">
+                            <ul class="newcomer-list">
+                                <li>
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8333 5.25C17.3833 5.25 15.225 6.475 14 8.4C12.775 6.475 10.6167 5.25 8.16667 5.25C4.31667 5.25 1.16667 8.4 1.16667 12.25C1.16667 19.1917 14 26.25 14 26.25C14 26.25 26.8333 19.25 26.8333 12.25C26.8333 8.4 23.6833 5.25 19.8333 5.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                                <li>
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.5 16.25H16.25V15C16.25 14.6685 16.1183 14.3505 15.8839 14.1161C15.6495 13.8817 15.3315 13.75 15 13.75C14.6685 13.75 14.3505 13.8817 14.1161 14.1161C13.8817 14.3505 13.75 14.6685 13.75 15V16.25H12.5C12.1685 16.25 11.8505 16.3817 11.6161 16.6161C11.3817 16.8505 11.25 17.1685 11.25 17.5C11.25 17.8315 11.3817 18.1495 11.6161 18.3839C11.8505 18.6183 12.1685 18.75 12.5 18.75H13.75V20C13.75 20.3315 13.8817 20.6495 14.1161 20.8839C14.3505 21.1183 14.6685 21.25 15 21.25C15.3315 21.25 15.6495 21.1183 15.8839 20.8839C16.1183 20.6495 16.25 20.3315 16.25 20V18.75H17.5C17.8315 18.75 18.1495 18.6183 18.3839 18.3839C18.6183 18.1495 18.75 17.8315 18.75 17.5C18.75 17.1685 18.6183 16.8505 18.3839 16.6161C18.1495 16.3817 17.8315 16.25 17.5 16.25Z"
+                                            fill="white" fill-opacity="0.38" />
+                                        <path
+                                            d="M24.375 8.81249H15.625L12.3375 4.83749C12.2212 4.6941 12.0745 4.57825 11.9081 4.49829C11.7417 4.41832 11.5596 4.37621 11.375 4.37499H5.625C4.80826 4.36496 4.02083 4.67898 3.43512 5.24829C2.84942 5.8176 2.51317 6.59579 2.5 7.41249V22.5875C2.51317 23.4042 2.84942 24.1824 3.43512 24.7517C4.02083 25.321 4.80826 25.635 5.625 25.625H24.375C25.1917 25.635 25.9792 25.321 26.5649 24.7517C27.1506 24.1824 27.4868 23.4042 27.5 22.5875V11.85C27.4868 11.0333 27.1506 10.2551 26.5649 9.68579C25.9792 9.11648 25.1917 8.80246 24.375 8.81249ZM25 22.5625C24.9953 22.6392 24.9753 22.7142 24.9411 22.783C24.9069 22.8518 24.8593 22.9131 24.801 22.9632C24.7427 23.0133 24.675 23.0512 24.6019 23.0747C24.5287 23.0982 24.4515 23.1068 24.375 23.1H5.625C5.54846 23.1068 5.47132 23.0982 5.39815 23.0747C5.32498 23.0512 5.25726 23.0133 5.199 22.9632C5.14073 22.9131 5.0931 22.8518 5.05892 22.783C5.02474 22.7142 5.00471 22.6392 5 22.5625V7.41249C5.00471 7.33578 5.02474 7.2608 5.05892 7.19197C5.0931 7.12315 5.14073 7.06187 5.199 7.01176C5.25726 6.96165 5.32498 6.92373 5.39815 6.90024C5.47132 6.87675 5.54846 6.86816 5.625 6.87499H10.7875L14.0375 10.85C14.1538 10.9934 14.3005 11.1092 14.4669 11.1892C14.6333 11.2692 14.8154 11.3113 15 11.3125H24.375C24.4515 11.3057 24.5287 11.3142 24.6019 11.3377C24.675 11.3612 24.7427 11.3992 24.801 11.4493C24.8593 11.4994 24.9069 11.5606 24.9411 11.6295C24.9753 11.6983 24.9953 11.7733 25 11.85V22.5625Z"
+                                            fill="white" fill-opacity="0.38" />
+                                    </svg>
+                                </li>
+                            </ul>
+                            <a class="likes-link" href="">Visit</a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="team">
             <div class="container">
-                <p class="team-text">Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
-                    reprehenderit do. Velit ex tempor cillum ad sint occaecat.
-                    Do nulla velit labore occaecat do deserunt Lorem magna officia
-                    incididunt consectetur amet. Sunt consectetur veniam minim ex
-                    commodo sint non. Occaecat aute officia excepteur non laboris
-                    id qui ad.
-                </p>
+                <ul class="team-list">
+                    <li class="team-item">
+                        <img class="team-img" src="./images/ronald-richards.jpg" alt="Ronald Richards">
+                        <h3 class="team-name">Ronald Richards</h3>
+                        <p class="team-position">Product Manager</p>
+                        <p class="team-text">
+                            Incididunt cillum do sint sint enim ullamco id deserunt mollit
+                            qui reprehenderit do. Velit ex tempor cillum ad sint occaecat.
+                            Do nulla velit labore occaecat do deserunt Lorem magna 
+                            officia incididunt consectetur amet. Sunt consectetur veniam
+                            minim ex commodo sint non. Occaecat aute officia excepteur 
+                            non laboris id qui ad.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="join">
             <div class="container">
-                <ul class="join-list">
-                    <li class="join-item">
-                        <h2 class="join-titel">Become a contributor?</h2>
-                    </li>
-                    <li class="join-item">
-                        <p class="join-text">Join us and get tips & tricks to become a great Designer and Developer</p>
-                    </li>
-                    <li></li>
-                </ul>
+                <h2 class="join-titel">Become a contributor?</h2>
+                <p class="join-text">
+                    Join us and get tips & tricks to become a great
+                    Designer and Developer
+                </p>
+                <form class="join-form">
+                    <input class="join-input" type="text" placeholder="Enter your email...">
+                    <button type="submit">Join Us</button>
+                </form>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
-            <ul class="copyright-list">
-                <li class="copyright-item"><a class="logo" href="./">antools.</a></li>
-                <li class="copyright-item">
-                    <h3 class="copyright-titel">Copyright 2021. Antools</h3>
+            <div class="footer-copyright-box">
+                <a class="logo-header-link" href="#">
+                    <img class="logo-footer-img" src="./images/logo-footer.png" alt="logo-footer">
+                    antools.
+                </a>
+                <p class="footer-copyright-titel">Copyright 2021. Antools</p>
+                <p class="footer-copyright-text">
+                    Antool is a web collection of 
+                    information on paid or free Design 
+                    and Development tools
+                </p>
+            </div>
+            <ul class="footer-contacts-list">
+                <li class="footer-contacts-item">
+                    <h3 class="footer-contacts-title">Contact Us</h3>
+                    <address class="footer-contacts-address">
+                        <ul class="footer-contacts-items-list">
+                            <li class="footer-contacts-items-item">
+                                <a class="footer-contacts-items-link" href="tel:+621987463">+621987463</a>
+                            </li>
+                            <li class="footer-contacts-items-item">
+                                <a class="footer-contacts-items-link" href="#">M Building, No.10 A</a>
+                            </li>
+                            <li class="footer-contacts-items-item">
+                                <a class="footer-contacts-items-link" href="mailto:antools@awesome.com">antools@awesome.com</a>
+                            </li>
+                        </ul>
+                    </address>
                 </li>
-                <li class="copyright-item">
-                    <p class="copyright-text">Antool is a web collection of information on paid or free Design and
-                        Development tools</p>
+                <li class="footer-contacts-item">
+                    <h3 class="footer-contacts-title">Categories</h3>
+                    <ul class="footer-contacts-items-list">
+                        <li class="footer-contacts-items-item">
+                            <a class="footer-contacts-items-link" href="#">Design</a>
+                        </li>
+                        <li class="footer-contacts-items-item">
+                            <a class="footer-contacts-items-link" href="#">Development</a>
+                        </li>
+                    </ul>
                 </li>
-            </ul>
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <h3>Contact Us</h3>
+                <li class="footer-contacts-item">
+                    <h3 class="footer-contacts-title">Company Info</h3>
+                    <ul class="footer-contacts-items-list">
+                        <li class="footer-contacts-items-item">
+                            <a class="footer-contacts-items-link" href="#">About Us</a>
+                        </li>
+                        <li class="footer-contacts-items-item">
+                            <a class="footer-contacts-items-link" href="#">Our Partners</a>
+                        </li>
+                        <li class="footer-contacts-items-item">
+                            <a class="footer-contacts-items-link" href="#">Blog</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="contacts-item"><a class="contacts-link" href="tel:+621987463"></a></li>
-                <li class="contacts-item">
-                    <p class="contacts-text">M Building, No.10 A</p>
-                </li>
-                <li class="contacts-item"><a class="contacts-link" href="antools@awesome.com">antools@awesome.com</a>
-                </li>
-            </ul>
-            <ul class="categories">
-                <li class="categories">
-                    <h3 class="categories-titel">Categories</h3>
-                </li>
-                <li class="categories"><a class="categories-link" href="./">Design</a></li>
-                <li class="categories"><a class="categories-link" href="./">Development</a></li>
-            </ul>
-            <ul class="info-list">
-                <li class="info-item">
-                    <h3 class="info-titel">Company Info</h3>
-                </li>
-                <li class="info-item"><a class="info-link" href="./">About Us</a></li>
-                <li class="info-item"><a class="info-link" href="./">Our Partners</a></li>
-                <li class="info-item"><a class="info-link" href="./">Blog</a></li>
             </ul>
         </div>
     </footer>
