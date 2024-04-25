@@ -476,7 +476,6 @@ body {
         ),
         url(../images/quality-background-second.png),
         url(../images/quality-background-first.png);
-        
     background-repeat: no-repeat;
     background-position:
         left 783px top 121px,  /*! background-third */

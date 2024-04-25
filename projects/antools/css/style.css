@@ -45,7 +45,7 @@ body {
 /*? header */
 .header {
     padding-top: 26px;
-    padding-bottom: 58px;
+    /* padding-bottom: 58px; */
     background-color: #d2fff2;
     background-color: var(--color-background-main);
 }
@@ -64,7 +64,8 @@ body {
 
 .navigation {
     /* margin-right: 193px; */
-    margin-right: 165px;
+    margin-right: 153px;
+    margin-left: 12px;
 }
 
 .logo-link {
@@ -163,11 +164,29 @@ body {
 /*? main */
 /*? section hero */
 .hero {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    height: 626px;   /* ! потім прибрати */
+    padding-top: 58px;
     background-color: rgb(168, 168, 168);
-    /* background-color: var(--color-background-main); */
+    background-color: var(--color-background-main);
 }
+.hero-background-container {
+    width: 1440px;
+    height: 100%;  /* ! потім прибрати */
+    margin: 0 auto;
+    background-image:
+        url(../images/hero-background.png);
+        background-repeat: no-repeat;
+        background-position: right 0 bottom 0;
+        outline: 1px dashed #0739ff;
+}
+
+.hero .container {
+    padding-top: 46px;
+}
+
+
+
+
 
 /*? section tools */
 .tools {
