@@ -2,12 +2,16 @@
     /*? =============== CSS-змінні ====================== */
     /** ================= colors ================== */
     --color-light: #FFFFFF;
-    /* --color-font-second: #d9d9d9; */
+    --color-font-main: rgba(255, 255, 255, 0.9);
+    --color-font-second: rgba(255, 255, 255, 0.55);
+    --color-font-auth: rgba(255, 255, 255, 0.78);
+    --color-hover: #fdf5ff;
     /* --color-background-buttons: #b47b48; */
     /* --color-background-buttons-cards: #c85312; */
     --color-background-main: #1e252b;
     --color-background-hero-img: #c4c4c4;
-    --color-background-forms: #283036
+    --color-background-forms: #283036;
+    --color-background-hover: #ff6e30;
     /* --color-background-hero-card: rgb(39, 39, 39); */
     /* --color-background-hero-card-hover: #ebad51; */
     /* --color-background-quality-card: rgba(242, 242, 242, 0.3); */
@@ -22,7 +26,7 @@
 body {
     padding: 5px 0;
     font-family: var(--font-family);
-    color: var(--color-light);
+    color: var(--color-font-main);
 }
 
 .main-container {
@@ -51,14 +55,109 @@ body {
 .navigation,
 .logo-link,
 .nav-list,
+.auth-item,
 .auth-list {
     display: flex;
     align-items: center;
 }
 /** _________________________________________________ */
 
+.navigation {
+    /* margin-right: 193px; */
+    margin-right: 165px;
+}
 
+.logo-link {
+    margin-right: 257px;
+    /* font-family: var(--font-family); */
+    color: var(--color-font-main);
+    fill: var(--color-light);
+    /* outline: 1px dotted blue; */
+}
 
+.logo-svg-box {
+    width: 38px;
+    height: 38px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    /** анімація */
+    transition:
+        color, fill,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+    /* outline: 1px dotted green; */
+}
+
+.logo-name {
+    /* font-family: var(--font-family); */
+    font-weight: 600;
+    font-size: 22px;
+    /* color: var(--color-font-main); */
+}
+
+.logo-link:hover .logo-svg-box {
+    background-color: var(--color-background-hover);
+    fill: black;
+}
+
+.nav-list {
+    width: 431px;
+    justify-content: space-between;
+}
+
+.nav-link {
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    /* font-size: 16px; */
+    color: var(--color-font-second);
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:nth-child(2)::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+    /* background-color: gray; */
+    background-image: url(../images/header-arrow-categories.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.auth-list{
+    gap: 14px;
+    /* outline: 1px dotted blue; */
+}
+
+.auth-item {
+    height: 48px;
+    padding: 12px 28px;
+    /** анімація */
+    transition:
+        color, fill,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+}
+.auth-link {
+    /* font-family: var(--font-family); */
+    font-weight: 600;
+    /* font-size: 16px; */
+    color: var(--color-font-auth);
+}
+
+.buttons-hover:hover {
+    /* padding: 12px 28px; */
+    border-radius: 8px;
+    color: var(--color-hover);
+    background-color: var(--color-background-hover);
+}
 
 
 /*? main */
