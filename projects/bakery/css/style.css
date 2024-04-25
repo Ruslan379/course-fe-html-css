@@ -471,9 +471,6 @@ body {
     background-image:
         url(../images/quality-background-third.png),
         linear-gradient(
-            /* rgba(0, 0, 0, 0.3), 
-            rgba(0, 0, 0, 0.3) */
-            /*! КІНЦЕВИЙ градіент */
             rgba(32, 32, 35, 0.5), 
             rgba(32, 32, 35, 0.5)
         ),
