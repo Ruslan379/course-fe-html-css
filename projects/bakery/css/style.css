@@ -477,15 +477,15 @@ body {
             rgba(32, 32, 35, 0.5), 
             rgba(32, 32, 35, 0.5)
         ),
-        url(../images/quality-background-first.png),
-        url(../images/quality-background-second.png);
+        url(../images/quality-background-second.png),
+        url(../images/quality-background-first.png);
         
     background-repeat: no-repeat;
     background-position:
         left 783px top 121px,  /*! background-third */
         left 0px top 0px, /*! linear-gradient */
-        left 0px top 121px, /*! background-first */
-        left 162px top 121px; /*! background-second */
+        left 162px top 121px, /*! background-second */
+        left 0px top 121px; /*! background-first */
     /** можна без цього */
     /* background-size: */
         /*! background-third */
