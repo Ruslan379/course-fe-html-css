@@ -1,27 +1,64 @@
 :root {
-    /** colors */
-    --background-color: #1E252B;
-    --color-white: #FFFFFF;
-    --color-white-90: #e6e6e6;
-    /** fonts */
+    /*? =============== CSS-змінні ====================== */
+    /** ================= colors ================== */
+    --color-light: #FFFFFF;
+    /* --color-font-second: #d9d9d9; */
+    /* --color-background-buttons: #b47b48; */
+    /* --color-background-buttons-cards: #c85312; */
+    --color-background-main: #1e252b;
+    --color-background-hero-img: #c4c4c4;
+    --color-background-forms: #283036
+    /* --color-background-hero-card: rgb(39, 39, 39); */
+    /* --color-background-hero-card-hover: #ebad51; */
+    /* --color-background-quality-card: rgba(242, 242, 242, 0.3); */
+    /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
+    /** ================= fonts =================== */
     --font-family: "Poppins", sans-serif;
     --second-family: "Lora", sans-serif;
     --third-family: "Roboto", sans-serif;
 }
 
+/*! GENERAL */
+body {
+    padding: 5px 0;
+    font-family: var(--font-family);
+    color: var(--color-light);
+}
 
-.container{
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    outline: 1px dashed blue;
+}
+
+.container {
     width: 1224px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    outline: 1px dashed red;
 }
+
 
 /*? header */
 .header {
-    /* padding-top: 24px; */
-    /* padding-bottom: 25px; */
+    padding-top: 26px;
+    padding-bottom: 58px;
     background-color: #d2fff2;
+    background-color: var(--color-background-main);
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+.flex,
+.navigation,
+.logo-link,
+.nav-list,
+.auth-list {
+    display: flex;
+    align-items: center;
+}
+/** _________________________________________________ */
+
+
+
 
 
 /*? main */
@@ -30,6 +67,7 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(168, 168, 168);
+    /* background-color: var(--color-background-main); */
 }
 
 /*? section tools */
@@ -37,6 +75,7 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(209, 196, 255);
+    /* background-color: var(--color-background-main); */
 }
 
 /*? section brands */
@@ -44,6 +83,7 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(0, 82, 0);
+    /* background-color: var(--color-background-main); */
 }
 
 /*? section newcomer */
@@ -51,6 +91,7 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(117, 104, 0);
+    /* background-color: var(--color-background-main); */
 }
 
 /*? section team */
@@ -58,6 +99,7 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(0, 114, 88);
+    /* background-color: var(--color-background-main); */
 }
 
 /*? section join */
@@ -65,6 +107,7 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(255, 149, 149);
+    /* background-color: var(--color-background-main); */
 }
 
 /*? footer */
@@ -72,4 +115,5 @@
     /* padding-top: 200px; */
     /* padding-bottom: 200px; */
     background-color: rgb(99, 99, 99);
+    /* background-color: var(--color-background-main); */
 }
