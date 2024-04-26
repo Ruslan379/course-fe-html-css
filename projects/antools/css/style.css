@@ -270,7 +270,7 @@ body {
     /* min-width: 197px; */
     /* flex-basis: 100%; */
     flex-grow: 1;
-    padding: 2px 4px;
+    padding: 2px 0;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
