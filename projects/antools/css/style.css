@@ -12,6 +12,7 @@
     --color-background-hero-img: #c4c4c4;
     --color-background-forms: #283036;
     --color-input-border: #837a93;
+    --color-border-sections: rgba(255, 255, 255, 0.15);
     /* --color-background-buttons: #b47b48; */
     /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
     /** ================= fonts =================== */
@@ -335,48 +336,45 @@ body {
 
 /*? section tools */
 .tools {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    padding-top: 200px;
     background-color: rgb(209, 196, 255);
     /* background-color: var(--color-background-main); */
 }
 
 /*? section brands */
 .brands {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    padding-top: 200px;
     background-color: rgb(0, 82, 0);
     /* background-color: var(--color-background-main); */
 }
 
 /*? section newcomer */
 .newcomer {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    padding-top: 200px;
     background-color: rgb(117, 104, 0);
     /* background-color: var(--color-background-main); */
 }
 
 /*? section team */
 .team {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    padding-top: 200px;
     background-color: rgb(0, 114, 88);
     /* background-color: var(--color-background-main); */
 }
 
 /*? section join */
 .join {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    padding-top: 250px;
+    padding-bottom: 240px;
+    border-bottom: 1px solid var(--color-border-sections);
     background-color: rgb(255, 149, 149);
     /* background-color: var(--color-background-main); */
 }
 
 /*? footer */
 .footer {
-    /* padding-top: 200px; */
-    /* padding-bottom: 200px; */
+    padding-top: 70px;
+    padding-bottom: 98px;
     background-color: rgb(99, 99, 99);
     /* background-color: var(--color-background-main); */
 }
