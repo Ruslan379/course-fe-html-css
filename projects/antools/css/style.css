@@ -63,7 +63,7 @@ body {
 .navigation {
     /* margin-right: 193px; */
     margin-right: 153px;
-    margin-left: 12px;
+    padding-left: 12px;
 }
 
 .logo-link {
