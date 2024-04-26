@@ -5,16 +5,14 @@
     --color-font-main: rgba(255, 255, 255, 0.9);
     --color-font-second: rgba(255, 255, 255, 0.55);
     --color-font-auth: rgba(255, 255, 255, 0.78);
-    --color-hover: #fdf5ff;
-    /* --color-background-buttons: #b47b48; */
-    /* --color-background-buttons-cards: #c85312; */
+    --color-font-placeholder: rgba(255, 255, 255, 0.38);
+    --color-font_active-or-background_hover: #ff6e30;
+    --color-font-hover: #fdf5ff;
     --color-background-main: #1e252b;
     --color-background-hero-img: #c4c4c4;
     --color-background-forms: #283036;
-    --color-background-hover: #ff6e30;
-    /* --color-background-hero-card: rgb(39, 39, 39); */
-    /* --color-background-hero-card-hover: #ebad51; */
-    /* --color-background-quality-card: rgba(242, 242, 242, 0.3); */
+    --color-input-border: #837a93;
+    /* --color-background-buttons: #b47b48; */
     /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
     /** ================= fonts =================== */
     --font-family: "Poppins", sans-serif;
@@ -92,6 +90,10 @@ body {
         0ms;
     /* outline: 1px dotted green; */
 }
+.logo-link:hover .logo-svg-box {
+    fill: black;
+    background-color: var(--color-font_active-or-background_hover);
+}
 
 .logo-name {
     /* font-family: var(--font-family); */
@@ -100,22 +102,11 @@ body {
     /* color: var(--color-font-main); */
 }
 
-.logo-link:hover .logo-svg-box {
-    background-color: var(--color-background-hover);
-    fill: black;
-}
-
 .nav-list {
     width: 431px;
     justify-content: space-between;
 }
 
-.nav-link {
-    /* font-family: var(--font-family); */
-    font-weight: 500;
-    /* font-size: 16px; */
-    color: var(--color-font-second);
-}
 .nav-item {
     display: flex;
     align-items: center;
@@ -131,6 +122,14 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.nav-link {
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    /* font-size: 16px; */
+    color: var(--color-font-second);
+}
+
 .auth-list{
     gap: 14px;
     /* outline: 1px dotted blue; */
@@ -139,53 +138,201 @@ body {
 .auth-item {
     height: 48px;
     padding: 12px 28px;
+    border-radius: 8px;
+    /* background-color: var(--color-background-forms); */
     /** анімація */
     transition:
-        color, fill,
-        500ms
+        color,
+        300ms
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         0ms;
 }
+/** загальні стилі */
+.buttons-hover:hover {
+    color: var(--color-font-hover);
+    background-color: var(--color-font_active-or-background_hover);
+}
+
 .auth-link {
     /* font-family: var(--font-family); */
     font-weight: 600;
     /* font-size: 16px; */
     color: var(--color-font-auth);
-}
-
-.buttons-hover:hover {
-    /* padding: 12px 28px; */
-    border-radius: 8px;
-    color: var(--color-hover);
-    background-color: var(--color-background-hover);
+    
 }
 
 
 /*? main */
 /*? section hero */
 .hero {
-    height: 626px;   /* ! потім прибрати */
+    /* ! потім прибрати - height: 626px */
+    /* height: 626px;    */
     padding-top: 58px;
     background-color: rgb(168, 168, 168);
     background-color: var(--color-background-main);
 }
 .hero-background-container {
     width: 1440px;
-    height: 100%;  /* ! потім прибрати */
+    /* ! потім прибрати - height: 100% */
+    /* height: 100%; */
     margin: 0 auto;
     background-image:
         url(../images/hero-background.png);
         background-repeat: no-repeat;
         background-position: right 0 bottom 0;
-        outline: 1px dashed #0739ff;
+        /* outline: 1px dashed #0739ff; */
 }
 
 .hero .container {
     padding-top: 46px;
+    padding-left: 3px;
 }
 
+.hero-title {
+    width: 600px;
+    margin-bottom: 30px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 1.4;
+    /* color: var(--color-font-main); */
+}
 
+.hero-title-dot {
+    color: #ff6e30;
+}
 
+.hero-text {
+    width: 487px;
+    margin-bottom: 60px;
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--color-font-second);
+}
+
+.hero-form {
+    width: 498px;
+    height: 64px;
+    padding-right: 11px;
+    /* padding-left: 55px; */
+    padding-left: 18px;
+    margin-bottom: 110px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 13px;
+    align-items: center;
+    border-radius: 15px;
+    fill: transparent;
+    stroke: var(--color-light);
+    stroke-opacity: 0.38;
+    background-color: var(--color-background-forms);
+}
+
+.hero-input {
+    /* min-width: 190px; */
+    /* min-width: 197px; */
+    /* flex-basis: 100%; */
+    flex-grow: 1;
+    padding: 2px 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    border-left: 1px solid var(--color-input-border);
+    background-color: transparent;
+    color: var(--color-font-placeholder);
+}
+
+.hero-input:focus {
+    outline: none;
+    border: 1px solid var(--color-font_active-or-background_hover);
+    border-radius: 4px;
+}
+
+.hero-form:focus-within .hero-label {
+    stroke: var(--color-font_active-or-background_hover);
+    stroke-opacity: 0.5;
+    /*todo var.2 Анімація на кнопці при події hover */
+    /*! 1.Назва анімації */
+    animation-name: pulse-label;
+    /*! 2.Тривалість анімації */   
+    animation-duration: 3s;
+    /*! 3.Функція розподілу часу */
+    animation-timing-function: linear;
+    /*! 5.Кількість повних повторень анімації - постійно */
+    animation-iteration-count: infinite;
+    /*! 6.Напрямок відтворення анімації*/
+    /* animation-direction: normal; */
+    animation-direction: alternate;
+}
+/*todo Анімація на hero-label при події hero-form:focus-within */
+@keyframes pulse-label {
+    0% {
+        transform: scale(1);
+        /* stroke: var(--color-font_active-or-background_hover); */
+        stroke-opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.1);
+        /* stroke: red; */
+        stroke-opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        /* stroke: var(--color-font_active-or-background_hover); */
+        stroke-opacity: 0.5;
+    }
+}
+
+.hero-input:not(:placeholder-shown){
+    border-color: var(--color-font-placeholder);
+    color: var(--color-font_active-or-background_hover);
+}
+
+.form-button {
+    width: 130px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    color: var(--color-font-auth);
+    background-color: transparent;
+    /** анімація */
+    transition:
+        color,
+        300ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+}
+
+.social-list {
+    display: flex;
+    gap: 8px;
+}
+
+.social-item {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    fill: var(--color-light);
+    transition:
+        color, fill,
+        300ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+    /* outline: 1px solid yellowgreen; */
+}
+.social-item:hover {
+    fill: var(--color-font_active-or-background_hover);
+    background-color: var(--color-background-forms);
+}
 
 
 /*? section tools */
