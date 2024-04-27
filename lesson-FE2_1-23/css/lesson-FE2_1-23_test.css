@@ -1,10 +1,5 @@
-:root {
-    /* *============ CSS-змінні ============ */
-    --color-font-body: #220c0c;
-    --color-background-body: #fff8de;
-}
 
-body {
+.body {
     font-family: 'Montserrat', serif;
     color: var(--color-font-body);
     background-color: var(--color-background-body);
@@ -19,8 +14,71 @@ body {
 }
 /* *======================================= */
 
+:root {
+    /** ============ CSS-змінні ============ */
+    --color-font-body: #220c0c;
+    --color-background-body: #fff8de;
+    --color-title-lesson: #4b4200;
+    --color-title-section: red;
+    --color-title-subsection: blue;
+}
 
-/*! Елемент  <svg> */
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    padding: 20px 20px 150px;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    align-items: center;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+    /* ! for position: fixed */
+    /* margin-bottom: 350px; */
+}
+
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
+}
+
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* *======================================= */
+/* ! */
+/* .part_1 {
+    display: none;
+} */
+/*! 1.Елемент <svg> */
+/* .svg1 {
+    outline: 2px dashed red;
+} */
+
 
 
 /*! Елемент  <g> ПРИКЛАДИ */
