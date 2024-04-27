@@ -90,6 +90,26 @@ body {
 } */
 
 
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 2.Елемент <rect> */
+/* .first-rect2 {
+    width: 250px;
+    height: 150px;
+    fill: yellow;
+    stroke: blue;
+    stroke-width: 7px;
+} */
+
+
+/*! Елемент  <polygon> */
+.hidden {
+    display: none;
+}
+
+
 /*! Елемент <g> ПРИКЛАДИ */
 #myGroup {
     fill-opacity: 0.5;
@@ -101,19 +121,6 @@ body {
 }
 
 
-/* ! */
-.part_2 {
-    display: none;
-}
-/*! 2.Елемент <rect> */
-
-
-
-
-/*! Елемент  <polygon> */
-.hidden {
-    display: none;
-}
 
 /*! SVG-документ */
 /*? Файл_icon.svg */
