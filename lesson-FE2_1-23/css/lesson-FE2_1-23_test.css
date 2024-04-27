@@ -21,18 +21,7 @@ body {
 
 
 /*! Елемент  <svg> */
-.parent-list {
-    width: 150px;
-    height: 200px;
-    display: flex;
-    outline: 1px solid tomato;
-}
-.item {
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    border: 1px solid blue;
-}
+
 
 /*! Елемент  <g> ПРИКЛАДИ */
 #myGroup {
