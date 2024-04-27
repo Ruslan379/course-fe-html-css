@@ -76,7 +76,17 @@ body {
 } */
 /*! 1.Елемент <svg> */
 /* .svg1 {
+    background-color: #786a00;
     outline: 2px dashed red;
+    fill: brown;
+} */
+
+/* #fresh-food {
+    fill: green;
+    fill-opacity: 0.5;
+    stroke: red;
+    stroke-opacity: 0.5;
+    stroke-width: 2;
 } */
 
 
@@ -89,6 +99,7 @@ body {
 #sym01 {
     fill-opacity: 0.5;
 }
+
 
 /* ! */
 .part_2 {
