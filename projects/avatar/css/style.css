@@ -38,7 +38,7 @@ body {
 .container {
     width: 1034px;
     margin: 0 auto;
-    /* outline: 1px dashed tomato; */
+    outline: 1px dashed tomato;
 }
 
 /*? header */
@@ -428,10 +428,11 @@ body {
 }
 
 /** --- Додаткові flex-властивості до container ---- */
-.trailer .flex {
+.trailer .container.flex {
     height: 100%;
+    /* display: flex;  */ /*! ці властивості задані раніше */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */ /*! ці властивості задані раніше */
 }
 /** _________________________________________________ */
 
