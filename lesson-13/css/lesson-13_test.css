@@ -30,10 +30,10 @@ body {
 .box-parent-flex {
     /* width: 200px; */
     /* height: 600px; */
-
     padding: 5px;
-    display: flex;
+    margin-bottom: 20px;
 
+    /* display: flex; */
     /** flex-direction */
     /* flex-direction: row; */
     /* flex-direction: row-reverse; */
@@ -57,7 +57,7 @@ body {
 
     /** flex-wrap */
     /* flex-wrap: nowrap; */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* flex-wrap: wrap-reverse; */
 
     /** align-content */
@@ -70,9 +70,8 @@ body {
     /* align-content: space-around; */
     /* align-content: space-evenly; */
     
-    border: 1px solid tomato;
     background-color: rgb(202, 132, 255);
-    margin-bottom: 10px;
+    outline: 1px solid tomato;
 }
 
 
