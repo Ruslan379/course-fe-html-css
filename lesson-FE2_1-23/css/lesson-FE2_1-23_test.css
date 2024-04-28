@@ -123,16 +123,30 @@ body {
 /*! 7.Елемент <path> */
 
 
+/* ! */
+/* .part_8 {
+    display: none;
+} */
+/*! 8.Елемент <g> */
 
 
-
-
-/*! Елемент <g> ПРИКЛАДИ */
+/* ! */
+/* .part_9 {
+    display: none;
+} */
+/*! 9.Елемент <g> ПРИКЛАДИ */
 #myGroup {
     fill-opacity: 0.5;
     stroke: black;
     stroke-width: 2;
 }
+
+
+/* ! */
+/* .part_10 {
+    display: none;
+} */
+/*! 10.Елемент <symbol> ПРИКЛАД-1 */
 #sym01 {
     fill-opacity: 0.5;
 }
