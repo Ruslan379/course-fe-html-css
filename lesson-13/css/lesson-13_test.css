@@ -23,8 +23,14 @@ body {
 .box {
     width: 150px;
     height: 150px;
-    border: 1px solid green;
-    background-color: rgb(255, 255, 159);
+    background-color: rgb(255, 255, 119);
+    outline: 1px dotted green;
+
+    /** align-content */
+    /* align-self: auto; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+    /* align-self: center; */
 }
 
 .box-parent-flex {
@@ -69,9 +75,9 @@ body {
     /* align-content: space-between; */
     /* align-content: space-around; */
     /* align-content: space-evenly; */
-    
-    background-color: rgb(202, 132, 255);
-    outline: 1px solid tomato;
+
+    background-color: rgb(158, 245, 255);
+    outline: 2px solid tomato;
 }
 
 
