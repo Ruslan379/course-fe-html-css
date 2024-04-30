@@ -3,8 +3,10 @@
     /** ================= colors ================== */
     --color-light: #FFFFFF;
     --color-font-main: rgba(255, 255, 255, 0.9);
-    --color-font-second: rgba(255, 255, 255, 0.55);
-    --color-font-auth: rgba(255, 255, 255, 0.78);
+    --color-font-second: rgba(255, 255, 255, 0.78);
+    --color-font-third: rgba(255, 255, 255, 0.55);
+    --color-font-tools-cost: rgba(255, 165, 55, 0.55);
+    --color-font-tools-cost-hover: #ffa537;
     --color-font-placeholder: rgba(255, 255, 255, 0.38);
     --color-font_active-or-background_hover: #ff6e30;
     --color-font-hover: #fdf5ff;
@@ -14,6 +16,7 @@
     --color-background-tools-card-hover: rgba(40, 48, 54, 0.6);
     --color-input-border: #837a93;
     --color-border-sections: rgba(255, 255, 255, 0.15);
+    --color-border-tools-button: rgba(255, 255, 255, 0.1);
     
     /* --color-background-buttons: #b47b48; */
     /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
@@ -130,7 +133,7 @@ body {
     /* font-family: var(--font-family); */
     font-weight: 500;
     /* font-size: 16px; */
-    color: var(--color-font-second);
+    color: var(--color-font-third);
 }
 
 .auth-list{
@@ -160,7 +163,7 @@ body {
     /* font-family: var(--font-family); */
     font-weight: 600;
     /* font-size: 16px; */
-    color: var(--color-font-auth);
+    color: var(--color-font-second);
     
 }
 
@@ -202,7 +205,7 @@ body {
 }
 
 .hero-title-dot {
-    color: #ff6e30;
+    color: var(--color-font_active-or-background_hover);
 }
 
 .hero-text {
@@ -212,7 +215,7 @@ body {
     /* font-weight: 400; */
     font-size: 18px;
     line-height: 1.67;
-    color: var(--color-font-second);
+    color: var(--color-font-third);
 }
 
 .hero-form {
@@ -300,7 +303,7 @@ body {
     align-items: center;
     border: none;
     border-radius: 8px;
-    color: var(--color-font-auth);
+    color: var(--color-font-second);
     background-color: transparent;
     /** анімація */
     transition:
@@ -365,7 +368,7 @@ body {
     font-size: 18px;
     line-height: 1.67;
     text-align: center;
-    color: var(--color-font-second);
+    color: var(--color-font-third);
 }
 
 .tools-list {
@@ -379,15 +382,53 @@ body {
 .tools-item {
     /* width: 392px; */
     flex-basis: calc((100% - 48px) / 3);
-    height: 294px;
+    /* height: 294px; */
     padding: 33px;
     border-radius: 15px;
     /* outline: 1px dashed yellowgreen; */
 }
 .tools-item:hover {
+    position: relative;
+    top: -23px;
     backdrop-filter: blur(50px);
     background-image: url(../images/tools-item-background.svg);
     background-color: var(--color-background-tools-card-hover);
+    outline: 2px solid rgba(40, 48, 54, 0.8);
+}
+
+.tools-item-link {
+    margin-bottom: 30px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.tools-logo {
+    margin-right: 30px;
+}
+
+.tools-name {
+    height: 36px;
+    margin-bottom: 3px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--color-font-second);
+}
+.tools-item:hover .tools-name {
+    color: var(--color-font-main);
+}
+
+.tools-cost {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 18px;
+    color: var(--color-font-tools-cost);
+}
+.tools-item:hover .tools-cost {
+    color: var(--color-font-tools-cost-hover);
 }
 
 .tools-text {
@@ -396,6 +437,9 @@ body {
     /* font-weight: 400; */
     /* font-size: 16px; */
     line-height: 1.87;
+    color: var(--color-font-third);
+}
+.tools-item:hover .tools-text {
     color: var(--color-font-second);
 }
 
@@ -425,8 +469,6 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    fill: var(--color-font-placeholder);
-    fill: red;
     /* outline: 1px dotted rgb(170, 255, 0); */
 }
 
@@ -453,13 +495,28 @@ body {
     /* font-family: var(--font-family); */
     font-weight: 600;
     /* font-size: 16px; */
-    color: var(--color-font-second);
+    color: var(--color-font-third);
     /* background-color: gray; */
 }
+.tools-item:hover .tools-visit-link {
+    color: var(--color-font-second);
+}
 
-
-
-
+.tools-button {
+    width: 184px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid var(--color-border-tools-button);
+    border-radius: 8px; 
+    color: var(--color-font_active-or-background_hover);
+    background-color: transparent;
+}
 
 
 /*? section brands */
