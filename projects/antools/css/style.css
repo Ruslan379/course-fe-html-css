@@ -403,7 +403,8 @@ body {
     border-radius: 15px;
     /* outline: 1px dashed yellowgreen; */
 }
-.tools-item:hover {
+/* todo var.1 tools-item:hover */
+.tools-item1:hover {
     position: relative;
     top: -23px;
     /* =============== */
@@ -432,6 +433,20 @@ body {
         ),
         url(../images/tools-item-background.svg);
     outline: 2px solid rgba(40, 48, 54, 0.8);
+}
+
+/* todo var.2 tools-item:hover */
+.tools-item:hover {
+    /* position: relative; */
+    /* top: -23px; */
+    /* background-color: var(--color-background-tools-card-hover); */
+    background-color: rgba(40, 48, 54, 0.6);
+    background-image: 
+        url(../images/tools-item-background-image.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px top -6px;
+    backdrop-filter: blur(50px);
+
 }
 
 .tools-item-link {
