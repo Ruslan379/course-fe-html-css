@@ -639,6 +639,47 @@ body {
     background-color: var(--color-background-main);
 }
 
+/** --- Додаткові flex-властивості до container ---- */
+.newcomer .container.flex{
+    height: 638px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--color-background-brands);
+    outline: 4px double green;
+}
+/** _________________________________________________ */
+
+.newcomer-descriptions-box {
+    width: 427px;
+    height: 300px;
+    outline: 1px dotted wheat;
+}
+
+.newcomer-list {
+    width: 600px;
+    height: 618px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;
+
+    outline: 1px dotted rgb(179, 245, 190);
+}
+
+.newcomer-item {
+    width: 288px;
+    height: 284px;
+
+    outline: 1px dashed yellow;
+}
+
+
+
+
+
+
+
 /*? section team */
 .team {
     padding-top: 200px;
