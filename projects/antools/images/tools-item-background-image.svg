@@ -2,8 +2,11 @@
     width="131" 
     height="109" 
     viewBox="0 0 131 109" 
-    fill="none" 
+    fill="none"
     xmlns="http://www.w3.org/2000/svg"
+
+    border-radius="50%"
+    filter="blur(50px)"
 >
     <g filter="url(#filter0_f_38_3)">
         <circle 
@@ -12,7 +15,6 @@
             r="32.5" 
             fill="#FF6E30" 
             fill-opacity="0.6"
-            filter="blur(50px)"
         />
     </g>
     <defs>
@@ -26,11 +28,11 @@
             color-interpolation-filters="sRGB"
         >
             <feFlood 
-            flood-opacity="0" 
-            result="BackgroundImageFix"
+                flood-opacity="0" 
+                result="BackgroundImageFix"
             />
             <feBlend 
-                mode="normal" 
+                mode="normal"
                 in="SourceGraphic" 
                 in2="BackgroundImageFix" 
                 result="shape"

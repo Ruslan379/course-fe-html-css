@@ -14,10 +14,12 @@
     --color-background-main: #1e252b;
     --color-background-hero-img: #c4c4c4;
     --color-background-forms: #283036;
+    --color-background-brands: rgba(44, 53, 61, 0.2);
     --color-background-tools-card-hover: rgba(40, 48, 54, 0.6);
-    --color-input-border: #837a93;
+    --color-border-input: #837a93;
     --color-border-sections: rgba(255, 255, 255, 0.15);
     --color-border-tools-button: rgba(255, 255, 255, 0.1);
+    --color-border-tools-brands: rgba(40, 48, 54, 0.8);
     
     /* --color-background-buttons: #b47b48; */
     /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
@@ -282,7 +284,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     border: none;
-    border-left: 1px solid var(--color-input-border);
+    border-left: 1px solid var(--color-border-input);
     background-color: transparent;
     color: var(--color-font-placeholder);
 }
@@ -404,7 +406,7 @@ body {
     /* outline: 1px dashed yellowgreen; */
 }
 /* todo var.1 tools-item:hover */
-.tools-item1:hover {
+.tools-item:hover {
     position: relative;
     top: -23px;
     /* =============== */
@@ -425,28 +427,35 @@ body {
         rgb(40, 48, 54, 0.6) 40%
         ); */
     /* todo var.3  */
+    /* background-image: 
+    radial-gradient(
+        circle at top right, 
+        #3c3432, 
+        rgb(40, 48, 54, 0.6) 40%
+        ),
+        url(../images/tools-item-background.svg); */
+    /* todo var.4  */
     background-image: 
     radial-gradient(
         circle at top right, 
         #3c3432, 
         rgb(40, 48, 54, 0.6) 40%
         ),
-        url(../images/tools-item-background.svg);
-    outline: 2px solid rgba(40, 48, 54, 0.8);
+        url(../images/tools-item-background.png);
+    outline: 2px solid var(--color-border-tools-brands);
 }
 
-/* todo var.2 tools-item:hover */
-.tools-item:hover {
-    /* position: relative; */
-    /* top: -23px; */
-    /* background-color: var(--color-background-tools-card-hover); */
+/* todo var.2 tools-item:hover - НЕ ПРАЦЮЄ */
+.tools-item2:hover {
+    position: relative;
+    top: -23px;
+    background-color: var(--color-background-tools-card-hover);
     background-color: rgba(40, 48, 54, 0.6);
     background-image: 
         url(../images/tools-item-background-image.svg);
     background-repeat: no-repeat;
     background-position: right 16px top -6px;
     backdrop-filter: blur(50px);
-
 }
 
 .tools-item-link {
@@ -575,9 +584,56 @@ body {
 /*? section brands */
 .brands {
     padding-top: 200px;
-    background-color: rgb(0, 82, 0);
-    /* background-color: var(--color-background-main); */
+    /* background-color: rgb(0, 82, 0); */
+    background-color: var(--color-background-main);
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+.brands .container{
+    height: 253px;
+    padding: 55px 83px 56px;
+    border-radius: 25px;  
+    outline: 2px solid var(--color-border-tools-brands);
+    backdrop-filter: blur(50px);
+    background-color: var(--color-background-brands);
+    background-image: url(../images/brands-background.png);
+}
+/** _________________________________________________ */
+
+.brands-title {
+    margin-bottom: 55px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: var(--color-font-second);
+}
+
+.brands-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* outline: 1px dashed yellow; */
+}
+
+.brands-item {
+    display: flex;
+    align-items: center;
+    /* outline: 1px dotted green; */
+}
+
+/* todo var.3 як background-image */
+.brands-item:nth-child(1) {
+    width: 193px;
+    height: 42px;
+    backdrop-filter: blur(50px);
+    background-image: url(../images/brands-logo-microsoft.svg);
+}
+
+
+
+
+
 
 /*? section newcomer */
 .newcomer {
