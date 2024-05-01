@@ -406,9 +406,31 @@ body {
 .tools-item:hover {
     position: relative;
     top: -23px;
+    /* =============== */
+    /* border-radius: 100%; */
+    /* fill: rgba(255, 110, 48, 0.6); */
+    /* opacity: 0.6; */
+    /* filter: blur(50px); */
+    /* =============== */
     backdrop-filter: blur(50px);
-    background-image: url(../images/tools-item-background.svg);
     background-color: var(--color-background-tools-card-hover);
+    /* todo var.1  */
+    /* background-image: url(../images/tools-item-background.svg); */
+    /* todo var.2  */
+    /* background-image: 
+    radial-gradient(
+        circle at top right, 
+        #3c3432, 
+        rgb(40, 48, 54, 0.6) 40%
+        ); */
+    /* todo var.3  */
+    background-image: 
+    radial-gradient(
+        circle at top right, 
+        #3c3432, 
+        rgb(40, 48, 54, 0.6) 40%
+        ),
+        url(../images/tools-item-background.svg);
     outline: 2px solid rgba(40, 48, 54, 0.8);
 }
 
