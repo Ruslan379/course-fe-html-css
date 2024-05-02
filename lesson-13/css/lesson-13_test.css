@@ -24,6 +24,7 @@ body {
     width: 150px;
     height: 150px;
     /* display: block; */
+    /* display: inline-block; */
     background-color: rgb(255, 255, 119);
     outline: 1px dotted green;
 
