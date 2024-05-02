@@ -644,7 +644,6 @@ body {
     padding-top: 20px;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: var(--color-background-brands);
     outline: 4px double green;
 }
 /** _________________________________________________ */
@@ -657,7 +656,7 @@ body {
 
 .newcomer-list {
     width: 600px;
-    height: 618px;
+    /* height: 618px; */
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -667,13 +666,39 @@ body {
 }
 
 .newcomer-item {
-    width: 288px;
+    /* width: 288px; */
+    flex-basis: calc((100% - 24px) / 2);
     height: 284px;
     padding: 28px 21px 28px 22px;
     border-radius: 15px;
     outline: 1px dashed yellow;
 }
+/* todo var.1 tools-item:hover */
+.newcomer-item:hover {
+    position: relative;
+    top: -20px;
+    backdrop-filter: blur(50px);
+    background-color: var(--color-background-tools-card-hover);
+    /* todo var.4  */
+    background-image: 
+    radial-gradient(
+        circle at top right, 
+        #3c3432, 
+        rgb(40, 48, 54, 0.6) 40%
+        ),
+        url(../images/newcomer-item-background.png);
+    outline: 2px solid var(--color-border-tools-brands);
+}
 
+.newcomer-item-link {
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.newcomer-logo {
+    margin-right: 30px;
+}
 
 
 
