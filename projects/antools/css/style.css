@@ -21,7 +21,6 @@
     --color-border-tools-button: rgba(255, 255, 255, 0.1);
     --color-border-tools-brands: rgba(40, 48, 54, 0.8);
     
-    /* --color-background-buttons: #b47b48; */
     /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
     /** ================= fonts =================== */
     --font-family: "Poppins", sans-serif;
@@ -670,7 +669,8 @@ body {
 .newcomer-item {
     width: 288px;
     height: 284px;
-
+    padding: 28px 21px 28px 22px;
+    border-radius: 15px;
     outline: 1px dashed yellow;
 }
 
