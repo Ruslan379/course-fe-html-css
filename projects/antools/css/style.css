@@ -812,6 +812,9 @@ body {
 .team .container{
     height: 600px;
     /* outline: 4px double green; */
+    background-image: url(../images/team-slider-pagination.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 /** _________________________________________________ */
 
@@ -823,6 +826,12 @@ body {
 }
 
 .team-list {
+    position: absolute;
+    /*! +++++ Пагінація +++++ */
+    right: 0;
+    right: -100%;
+    right: -200%;
+    /*! ______Пагінація______ */
     width: 300%;
     height: 100%;
     display: flex;
