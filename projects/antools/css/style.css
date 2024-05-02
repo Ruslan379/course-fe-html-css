@@ -16,10 +16,13 @@
     --color-background-forms: #283036;
     --color-background-brands: rgba(44, 53, 61, 0.2);
     --color-background-tools-card-hover: rgba(40, 48, 54, 0.6);
+    --color-background-team-name-position-box: rgba(40, 48, 54, 0.2);
+    --color-background-team-background-text: rgba(255, 255, 255, 0.2);
     --color-border-input: #837a93;
     --color-border-sections: rgba(255, 255, 255, 0.15);
     --color-border-tools-button: rgba(255, 255, 255, 0.1);
     --color-border-tools-brands: rgba(40, 48, 54, 0.8);
+    
     
     /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
     /** ================= fonts =================== */
@@ -813,6 +816,7 @@ body {
 /** _________________________________________________ */
 
 .slider-box {
+    position: relative;
     width: 100%;
     height: 492px;
     outline: 2px dashed burlywood;
@@ -826,6 +830,7 @@ body {
 }
 
 .team-item {
+    position: relative;
     width: 100%;
     height: 100%;
     padding-left: 187px;
@@ -840,10 +845,14 @@ body {
 
 .team-name-position-box {
     position: absolute;
-    width: 265px;
-    height: 91px;
     right: 4px;
     bottom: 29px;
+    width: 265px;
+    height: 91px;
+    padding: 10px 0 16px 23px;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    background-color: var(--color-background-team-name-position-box);
     outline: 1px dotted green;
 }
 
@@ -858,18 +867,91 @@ body {
 }
 
 .team-position {
-    margin-bottom: 2px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    color: rgba(255, 253, 253, 0.55);
-    color: var(--color-font-second);
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    /* font-size: 16px; */
+    line-height: 1.5;
+    color: var(--color-font-third);
+}
+
+.team-text-box {
+    position: absolute;
+    right: 188px;
+    top: 18px;
+    width: 512px;
+    height: 336px;
+    padding: 110px 0 46px 119px;
+    outline: 1px dashed green;
+}
+
+.team-background-text {
+    position: absolute;
+    left: 43px;
+    top: 23px;
+    width: 103px;
+    height: 320px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 250px;
+    background-image: 
+    linear-gradient(
+        235deg,
+        var(--color-background-main) 15%,
+        var(--color-background-team-background-text)
+        );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(19deg);
+    outline: 1px dashed orange;
 }
 
 .team-text {
+    position: absolute;
     width: 393px;
     height: 180px;
+    font-family: var(--third-family);
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.01em;
+    color: var(--color-font-second);
+    outline: 1px dotted yellow;
 }
+
+.slider-buttons-list {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0, -50%);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    outline: 1px dashed teal;
+}
+
+.slider-buttons-item {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 1px dotted orangered;
+}
+
+.slider-button-left,
+.slider-button-right {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+    outline: 1px dotted green;
+}
+
 
 
 
