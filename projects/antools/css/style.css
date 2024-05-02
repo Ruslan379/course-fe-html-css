@@ -811,10 +811,10 @@ body {
 /** --- Додаткові flex-властивості до container ---- */
 .team .container{
     height: 600px;
-    /* outline: 4px double green; */
     background-image: url(../images/team-slider-pagination.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
+    /* outline: 4px double red; */
 }
 /** _________________________________________________ */
 
@@ -822,20 +822,21 @@ body {
     position: relative;
     width: 100%;
     height: 492px;
-    outline: 2px dashed burlywood;
+    overflow: hidden;
+    outline: 1px dashed burlywood;
 }
 
 .team-list {
     position: absolute;
     /*! +++++ Пагінація +++++ */
     right: 0;
-    right: -100%;
-    right: -200%;
+    /* right: -100%; */
+    /* right: -200%; */
     /*! ______Пагінація______ */
     width: 300%;
     height: 100%;
     display: flex;
-    outline: 1px dashed green;
+    /* outline: 1px dashed green; */
 }
 
 .team-item {
@@ -852,7 +853,7 @@ body {
     background-image: url(../images/team-image-background.png);
     background-repeat: no-repeat;
     background-position: right 19px bottom 25px;                                                                         ;
-    outline: 1px dotted yellow;
+    /* outline: 1px dotted yellow; */
 }
 
 .team-name-position-box {
@@ -865,7 +866,7 @@ body {
     border-radius: 8px;
     backdrop-filter: blur(50px);
     background-color: var(--color-background-team-name-position-box);
-    outline: 1px dotted green;
+    /* outline: 1px dotted green; */
 }
 
 .team-name {
@@ -893,7 +894,7 @@ body {
     width: 512px;
     height: 336px;
     padding: 110px 0 46px 119px;
-    outline: 1px dashed green;
+    /* outline: 1px dashed green; */
 }
 
 .team-background-text {
@@ -915,7 +916,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: rotate(19deg);
-    outline: 1px dashed orange;
+    /* outline: 1px dashed orange; */
 }
 
 .team-text {
@@ -928,7 +929,7 @@ body {
     line-height: 2.14;
     letter-spacing: 0.01em;
     color: var(--color-font-second);
-    outline: 1px dotted yellow;
+    /* outline: 1px dotted yellow; */
 }
 
 .slider-buttons-list {
@@ -941,7 +942,7 @@ body {
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
-    outline: 1px dashed teal;
+    /* outline: 1px dashed teal; */
 }
 
 .slider-buttons-item {
@@ -950,7 +951,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 1px dotted orangered;
+    /* outline: 1px dotted orangered; */
 }
 
 .slider-button-left,
@@ -961,7 +962,7 @@ body {
     align-items: center;
     border: none;
     background-color: inherit;
-    outline: 1px dotted green;
+    /* outline: 1px dotted green; */
 }
 
 
