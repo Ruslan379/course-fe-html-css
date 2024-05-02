@@ -811,9 +811,10 @@ body {
 /** --- Додаткові flex-властивості до container ---- */
 .team .container{
     height: 600px;
-    background-image: url(../images/team-slider-pagination.svg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
+    overflow: hidden;
+    /* background-image: url(../images/team-slider-pagination.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center bottom; */
     /* outline: 4px double red; */
 }
 /** _________________________________________________ */
@@ -822,8 +823,7 @@ body {
     position: relative;
     width: 100%;
     height: 492px;
-    overflow: hidden;
-    outline: 1px dashed burlywood;
+    /* outline: 1px dashed burlywood; */
 }
 
 .team-list {
@@ -836,7 +836,7 @@ body {
     width: 300%;
     height: 100%;
     display: flex;
-    /* outline: 1px dashed green; */
+    /* outline: 2px dashed green; */
 }
 
 .team-item {
@@ -845,6 +845,25 @@ body {
     height: 100%;
     padding-left: 187px;
     display: flex;
+}
+.team-item::after {
+    content: "";
+    width: 168px;
+    height: 8px;
+    margin-top: 592px;
+    margin-left: -51px;
+    /* opacity: 0.5; */
+    /* background-color: #ff6e30; */
+    /* background-image: url(../images/team-slider-pagination.svg); */
+}
+.team-item:nth-child(3)::after {
+    background-image: url(../images/team-slider-pagination-1.svg);
+}
+.team-item:nth-child(2)::after {
+    background-image: url(../images/team-slider-pagination-2.svg);
+}
+.team-item:nth-child(1)::after {
+    background-image: url(../images/team-slider-pagination-3.svg);
 }
 
 .team-img-box {
