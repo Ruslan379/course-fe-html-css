@@ -840,6 +840,9 @@ body {
 .team-img-box {
     position: relative;
     height: 100%;
+    background-image: url(../images/team-image-background.png);
+    background-repeat: no-repeat;
+    background-position: right 19px bottom 25px;                                                                         ;
     outline: 1px dotted yellow;
 }
 
