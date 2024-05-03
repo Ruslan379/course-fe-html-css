@@ -836,6 +836,11 @@ body {
     width: 300%;
     height: 100%;
     display: flex;
+    /** анімація */
+    transition: 
+        transform 
+        500ms 
+        ease-in-out;
     /* outline: 2px dashed green; */
 }
 
