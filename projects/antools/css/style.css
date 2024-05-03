@@ -868,7 +868,10 @@ body {
 
 .team-img-box {
     position: relative;
+    width: 401px;  /* ! crutch */
     height: 100%;
+    padding-left: 10px; /* ! crutch */
+    /* background-color: #ff6e30; */
     background-image: url(../images/team-image-background.png);
     background-repeat: no-repeat;
     background-position: right 19px bottom 25px;                                                                         ;
