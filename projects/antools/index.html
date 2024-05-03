@@ -561,7 +561,6 @@
                 </ul>
             </div>
             </section>
-            
             <section class="team">
             <div class="container">
                 <div class="slider-box">
@@ -676,9 +675,7 @@
                                 >
                                     <path 
                                         d="M30 36L18 24L30 12" 
-                                        stroke="white" 
-                                        stroke-opacity="0.28" 
-                                        stroke-width="3" 
+                                        stroke-width="5" 
                                         stroke-linecap="round" 
                                         stroke-linejoin="round"
                                     />
@@ -697,8 +694,7 @@
                                 >
                                     <path 
                                         d="M18 36L30 24L18 12"
-                                        stroke="#FF6E30" 
-                                        stroke-width="3" 
+                                        stroke-width="5" 
                                         stroke-linecap="round" 
                                         stroke-linejoin="round"
                                     />
@@ -833,6 +829,18 @@
             function updateSlider() {
                 const newPosition = currentIndex * slideWidth;
                 slider.style.transform = `translateX(${newPosition}px)`;
+                // +++++ зміна кольору копок < та >
+                if (currentIndex === 0) {
+                    prevBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
+                    nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                } else if (currentIndex === 1) {
+                    prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                } else if (currentIndex === 2) {
+                    prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    nextBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
+                }
+                // +++++
             }
 
             prevBtn.addEventListener('click', slideLeft);

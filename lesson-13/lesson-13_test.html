@@ -40,6 +40,7 @@
             <a class="box">link-flex-1</a>
             <a class="box">link-flex-2</a>
             <a class="box">link-flex-3</a>
+            
 
             <!-- <a class="box">link-flex-4</a>
             <a class="box">link-flex-5</a>
@@ -66,7 +67,8 @@
             <button id="prevBtn">Previous</button>
             <button id="nextBtn">Next</button>
         </div>
-        <!-- Скрипт слайдера -->
+
+        <!--* Скрипт слайдера-var.1 -->
         <script>
             const slider = document.querySelector('.slider');
             const prevBtn = document.getElementById('prevBtn');
@@ -99,5 +101,49 @@
             prevBtn.addEventListener('click', slideLeft);
             nextBtn.addEventListener('click', slideRight);
         </script>
+        <!--* Скрипт слайдера-var.2 -->
+        <!-- <script>
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentIndex = 0;
+
+            function updateSlider() {
+                const slides = document.querySelectorAll('.slider img');
+                slides.forEach((slide, index) => {
+                    if (index === currentIndex) {
+                        slide.style.display = 'block';
+                    } else {
+                        slide.style.display = 'none';
+                    }
+                });
+                // +++++
+
+                if (currentIndex === 0) {
+                    prevBtn.querySelector('path').setAttribute('stroke', 'white');
+                    nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                } else if (currentIndex === 1) {
+                    prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                } else if (currentIndex === 2) {
+                    prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    nextBtn.querySelector('path').setAttribute('stroke', 'white');
+                }
+                // +++++
+
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + 4) % 4;
+                updateSlider();
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % 4;
+                updateSlider();
+            });
+
+            updateSlider();
+
+        </script> -->
     </body>
 </html>

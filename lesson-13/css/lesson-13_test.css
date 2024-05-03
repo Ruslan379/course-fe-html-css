@@ -102,6 +102,8 @@ body {
 
 /* ! +++++++++ слайдер ++++++++ */
 .slider-container {
+    /* ! */
+    /* display: none; */
     position: relative;
     width: 800px;
     overflow: hidden;

@@ -9,6 +9,7 @@
     --color-font-tools-cost: rgba(255, 165, 55, 0.55);
     --color-font-tools-cost-hover: #ffa537;
     --color-font-placeholder: rgba(255, 255, 255, 0.38);
+    --color-font-slider-buttons: rgba(255, 255, 255, 0.28);
     --color-font_active-or-background_hover: #ff6e30;
     --color-font-hover: #fdf5ff;
     --color-background-main: #1e252b;
@@ -992,9 +993,14 @@ body {
     /* outline: 1px dotted green; */
 }
 
+/** початковий стан (колір) кнопок < та > */
+.slider-button-left svg {
+    stroke: var(--color-font-slider-buttons);
+}
 
-
-
+.slider-button-right svg {
+    stroke: var(--color-font_active-or-background_hover);
+}
 
 
 
