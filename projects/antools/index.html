@@ -833,12 +833,18 @@
                 if (currentIndex === 0) {
                     prevBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
                     nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    prevBtn.disabled = true; // Делаем кнопку неактивной
+                    nextBtn.disabled = false; // Разблокируем следующую кнопку
                 } else if (currentIndex === 1) {
                     prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
                     nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    prevBtn.disabled = false; // Разблокируем предыдущую кнопку
+                    nextBtn.disabled = false; // Разблокируем следующую кнопк
                 } else if (currentIndex === 2) {
                     prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
                     nextBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
+                    prevBtn.disabled = false; // Разблокируем предыдущую кнопку
+                    nextBtn.disabled = true; // Делаем кнопку неактивной
                 }
                 // +++++
             }
