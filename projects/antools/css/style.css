@@ -993,14 +993,22 @@ body {
     /* outline: 1px dotted green; */
 }
 
-/** початковий стан (колір) кнопок < та > */
-.slider-button-left svg {
-    stroke: var(--color-font-slider-buttons);
+.slider-button-left:disabled,
+.slider-button-right:disabled {
+    cursor: not-allowed; 
 }
 
+/*todo var.1 -задаємо початковий стан (колір) кнопок < та > так: */
+/* .slider-button-left svg {
+    stroke: var(--color-font-slider-buttons);
+}
 .slider-button-right svg {
     stroke: var(--color-font_active-or-background_hover);
-}
+} */
+/*todo var.2 -задаємо початковий стан (колір) кнопок < та > через JS */
+
+
+
 
 
 

@@ -804,6 +804,10 @@
             const slider = document.querySelector('.slider');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
+            // Задаємо початковий стан (колір) кнопок < та >
+            prevBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
+            nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+            prevBtn.disabled = true; // Робимо кнопку < неактивной
             const slides = document.querySelectorAll('.slider .team-item');
             const slideWidth = slides[0].clientWidth;
             console.log(slideWidth);
