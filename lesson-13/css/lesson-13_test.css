@@ -97,3 +97,35 @@ body {
     background-color: rgb(255, 171, 171);
     margin-bottom: 10px;
 }
+
+
+
+/* ! +++++++++ слайдер ++++++++ */
+.slider-container {
+    position: relative;
+    width: 800px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+#prevBtn {
+    left: 10px;
+}
+#nextBtn {
+    right: 10px;
+}

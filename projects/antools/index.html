@@ -565,7 +565,7 @@
             <section class="team">
             <div class="container">
                 <div class="slider-box">
-                    <ul class="team-list">
+                    <ul class="team-list slider">
                         <li class="team-item">
                             <div class="team-img-box">
                                 <img 
@@ -665,7 +665,7 @@
                     </ul>
                     <ul class="slider-buttons-list">
                         <li class="slider-buttons-item">
-                            <button class="slider-button-left" type="button">
+                            <button class="slider-button-left" id="prevBtn" type="button">
                                 <!-- <img src="./images/team-slider-button-left.svg" alt="slider button left"> -->
                                 <svg 
                                     width="48" 
@@ -686,7 +686,7 @@
                             </button>
                         </li>
                         <li class="slider-buttons-item">
-                            <button class="slider-button-right" type="button">
+                            <button class="slider-button-right" id="nextBtn" type="button">
                                 <!-- <img src="./images/team-slider-button-right.svg" alt="slider button right"> -->
                                 <svg 
                                     width="48" 
@@ -710,7 +710,7 @@
                 </div>
             </div>
 
-            
+
             </section>
             <section class="join">
             <div class="container">
@@ -802,6 +802,42 @@
             </ul>
         </div>
         </footer>
+
+        <!--* Скрипт слайдера -->
+        <script>
+            const slider = document.querySelector('.slider');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slides = document.querySelectorAll('.slider .team-item');
+            const slideWidth = slides[0].clientWidth;
+            console.log(slideWidth);
+            let currentIndex = 0;
+
+            function slideRight() {
+                currentIndex++;
+                if (currentIndex >= slides.length) {
+                    currentIndex = 0;
+                    console.log(currentIndex);
+                }
+                updateSlider();
+            }
+
+            function slideLeft() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = slides.length - 1;
+                }
+                updateSlider();
+            }
+
+            function updateSlider() {
+                const newPosition = currentIndex * slideWidth;
+                slider.style.transform = `translateX(${newPosition}px)`;
+            }
+
+            prevBtn.addEventListener('click', slideLeft);
+            nextBtn.addEventListener('click', slideRight);
+        </script>
     </div>
 </body>
 

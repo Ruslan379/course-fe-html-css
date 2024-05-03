@@ -54,6 +54,50 @@
             <div class="box">box-inline-flex-2</div>
             <div class="box">box-inline-flex-3</div>
         </div> -->
-        
+
+
+        <!--! +++++++++ слайдер ++++++++ -->
+        <div class="slider-container">
+            <div class="slider">
+                <img src="../lesson-1/images-1/quarry.jpg" width="800" alt="Image 1">
+                <img src="../lesson-1/images-1/roofs.jpg" width="800" alt="Image 2">
+                <img src="../lesson-1/images-1/sunset.jpg" width="800" alt="Image 3">
+            </div>
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <!-- Скрипт слайдера -->
+        <script>
+            const slider = document.querySelector('.slider');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slides = document.querySelectorAll('.slider img');
+            const slideWidth = slides[0].clientWidth;
+            let currentIndex = 0;
+
+            function slideRight() {
+                currentIndex++;
+                if (currentIndex >= slides.length) {
+                    currentIndex = 0;
+                }
+                updateSlider();
+            }
+
+            function slideLeft() {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = slides.length - 1;
+                }
+                updateSlider();
+            }
+
+            function updateSlider() {
+                const newPosition = -currentIndex * slideWidth;
+                slider.style.transform = `translateX(${newPosition}px)`;
+            }
+
+            prevBtn.addEventListener('click', slideLeft);
+            nextBtn.addEventListener('click', slideRight);
+        </script>
     </body>
 </html>
