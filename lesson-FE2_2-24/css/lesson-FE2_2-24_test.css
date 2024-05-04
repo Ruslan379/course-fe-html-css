@@ -31,7 +31,7 @@ img {
 img:hover {
     cursor: pointer;
     fill: green;
-    stroke: black;
+    /* stroke: black; */
     stroke: yellow;
     stroke-width: 5;
 }
@@ -44,13 +44,14 @@ img:hover {
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
     background-color: rgb(255, 238, 193);
-    background-image: url("https://res.cloudinary.com/goit-academy/image/upload/v1614773221/codepen/cat_segyum.svg");
+    background-image: url(../svg/instagram.svg);
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
 }
 
 .box:hover {
+    cursor: pointer;
     /* ❌ */
     fill: green;
     stroke: yellow;
@@ -65,13 +66,24 @@ img:hover {
 .icon {
     width: 200px;
     height: 200px;
+    color:white
 }
+/* ❌ */
+/* .icon:hover {
+    cursor: pointer;
+    fill: green;
+    stroke: orange;
+    background-color: yellow;
+} */
+
 /* ✅ */
 .icon:hover .letter {
+    cursor: pointer;
     fill: palevioletred;
 }
 /* ✅ */
 .icon:hover .background {
+    cursor: pointer;
     fill: green;
     stroke: yellow;
     stroke-width: 5;
