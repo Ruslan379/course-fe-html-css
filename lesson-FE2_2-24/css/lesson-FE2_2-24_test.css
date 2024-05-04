@@ -45,6 +45,9 @@ img:hover {
     border-radius: 8px;
     background-color: rgb(255, 238, 193);
     background-image: url(../svg/instagram.svg);
+    /* !!!!!!!!!!!!!!! */
+    /* background-image: url(../images/icons-sprite.svg#antenna); */
+    /* !!!!!!!!!!!!!!! */
     background-repeat: no-repeat;
     background-size: 200px;
     background-position: center;
@@ -66,28 +69,31 @@ img:hover {
 .icon {
     width: 200px;
     height: 200px;
-    color:white
+    color: grey; /* ❌ */
+    fill: grey; /* ❌ */
 }
-/* ❌ */
-/* .icon:hover {
+
+.icon:hover {
     cursor: pointer;
-    fill: green;
+    /* ✅ */
     stroke: orange;
+    /* ❌ */
+    fill: green;
     background-color: yellow;
-} */
+}
 
 /* ✅ */
-.icon:hover .letter {
+/* .icon:hover .letter {
     cursor: pointer;
     fill: palevioletred;
-}
+} */
 /* ✅ */
-.icon:hover .background {
+/* .icon:hover .background {
     cursor: pointer;
     fill: green;
     stroke: yellow;
     stroke-width: 5;
-}
+} */
 
 
 /*! Підключення векторної графіки як як SVG-спрайт ​*/
@@ -134,6 +140,8 @@ img:hover {
     background-color: rgb(252, 156, 255);
 }
 
+
+
 /*! Підключення векторної графіки ​*/
 /*! як фон елемента за  допомогою SVG-спрайт */
 .box2 {
@@ -159,7 +167,8 @@ img:hover {
 }
 
 
-/*! Іконочний шрифт ​*/
+/* ❌ */
+/*! Іконочний шрифт - 1 ​*/ 
 .social-networks {
     font-size: 40px;
 }
@@ -172,3 +181,54 @@ img:hover {
     color: rgb(42, 165, 85);
 }
 
+
+/* ❌ */
+/*! Іконочний шрифт - 2 ​*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.social-networks {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-networks li {
+  margin: 0.15em;
+  position: relative;
+  font-size: 1.2em;
+}
+
+.social-networks i {
+  color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  transition: all 0.3s ease-out;
+}
+
+.social-networks a {
+  display: inline-block;
+}
+
+.social-networks a:before {
+  transform: scale(1);
+  content: " ";
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: block;
+  background: linear-gradient(45deg, #1441e6, #00ff72);
+  transition: all 0.2s ease-out;
+}
+
+.social-networks a:hover:before {
+  transform: scale(0);
+  transition: all 0.3s ease-in;
+}
+
+.social-networks a:hover i {
+  transform: scale(2.2);
+  color: #1441e6;
+  background: -webkit-linear-gradient(45deg,  #1441e6, #00ff72);
+  transition: all 0.2s ease-in;
+}
