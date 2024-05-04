@@ -29,6 +29,7 @@ img {
 }
 /* ❌ */
 img:hover {
+    cursor: pointer;
     fill: green;
     stroke: black;
     stroke: yellow;
