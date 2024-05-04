@@ -827,7 +827,7 @@ body {
     /* outline: 1px dashed burlywood; */
 }
 
-.team-list {
+.slider-team-list  {
     position: absolute;
     /*! +++++ Пагінація +++++ */
     right: 0;
@@ -852,7 +852,8 @@ body {
     padding-left: 187px;
     display: flex;
 }
-.team-item::after {
+/*todo +++++ var.1: Елементи Пагінації +++++ */
+.team-item-::after {
     content: "";
     width: 168px;
     height: 8px;
@@ -862,15 +863,16 @@ body {
     /* background-color: #ff6e30; */
     /* background-image: url(../images/team-slider-pagination.svg); */
 }
-.team-item:nth-child(3)::after {
+.team-item-:nth-child(3)::after {
     background-image: url(../images/team-slider-pagination-1.svg);
 }
-.team-item:nth-child(2)::after {
+.team-item-:nth-child(2)::after {
     background-image: url(../images/team-slider-pagination-2.svg);
 }
-.team-item:nth-child(1)::after {
+.team-item-:nth-child(1)::after {
     background-image: url(../images/team-slider-pagination-3.svg);
 }
+/*todo _____ var.1: Елементи Пагінації _____ */
 
 .team-img-box {
     position: relative;
@@ -1008,8 +1010,25 @@ body {
 /*todo var.2 -задаємо початковий стан (колір) кнопок < та > через JS */
 
 
+/*todo var.2: Список Пагінації */
+.slider-pagination-list {
+    width: 168px;
+    height: 8px;
+    margin: 0 auto;
+    /* margin-top: 592px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px dotted blue;
+}
 
-
+.slider-pagination-item {
+    width: 44px;
+    height: 6px;
+    border-radius: 4px;
+    background-color:#ff6e30;
+    /* background-color: #283036; */
+}
 
 
 /*? section join */
