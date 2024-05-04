@@ -98,12 +98,46 @@ body {
     margin-bottom: 10px;
 }
 
+/** +++++++++ box-list ++++++++ */
+.box-item {
+    width: 100px;
+    height: 100px;
+    /* margin-right: 10px; */
+    background-color: rgb(255, 255, 119);
+    outline: 1px dotted green;
+}
+
+.box-list {
+    width: 320px;
+    /* height: 640px; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    column-gap: 10px;
+    row-gap: 20px;
+    
+    /* padding: 5px; */
+    /* margin-bottom: 20px; */
+    background-color: rgb(158, 245, 255);
+    outline: 2px solid tomato;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ! +++++++++ слайдер ++++++++ */
 .slider-container {
     /* ! */
-    /* display: none; */
+    display: none;
     position: relative;
     width: 800px;
     overflow: hidden;
