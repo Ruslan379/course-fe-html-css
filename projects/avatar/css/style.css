@@ -38,7 +38,7 @@ body {
 .container {
     width: 1034px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    /* outline: 1px dashed tomato; */
 }
 
 /*? header */

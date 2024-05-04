@@ -813,9 +813,11 @@ body {
 .team .container{
     height: 600px;
     overflow: hidden;
-    /* background-image: url(../images/team-slider-pagination.svg); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center bottom; */
+    /*todo +++++ var.0: Список Пагінації +++++ */
+    /* background-image: url(../images/team-slider-pagination.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom; */
+
     /* outline: 4px double red; */
 }
 /** _________________________________________________ */
@@ -852,15 +854,13 @@ body {
     padding-left: 187px;
     display: flex;
 }
-/*todo +++++ var.1: Елементи Пагінації +++++ */
+/*todo +++++ var.1: Список Пагінації +++++ */
 .team-item-::after {
     content: "";
     width: 168px;
     height: 8px;
     margin-top: 592px;
     margin-left: -51px;
-    /* opacity: 0.5; */
-    /* background-color: #ff6e30; */
     /* background-image: url(../images/team-slider-pagination.svg); */
 }
 .team-item-:nth-child(3)::after {
@@ -872,14 +872,13 @@ body {
 .team-item-:nth-child(1)::after {
     background-image: url(../images/team-slider-pagination-3.svg);
 }
-/*todo _____ var.1: Елементи Пагінації _____ */
+/*todo _____ var.1: Список Пагінації _____ */
 
 .team-img-box {
     position: relative;
     width: 401px;  /* ! crutch */
     height: 100%;
     padding-left: 10px; /* ! crutch */
-    /* background-color: #ff6e30; */
     background-image: url(../images/team-image-background.png);
     background-repeat: no-repeat;
     background-position: right 19px bottom 25px;                                                                         ;
@@ -1010,8 +1009,12 @@ body {
 /*todo var.2 -задаємо початковий стан (колір) кнопок < та > через JS */
 
 
-/*todo var.2: Список Пагінації */
+/*todo +++++ var.2: Список Пагінації +++++ */
 .slider-pagination-list {
+    position: absolute;
+    left: 50%;
+    bottom: -108px;
+    transform: translate(-50%);
     width: 168px;
     height: 8px;
     margin: 0 auto;
@@ -1019,16 +1022,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    outline: 1px dotted blue;
+    /* outline: 1px dotted blue; */
+    /*todo _____ var.2: Список Пагінації _____ */
 }
 
 .slider-pagination-item {
     width: 44px;
     height: 6px;
     border-radius: 4px;
-    background-color:#ff6e30;
-    /* background-color: #283036; */
+    background-color: var(--color-background-forms);
 }
+
+/*todo Початковий стан Списку Пагінації */
+.slider-pagination-item:first-child {
+    height: 8px;
+    border-radius: 4px;
+    background-color:var(--color-font_active-or-background_hover);
+}
+
+
+
+
 
 
 /*? section join */
