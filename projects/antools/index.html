@@ -61,7 +61,7 @@
                                 />
                             </svg>
                         </div>
-                        <p class="logo-name">antools.</p>
+                        <span class="logo-name">antools.</span>
                     </a>
                     <ul class="nav-list">
                         <li class="nav-item"><a class="nav-link" href="./index.html   ">Home</a></li>
@@ -704,31 +704,38 @@
                         
                     </ul>
                     <ul class="slider-pagination-list">
-                        <li class="slider-pagination-item"></li>
-                        <li class="slider-pagination-item"></li>
-                        <li class="slider-pagination-item"></li>
+                        <li class="slider-pagination-item" id="first"></li>
+                        <li class="slider-pagination-item" id="second"></li>
+                        <li class="slider-pagination-item" id="third"></li>
                     </ul>
                 </div>
             </div>
-
-
             </section>
             <section class="join">
-            <div class="container">
-                <h2 class="join-titel">Become a contributor?</h2>
+            <div class="container flex">
+                <h2 class="section-title">Become a contributor?</h2>
                 <p class="join-text">
                     Join us and get tips & tricks to become a great
                     Designer and Developer
                 </p>
                 <form class="join-form">
-                    <input class="join-input" type="text" placeholder="Enter your email...">
-                    <button type="submit">Join Us</button>
+                    <input 
+                        class="join-input" 
+                        type="text" 
+                        placeholder="Enter your email..."
+                    >
+                    <button 
+                        class="form-button buttons-hover" 
+                        type="submit"
+                    >
+                    Join Us
+                    </button>
                 </form>
             </div>
             </section>
         </main>
         <footer class="footer">
-        <div class="container">
+        <div class="container flex">
             <div class="footer-copyright-box">
                 <a class="logo-link" href="#">
                     <div class="logo-svg-box">
@@ -749,7 +756,7 @@
                             />
                         </svg>
                     </div>
-                    <p class="logo-name">antools.</p>
+                    <span class="logo-name">antools.</span>
                 </a>
                 <p class="footer-copyright-titel">Copyright 2021. Antools</p>
                 <p class="footer-copyright-text">
@@ -761,7 +768,7 @@
             <ul class="footer-contacts-list">
                 <li class="footer-contacts-item">
                     <h3 class="footer-contacts-title">Contact Us</h3>
-                    <address class="footer-contacts-address">
+                    <address>
                         <ul class="footer-contacts-items-list">
                             <li class="footer-contacts-items-item">
                                 <a class="footer-contacts-items-link" href="tel:+621987463">+621987463</a>
@@ -803,8 +810,7 @@
             </ul>
         </div>
         </footer>
-
-        <!--* Скрипт слайдера -->
+        <!--? Скрипт слайдера -->
         <script>
             const slider = document.querySelector('.slider');
             const prevBtn = document.getElementById('prevBtn');
@@ -814,6 +820,10 @@
             nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
             prevBtn.disabled = true; // Робимо кнопку < неактивной
             const slides = document.querySelectorAll('.slider .team-item');
+            // Пагінація
+            const paginationFirst = document.getElementById('first');
+            const paginationSecond = document.getElementById('second');
+            const paginationThird = document.getElementById('third');
             const slideWidth = slides[0].clientWidth;
             console.log(slideWidth);
             let currentIndex = 0;
@@ -838,22 +848,50 @@
             function updateSlider() {
                 const newPosition = currentIndex * slideWidth;
                 slider.style.transform = `translateX(${newPosition}px)`;
-                // +++++ зміна кольору копок < та >
+                // +++++ зміна стану та кольору копок "<" і ">" та Пагінація
                 if (currentIndex === 0) {
+                    // зміна кольору:
                     prevBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
                     nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    // зміна стану:
                     prevBtn.disabled = true; // Делаем кнопку неактивной
                     nextBtn.disabled = false; // Разблокируем следующую кнопку
+                    // Пагінація:
+                    paginationFirst.style.height = '8px';
+                    paginationFirst.style.backgroundColor = '#FF6E30';
+                    paginationSecond.style.height = '6px';
+                    paginationSecond.style.backgroundColor = '#283036';
+                    paginationThird.style.height = '6px';
+                    paginationThird.style.backgroundColor = '#283036';
+                    
                 } else if (currentIndex === 1) {
+                    // зміна кольору:
                     prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
                     nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
+                    // зміна стану:
                     prevBtn.disabled = false; // Разблокируем предыдущую кнопку
-                    nextBtn.disabled = false; // Разблокируем следующую кнопк
+                    nextBtn.disabled = false; // Разблокируем следующую кнопку
+                    // Пагінація:
+                    paginationFirst.style.height = '6px';
+                    paginationFirst.style.backgroundColor = '#283036';
+                    paginationSecond.style.height = '8px';
+                    paginationSecond.style.backgroundColor = '#FF6E30';
+                    paginationThird.style.height = '6px';
+                    paginationThird.style.backgroundColor = '#283036';
                 } else if (currentIndex === 2) {
+                    // зміна кольору:
                     prevBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
                     nextBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
+                    // зміна стану:
                     prevBtn.disabled = false; // Разблокируем предыдущую кнопку
                     nextBtn.disabled = true; // Делаем кнопку неактивной
+                    // Пагінація:
+                    paginationFirst.style.height = '6px';
+                    paginationFirst.style.backgroundColor = '#283036';
+                    paginationSecond.style.height = '6px';
+                    paginationSecond.style.backgroundColor = '#283036';
+                    paginationThird.style.height = '8px';
+                    paginationThird.style.backgroundColor = '#FF6E30';
                 }
                 // +++++
             }

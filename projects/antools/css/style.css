@@ -23,9 +23,6 @@
     --color-border-sections: rgba(255, 255, 255, 0.15);
     --color-border-tools-button: rgba(255, 255, 255, 0.1);
     --color-border-tools-brands: rgba(40, 48, 54, 0.8);
-    
-    
-    /* --color-box-shadow: rgba(0, 0, 0, 0.25); */
     /** ================= fonts =================== */
     --font-family: "Poppins", sans-serif;
     --second-family: "Lora", sans-serif;
@@ -78,8 +75,11 @@ body {
     padding-left: 12px;
 }
 
-.logo-link {
+.header .logo-link {
     margin-right: 257px;
+}
+/** +++++ Загальні стилі logo-link +++++ */
+.logo-link {
     /* font-family: var(--font-family); */
     color: var(--color-font-main);
     fill: var(--color-light);
@@ -113,6 +113,7 @@ body {
     font-size: 22px;
     /* color: var(--color-font-main); */
 }
+/** _____ Загальні стилі logo-link _____ */
 
 .nav-list {
     width: 431px;
@@ -360,6 +361,7 @@ body {
     
     
 }
+
 
 /*? section tools */
 .tools {
@@ -907,6 +909,12 @@ body {
     letter-spacing: 0.01em;
     color: var(--color-font-second);
 }
+.team-item:nth-child(1) .team-name {
+    color: #09bd00;
+}
+.team-item:nth-child(2) .team-name {
+    color: #ffab44;
+}
 
 .team-position {
     /* font-family: var(--font-family); */
@@ -960,6 +968,12 @@ body {
     color: var(--color-font-second);
     /* outline: 1px dotted yellow; */
 }
+.team-item:nth-child(1) .team-text {
+    color: #c5ffc2;
+}
+.team-item:nth-child(2) .team-text {
+    color: #ffd097;
+}
 
 .slider-buttons-list {
     position: absolute;
@@ -1006,8 +1020,8 @@ body {
 .slider-button-right svg {
     stroke: var(--color-font_active-or-background_hover);
 } */
-/*todo var.2 -задаємо початковий стан (колір) кнопок < та > через JS */
 
+/*todo+ var.2 -задаємо початковий стан (колір) кнопок < та > через JS */
 
 /*todo +++++ var.2: Список Пагінації +++++ */
 .slider-pagination-list {
@@ -1031,18 +1045,18 @@ body {
     height: 6px;
     border-radius: 4px;
     background-color: var(--color-background-forms);
+    transition:
+        color, height,
+        500ms
+        ease-in-out 
+        0ms;
 }
 
 /*todo Початковий стан Списку Пагінації */
 .slider-pagination-item:first-child {
     height: 8px;
-    border-radius: 4px;
     background-color:var(--color-font_active-or-background_hover);
 }
-
-
-
-
 
 
 /*? section join */
@@ -1050,14 +1064,137 @@ body {
     padding-top: 250px;
     padding-bottom: 240px;
     border-bottom: 1px solid var(--color-border-sections);
-    background-color: rgb(255, 149, 149);
-    /* background-color: var(--color-background-main); */
+    /* background-color: rgb(255, 149, 149); */
+    background-color: var(--color-background-main);
 }
+
+/** --- Додаткові flex-властивості до container ---- */
+.join .container.flex{
+    flex-direction: column;
+}
+/** _________________________________________________ */
+
+.join .section-title {
+    margin-bottom: 25px;
+}
+
+.join-text {
+    width: 427px;
+    margin-bottom: 100px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.join-form {
+    width: 549px;
+    height: 64px;
+    padding: 8px 12px 8px 24px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 13px;
+    align-items: center;
+    border-radius: 15px;
+    background-color: var(--color-background-forms);
+}
+
+.join-input {
+    /* min-width: 190px; */
+    /* min-width: 197px; */
+    /* flex-basis: 100%; */
+    flex-grow: 1;
+    padding: 2px 0;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    border-left: 1px solid var(--color-border-input);
+    background-color: transparent;
+    color: var(--color-font-placeholder);
+}
+.join-input:focus {
+    outline: none;
+    border: 1px solid var(--color-font_active-or-background_hover);
+    border-radius: 4px;
+}
+.join-input:not(:placeholder-shown){
+    border-color: var(--color-font-placeholder);
+    color: var(--color-font_active-or-background_hover);
+}
+
 
 /*? footer */
 .footer {
     padding-top: 70px;
     padding-bottom: 98px;
-    background-color: rgb(99, 99, 99);
-    /* background-color: var(--color-background-main); */
+    /* background-color: rgb(99, 99, 99); */
+    background-color: var(--color-background-main);
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+.footer .container.flex{
+    align-items: flex-start;
+}
+/** _________________________________________________ */
+
+.footer-copyright-box {
+    width: 260px;
+    /* height: 183px; */
+    margin-right: 156px;
+}
+
+.footer .logo-link {
+    margin-bottom: 25px;
+}
+
+.footer-copyright-titel {
+    margin-bottom: 21px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    /* font-size: 16px; */
+    line-height: 1.5;
+    /* color: var(--color-font-main); */
+}
+
+.footer-copyright-text {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.79;
+    color: var(--color-font-third);
+}
+
+.footer-contacts-list {
+    display: flex;
+    gap: 115px;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer-contacts-title {
+    margin-bottom: 20px;
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    /* color: var(--color-font-main); */
+}
+
+.footer-contacts-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contacts-items-link {
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    /* font-size: 16px; */
+    line-height: 1.5;
+    color: var(--color-font-third);
 }
