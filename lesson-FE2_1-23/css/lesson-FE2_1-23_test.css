@@ -64,6 +64,11 @@ body {
     outline: 2px dashed red;
     fill: brown;
 } */
+.part_1 img {
+    margin-top: 5px;
+    background-color: #786a00;
+    outline: 2px solid orangered;
+}
 
 /* #fresh-food {
     fill: green;
