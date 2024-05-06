@@ -344,8 +344,11 @@ body {
     /* outline: 1px solid yellowgreen; */
 }
 .social-item:hover {
-    /* background-color: var(--color-background-forms); */
-    background-color: var(--color-font_active-or-background_hover);
+    /* todo var.1 */
+    /* background-color: var(--color-font_active-or-background_hover); */
+    /* todo var.2 */
+    background-color: var(--color-background-forms);
+    
 }
 
 .social-link {
@@ -358,8 +361,11 @@ body {
         0ms;
 }
 .social-item:hover .social-link {
-    /* fill: var(--color-font_active-or-background_hover); */
-    fill: var(--color-font-hover);
+    /* todo var.1 */
+    /* fill: var(--color-font-hover); */
+    /* todo var.2 */
+    fill: var(--color-font_active-or-background_hover);
+    
     
     
 }
