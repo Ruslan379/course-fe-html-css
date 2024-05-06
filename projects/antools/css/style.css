@@ -19,6 +19,8 @@
     --color-background-tools-card-hover: rgba(40, 48, 54, 0.6);
     --color-background-team-name-position-box: rgba(40, 48, 54, 0.2);
     --color-background-team-background-text: rgba(255, 255, 255, 0.2);
+    /* #007acc, */
+    --color-gradient-team-name-position-box: rgba(0, 122, 204, 0.2);
     --color-border-input: #837a93;
     --color-border-sections: rgba(255, 255, 255, 0.15);
     --color-border-tools-button: rgba(255, 255, 255, 0.1);
@@ -888,6 +890,7 @@ body {
 }
 
 .team-name-position-box {
+    overflow: hidden;
     position: absolute;
     right: 4px;
     bottom: 29px;
@@ -897,7 +900,26 @@ body {
     border-radius: 8px;
     backdrop-filter: blur(50px);
     background-color: var(--color-background-team-name-position-box);
+    /* todo var.1 - додатковий елемент фону з розмиттям */
+    /* background-image:
+        radial-gradient(
+            circle at bottom right,
+            var(--color-gradient-team-name-position-box),
+            var(--color-background-team-name-position-box) 20%
+            ); */
     /* outline: 1px dotted green; */
+}
+
+/* todo var.2 - додатковий елемент фону з розмиттям */
+.team-name-position-box-blur-effect {
+    position: absolute;
+    right: 7px;
+    bottom: 2px;
+    width: 23px; 
+    height: 23px; 
+    background-image: url(../images/team-name-position-box-background-image.svg);
+    background-position: center;
+    filter: blur(20px); 
 }
 
 .team-name {
