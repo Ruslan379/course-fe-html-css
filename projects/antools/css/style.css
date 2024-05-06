@@ -1130,6 +1130,11 @@ body {
     background-color:var(--color-font_active-or-background_hover);
 }
 
+.slider-pagination-item:hover {
+    cursor: pointer;
+}
+
+
 
 /*? section join */
 .join {

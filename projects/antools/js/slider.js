@@ -84,3 +84,22 @@ function updateSlider() {
 
 prevBtn.addEventListener('click', slideLeft);
 nextBtn.addEventListener('click', slideRight);
+
+// Відстежуємо кліки на елементах пагінації:
+paginationFirst.addEventListener('click', paginationFirstСlick);
+paginationSecond.addEventListener('click', paginationSecondСlick);
+paginationThird.addEventListener('click', paginationThirdСlick);
+
+function paginationFirstСlick() {
+    currentIndex = 0;
+    updateSlider();
+}
+
+function paginationSecondСlick() {
+    currentIndex = 1;
+    updateSlider();
+}
+function paginationThirdСlick() {
+    currentIndex = 2;
+    updateSlider();
+}
