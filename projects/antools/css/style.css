@@ -622,15 +622,31 @@ body {
 
 /** --- Додаткові flex-властивості до container ---- */
 .brands .container{
+    position: relative;
+    /* overflow: hidden; */
     /* height: 253px; */
     padding: 55px 83px 56px;
     border-radius: 25px;  
     outline: 2px solid var(--color-border-tools-brands);
     backdrop-filter: blur(50px);
     background-color: var(--color-background-brands);
-    background-image: url(../images/brands-background.png);
+    /* todo var.1 - додатковий елемент фону з розмиттям */
+    /* background-image: url(../images/brands-background.png); */
 }
 /** _________________________________________________ */
+
+/* todo var.2 - додатковий елемент фону з розмиттям */
+.brands-container-background-blur-effect {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    width: 159px; 
+    height: 159px;
+    border-radius: 25px;  
+    background-image: url(../images/brands-container-background-image.svg);
+    background-position: center;
+    /* filter: blur(100px);  */
+}
 
 .brands-title {
     /* height: 36px; */
@@ -889,16 +905,39 @@ body {
     /* outline: 1px dotted yellow; */
 }
 
-.team-name-position-box {
+/*! Додаткова обгортка, для поширення градієнта на бордер */
+.team-name-position-box-overflow {
     overflow: hidden;
     position: absolute;
+    right: 3px;
+    bottom: 28px;
+    width: 267px;
+    height: 93px;
+    padding: 1px;
+    border-radius: 8px;
+    backdrop-filter: blur(50px);
+    /* todo var.1 - додатковий елемент фону з розмиттям - не поширює градієнт на бордер*/
+    /* background-image:
+        radial-gradient(
+            circle at bottom right,
+            var(--color-gradient-team-name-position-box),
+            var(--color-background-team-name-position-box) 20%
+            ); */
+    /* outline: 1px dotted yellowgreen; */
+}
+
+.team-name-position-box {
+    /* position: absolute;
     right: 4px;
     bottom: 29px;
     width: 265px;
     height: 91px;
+    backdrop-filter: blur(50px); */
+    width: 100%;
+    height: 100%;
     padding: 10px 0 16px 23px;
     border-radius: 8px;
-    backdrop-filter: blur(50px);
+    outline: 1px solid var(--color-border-tools-brands);
     background-color: var(--color-background-team-name-position-box);
     /* todo var.1 - додатковий елемент фону з розмиттям */
     /* background-image:
@@ -907,20 +946,24 @@ body {
             var(--color-gradient-team-name-position-box),
             var(--color-background-team-name-position-box) 20%
             ); */
-    /* outline: 1px dotted green; */
+    /* outline: 1px dotted blue; */
 }
 
 /* todo var.2 - додатковий елемент фону з розмиттям */
-.team-name-position-box-blur-effect {
+.team-name-position-box-background-blur-effect {
+    overflow: hidden;
     position: absolute;
-    right: 7px;
-    bottom: 2px;
-    width: 23px; 
-    height: 23px; 
+    right: -1px;
+    bottom: -1px;
+    width: 30px; 
+    height: 25px;
     /* background-image: url(../images/team-name-position-box-background-image.png); */
     background-image: url(../images/team-name-position-box-background-image.svg);
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 23px 23px;
+    background-position: right 7px bottom 2px;
     filter: blur(20px); 
+    /* outline: 1px solid red; */
 }
 
 .team-name {
