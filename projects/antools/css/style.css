@@ -917,6 +917,7 @@ body {
     bottom: 2px;
     width: 23px; 
     height: 23px; 
+    /* background-image: url(../images/team-name-position-box-background-image.png); */
     background-image: url(../images/team-name-position-box-background-image.svg);
     background-position: center;
     filter: blur(20px); 
