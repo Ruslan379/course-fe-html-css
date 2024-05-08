@@ -833,7 +833,7 @@
         </div>
         </footer>
         <!--? Скрипт слайдера -->
-        <!-- <script>
+        <script>
             const slider = document.querySelector('.slider');
             const prevBtn = document.getElementById('prevBtn');
             const nextBtn = document.getElementById('nextBtn');
@@ -921,6 +921,8 @@
             prevBtn.addEventListener('click', slideLeft);
             nextBtn.addEventListener('click', slideRight);
 
+
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             // Відстежуємо кліки на елементах пагінації:
             paginationFirst.addEventListener('click', paginationFirstСlick);
             paginationSecond.addEventListener('click', paginationSecondСlick);
@@ -940,6 +942,8 @@
                 updateSlider();
             }
 
+
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
             // Додаємо можливість гортати слайди за допомогою миші, 
             // перетягуючи їх у різні боки ліворуч та праворуч
             isDragging = false;
@@ -980,8 +984,37 @@
             slider.addEventListener('mousedown', handleMouseDown);
             slider.addEventListener('mousemove', handleMouseMove);
             slider.addEventListener('mouseup', handleMouseUp);
-        </script> -->
-        <script src="./js/slider.js"></script>
+
+            
+            // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            // Додаємо події touchstart, touchmove та touchend 
+            // для визначення жесту перетягування слайдів у різні боки ліворуч та праворуч:
+            slider.addEventListener('touchstart', (event) => {
+                isDragging = true;
+                startX = event.clientX;
+                slider.style.cursor = 'pointer';
+            });
+
+            slider.addEventListener('touchmove', (event) => {
+                if (!isDragging) return;
+                const diffX = event.clientX - startX;
+                if (diffX > 50) {
+                    if (currentIndex === 2) return;
+                    slideRight();
+                    startX = event.clientX;
+                } else if (diffX < -50) {
+                    if (currentIndex === 0) return;
+                    slideLeft();
+                    startX = event.clientX;
+                }
+            });
+
+            slider.addEventListener('touchend', (event) => {
+                isDragging = false;
+                slider.style.cursor = 'auto';
+            });
+        </script>
+        <!-- <script src="./js/slider.js"></script> -->
     </div>
 </body>
 

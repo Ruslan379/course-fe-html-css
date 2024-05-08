@@ -149,6 +149,7 @@ slider.addEventListener('mousedown', handleMouseDown);
 slider.addEventListener('mousemove', handleMouseMove);
 slider.addEventListener('mouseup', handleMouseUp);
 
+
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Додаємо події touchstart, touchmove та touchend 
 // для визначення жесту перетягування слайдів у різні боки ліворуч та праворуч:
