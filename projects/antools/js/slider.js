@@ -85,6 +85,8 @@ function updateSlider() {
 prevBtn.addEventListener('click', slideLeft);
 nextBtn.addEventListener('click', slideRight);
 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Відстежуємо кліки на елементах пагінації:
 paginationFirst.addEventListener('click', paginationFirstСlick);
 paginationSecond.addEventListener('click', paginationSecondСlick);
@@ -104,6 +106,8 @@ function paginationThirdСlick() {
     updateSlider();
 }
 
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Додаємо можливість гортати слайди за допомогою миші, 
 // перетягуючи їх у різні боки ліворуч та праворуч
 isDragging = false;
@@ -144,3 +148,31 @@ function handleMouseUp() {
 slider.addEventListener('mousedown', handleMouseDown);
 slider.addEventListener('mousemove', handleMouseMove);
 slider.addEventListener('mouseup', handleMouseUp);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Додаємо події touchstart, touchmove та touchend 
+// для визначення жесту перетягування слайдів у різні боки ліворуч та праворуч:
+slider.addEventListener('touchstart', (event) => {
+    isDragging = true;
+    startX = event.clientX;
+    slider.style.cursor = 'pointer';
+});
+
+slider.addEventListener('touchmove', (event) => {
+    if (!isDragging) return;
+    const diffX = event.clientX - startX;
+    if (diffX > 50) {
+        if (currentIndex === 2) return;
+        slideRight();
+        startX = event.clientX;
+    } else if (diffX < -50) {
+        if (currentIndex === 0) return;
+        slideLeft();
+        startX = event.clientX;
+    }
+});
+
+slider.addEventListener('touchend', (event) => {
+    isDragging = false;
+    slider.style.cursor = 'auto';
+});
