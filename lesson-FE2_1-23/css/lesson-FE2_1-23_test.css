@@ -185,15 +185,34 @@ body {
 }
 
 
+/* ! */
+/* .part_12 {
+    display: none;
+} */
+/*! 12.SVG-документ */
 
 
-
-
-/*! SVG-документ */
-/*? Файл_icon.svg */
+/* ! */
+/* .part_13 {
+    display: none;
+} */
+/*! 13.Файл icon.svg */
 .svg-icon {
     outline: 1px solid blue;
+    background-color: #00aeff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*! Оформлення фігур */
 .container {
