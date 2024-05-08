@@ -136,6 +136,7 @@ body {
     fill: blue;
 } */
 
+
 /* ! */
 /* .part_8 {
     display: none;
@@ -147,6 +148,8 @@ body {
 #canvas-grid {
     fill: blue; 
 }
+
+
 /* ! */
 /* .part_9 {
     display: none;
@@ -190,6 +193,10 @@ body {
     display: none;
 } */
 /*! 12.SVG-документ */
+/* ❌ + ✅ */
+.part_12 svg {
+    fill: green;
+}
 
 
 /* ! */
@@ -198,8 +205,9 @@ body {
 } */
 /*! 13.Файл icon.svg */
 .svg-icon {
-    outline: 1px solid blue;
+    outline: 1px solid orangered;
     background-color: #00aeff;
+    fill: green; /* ❌ */
 }
 
 
