@@ -11,14 +11,14 @@ const paginationFirst = document.getElementById('first');
 const paginationSecond = document.getElementById('second');
 const paginationThird = document.getElementById('third');
 const slideWidth = slides[0].clientWidth;
-console.log(slideWidth);
+console.log("slideWidth:", slideWidth);
 let currentIndex = 0;
 
 function slideRight() {
     currentIndex++;
     if (currentIndex >= slides.length) {
         currentIndex = 0;
-        console.log(currentIndex);
+        console.log("currentIndex->slideRight;", currentIndex);
     }
     updateSlider();
 }
@@ -32,6 +32,15 @@ function slideLeft() {
 }
 
 function updateSlider() {
+    // ++++++++++++++++
+    // slider.forEach((slides, index) => {
+    //     if (index === currentIndex) {
+    //         slides.style.display = 'block';
+    //     } else {
+    //         slides.style.display = 'none';
+    //     }
+    // });
+    // ++++++++++++++++
     const newPosition = currentIndex * slideWidth;
     slider.style.transform = `translateX(${newPosition}px)`;
     // +++++ зміна стану та кольору копок "<" і ">" та Пагінація
@@ -103,3 +112,43 @@ function paginationThirdСlick() {
     currentIndex = 2;
     updateSlider();
 }
+
+// Додаємо можливість гортати слайди за допомогою миші, перетягуючи їх у різні боки
+// const slider = document.querySelector('.slides');
+isDragging = false;
+
+function handleMouseDown(event) {
+    isDragging = true;
+    startX = event.clientX;
+    console.log("startX->handleMouseDown:", startX);
+}
+
+function handleMouseMove(event) {
+    if (!isDragging) return;
+    const diffX = event.clientX - startX;
+    if (diffX > 50) {
+        // currentIndex = (currentIndex - 1 + 4) % 4;
+        console.log("currentIndex->handleMouseMove(diffX > 50)", currentIndex);
+        slideRight();
+        console.log("currentIndex->handleMouseMove(diffX > 50+)", currentIndex);
+        startX = event.clientX;
+        updateSlider();
+    } else if (diffX < -50) {
+        // currentIndex = (currentIndex + 1) % 4;
+        console.log("currentIndex->handleMouseMove(diffX < -50)", currentIndex);
+        slideLeft();
+        console.log("currentIndex->handleMouseMove(diffX < -50-)", currentIndex);
+        startX = event.clientX;
+        updateSlider();
+    }
+}
+
+function handleMouseUp() {
+    isDragging = false;
+}
+
+slider.addEventListener('mousedown', handleMouseDown);
+slider.addEventListener('mousemove', handleMouseMove);
+slider.addEventListener('mouseup', handleMouseUp);
+
+updateSlider();

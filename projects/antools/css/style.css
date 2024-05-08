@@ -879,6 +879,7 @@ body {
     height: 100%;
     padding-left: 187px;
     display: flex;
+    /* flex: 0 0 auto;  */
 }
 /*todo +++++ var.1: Список Пагінації +++++ */
 .team-item-::after {

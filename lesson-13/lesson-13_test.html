@@ -70,31 +70,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!--! +++++++++ слайдер ++++++++ -->
         <div class="slider-container">
             <div class="slider">
@@ -185,3 +160,74 @@
         </script> -->
     </body>
 </html>
+
+<!--! Код слайдера с возможностью листать слайды -->
+<!--! помощью мыши, перетягивая их в разные стороны -->
+<!-- <style>
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 400px;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        min-width: 100%;
+        height: 100%;
+        flex: 0 0 auto;
+    }
+</style>
+
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide" style="background-image: url('image1.jpg');"></div>
+            <div class="slide" style="background-image: url('image2.jpg');"></div>
+            <div class="slide" style="background-image: url('image3.jpg');"></div>
+            <div class="slide" style="background-image: url('image4.jpg');"></div>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slides');
+        let isDragging = false;
+        let startPosition = 0;
+        let currentTranslate = 0;
+
+        slider.addEventListener('mousedown', (event) => {
+            isDragging = true;
+            startPosition = event.clientX;
+            currentTranslate = parseFloat(getComputedStyle(slider).getPropertyValue('--translate'));
+            slider.style.transition = 'none';
+        });
+
+        slider.addEventListener('mouseup', () => {
+            isDragging = false;
+            const movedBy = event.clientX - startPosition;
+            slider.style.transition = 'transform 0.5s ease-in-out';
+            if (movedBy < -100) {
+                slider.style.setProperty('--translate', `${currentTranslate - 100}%`);
+            } else if (movedBy > 100) {
+                slider.style.setProperty('--translate', `${currentTranslate + 100}%`);
+            } else {
+                slider.style.setProperty('--translate', `${currentTranslate}%`);
+            }
+        });
+
+        slider.addEventListener('mousemove', (event) => {
+            if (isDragging) {
+                const movedBy = event.clientX - startPosition;
+                slider.style.setProperty('--translate', `${currentTranslate + (movedBy / slider.offsetWidth) * 100}%`);
+            }
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            isDragging = false;
+            slider.style.transition = 'transform 0.5s ease-in-out';
+            slider.style.setProperty('--translate', `${currentTranslate}%`);
+        });
+    </script> -->
