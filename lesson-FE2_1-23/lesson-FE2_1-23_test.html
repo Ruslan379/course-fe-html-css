@@ -33,6 +33,7 @@
         <!--! 1.Елемент <svg> -->
         <div class="part part_1">
             <h2 class="title-section">1.Елемент &lt;svg&gt;</h2>
+            <!-- viewBox="-110 -97 438 388" -->
             <svg
                 class="svg1"
                 width="219" 
@@ -89,6 +90,7 @@
                     />
                 </g> -->
             </svg>
+
             <!-- <img src="./svg/fresh-food.svg" alt="Fresh food"> -->
         </div>
         
@@ -250,19 +252,19 @@
                     stroke-width="7"
                 />
                 <!--? Triangle -->
-                <!-- <polygon 
+                <polygon 
                     points="250,20 250,200 400,200" 
                     fill="skyblue" 
                     stroke="red" 
                     stroke-width="4" 
-                /> -->
+                />
                 <!--? Parallelogram -->
-                <!-- <polygon 
+                <polygon 
                     points="430,20 430,200 550,250 550,70" 
                     fill="violet" 
                     stroke="green" 
                     stroke-width="4" 
-                /> -->
+                />
             </svg>
         </div>
         
@@ -273,7 +275,8 @@
             <!--? Трикутник -->
             <svg 
                 width="300" 
-                height="400" 
+                height="250"
+                viewBox="0 -25 300 250"
                 style="outline: 2px dashed darkred; margin-bottom: 20px;"
             >
                 <path 
@@ -283,8 +286,9 @@
             <!--? Зірочка -->
             <svg 
                 width="550" 
-                height="500" 
-                style="outline: 4px double darkblue;"
+                height="500"
+                viewBox="-20 -4 550 500"
+                style="outline: 4px double blue;"
             >
                 <path 
                     d="M510.652 185.883a27.177 27.177 0 00-23.402-18.688l-147.797-13.418-58.41-136.75C276.73 6.98 266.918.497 255.996.497s-20.738 6.483-25.023 16.53l-58.41 136.75-147.82 13.418c-10.837 1-20.013 8.34-23.403 18.688a27.25 27.25 0 007.937 28.926L121 312.773 88.059 457.86c-2.41 10.668 1.73 21.7 10.582 28.098a27.087 27.087 0 0015.957 5.184 27.14 27.14 0 0013.953-3.86l127.445-76.203 127.422 76.203a27.197 27.197 0 0029.934-1.324c8.851-6.398 12.992-17.43 10.582-28.098l-32.942-145.086 111.723-97.964a27.246 27.246 0 007.937-28.926zM258.45 409.605" 
@@ -296,25 +300,23 @@
         </div>
         
         
-        <!--! 8.Елемент <g> -->
+        <!--! 8.Елемент <g> ПРИКЛАД-1 -->
         <div class="part part_8">
-            <h2 class="title-section">8.Елемент &lt;g&gt;</h2>
+            <h2 class="title-section">8.Елемент &lt;g&gt; ПРИКЛАД-1</h2>
             <svg>
-                <g>
+            <!-- <svg style="overflow: visible;"> -->
+                <g id="canvas-backgrond">
                     <title>background</title>
                     <rect
-                        id="canvas_backgrond"
                         width="400"
                         height="300"
-                        fill="tomato"
                         x="0"
                         y="0"
                         rx="40"
                     />
                     <g
-                        id="canvasGrid"
+                        id="canvas-grid"
                         display="block"
-                        overflow="visible"
                         width="100%"
                         height="100%"
                         x="0"
@@ -323,10 +325,9 @@
                         <rect
                             width="50%"
                             height="50%"
-                            fill="blue"
-                            fill-opacity="0.3"
                             x="150"
                             y="75"
+                            fill-opacity="0.3"
                             stroke="black"
                             stroke-width="1"
                         />
@@ -336,15 +337,15 @@
         </div>
         
 
-        <!--! 9.Елемент <g> ПРИКЛАДИ -->
+        <!--! 9.Елемент <g> ПРИКЛАД-2 -->
         <div class="part part_9">
-            <h2 class="title-section">9.Елемент &lt;g&gt; ПРИКЛАДИ</h2>
+            <h2 class="title-section">9.Елемент &lt;g&gt; ПРИКЛАД-2</h2>
             <svg 
                 width="100" 
                 height="100"
                 style="outline: 2px dashed red;"
             >
-                <g id="myGroup">
+                <g id="my-group">
                     <circle 
                         cx="30" 
                         cy="30" 
@@ -363,15 +364,19 @@
         </div>
         
         
-        <!--! 10.Елемент <symbol> ПРИКЛАД-1 -->
+        <!--! 10.Елемент <symbol> ПРИКЛАД-1 (перевикористання SVG)-->
         <div class="part part_10">
-            <h2 class="title-section">10.Елемент &lt;symbol&gt; ПРИКЛАД-1</h2>
+            <h2 class="title-section">
+                10.Елемент &lt;symbol&gt; ПРИКЛАД-1
+                <br> 
+                (перевикористання SVG)
+            </h2>
             <svg 
                 width="400" 
                 height="200" 
                 style="outline: 2px dashed #2a2a2a"
             >
-                <text x="20" y="20">Елемент symbol ПРИКЛАД-1</text>
+                <text x="50" y="20">Елемент &lt;symbol&gt; ПРИКЛАД-1 </text>
                 <symbol 
                     id="sym01" 
                     viewBox="0 0 200 100"
@@ -399,13 +404,17 @@
 
         <!--! 10-2.Елемент <use>: перевикористання за допомогою елемента <symbol> ПРИКЛАД-1 -->
         <div class="part part_10">
-            <h2 class="title-section">10-2.Елемент <use>: перевикористання за допомогою елемента <symbol> ПРИКЛАД-1</h2>
+            <h2 class="title-section">
+                10-2.Елемент &lt;use&gt;: перевикористання SVG
+                <br>
+                за допомогою елемента &lt;symbol&gt; ПРИКЛАД-1
+            </h2>
             <svg 
                 width="400" 
                 height="300" 
                 style="outline: 2px dashed #2a2a2a"
             >
-                <text x="20" y="20">Елемент use ПРИКЛАД-1</text>
+                <text x="10" y="20">Елемент useп-перевикористання SVG</text>
                 <use 
                     x="50" 
                     y="10" 

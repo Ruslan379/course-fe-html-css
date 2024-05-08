@@ -1018,7 +1018,7 @@
 
 </html>
 
-<!--! +++++++++++++++Слайдер, інший варіант ++++++++++++++++++++ -->
+<!--! +++++++++++++++ Слайдер, інший варіант-2 ++++++++++++++++ -->
 <!-- <style>
     /* slider-box */
     .slider-container {
@@ -1090,5 +1090,65 @@
             slider.style.setProperty('--translate', `${currentTranslate}%`);
         });
     </script> -->
+<!--! _______________ Слайдер, інший варіант-2 ________________ -->
 
-<!--! _______________________________________________ -->
+
+<!--* +++++++++++++++ Слайдер, інший варіант-3 ++++++++++++++++ -->
+<!-- <style>
+    .gallery {
+        display: flex;
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .image {
+        flex-shrink: 0;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="gallery" id="gallery">
+        <img src="photo1.jpg" alt="Photo 1" class="image">
+        <img src="photo2.jpg" alt="Photo 2" class="image">
+        <img src="photo3.jpg" alt="Photo 3" class="image">
+    </div>
+
+    <script>
+        const gallery = document.getElementById('gallery');
+        let currentIndex = 0;
+        let startX = 0;
+
+        gallery.addEventListener('touchstart', handleTouchStart);
+        gallery.addEventListener('touchmove', handleTouchMove);
+
+        function handleTouchStart(event) {
+            startX = event.touches[0].clientX;
+        }
+
+        function handleTouchMove(event) {
+            const deltaX = event.touches[0].clientX - startX;
+            if (deltaX > 50) {
+                showPreviousImage();
+            } else if (deltaX < -50) {
+                showNextImage();
+            }
+        }
+
+        function showPreviousImage() {
+            currentIndex = (currentIndex === 0) ? gallery.children.length - 1 : currentIndex - 1;
+            scrollToCurrentImage();
+        }
+
+        function showNextImage() {
+            currentIndex = (currentIndex === gallery.children.length - 1) ? 0 : currentIndex + 1;
+            scrollToCurrentImage();
+        }
+
+        function scrollToCurrentImage() {
+            const imageWidth = gallery.children[currentIndex].offsetWidth;
+            const newPosition = currentIndex * imageWidth;
+            gallery.scrollTo({ left: newPosition, behavior: 'smooth' });
+        }
+    </script> -->
+<!--* _______________ Слайдер, інший варіант-3 ________________ -->

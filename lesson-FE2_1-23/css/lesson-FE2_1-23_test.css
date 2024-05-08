@@ -51,6 +51,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vh;
 }
 
 /* *======================================= */
@@ -59,11 +60,11 @@ body {
     display: none;
 } */
 /*! 1.Елемент <svg> */
-/* .svg1 {
+.svg1 {
     background-color: #786a00;
     outline: 2px dashed red;
     fill: brown;
-} */
+}
 .part_1 img {
     margin-top: 5px;
     background-color: #786a00;
@@ -126,24 +127,36 @@ body {
     display: none;
 } */
 /*! 7.Елемент <path> */
-
+/* ❌ */
+/* .part_7 svg {
+    fill: orange;
+} */
+/* ✅ */
+/* .part_7 path {
+    fill: blue;
+} */
 
 /* ! */
 /* .part_8 {
     display: none;
 } */
-/*! 8.Елемент <g> */
-
-
+/*! 8.Елемент <g> ПРИКЛАД-1 */
+#canvas-backgrond {
+    fill: tomato; 
+}
+#canvas-grid {
+    fill: blue; 
+}
 /* ! */
 /* .part_9 {
     display: none;
 } */
-/*! 9.Елемент <g> ПРИКЛАДИ */
-#myGroup {
-    fill-opacity: 0.5;
-    stroke: black;
-    stroke-width: 2;
+/*! 9.Елемент <g> ПРИКЛАД-2 */
+#my-group {
+    fill: orange; /* ❌ */
+    fill-opacity: 0.5; /* ✅ */
+    stroke: black; /* ✅ */
+    stroke-width: 2; /* ✅ */
 }
 
 
@@ -151,7 +164,7 @@ body {
 /* .part_10 {
     display: none;
 } */
-/*! 10-1.Елемент <symbol> ПРИКЛАД-1 */
+/*! 10-1.Елемент <symbol> ПРИКЛАД-1 (перевикористання SVG) */
 /*! 10-2.Елемент <use>: перевикористання за допомогою елемента <symbol> ПРИКЛАД-1 */
 #sym01 {
     fill-opacity: 0.5;
