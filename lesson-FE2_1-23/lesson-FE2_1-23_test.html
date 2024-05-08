@@ -364,7 +364,7 @@
         </div>
         
         
-        <!--! 10-1..Елемент <symbol> ПРИКЛАД-1 (перевикористання SVG)-->
+        <!--! 10-1.Елемент <symbol> ПРИКЛАД-1 (перевикористання SVG)-->
         <div class="part part_10">
             <h2 class="title-section">
                 10-1.Елемент &lt;symbol&gt; ПРИКЛАД-1
@@ -376,7 +376,7 @@
                 height="200" 
                 style="outline: 2px dashed #2a2a2a"
             >
-                <text x="50" y="20">Елемент &lt;symbol&gt; ПРИКЛАД-1 </text>
+                <text x="40" y="20">Елемент &lt;symbol&gt; ПРИКЛАД-1 </text>
                 <symbol 
                     id="sym01" 
                     viewBox="0 0 200 100"
@@ -435,58 +435,65 @@
         </div>
         
         
-
-        <!--! 0.Заголовок -->
-        <div class="part part_0">
-            <h2 class="title-section">0.Заголовок</h2>
-            
-        </div>
-        <!--! Елемент  <symbol> ПРИКЛАД-2 -->
-        <!-- <svg 
-            width="400" 
-            height="200" 
-            style="outline: 2px dashed #2a2a2a"
-        >
-            <text x="30" y="30">Елемент symbol ПРИКЛАД-2</text>
-            <symbol 
-                id="mySymbol" 
-                viewBox="0 0 200 100"
+        <!--! 11-1.Елемент <symbol> ПРИКЛАД-2 (перевикористання SVG)-->
+        <div class="part part_11">
+            <h2 class="title-section">
+                11-1.Елемент &lt;symbol&gt; ПРИКЛАД-2
+                <br> 
+                (перевикористання SVG)
+            </h2>
+            <svg 
+                width="400" 
+                height="200" 
+                style="outline: 2px dashed #2a2a2a"
             >
-                <circle 
-                    cx="50" 
-                    cy="50" 
-                    r="40" 
-                    fill="blue" 
-                />
-            </symbol>
-        </svg> -->
+            <text x="40" y="20">Елемент &lt;symbol&gt; ПРИКЛАД-2 </text>
+                <symbol 
+                    id="sym02" 
+                    viewBox="0 0 200 100"
+                >
+                    <circle 
+                        cx="50" 
+                        cy="50" 
+                        r="40" 
+                        fill="blue" 
+                    />
+                </symbol>
+            </svg>
 
-
-        <!--! 0.Заголовок -->
-        <div class="part part_0">
-            <h2 class="title-section">0.Заголовок</h2>
             
         </div>
-        <!--! Елемент  <use> ПРИКЛАД-2 -->
-        <!-- <svg 
-            width="400" 
-            height="300" 
-            style="outline: 2px dashed #2a2a2a"
-        >
-            <text x="20" y="20">Елемент use ПРИКЛАД-2</text>
-            <use
-                x="0" 
-                y="0"
-                xlink:href="#mySymbol"
-                fill-opacity="0.3"
-            />
-            <use
-                x="50" 
-                y="50"
-                xlink:href="#mySymbol"
-                fill-opacity="0.5"
-            />
-        </svg> -->
+        
+
+        <!--! 11-2.Елемент <use>: перевикористання за допомогою елемента <symbol> ПРИКЛАД-1 -->
+            <div class="part part_11">
+                <h2 class="title-section">
+                    10-2.Елемент &lt;use&gt;: перевикористання SVG
+                    <br>
+                    за допомогою елемента &lt;symbol&gt; ПРИКЛАД-2
+                </h2>
+                <svg 
+                    width="430" 
+                    height="300" 
+                    style="outline: 2px dashed #2a2a2a"
+                >
+                <text x="10" y="20">Елемент &lt;use&gt; - перевикористання SVG</text>
+                    <use
+                        xlink:href="#sym02"
+                        x="0" 
+                        y="0"
+                        fill-opacity="0.3"
+                    />
+                    <use
+                        xlink:href="#sym02"
+                        x="50" 
+                        y="50"
+                        fill-opacity="0.5"
+                    />
+                </svg>
+            </div>
+        
+
 
 
         <!--! 0.Заголовок -->
