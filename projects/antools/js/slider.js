@@ -156,7 +156,6 @@ slider.addEventListener('mouseup', handleMouseUp);
 slider.addEventListener('touchstart', (event) => {
     isDragging = true;
     startX = event.clientX;
-    slider.style.cursor = 'pointer';
 });
 
 slider.addEventListener('touchmove', (event) => {
@@ -175,5 +174,4 @@ slider.addEventListener('touchmove', (event) => {
 
 slider.addEventListener('touchend', (event) => {
     isDragging = false;
-    slider.style.cursor = 'auto';
 });
