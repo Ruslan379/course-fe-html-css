@@ -162,8 +162,12 @@ body {
     stroke-width: 2;
 }
 
-/*! Підключення іконок з макету WebStudio як SVG-спрайт ​*/
-.icon-webstudio {
+/* ! */
+/* .part_5 {
+    display: none;
+} */
+/*! 5.Підключення іконок з макету WebStudio як SVG-спрайт ​*/
+.part_5 .icon-webstudio {
     width: 430px;
     display: flex;
     flex-wrap: wrap;
@@ -173,11 +177,11 @@ body {
     outline: 4px double #ffcfc6;
 }
 
-/* li {
+/* .part_5 li {
     outline: 1px solid blue;
 } */
 
-.icon3 {
+.part_5 .icon3 {
     display: block;
     border: 1px dashed #212121;
     border-radius: 8px;
@@ -186,7 +190,7 @@ body {
     background-color: rgb(255, 235, 208);
 }
 /* ✅ */
-.icon3:hover {
+.part_5 .icon3:hover {
     fill: #b2ff85;
     stroke: crimson;
     /* stroke-width: 2; */
