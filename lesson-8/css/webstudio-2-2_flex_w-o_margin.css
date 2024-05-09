@@ -213,11 +213,11 @@ body {
     letter-spacing: 0.02em;
     /* letter-spacing: 0.28px; */
     color: var(--color-font-second);
-    fill: var(--color-font-second);
     /* todo +++++ 2 семеcтр +++++ */
     display: flex;
     align-items: center;
     gap: 10px;
+    fill: var(--color-font-second);
 }
 .contacts-link:hover {
     color: var(--color-brand-main);
