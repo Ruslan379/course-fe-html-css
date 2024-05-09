@@ -90,7 +90,7 @@ body {
     background-color: rgb(255, 238, 193);
     background-image: url(../svg/instagram.svg);
     /* !!!!!!! --- sprite НЕ ПРАЦЮЄ --- !!!!!! */
-    /* background-image: url(../images/icons-sprite.svg#antenna); */
+    /* background-image: url(../images/icons-sprite.svg#instagram); */
     /* !!!!!!__________________________!!!!!! */
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,16 +109,20 @@ body {
 }
 
 
-
-/*! Підключення векторної графіки як як вбудований SVG (inline SVG) ​*/
-.icon {
+/* ! */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Підключення векторної графіки як як вбудований SVG (inline SVG) */
+.part_3 .icon {
     width: 200px;
     height: 200px;
-    color: grey; /* ❌ */
-    fill: grey; /* ❌ */
+    /* ❌ */
+    color: grey; 
+    fill: grey; 
 }
 
-.icon:hover {
+.part_3 .icon:hover {
     cursor: pointer;
     /* ✅ */
     stroke: orange;
@@ -128,12 +132,12 @@ body {
 }
 
 /* ✅ */
-/* .icon:hover .letter {
+/* .part_3 .icon:hover .letter {
     cursor: pointer;
     fill: palevioletred;
 } */
 /* ✅ */
-/* .icon:hover .background {
+/* .part_3 .icon:hover .background {
     cursor: pointer;
     fill: green;
     stroke: yellow;
