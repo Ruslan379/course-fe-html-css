@@ -215,32 +215,35 @@ body {
 /* .part_14 {
     display: none;
 } */
-/*! 14.Оформлення фігур */
-.container {
+/*! 14.Оформлення фігур шляхом перевикористання */
+.container14 {
+    padding: 16px;
     display: flex;
     justify-content: center;
-    padding: 16px;
+    gap: 24px;
     outline: 4px double red;
 }
-.icon {
-    margin-left: 12px;
-    margin-right: 12px;
+.icon14 {
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
-    fill: red;
-    stroke: #00aeff;
+    fill: red; /* ✅ */
+    stroke: #00aeff; /* ✅ */
 }
-.icon:last-child {
+/* ✅ */
+.icon14:last-child {
     fill-opacity: 0.5;
     stroke-opacity: 0.5;
 }
 /* ✅ */
-.icon:hover {
+.icon14:hover {
     fill: #00aeff;
     fill-opacity: 0.7;
     stroke: red;
     stroke-width: 2px;
 }
+
+
+
 
 
 /*! Файл_instagram.svg */
