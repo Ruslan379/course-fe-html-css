@@ -243,23 +243,34 @@ body {
 }
 
 
+/* ! */
+/* .part_15 {
+    display: none;
+} */
+/*! 15.IconMoon App */
 
 
-
-/*! Файл_instagram.svg */
-.instagram-icon {
-    margin-left: 12px;
-    margin-right: 12px;
-    border: 2px dashed #2a2a2a;
+/* ! */
+/* .part_16 {
+    display: none;
+} */
+/*! 16.Файли instagram.svg та instagram-omg.svg by svgomg */
+.instagram-icon16 {
+    margin-bottom: 10px;
+    border: 4px double black;
     border-radius: 8px;
+    background-color: cadetblue;
     /* ❌ */
     fill: rgb(51, 255, 0);
     stroke: #00aeff;
 }
 
-
-/*! SVG-документ: іконка-instagram */
-.instagram-icon-svg {
+/* ! */
+/* .part_17 {
+    display: none;
+} */
+/*! 17.Код файла instagram.svg як SVG-документ в HTML */
+.instagram-icon-svg17 {
     margin-left: 12px;
     margin-right: 12px;
     border: 2px dashed #2a2a2a;
@@ -270,10 +281,12 @@ body {
     stroke-width: 1px;
 }
 /* ✅ */
-.instagram-icon-svg:hover {
+.instagram-icon-svg17:hover {
     fill: red;
     stroke: green;
 }
+
+
 
 
 /*? ______________________________________________________ */
