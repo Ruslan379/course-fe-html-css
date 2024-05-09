@@ -211,18 +211,11 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*! Оформлення фігур */
+/* ! */
+/* .part_14 {
+    display: none;
+} */
+/*! 14.Оформлення фігур */
 .container {
     display: flex;
     justify-content: center;
