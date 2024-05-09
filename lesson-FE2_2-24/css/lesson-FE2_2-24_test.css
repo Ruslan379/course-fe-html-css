@@ -145,14 +145,18 @@ body {
 } */
 
 
-/*! Підключення векторної графіки як як SVG-спрайт ​*/
-.icon2 {
+/* ! */
+/* .part_4 {
+    display: none;
+} */
+/*! 4.Підключення векторної графіки як SVG-спрайт ​*/
+.part_4 .icon2 {
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
-    fill: #2a2a2a;
+    fill: darkgreen;
 }
 /* ✅ */
-.icon2:hover {
+.part_4 .icon2:hover {
     fill: #03a9f4;
     stroke: crimson;
     stroke-width: 2;
