@@ -212,7 +212,8 @@ body {
     /* font-size: 14px; */
     letter-spacing: 0.02em;
     /* letter-spacing: 0.28px; */
-    color: var(--color-font-main);
+    color: var(--color-font-second);
+    fill: var(--color-font-second);
     /* todo +++++ 2 семеcтр +++++ */
     display: flex;
     align-items: center;
