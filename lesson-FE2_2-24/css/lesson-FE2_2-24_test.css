@@ -1,44 +1,88 @@
 :root {
-    /* *============ CSS-змінні ============ */
-    --color-font-body: #0c220c;
+    /** ============ CSS-змінні ============ */
+    --color-font-body: #220c0c;
     --color-background-body: #ffe3de;
+    --color-title-lesson: #4b4200;
+    --color-title-section: red;
+    --color-title-subsection: blue;
 }
 
 body {
     font-family: 'Montserrat', serif;
-    color: var(--color-font-body);
-    background-color: var(--color-background-body);
-
-    padding: 20px;
-    min-height: 100vh;
+    font-size: 1.5rem;
+    padding: 20px 20px 150px;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* justify-content: center; */
+    /* text-align: center; */
     align-items: center;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
 }
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+    /* ! for position: fixed */
+    /* margin-bottom: 350px; */
+}
+
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
+}
+
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vh;
+}
+
 /* *======================================= */
-
-
-/*! Підключення векторної графіки в елементі <img> */
-img {
+/* ! */
+/* .part_1 {
+    display: none;
+} */
+/*! 1.Підключення векторної графіки в елементі <img> */
+.part_1 img {
     margin: 5px auto;
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
 }
-/* ❌ */
-img:hover {
+
+.part_1 img:hover {
+    /* ✅ */
     cursor: pointer;
+    background-color: #03a9f4;
+    /* ❌ */
     fill: green;
-    /* stroke: black; */
     stroke: yellow;
     stroke-width: 5;
 }
 
 
-/*! Підключення векторної графіки як фон елемента */
-.box {
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 2.Підключення векторної графіки як фон елемента */
+.part_2 .box {
     width: 240px;
     height: 240px;
     border: 2px dashed #2a2a2a;
@@ -53,7 +97,7 @@ img:hover {
     background-position: center;
 }
 
-.box:hover {
+.part_2 .box:hover {
     cursor: pointer;
     /* ❌ */
     fill: green;
@@ -232,3 +276,11 @@ img:hover {
   background: -webkit-linear-gradient(45deg,  #1441e6, #00ff72);
   transition: all 0.2s ease-in;
 }
+
+
+/*? ______________________________________________________ */
+/* ! */
+.part_0 {
+    display: none;
+}
+/*! 0.Заголовок */
