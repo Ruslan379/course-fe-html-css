@@ -396,3 +396,61 @@ body {
     left: 120px;
     background-color: #4caf50;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! */
+.part_7 {
+    display: none;
+}
+/*! 7.HW-25 */
+.part_7 .container7 {
+    outline: 1px solid red;
+}
+
+.part_7 .box7 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.part_7 .box17 {
+    background-color: lightcoral;
+}
+
+.part_7 .box27 {
+    z-index: 1;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    background-color: cornflowerblue;
+}
+
+.part_7 .box37 {
+    position: relative;
+    left: 100px;
+    top: -100px;
+    background-color: lime;
+}
+
+
+
+
+/*? ______________________________________________________ */
+/* ! */
+.part_0 {
+    display: none;
+}
+/*! 0.Заголовок */
