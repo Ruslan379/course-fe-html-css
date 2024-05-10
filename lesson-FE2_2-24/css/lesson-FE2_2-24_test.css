@@ -60,6 +60,9 @@ body {
 /* .part_1 {
     display: none;
 } */
+/* .part_1 {
+    height: auto;
+} */
 /*! 1.Підключення векторної графіки в елементі <img> */
 .part_1 img {
     margin: 5px auto;
@@ -91,9 +94,9 @@ body {
     border-radius: 8px;
     background-color: rgb(255, 238, 193);
     background-image: url(../svg/instagram.svg);
-    /* !!!!!!! --- sprite НЕ ПРАЦЮЄ --- !!!!!! */
+    /* !!!!!!! ❌--- sprite НЕ ПРАЦЮЄ ---❌ !!!!!! */
     /* background-image: url(../images/icons-sprite.svg#instagram); */
-    /* !!!!!!__________________________!!!!!! */
+    /* !!!!!!________________________________!!!!!! */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,6 +167,7 @@ body {
     stroke-width: 2;
 }
 
+
 /* ! */
 /* .part_5 {
     display: none;
@@ -200,23 +204,26 @@ body {
 }
 
 
-
-/*! Підключення векторної графіки ​*/
-/*! як фон елемента за  допомогою SVG-спрайт */
-.box2 {
+/* ! */
+/* .part_6 {
+    display: none;
+} */
+/*! 6.Підключення SVG-зображення як фон елемента за  допомогою SVG-спрайт ​*/
+.part_6 .box {
     width: 200px;
     height: 200px;
     border: 2px dashed blueviolet;
     border-radius: 8px;
     background-image: url("../svg-omg/astronaut.svg");
-    /*! ❌ - SVG-спрайт НЕ ПРАЦЮЄ!!!*/ 
+    /* !!!!!!! ❌--- sprite НЕ ПРАЦЮЄ ---❌ !!!!!! */
     /* background-image: url("../images/icons-sprite.svg#astronaut"); */
+    /* !!!!!!________________________________!!!!!! */
     background-repeat: no-repeat;
     background-size: 180px;
     background-position: center;
 }
 
-.box2:hover {
+.part_6 .box:hover {
     /* ❌ */
     fill: green;
     stroke: yellow;
@@ -226,71 +233,81 @@ body {
 }
 
 
-/* ❌ */
-/*! Іконочний шрифт - 1 ​*/ 
-.social-networks {
+/* ! */
+.part_7 {
+    display: none;
+}
+/* ❌ - НЕ ПРАЦЮЄ */
+/*! 7.Іконочний шрифт-1 ​*/ 
+.part_7 .social-networks {
     font-size: 40px;
 }
 
-.link-compass2 {
+.part_7 .link-compass2 {
     color: brown;
 }
-.link-compass2:hover {
+.part_7 .link-compass2:hover {
     font-size: 60px;
     color: rgb(42, 165, 85);
 }
 
 
-/* ❌ */
-/*! Іконочний шрифт - 2 ​*/
+/* ! */
+.part_8 {
+    display: none;
+}
+/* ❌ - НЕ ПРАЦЮЄ */
+/*! 8.Іконочний шрифт-2 ​*/ 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-.social-networks {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
+.part_8 .social-networks {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
 }
 
-.social-networks li {
-  margin: 0.15em;
-  position: relative;
-  font-size: 1.2em;
+.part_8 .social-networks li {
+    margin: 0.15em;
+    position: relative;
+    font-size: 1.2em;
 }
 
-.social-networks i {
-  color: #fff;
-  position: absolute;
-  top: 21px;
-  left: 21px;
-  transition: all 0.3s ease-out;
+.part_8 .social-networks i {
+    color: #fff;
+    position: absolute;
+    top: 21px;
+    left: 21px;
+    transition: all 0.3s ease-out;
 }
 
-.social-networks a {
-  display: inline-block;
+.part_8 .social-networks a {
+    display: inline-block;
 }
 
-.social-networks a:before {
-  transform: scale(1);
-  content: " ";
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  display: block;
-  background: linear-gradient(45deg, #1441e6, #00ff72);
-  transition: all 0.2s ease-out;
+.part_8 .social-networks a:before {
+    transform: scale(1);
+    content: " ";
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, #1441e6, #00ff72);
+    transition: all 0.2s ease-out;
 }
 
-.social-networks a:hover:before {
-  transform: scale(0);
-  transition: all 0.3s ease-in;
+.part_8 .social-networks a:hover:before {
+    transform: scale(0);
+    transition: all 0.3s ease-in;
 }
 
-.social-networks a:hover i {
-  transform: scale(2.2);
-  color: #1441e6;
-  background: -webkit-linear-gradient(45deg,  #1441e6, #00ff72);
-  transition: all 0.2s ease-in;
+.part_8 .social-networks a:hover i {
+    transform: scale(2.2);
+    color: #1441e6;
+    background: -webkit-linear-gradient(45deg,  #1441e6, #00ff72);
+    transition: all 0.2s ease-in;
 }
+
+
 
 
 /*? ______________________________________________________ */
