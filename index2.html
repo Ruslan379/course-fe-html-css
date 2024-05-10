@@ -51,19 +51,49 @@
                 text-decoration: underline; /* Добавляем подчеркивание при наведении */
                 color: tomato; /* Меняем цвет текста при наведении */
             }
+
+            /* Список LOGO-посилань на головні сторінки курсів */
+            .courses-list {
+                display: flex;
+                gap: 24px;
+            }
+            .cours-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
             
         </style>
         <title>HTML/CSS course for FE</title>
     </head>
 
     <body>
-        <!--! LOGO сторінки -->
-        <img
-            src="https://img.icons8.com/fluency/48/home.png" 
-            alt="home"
-            width="48" 
-            height="48" 
-        />
+        <!--! Список LOGO-посилань на головні сторінки курсів  -->
+        <ul class="courses-list">
+            <li class="cours-item">
+                <a class="cours-link" href="./index.html">
+                    <img
+                        src="https://img.icons8.com/fluency/48/home.png" 
+                        alt="FrontEnd-1"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-1
+                </a>
+            </li>
+            <li class="cours-item">
+                <a class="cours-link" href="./index2.html">
+                    <img
+                        src="https://img.icons8.com/emoji/48/house-emoji.png" 
+                        alt="FrontEnd-2"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-2
+                </a>
+            </li>
+        </ul>
         <!--! Привітання - абзац -->
         <p 
             style =
@@ -93,8 +123,8 @@
         </h3>
         <!--! Список уроків -->
         <ol style="padding: 5px">
-            <li><a href="./lesson-1-2/lesson-1-2_test.html">Урок-01. <b>Принципи використання векторної графіки при верстці сторінки.</b></a></li>
-            <li><a href="./lesson-2-2/lesson-2-2_test.html.html">Урок-02. <b>Підключення SVG-зображень до проєкту та їх стилізація.</b></a></li>
+            <li><a href="./lesson-FE2_1-23/lesson-FE2_1-23_test.html">Урок-01. <b>Принципи використання векторної графіки при верстці сторінки.</b></a></li>
+            <li><a href="./lesson-FE2_2-24/lesson-FE2_2-24_test.html">Урок-02. <b>Підключення SVG-зображень до проєкту та їх стилізація.</b></a></li>
             <li><a href="./lesson-3-2/lesson-3-2_test.html.html">Урок-03. <b>Позиціонування елементів — призначення та властивості.</b></a></li>
             <li><a href="./lesson-4-2/lesson-4-2_test.html.html">Урок-04. <b>Реалізація стилів для модальних вікон через позиціонування. Форми.</b></a></li>
             <li><a href="./lesson-5-2/lesson-5-2_test.html.html">Урок-05. <b>Поширені юзкейси техніки позиціонування в сучасній розробці.</b></a></li>

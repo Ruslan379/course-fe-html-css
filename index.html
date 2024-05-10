@@ -50,18 +50,49 @@
                 text-decoration: underline; /* Добавляем подчеркивание при наведении */
                 color: tomato; /* Меняем цвет текста при наведении */
             }
+
+            /* Список LOGO-посилань на головні сторінки курсів */
+            .courses-list {
+                display: flex;
+                gap: 24px;
+            }
+            .cours-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            
         </style>
         <title>HTML/CSS course for FE</title>
     </head>
 
     <body>
-        <!--! LOGO сторінки -->
-        <img
-            src="https://img.icons8.com/fluency/48/home.png" 
-            alt="home"
-            width="48" 
-            height="48" 
-        />
+        <!--! Список LOGO-посилань на головні сторінки курсів  -->
+        <ul class="courses-list">
+            <li class="cours-item">
+                <a class="cours-link" href="./index.html">
+                    <img
+                        src="https://img.icons8.com/fluency/48/home.png" 
+                        alt="FrontEnd-1"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-1
+                </a>
+            </li>
+            <li class="cours-item">
+                <a class="cours-link" href="./index2.html">
+                    <img
+                        src="https://img.icons8.com/emoji/48/house-emoji.png" 
+                        alt="FrontEnd-2"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-2
+                </a>
+            </li>
+        </ul>
         <!--! Привітання - абзац -->
         <p 
             style =
