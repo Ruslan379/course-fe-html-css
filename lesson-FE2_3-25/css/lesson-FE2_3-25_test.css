@@ -30,7 +30,7 @@
 
 body {
     font-family: 'Montserrat', serif;
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
     padding: 20px 20px 150px;
     /* min-height: 100vh; */
     display: flex;
@@ -81,19 +81,18 @@ body {
 /* .part_1 {
     display: none;
 } */
-
-/*! 1.position:static */
-.father1 {
+/*! 1.position: static */
+.part_1 .father {
     width: 500px;
-    height: 100px;
+    height: 200px;
     margin-bottom: 20px;
     color: red;
     background: #fffdd6;
     outline: 4px double rgb(61, 56, 0);
 }
 
-.title1 {
-    position: static;
+.part_1 .title {
+    position: static; /* ! */
     left: 10%;
     top: 10%;
     font-size: 1.5rem;
@@ -102,8 +101,8 @@ body {
     outline: 1px dashed green;
 }
 
-.title1::after {
-    content: '(без позиціонування)';
+.part_1 .title::after {
+    content: '(::after - без позиціонування)';
     margin-left: 5px;
     font-size: initial;
     font-style: italic;
@@ -111,38 +110,46 @@ body {
     outline: 1px dashed #ff6d6d;
 }
 
-.child1 {
+.part_1 .child {
     width: 70%;
-    height: 3rem;
+    height: 6rem;
     color: initial;
     background: #fffaa5;
     outline: 1px dotted blue;
 }
 
 
-/*! 2.position:relative */
-.father2 {
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 2.position: relative */
+.part_2 .father {
     width: 500px;
-    height: 100px;
+    height: 200px;
     margin-bottom: 20px;
     color: red;
     background: #fffdd6;
     outline: 4px double rgb(61, 56, 0);
 }
 
-.title2 {
+.part_2 .title {
     /* position: static; */
-    position: relative;
+    position: relative; /* ! */
+    /* todo var.1 */
     left: 10%;
     top: 10%;
+    /* todo var.2 */
+    left: 50px;
+    top: 20px;
     font-size: 1.5rem;
     color: var(--color-font-body);
     background: #b8f1ff;
     outline: 1px dashed green;
 }
 
-.title2::after {
-    content: '(left: 10%; top: 10%;)';
+.part_2 .title::after {
+    content: '(::after - left: 10%; top: 10%;)';
     margin-left: 5px;
     font-size: initial;
     font-style: italic;
@@ -150,29 +157,32 @@ body {
     outline: 1px dashed #ff6d6d;
 }
 
-.child2 {
+.part_2 .child {
     width: 70%;
-    height: 3rem;
+    height: 6rem;
     color: initial;
     background: #fffaa5;
     outline: 1px dotted blue;
 }
 
-
-/*! 3-1.position:absolute від <body> */
-.father3 {
+/* ! */
+/* .part_31 {
+    display: none;
+} */
+/*! 3-1.position: absolute від <body> */
+.part_31 .father {
     width: 500px;
-    height: 100px;
+    height: 200px;
     margin-bottom: 20px;
     color: red;
     background: #fffdd6;
     outline: 4px double rgb(61, 56, 0);
 }
 
-.title3 {
+.part_31 .title {
     /* position: static; */
     /* position: relative; */
-    position: absolute;
+    position: absolute; /* ! */
     left: 10%;
     top: 10%;
     font-size: 1.5rem;
@@ -181,8 +191,8 @@ body {
     outline: 1px dashed green;
 }
 
-.title3::after {
-    content: '(left: 10%; top: 10%; від <body>)';
+.part_31 .title::after {
+    content: '(::after - left: 10%; top: 10%; від <body>)';
     margin-left: 5px;
     font-size: initial;
     font-style: italic;
@@ -190,38 +200,41 @@ body {
     outline: 1px dashed #ff6d6d;
 }
 
-.child3 {
+.part_31 .child {
     width: 70%;
-    height: 3rem;
+    height: 6rem;
     color: initial;
     background: #fffaa5;
     outline: 1px dotted blue;
 }
 
-
-/*! 3-2.position:absolute від <father4> */
-.original-father4 {
+/* ! */
+/* .part_32 {
+    display: none;
+} */
+/*! 3-2.position: absolute від <father> */
+.part_32 .main-father {
     width: 500px;
-    height: 100px;
+    height: 200px;
     outline: 4px double rgb(4, 0, 61);
 }
 
-.father4 {
-    position: relative;
-    /* left: 10%;
-    top: 10%; */
+.part_32 .father {
+    position: relative; /* ! */
+    /* left: 10%; */
+    /* top: 10%; */
     width: 500px;
-    height: 100px;
+    height: 200px;
     margin-bottom: 20px;
     color: red;
     background: #fffdd6;
     outline: 4px double rgb(61, 56, 0);
 }
 
-.title4 {
+.part_32 .title {
     /* position: static; */
     /* position: relative; */
-    position: absolute;
+    position: absolute; /* ! */
     left: 10%;
     top: 10%;
     width: 516px;
@@ -231,18 +244,18 @@ body {
     outline: 1px dashed green;
 }
 
-.title4::after {
-    content: '(left: 10%; top: 10%; від <father4>)';
+.part_32 .title::after {
+    content: '(::after - left: 10%; top: 10%; від <father>)';
     margin-left: 5px;
-    font-size: initial;
+    font-size: 13px;
     font-style: italic;
     color: initial;
     outline: 1px dashed #ff6d6d;
 }
 
-.child4 {
+.part_32 .child {
     width: 70%;
-    height: 3rem;
+    height: 6rem;
     color: initial;
     background: #fffaa5;
     outline: 1px dotted blue;

@@ -29,56 +29,67 @@
     </head>
 
     <body>
-        <!--! 1.position:static -->
-        <h2>1. STATIC</h2>
-        <div class="father1">
-            Це контент елемента (div class="child1"): {"position: static";}
-                <h3 class="title1">Заголовок (class="title1")</h3>
-                <div class="child1">
-                    А тут - текст елемента (div class="child1")
-                    <br/>
-                    ... у два рядки!
-                </div>
-        </div>
-
-
-        <!--! 2.position:relative -->
-        <h2>2. RELATIVE</h2>
-        <div class="father2">
-            Це контент елемента (div class="child2"): {"position: relative";}
-                <h3 class="title2">Заголовок (class="title2")</h3>
-                <div class="child2">
-                    А тут - текст елемента (div class="child2")
-                    <br/>
-                    ... у два рядки!
-                </div>
-        </div>
-
-
-        <!--! 3-1.position:absolute від <body> -->
-        <h2>3-1. ABSOLUTE (від body)</h2>
-        <div class="father3">
-            Це контент елемента (div class="child3"): {"position: absolute";}
-                <h3 class="title3">Заголовок (class="title3")</h3>
-                <div class="child3">
-                    А тут - текст елемента (div class="child3")
-                    <br/>
-                    ... у два рядки!
-                </div>
-        </div>
-
-
-        <!--! 3-2.position:absolute від <father4> -->
-        <h2>3-2. ABSOLUTE (від father4)</h2>
-        <div class="original-father4">
-            <div class="father4">
-                Це контент елемента (div class="child4"): {"position: absolute";}
-                    <h3 class="title4">Заголовок (class="title4")</h3>
-                    <div class="child4">
-                        А тут - текст елемента (div class="child4")
+        <h1 class="title-lesson">Урок-3. “Позиціонування елементів — призначення та властивості”</h1>
+        
+        
+        <!--! 1.position: static -->
+        <div class="part part_1">
+            <h2 class="title-section">1.position: static</h2>
+            <div class="father">
+                Це контент елемента (div class="child1"): {"position: static";}
+                    <h3 class="title">Заголовок (class="title1")</h3>
+                    <div class="child">
+                        А тут - текст елемента (div class="child1")
                         <br/>
                         ... у два рядки!
                     </div>
+            </div>
+        </div>
+        
+        
+        <!--! 2.position: relative -->
+        <div class="part part_2">
+            <h2 class="title-section">2.position: relative</h2>
+            <div class="father">
+                Це контент елемента (div class="child1"): {"position: static";}
+                    <h3 class="title">Заголовок (class="title1")</h3>
+                    <div class="child">
+                        А тут - текст елемента (div class="child1")
+                        <br/>
+                        ... у два рядки!
+                    </div>
+            </div>
+        </div>
+        
+        
+        <!--! 3-1.position: absolute від <body> -->
+        <div class="part part_31">
+            <h2 class="title-section">3-1.position: absolute (від &lt;body&gt;)</h2>
+            <div class="father">
+                Це контент елемента (div class="child1"): {"position: static";}
+                    <h3 class="title">Заголовок (class="title1")</h3>
+                    <div class="child">
+                        А тут - текст елемента (div class="child1")
+                        <br/>
+                        ... у два рядки!
+                    </div>
+            </div>
+        </div>
+        
+        
+        <!--! 3-2.position: absolute від <father> -->
+        <div class="part part_32">
+            <h2 class="title-section">3-2.position: absolute (від &lt;father&gt;)</h2>
+            <div class="main-father">
+                <div class="father">
+                    Це контент елемента (div class="child1"): {"position: static";}
+                        <h3 class="title">Заголовок (class="title1")</h3>
+                        <div class="child">
+                            А тут - текст елемента (div class="child1")
+                            <br/>
+                            ... у два рядки!
+                        </div>
+                </div>
             </div>
         </div>
 
