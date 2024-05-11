@@ -381,16 +381,19 @@ body {
 
 
 
-
+/* ! */
+/* .part_6 {
+    display: none;
+} */
 /*! 6.Властивість z-index */
-.container {
+.part_6 .container {
     width: 500px;
-    height: 500px;
+    height: 400px;
     position: relative;
     outline: 4px double rgb(61, 56, 0);
 }
 
-.box {
+.part_6 .box {
     position: absolute;
     height: 150px;
     width: 150px;
@@ -404,28 +407,28 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
-.box:nth-child(1) {
+.part_6 .box:nth-child(1) {
     top: 20px;
     left: 130px;
     background-color: #1789fc;
     z-index: 2;
 }
 
-.box:nth-child(2) {
+.part_6 .box:nth-child(2) {
     top: 30px;
     left: 230px;
     background-color: #ef233c;
     z-index: 2;
 }
 
-.box:nth-child(3) {
+.part_6 .box:nth-child(3) {
     top: 140px;
     left: 220px;
     background-color: #ffd07b;
     z-index: 1;
 }
 
-.box:nth-child(4) {
+.part_6 .box:nth-child(4) {
     top: 120px;
     left: 120px;
     background-color: #4caf50;
@@ -449,22 +452,22 @@ body {
     display: none;
 }
 /*! 7.HW-25 */
-.part_7 .container7 {
+.part_7 .container {
     outline: 1px solid red;
 }
 
-.part_7 .box7 {
+.part_7 .box {
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: flex-end;
 }
 
-.part_7 .box17 {
+.part_7 .box1 {
     background-color: lightcoral;
 }
 
-.part_7 .box27 {
+.part_7 .box2 {
     z-index: 1;
     position: relative;
     left: 50px;
@@ -472,7 +475,7 @@ body {
     background-color: cornflowerblue;
 }
 
-.part_7 .box37 {
+.part_7 .box3 {
     position: relative;
     left: 100px;
     top: -100px;
