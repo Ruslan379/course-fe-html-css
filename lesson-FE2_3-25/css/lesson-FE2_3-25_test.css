@@ -165,6 +165,7 @@ body {
     outline: 1px dotted blue;
 }
 
+
 /* ! */
 /* .part_31 {
     display: none;
@@ -207,6 +208,7 @@ body {
     background: #fffaa5;
     outline: 1px dotted blue;
 }
+
 
 /* ! */
 /* .part_32 {
@@ -262,8 +264,13 @@ body {
 }
 
 
-/*! 4.position:fixed */
-.father5 {
+/* ! */
+.part_4 {
+    /* display: none; */
+    height: auto;
+}
+/*! 4.position: fixed */
+.part_4 .father {
     width: 500px;
     /* height: 100px; */
     margin-bottom: 20px;
@@ -272,7 +279,7 @@ body {
     outline: 4px double rgb(61, 56, 0);
 }
 
-.title5 {
+.part_4 .title {
     position: static;
     font-size: 1.5rem;
     color: var(--color-font-body);
@@ -280,8 +287,8 @@ body {
     outline: 1px dashed green;
 }
 
-.title5::after {
-    content: '(без позиціонування)';
+.part_4 .title::after {
+    content: '(::after - без позиціонування)';
     margin-left: 5px;
     font-size: initial;
     font-style: italic;
@@ -289,7 +296,7 @@ body {
     outline: 1px dashed #ff6d6d;
 }
 
-.child5 {
+.part_4 .child {
     width: 70%;
     /* height: 3rem; */
     color: initial;
@@ -299,10 +306,12 @@ body {
 
 /*? КНОПКИ */
 /*? Кнопка-догори (загальні стили) */
-.arrow-button {
+.part_4 .arrow-button {
     /* ! */
     /* position: fixed; */
+    top: 30px;
     right: 30px;
+    align-self: flex-start;
     display: inline-block;
     margin: 0;
     padding: 10px;
@@ -317,13 +326,18 @@ body {
 }
 
 /* ? Кнопка-донизу */
-.down-button {
+.part_4 .arrow-button.down-button {
+    align-self: flex-end;
     bottom: 30px;
 }
 
-
+/* ! */
+.part_5 {
+    /* display: none; */
+    height: auto;
+}
 /*! 5.position:sticky */
-.father6 {
+.part_5 .father {
     width: 500px;
     /* height: 100px; */
     margin-bottom: 20px;
@@ -332,7 +346,7 @@ body {
     outline: 4px double rgb(61, 56, 0);
 }
 
-.title6 {
+.part_5 .title {
     width: 500px;
     position: sticky;
     top: 0;
@@ -340,19 +354,16 @@ body {
     font-size: 1.5rem;
     color: var(--color-font-body);
     background: #ffb8f2;
-    outline: 1px dashed green;
+    /* outline: 1px dashed green; */
 }
 
-.title6::after {
-    content: '(без позиціонування)';
-    margin-left: 5px;
-    font-size: initial;
-    font-style: italic;
-    color: initial;
-    outline: 1px dashed #ff6d6d;
+.part_5 p + .title {
+    color: var(--color-font-body);
+    background: #fffb80;
+
 }
 
-.child6 {
+.part_5 .child {
     width: 70%;
     /* height: 3rem; */
     color: initial;
