@@ -324,12 +324,12 @@ body {
     background-color: #a2cfff;
     cursor: pointer;
 }
-
 /* ? Кнопка-донизу */
 .part_4 .arrow-button.down-button {
     align-self: flex-end;
     bottom: 30px;
 }
+
 
 /* ! */
 .part_5 {
@@ -346,30 +346,40 @@ body {
     outline: 4px double rgb(61, 56, 0);
 }
 
-.part_5 .title {
-    width: 500px;
-    position: sticky;
-    top: 0;
-    /* left: 10px; */
-    font-size: 1.5rem;
-    color: var(--color-font-body);
-    background: #ffb8f2;
-    /* outline: 1px dashed green; */
-}
-
-.part_5 p + .title {
-    color: var(--color-font-body);
-    background: #fffb80;
-
-}
-
 .part_5 .child {
     width: 70%;
+    margin: 0 auto;
     /* height: 3rem; */
     color: initial;
     background: #9cfec5;
     outline: 1px dotted blue;
 }
+
+.part_5 .child img{
+    margin: 10px auto;
+    background: #fef39c;
+}
+.part_5 .child img:first-child{
+    background: #edc2fd;
+}
+
+.part_5 .title {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* left: 10px; */
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-font-body);
+    background: #ffb8f2;
+    /* outline: 1px dashed green; */
+}
+
+.part_5 p + img + .title {
+    background: #fffb80;
+}
+
+
 
 
 /*! 6.Властивість z-index */
