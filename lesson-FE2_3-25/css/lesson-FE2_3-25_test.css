@@ -448,12 +448,16 @@ body {
 
 
 /* ! */
-.part_7 {
+/* .part_7 {
     display: none;
-}
+} */
 /*! 7.HW-25 */
 .part_7 .container {
+    width: 100px;
+    height: 300px;
     outline: 1px solid red;
+    /* todo var.2 */
+    /* position: relative; */
 }
 
 .part_7 .box {
@@ -469,10 +473,15 @@ body {
 
 .part_7 .box2 {
     z-index: 1;
+    /* todo var.1 */
     position: relative;
     left: 50px;
     top: -50px;
     background-color: cornflowerblue;
+    /* todo var.2 */
+    /* position: absolute;
+    left: 50px;
+    top: 50px; */
 }
 
 .part_7 .box3 {
@@ -480,6 +489,10 @@ body {
     left: 100px;
     top: -100px;
     background-color: lime;
+    /* todo var.2 */
+    /* position: absolute;
+    left: 100px;
+    top: 100px; */
 }
 
 
