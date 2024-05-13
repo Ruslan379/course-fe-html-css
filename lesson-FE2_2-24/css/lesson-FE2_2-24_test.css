@@ -154,14 +154,21 @@ body {
 /* .part_4 {
     display: none;
 } */
-/*! 4.Підключення векторної графіки як SVG-спрайт ​*/
-.part_4 .icon2 {
+/*! 15.IconMoon App */
+
+
+/* ! */
+/* .part_41 {
+    display: none;
+} */
+/*! 4-1.Підключення векторної графіки як SVG-спрайт ​*/
+.part_41 .icon2 {
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
     fill: darkgreen;
 }
 /* ✅ */
-.part_4 .icon2:hover {
+.part_41 .icon2:hover {
     fill: #03a9f4;
     stroke: crimson;
     stroke-width: 2;
