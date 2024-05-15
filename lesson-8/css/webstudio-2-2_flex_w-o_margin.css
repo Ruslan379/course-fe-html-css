@@ -553,7 +553,7 @@ body {
     /* background-color: blueviolet; */
 }
 .instagram-icon-svg:hover, /*! inline SVG  */
-.social-link:hover {
+.social-item:hover .social-link{
     fill: var(--color-light);
     background-color: var(--color-brand-main);
 }
