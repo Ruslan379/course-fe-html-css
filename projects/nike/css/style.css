@@ -5,7 +5,7 @@
     --color-font-main: #c7c7c7;
     --color-font-second: #dcdcdc;
     --color-background-brand: #012d63;
-    --color-font-hover: #c76dff;
+    --color-font-hover : #c76dff;
 
     
 
@@ -51,7 +51,6 @@ body {
     padding-top: 16px;
     padding-bottom: 14px;
     background-color: var(--color-background-brand);
-    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
@@ -70,9 +69,10 @@ body {
 }
 
 .header-logo{
-    width: 100px;
-    height: 60px;
+    /* width: 100px; */
+    /* height: 60px; */
     margin-right: 152px;
+    /* outline: 1px dotted yellowgreen; */
 }
 
 .nav-list {
@@ -134,10 +134,10 @@ body {
 /*? main */
 /*? section hero */
 .hero {
-    padding-top: 180px;
-    padding-bottom: 179px;
-    /* background-color: gray; */
-    background-color: var(--color-background-light);
+    padding-top: 94px;
+    padding-bottom: 183px;
+    height: 858px;
+    background-color: var(--color-background-brand);
     background-image:url(../images/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
@@ -145,9 +145,10 @@ body {
 }
 
 /** --- Додаткові flex-властивості до container ---- */
-.hero .flex {
+/* .hero .flex {
     justify-content: space-between;
-}
+} */
+/*! Відсутні */
 /** _________________________________________________ */
 /** загальні стилі для головних кнопок */
 .buttons {
@@ -163,6 +164,42 @@ body {
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         0ms;
 }
+
+.hero-logo{
+    margin-left: 5px;
+    display: block;
+    width: 160px;
+    height: 120px;
+    outline: 1px dotted yellow;
+}
+
+.hero-logo-text {
+    margin-top: -35px;
+    margin-left: 30px;
+    width: 178px;
+    height: 86px;
+    line-height: 1.4;
+    font-family: var(--third-family);
+    /* font-weight: 400; */
+    font-size: 48px;
+    /* color: var(--color-light); */
+    outline: 1px solid red;
+}
+
+.hero-title {
+    margin-top: -46px;
+    margin-left: -9px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 144px;
+    line-height: 1.34;
+    /* color: var(--color-light); */
+    outline: 1px dashed wheat;
+}
+
+
+
+
 
 .buttons:hover {
     /*todo var.1 Зміна кольорів на кнопці при події hover */
