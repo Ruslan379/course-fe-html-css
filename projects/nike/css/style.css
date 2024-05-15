@@ -5,28 +5,25 @@
     --color-font-main: #c7c7c7;
     --color-font-second: #dcdcdc;
     --color-background-brand: #012d63;
+    --color-font-hover: #c76dff;
+
+    
 
 
 
     --color-dark: #000000;
-    --color-font-main: #141414;
-    --color-font-second: #0a3853;
     --color-active-link: #94cfff;
     --color-buttons: #26c6ea;
-    --color-buttons-hover: #71f3ff;
-    --color-background-buttons: #0B0E66;
-    --color-background-buttons-hover: #070648;
+    --color-buttons-text-hover: #71f3ff;
+    --color-buttons-background-hover: #070648;
     --color-background-gradient: rgba(43, 74, 97, 0.87);
     --color-background-light: #e7f6ff;
     --color-background-dictionary-card: rgba(255, 255, 255, 0.7);
     --color-background-dictionary-card-2: rgba(231, 246, 255, 0.55);
-
-    
-
     /** ================= fonts =================== */
-    --font-family: "Inter", sans-serif;
-    --second-family: "Headland One", sans-serif;
-    --third-family: "Hammersmith One", sans-serif;
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Playfair Display", sans-serif;
+    --third-family: "PT Serif", sans-serif;
 }
 
 /*! GENERAL */
@@ -47,6 +44,7 @@ body {
     margin: 0 auto;
     outline: 1px dashed tomato;
 }
+
 
 /*? header */
 .header {
@@ -81,49 +79,76 @@ body {
     gap: 29px;
 }
 
+.nav-item:last-child {
+    margin-left: -9px;
+}
+
 .nav-link {
     display: flex;
-    gap: 12px;
     /* font-family: var(--font-family); */
     font-weight: 300;
     font-size: 24px;
-    color: var(--color-font-second);
-    transition:
-        transform, color,
-        500ms
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        0ms;
+    line-height: 1.25;
+    color: var(--color-font-main);
+    /** анімація */
+    transition: 
+        transform,color, 
+        300ms 
+        ease-in-out;
+    /* outline: 2px dashed green; */
 }
 .nav-link:hover {
-    color: var(--color-buttons-hover);
+    color: var(--color-font-hover);
+    transform: scale(1.1);
+}
+
+/** блок кнопок-перемикачів мови */
+.lang-list {
+    gap: 12px;
+}
+
+.lang-link {
+    /* font-family: var(--font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--color-font-second);
+    /** анімація */
+    transition: 
+        transform,color, 
+        300ms 
+        ease-in-out;
+    /* outline: 2px dashed red; */
+}
+.lang-link:hover {
+    color: var(--color-font-hover);
     transform: scale(1.1);
 }
 
 .active-link {
-    font-weight: 600;
-    color: var(--color-active-link);
-}
-
-/** блок кнопок-перемикачів мови */
-
-
-.lang-link {
-    font-family: var(--third-family);
-    /* font-weight: 400; */ 
-    /* font-size: 16px; */
-    text-align: center;
+    font-weight: 400;
     color: var(--color-light);
-    transition:
-        transform, color,
-        500ms
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        0ms;
-}
-.lang-link:hover {
-    color: var(--color-buttons-hover);
-    transform: scale(1.1);
 }
 
+
+/*? main */
+/*? section hero */
+.hero {
+    padding-top: 180px;
+    padding-bottom: 179px;
+    /* background-color: gray; */
+    background-color: var(--color-background-light);
+    background-image:url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+.hero .flex {
+    justify-content: space-between;
+}
+/** _________________________________________________ */
 /** загальні стилі для головних кнопок */
 .buttons {
     font-family: var(--second-family);
@@ -188,24 +213,7 @@ body {
 }
 
 
-/*? main */
-/*? section hero */
-.hero {
-    padding-top: 180px;
-    padding-bottom: 179px;
-    /* background-color: gray; */
-    background-color: var(--color-background-light);
-    background-image:url(../images/hero-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center 0;
-    background-size: 1440px;
-}
 
-/** --- Додаткові flex-властивості до container ---- */
-.hero .flex {
-    justify-content: space-between;
-}
-/** _________________________________________________ */
 
 
 .hero-item {
