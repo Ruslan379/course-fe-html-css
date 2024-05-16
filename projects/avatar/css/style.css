@@ -190,7 +190,6 @@ body {
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         0ms;
 }
-
 .buttons:hover {
     /*todo var.1 Зміна кольорів на кнопці при події hover */
     /* color: var(--color-buttons-hover);

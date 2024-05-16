@@ -5,17 +5,16 @@
     --color-font-main: #c7c7c7;
     --color-font-second: #dcdcdc;
     --color-background-brand: #012d63;
-    --color-font-hover : #c76dff;
-
+    --color-brand-hover : #c33bde;
+    --color-buttons-background: #8e32c6;
+    --color-buttons-hover: #26c6ea;
     
 
 
 
     --color-dark: #000000;
     --color-active-link: #94cfff;
-    --color-buttons: #26c6ea;
     --color-buttons-text-hover: #71f3ff;
-    --color-buttons-background-hover: #070648;
     --color-background-gradient: rgba(43, 74, 97, 0.87);
     --color-background-light: #e7f6ff;
     --color-background-dictionary-card: rgba(255, 255, 255, 0.7);
@@ -98,7 +97,7 @@ body {
     /* outline: 2px dashed green; */
 }
 .nav-link:hover {
-    color: var(--color-font-hover);
+    color: var(--color-brand-hover);
     transform: scale(1.1);
 }
 
@@ -115,13 +114,13 @@ body {
     color: var(--color-font-second);
     /** анімація */
     transition: 
-        transform,color, 
+        transform, color,
         300ms 
         ease-in-out;
     /* outline: 2px dashed red; */
 }
 .lang-link:hover {
-    color: var(--color-font-hover);
+    color: var(--color-brand-hover);
     transform: scale(1.1);
 }
 
@@ -136,7 +135,7 @@ body {
 .hero {
     padding-top: 94px;
     padding-bottom: 183px;
-    height: 858px;
+    /* height: 858px; */
     background-color: var(--color-background-brand);
     background-image:url(../images/hero-background.jpg);
     background-repeat: no-repeat;
@@ -150,27 +149,13 @@ body {
 } */
 /*! Відсутні */
 /** _________________________________________________ */
-/** загальні стилі для головних кнопок */
-.buttons {
-    font-family: var(--second-family);
-    /* font-weight: 400; */
-    border: 2px solid var(--color-buttons);
-    border-radius: 35px 0;
-    color: var(--color-buttons);
-    background-color: var(--color-background-buttons);
-    transition:
-        color, border-color, background-color,
-        300ms
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        0ms;
-}
 
 .hero-logo{
     margin-left: 5px;
     display: block;
     width: 160px;
     height: 120px;
-    outline: 1px dotted yellow;
+    /* outline: 1px dotted yellow; */
 }
 
 .hero-logo-text {
@@ -183,7 +168,7 @@ body {
     /* font-weight: 400; */
     font-size: 48px;
     /* color: var(--color-light); */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .hero-title {
@@ -192,20 +177,59 @@ body {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 144px;
-    line-height: 1.34;
+    line-height: 1.33;
     /* color: var(--color-light); */
-    outline: 1px dashed wheat;
+    /* outline: 1px dashed wheat; */
 }
 
+.hero-title-second {
+    margin-top: -36px;
+    margin-bottom: 12px;
+    margin-left: -1px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.337;
+    /* color: var(--color-light); */
+    /* outline: 1px dashed #b3f5b3; */
+}
 
+.hero-text {
+    margin-bottom: 41px;
+    margin-left: -1px;
+    width: 508px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    /* color: var(--color-light); */
+    /* outline: 1px dashed #f5b3b3; */
+}
 
+/** загальні стилі для головних кнопок */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
+    font-family: var(--font-family);
+    /* font-weight: 400; */
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-light);
+    background-color: var(--color-buttons-background);
+    /** var.1 анімація */
+    /* transition:
+        color, border, background-color,
+        300ms
+        ease-in-out;  */
+}
 .buttons:hover {
-    /*todo var.1 Зміна кольорів на кнопці при події hover */
+    /** var.1 Зміна кольорів на кнопці при події hover */
     /* color: var(--color-buttons-hover);
-    border-color: var(--color-buttons-hover);
-    background-color: var(--color-background-buttons-hover); */
+    border: 1px solid var(--color-buttons-hover);
+    background-color: var(--color-brand-hover); */
     /*todo var.2 Анімація на кнопці при події hover */
     /*! 1.Назва анімації */
     animation-name: pulse-button;
@@ -219,114 +243,35 @@ body {
     animation-direction: normal;
     animation-direction: alternate;
 }
-/*todo Анімація на кнопці при події hover */
+/*todo var.2 Анімація на кнопці при події hover */
 @keyframes pulse-button {
     0% {
         transform: scale(1);
-        color: var(--color-buttons);
-        border-color: var(--color-buttons);
-        background-color: var(--color-background-buttons);
+        /* color: var(--color-buttons-hover); */
+        /* border: 1px solid var(--color-buttons-hover); */
+        /* background-color: var(--color-brand-hover); */
     }
     50% {
         transform: scale(1.05);
         color: var(--color-buttons-hover);
-        border-color: var(--color-buttons-hover);
-        background-color: var(--color-background-buttons-hover);
+        border: 1px solid var(--color-buttons-hover);
+        background-color: var(--color-brand-hover);
     }
     100% {
         transform: scale(1);
         /* transform: scale(0.9); */
-        color: var(--color-buttons);
-        border-color: var(--color-buttons);
-        background-color: var(--color-background-buttons);
+        /* color: var(--color-buttons-hover); */
+        /* border: 1px solid var(--color-buttons-hover); */
+        /* background-color: var(--color-brand-hover); */
     }
 }
 
-.header-button-link {
-    width: 141px;
-    padding: 9px 34px 8px;
-    font-size: 20px;
-    text-align: center;
-}
-
-
-
-
-
-.hero-item {
-    /* font-family: var(--font-family); */
-    /* font-weight: 400; */
-    font-size: 20px;
-    color: var(--color-light);
-}
-
-.hero-item:first-child {
-    width: 298px;
-    height: 96px;
-    margin-bottom: 40px;
-    /* outline: 1px dotted white; */
-}
-
-.hero-item:first-child::after {
-    content: "";
-    display: flex;
-    width: 152px;
-    height: 40px;
-    margin-top: 4px;
-    margin-left: 53px;
-    background-image: url(../images/hero-arrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    /* background-color: gray; */
-}
-
-.hero-item:last-child {
-    width: 376px;
-    height: 123px;
-    margin-bottom: 42px;
-    /* outline: 1px dotted white; */
-}
-
 .hero-button-link {
-    display: inline-block;
-    width: 260px;
-    height: 80px;
-    padding: 10px 31px 10px 30px;
-    font-size: 24px;
-    text-align: center;
-}
-/*! Інші стилі для ENG */
-.hero-button-eng {
-    padding: 25px 72px;
+    width: 254px;
+    height: 67px;
+    /* padding: 20px 61px 19px; */
 }
 
-.social-list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 2px;
-}
-
-.social-item:nth-child(1) {
-    margin-bottom: 24px;
-}
-.social-item:nth-child(2) {
-    margin-bottom: 27px;
-}
-
-.social-link svg {
-    transform: scale(1);
-    transition:
-        transform, fill,
-        500ms
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        0ms;
-    fill: var(--color-light);
-}
-.social-link:hover svg {
-    fill: var(--color-buttons-hover);
-    transform: scale(1.2);
-}
 
 /*? section first quote */
 /*? section second quote */
