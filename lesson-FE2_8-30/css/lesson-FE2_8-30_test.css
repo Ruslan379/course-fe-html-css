@@ -443,7 +443,7 @@ body {
 /* .part_6 {
     display: none;
 } */
-/*! 6.HW-30 */
+/*! 6.HW-30 (1-й варіант) */
 .part_6 .container {
     position: relative;
     width: 400px;
@@ -463,7 +463,6 @@ body {
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-delay: 1s;
-    /* animation-iteration-count: 4; */
     animation-iteration-count: infinite;
     /* animation-direction: alternate; */
 }
@@ -471,6 +470,7 @@ body {
 /** сценарій анімації */
 @keyframes element-movement {
     0% {
+        /*? ці властивості можна не задавати: */
         left: 0;
         top: 0;
         background-color: red;
@@ -510,6 +510,85 @@ body {
     100% {
         left: 0;
         top: 0;
+        background-color: red;
+    }
+}
+
+
+/*! =============================== */
+/* .part_7 {
+    display: none;
+} */
+/*! 7.HW-30 (2-й варіант) */
+.part_7 .container {
+    /* position: relative; */
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 234, 249);
+}
+
+.part_7 .container__box {
+    width: 100px;
+    height: 100px;
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    background-color: red;
+    /** Анімація-2 - шлях */
+    animation-name: element-movement;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+/** сценарій анімації */
+@keyframes element-movement {
+    0% {
+        /*? ці властивості можна не задавати: */
+        /* left: 0;
+        top: 0;
+        background-color: red; */
+    }
+
+    25% {
+        /* ✅ (1-й варіант) */
+        /* left: 0;
+        top: 300px; */
+        /* ✅ (2-й варіант) */
+        /* transform: translateY(300%); */
+        transform: translateY(300px);
+        background-color: blue;
+    }
+
+    50% {
+        /* ✅ (1-й варіант) */
+        /* left: 300px;
+        top: 300px; */
+        /* ✅ (2-й варіант) */
+        /* transform: translate(300%, 300%); */
+        transform: translate(300px, 300px);
+        background-color: green;
+    }
+
+    75% {
+        /* ✅ (1-й варіант) */
+        /* left: 300px;
+        top: 0; */
+        /* ✅ (2-й варіант) */
+        /* transform: translateX(300%); */
+        transform: translateX(300px);
+        background-color: yellow;
+        
+    }
+
+    100% {
+        /* ✅ (1-й варіант) */
+        /* left: 0;
+        top: 0; */
+        /* ✅ (2-й варіант) */
+        transform: translate(0);
         background-color: red;
     }
 }
