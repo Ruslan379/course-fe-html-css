@@ -1,4 +1,4 @@
-//! 1.Модальне вікно
+//! Бєк-дроп з модальним вікном
 (() => {
     const refs = {
         openModalBtn: document.querySelector("[data-modal-open]"),
