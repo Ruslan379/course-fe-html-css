@@ -878,20 +878,22 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 294px;
+    /* height: 294px; */
 }
 
 .card-text {
     position: absolute;
-    top: 0;
-    transform: translateY(100%);
+    /* todo var.1 */
+    /* top: 0; */
+    /* transform: translateY(100%); */
+    /* todo _____ */
     /* width: 100%; */
     /* height: 100%; */
     padding: 63px 24px;
     /* font-family: var(--font-family); */
     /* font-weight: 400; */
     font-size: 18px;
-    line-height: 1.56;
+    line-height: 1.555;
     letter-spacing: 0.03em;
     color: var(--color-light);
     background-color: var(--color-background-overlay);
@@ -902,7 +904,11 @@ body {
         cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-item:hover .card-text {
+    /* todo var.1 */
     transform: translateY(0);
+    /* todo var.2 */
+    /* transform: translateY(-294px); */
+    transform: translateY(-100%);
 }
 
 .card-text-box {
