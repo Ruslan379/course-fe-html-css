@@ -882,6 +882,7 @@ body {
 }
 
 .card-text {
+    /* z-index: 1; */
     position: absolute;
     /* todo var.1 */
     /* top: 0; */
