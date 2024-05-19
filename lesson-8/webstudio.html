@@ -84,15 +84,15 @@
                     <div class="container flex-column">
                         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                         <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
-                        <!--! Бєк-дроп з модальним вікном -->
-                        <div class="backdrop is-hidden" data-modal>
+                        <!--! Бєк-дроп з модальним вікном (приклад)-->
+                        <!-- <div class="backdrop is-hidden" data-modal>
                             <div class="modal">
                                 <button class="btn" data-modal-close>Закрити</button>
                                 <br />
                                 <br />
                                 <p class="modal-text">Тут буде ФОРМА:</p>
                                 <br />
-                                <!-- <form>
+                                <form>
                                     <label for="form-username">Ім’я</label>
                                     <input type="text" name="user-name" id="form-username"/>
                                     <br />
@@ -103,10 +103,10 @@
                                     <br />
                                     <br />
                                     <button type="submit">Підтвердити</button>
-                                </form> -->
+                                </form>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
                 <!--? section features -->
                 <section class="section-features">
@@ -504,7 +504,87 @@
                 </div>
             </footer>
         </div>
-        <!--! Скрипт модалки -->
+        <!--? HTML-код back-drop + modal -->
+        <div class="backdrop is-hidden" data-modal>
+            <!--? modal-window -->
+            <div class="modal">
+                <!--? close-button -->
+                <div class="modal__icon-box">
+                    <button class="modal__button-close" type="button" data-modal-close>
+                        <svg class="modal__icon-close" width="18" height="18">
+                            <use href="./images/icons.svg#icon-modal-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <!--? modal-title -->
+                <p class="modal__title">
+                    Залиште свої дані, ми вам передзвонимо
+                </p>
+                <!--? form -->
+                <form class="modal-form">
+                    <!--? name -->
+                    <div class="modal-form__field">
+                        <label class="modal-form__label" for="user-name">Ім'я</label>
+                        <div class="modal-field-wrap">
+                            <input type="text" class="modal-input" name="user-name" id="user-name">
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-modal-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <!--? phone -->
+                    <div class="modal-form__field">
+                        <label class="modal-form__label" for="user-phone">Телефон</label>
+                        <div class="modal-field-wrap">
+                            <input type="tel" class="modal-input" name="user-phone" id="user-phone">
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-modal-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <!--? email -->
+                    <div class="modal-form__field">
+                        <label class="modal-form__label" for="user-email">Пошта</label>
+                        <div class="modal-field-wrap">
+                            <input type="email" class="modal-input" name="user-email" id="user-email">
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="./images/icons.svg#icon-modal-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <!--? textarea -->
+                    <div class="modal-form__field">
+                        <label class="modal-form__label" for="user-text">Коментар</label>
+                        <textarea
+                            class="modal-text"
+                            id="user-text" 
+                            name="user-text"   
+                            placeholder="Введите текст"
+                        ></textarea>
+                    </div>
+                    <!--? checkbox -->
+                    <div class="modal-form__field">
+                        <input 
+                            class="modal-check visually-hidden"
+                            type="checkbox"
+                            id="privacy" value="privacy" 
+                            name="privacy" 
+                        >
+                        <label class="check-text" for="privacy">
+                            <span>
+                                <svg class="check-icon" width="11" height="8">
+                                    <use href="./images/icons.svg#icon-check"></use>
+                                </svg>
+                            </span>
+                            <span class="agreement">Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="submit">Умови договору</a></span>
+                        </label>
+                    </div>
+                    <!--? submit-button -->
+                    <button class="button-main btn-modal buttons" type="submit">Відправити</button>
+                </form>
+            </div>
+        </div>
+        <!--! Скрипт back-drop + moda -->
         <script src="./js/modal.js"></script>
     </body>
 </html>
