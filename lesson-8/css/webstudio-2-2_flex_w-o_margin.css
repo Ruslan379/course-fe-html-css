@@ -309,7 +309,7 @@ body {
 }
 
 /*! ++++++++ Бєк-дроп з модальним вікном (приклад) ++++++++ */
-.backdrop {
+/* .backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -344,11 +344,11 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-}
+} */
 /*! _______ Бєк-дроп з модальним вікном (приклад) _______ */
 
 
-/*? HTML-код back-drop + modal */
+/*todo +++++++ HTML-код: back-drop + modal +++++++ */
 .backdrop {
     position: fixed;
     top: 0;
@@ -362,7 +362,7 @@ body {
 .is-hidden {
     opacity: 0;
     pointer-events: none;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .no-scroll {
@@ -413,6 +413,8 @@ body {
 }
 
 
+
+/*todo _______ HTML-код: back-drop + modal _______ */
 
 
 /*? section features */
