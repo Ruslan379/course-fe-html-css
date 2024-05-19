@@ -310,7 +310,8 @@ body {
     background-color: red;
 }
 
-/*! Модальне вікно */
+/*! Бєк-дроп з модальним вікном (приклад) */
+/*? HTML-код back-drop + modal */
 .backdrop {
     position: fixed;
     top: 0;
