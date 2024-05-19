@@ -33,33 +33,37 @@
     </head>
 
     <body>
-        <h1>Урок-4. “Реалізація стилів для модальних вікон через позиціонування. Форми”</h1>
-
+        <h1 class="title-lesson">Урок-4. “Реалізація стилів для модальних вікон через позиціонування. Форми”</h1>
+        
+        
         <!--! 1.Бєк-дроп з модальним вікном -->
-        <h2 class="title-section">1.Бєк-дроп з модальним вікном</h2>
-        <button class="btn-open" data-modal-open>Відкрити модалку</button>
-        <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-                <button class="btn" data-modal-close>Закрити</button>
-                <br />
-                <br />
-                <p class="modal-text">Тут буде ФОРМА:</p>
-                <br />
-                <!-- <form>
-                    <label for="form-username">Ім’я</label>
-                    <input type="text" name="user-name" id="form-username"/>
+        <div class="part part_1">
+            <h2 class="title-section">1.Бєк-дроп з модальним вікном</h2>
+            <button class="btn-open" data-modal-open>Відкрити модалку</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="btn" data-modal-close>Закрити</button>
                     <br />
                     <br />
-                    <label for="form-useremail">Email</label>
-                    <input type="email" name="user-email" id="form-useremail"/>
+                    <p class="modal-text">Тут буде ФОРМА:</p>
                     <br />
-                    <br />
-                    <br />
-                    <button type="submit">Підтвердити</button>
-                </form> -->
+                    <!-- <form>
+                        <label for="form-username">Ім’я</label>
+                        <input type="text" name="user-name" id="form-username"/>
+                        <br />
+                        <br />
+                        <label for="form-useremail">Email</label>
+                        <input type="email" name="user-email" id="form-useremail"/>
+                        <br />
+                        <br />
+                        <br />
+                        <button type="submit">Підтвердити</button>
+                    </form> -->
+                </div>
             </div>
         </div>
-
+        
+        
         <!--? ========================= Модалка modal-2.js ============================== -->
         <!-- <button type="button" class="button-main buttons" data-open-modal>Заказать услугу</button> -->
         <div class="backdrop is-hidden" data-backdrop="">
@@ -77,166 +81,168 @@
             </div>
         </div>
         <!--? ========================= Модалка modal-2.js ============================== -->
-
-
+        
+        
         <!--! 2.Робота з формами -->
-        <h2 class="title-section">2.Робота з формами</h2>
-        <form class="js-form">
-            <!--? 2-1.Поля форми -->
-            <h3 class="title-subsection">2-1.Поля форми</h3>
-            <label for="username">Ім’я</label>
-            <input
-                class="input-name"
-                type="text"
-                name="user-name"
-                id="username"
-                placeholder="Jac7"
-                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
-                title="Вкажіть хоча б 1 символ верхнього регістру, 1 символ нижнього регістру англійскими літерами та 1 цифру "
-                required
-            />
-            <br />
-            <br />
-            <label>
-                Пароль
-                <input 
-                    type="password"
-                    name="user-password"
-                    minlength="3"
-                    maxlength="5"
+        <div class="part part_2">
+            <h2 class="title-section">2.Робота з формами</h2>
+            <form class="js-form">
+                <!--? 2-1.Поля форми -->
+                <h3 class="title-subsection">2-1.Поля форми</h3>
+                <label for="username">Ім’я</label>
+                <input
+                    class="input-name"
+                    type="text"
+                    name="user-name"
+                    id="username"
+                    placeholder="Jac7"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                    title="Вкажіть хоча б 1 символ верхнього регістру, 1 символ нижнього регістру англійскими літерами та 1 цифру "
                     required
                 />
-            </label>
-            <br />
-            <br />
-            <!--? 2-2.Чекбокси (прапорці) {inline} -->
-            <!-- <h3 class="title-subsection">2-2.Чекбокси (прапорці) {inline}</h3>
-            <fieldset class="fieldset">
-                <legend class="fieldset-title">Чекбокси {inline}</legend>
-                <input class="form-input" type="checkbox" name="topic" value="HTML" id="html">
-                <label class="form-label" for="html">HTML</label>
-
-                <input class="form-input" type="checkbox" name="topic" value="CSS" id="css">
-                <label class="form-label" for="css">CSS</label>
-
-                <input class="form-input" type="checkbox" name="topic" value="JS" id="js">
-                <label class="form-label" for="js">JS</label>
-
-                <label class="form-label">
+                <br />
+                <br />
+                <label>
+                    Пароль
+                    <input 
+                        type="password"
+                        name="user-password"
+                        minlength="3"
+                        maxlength="5"
+                        required
+                    />
+                </label>
+                <br />
+                <br />
+                <!--? 2-2.Чекбокси (прапорці) {inline} -->
+                <!-- <h3 class="title-subsection">2-2.Чекбокси (прапорці) {inline}</h3>
+                <fieldset class="fieldset">
+                    <legend class="fieldset-title">Чекбокси {inline}</legend>
+                    <input class="form-input" type="checkbox" name="topic" value="HTML" id="html">
+                    <label class="form-label" for="html">HTML</label>
+                
+                    <input class="form-input" type="checkbox" name="topic" value="CSS" id="css">
+                    <label class="form-label" for="css">CSS</label>
+                
+                    <input class="form-input" type="checkbox" name="topic" value="JS" id="js">
+                    <label class="form-label" for="js">JS</label>
+                
+                    <label class="form-label">
+                        <input
+                            class="form-input" 
+                            type="checkbox" 
+                            name="topic" 
+                            value="PHP"
+                        >
+                        PHP
+                    </label>
+                </fieldset>
+                <br>
+                <br> -->
+                <!--? 2-3.Чекбокси (прапорці) {block} -->
+                <!-- <h3 class="title-subsection">2-3.Чекбокси (прапорці) {block}</h3>
+                <fieldset class="fieldset">
+                    <label>
+                        1.
+                        <input 
+                            type="checkbox" 
+                            name="hobby" 
+                            value="music" 
+                            checked 
+                        />
+                        Music
+                    </label>
+                    <label>
+                        2.
+                        <input 
+                            type="checkbox" 
+                            name="hobby" 
+                            value="sports" 
+                        />
+                        Sports
+                    </label>
+                    <label>
+                        3.
+                        <input 
+                            type="checkbox" 
+                            name="hobby" 
+                            value="reading" 
+                        />
+                        Reading
+                    </label>
+                </fieldset>
+                <br>
+                <br> -->
+                <!--? 2-4.Радіо-кнопки (перемикачі) -->
+                <!-- <h3 class="title-subsection">2-4.Радіо-кнопки (перемикачі)</h3>
+                <p>Choose a color:</p>
+                <div class="checkbox-container" role="group">
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="color" 
+                            value="red" 
+                        />
+                        <span class="checkbox-label-description">Red</span>
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="color" 
+                            value="white" 
+                            checked 
+                        />
+                        <span class="checkbox-label-description">White</span>
+                    
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="color" 
+                            value="green" 
+                        />
+                        <span class="checkbox-label-description">Green</span>
+                    </label>
+                </div>
+                <br>
+                <br>
+                <label>
+                    Вкажіть ваш вік
                     <input
-                        class="form-input" 
-                        type="checkbox" 
-                        name="topic" 
-                        value="PHP"
-                    >
-                    PHP
-                </label>
-            </fieldset>
-            <br>
-            <br> -->
-            <!--? 2-3.Чекбокси (прапорці) {block} -->
-            <!-- <h3 class="title-subsection">2-3.Чекбокси (прапорці) {block}</h3>
-            <fieldset class="fieldset">
-                <label>
-                    1.
-                    <input 
-                        type="checkbox" 
-                        name="hobby" 
-                        value="music" 
-                        checked 
+                        class="input-age"
+                        type="number" 
+                        name="user-age"
+                        value="0" 
+                        min="16" 
+                        max="30"
                     />
-                    Music
                 </label>
-                <label>
-                    2.
-                    <input 
-                        type="checkbox" 
-                        name="hobby" 
-                        value="sports" 
-                    />
-                    Sports
-                </label>
-                <label>
-                    3.
-                    <input 
-                        type="checkbox" 
-                        name="hobby" 
-                        value="reading" 
-                    />
-                    Reading
-                </label>
-            </fieldset>
-            <br>
-            <br> -->
-            <!--? 2-4.Радіо-кнопки (перемикачі) -->
-            <!-- <h3 class="title-subsection">2-4.Радіо-кнопки (перемикачі)</h3>
-            <p>Choose a color:</p>
-            <div class="checkbox-container" role="group">
-                <label>
-                    <input 
-                        type="radio" 
-                        name="color" 
-                        value="red" 
-                    />
-                    <span class="checkbox-label-description">Red</span>
-                </label>
-                <label>
-                    <input 
-                        type="radio" 
-                        name="color" 
-                        value="white" 
-                        checked 
-                    />
-                    <span class="checkbox-label-description">White</span>
-
-                </label>
-                <label>
-                    <input 
-                        type="radio" 
-                        name="color" 
-                        value="green" 
-                    />
-                    <span class="checkbox-label-description">Green</span>
-                </label>
-            </div>
-            <br>
-            <br>
-            <label>
-                Вкажіть ваш вік
-                <input
-                    class="input-age"
-                    type="number" 
-                    name="user-age"
-                    value="0" 
-                    min="16" 
-                    max="30"
-                />
-            </label>
-            <br>
-            <br> -->
-            <!--? 2-5.Кнопка SUBMIT-button -->
-            <button class="button-submit" type="submit">
-                SUBMIT-button
-                <!-- <span class="button-text-1">SUBMIT-button</span> -->
-                <!-- <svg class="button-icon" width="40" height="64">
-                    <use href="../lesson-FE2_2-24/images/icons-sprite.svg#smartphone"></use>
-                </svg> -->
-                <!-- <span class="button-text-2">SUBMIT-button</span> -->
-            </button>
-            <!--? 2-6.Кнопка SUBMIT-input (поганий варіант)-->
-            <!-- <input class="button-submit" type="submit" value="SUBMIT-input"> -->
+                <br>
+                <br> -->
+                <!--? 2-5.Кнопка SUBMIT-button -->
+                <button class="button-submit" type="submit">
+                    SUBMIT-button
+                    <!-- <span class="button-text-1">SUBMIT-button</span> -->
+                    <!-- <svg class="button-icon" width="40" height="64">
+                        <use href="../lesson-FE2_2-24/images/icons-sprite.svg#smartphone"></use>
+                    </svg> -->
+                    <!-- <span class="button-text-2">SUBMIT-button</span> -->
+                </button>
+                <!--? 2-6.Кнопка SUBMIT-input (поганий варіант)-->
+                <!-- <input class="button-submit" type="submit" value="SUBMIT-input"> -->
+                
+                <!--? 4-1.enabled і disabled. Кнопка SUBMIT-button (disabled) -->
+                <!-- <button class="btn" disabled>Disabled button</button> -->
             
-            <!--? 4-1.enabled і disabled. Кнопка SUBMIT-button (disabled) -->
-            <!-- <button class="btn" disabled>Disabled button</button> -->
-
-            <!--? 4-1.enabled і disabled. Кнопка SUBMIT-input (disabled) -->
-            <!-- <input 
-                class="button-submit" 
-                type="submit"
-                value="SUBMIT-input (disabled)"
-                disabled
-            /> -->
-        </form>
+                <!--? 4-1.enabled і disabled. Кнопка SUBMIT-input (disabled) -->
+                <!-- <input 
+                    class="button-submit" 
+                    type="submit"
+                    value="SUBMIT-input (disabled)"
+                    disabled
+                /> -->
+            </form>
+        </div>
 
 
         <!--! 3.Стилізація форм -->
