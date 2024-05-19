@@ -17,13 +17,11 @@
     --color-clients: #AFB1B8;
     --color-background-activity-title: rgba(47, 48, 58, 0.8);
     --color-background-overlay: rgba(33, 150, 243, 0.9);
+    --color-background-backdrop: rgba(0, 0, 0, 0.2);
+    --color-border-button-close: rgba(0, 0, 0, 0.1);
     /* *========================================== */
     --color-background-another: #E5E5E5;
-    --color-background-backdrop: rgba(0, 0, 0, 0.2);
-    
-    /* *========================================== */
     --color-font-placeholder-modal: rgba(117, 117, 117, 0.5);
-    /* *========================================== */
     --color-border-modal: rgba(33, 33, 33, 0.2);
     /* *========================================== */
     --font-family: "Roboto", sans-serif;
@@ -310,8 +308,7 @@ body {
     background-color: red;
 }
 
-/*! Бєк-дроп з модальним вікном (приклад) */
-/*? HTML-код back-drop + modal */
+/*! ++++++++ Бєк-дроп з модальним вікном (приклад) ++++++++ */
 .backdrop {
     position: fixed;
     top: 0;
@@ -342,11 +339,80 @@ body {
     background-color: skyblue;
     transform: translate(-50%, -50%);
 }
+
 .modal .btn {
     position: absolute;
     top: 10px;
     right: 10px;
 }
+/*! _______ Бєк-дроп з модальним вікном (приклад) _______ */
+
+
+/*? HTML-код back-drop + modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-background-backdrop);
+    opacity: 1;
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* visibility: hidden; */
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: seashell;
+    transform: translate(-50%, -50%);
+}
+
+.modal__button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ;
+    border-radius: 50%;
+    color: var(--color-border-button-close);
+    fill: var(--color-dark);
+    background-color: var(--color-light);
+}
+.modal__button-close:hover {
+    fill: var(--color-brand-main);
+}
+
+.modal__title {
+    margin-bottom: 12px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--color-font-main);
+}
+
+
 
 
 /*? section features */
