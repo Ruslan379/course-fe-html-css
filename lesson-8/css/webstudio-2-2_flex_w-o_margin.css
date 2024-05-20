@@ -378,19 +378,23 @@ body {
     min-height: 581px;
     text-align: center;
     border-radius: 4px;
-    /* background-color: seashell; */
+    background-color: seashell;
+    /** Початковий стан */
     /* background-image:
         linear-gradient(
             to bottom,
-            #f44336 0%,
-            #09792b 25%,
-            #00b9ff 50%,
-            #ffb800 100%
+            red 0%,
+            orange 15%,
+            yellow 30%,
+            rgb(49, 128, 0) 45%,
+            skyblue 65%,
+            blue 80%,
+            violet 100%
         ); */
     transform: translate(-50%, -50%);
     /** Анімація-2 - шлях */
     animation-name: animation-background-color;
-    animation-duration: 10s;
+    animation-duration: 14s;
     animation-timing-function: linear;
     animation-delay: 1s;
     animation-iteration-count: infinite;
@@ -403,33 +407,83 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            #f44336 0%,
-            #09792b 25%,
-            #00b9ff 50%,
-            #ffb800 100%
+            red 0%,
+            orange 15%,
+            yellow 30%,
+            rgb(49, 128, 0) 45%,
+            skyblue 65%,
+            blue 80%,
+            violet 100%
         );
     }
 
-    33% {
+    17% {
         background-image:
         linear-gradient(
             to bottom,
-            #ffb800 0%,
-            #f44336 25%,
-            #09792b 50%,
-            #00b9ff 100%
+            violet 0%,
+            red 15%,
+            orange 30%,
+            yellow 45%,
+            rgb(49, 128, 0) 65%,
+            skyblue 80%,
+            blue 100%
         );
     }
 
-    66% {
+    34% {
         background-image:
         linear-gradient(
             to bottom,
-            #00b9ff 0%,
-            #ffb800 25%,
-            #f44336 50%,
-            #09792b 100%
-            
+            blue 0%,
+            violet 15%,
+            red 30%,
+            orange 45%,
+            yellow 65%,
+            rgb(49, 128, 0) 80%,
+            skyblue 100%
+        );
+    }
+
+    51% {
+        background-image:
+        linear-gradient(
+            to bottom,
+            skyblue 0%,
+            blue 15%,
+            violet 30%,
+            red 45%,
+            orange 65%,
+            yellow 80%,
+            rgb(49, 128, 0) 100%
+        );
+    }
+
+    68% {
+        background-image:
+        linear-gradient(
+            to bottom,
+            rgb(49, 128, 0) 0%,
+            skyblue 15%,
+            blue 30%,
+            violet 45%,
+            red 65%,
+            orange 80%,
+            yellow 100%
+        );
+    }
+
+    84% {
+        background-image:
+        linear-gradient(
+            to bottom,
+            yellow 0%,
+            rgb(49, 128, 0) 15%,
+            skyblue 30%,
+            blue 45%,
+            violet 65%,
+            red 80%,
+            orange 100%
         );
     }
 
@@ -437,25 +491,20 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            #09792b 0%,
-            #00b9ff 25%,
-            #ffb800 50%,
-            #f44336 100%
-            
-            
+            orange 0%,
+            yellow 15%,
+            rgb(49, 128, 0) 30%,
+            skyblue 45%,
+            blue 65%,
+            violet 80%,
+            red 100%
         );
     }
-
-    /* 100% {
-        background-image:
-        linear-gradient(
-            to bottom,
-            #f44336 0%,
-            #09792b 25%,
-            #00b9ff 50%,
-            #ffb800 100%
-        );
-    } */
+}
+/* ? +++++ Пауза в анімації +++++ */
+.modal:hover  {
+    cursor: grab;
+    animation-play-state: paused;
 }
 
 .modal__button-close {
