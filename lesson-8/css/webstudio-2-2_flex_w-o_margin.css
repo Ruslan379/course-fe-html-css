@@ -376,7 +376,6 @@ body {
     left: 50%;
     min-width: 528px;
     min-height: 581px;
-    text-align: center;
     border-radius: 4px;
     background-color: seashell;
     /** Початковий стан */
@@ -551,15 +550,15 @@ body {
 }
 
 .modal-form__label {
-    display: block;
+    display: inline-block;
     margin-bottom: 4px;
     /* font-family: var(--font-family); */
     /* font-weight: 400; */
     font-size: 12px;
     line-height: 1.17;
-    text-align: left;
     letter-spacing: 0.01em;
     color: var(--color-font-second);
+    /* outline: 1px solid orange;  */
 }
 
 .modal-field-wrap {
@@ -588,6 +587,16 @@ body {
 .modal-form__input:focus + .modal-form__icon{
     fill: var(--color-brand-main);
 }
+/* .modal-form__input:not(:placeholder-shown) {
+    border-color: orange;
+} */
+.modal-form__input:not(:placeholder-shown):required:invalid {
+    border-color: orangered;
+}
+.modal-form__input:not(:placeholder-shown):required:valid {
+    border-color: green;
+}
+
 /** Анімація-2 - шлях (при події hover) */
 .modal-form__label:hover ~ .modal-field-wrap > .modal-form__icon {
     /* fill: var(--color-brand-main); */
@@ -635,6 +644,15 @@ body {
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: var(--color-font-placeholder);
+}
+.modal-form__text:focus {
+    border-color: var(--color-brand-main);
+}
+.modal-form__text:not(:placeholder-shown) {
+    border-color: orange;
+}
+.modal-form__text:not(:placeholder-shown):valid {
+    border-color: green;
 }
 /** ++++ */
 .modal-form__label:hover + .modal-form__text::placeholder {
@@ -694,11 +712,11 @@ body {
 /*todo Приховуємо заговок */
 .visually-hidden {
     /** var. 1 */
-    display: none;
+    /* display: none; */
     /** var. 2 */
-    /* visibility: hidden;
+    visibility: hidden;
     pointer-events: none;
-    position: absolute; */
+    position: absolute;
 }
 
 .features-list {
