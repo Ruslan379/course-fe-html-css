@@ -594,7 +594,30 @@ body {
 .modal-form__input:focus + .modal-form__icon{
     fill: var(--color-brand-main);
 }
-
+/** +++++ */
+.modal-form__label:hover + .modal-field-wrap>.modal-form__icon {
+    /* fill: var(--color-brand-main); */
+    /** Анімація-2 - шлях (при події hover)*/
+    animation-name: pulse-icon; 
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*todo Анімація на кнопці при події hover */
+@keyframes pulse-icon {
+    0% {
+        fill: var(--color-font-main);
+    }
+    50% {
+        width: 24px;
+        height: 24px;
+        fill: var(--color-brand-main);
+    }
+    100% {
+        fill: var(--color-font-main);
+    }
+}
 /*todo _______ HTML-код: back-drop + modal _______ */
 
 
