@@ -720,13 +720,13 @@ body {
 .modal-form__check-icon-box:hover {
     border-color:  var(--color-brand-main);
 }
-
-.modal-form__check-icon {
-    fill: transparent;
-}
 .modal-form__check-input:checked + .modal-form__check-text > .modal-form__check-icon-box {
     background-color: var(--color-brand-main);
     border: none;
+}
+
+.modal-form__check-icon {
+    fill: transparent;
 }
 .modal-form__check-input:checked + .modal-form__check-text .modal-form__check-icon {
     fill: var(--color-light);
@@ -749,8 +749,23 @@ body {
 }
 /* _______________________ КОНЕЦ checkbox ___________ */
 
-
-/*todo _______ HTML-код: back-drop + modal _______ */
+.modal-form__button-submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 52px;
+    /* font-family: var(--font-family); */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    color: var(--color-light);
+    background-color: var(--color-brand-main);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+/*todo _______ КОНЕЦ HTML-код: back-drop + modal _______ */
 
 
 /*? section features */
