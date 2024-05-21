@@ -590,21 +590,21 @@
                         ></textarea>
                     </div>
                     <!--? checkbox -->
-                    <div class="modal-form__field">
+                    <div class="modal-form__field modal-form__field--position">
                         <input 
                             class="modal-form__check-input visually-hidden-"
                             type="checkbox"
                             id="privacy"
                             name="privacy"
-                            value="privacy" 
+                            required 
                         >
                         <label class="modal-form__check-text" for="privacy">
-                            <span>
-                                <svg class="check-icon" width="11" height="8">
+                            <div class="modal-form__check-icon-box">
+                                <svg class="modal-form__check-icon" width="11" height="8">
                                     <use href="./images/icons-sprite.svg#modal-input-check"></use>
                                 </svg>
-                            </span>
-                            <span class="modal-form__agreement">Погоджуюся з розсилкою та приймаю&nbsp;<a href="" class="modal-form__submit-text">Умови договору</a></span>
+                            </div>
+                            <span class="modal-form__agreement">Погоджуюся з розсилкою та приймаю&nbsp;<a class="modal-form__submit-text" href="#">Умови договору</a></span>
                         </label>
                     </div>
                     <!--? submit-button -->
