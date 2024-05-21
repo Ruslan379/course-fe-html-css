@@ -712,7 +712,6 @@ body {
     align-items: center;
     width: 16px;
     height: 15px;
-    
     /* border-radius: 3px; */
     border-radius: 50%;
     border: 2px solid var(--color-font-main);
