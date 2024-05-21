@@ -717,7 +717,7 @@ body {
     border-radius: 50%;
     border: 2px solid var(--color-font-main);
 }
-.modal-form__check-text:hover  .modal-form__check-icon-box {
+.modal-form__check-icon-box:hover {
     border-color:  var(--color-brand-main);
 }
 
@@ -730,9 +730,23 @@ body {
 }
 .modal-form__check-input:checked + .modal-form__check-text .modal-form__check-icon {
     fill: var(--color-light);
+    stroke: var(--color-light);
+    stroke-width: 4;
 }
 
-
+.modal-form__agreement {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-font-second);
+}
+.modal-form__agreement > .modal-form__submit-text {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-brand-main);
+}
 /* _______________________ КОНЕЦ checkbox ___________ */
 
 
