@@ -13,11 +13,4 @@
         refs.modal.classList.toggle("is-hidden");
         document.body.classList.toggle("no-scroll");
     }
-    
-    //! клік в бєкдроп
-    refs.backdrop.addEventListener("click", logBackdropClick);
-    
-    function logBackdropClick() {
-        console.log("Це клік в бєкдроп");
-    }
 })();
