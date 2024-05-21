@@ -712,17 +712,26 @@ body {
     align-items: center;
     width: 16px;
     height: 15px;
+    height: 16px;
     /* border-radius: 3px; */
     border-radius: 50%;
     border: 2px solid var(--color-font-main);
 }
-
-/* .modal-form__check-icon {
-    fill: transparent;
-} */
-.modal-form__check-text:hover  .modal-form__check-icon {
+.modal-form__check-text:hover  .modal-form__check-icon-box {
     border-color:  var(--color-brand-main);
 }
+
+.modal-form__check-icon {
+    fill: transparent;
+}
+.modal-form__check-input:checked + .modal-form__check-text > .modal-form__check-icon-box {
+    background-color: var(--color-brand-main);
+    border: none;
+}
+.modal-form__check-input:checked + .modal-form__check-text .modal-form__check-icon {
+    fill: var(--color-light);
+}
+
 
 /* _______________________ КОНЕЦ checkbox ___________ */
 
