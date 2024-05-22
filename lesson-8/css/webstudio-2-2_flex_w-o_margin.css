@@ -476,7 +476,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid ;
+    border: 1px solid var(--color-border-button-close);
     border-radius: 50%;
     color: var(--color-border-button-close);
     fill: var(--color-dark);
@@ -484,6 +484,9 @@ body {
 }
 .modal__button-close:hover {
     fill: var(--color-brand-main);
+    stroke: var(--color-brand-main);
+    stroke-width: 2;
+    border-color: var(--color-font-placeholder);
 }
 
 .modal__title {
@@ -499,6 +502,8 @@ body {
 
 .modal-form {
     background-color: inherit;
+    /** для анімації */
+    /* background-color: transparent; */
 }
 
 /* .modal-form__field {
@@ -654,7 +659,7 @@ body {
 .modal-form__check-input {
     position: absolute;
     left: 14px;
-    bottom: 1px;
+    bottom: 5px;
     z-index: -1;
 }
 
@@ -725,6 +730,11 @@ body {
     background-color: var(--color-brand-main);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+/** колір фону input та textarea */
+/* .modal-form input, 
+.modal-form textarea {
+    background-color: inherit;
+} */
 /*todo _______ КОНЕЦ HTML-код: backdrop + modal _______ */
 
 /*! ++++++++ Бєк-дроп з модальним вікном (приклад) ++++++++ */
