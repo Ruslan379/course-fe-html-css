@@ -453,6 +453,7 @@
             <!--? footer -->
             <footer class="footer">
                 <div class="container flex-footer">
+                    <!--! ===== div#1 Контактна інформація =====  -->
                     <div class="footer-address-box"> <!--todo +++++ 2 семеcтр +++++ -->
                         <!-- <a class="logo-link-footer" href="./">WebStudio</a> -->
                         <a class="logo" href="#">Web<span class="logo-light">Studio</span></a>
@@ -465,6 +466,7 @@
                         </address>
                     </div> <!--todo_____________________ -->
                     <!--todo +++++ 2 семеcтр +++++ -->
+                    <!--! ===== div#2 Список кнопок соціальних мереж =====  -->
                     <div class="footer-social-box">
                         <p class="footer-social-title">приєднуйтесь</p>
                         <!--todo Список соціальних контактів -->
@@ -500,6 +502,25 @@
                             </li>
                         </ul>
                     </div>
+                    <!--! ===== div#3 Форма "Підпишіться на розсилку" =====  -->
+                    <form class="form-subscr">
+                            <label class="form-subscr__label" for="subscr-email">Підпишіться на розсилку</label>
+                            <div class="form-subscr__field-box">
+                                <input
+                                    class="form-subscr__input"
+                                    type="email" 
+                                    name="user-subscr-email" 
+                                    id="subscr-email" 
+                                    placeholder="E-mail"
+                                />
+                                <button class="form-subscr__button" type="submit">
+                                    Підписатися
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons-sprite.svg#footer-subscr"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                    </form>
                     <!--todo_____________________ -->
                 </div>
             </footer>
