@@ -287,7 +287,7 @@ body {
 /*? Кнопка-догори (загальні стили) */
 .part_4 .arrow-button {
     /* ! */
-    /* position: fixed; */
+    position: fixed;
     top: 30px;
     right: 30px;
     align-self: flex-start;
