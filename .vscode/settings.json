@@ -17,6 +17,6 @@
         "/vscode/**"
     ],
     "liveSassCompile.settings.generateMap": true, // вмикаємо генерацію карти стилів
-    "liveServer.settings.port": 5500,
+    // "liveServer.settings.port": 5500,
     "liveSassCompile.settings.autoprefix": null // компілятор НЕ буде додавати префікси кросбраузерності для останніх N версій відомих браузерів
 }
