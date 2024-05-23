@@ -1,0 +1,595 @@
+// :root {
+    /*? =============== CSS-змінні ====================== */
+    /** ================= colors ================== */
+    $color-light: #FFFFFF;
+    // $color-light: #d0f3ff;
+    $color-font-main: #c7c7c7;
+    $color-font-second: #dcdcdc;
+    $color-background-brand: #012d63;
+    $color-brand-hover : #c33bde;
+    $color-buttons-background: #8e32c6;
+    $color-buttons-hover: #26c6ea;
+    
+
+    $color-dark: #000000;
+    $color-active-link: #94cfff;
+    $color-buttons-text-hover: #71f3ff;
+    $color-background-gradient: rgba(43, 74, 97, 0.87);
+    $color-background-light: #e7f6ff;
+    $color-background-dictionary-card: rgba(255, 255, 255, 0.7);
+    $color-background-dictionary-card-2: rgba(231, 246, 255, 0.55);
+    /** ================= fonts =================== */
+    $font-family: "Roboto", sans-serif;
+    $second-family: "Playfair Display", sans-serif;
+    $third-family: "PT Serif", sans-serif;
+// }
+
+/*! GENERAL */
+body {
+    padding-bottom: 10px;
+    font-family: $font-family;
+    color:$color-light;
+}
+
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    /* outline: 1px dashed #0ceb17; */
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    outline: 1px dashed tomato;
+}
+
+
+/*? header */
+.header {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: $color-background-brand;
+}
+
+/** $- Додаткові flex-властивості до container $$ */
+.flex,
+.navigation,
+.nav-list,
+.lang-list,
+.lang-item {
+    display: flex;
+    align-items: center;
+}
+/** _________________________________________________ */
+
+.navigation {
+    margin-right: 73px;
+}
+
+.header-logo{
+    /* width: 100px; */
+    /* height: 60px; */
+    margin-right: 152px;
+    /* outline: 1px dotted yellowgreen; */
+}
+
+.nav-list {
+    gap: 29px;
+}
+
+.nav-item:last-child {
+    margin-left: -9px;
+}
+
+.nav-link {
+    display: flex;
+    /* font-family:$font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $color-font-main;
+    /** анімація */
+    transition: 
+        transform,color, 
+        300ms 
+        ease-in-out;
+    /* outline: 2px dashed green; */
+}
+.nav-link:hover {
+    color: $color-brand-hover;
+    transform: scale(1.1);
+}
+
+/** блок кнопок-перемикачів мови */
+.lang-list {
+    gap: 12px;
+}
+
+.lang-link {
+    /* font-family:$font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $color-font-second;
+    /** анімація */
+    transition: 
+        transform, color,
+        300ms 
+        ease-in-out;
+    /* outline: 2px dashed red; */
+}
+.lang-link:hover {
+    color: $color-brand-hover;
+    transform: scale(1.1);
+}
+
+.active-link {
+    font-weight: 400;
+    color: $color-light;
+}
+
+
+/*? main */
+/*? section hero */
+.hero {
+    padding-top: 94px;
+    padding-bottom: 183px;
+    /* height: 858px; */
+    background-color: $color-background-brand;
+    background-image:url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
+
+/** $- Додаткові flex-властивості до container $$ */
+/* .hero .flex {
+    justify-content: space-between;
+} */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.hero-logo{
+    margin-left: 5px;
+    display: block;
+    width: 160px;
+    height: 120px;
+    /* outline: 1px dotted yellow; */
+}
+
+.hero-logo-text {
+    margin-top: -35px;
+    margin-left: 30px;
+    width: 178px;
+    height: 86px;
+    line-height: 1.4;
+    font-family: $third-family;
+    /* font-weight: 400; */
+    font-size: 48px;
+    /* color:$color-light); */
+    /* outline: 1px solid red; */
+}
+
+.hero-title {
+    margin-top: -46px;
+    margin-left: -9px;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 144px;
+    line-height: 1.33;
+    /* color:$color-light); */
+    /* outline: 1px dashed wheat; */
+}
+
+.hero-title-second {
+    margin-top: -36px;
+    margin-bottom: 12px;
+    margin-left: -1px;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 1.337;
+    /* color:$color-light); */
+    /* outline: 1px dashed #b3f5b3; */
+}
+
+.hero-text {
+    margin-bottom: 41px;
+    margin-left: -1px;
+    width: 508px;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    /* color:$color-light); */
+    /* outline: 1px dashed #f5b3b3; */
+}
+
+/** загальні стилі для головних кнопок */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: $font-family;
+    /* font-weight: 400; */
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    color: $color-light;
+    background-color: $color-buttons-background;
+    /** var.1 анімація */
+    /* transition:
+        color, border, background-color,
+        300ms
+        ease-in-out;  */
+}
+.buttons:hover {
+    /** var.1 Зміна кольорів на кнопці при події hover */
+    /* color:$color-buttons-hover);
+    border: 1px solid$color-buttons-hover);
+    background-color:$color-brand-hover); */
+    /*todo var.2 Анімація на кнопці при події hover */
+    /*! 1.Назва анімації */
+    animation-name: pulse-button;
+    /*! 2.Тривалість анімації */   
+    animation-duration: 2s;
+    /*! 3.Функція розподілу часу */
+    animation-timing-function: ease-in-out;
+    /*! 5.Кількість повних повторень анімації - постійно */
+    animation-iteration-count: infinite;
+    /*! 6.Напрямок відтворення анімації*/
+    animation-direction: normal;
+    animation-direction: alternate;
+}
+/*todo var.2 Анімація на кнопці при події hover */
+@keyframes pulse-button {
+    0% {
+        transform: scale(1);
+        /* color:$color-buttons-hover); */
+        /* border: 1px solid$color-buttons-hover); */
+        /* background-color:$color-brand-hover); */
+    }
+    50% {
+        transform: scale(1.05);
+        color: $color-buttons-hover;
+        border: 1px solid $color-buttons-hover;
+        background-color: $color-brand-hover;
+    }
+    100% {
+        transform: scale(1);
+        /* transform: scale(0.9); */
+        /* color:$color-buttons-hover); */
+        /* border: 1px solid$color-buttons-hover); */
+        /* background-color:$color-brand-hover); */
+    }
+}
+
+.hero-button-link {
+    width: 254px;
+    height: 67px;
+    /* padding: 20px 61px 19px; */
+}
+
+
+/*? section first quote */
+/*? section second quote */
+/*? section third quote */
+.quote {
+    padding-top: 75px;
+    padding-bottom: 10px;
+    background-color: $color-background-light;
+}
+
+/** $- Додаткові flex-властивості до container $$ */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-width {
+    width: 1100px;
+    /* outline: 1px dashed tomato; */
+}
+/** _________________________________________________ */
+
+/*todo ================== var. 1 ✅======================= */
+.quote-text-item {
+    height: 44px;
+    /* font-family:$font-family); */
+    /* font-weight: 400; */
+    font-size: 36px;
+    text-align: center;
+    /* color:$color-font-main); */
+}
+.quote-text-item:first-child {
+    margin-bottom: 4px;
+}
+.quote-text-item:last-child {
+    margin-bottom: 16px;
+}
+
+.first .quote-text-item {
+    color: $color-font-second;
+}
+/*todo __________________ var. 1 _______________________ */
+
+/*todo ================== var. 2 ❌======================= */
+.quote-text {
+    height: 92px;
+    margin-bottom: 16px;
+    /* font-family:$font-family); */
+    font-weight: 400;  /* ! тут треба, бо це - h2 */
+    font-size: 36px;
+    line-height: 1.3;
+    text-align: center;
+    /* color:$color-font-main); */
+}
+
+.first .quote-text {
+    color: $color-font-second;
+}
+/*todo __________________ var. 2 _______________________ */
+
+.quote-author {
+    /* font-family:$font-family); */
+    /* font-weight: 400; */
+    font-size: 24px;
+    text-align: center;
+    color: $color-dark;
+}
+
+.quote-author::after {
+    content: "";
+    display: block;
+    width: 400px;
+    height: 120px;
+    margin-top: 8px;
+    background-image: url(../images/quote-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: lightslategray; */
+}
+
+
+/*? section trailer */
+.trailer {
+    height:741px;
+    /* background-color: gray; */
+    background-color: $color-background-light;
+    background-image:url(../images/trailer-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
+
+/** $- Додаткові flex-властивості до container $$ */
+.trailer .container.flex {
+    height: 100%;
+    /* display: flex;  */ /*! ці властивості задані раніше */
+    justify-content: center;
+    /* align-items: center; */ /*! ці властивості задані раніше */
+}
+/** _________________________________________________ */
+
+.trailer-button-link {
+    width: 260px;
+    height: 80px;
+    /*todo з макету: */
+    /* padding: 25px 20px 25px 19px; */
+    /*todo так краще: */
+    padding: 24px 25px 24px 25px;
+    font-size: 24px;
+    text-align: center;
+}
+/*! Інші стилі для ENG */
+.trailer-button-eng {
+    /*todo з макету: */
+    /* padding: 25px 18px 25px 17px; */
+    /*todo так краще: */
+    padding: 24px 15px 24px 16px;
+}
+
+
+/*? section second quote */
+
+
+/*? section dictionary */
+.dictionary {
+    padding-top: 58px;
+    padding-bottom: 57px;
+    /* background-color: gray; */
+    background-color: $color-background-light;
+    background-image:url(../images/dictionary-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
+
+/** $- Додаткові flex-властивості до container $$ */
+/* .flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+/*! Відсутні */
+/** _________________________________________________ */
+
+.dictionary-title {
+    height: 40px;
+    margin-bottom: 45px;
+    font-family: $second-family;
+    /* font-weight: 400; */
+    font-size: 32px;
+    text-align: center;
+    /* color:$color-font-main); */
+}
+
+.dictionary-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 37px;
+    row-gap: 24px;
+    /* outline: 1px solid yellow; */
+}
+
+.dictionary-item {
+    /* width: 320px;
+    height: 240px; */
+    flex-basis: calc((100% - 74px) / 3);
+    padding-top: 36px;
+    padding-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px 0;
+    background: $color-background-dictionary-card-2;
+    box-shadow: 4px 4px 6px rgba(0, 82, 189, 0.7);
+}
+
+.dictionary-text:first-child {
+    /*todo var. 1 */
+    /* text-align: center; */
+
+    /*todo var. 2 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 40px;
+    /* outline: 1px dotted rgb(57, 57, 57); */
+}
+
+.dictionary-text:first-child::after {
+    content: "";
+    /*todo var. 1 */
+    /* display: block;
+    min-width: 152px;
+    background-size: 152px 40px; */
+
+    /*todo var. 2 */
+    width: 152px;
+    
+    height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    /* transform: rotate(-180deg); */
+    /* background-image: url(../images/dictionary-arrow-left.png); */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: gray; */
+}
+
+.dictionary-item:nth-child(3n + 1) .dictionary-text:first-child::after {
+    background-image: url(../images/dictionary-arrow-left.png);
+    /* background-color: tomato; */
+}
+
+.dictionary-item:nth-child(3n + 2) .dictionary-text:first-child::after {
+    background-image: url(../images/dictionary-img-center.png);
+    /* background-color: yellow; */
+}
+
+.dictionary-item:nth-child(3n + 3) .dictionary-text:first-child::after {
+    /*todo var. 1 */
+    /* background-image: url(../images/dictionary-arrow-right.png); */
+    /*todo var. 2 */
+    transform: rotate(-180deg);
+    background-image: url(../images/dictionary-arrow-left.png);
+    /* background-color: rgb(0, 255, 81); */
+}
+
+.dictionary-text {
+    font-family: $second-family;
+    /* font-weight: 400; */
+    font-size: 24px;
+    line-height: 100%;
+    /* text-align: justify; */
+    /* color:$color-font-main); */
+}
+
+
+/*? section third quote */
+
+
+/*? footer */
+.footer {
+    padding-top: 35px;
+    padding-bottom: 31px;
+    /* background-color: gray; */
+    background-color: $color-background-light;
+    background-image:
+        linear-gradient(
+            $color-background-gradient,
+            $color-background-gradient
+        ),
+        url(../images/footer-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
+
+.box-logo-address {
+    height: 153px;
+    display: flex;
+    align-items: center;
+    /* outline: 1px solid green; */
+}
+
+.footer-logo {
+    width: 183px;
+    height: 70px;
+    margin-right: 80px;
+    /* outline: 2px dotted violet; */
+}
+
+.address {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-style: normal;
+}
+
+.address::before {
+    content: "";
+    width: 2px;
+    height: 100%;
+    margin-right: 80px;
+    background-color: $color-light;
+}
+
+.mails-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 0.93;
+}
+
+.mails-text,
+.mails-svg {
+    margin-right: 20px;
+    color: $color-light;
+}
+
+.mails-link {
+    color: $color-light;
+    transition:
+        transform, color,
+        500ms
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        0ms;
+}
+.mails-link:hover {
+    color: $color-buttons-hover;
+    transform: scale(1.1);
+}
+
+.copywrite {
+    margin-top: -5px;
+    margin-left: 474px;
+    font-size: 14px;
+    line-height: 0.65;
+    color: $color-light;
+}
+
