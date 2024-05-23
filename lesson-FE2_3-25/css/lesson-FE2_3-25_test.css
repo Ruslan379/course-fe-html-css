@@ -288,9 +288,9 @@ body {
 .part_4 .arrow-button {
     /* ! */
     /* position: fixed; */
-    top: 30px;
+    /* top: 30px; */
     right: 30px;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     display: inline-block;
     margin: 0;
     padding: 10px;
@@ -303,9 +303,14 @@ body {
     background-color: #a2cfff;
     cursor: pointer;
 }
+/* ? Кнопка-догори */
+.part_4 .up-button {
+    top: 30px;
+}
+
 /* ? Кнопка-донизу */
-.part_4 .arrow-button.down-button {
-    align-self: flex-end;
+.part_4 .down-button {
+    /* align-self: flex-end; */
     bottom: 30px;
 }
 
