@@ -9,134 +9,68 @@
     background-repeat: no-repeat;
     background-position: center 0;
     background-size: 1440px;
-}
-
-/** $- Додаткові flex-властивості до container $$ */
-/* .hero .flex {
-    justify-content: space-between;
-} */
-/*! Відсутні */
-/** _________________________________________________ */
-
-.hero-logo{
-    margin-left: 5px;
-    display: block;
-    width: 160px;
-    height: 120px;
-    /* outline: 1px dotted yellow; */
-}
-
-.hero__logo-text {
-    margin-top: -35px;
-    margin-left: 30px;
-    width: 178px;
-    height: 86px;
-    line-height: 1.4;
-    font-family: $third-family;
-    /* font-weight: 400; */
-    font-size: 48px;
-    /* color:$color-light); */
-    /* outline: 1px solid red; */
-}
-
-.hero__title {
-    margin-top: -46px;
-    margin-left: -9px;
-    font-family: $second-family;
-    font-weight: 400;
-    font-size: 144px;
-    line-height: 1.33;
-    /* color:$color-light); */
-    /* outline: 1px dashed wheat; */
-}
-
-.hero__title-second {
-    margin-top: -36px;
-    margin-bottom: 12px;
-    margin-left: -1px;
-    font-family: $second-family;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 1.337;
-    /* color:$color-light); */
-    /* outline: 1px dashed #b3f5b3; */
-}
-
-.hero__text {
-    margin-bottom: 41px;
-    margin-left: -1px;
-    width: 508px;
-    font-family: $font-family;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.17;
-    /* color:$color-light); */
-    /* outline: 1px dashed #f5b3b3; */
-}
-
-/** загальні стилі для головних кнопок */
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: $font-family;
-    /* font-weight: 400; */
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    color: $color-light;
-    background-color: $color-buttons-background;
-    /** var.1 анімація */
-    /* transition:
-        color, border, background-color,
-        300ms
-        ease-in-out;  */
-}
-.buttons:hover {
-    /** var.1 Зміна кольорів на кнопці при події hover */
-    /* color:$color-buttons-hover);
-    border: 1px solid$color-buttons-hover);
-    background-color:$color-brand-hover); */
-    /*todo var.2 Анімація на кнопці при події hover */
-    /*! 1.Назва анімації */
-    animation-name: pulse-button;
-    /*! 2.Тривалість анімації */   
-    animation-duration: 2s;
-    /*! 3.Функція розподілу часу */
-    animation-timing-function: ease-in-out;
-    /*! 5.Кількість повних повторень анімації - постійно */
-    animation-iteration-count: infinite;
-    /*! 6.Напрямок відтворення анімації*/
-    animation-direction: normal;
-    animation-direction: alternate;
-}
-/*todo var.2 Анімація на кнопці при події hover */
-@keyframes pulse-button {
-    0% {
-        transform: scale(1);
-        /* color:$color-buttons-hover); */
-        /* border: 1px solid$color-buttons-hover); */
-        /* background-color:$color-brand-hover); */
+    
+    .hero-logo {
+        margin-left: 5px;
+        display: block;
+        width: 160px;
+        height: 120px;
+        // outline: 1px dotted yellow;
     }
-    50% {
-        transform: scale(1.05);
-        color: $color-buttons-hover;
-        border: 1px solid $color-buttons-hover;
-        background-color: $color-brand-hover;
+
+    &__logo-text {
+        margin-top: -35px;
+        margin-left: 30px;
+        width: 178px;
+        height: 86px;
+        line-height: 1.4;
+        font-family: $third-family;
+        // font-weight: 400;
+        font-size: 48px;
+        // color: $color-light;
+        // outline: 1px solid red;
     }
-    100% {
-        transform: scale(1);
-        /* transform: scale(0.9); */
-        /* color:$color-buttons-hover); */
-        /* border: 1px solid$color-buttons-hover); */
-        /* background-color:$color-brand-hover); */
+
+    &__title {
+        margin-top: -46px;
+        margin-left: -9px;
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 144px;
+        line-height: 1.33;
+        // color: $color-light;
+        // outline: 1px dashed wheat;
+    }
+
+    &__title-second {
+        margin-top: -36px;
+        margin-bottom: 12px;
+        margin-left: -1px;
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 1.337;
+        // color: $color-light;
+        // outline: 1px dashed #b3f5b3;
+    }
+
+    &__text {
+        margin-bottom: 41px;
+        margin-left: -1px;
+        width: 508px;
+        font-family: $font-family;
+        // font-weight: 400;
+        font-size: 18px;
+        line-height: 1.17;
+        // color: red;
+        // color: $color-light;
+        /* outline: 1px dashed #f5b3b3; */
+    }
+
+    &__button-link {
+        @extend %buttons;
+        width: 254px;
+        height: 67px;
+        // padding: 20px 61px 19px;
     }
 }
-
-.hero__button-link {
-    width: 254px;
-    height: 67px;
-    /* padding: 20px 61px 19px; */
-}
-

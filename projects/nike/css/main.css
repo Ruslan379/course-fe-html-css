@@ -48,6 +48,39 @@ body {
   color: #FFFFFF;
 }
 
+.hero__button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #8e32c6;
+}
+.hero__button-link:hover {
+  animation-name: pulse-button;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes pulse-button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    color: #26c6ea;
+    border: 1px solid #26c6ea;
+    background-color: #c33bde;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* =====================  ОСНОВНІ Контейнери  ===================== */
 .main-container {
   width: 1440px;
@@ -138,21 +171,12 @@ body {
   background-position: center 0;
   background-size: 1440px;
 }
-
-/** $- Додаткові flex-властивості до container $$ */
-/* .hero .flex {
-    justify-content: space-between;
-} */
-/*! Відсутні */
-/** _________________________________________________ */
-.hero-logo {
+.hero .hero-logo {
   margin-left: 5px;
   display: block;
   width: 160px;
   height: 120px;
-  /* outline: 1px dotted yellow; */
 }
-
 .hero__logo-text {
   margin-top: -35px;
   margin-left: 30px;
@@ -160,12 +184,8 @@ body {
   height: 86px;
   line-height: 1.4;
   font-family: "PT Serif", sans-serif;
-  /* font-weight: 400; */
   font-size: 48px;
-  /* color:$color-light); */
-  /* outline: 1px solid red; */
 }
-
 .hero__title {
   margin-top: -46px;
   margin-left: -9px;
@@ -173,10 +193,7 @@ body {
   font-weight: 400;
   font-size: 144px;
   line-height: 1.33;
-  /* color:$color-light); */
-  /* outline: 1px dashed wheat; */
 }
-
 .hero__title-second {
   margin-top: -36px;
   margin-bottom: 12px;
@@ -185,86 +202,19 @@ body {
   font-weight: 400;
   font-size: 72px;
   line-height: 1.337;
-  /* color:$color-light); */
-  /* outline: 1px dashed #b3f5b3; */
 }
-
 .hero__text {
   margin-bottom: 41px;
   margin-left: -1px;
   width: 508px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
-  /* color:$color-light); */
   /* outline: 1px dashed #f5b3b3; */
-}
-
-/** загальні стилі для головних кнопок */
-.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  /* font-weight: 400; */
-  font-size: 24px;
-  border: none;
-  border-radius: 10px;
-  color: #FFFFFF;
-  background-color: #8e32c6;
-  /** var.1 анімація */
-  /* transition:
-      color, border, background-color,
-      300ms
-      ease-in-out;  */
-}
-
-.buttons:hover {
-  /** var.1 Зміна кольорів на кнопці при події hover */
-  /* color:$color-buttons-hover);
-  border: 1px solid$color-buttons-hover);
-  background-color:$color-brand-hover); */
-  /*todo var.2 Анімація на кнопці при події hover */
-  /*! 1.Назва анімації */
-  animation-name: pulse-button;
-  /*! 2.Тривалість анімації */
-  animation-duration: 2s;
-  /*! 3.Функція розподілу часу */
-  animation-timing-function: ease-in-out;
-  /*! 5.Кількість повних повторень анімації - постійно */
-  animation-iteration-count: infinite;
-  /*! 6.Напрямок відтворення анімації*/
-  animation-direction: normal;
-  animation-direction: alternate;
-}
-
-/*todo var.2 Анімація на кнопці при події hover */
-@keyframes pulse-button {
-  0% {
-    transform: scale(1);
-    /* color:$color-buttons-hover); */
-    /* border: 1px solid$color-buttons-hover); */
-    /* background-color:$color-brand-hover); */
-  }
-  50% {
-    transform: scale(1.05);
-    color: #26c6ea;
-    border: 1px solid #26c6ea;
-    background-color: #c33bde;
-  }
-  100% {
-    transform: scale(1);
-    /* transform: scale(0.9); */
-    /* color:$color-buttons-hover); */
-    /* border: 1px solid$color-buttons-hover); */
-    /* background-color:$color-brand-hover); */
-  }
 }
 .hero__button-link {
   width: 254px;
   height: 67px;
-  /* padding: 20px 61px 19px; */
 }
 
 /*? main */
