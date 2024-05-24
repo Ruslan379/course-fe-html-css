@@ -1,0 +1,40 @@
+/* =====================  ОСНОВНІ Контейнери  ===================== */
+.main-container {
+    width: 1440px;
+    margin: 0 auto;
+    // outline: 1px dashed #0ceb17;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    outline: 1px dashed tomato;
+
+    // Додаткові flex-властивості до container
+    // &.flex{
+    //         display: flex;
+    //         align-items: center;
+    // }
+}
+
+
+/* =================== flex - контейнеры (________)==================== */
+// .flex {
+//     display: flex;
+// }
+
+// .flex-center {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .flex-space-between {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .flex-spacebetween-center {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+// }

@@ -5,23 +5,7 @@ body {
     color:$color-light;
 }
 
-.main-container {
-    width: 1440px;
-    margin: 0 auto;
-    /* outline: 1px dashed #0ceb17; */
-}
 
-.container {
-    width: 1110px;
-    margin: 0 auto;
-    outline: 1px dashed tomato;
-
-    // Додаткові flex-властивості до container
-    // &.flex{
-    //         display: flex;
-    //         align-items: center;
-    // }
-}
 
 
 /*? header (SASS)*/
@@ -31,7 +15,7 @@ body {
     background-color: $color-background-brand;
 
     .container {
-        // Додаткові flex-властивості до container
+        //! Додаткові flex-властивості до container
         &.flex {
             display: flex;
             align-items: center;
@@ -72,13 +56,13 @@ body {
                         300ms 
                         ease-in-out;
                     // outline: 2px dashed green;
-                    &:hover {
-                        color: $color-brand-hover;
-                        transform: scale(1.1);
-                    }
                     &.active-link {
                         font-weight: 400;
                         color: $color-light;
+                    }
+                    &:hover {
+                        color: $color-brand-hover;
+                        transform: scale(1.1);
                     }
                 }
             }
@@ -97,13 +81,13 @@ body {
                         300ms 
                         ease-in-out;
                     // outline: 2px dashed red;
-                    &:hover {
-                        color: $color-brand-hover;
-                        transform: scale(1.1);
-                    }
                     &.active-link {
                         font-weight: 400;
                         color: $color-light;
+                    }
+                    &:hover {
+                        color: $color-brand-hover;
+                        transform: scale(1.1);
                     }
                 }
             }
