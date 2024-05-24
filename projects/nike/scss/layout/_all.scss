@@ -1,6 +1,6 @@
 /*? main */
 /*? section hero */
-.hero {
+.hero- {
     padding-top: 94px;
     padding-bottom: 183px;
     /* height: 858px; */
@@ -18,7 +18,7 @@
 /*! Відсутні */
 /** _________________________________________________ */
 
-.hero-logo{
+.hero-logo-{
     margin-left: 5px;
     display: block;
     width: 160px;
@@ -26,7 +26,7 @@
     /* outline: 1px dotted yellow; */
 }
 
-.hero-logo-text {
+.hero-logo-text- {
     margin-top: -35px;
     margin-left: 30px;
     width: 178px;
@@ -39,7 +39,7 @@
     /* outline: 1px solid red; */
 }
 
-.hero-title {
+.hero-title- {
     margin-top: -46px;
     margin-left: -9px;
     font-family: $second-family;
@@ -50,7 +50,7 @@
     /* outline: 1px dashed wheat; */
 }
 
-.hero-title-second {
+.hero-title-second- {
     margin-top: -36px;
     margin-bottom: 12px;
     margin-left: -1px;
@@ -62,7 +62,7 @@
     /* outline: 1px dashed #b3f5b3; */
 }
 
-.hero-text {
+.hero-text- {
     margin-bottom: 41px;
     margin-left: -1px;
     width: 508px;
@@ -75,7 +75,7 @@
 }
 
 /** загальні стилі для головних кнопок */
-.buttons {
+.buttons- {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +93,7 @@
         300ms
         ease-in-out;  */
 }
-.buttons:hover {
+.buttons-:hover {
     /** var.1 Зміна кольорів на кнопці при події hover */
     /* color:$color-buttons-hover);
     border: 1px solid$color-buttons-hover);
@@ -112,7 +112,7 @@
     animation-direction: alternate;
 }
 /*todo var.2 Анімація на кнопці при події hover */
-@keyframes pulse-button {
+@keyframes pulse-button- {
     0% {
         transform: scale(1);
         /* color:$color-buttons-hover); */
@@ -134,7 +134,7 @@
     }
 }
 
-.hero-button-link {
+.hero-button-link- {
     width: 254px;
     height: 67px;
     /* padding: 20px 61px 19px; */
