@@ -1,23 +1,22 @@
 @import "./utils/variables";
 @import "./base/reset";
-// @import "./base/common";
+@import "./base/common";
 // @import "./utils/hidden";
 // @import "./utils/plaseholders";
 // @import "./utils/mixins";
 // @import "./utils/breakpoints";
 
 @import "./components/containers";
-@import "./components/all";
 // @import "./components/logo";
 // @import "./components/button";
 // @import "./components/modal";
 // @import "./components/title";
 
-// @import "./layout/00-header";
-// @import "./layout/01-hero";
-// @import "./layout/02-features";
-// @import "./layout/03-activities";
-// @import "./layout/04-team";
-// @import "./layout/05-clients";
-// @import "./layout/06-footer";
-// @import "./layout/10-projects";
+@import "./layout/01-header";
+// @import "./layout/02-hero";
+// @import "./layout/03-features";
+// @import "./layout/04-activities";
+// @import "./layout/05-team";
+// @import "./layout/06-clients";
+// @import "./layout/07-footer";
+@import "./layout/all";

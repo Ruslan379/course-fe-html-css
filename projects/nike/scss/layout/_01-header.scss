@@ -1,0 +1,164 @@
+/*? header (SASS)*/
+.header {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: $color-background-brand;
+
+    .container {
+        //! Додаткові flex-властивості до container
+        &.flex {
+            display: flex;
+            align-items: center;
+
+            .navigation,
+            .nav-list,
+            .lang-list,
+            .lang-item {
+                display: flex;
+                align-items: center;
+            }
+        
+            .navigation {
+                margin-right: 73px;
+            }
+        
+            .header-logo{
+                margin-right: 152px;
+                // outline: 1px dotted yellowgreen; 
+            }
+        
+            .nav-list {
+                gap: 29px;
+            
+                .nav-item:last-child {
+                    margin-left: -9px;
+                }
+            
+                .nav-link {
+                    display: flex;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 1.25;
+                    color: $color-font-main;
+                    /** анімація */
+                    transition: 
+                        transform,color, 
+                        300ms 
+                        ease-in-out;
+                    // outline: 2px dashed green;
+                    &.active-link {
+                        font-weight: 400;
+                        color: $color-light;
+                    }
+                    &:hover {
+                        color: $color-brand-hover;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        
+            .lang-list {
+                gap: 12px;
+            
+                .lang-link {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 1.25;
+                    color: $color-font-second;
+                    /** анімація */
+                    transition: 
+                        transform, color,
+                        300ms 
+                        ease-in-out;
+                    // outline: 2px dashed red;
+                    &.active-link {
+                        font-weight: 400;
+                        color: $color-light;
+                    }
+                    &:hover {
+                        color: $color-brand-hover;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** $- Додаткові flex-властивості до container $$ */
+// .flex,
+// .navigation,
+// .nav-list,
+// .lang-list,
+// .lang-item {
+//     display: flex;
+//     align-items: center;
+// }
+/** _________________________________________________ */
+
+// .navigation {
+//     margin-right: 73px;
+// }
+
+.header-logo-{
+    /* width: 100px; */
+    /* height: 60px; */
+    margin-right: 152px;
+    /* outline: 1px dotted yellowgreen; */
+}
+
+// .nav-list {
+//     gap: 29px;
+// }
+
+// .nav-item:last-child {
+//     margin-left: -9px;
+// }
+
+.nav-link- {
+    display: flex;
+    /* font-family:$font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $color-font-main;
+    /** анімація */
+    transition: 
+        transform,color, 
+        300ms 
+        ease-in-out;
+    /* outline: 2px dashed green; */
+}
+.nav-link-:hover {
+    color: $color-brand-hover;
+    transform: scale(1.1);
+}
+
+/** блок кнопок-перемикачів мови */
+// .lang-list {
+//     gap: 12px;
+// }
+
+.lang-link- {
+    /* font-family:$font-family); */
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $color-font-second;
+    /** анімація */
+    transition: 
+        transform, color,
+        300ms 
+        ease-in-out;
+    /* outline: 2px dashed red; */
+}
+.lang-link-:hover {
+    color: $color-brand-hover;
+    transform: scale(1.1);
+}
+
+// .active-link {
+//     font-weight: 400;
+//     color: $color-light;
+// }
+

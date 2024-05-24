@@ -41,6 +41,13 @@ button:hover {
   cursor: pointer;
 }
 
+/*! GENERAL */
+body {
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+}
+
 /* =====================  ОСНОВНІ Контейнери  ===================== */
 .main-container {
   width: 1440px;
@@ -54,13 +61,6 @@ button:hover {
 }
 
 /* =================== flex - контейнеры (________)==================== */
-/*! GENERAL */
-body {
-  padding-bottom: 10px;
-  font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
-}
-
 /*? header (SASS)*/
 .header {
   padding-top: 16px;
