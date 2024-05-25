@@ -8,7 +8,7 @@
     --color-brand-hover : #c33bde;
     --color-buttons-background: #8e32c6;
     --color-buttons-hover: #26c6ea;
-    
+    --color-background-footer: #021635;
 
 
 
@@ -27,7 +27,6 @@
 
 /*! GENERAL */
 body {
-    padding-bottom: 10px;
     font-family: var(--font-family);
     color: var(--color-light);
 }
@@ -277,6 +276,7 @@ body {
     height: 606px;
     padding-top: 105px;
     padding-bottom: 105px;
+    border-bottom: 1px solid var(--color-light);
     background-color: var(--color-background-brand);
     background-image:url(../images/advantages-background.jpg);
     background-repeat: no-repeat;
@@ -289,4 +289,50 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+/*? section reviews */
+.reviews {
+    height: 520px;
+    padding-top: 124px;
+    padding-bottom: 104px;
+    border-top: 1px solid var(--color-light);
+    border-bottom: 1px solid var(--color-light);
+    background-color: var(--color-background-brand);
+    background-image:
+        url(../images/reviews-background-image.png),
+        url(../images/reviews-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 
+        calc(50% - 607px) bottom,
+        center 0;
+    background-size: 
+        auto, 
+        1440px;
+}
+
+
+/*? section order */
+.order {
+    height: 509px;
+    padding-top: 20px;
+    padding-bottom: 37px;
+    border-top: 1px solid var(--color-light);
+    background-color: var(--color-background-brand);
+    background-image:url(../images/order-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
+
+
+/*? footer */
+.footer {
+    height: 316px;
+    padding-top: 20px;
+    padding-bottom: 37px;
+    padding-bottom: 104px;
+    border-bottom: 24px solid var(--color-light);
+    background-color: var(--color-background-footer);
 }
