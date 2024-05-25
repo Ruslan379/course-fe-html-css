@@ -5,80 +5,78 @@
     background-color: $color-background-brand;
 
     .container {
-        &.flex { //! Додаткові flex-властивості до container
+        //! Додаткові flex-властивості до container
+        display: flex;
+        align-items: center;
+        
+        .navigation,
+        .nav-list,
+        .lang-list {
             display: flex;
             align-items: center;
-
-            .navigation,
-            .nav-list,
-            .lang-list {
+        }
+    
+        .navigation {
+            margin-right: 73px;
+        }
+    
+        .header-logo{
+            margin-right: 152px;
+            // outline: 1px dotted yellowgreen; 
+        }
+    
+        .nav-list {
+            gap: 29px;
+        
+            &__item:last-child {
+                margin-left: -9px;
+            }
+            &__item:hover .nav-list__link {
+                color: $color-brand-hover;
+                transform: scale(1.1);
+            }
+        
+            &__link {
                 display: flex;
-                align-items: center;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 1.25;
+                color: $color-font-main;
+                /** анімація */
+                transition: 
+                    transform,color, 
+                    300ms 
+                    ease-in-out;
+                // outline: 2px dashed green;
+                &--active {
+                    font-weight: 400;
+                    color: $color-light;
+                }
+            }
+        }
+        .lang-list {
+            gap: 12px;
+        
+            &__item:hover .lang-list__link {
+                color: $color-brand-hover;
+                transform: scale(1.1);
             }
         
-            .navigation {
-                margin-right: 73px;
-            }
-        
-            .header-logo{
-                margin-right: 152px;
-                // outline: 1px dotted yellowgreen; 
-            }
-        
-            .nav-list {
-                gap: 29px;
-            
-                &__item:last-child {
-                    margin-left: -9px;
-                }
-                &__item:hover .nav-list__link {
-                    color: $color-brand-hover;
-                    transform: scale(1.1);
-                }
-            
-                &__link {
-                    display: flex;
-                    font-weight: 300;
-                    font-size: 24px;
-                    line-height: 1.25;
-                    color: $color-font-main;
-                    /** анімація */
-                    transition: 
-                        transform,color, 
-                        300ms 
-                        ease-in-out;
-                    // outline: 2px dashed green;
-                    &--active {
-                        font-weight: 400;
-                        color: $color-light;
-                    }
-                }
-            }
-
-            .lang-list {
-                gap: 12px;
-            
-                &__item:hover .lang-list__link {
-                    color: $color-brand-hover;
-                    transform: scale(1.1);
-                }
-            
-                &__link {
-                    display: flex;
-                    font-weight: 300;
-                    font-size: 24px;
-                    line-height: 1.25;
-                    color: $color-font-second;
-                    /** анімація */
-                    transition: 
-                        transform, color,
-                        300ms 
-                        ease-in-out;
-                    // outline: 2px dashed red;
-                    &--active {
-                        font-weight: 400;
-                        color: $color-light;
-                    }
+            &__link {
+                display: flex;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 1.25;
+                color: $color-font-second;
+                /** анімація */
+                transition: 
+                    transform, color,
+                    300ms 
+                    ease-in-out;
+                // outline: 2px dashed red;
+                &--active {
+                    font-weight: 400;
+                    color: $color-light;
                 }
             }
         }
