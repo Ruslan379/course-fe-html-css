@@ -243,6 +243,7 @@ body {
   background-image: url(../images/advantages_premium-quality.png);
   background-repeat: no-repeat;
   background-position: center bottom;
+  outline: 1px dashed #00ffcc;
 }
 .advantages .container .advantages-list__item .advantages-list__title {
   font-family: "Playfair Display", sans-serif;
@@ -281,9 +282,9 @@ body {
   width: 2px;
   height: 100%;
   margin-top: -102px;
-  margin-right: -292px;
+  margin-right: -340px;
   background-color: #FFFFFF;
 }
 .advantages .container .advantages-list__item:last-child::after {
-  margin-left: -584px;
+  margin-left: -680px;
 }/*# sourceMappingURL=main.css.map */

@@ -357,11 +357,11 @@ body {
     width: 2px;
     height: 100%;
     margin-top: -102px;
-    margin-right: -292px;
+    margin-right: -340px;
     background-color: var(--color-light);
 }
 .advantages-list__item:last-child::after {
-    margin-left: -584px;
+    margin-left: -680px;
 }
 
 

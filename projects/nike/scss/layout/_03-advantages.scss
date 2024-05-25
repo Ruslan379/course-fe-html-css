@@ -32,7 +32,7 @@
                     url(../images/advantages_premium-quality.png);
                 background-repeat: no-repeat;
                 background-position: center bottom;
-                // outline: 1px dashed #00ffcc;
+                outline: 1px dashed #00ffcc;
 
                 .advantages-list__title {
                     // height: 102px;
@@ -81,11 +81,11 @@
                 width: 2px;
                 height: 100%;
                 margin-top: -102px;
-                margin-right: -292px;
+                margin-right: -340px;
                 background-color: $color-light;
             }
             &__item:last-child::after {
-                margin-left: -584px;
+                margin-left: -680px;
             }
         }
     }
