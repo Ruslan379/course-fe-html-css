@@ -146,11 +146,8 @@ body {
 }
 
 /** --- Додаткові flex-властивості до container ---- */
-/* .hero .flex {
-    justify-content: space-between;
-} */
 /*! Відсутні */
-/** _________________________________________________ */
+/** ________________________________________________ */
 
 .hero-logo{
     margin-left: 5px;
@@ -160,7 +157,7 @@ body {
     /* outline: 1px dotted yellow; */
 }
 
-.hero-logo-text {
+.hero__logo-text {
     margin-top: -35px;
     margin-left: 30px;
     width: 178px;
@@ -173,7 +170,7 @@ body {
     /* outline: 1px solid red; */
 }
 
-.hero-title {
+.hero__title {
     margin-top: -46px;
     margin-left: -9px;
     font-family: var(--second-family);
@@ -184,7 +181,7 @@ body {
     /* outline: 1px dashed wheat; */
 }
 
-.hero-title-second {
+.hero__title-second {
     margin-top: -36px;
     margin-bottom: 12px;
     margin-left: -1px;
@@ -196,7 +193,7 @@ body {
     /* outline: 1px dashed #b3f5b3; */
 }
 
-.hero-text {
+.hero__text {
     margin-bottom: 41px;
     margin-left: -1px;
     width: 508px;
@@ -268,7 +265,7 @@ body {
     }
 }
 
-.hero-button-link {
+.hero__button-link {
     width: 254px;
     height: 67px;
     /* padding: 20px 61px 19px; */
