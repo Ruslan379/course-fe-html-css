@@ -243,7 +243,6 @@ body {
   background-image: url(../images/advantages_premium-quality.png);
   background-repeat: no-repeat;
   background-position: center bottom;
-  outline: 1px dashed #00ffcc;
 }
 .advantages .container .advantages-list__item .advantages-list__title {
   font-family: "Playfair Display", sans-serif;
