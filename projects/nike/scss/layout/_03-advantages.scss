@@ -1,85 +1,92 @@
-/*? advantages (BEM+SASS)*/
-.header {
-    padding-top: 16px;
-    padding-bottom: 14px;
-    background-color: $color-background-brand;
+// ? advantages (BEM+SASS)
+.advantages {
+    /* height: 606px; */
+    padding-top: 105px;
+    padding-bottom: 105px;
+    border-bottom: 1px solid var(--color-light);
+    background-color: var(--color-background-brand);
+    background-image:url(../images/advantages-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+}
 
-    .container {
-        &.flex { //! Додаткові flex-властивості до container
-            display: flex;
-            align-items: center;
+// * --- Додаткові flex-властивості до container ----
+.advantages .container {
+    display: flex;
+    outline: 5px solid var(--color-buttons-background);
+    padding: 25px 50px;
+}
+/** ________________________________________________ */
 
-            .navigation,
-            .nav-list,
-            .lang-list {
-                display: flex;
-                align-items: center;
-            }
-        
-            .navigation {
-                margin-right: 73px;
-            }
-        
-            .header-logo{
-                margin-right: 152px;
-                // outline: 1px dotted yellowgreen; 
-            }
-        
-            .nav-list {
-                gap: 29px;
-            
-                &__item:last-child {
-                    margin-left: -9px;
-                }
-                &__item:hover .nav-list__link {
-                    color: $color-brand-hover;
-                    transform: scale(1.1);
-                }
-            
-                &__link {
-                    display: flex;
-                    font-weight: 300;
-                    font-size: 24px;
-                    line-height: 1.25;
-                    color: $color-font-main;
-                    /** анімація */
-                    transition: 
-                        transform,color, 
-                        300ms 
-                        ease-in-out;
-                    // outline: 2px dashed green;
-                    &--active {
-                        font-weight: 400;
-                        color: $color-light;
-                    }
-                }
-            }
-        
-            .lang-list {
-                gap: 12px;
+.advantages-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* outline: 1px dashed yellow; */
+}
 
-                &__item:hover .lang-list__link {
-                    color: $color-brand-hover;
-                    transform: scale(1.1);
-                }
-            
-                &__link {
-                    font-weight: 300;
-                    font-size: 24px;
-                    line-height: 1.25;
-                    color: $color-font-second;
-                    /** анімація */
-                    transition: 
-                        transform, color,
-                        300ms 
-                        ease-in-out;
-                    // outline: 2px dashed red;
-                    &--active {
-                        font-weight: 400;
-                        color: $color-light;
-                    }
-                }
-            }
-        }
-    }
+.advantages-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 240px;
+    height: 346px;
+    background-image: 
+        url(../images/advantages_premium-quality.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    /* outline: 1px dashed #00ffcc; */
+}
+.advantages-list__item:nth-child(1) {
+    background-image: 
+        url(../images/advantages_premium-quality.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.advantages-list__item:nth-child(2) {
+    justify-content: end;
+    background-image: 
+        url(../images/advantages_indelible-paint.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.advantages-list__item:nth-child(3) {
+    background-image: 
+        url(../images/advantages_fast-shipping.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.advantages-title {
+    /* height: 102px; */
+    font-family: var(--second-family);
+    /* font-weight: 400; */
+    font-size: 36px;
+    line-height: 1.42;
+    text-align: center;
+    /* color: var(--color-light); */
+    /* outline: 1px dotted red; */
+}
+.advantages-list__item:nth-child(1) .advantages-title{
+    width: 159px;
+}
+.advantages-list__item:nth-child(2) .advantages-title{
+    width: 161px;
+}
+.advantages-list__item:nth-child(3) .advantages-title{
+    width: 151px;
+}
+
+.advantages-list__item:nth-child(1)::after,
+.advantages-list__item:nth-child(3)::after {
+    content: "";
+    width: 2px;
+    height: 100%;
+    margin-top: -102px;
+    margin-right: -292px;
+    background-color: var(--color-light);
+}
+.advantages-list__item:nth-child(3)::after {
+    margin-left: -584px;
 }

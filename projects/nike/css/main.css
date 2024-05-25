@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/*? =============== CSS-змінні ====================== */
-/** ================= colors ================== */
-/** ================= fonts =================== */
 /** Этот файл обнуляет стандартные отступы и отступы отступов,  */
 /** устанавливает базовый размер шрифта в 100%,  */
 /** убирает стили списков и т. д. */
@@ -41,13 +38,28 @@ button:hover {
   cursor: pointer;
 }
 
+/*? =============== CSS-змінні ====================== */
+/** ================= colors ================== */
+/** ================= fonts =================== */
 /*! GENERAL */
 body {
-  padding-bottom: 10px;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
 }
 
+/* =====================  ОСНОВНІ Контейнери  ===================== */
+.main-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  outline: 1px dashed tomato;
+}
+
+/* =================== flex - контейнеры (________)==================== */
 .hero__button-link {
   display: flex;
   justify-content: center;
@@ -81,20 +93,6 @@ body {
     transform: scale(1);
   }
 }
-/* =====================  ОСНОВНІ Контейнери  ===================== */
-.main-container {
-  width: 1440px;
-  margin: 0 auto;
-}
-
-.container {
-  width: 1110px;
-  margin: 0 auto;
-  outline: 1px dashed tomato;
-}
-
-/* =================== flex - контейнеры (________)==================== */
-/*? header (BEM+SASS)*/
 .header {
   padding-top: 16px;
   padding-bottom: 14px;
@@ -160,8 +158,6 @@ body {
   color: #FFFFFF;
 }
 
-/*? main */
-/*? section hero */
 .hero {
   padding-top: 94px;
   padding-bottom: 183px;
@@ -216,4 +212,98 @@ body {
 .hero__button-link {
   width: 254px;
   height: 67px;
+}
+
+.advantages {
+  /* height: 606px; */
+  padding-top: 105px;
+  padding-bottom: 105px;
+  border-bottom: 1px solid var(--color-light);
+  background-color: var(--color-background-brand);
+  background-image: url(../images/advantages-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 1440px;
+}
+
+.advantages .container {
+  display: flex;
+  outline: 5px solid var(--color-buttons-background);
+  padding: 25px 50px;
+}
+
+/** ________________________________________________ */
+.advantages-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* outline: 1px dashed yellow; */
+}
+
+.advantages-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  height: 346px;
+  background-image: url(../images/advantages_premium-quality.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  /* outline: 1px dashed #00ffcc; */
+}
+
+.advantages-list__item:nth-child(1) {
+  background-image: url(../images/advantages_premium-quality.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.advantages-list__item:nth-child(2) {
+  justify-content: end;
+  background-image: url(../images/advantages_indelible-paint.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.advantages-list__item:nth-child(3) {
+  background-image: url(../images/advantages_fast-shipping.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.advantages-title {
+  /* height: 102px; */
+  font-family: var(--second-family);
+  /* font-weight: 400; */
+  font-size: 36px;
+  line-height: 1.42;
+  text-align: center;
+  /* color: var(--color-light); */
+  /* outline: 1px dotted red; */
+}
+
+.advantages-list__item:nth-child(1) .advantages-title {
+  width: 159px;
+}
+
+.advantages-list__item:nth-child(2) .advantages-title {
+  width: 161px;
+}
+
+.advantages-list__item:nth-child(3) .advantages-title {
+  width: 151px;
+}
+
+.advantages-list__item:nth-child(1)::after,
+.advantages-list__item:nth-child(3)::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  margin-top: -102px;
+  margin-right: -292px;
+  background-color: var(--color-light);
+}
+
+.advantages-list__item:nth-child(3)::after {
+  margin-left: -584px;
 }/*# sourceMappingURL=main.css.map */
