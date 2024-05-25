@@ -135,9 +135,9 @@ body {
 /*? main */
 /*? section hero */
 .hero {
+    /* height: 858px; */
     padding-top: 94px;
     padding-bottom: 183px;
-    /* height: 858px; */
     background-color: var(--color-background-brand);
     background-image:url(../images/hero-background.jpg);
     background-repeat: no-repeat;
@@ -274,9 +274,14 @@ body {
 
 /*? section advantages */
 .advantages {
-    padding-top: 75px;
-    padding-bottom: 10px;
-    background-color: var(--color-background-light);
+    height: 606px;
+    padding-top: 105px;
+    padding-bottom: 105px;
+    background-color: var(--color-background-brand);
+    background-image:url(../images/advantages-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
 }
 
 /** --- Додаткові flex-властивості до container ---- */
