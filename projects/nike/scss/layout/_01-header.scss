@@ -54,16 +54,17 @@
                     }
                 }
             }
-        
+
             .lang-list {
                 gap: 12px;
-
+            
                 &__item:hover .lang-list__link {
                     color: $color-brand-hover;
                     transform: scale(1.1);
                 }
             
                 &__link {
+                    display: flex;
                     font-weight: 300;
                     font-size: 24px;
                     line-height: 1.25;
