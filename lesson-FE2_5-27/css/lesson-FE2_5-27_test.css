@@ -352,12 +352,60 @@ h3 {
 /*! 5.Фіксований header */
 
 
-
 /* ! */
 /* .part_6 {
     display: none;
 } */
 /*! 5.6.Навігація сайту через якорі та scroll-to-top */
+
+
+/* ! */
+/* .part_7 {
+    display: none;
+} */
+/*! 7.HW-27 */
+.part_7 .container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+    overflow: hidden;
+    outline: 1px dashed red;
+}
+
+.overlay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: absolute;
+    /* left: -40%; */
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transform: translateX(-80%);
+    background-color: #bdbdbd;
+}
+.overlay:hover {
+    transform: translate(0);
+}
+
+.menu-title {
+    /* align-self: flex-start; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    /* font-weight: 700; */
+    color: white;
+    transform: translateX(37%) rotate(90deg);
+    /* outline: 1px dashed blue; */
+}
+.overlay:hover .menu-title {
+    display: none;
+}
+
+
 
 
 /*? ______________________________________________________ */
