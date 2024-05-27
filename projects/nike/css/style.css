@@ -277,7 +277,7 @@ body {
     /* height: 606px; */
     padding-top: 105px;
     padding-bottom: 105px;
-    border-bottom: 1px solid var(--color-light);
+    border-bottom: 2px solid var(--color-light);
     background-color: var(--color-background-brand);
     background-image:url(../images/advantages-background.jpg);
     background-repeat: no-repeat;
@@ -368,11 +368,10 @@ body {
 
 /*? section reviews */
 .reviews {
-    height: 520px;
-    padding-top: 24px;
+    /* height: 522px; */
+    padding-top: 25px;
     padding-bottom: 104px;
-    border-top: 1px solid var(--color-light);
-    border-bottom: 1px solid var(--color-light);
+    border-bottom: 2px solid var(--color-light);
     background-color: var(--color-background-brand);
     background-image:
         url(../images/reviews-background-image.png),
@@ -412,7 +411,7 @@ body {
 .reviews-list__item {
     padding: 49px 11px 29px 18px;
     width: 255px;
-    height: 292px;
+    /* height: 292px; */
     border-radius: 15px;
     /* outline: 1px dashed yellow; */
 }
@@ -508,7 +507,6 @@ body {
     height: 509px;
     padding-top: 20px;
     padding-bottom: 37px;
-    border-top: 1px solid var(--color-light);
     background-color: var(--color-background-brand);
     background-image:url(../images/order-background.jpg);
     background-repeat: no-repeat;
