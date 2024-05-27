@@ -1,0 +1,133 @@
+// ? reviews (BEM+SASS)
+.reviews {
+    // height: 522px;
+    padding-top: 25px;
+    padding-bottom: 104px;
+    border-bottom: 2px solid $color-light;
+    background-color: $color-background-brand;
+    background-image:
+        url(../images/reviews-background-image.png),
+        url(../images/reviews-background.jpg);
+    background-repeat: no-repeat;
+    background-position: 
+        calc(50% - 607px) bottom,
+        center 0;
+    background-size: 
+        auto, 
+        1440px;
+
+    .container {
+        //! Додаткові flex-властивості до container
+        padding-right: 64px;
+        padding-left: 95px;
+
+        .section-title {
+            margin-bottom: 34px;
+            @extend %section-title;
+        }
+
+        .reviews-list {
+            display: flex;
+            justify-content: space-between;
+            // outline: 1px dotted red;
+        }
+
+
+    }
+}
+
+
+
+
+
+.reviews-list__item {
+    padding: 49px 11px 29px 18px;
+    width: 255px;
+    /* height: 292px; */
+    border-radius: 15px;
+    /* outline: 1px dashed yellow; */
+}
+.reviews-list__item:nth-child(1) {
+    background: 
+    linear-gradient(
+        135deg, 
+        #00e5e6 7.29%, 
+        #00a8f7 26.04%, 
+        #9a76f9 62.5%, 
+        #cc5ec2 100%
+    );
+    box-shadow:
+        0 14px 0 -5px #7b54b2,
+        0 30px 0 -13px #533978;
+}
+.reviews-list__item:nth-child(2) {
+    background: 
+    linear-gradient(
+        135deg, 
+        #ff68b4 0%, 
+        #ff45e1 26.04%, 
+        #ce3aff 62.84%, 
+        #8961ff 100%
+    );
+    box-shadow:
+    0 14px 0 -5px #9159b1,
+    0 30px 0 -13px #61337c;
+}
+.reviews-list__item:nth-child(3) {
+    background: 
+    linear-gradient(
+        135deg, 
+        #ffe128 0%, 
+        #ff9b5c 30.21%, 
+        #ff8381 63.29%, 
+        #ff5489 100%
+    );
+    box-shadow:
+    0 14px 0 -5px #b95a4c,
+    0 30px 0 -13px #732f26;
+}
+
+.reviews-list__review {
+    margin-bottom: 8px;
+    /* font-family: $font-family; */
+    /* font-weight: 400; */
+    font-size: 24px;
+    line-height: 1.17;
+    // color: $color-light;
+}
+
+.reviews-list__date {
+    margin-bottom: 47px;
+    /* font-family: $font-family; */
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.14;
+    color: $color-font-third;
+}
+
+.reviews-list__reviewer-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    // outline: 1px solid black;
+}
+
+.reviews-list__reviewer-img {
+    border-radius: 50%;
+}
+
+.reviews-list__reviewer-name {
+    margin-bottom: 1px;
+    /* font-family: $font-family; */
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.14;
+    /* color: $color-light; */
+}
+
+.reviews-list__reviewer-term {
+    /* font-family: $font-family; */
+    /* font-weight: 400; */
+    font-size: 12px;
+    color: $color-font-third;
+}
