@@ -474,11 +474,33 @@ body {
     color: var(--color-font-third);
 }
 
-.reviews-list__reviewer-img {
-    border-radius: 50%;
+.reviews-list__reviewer-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* outline: 1px solid black; */
 }
 
+.reviews-list__reviewer-img {
+    border-radius: 50%;
+    /* align-self: start; */
+}
 
+.reviews-list__reviewer-name {
+    margin-bottom: 1px;
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.14;
+    /* color: var(--color-light); */
+}
+
+.reviews-list__reviewer-term {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 12px;
+    color: var(--color-font-third);
+}
 
 
 /*? section order */
