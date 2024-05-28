@@ -513,7 +513,7 @@ body {
 
 /*? section order */
 .order {
-    height: 509px;
+    /* height: 509px; */
     padding-top: 20px;
     padding-bottom: 37px;
     background-color: var(--color-background-brand);
