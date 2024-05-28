@@ -2,7 +2,7 @@
 .reviews {
     // height: 522px;
     padding-top: 25px;
-    padding-bottom: 104px;
+    padding-bottom: 114px;
     border-bottom: 2px solid $color-light;
     background-color: $color-background-brand;
     background-image:
@@ -18,11 +18,11 @@
 
     .container {
         //! Додаткові flex-властивості до container
-        padding-right: 64px;
-        padding-left: 95px;
+        padding-right: 80px;
+        padding-left: 79px;
 
         .section-title {
-            margin-bottom: 34px;
+            margin-bottom: 24px;
             // @extend .section-title;
         }
 
