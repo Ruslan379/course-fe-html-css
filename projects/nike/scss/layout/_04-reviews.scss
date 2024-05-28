@@ -30,9 +30,57 @@
             display: flex;
             justify-content: space-between;
             // outline: 1px dotted red;
+            
+            &__item {
+                padding: 49px 11px 29px 18px;
+                width: 255px;
+                height: 292px;
+                border-radius: 15px;
+                // outline: 1px dashed yellow;
+            }
+            
+            &__item:nth-child(1) {
+                background: 
+                linear-gradient(
+                    135deg, 
+                    #00e5e6 7.29%, 
+                    #00a8f7 26.04%, 
+                    #9a76f9 62.5%, 
+                    #cc5ec2 100%
+                );
+                box-shadow:
+                    0 14px 0 -5px #7b54b2,
+                    0 30px 0 -13px #533978;
+            }
+            &__item:nth-child(2) {
+                background: 
+                linear-gradient(
+                    135deg, 
+                    #ff68b4 0%, 
+                    #ff45e1 26.04%, 
+                    #ce3aff 62.84%, 
+                    #8961ff 100%
+                );
+                box-shadow:
+                0 14px 0 -5px #9159b1,
+                0 30px 0 -13px #61337c;
+            }
+            &__item:nth-child(3) {
+                background: 
+                linear-gradient(
+                    135deg, 
+                    #ffe128 0%, 
+                    #ff9b5c 30.21%, 
+                    #ff8381 63.29%, 
+                    #ff5489 100%
+                );
+                box-shadow:
+                0 14px 0 -5px #b95a4c,
+                0 30px 0 -13px #732f26;
+            }
+
+
         }
-
-
     }
 }
 
@@ -40,52 +88,7 @@
 
 
 
-.reviews-list__item {
-    padding: 49px 11px 29px 18px;
-    width: 255px;
-    /* height: 292px; */
-    border-radius: 15px;
-    /* outline: 1px dashed yellow; */
-}
-.reviews-list__item:nth-child(1) {
-    background: 
-    linear-gradient(
-        135deg, 
-        #00e5e6 7.29%, 
-        #00a8f7 26.04%, 
-        #9a76f9 62.5%, 
-        #cc5ec2 100%
-    );
-    box-shadow:
-        0 14px 0 -5px #7b54b2,
-        0 30px 0 -13px #533978;
-}
-.reviews-list__item:nth-child(2) {
-    background: 
-    linear-gradient(
-        135deg, 
-        #ff68b4 0%, 
-        #ff45e1 26.04%, 
-        #ce3aff 62.84%, 
-        #8961ff 100%
-    );
-    box-shadow:
-    0 14px 0 -5px #9159b1,
-    0 30px 0 -13px #61337c;
-}
-.reviews-list__item:nth-child(3) {
-    background: 
-    linear-gradient(
-        135deg, 
-        #ffe128 0%, 
-        #ff9b5c 30.21%, 
-        #ff8381 63.29%, 
-        #ff5489 100%
-    );
-    box-shadow:
-    0 14px 0 -5px #b95a4c,
-    0 30px 0 -13px #732f26;
-}
+
 
 .reviews-list__review {
     margin-bottom: 8px;

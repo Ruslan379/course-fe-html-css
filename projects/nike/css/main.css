@@ -60,15 +60,7 @@ body {
 }
 
 /* =================== flex - контейнеры (________)==================== */
-.reviews .container .section-title {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1.35;
-  text-align: center;
-}
-
-.hero__button-link {
+.buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,12 +71,34 @@ body {
   color: #FFFFFF;
   background-color: #8e32c6;
 }
-.hero__button-link:hover {
+.buttons:hover {
   animation-name: pulse-button;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+
+@keyframes pulse-button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    color: #26c6ea;
+    border: 1px solid #26c6ea;
+    background-color: #c33bde;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.reviews .container .section-title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.35;
+  text-align: center;
 }
 
 @keyframes pulse-button {
@@ -215,7 +229,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 1.17;
-  /* outline: 1px dashed #f5b3b3; */
+  outline: 1px dashed #f5b3b3;
 }
 .hero__button-link {
   width: 254px;
@@ -317,26 +331,21 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
-.reviews-list__item {
+.reviews .container .reviews-list__item {
   padding: 49px 11px 29px 18px;
   width: 255px;
-  /* height: 292px; */
+  height: 292px;
   border-radius: 15px;
-  /* outline: 1px dashed yellow; */
 }
-
-.reviews-list__item:nth-child(1) {
+.reviews .container .reviews-list__item:nth-child(1) {
   background: linear-gradient(135deg, #00e5e6 7.29%, #00a8f7 26.04%, #9a76f9 62.5%, #cc5ec2 100%);
   box-shadow: 0 14px 0 -5px #7b54b2, 0 30px 0 -13px #533978;
 }
-
-.reviews-list__item:nth-child(2) {
+.reviews .container .reviews-list__item:nth-child(2) {
   background: linear-gradient(135deg, #ff68b4 0%, #ff45e1 26.04%, #ce3aff 62.84%, #8961ff 100%);
   box-shadow: 0 14px 0 -5px #9159b1, 0 30px 0 -13px #61337c;
 }
-
-.reviews-list__item:nth-child(3) {
+.reviews .container .reviews-list__item:nth-child(3) {
   background: linear-gradient(135deg, #ffe128 0%, #ff9b5c 30.21%, #ff8381 63.29%, #ff5489 100%);
   box-shadow: 0 14px 0 -5px #b95a4c, 0 30px 0 -13px #732f26;
 }

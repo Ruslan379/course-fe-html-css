@@ -26,12 +26,14 @@
     --third-family: "PT Serif", sans-serif;
 }
 
-/*! GENERAL */
+
+/*! =========== GENERAL - компоненти =========== */
 body {
     font-family: var(--font-family);
     color: var(--color-light);
 }
 
+/** +++++ Контейнери +++++ */
 .main-container {
     width: 1440px;
     margin: 0 auto;
@@ -43,6 +45,79 @@ body {
     margin: 0 auto;
     outline: 1px dashed tomato;
 }
+
+/** +++++ Загальні стилі для кнопок +++++ */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-family);
+    /* font-weight: 400; */
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-light);
+    background-color: var(--color-buttons-background);
+    /** var.1 анімація */
+    /* transition:
+        color, border, background-color,
+        300ms
+        ease-in-out;  */
+}
+.buttons:hover {
+    /** var.1 Зміна кольорів на кнопці при події hover */
+    /* color: var(--color-buttons-hover);
+    border: 1px solid var(--color-buttons-hover);
+    background-color: var(--color-brand-hover); */
+    /*todo var.2 Анімація на кнопці при події hover */
+    /*! 1.Назва анімації */
+    animation-name: pulse-button;
+    /*! 2.Тривалість анімації */   
+    animation-duration: 2s;
+    /*! 3.Функція розподілу часу */
+    animation-timing-function: ease-in-out;
+    /*! 5.Кількість повних повторень анімації - постійно */
+    animation-iteration-count: infinite;
+    /*! 6.Напрямок відтворення анімації*/
+    animation-direction: normal;
+    animation-direction: alternate;
+}
+/** +++++ Анімація для кнопок +++++ */
+/*todo var.2 Анімація на кнопці при події hover */
+@keyframes pulse-button {
+    0% {
+        transform: scale(1);
+        /* color: var(--color-buttons-hover); */
+        /* border: 1px solid var(--color-buttons-hover); */
+        /* background-color: var(--color-brand-hover); */
+    }
+    50% {
+        transform: scale(1.05);
+        color: var(--color-buttons-hover);
+        border: 1px solid var(--color-buttons-hover);
+        background-color: var(--color-brand-hover);
+    }
+    100% {
+        transform: scale(1);
+        /* transform: scale(0.9); */
+        /* color: var(--color-buttons-hover); */
+        /* border: 1px solid var(--color-buttons-hover); */
+        /* background-color: var(--color-brand-hover); */
+    }
+}
+
+/** +++++ Загальні стилі для Заголовків Секцій +++++ */
+.section-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.35;
+    text-align: center;
+    /* color: var(--color-light); */
+}
+
+/*! ___________ GENERAL - компоненти ___________ */
 
 
 /*? header */
@@ -205,66 +280,6 @@ body {
     /* outline: 1px dashed #f5b3b3; */
 }
 
-/** загальні стилі для головних кнопок */
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: var(--font-family);
-    /* font-weight: 400; */
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-    color: var(--color-light);
-    background-color: var(--color-buttons-background);
-    /** var.1 анімація */
-    /* transition:
-        color, border, background-color,
-        300ms
-        ease-in-out;  */
-}
-.buttons:hover {
-    /** var.1 Зміна кольорів на кнопці при події hover */
-    /* color: var(--color-buttons-hover);
-    border: 1px solid var(--color-buttons-hover);
-    background-color: var(--color-brand-hover); */
-    /*todo var.2 Анімація на кнопці при події hover */
-    /*! 1.Назва анімації */
-    animation-name: pulse-button;
-    /*! 2.Тривалість анімації */   
-    animation-duration: 2s;
-    /*! 3.Функція розподілу часу */
-    animation-timing-function: ease-in-out;
-    /*! 5.Кількість повних повторень анімації - постійно */
-    animation-iteration-count: infinite;
-    /*! 6.Напрямок відтворення анімації*/
-    animation-direction: normal;
-    animation-direction: alternate;
-}
-/*todo var.2 Анімація на кнопці при події hover */
-@keyframes pulse-button {
-    0% {
-        transform: scale(1);
-        /* color: var(--color-buttons-hover); */
-        /* border: 1px solid var(--color-buttons-hover); */
-        /* background-color: var(--color-brand-hover); */
-    }
-    50% {
-        transform: scale(1.05);
-        color: var(--color-buttons-hover);
-        border: 1px solid var(--color-buttons-hover);
-        background-color: var(--color-brand-hover);
-    }
-    100% {
-        transform: scale(1);
-        /* transform: scale(0.9); */
-        /* color: var(--color-buttons-hover); */
-        /* border: 1px solid var(--color-buttons-hover); */
-        /* background-color: var(--color-brand-hover); */
-    }
-}
-
 .hero__button-link {
     width: 254px;
     height: 67px;
@@ -392,14 +407,8 @@ body {
 }   
 /** ________________________________________________ */
 
-.section-title {
+.reviews .section-title {
     margin-bottom: 34px;
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.35;
-    text-align: center;
-    /* color: var(--color-light); */
 }
 
 .reviews-list {
@@ -512,6 +521,11 @@ body {
     background-position: center 0;
     background-size: 1440px;
 }
+
+.order .section-title {
+    margin-bottom: 33px;
+}
+
 
 
 /*? footer */
