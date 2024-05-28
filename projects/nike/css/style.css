@@ -534,13 +534,28 @@ body {
     gap: 19px;
 }
 
+.order-form__input-email-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .order-form__input {
     padding-left: 24px;
     width: 580px;
     height: 50px;
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 28px;
     border-radius: 50px;
     border: none;
     background-color: var(--color-light);
+}
+.order-form__input::placeholder {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 28px;
+    color: var(--color-placeholder);
 }
 
 .order-form__input.order-form__input--email {
@@ -549,14 +564,18 @@ body {
     height: 60px;
 }
 
-.order-form__input::placeholder {
+.order-form__button-confirm {
+    position: absolute;
+    right: 78px;
     /* font-family: var(--font-family); */
     /* font-weight: 400; */
     font-size: 28px;
-    color: var(--color-placeholder);
+    border: none;
+    color: var(--color-font-third);
+    background: transparent;
 }
 
-.order-form__button {
+.order-form__button-submit {
     width: 248px;
     height: 68px;
     /* padding: 20px 49px 20px 48px; */

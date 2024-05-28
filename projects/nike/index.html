@@ -194,37 +194,45 @@
                 <div class="container">
                     <h2 class="section-title">Order</h2>
                     <form class="order-form">
-                        <input 
-                            class="order-form__input order-form__input--email" 
-                            type="email"
-                            name="user-email"
-                            placeholder="Write your email"
-                            required
-                        >
+                        <div class="order-form__input-email-box" >
+                            <input 
+                                class="order-form__input order-form__input--email" 
+                                type="email"
+                                name="user-email"
+                                placeholder="Write your email"
+                                required
+                            >
+                            <button 
+                                class="order-form__button-confirm" 
+                                type="button"
+                            >
+                            Confirm
+                            </button>
+                        </div>
                         <input 
                             class="order-form__input" 
-                            type="email"
-                            name="user-email"
+                            type="text"
+                            name="user-country"
                             placeholder="Your Country"
                             required
                         >
                         <input 
                             class="order-form__input" 
-                            type="email"
-                            name="user-email"
+                            type="text"
+                            name="user-city"
                             placeholder="Your City"
                             required
                         >
                         <input 
                             class="order-form__input" 
-                            type="email"
-                            name="user-email"
-                            placeholder="Your Adress"
+                            type="text"
+                            name="user-address"
+                            placeholder="Your Address"
                             required
                         >
                         <!--? submit-button -->
                         <button 
-                            class="buttons order-form__button" 
+                            class="buttons order-form__button-submit" 
                             type="submit"
                             >
                             Order my Nike
