@@ -205,6 +205,7 @@
                             <button 
                                 class="order-form__button-confirm" 
                                 type="button"
+                                disabled
                             >
                             Confirm
                             </button>
@@ -248,6 +249,72 @@
             </div>
         </footer>
     </div>
+    <!--! Перевірка валіності e-mail та зміна статусу кнопки "Сonfirm" на enable -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const emailInput = document.querySelector('input[type="email"]');
+            const textInputs = document.querySelectorAll('input[type="text"]');
+            const confirmButton = document.querySelector('.order-form__button-confirm');
+
+            work = true // Початковий стан кнопки "Confirm"- Є (display = 'block')
+
+            // Блокуємо та зменшуємо прозорість інпутів, поки Є кнопка "Confirm"
+            function updateTextInputOpacity() {
+                // прозорість інпутів
+                // const opacity = confirmButton.disabled ? 0.3 : 1;
+                const opacity = work ? 0.3 : 1;
+                textInputs.forEach(function(input) {
+                    input.style.opacity = opacity;
+                });
+                // Блокування інпутів
+                // confirmButton.disabled
+                work
+                ? 
+                textInputs.forEach(function(input) {
+                    input.setAttribute('disabled', 'true');
+                }) 
+                : 
+                textInputs.forEach(function(input) {
+                    input.removeAttribute('disabled');
+                });
+            }
+            
+            // Зміна статусу кнопки "Сonfirm" (disabled)
+            emailInput.addEventListener('input', () => {
+                if (emailInput.validity.valid) {
+                    confirmButton.removeAttribute('disabled'); // Вмикаємо кнопку
+                } else {
+                    confirmButton.setAttribute('disabled', 'true'); // Вимикаємо кнопку
+                }
+                updateTextInputOpacity();
+            });
+
+            // Приховуємо кнопку "Сonfirm" після кліка
+            confirmButton.addEventListener('click', function () {
+                confirmButton.style.display = 'none';
+                work = false
+                updateTextInputOpacity(); // Обновление прозрачности после скрытия кнопки
+            });
+
+            // Змінюємо кольори інпутів с type="text"
+            textInputs.forEach(function(input) {
+                // Добавление события focus для всех input с type="text"
+                input.addEventListener('focus', function () {
+                    input.style.border = '2px solid green';
+                    input.style.backgroundColor = '#aeffbf'; // Изменяем цвет рамки при фокусе
+                });
+
+                // Добавление события blur для всех input с type="text"
+                input.addEventListener('blur', function () {
+                    input.style.border = '';
+                    input.style.backgroundColor = ''; // Сбрасываем цвет рамки при потере фокуса
+                });
+            });
+
+            // Инициализация прозрачности текстовых полей при загрузке страницы
+            updateTextInputOpacity();
+        });
+    </script>
 </body>
 
 </html>

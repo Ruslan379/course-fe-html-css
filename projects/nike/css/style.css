@@ -549,6 +549,7 @@ body {
     font-size: 28px;
     border-radius: 50px;
     border: none;
+    outline: none;
     background-color: var(--color-light);
 }
 .order-form__input::placeholder {
@@ -563,6 +564,24 @@ body {
     width: 690px;
     height: 60px;
 }
+/* .order-form__input.order-form__input--email:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-image: none !important;
+    background-color: rgb(174, 255, 191) !important; 
+    color: inherit;
+} */
+.order-form__input.order-form__input--email:invalid {
+    border: 2px solid red;
+    background-color: #ef9898;
+}
+.order-form__input.order-form__input--email:valid {
+    border: 2px solid green;
+    background-color: #aeffbf;
+}
+.order-form__input.order-form__input--email:valid + .order-form__button-confirm {
+    color: green;
+    font-weight: 700;
+}
 
 .order-form__button-confirm {
     position: absolute;
@@ -573,6 +592,10 @@ body {
     border: none;
     color: var(--color-font-third);
     background: transparent;
+}
+.order-form__button-confirm:disabled {
+    /* background-color: lightgray; */
+    cursor: not-allowed;
 }
 
 .order-form__button-submit {
