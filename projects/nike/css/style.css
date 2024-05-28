@@ -5,6 +5,7 @@
     --color-font-main: #c7c7c7;
     --color-font-second: #dcdcdc;
     --color-font-third: #d8d8d8;
+    --color-placeholder: #959595;
     --color-background-brand: #012d63;
     --color-brand-hover : #c33bde;
     --color-buttons-background: #8e32c6;
@@ -526,8 +527,40 @@ body {
     margin-bottom: 33px;
 }
 
+.order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+}
 
+.order-form__input {
+    padding-left: 24px;
+    width: 580px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--color-light);
+}
 
+.order-form__input.order-form__input--email {
+    padding-left: 25px;
+    width: 690px;
+    height: 60px;
+}
+
+.order-form__input::placeholder {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 28px;
+    color: var(--color-placeholder);
+}
+
+.order-form__button {
+    width: 248px;
+    height: 68px;
+    /* padding: 20px 49px 20px 48px; */
+}
 
 
 /*? footer */
