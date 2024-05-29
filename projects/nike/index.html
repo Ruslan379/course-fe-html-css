@@ -245,11 +245,37 @@
         <!--? footer -->
         <footer class="footer">
             <div class="container">
-                
+                <ul class="footer-list">
+                    <li class="footer-list__item">
+                        <p class="footer-list__question">Have a question?</p>
+                        <a class="footer-list__link" href="mailto:ColoRawe_support@gmail.com">ColoRawe_support@gmail.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <p class="footer-list__question">Have a proposal for cooperation?</p>
+                        <a class="footer-list__link" href="mailto:ColoRawe_Cooperation@gmail.com">ColoRawe_Cooperation@gmail.com</a>
+                    </li>
+                    <li class="footer-list__item">
+                        <p class="footer-list__question">Advertising questions?</p>
+                        <a class="footer-list__link" href="mailto:ColoRawe_support@gmail.com">ColoRawe_Advertising@gmail.com</a>
+                    </li>
+                </ul>
+                <div class="footer__all-box">
+                    <div class="footer__trademark-box">
+                        <p class="footer__trademark">2022 ColoRawe @All rights reserved</p>
+                        <p class="footer__name-country">United States</p>
+                    </div>
+                    <div class="footer__logo-box">
+                        <a class="footer-logo" href="#">
+                            <img src="./images/footer-logo.png" alt="logo" width="108">
+                        </a>
+                        <p class="footer__logo-text">С&R</p>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
-    <!--! Перевірка валіності e-mail та зміна статусу кнопки "Сonfirm" на enable -->
+
+    <!--! Скріпт перевірки валіності e-mail та зміна статусу кнопки "Сonfirm" на enable -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const emailInput = document.querySelector('input[type="email"]');
