@@ -235,6 +235,7 @@
                         <button 
                             class="buttons order-form__button-submit" 
                             type="submit"
+                            disabled
                             >
                             Order my Nike
                         </button>
@@ -281,6 +282,7 @@
             const emailInput = document.querySelector('input[type="email"]');
             const textInputs = document.querySelectorAll('input[type="text"]');
             const confirmButton = document.querySelector('.order-form__button-confirm');
+            const submitButton = document.querySelector('.order-form__button-submit');
 
             work = true // Початковий стан кнопки "Confirm"- Є (display = 'block')
 
@@ -318,6 +320,7 @@
             // Приховуємо кнопку "Сonfirm" після кліка
             confirmButton.addEventListener('click', function () {
                 confirmButton.style.display = 'none';
+                submitButton.removeAttribute('disabled'); // Вмикаємо кнопку submit
                 work = false
                 updateTextInputOpacity(); // Обновление прозрачности после скрытия кнопки
             });

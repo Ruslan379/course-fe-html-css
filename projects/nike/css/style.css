@@ -57,7 +57,7 @@ body {
         300ms
         ease-in-out;  */
 }
-.buttons:hover {
+.buttons:hover:not(:disabled) {
     /** var.1 Зміна кольорів на кнопці при події hover */
     /* color: var(--color-buttons-hover);
     border: 1px solid var(--color-buttons-hover);
