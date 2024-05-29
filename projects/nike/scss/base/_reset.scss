@@ -39,3 +39,11 @@ button:hover {
     cursor: pointer;
 }
 
+button:disabled {
+    opacity: 0.7;
+}
+
+button:hover:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}

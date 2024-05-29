@@ -17,7 +17,7 @@
     //     300ms
     //     ease-in-out;
 
-    &:hover {
+    .buttons:hover:not(:disabled) {
         // * var.1 Зміна кольорів на кнопці при події hover
         // color: $color-buttons-hover;
         // border: 1px solid $color-buttons-hover;
