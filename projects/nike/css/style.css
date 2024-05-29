@@ -571,8 +571,8 @@ body {
     color: inherit;
 } */
 .order-form__input.order-form__input--email:invalid {
-    border: 2px solid red;
-    background-color: #ef9898;
+    border: 2px solid var(--color-buttons-hover);
+    background-color: var(--color-buttons-background);
 }
 .order-form__input.order-form__input--email:valid {
     border: 2px solid green;
@@ -607,10 +607,85 @@ body {
 
 /*? footer */
 .footer {
-    height: 316px;
+    /* height: 316px; */
     padding-top: 20px;
     padding-bottom: 37px;
-    padding-bottom: 104px;
     border-bottom: 24px solid var(--color-light);
     background-color: var(--color-background-footer);
+}
+
+/** --- Додаткові flex-властивості до container ---- */
+/*! Відсутні */
+/** ________________________________________________ */
+
+.footer-list__item {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-list__item:last-child {
+    /* margin-bottom: 20px; */
+    margin-bottom: 44px;
+}
+
+.footer-list__question {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 24px;
+    line-height: 1.17;
+    /* color: var(--color-light); */
+}
+
+.footer-list__link {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-light);
+    /** анімація */
+    transition: 
+        transform, color, 
+        300ms 
+        ease-in-out;
+}
+.footer-list__link:hover {
+    color: var(--color-brand-hover);
+    transform: scale(1.05);
+}
+
+.footer__all-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__trademark{
+    margin-bottom: 7px;
+}
+
+.footer__trademark,
+.footer__name-country {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 18px;
+    left: 1.67;
+    /* color: var(--color-light); */
+}
+
+.footer-logo {
+    display: flex;
+    outline: 1px solid green;
+}
+
+.footer__logo-text {
+    margin-top: -19px;
+    margin-left: 26px;
+    font-family: var(--third-family);
+    /* font-weight: 400; */
+    font-size: 24px;
+    /* color: var(--color-light); */
+    outline: 1px solid blue;
 }
