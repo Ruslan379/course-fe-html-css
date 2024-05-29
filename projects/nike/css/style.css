@@ -561,9 +561,9 @@ body {
     background-color: rgb(174, 255, 191) !important; 
     color: inherit;
 } */
-.order-form__input.order-form__input--email:invalid {
+.order-form__input.order-form__input--email:focus {
     border: 2px solid var(--color-buttons-hover);
-    background-color: var(--color-buttons-background);
+    background-color: var(--color-brand-hover);
 }
 .order-form__input.order-form__input--email:valid {
     border: 2px solid green;
@@ -572,6 +572,12 @@ body {
 .order-form__input.order-form__input--email:valid + .order-form__button-confirm {
     color: green;
     font-weight: 700;
+}
+
+.order-form__input[type="text"]:not(:placeholder-shown) {
+    border: 2px solid green;
+    background-color: #aeffbf;
+    /* background-color: #d6ffdf; */ /*! для JS */
 }
 
 .order-form__button-confirm {
