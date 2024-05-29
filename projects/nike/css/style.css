@@ -12,15 +12,6 @@
     --color-buttons-hover: #26c6ea;
     --color-background-footer: #021635;
     --color-border: #9b9b9b;
-
-
-    --color-dark: #000000;
-    --color-active-link: #94cfff;
-    --color-buttons-text-hover: #71f3ff;
-    --color-background-gradient: rgba(43, 74, 97, 0.87);
-    --color-background-light: #e7f6ff;
-    --color-background-dictionary-card: rgba(255, 255, 255, 0.7);
-    --color-background-dictionary-card-2: rgba(231, 246, 255, 0.55);
     /** ================= fonts =================== */
     --font-family: "Roboto", sans-serif;
     --second-family: "Playfair Display", sans-serif;
@@ -44,7 +35,7 @@ body {
 .container {
     width: 1110px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    /* outline: 1px dashed tomato; */
 }
 
 /** +++++ Загальні стилі для кнопок +++++ */
@@ -608,8 +599,8 @@ body {
 /*? footer */
 .footer {
     /* height: 316px; */
-    padding-top: 20px;
-    padding-bottom: 37px;
+    padding-top: 45px;
+    padding-bottom: 38px;
     border-bottom: 24px solid var(--color-light);
     background-color: var(--color-background-footer);
 }
@@ -620,7 +611,7 @@ body {
 
 .footer-list {
     margin-bottom: 22px;
-    outline: 1px dashed yellow;
+    /* outline: 1px dashed yellow; */
 }
 
 .footer-list__item {
@@ -664,7 +655,7 @@ body {
     display: block;
     width: 100%;
     height:  2px;
-    margin-top: 22px;
+    margin-top: 20px;
     background-color: var(--color-border);
 }
 
@@ -692,7 +683,7 @@ body {
 
 .footer-logo {
     display: flex;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 
 .footer__logo-text {
@@ -701,6 +692,7 @@ body {
     font-family: var(--third-family);
     /* font-weight: 400; */
     font-size: 24px;
+    line-height: 1.0;
     /* color: var(--color-light); */
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
