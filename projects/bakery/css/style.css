@@ -119,12 +119,14 @@ body {
 }
 
 .hero-title {
-    width: 561px;
-    height: 170px;
+    /* width: 561px; */
+    width: 565px;
+    /* height: 170px; */
     margin-bottom: 22px;
     /* font-family: var(--font-family); */
     font-weight: 200;
     font-size: 70px;
+    line-height: 1.214;
     text-transform: uppercase;
     /* color: var(--color-light); */
 }
