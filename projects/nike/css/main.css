@@ -47,9 +47,6 @@ button:hover:disabled {
   opacity: 0.5;
 }
 
-/*? =============== CSS-змінні ====================== */
-/** ================= colors ================== */
-/** ================= fonts =================== */
 /*! GENERAL */
 body {
   font-family: "Roboto", sans-serif;
@@ -443,4 +440,69 @@ body {
 .order .order-form__button-submit {
   width: 248px;
   height: 68px;
+}
+
+.footer {
+  padding-top: 45px;
+  padding-bottom: 38px;
+  border-bottom: 24px solid #FFFFFF;
+  background-color: #021635;
+}
+.footer .footer-list {
+  margin-bottom: 22px;
+}
+.footer .footer-list__item {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer .footer-list__question {
+  font-size: 24px;
+  line-height: 1.17;
+}
+.footer .footer-list__link {
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  transition: transform, color, 300ms ease-in-out;
+}
+.footer .footer-list__link:hover {
+  color: #c33bde;
+  transform: scale(1.05);
+}
+.footer .footer-list::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+  background-color: #9b9b9b;
+}
+.footer__all-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__trademark {
+  margin-bottom: 7px;
+}
+.footer__trademark, .footer__name-country {
+  font-size: 18px;
+  left: 1.67;
+}
+.footer__logo-box {
+  margin-top: -25px;
+}
+.footer .footer-logo {
+  display: flex;
+}
+.footer__logo-text {
+  margin-top: -19px;
+  margin-left: 26px;
+  font-family: "PT Serif", sans-serif;
+  font-size: 24px;
+  line-height: 1;
 }/*# sourceMappingURL=main.css.map */
