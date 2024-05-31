@@ -38,6 +38,15 @@ button:hover {
   cursor: pointer;
 }
 
+button:disabled {
+  opacity: 0.7;
+}
+
+button:hover:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 /*? =============== CSS-змінні ====================== */
 /** ================= colors ================== */
 /** ================= fonts =================== */
@@ -71,7 +80,7 @@ body {
   color: #FFFFFF;
   background-color: #8e32c6;
 }
-.buttons:hover {
+.buttons:hover:not(:disabled) {
   animation-name: pulse-button;
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
@@ -360,4 +369,78 @@ body {
 .reviews .container .reviews-list__reviewer-term {
   font-size: 12px;
   color: #d8d8d8;
+}
+
+.order {
+  padding-top: 20px;
+  padding-bottom: 37px;
+  background-color: #012d63;
+  background-image: url(../images/order-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 1440px;
+}
+.order .section-title {
+  margin-bottom: 33px;
+}
+.order .order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+.order .order-form__input-email-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.order .order-form__input {
+  padding-left: 24px;
+  width: 580px;
+  height: 50px;
+  font-size: 28px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: #FFFFFF;
+}
+.order .order-form__input::placeholder {
+  font-size: 28px;
+  color: #959595;
+}
+.order .order-form__input.order-form__input--email {
+  padding-left: 25px;
+  width: 690px;
+  height: 60px;
+}
+.order .order-form__input.order-form__input--email:focus {
+  border: 2px solid #26c6ea;
+  background-color: #c33bde;
+}
+.order .order-form__input.order-form__input--email:valid {
+  border: 2px solid green;
+  background-color: #aeffbf;
+}
+.order .order-form__input.order-form__input--email:valid + .order-form__button-confirm {
+  color: green;
+  font-weight: 700;
+}
+.order .order-form__input[type=text]:not(:placeholder-shown) {
+  border: 2px solid green;
+  background-color: #aeffbf;
+}
+.order .order-form__button-confirm {
+  position: absolute;
+  right: 78px;
+  font-size: 28px;
+  border: none;
+  color: #d8d8d8;
+  background: transparent;
+}
+.order .order-form__button-confirm:disabled {
+  cursor: not-allowed;
+}
+.order .order-form__button-submit {
+  width: 248px;
+  height: 68px;
 }/*# sourceMappingURL=main.css.map */

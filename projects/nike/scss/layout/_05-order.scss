@@ -1,0 +1,98 @@
+// ? order (BEM+SASS)
+.order {
+    // height: 509px;
+    padding-top: 20px;
+    padding-bottom: 37px;
+    background-color: $color-background-brand;
+    background-image:url(../images/order-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: 1440px;
+
+    .section-title {
+        margin-bottom: 33px;
+    }
+
+    .order-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 19px;
+
+        &__input-email-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        &__input {
+            padding-left: 24px;
+            width: 580px;
+            height: 50px;
+            // font-family: $font-family;
+            // font-weight: 400;
+            font-size: 28px;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            background-color: $color-light;
+        }
+        &__input::placeholder {
+            // font-family: $font-family;
+            // font-weight: 400;
+            font-size: 28px;
+            color: $color-placeholder;
+        }
+        
+        &__input.order-form__input--email {
+            padding-left: 25px;
+            width: 690px;
+            height: 60px;
+        }
+        
+        &__input.order-form__input--email:focus {
+            border: 2px solid $color-buttons-hover;
+            background-color: $color-brand-hover;
+        }
+        &__input.order-form__input--email:valid {
+            border: 2px solid green;
+            background-color: #aeffbf;
+        }
+        &__input.order-form__input--email:valid + .order-form__button-confirm {
+            color: green;
+            font-weight: 700;
+        }
+        
+        &__input[type="text"]:not(:placeholder-shown) {
+            border: 2px solid green;
+            background-color: #aeffbf;
+            // background-color: #d6ffdf; // ! для JS
+        }
+        
+        &__button-confirm {
+            position: absolute;
+            right: 78px;
+            // font-family: $font-family;
+            // font-weight: 400;
+            font-size: 28px;
+            border: none;
+            color: $color-font-third;
+            background: transparent;
+        }
+        &__button-confirm:disabled {
+            // background-color: lightgray;
+            cursor: not-allowed;
+        }
+        
+        &__button-submit {
+            width: 248px;
+            height: 68px;
+            // padding: 20px 49px 20px 48px;
+        }
+    }
+}
+
+
+
+
+
