@@ -1,5 +1,5 @@
-// ? =============== CSS-змінні ======================
-// * ================= colors ==================
+//? =============== CSS-змінні ======================
+//* ================= colors ==================
 // $color-light: #d0e4ff;
 $color-light: #FFFFFF;
 $color-font-main: #c7c7c7;
@@ -12,8 +12,45 @@ $color-buttons-background: #8e32c6;
 $color-buttons-hover: #26c6ea;
 $color-background-footer: #021635;
 $color-border: #9b9b9b;
-// * ================= fonts ===================
+//* ================= fonts ===================
 $font-family: "Roboto", sans-serif;
 $second-family: "Playfair Display", sans-serif;
 $third-family: "PT Serif", sans-serif;
+//? _______________________________________________
 
+
+//? ============= map-get --> getColor =============
+
+// * ================= colors ==================
+$colors: (
+    // light: #d0e4ff,
+    light: #FFFFFF,
+    font-main: #c7c7c7,
+    font-second: #dcdcdc,
+    font-third: #d8d8d8,
+    placeholder: #959595,
+    background-brand: #012d63,
+    brand-hover : #c33bde,
+    buttons-background: #8e32c6,
+    buttons-hover: #26c6ea,
+    background-footer: #021635,
+    border: #9b9b9b,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+// * ================= fonts ===================
+
+$fonts: (
+    font-family: "Roboto",
+    second-family: "Playfair Display",
+    third-family: "PT Serif",
+);
+
+@function getFonts($key) {
+    @return map-get($fonts, $key);
+}
+
+//? _______________________________________________
