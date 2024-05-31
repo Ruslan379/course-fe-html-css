@@ -42,7 +42,6 @@ $colors: (
 }
 
 // * ================= fonts ===================
-
 $fonts: (
     font-family: "Roboto",
     second-family: "Playfair Display",
@@ -52,5 +51,4 @@ $fonts: (
 @function getFonts($key) {
     @return map-get($fonts, $key);
 }
-
 //? _______________________________________________

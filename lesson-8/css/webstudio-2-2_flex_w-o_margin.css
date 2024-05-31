@@ -352,7 +352,12 @@ body {
             blue 80%,
             violet 100%
         ); */
-    transform: translate(-50%, -50%);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 
+        transform, opacity,
+        1000ms 
+        cubic-bezier(0.4, 0, 0.2, 1);
     /** Анімація-2 - шлях */
     animation-name: animation-background-color;
     animation-duration: 14s;
@@ -361,6 +366,10 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     /* animation-fill-mode: forwards; */
+}
+.backdrop.is-hidden .modal {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
 }
 /** сценарій анімації */
 @keyframes animation-background-color- {
