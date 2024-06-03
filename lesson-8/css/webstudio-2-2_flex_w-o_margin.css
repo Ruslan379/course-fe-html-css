@@ -696,8 +696,15 @@ body {
     border-color:  var(--color-brand-main);
 }
 .modal-form__check-input:checked + .modal-form__check-text > .modal-form__check-icon-box {
-    background-color: var(--color-brand-main);
+    /* background-color: var(--color-brand-main); */
+    background-color: #00ca00;
     border: none;
+}
+.modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement {
+    color: #00ca00;
+}
+.modal-form__check-input:checked + .modal-form__check-text  .modal-form__submit-text {
+    display: none;
 }
 
 .modal-form__check-icon {
