@@ -728,8 +728,13 @@ body {
     80% {
         opacity: 0.2;
     }
+    99% {
+        opacity: 0;
+    }
     100% {
         opacity: 0;
+        display: none;
+        cursor: none;
     }
 }
 .modal-form__check-icon {
