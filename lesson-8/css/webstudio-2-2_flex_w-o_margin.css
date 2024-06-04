@@ -782,7 +782,7 @@ body {
         opacity: 0;
         cursor: not-allowed;
         /* cursor: none; */
-        display: none;
+        /* display: none; */
         /* visibility: hidden; */
     }
 }
