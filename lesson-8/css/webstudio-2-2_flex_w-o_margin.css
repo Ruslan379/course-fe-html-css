@@ -733,8 +733,10 @@ body {
     }
     100% {
         opacity: 0;
-        display: none;
-        cursor: none;
+        /* display: none; */
+        cursor: not-allowed;
+        /* cursor: none; */
+        /* visibility: hidden; */
     }
 }
 .modal-form__check-icon {
