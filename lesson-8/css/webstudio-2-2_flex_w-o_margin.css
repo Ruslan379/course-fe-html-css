@@ -700,10 +700,48 @@ body {
     background-color: #00ca00;
     border: none;
 }
-.modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement {
-    color: #00ca00;
+
+.modal-form__check-icon {
+    fill: transparent;
 }
-.modal-form__check-input:checked + .modal-form__check-text  .modal-form__submit-text {
+.modal-form__check-input:checked + .modal-form__check-text .modal-form__check-icon {
+    fill: var(--color-light);
+    stroke: var(--color-light);
+    stroke-width: 4;
+}
+
+.modal-form__agreement-text {
+    /* font-family: var(--font-family); */
+    /* font-weight: 400; */
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-font-second);
+}
+.modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement-text {
+    color: #00ca00;
+    /* animation-name: element-disappearance;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; */
+}
+/*todo Анімація на modal-form__agreement-text при події checked */
+@keyframes element-disappearance {
+    0% {
+        color: initial;
+    }
+    100% {
+        color: #00ca00;
+    }
+}
+
+.modal-form__agreement-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--color-brand-main);
+}
+.modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement-link {
     /* display: none; */
     animation-name: element-disappearance;
     animation-duration: 2s;
@@ -711,7 +749,7 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/*todo Анімація на кнопці при події hover */
+/*todo Анімація на modal-form__agreement-link при події checked */
 @keyframes element-disappearance {
     0% {
         opacity: 1;
@@ -745,28 +783,6 @@ body {
         display: none;
         /* visibility: hidden; */
     }
-}
-.modal-form__check-icon {
-    fill: transparent;
-}
-.modal-form__check-input:checked + .modal-form__check-text .modal-form__check-icon {
-    fill: var(--color-light);
-    stroke: var(--color-light);
-    stroke-width: 4;
-}
-
-.modal-form__agreement {
-    /* font-family: var(--font-family); */
-    /* font-weight: 400; */
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--color-font-second);
-}
-.modal-form__agreement > .modal-form__submit-text {
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: var(--color-brand-main);
 }
 /** _______________________ КІНЕЦЬ checkbox ___________ */
 
