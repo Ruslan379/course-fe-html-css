@@ -719,20 +719,22 @@ body {
     color: var(--color-font-second);
 }
 .modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement-text {
-    color: #00ca00;
-    /* animation-name: element-disappearance;
+    /* color: #00ca00; */
+    animation-name: color-change;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 /*todo Анімація на modal-form__agreement-text при події checked */
-@keyframes element-disappearance {
+@keyframes color-change {
     0% {
         color: initial;
+        /* font-weight: 400; */
     }
     100% {
         color: #00ca00;
+        /* font-weight: 700; */
     }
 }
 
