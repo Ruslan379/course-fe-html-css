@@ -311,6 +311,7 @@ body {
 
 /*todo +++++++ HTML-код: backdrop + modal +++++++ */
 .backdrop {
+    z-index: 2;
     position: fixed;
     top: 0;
     left: 0;
@@ -331,7 +332,6 @@ body {
 }
 
 .modal {
-    z-index: 1;
     padding: 40px;
     position: absolute;
     top: 50%;
