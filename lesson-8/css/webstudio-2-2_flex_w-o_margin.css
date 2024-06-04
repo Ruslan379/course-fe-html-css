@@ -491,12 +491,16 @@ body {
     color: var(--color-border-button-close);
     fill: var(--color-dark);
     background-color: var(--color-light);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
 }
 .modal__button-close:hover {
     fill: var(--color-brand-main);
     stroke: var(--color-brand-main);
     stroke-width: 2;
     border-color: var(--color-font-placeholder);
+    transform: rotate(360deg);
 }
 
 .modal__title {
@@ -649,7 +653,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate; */
 }
-/*todo Анімація на кнопці при події hover */
+/*todo Анімація на placeholder при події hover */
 @keyframes pulse-placeholder {
     0% {
         color: var(--color-font-main);
