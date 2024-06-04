@@ -704,9 +704,34 @@ body {
     color: #00ca00;
 }
 .modal-form__check-input:checked + .modal-form__check-text  .modal-form__submit-text {
-    display: none;
+    /* display: none; */
+    animation-name: element-disappearance;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
+/*todo Анімація на кнопці при події hover */
+@keyframes element-disappearance {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .modal-form__check-icon {
     fill: transparent;
 }
