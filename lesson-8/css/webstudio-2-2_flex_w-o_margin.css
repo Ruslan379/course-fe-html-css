@@ -715,27 +715,34 @@ body {
 @keyframes element-disappearance {
     0% {
         opacity: 1;
+        cursor: not-allowed;
+        display: inline;
     }
     20% {
         opacity: 0.8;
+        cursor: not-allowed;
     }
     40% {
         opacity: 0.6;
+        cursor: not-allowed;
     }
     60% {
         opacity: 0.4;
+        cursor: not-allowed;
     }
     80% {
         opacity: 0.2;
+        cursor: not-allowed;
     }
     99% {
         opacity: 0;
+        cursor: not-allowed;
     }
     100% {
         opacity: 0;
-        /* display: none; */
         cursor: not-allowed;
         /* cursor: none; */
+        display: none;
         /* visibility: hidden; */
     }
 }
