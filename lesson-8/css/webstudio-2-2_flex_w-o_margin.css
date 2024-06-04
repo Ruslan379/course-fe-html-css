@@ -574,7 +574,8 @@ body {
     border-color: orangered;
 }
 .modal-form__input:not(:placeholder-shown):required:valid {
-    border-color: green;
+    /* border-color: green; */
+    border-color: var(--color-brand-main);
 }
 
 /** Анімація-2 - шлях (при події hover) */
@@ -587,7 +588,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-/*todo Анімація на кнопці при події hover */
+/*todo Анімація на іконці при події hover */
 @keyframes pulse-icon {
     0% {
         fill: var(--color-font-main);
@@ -627,13 +628,15 @@ body {
     color: var(--color-font-placeholder);
 }
 .modal-form__text:focus {
-    border-color: var(--color-brand-main);
+    /* border-color: var(--color-brand-main); */
+    border-color: rgba(255, 166, 0, 0.5);
 }
 .modal-form__text:not(:placeholder-shown) {
     border-color: orange;
 }
 .modal-form__text:not(:placeholder-shown):valid {
-    border-color: green;
+    /* border-color: green; */
+    border-color: var(--color-brand-main);
 }
 /** ++++ */
 .modal-form__label:hover + .modal-form__text::placeholder {
@@ -690,14 +693,15 @@ body {
     height: 16px;
     /* border-radius: 3px; */
     border-radius: 50%;
-    border: 2px solid var(--color-font-main);
+    /* border: 2px solid var(--color-font-main); */
+    border: 2px solid orangered;
 }
 .modal-form__check-icon-box:hover {
     border-color:  var(--color-brand-main);
 }
 .modal-form__check-input:checked + .modal-form__check-text > .modal-form__check-icon-box {
-    /* background-color: var(--color-brand-main); */
-    background-color: #00ca00;
+    /* background-color: #00ca00; */
+    background-color: var(--color-brand-main);
     border: none;
 }
 
@@ -720,6 +724,7 @@ body {
 }
 .modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement-text {
     /* color: #00ca00; */
+    /* color: var(--color-brand-main); */
     animation-name: color-change;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -733,7 +738,8 @@ body {
         /* font-weight: 400; */
     }
     100% {
-        color: #00ca00;
+        /* color: #00ca00; */
+        color: var(--color-brand-main);
         /* font-weight: 700; */
     }
 }
@@ -784,6 +790,8 @@ body {
         /* cursor: none; */
         /* display: none; */
         /* visibility: hidden; */
+        /* pointer-events: none; */
+        
     }
 }
 /** _______________________ КІНЕЦЬ checkbox ___________ */
