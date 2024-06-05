@@ -556,6 +556,7 @@ body {
     outline: none;
     border: 1px solid var(--color-border-modal);
     border-radius: 4px;
+    border-color: orangered;
 }
 .modal-form__input:focus {
     border-color: var(--color-brand-main);
