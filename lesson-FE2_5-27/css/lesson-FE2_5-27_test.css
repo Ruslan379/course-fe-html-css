@@ -282,30 +282,30 @@ h3 {
     display: none;
 } */
 /*! 4.Випадаюче меню */
-.menu4 {
+.menu-list4 {
     display: flex;
+    gap: 15px;
 }
 
 .menu-item4 {
     position: relative;
-    margin-right: 15px;
     border-radius: 8px 8px 0 0;
     border-top: 2px solid tomato; 
     border-right: 2px solid tomato; 
     border-left: 2px solid tomato;
     /*todo var.2 */
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /*todo var.1 */
-.menu-item4:hover .submenu4 {
+/* .menu-item4:hover .submenu4 {
     display: block;
-}
+} */
 /*todo var.2 */
-/* .menu-item4:hover {
+.menu-item4:hover {
     border-color: teal;
     overflow: visible;
-} */
+}
 
 .menu-item4:hover .menu-link4 {
     background-color: palevioletred;
@@ -334,7 +334,7 @@ h3 {
     border-radius: 0 0 8px 8px;
     background-color: #ccc;
     /*todo var.1 */
-    display: none;
+    /* display: none; */
 }
 
 .submenu a {
