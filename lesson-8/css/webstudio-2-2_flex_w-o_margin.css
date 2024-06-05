@@ -163,7 +163,7 @@ body {
         1000ms 
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         100ms; */
-    /** Анімація-2 - шлях */
+    /** Анімація-2 - @keyframes*/
     /* animation-name: underlining;
     animation-duration: 1000ms;
     animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
@@ -354,12 +354,13 @@ body {
         ); */
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
+    /*? Анімація-1 - шлях */
     transition: 
         transform, opacity,
         1000ms 
         cubic-bezier(0.4, 0, 0.2, 1);
-    /** Анімація-2 - шлях */
-    animation-name: animation-background-color;
+    /** Анімація-2 - @keyframes*/
+    animation-name: rainbow-motion;
     animation-duration: 14s;
     animation-timing-function: linear;
     animation-delay: 1s;
@@ -367,23 +368,24 @@ body {
     animation-direction: alternate-reverse;
     /* animation-fill-mode: forwards; */
 }
+/*? Дія Анімація-1 */
 .backdrop.is-hidden .modal {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1.5);
 }
-/** сценарій анімації на modal*/
-@keyframes animation-background-color {
+/** Сценарій Анімація-2 "рух веселки" на background modal*/
+@keyframes rainbow-motion {
     0% {
         background-image:
         linear-gradient(
             to bottom,
-            red 0%,
-            orange 15%,
-            yellow 30%,
-            rgb(49, 128, 0) 45%,
-            skyblue 65%,
-            blue 80%,
-            violet 100%
+            rgba(255, 0, 0, 0.5) 0%,
+            rgba(255, 166, 0, 0.5) 15%,
+            rgba(255, 255, 0, 0.5) 30%,
+            rgba(49, 128, 0, 0.5) 45%,
+            rgba(135, 207, 235, 0.5) 65%,
+            rgba(0, 0, 255, 0.5) 80%,
+            rgba(238, 130, 238, 0.5) 100%
         );
     }
 
@@ -391,13 +393,13 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            violet 0%,
-            red 15%,
-            orange 30%,
-            yellow 45%,
-            rgb(49, 128, 0) 65%,
-            skyblue 80%,
-            blue 100%
+            rgba(238, 130, 238, 0.5) 0%,
+            rgba(255, 0, 0, 0.5) 15%,
+            rgba(255, 166, 0, 0.5) 30%,
+            rgba(255, 255, 0, 0.5) 45%,
+            rgba(49, 128, 0, 0.5) 65%,
+            rgba(135, 207, 235, 0.5) 80%,
+            rgba(0, 0, 255, 0.5) 100%
         );
     }
 
@@ -405,13 +407,13 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            blue 0%,
-            violet 15%,
-            red 30%,
-            orange 45%,
-            yellow 65%,
-            rgb(49, 128, 0) 80%,
-            skyblue 100%
+            rgba(0, 0, 255, 0.5) 0%,
+            rgba(238, 130, 238, 0.5) 15%,
+            rgba(255, 0, 0, 0.5) 30%,
+            rgba(255, 166, 0, 0.5) 45%,
+            rgba(255, 255, 0, 0.5) 65%,
+            rgba(49, 128, 0, 0.5) 80%,
+            rgba(135, 207, 235, 0.5) 100%
         );
     }
 
@@ -419,13 +421,13 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            skyblue 0%,
-            blue 15%,
-            violet 30%,
-            red 45%,
-            orange 65%,
-            yellow 80%,
-            rgb(49, 128, 0) 100%
+            rgba(135, 207, 235, 0.5) 0%,
+            rgba(0, 0, 255, 0.5) 15%,
+            rgba(238, 130, 238, 0.5) 30%,
+            rgba(255, 0, 0, 0.5) 45%,
+            rgba(255, 166, 0, 0.5) 65%,
+            rgba(255, 255, 0, 0.5) 80%,
+            rgba(49, 128, 0, 0.5) 100%
         );
     }
 
@@ -433,13 +435,13 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            rgb(49, 128, 0) 0%,
-            skyblue 15%,
-            blue 30%,
-            violet 45%,
-            red 65%,
-            orange 80%,
-            yellow 100%
+            rgba(49, 128, 0, 0.5) 0%,
+            rgba(135, 207, 235, 0.5) 15%,
+            rgba(0, 0, 255, 0.5) 30%,
+            rgba(238, 130, 238, 0.5) 45%,
+            rgba(255, 0, 0, 0.5) 65%,
+            rgba(255, 166, 0, 0.5) 80%,
+            rgba(255, 255, 0, 0.5) 100%
         );
     }
 
@@ -447,13 +449,13 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            yellow 0%,
-            rgb(49, 128, 0) 15%,
-            skyblue 30%,
-            blue 45%,
-            violet 65%,
-            red 80%,
-            orange 100%
+            rgba(255, 255, 0, 0.5) 0%,
+            rgba(49, 128, 0, 0.5) 15%,
+            rgba(135, 207, 235, 0.5) 30%,
+            rgba(0, 0, 255, 0.5) 45%,
+            rgba(238, 130, 238, 0.5) 65%,
+            rgba(255, 0, 0, 0.5) 80%,
+            rgba(255, 166, 0, 0.5) 100%
         );
     }
 
@@ -461,13 +463,13 @@ body {
         background-image:
         linear-gradient(
             to bottom,
-            orange 0%,
-            yellow 15%,
-            rgb(49, 128, 0) 30%,
-            skyblue 45%,
-            blue 65%,
-            violet 80%,
-            red 100%
+            rgba(255, 166, 0, 0.5) 0%,
+            rgba(255, 255, 0, 0.5) 15%,
+            rgba(49, 128, 0, 0.5) 30%,
+            rgba(135, 207, 235, 0.5) 45%,
+            rgba(0, 0, 255, 0.5) 65%,
+            rgba(238, 130, 238, 0.5) 80%,
+            rgba(255, 0, 0, 0.5) 100%
         );
     }
 }
@@ -514,6 +516,7 @@ body {
     color: var(--color-font-main);
 }
 
+/*? .modal-form */
 .modal-form {
     background-color: inherit;
     /** для анімації */
@@ -554,7 +557,7 @@ body {
     width: 100%;
     height: 40px;
     outline: none;
-    border: 1px solid var(--color-border-modal);
+    border: 2px solid var(--color-border-modal);
     border-radius: 4px;
     border-color: orangered;
 }
@@ -583,17 +586,17 @@ body {
     border-color: var(--color-brand-main);
 }
 
-/** Анімація-2 - шлях (при події hover) */
+/** Анімація-2 - @keyframes(при події hover) */
 .modal-form__label:hover ~ .modal-field-wrap > .modal-form__icon {
     /* fill: var(--color-brand-main); */
-    /** Анімація-2 - шлях (при події hover)*/
+    /** Анімація-2 - @keyframes (при події hover)*/
     animation-name: pulse-icon; 
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-/*todo Анімація на іконці при події hover */
+/** Сценарій Анімація-2 на іконці при події hover */
 @keyframes pulse-icon {
     0% {
         fill: var(--color-font-main);
@@ -617,7 +620,7 @@ body {
     /* font-weight: 400; */
     font-size: 12px;
     letter-spacing: 0.01em;
-    border: 1px solid var(--color-border-modal);
+    border: 2px solid var(--color-border-modal);
     border-radius: 4px;
     outline: none;
     resize: none;
@@ -647,14 +650,14 @@ body {
 .modal-form__label:hover + .modal-form__text::placeholder {
     color: var(--color-brand-main);
     font-weight: 700;
-    /*! Анімація-2 - шлях (при події hover)* - НЕ ПРАЦЮЄ! */
+    /*! Анімація-2 - @keyframes на placeholder при події hover - НЕ ПРАЦЮЄ! */
     /* animation-name: pulse-placeholder; 
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate; */
 }
-/*todo Анімація на placeholder при події hover */
+/*! Сценарій Анімація-2 на placeholder при події hover */
 @keyframes pulse-placeholder {
     0% {
         color: var(--color-font-main);
@@ -731,13 +734,14 @@ body {
 .modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement-text {
     /* color: #00ca00; */
     /* color: var(--color-brand-main); */
+    /** Анімація-2 - @keyframes на modal-form__agreement-text при події checked*/
     animation-name: color-change;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/*todo Анімація на modal-form__agreement-text при події checked */
+/** Сценарій Анімація-2 на modal-form__agreement-text при події checked */
 @keyframes color-change {
     0% {
         color: initial;
@@ -757,13 +761,14 @@ body {
 }
 .modal-form__check-input:checked + .modal-form__check-text  .modal-form__agreement-link {
     /* display: none; */
+    /** Анімація-2 - @keyframes на modal-form__agreement-link при події checked*/
     animation-name: element-disappearance;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-/*todo Анімація на modal-form__agreement-link при події checked */
+/** Сценарій Анімація-2 на modal-form__agreement-link при події checked */
 @keyframes element-disappearance {
     0% {
         opacity: 1;

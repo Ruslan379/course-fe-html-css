@@ -184,6 +184,7 @@ body {
     border-radius: 35px 0;
     color: var(--color-buttons);
     background-color: var(--color-background-buttons);
+    /*? Анімація-1 - шлях */
     transition:
         color, border-color, background-color,
         300ms
@@ -195,7 +196,7 @@ body {
     /* color: var(--color-buttons-hover);
     border-color: var(--color-buttons-hover);
     background-color: var(--color-background-buttons-hover); */
-    /*todo var.2 Анімація на кнопці при події hover */
+    /*todo var.2 Анімація-2 на кнопці при події hover */
     /*! 1.Назва анімації */
     animation-name: pulse-button;
     /*! 2.Тривалість анімації */   
@@ -208,7 +209,7 @@ body {
     animation-direction: normal;
     animation-direction: alternate;
 }
-/*todo Анімація на кнопці при події hover */
+/*todo Сценарій Анімація-2 на кнопці при події hover */
 @keyframes pulse-button {
     0% {
         transform: scale(1);
