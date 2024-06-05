@@ -69,10 +69,12 @@ body {
     /* background-color: #d2fff2; */
     /*todo --- Фіксований header --- */
     position: fixed;
+    /* width: 100%; */
     width: 1600px;
     top: 0;
     z-index: 1;
     /* display: none; */
+    /* outline: auto; */
 }
 
 /** --- Додаткові flex-властивості до container ---- */
