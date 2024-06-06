@@ -1,6 +1,12 @@
 //! ----------- міксін outline -----------
 // outline: 1px dotted yellowgreen;
 
-@mixin outline($size, $type, $color) {
+//todo var.1 
+@mixin outline($size: 1px, $type: solid, $color) {
     outline: $size $type $color;
 }
+
+//todo var.2 
+// @mixin outline($size: 1px, $type: solid, $color: tomato) {
+//     outline: $size $type $color;
+// }

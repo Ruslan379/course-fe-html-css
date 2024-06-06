@@ -12,7 +12,13 @@
     margin: 0 auto;
     // outline: 1px dashed tomato;
     // ! міксін outline
+    //todo var.1
     // @include outline(1px, dashed, tomato);
+
+    //todo var.2
+    // @include outline();
+    // @include outline(3px);
+    // @include outline($type: dashed);
 }
 
 
