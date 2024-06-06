@@ -47,30 +47,6 @@ button:hover:disabled {
   opacity: 0.5;
 }
 
-.advantages-list__item--premium-quality {
-  background-image: url(../images/advantages_premium-quality.png);
-}
-
-.advantages-list__item--indelible-paint {
-  background-image: url(../images/advantages_indelible-paint.png);
-}
-
-.advantages-list__item--fast-shipping {
-  background-image: url(../images/advantages_fast-shipping.png);
-}
-
-.advantages-list__item--premium-quality {
-  background-image: url(../images/advantages_premium-quality.png);
-}
-
-.advantages-list__item--indelible-paint {
-  background-image: url(../images/advantages_indelible-paint.png);
-}
-
-.advantages-list__item--fast-shipping {
-  background-image: url(../images/advantages_fast-shipping.png);
-}
-
 body {
   font-family: "Roboto";
   color: #FFFFFF;

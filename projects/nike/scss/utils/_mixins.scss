@@ -14,9 +14,11 @@
 
 //!--- 02.Міксін для 01.Директиви @each - цикла для додавання фонових зображень в advantages -----------
 //todo var.2
-@each $iconName in $icons {
-    .advantages-list__item--#{$iconName} {
-        background-image: 
-        url(../images/advantages_#{$iconName}.png);
+@mixin generateIcons($icons) {
+    @each $iconName in $icons {
+        .advantages-list__item--#{$iconName} {
+            background-image: 
+            url(../images/advantages_#{$iconName}.png);
+        }
     }
 }

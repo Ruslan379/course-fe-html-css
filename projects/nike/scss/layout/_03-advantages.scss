@@ -67,7 +67,7 @@
             //     }
             // }
             //todo var.2 - Використання 02.Міксін для 01.Директиви @each - цикла для додавання фонових зображень
-            // @include generateIcons();
+            @include generateIcons();
 
 
             &__item:nth-child(1) .advantages-list__title {
