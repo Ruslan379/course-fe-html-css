@@ -166,14 +166,14 @@ body {
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         100ms; */
     /** Анімація-2 - @keyframes*/
-    /* animation-name: underlining;
+    animation-name: underlining;
     animation-duration: 1000ms;
     animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
     animation-delay: 0ms;
     animation-iteration-count: 1;
     animation-iteration-count: infinite;
     animation-direction: normal;
-    animation-direction: alternate; */
+    animation-direction: alternate;
 }
 /*? Анімація-1 - кінцевий стан + тригер */
 /* .nav-item:hover .nav-link.active-link::after {
