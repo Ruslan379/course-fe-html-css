@@ -59,14 +59,14 @@
             //     background-image: 
             //         url(../images/advantages_fast-shipping.png);
             // }
-            //todo var.1 - Використання директиви @each - цикл для додавання фонових зображень
+            //todo var.1 - Використання @each - цикл для додавання фонових зображень
             // @each $iconName in $icons {
             //     &__item--#{$iconName} {
             //         background-image: 
             //         url(../images/advantages_#{$iconName}.png);
             //     }
             // }
-            //todo var.2 - Використання 02.Міксін для 01.Директиви @each - цикла для додавання фонових зображень
+            //todo var.2 - Використання 02.Міксін для 01.@each - цикла для додавання фонових зображень
             @include generateIcons($icons);
 
 

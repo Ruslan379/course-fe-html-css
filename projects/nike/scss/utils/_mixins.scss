@@ -12,7 +12,7 @@
 // }
 
 
-//!--- 02.Міксін для 01.Директиви @each - цикла для додавання фонових зображень в advantages -----------
+//!--- 02.Міксін для 01.@each - цикла для додавання фонових зображень в advantages -----------
 //todo var.2
 @mixin generateIcons($iconList) {
     @each $iconName in $iconList {
