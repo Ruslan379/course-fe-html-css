@@ -47,13 +47,11 @@ button:hover:disabled {
   opacity: 0.5;
 }
 
-/*! GENERAL */
 body {
   font-family: "Roboto";
   color: #FFFFFF;
 }
 
-/* =====================  ОСНОВНІ Контейнери  ===================== */
 .main-container {
   width: 1440px;
   margin: 0 auto;
@@ -62,7 +60,6 @@ body {
 .container {
   width: 1110px;
   margin: 0 auto;
-  outline: 1px dashed tomato;
 }
 
 /* =================== flex - контейнеры (________)==================== */

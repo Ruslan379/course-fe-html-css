@@ -1,3 +1,5 @@
+// @import "../utils/mixins";
+
 // ? main
 // ? section hero (BEM+SASS)
 .hero {
@@ -16,6 +18,8 @@
         width: 160px;
         height: 120px;
         // outline: 1px dotted yellow;
+        // ! міксін outline
+        // @include outline(1px, dotted, yellow);
     }
 
     &__logo-text {

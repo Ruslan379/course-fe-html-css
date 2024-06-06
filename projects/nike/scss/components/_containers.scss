@@ -1,4 +1,6 @@
-/* =====================  ОСНОВНІ Контейнери  ===================== */
+// @import "../utils/mixins";
+
+//! ===========  ОСНОВНІ Контейнери  ===========
 .main-container {
     width: 1440px;
     margin: 0 auto;
@@ -8,13 +10,9 @@
 .container {
     width: 1110px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
-
-    //! Додаткові flex-властивості до container
-    // &.flex{
-    //         display: flex;
-    //         align-items: center;
-    // }
+    // outline: 1px dashed tomato;
+    // ! міксін outline
+    // @include outline(1px, dashed, tomato);
 }
 
 

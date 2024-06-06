@@ -1,0 +1,4 @@
+//! ----------- міксін outline -----------
+@mixin outline($size, $type, $color) {
+    outline: $size $type $color;
+}

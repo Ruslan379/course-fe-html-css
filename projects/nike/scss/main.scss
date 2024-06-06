@@ -1,5 +1,7 @@
 @import "./base/reset";
 @import "./utils/variables";
+// @import "./utils/plaseholders";
+@import "./utils/mixins";
 @import "./base/common";
 
 @import "./components/containers";
@@ -12,3 +14,4 @@
 @import "./layout/04-reviews";
 @import "./layout/05-order";
 @import "./layout/06-footer";
+// @import "./utils/mixins";
