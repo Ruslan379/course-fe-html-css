@@ -47,6 +47,18 @@ button:hover:disabled {
   opacity: 0.5;
 }
 
+.advantages-list__item--premium-quality {
+  background-image: url(../images/advantages_premium-quality.png);
+}
+
+.advantages-list__item--indelible-paint {
+  background-image: url(../images/advantages_indelible-paint.png);
+}
+
+.advantages-list__item--fast-shipping {
+  background-image: url(../images/advantages_fast-shipping.png);
+}
+
 body {
   font-family: "Roboto";
   color: #FFFFFF;
@@ -250,7 +262,6 @@ body {
   align-items: center;
   width: 240px;
   height: 346px;
-  background-image: url(../images/advantages_premium-quality.png);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
@@ -261,21 +272,9 @@ body {
   line-height: 1.42;
   text-align: center;
 }
-.advantages .container .advantages-list__item:nth-child(1) {
-  background-image: url(../images/advantages_premium-quality.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
 .advantages .container .advantages-list__item:nth-child(2) {
   justify-content: end;
-  background-image: url(../images/advantages_indelible-paint.png);
-  background-repeat: no-repeat;
   background-position: center top;
-}
-.advantages .container .advantages-list__item:nth-child(3) {
-  background-image: url(../images/advantages_fast-shipping.png);
-  background-repeat: no-repeat;
-  background-position: center bottom;
 }
 .advantages .container .advantages-list__item:nth-child(1) .advantages-list__title {
   width: 159px;

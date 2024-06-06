@@ -28,8 +28,8 @@
                 align-items: center;
                 width: 240px;
                 height: 346px;
-                background-image: 
-                    url(../images/advantages_premium-quality.png);
+                // background-image: 
+                //     url(../images/advantages_premium-quality.png);
                 background-repeat: no-repeat;
                 background-position: center bottom;
                 // outline: 1px dashed #00ffcc;
@@ -45,25 +45,27 @@
                     // outline: 1px dotted red; 
                 }
             }
-            &__item:nth-child(1) {
-                background-image: 
-                    url(../images/advantages_premium-quality.png);
-                background-repeat: no-repeat;
-                background-position: center bottom;
-            }
+            // &__item:nth-child(1) {
+            //     background-image: 
+            //         url(../images/advantages_premium-quality.png);
+            // }
             &__item:nth-child(2) {
                 justify-content: end;
-                background-image: 
-                    url(../images/advantages_indelible-paint.png);
-                background-repeat: no-repeat;
+                // background-image: 
+                //     url(../images/advantages_indelible-paint.png);
                 background-position: center top;
             }
-            &__item:nth-child(3) {
-                background-image: 
-                    url(../images/advantages_fast-shipping.png);
-                background-repeat: no-repeat;
-                background-position: center bottom;
-            }
+            // &__item:nth-child(3) {
+            //     background-image: 
+            //         url(../images/advantages_fast-shipping.png);
+            // }
+            //* Використання директиви @each - цикл для додавання фонових зображень
+            // @each $iconName in $icons {
+            //     &__item--#{$iconName} {
+            //         background-image: 
+            //         url(../images/advantages_#{$iconName}.png);
+            //     }
+            // }
 
             &__item:nth-child(1) .advantages-list__title {
                 width: 159px;

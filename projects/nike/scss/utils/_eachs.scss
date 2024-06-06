@@ -1,0 +1,7 @@
+//* Директива @each - цикл для додавання фонових зображень в advantages
+@each $iconName in $icons {
+    .advantages-list__item--#{$iconName} {
+        background-image: 
+        url(../images/advantages_#{$iconName}.png);
+    }
+}
