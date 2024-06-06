@@ -264,6 +264,15 @@ body {
   justify-content: end;
   background-position: center top;
 }
+.advantages .container .advantages-list .advantages-list__item--premium-quality {
+  background-image: url(../images/advantages_premium-quality.png);
+}
+.advantages .container .advantages-list .advantages-list__item--indelible-paint {
+  background-image: url(../images/advantages_indelible-paint.png);
+}
+.advantages .container .advantages-list .advantages-list__item--fast-shipping {
+  background-image: url(../images/advantages_fast-shipping.png);
+}
 .advantages .container .advantages-list__item:nth-child(1) .advantages-list__title {
   width: 159px;
 }
