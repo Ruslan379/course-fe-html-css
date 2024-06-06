@@ -1,4 +1,6 @@
 //! ----------- міксін outline -----------
+// outline: 1px dotted yellowgreen;
+
 @mixin outline($size, $type, $color) {
     outline: $size $type $color;
 }
