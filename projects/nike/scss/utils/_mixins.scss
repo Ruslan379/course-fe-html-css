@@ -1,4 +1,4 @@
-//! ----------- міксін outline -----------
+//! ----------- 01.Міксін outline -----------
 // outline: 1px dotted yellowgreen;
 
 //todo var.1 
@@ -10,3 +10,13 @@
 // @mixin outline($size: 1px, $type: solid, $color: tomato) {
 //     outline: $size $type $color;
 // }
+
+
+//!--- 02.Міксін для 01.Директиви @each - цикла для додавання фонових зображень в advantages -----------
+//todo var.2
+@each $iconName in $icons {
+    .advantages-list__item--#{$iconName} {
+        background-image: 
+        url(../images/advantages_#{$iconName}.png);
+    }
+}
