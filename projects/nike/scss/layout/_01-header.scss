@@ -60,7 +60,10 @@
                 // outline: 2px dashed green;
                 &--active {
                     font-weight: 400;
-                    color: $color-light;
+                    // todo var.1
+                    // color: $color-light;
+                    // todo var.2
+                    color: getColor('light');
                 }
             }
         }

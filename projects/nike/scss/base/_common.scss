@@ -15,7 +15,7 @@ body {
     }
 }
 
-//! Додаткове налаштування $color-light
+//! Додаткове налаштування $color-light (заміна кольору)
 @if $lang == eng {
         // todo var.1
         $color-light: $color-light-eng;
@@ -31,8 +31,11 @@ body {
             light: $color-light-ua,
         );
     } @else {
+        // todo var.1
+        $color-light: #ececec;
+        // todo var.2
         $colors: (
-            light: #c2c2c2,
+            light: #ececec,
         );
 }
 
