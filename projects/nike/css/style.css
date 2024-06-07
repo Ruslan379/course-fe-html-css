@@ -35,7 +35,7 @@ body {
 .container {
     width: 1110px;
     margin: 0 auto;
-    /* outline: 1px dashed tomato; */
+    outline: 1px dashed tomato;
 }
 
 /** +++++ Загальні стилі для кнопок +++++ */
@@ -134,9 +134,10 @@ body {
 }
 
 .header-logo{
-    /* width: 100px; */
-    /* height: 60px; */
+    width: 100px;
+    height: 60px;
     margin-right: 152px;
+    margin-right: 116px;
     /* outline: 1px dotted yellowgreen; */
 }
 
