@@ -133,12 +133,15 @@ body {
     margin-right: 73px;
 }
 
-.header-logo{
-    width: 100px;
-    height: 60px;
+.header-logo {
+    /* width: 100px; */
+    /* height: 60px; */
     margin-right: 152px;
-    margin-right: 116px;
     /* outline: 1px dotted yellowgreen; */
+}
+/*! Інші властивості для сторінки index-ua.html */
+.header-logo--ua{
+    margin-right: 116px;
 }
 
 .nav-list {
