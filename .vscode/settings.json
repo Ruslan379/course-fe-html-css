@@ -5,11 +5,13 @@
             // "autoprefix": "last 5 versions", // компілятор буде додавати префікси кросбраузерності для останніх 5 версій відомих браузерів
             "extensionName": ".css", // розширення вихідного файлу
             "savePath": "/projects/nike/css" // папка, у яку буде компілюватись файл стилів
+            // "savePath": "/css"
         },
         {
             "format": "compressed",
             "extensionName": ".min.css",
             "savePath": "/projects/nike/css"
+            // "savePath": "/css"
         }
     ],
     "liveSassCompile.settings.excludeList": [
@@ -17,6 +19,9 @@
         "/vscode/**"
     ],
     "liveSassCompile.settings.generateMap": true, // вмикаємо генерацію карти стилів
+    //! компілятор НЕ буде додавати префікси кросбраузерності для останніх N версій відомих браузерів
+    // "liveSassCompile.settings.autoprefix": null
+    //* компілятор БУДЕ додавати префікси кросбраузерності для останніх 2-х версій відомих браузерів
+    "liveSassCompile.settings.autoprefix": [">1%","last 2 versions"],
     // "liveServer.settings.port": 5500,
-    "liveSassCompile.settings.autoprefix": null // компілятор НЕ буде додавати префікси кросбраузерності для останніх N версій відомих браузерів
 }
