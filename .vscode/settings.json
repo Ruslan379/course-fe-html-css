@@ -20,8 +20,8 @@
     ],
     "liveSassCompile.settings.generateMap": true, // вмикаємо генерацію карти стилів
     //! компілятор НЕ буде додавати префікси кросбраузерності для останніх N версій відомих браузерів
-    // "liveSassCompile.settings.autoprefix": null
+    "liveSassCompile.settings.autoprefix": null,
     //* компілятор БУДЕ додавати префікси кросбраузерності для останніх 2-х версій відомих браузерів
-    "liveSassCompile.settings.autoprefix": [">1%","last 2 versions"],
+    // "liveSassCompile.settings.autoprefix": [">1%","last 2 versions"],
     // "liveServer.settings.port": 5500,
 }
