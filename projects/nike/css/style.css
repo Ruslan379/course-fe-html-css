@@ -140,7 +140,7 @@ body {
     /* outline: 1px dotted yellowgreen; */
 }
 /*! Інші властивості для сторінки index-ua.html */
-.header-logo--ua{
+.header-logo--ua {
     margin-right: 116px;
 }
 
@@ -274,6 +274,10 @@ body {
     line-height: 1.17;
     /* color: var(--color-light); */
     /* outline: 1px dashed #f5b3b3; */
+}
+/*! Інші властивості для сторінки index-ua.html */
+.hero__text--ua {
+    width: 612px;
 }
 
 .hero__button-link {
