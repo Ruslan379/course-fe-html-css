@@ -1,11 +1,22 @@
-
-// ! GENERAL
+//! body
 body {
+    //* ================= fonts ===================
+    //? var-01.SCSS-змінні
     // font-family: $font-family;
+    //? var-03.map-get --> getColor
     font-family: getFonts('font-family');
 
+    //* ================= colors ===================
+    //? var-01.SCSS-змінні
     // color: $color-light;
+
+    //? var-02.map-get
+    // color: map-get($colors, 'light');
+
+    //? var-03.map-get --> getColor
     // color: getColor('light');
+
+    //? var-04.Cписок, або масив значень (icons)
     @if $lang == eng {
         color: getColor('light-eng');
         } @else if $lang == ua {
@@ -42,13 +53,3 @@ body {
 //             light: #dddddd,
 //         );
 // }
-
-
-
-
-// !============ Для отсутствия скрола контента на Модалке  ============ 
-// .no-scroll {
-//     overflow: hidden;
-// }
-// !_____________________________________________________________________
-

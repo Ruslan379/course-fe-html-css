@@ -1,5 +1,10 @@
-//? =============== CSS-змінні ======================
 $lang: "none";
+
+//? ============= var-01.SCSS-змінні ============
+//* ================= fonts ===================
+$font-family: "Roboto", sans-serif;
+$second-family: "Playfair Display", sans-serif;
+$third-family: "PT Serif", sans-serif;
 //* ================= colors ==================
 // $color-light: #d0e4ff;
 $color-light: #FFFFFF;
@@ -15,18 +20,19 @@ $color-buttons-background: #8e32c6;
 $color-buttons-hover: #26c6ea;
 $color-background-footer: #021635;
 $color-border: #9b9b9b;
-//* ================= fonts ===================
-$font-family: "Roboto", sans-serif;
-$second-family: "Playfair Display", sans-serif;
-$third-family: "PT Serif", sans-serif;
 //? _______________________________________________
 
 
-//? ============= map-get --> getColor =============
 
+//? ==============  var-02.map-get ==============
+// * ================= fonts ===================
+$fonts: (
+    font-family: "Roboto",
+    second-family: "Playfair Display",
+    third-family: "PT Serif",
+);
 // * ================= colors ==================
 $colors: (
-    // light: #d0e4ff,
     light: #FFFFFF,
     light-eng: #ffcdd5,
     light-ua: #ffffb1,
@@ -41,22 +47,23 @@ $colors: (
     background-footer: #021635,
     border: #9b9b9b,
 );
+//? _______________________________________________
 
-@function getColor($key) {
-    @return map-get($colors, $key);
-}
 
+
+//? ======== var-03.map-get --> getColor ========
 // * ================= fonts ===================
-$fonts: (
-    font-family: "Roboto",
-    second-family: "Playfair Display",
-    third-family: "PT Serif",
-);
-
 @function getFonts($key) {
     @return map-get($fonts, $key);
 }
+// * ================= colors ==================
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
 //? _______________________________________________
 
-// * ================= icons (список, або масив значень) ===================
+
+
+//? == var-04.Cписок, або масив значень (icons) ==
 $icons: "premium-quality", "indelible-paint", "fast-shipping";
+//? ______________________________________________

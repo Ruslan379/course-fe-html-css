@@ -62,7 +62,6 @@ body {
   margin: 0 auto;
 }
 
-/* =================== flex - контейнеры (________)==================== */
 .buttons {
   display: flex;
   justify-content: center;
