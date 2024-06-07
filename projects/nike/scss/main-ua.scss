@@ -1,0 +1,19 @@
+@import "./base/reset";
+@import "./utils/variables";
+@import "./utils/variables-ua";
+// @import "./utils/plaseholders";
+@import "./utils/mixins";
+// @import "./utils/eachs";
+@import "./base/common";
+
+@import "./components/containers";
+@import "./components/buttons";
+@import "./components/section-title";
+
+@import "./layout/01-header";
+@import "./layout/02-hero";
+@import "./layout/03-advantages";
+@import "./layout/04-reviews";
+@import "./layout/05-order";
+@import "./layout/06-footer";
+// @import "./utils/mixins";
