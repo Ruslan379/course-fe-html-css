@@ -472,6 +472,11 @@ body {
     line-height: 1.17;
     /* color: var(--color-light); */
 }
+/*! Інші властивості для сторінки index-ua.html */
+.reviews-list__review--ua {
+    font-size: 19px;
+    line-height: 1.175;
+}
 
 .reviews-list__date {
     margin-bottom: 47px;
@@ -480,6 +485,10 @@ body {
     font-size: 14px;
     line-height: 1.14;
     color: var(--color-font-third);
+}
+/*! Інші властивості для сторінки index-ua.html */
+.reviews-list__date--ua {
+    margin-bottom: 70px;
 }
 
 .reviews-list__reviewer-box {
@@ -619,7 +628,8 @@ body {
     /* height: 316px; */
     padding-top: 45px;
     padding-bottom: 38px;
-    border-bottom: 24px solid var(--color-light);
+    /* border-bottom: 24px solid var(--color-light); */
+    border-bottom: 24px solid white;
     background-color: var(--color-background-footer);
 }
 
