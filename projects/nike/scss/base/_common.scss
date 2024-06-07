@@ -3,8 +3,17 @@ body {
     // font-family: $font-family;
     font-family: getFonts('font-family');
     // color: $color-light;
-    color: getColor('light');
+    // color: getColor('light');
+
+    @if $lang == eng {
+        color: getColor('light-eng');
+        } @else if $lang == ua {
+            color: getColor('light-ua');
+        } @else {
+            color: gray;
+    }
 }
+
 
 
 // !============ Для отсутствия скрола контента на Модалке  ============ 
