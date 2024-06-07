@@ -3,41 +3,45 @@
 body {
     // font-family: $font-family;
     font-family: getFonts('font-family');
+
     // color: $color-light;
     // color: getColor('light');
-
     @if $lang == eng {
         color: getColor('light-eng');
         } @else if $lang == ua {
             color: getColor('light-ua');
         } @else {
-            color: gray;
+            //? Колір gray, якщо $lang: "none"; 
+            // color: gray; 
+            //? Колір #FFFFFF;, якщо $lang: "none";
+            color: getColor('light');
     }
 }
 
 //! Додаткове налаштування $color-light (заміна кольору)
-@if $lang == eng {
-        // todo var.1
-        $color-light: $color-light-eng;
-        // todo var.2
-        $colors: (
-            light: $color-light-eng,
-        );
-    } @else if $lang == ua {
-        // todo var.1
-        $color-light: $color-light-ua;
-        // todo var.2
-        $colors: (
-            light: $color-light-ua,
-        );
-    } @else {
-        // todo var.1
-        $color-light: #dddddd;
-        // todo var.2
-        $colors: (
-            light: #dddddd,
-        );
-}
+// @if $lang == eng {
+//         // todo var.1
+//         $color-light: $color-light-eng;
+//         // todo var.2
+//         $colors: (
+//             light: $color-light-eng,
+//         );
+//     } @else if $lang == ua {
+//         // todo var.1
+//         $color-light: $color-light-ua;
+//         // todo var.2
+//         $colors: (
+//             light: $color-light-ua,
+//         );
+//     //? Колір gray, якщо $lang: "none";     
+//     } @else {
+//         // todo var.1
+//         $color-light: #dddddd;
+//         // todo var.2
+//         $colors: (
+//             light: #dddddd,
+//         );
+// }
 
 
 
