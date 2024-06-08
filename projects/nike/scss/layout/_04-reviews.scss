@@ -94,11 +94,16 @@
             }
             
             &__date {
-                margin-bottom: 47px;
-                //! Інші властивості для сторінки index-ua.html
-                @if $lang == ua {
-                    margin-bottom: 70px;
-                }
+                //! var.1 - Вибір властивості для сторінки index-ua.html або index.html (eng) 
+                // //* властивість для сторінки index.html (eng)
+                // margin-bottom: 47px;
+                // //* інша властивість для сторінки index-ua.html
+                // @if $lang == ua {
+                //     margin-bottom: 70px;
+                // }
+                //! var.2 - Вибір властивості для сторінки index-ua.html або index.html (eng)
+                margin-bottom: if($lang == ua, 70px, 47px);
+                
                 // font-family: $font-family;
                 // font-weight: 400;
                 font-size: 14px;
