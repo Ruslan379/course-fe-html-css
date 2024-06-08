@@ -1,0 +1,490 @@
+:root {
+    /** ============ CSS-змінні ============ */
+    --color-font-body: #220c0c;
+    --color-background-body: #e1ffde;
+    --color-title-lesson: #4b4200;
+    --color-title-section: red;
+    --color-title-subsection: blue;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    padding: 20px 20px 150px;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    align-items: center;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+    /* ! for position: fixed */
+    /* margin-bottom: 350px; */
+}
+
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
+}
+
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* outline: 1px solid red; */
+}
+
+/* *======================================= */
+/* ! */
+/* .part_1 {
+    display: none;
+} */
+/*! 1.position: static */
+.part_1 .father {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_1 .title {
+    position: static; /* ! */
+    left: 10%;
+    top: 10%;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+
+.part_1 .title::after {
+    content: '(::after - без позиціонування)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.part_1 .child {
+    width: 70%;
+    height: 6rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 2.position: relative */
+.part_2 .father {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_2 .title {
+    /* position: static; */
+    position: relative; /* ! */
+    /* todo var.1 */
+    left: 10%;
+    top: 10%;
+    /* todo var.2 */
+    left: 50px;
+    top: 20px;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+
+.part_2 .title::after {
+    content: '(::after - left: 10%; top: 10%;)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.part_2 .child {
+    width: 70%;
+    height: 6rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+
+/* ! */
+.part_31 {
+    display: none;
+}
+/*! 3-1.position: absolute від <body> */
+.part_31 .father {
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_31 .title {
+    /* position: static; */
+    /* position: relative; */
+    position: absolute; /* ! */
+    left: 10%;
+    top: 10%;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+
+.part_31 .title::after {
+    content: '(::after - left: 10%; top: 10%; від <body>)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.part_31 .child {
+    width: 70%;
+    height: 6rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+
+/* ! */
+/* .part_32 {
+    display: none;
+} */
+/*! 3-2.position: absolute від <father> */
+.part_32 .main-father {
+    width: 500px;
+    height: 200px;
+    outline: 4px double rgb(4, 0, 61);
+}
+
+.part_32 .father {
+    position: relative; /* ! */
+    /* left: 10%; */
+    /* top: 10%; */
+    width: 500px;
+    height: 200px;
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_32 .title {
+    /* position: static; */
+    /* position: relative; */
+    position: absolute; /* ! */
+    left: 10%;
+    top: 10%;
+    width: 516px;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+
+.part_32 .title::after {
+    content: '(::after - left: 10%; top: 10%; від <father>)';
+    margin-left: 5px;
+    font-size: 13px;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.part_32 .child {
+    width: 70%;
+    height: 6rem;
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+
+/* ! */
+.part_4 {
+    /* display: none; */
+    height: auto;
+}
+/*! 4.position: fixed */
+.part_4 .father {
+    width: 500px;
+    /* height: 100px; */
+    margin-bottom: 20px;
+    color: red;
+    background: #fffdd6;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_4 .title {
+    position: static;
+    font-size: 1.5rem;
+    color: var(--color-font-body);
+    background: #b8f1ff;
+    outline: 1px dashed green;
+}
+
+.part_4 .title::after {
+    content: '(::after - без позиціонування)';
+    margin-left: 5px;
+    font-size: initial;
+    font-style: italic;
+    color: initial;
+    outline: 1px dashed #ff6d6d;
+}
+
+.part_4 .child {
+    width: 70%;
+    /* height: 3rem; */
+    color: initial;
+    background: #fffaa5;
+    outline: 1px dotted blue;
+}
+
+/*? КНОПКИ */
+/*? Кнопка-догори (загальні стили) */
+.part_4 .arrow-button {
+    /* ! */
+    /* position: fixed; */
+    /* ? */
+    /* top: 30px; */
+    right: 30px;
+    align-self: flex-start;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    border: 2px solid red;
+    border-radius: 8px;
+    background-color: #a2cfff;
+    cursor: pointer;
+}
+/* ? Кнопка-догори */
+.part_4 .up-button {
+    top: 30px;
+}
+/* ? Кнопка-донизу */
+.part_4 .down-button {
+    align-self: flex-end;
+    bottom: 30px;
+}
+
+
+/* ! */
+.part_5 {
+    /* display: none; */
+    height: auto;
+}
+/*! 5.position:sticky */
+.part_5 .father {
+    width: 500px;
+    /* height: 100px; */
+    margin-bottom: 20px;
+    color: red;
+    background: #d6ffe7;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_5 .child {
+    width: 70%;
+    margin: 0 auto;
+    /* height: 3rem; */
+    color: initial;
+    background: #9cfec5;
+    outline: 1px dotted blue;
+}
+
+.part_5 .child img{
+    margin: 10px auto;
+    background: #fef39c;
+}
+.part_5 .child img:first-child{
+    background: #edc2fd;
+}
+
+.part_5 .title {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* left: 10px; */
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-font-body);
+    background: #ffb8f2;
+    /* outline: 1px dashed green; */
+}
+
+.part_5 p + img + .title {
+    background: #fffb80;
+}
+
+
+
+/* ! */
+/* .part_6 {
+    display: none;
+} */
+/*! 6.Властивість z-index */
+.part_6 .container {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    outline: 4px double rgb(61, 56, 0);
+}
+
+.part_6 .box {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 64px;
+    color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.part_6 .box:nth-child(1) {
+    top: 20px;
+    left: 130px;
+    background-color: #1789fc;
+    z-index: 2;
+}
+
+.part_6 .box:nth-child(2) {
+    top: 30px;
+    left: 230px;
+    background-color: #ef233c;
+    z-index: 2;
+}
+
+.part_6 .box:nth-child(3) {
+    top: 140px;
+    left: 220px;
+    background-color: #ffd07b;
+    z-index: 1;
+}
+
+.part_6 .box:nth-child(4) {
+    top: 120px;
+    left: 120px;
+    background-color: #4caf50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ! */
+.part_7 {
+    display: none;
+}
+/*! 7.HW-25 */
+.part_7 .container {
+    width: 100px;
+    height: 300px;
+    outline: 1px solid red;
+    /* todo var.2 */
+    /* position: relative; */
+}
+
+.part_7 .box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.part_7 .box1 {
+    background-color: lightcoral;
+}
+
+.part_7 .box2 {
+    z-index: 1;
+    /* todo var.1 */
+    position: relative;
+    left: 50px;
+    top: -50px;
+    background-color: cornflowerblue;
+    /* todo var.2 */
+    /* position: absolute;
+    left: 50px;
+    top: 50px; */
+}
+
+.part_7 .box3 {
+    position: relative;
+    left: 100px;
+    top: -100px;
+    background-color: lime;
+    /* todo var.2 */
+    /* position: absolute;
+    left: 100px;
+    top: 100px; */
+}
+
+
+
+
+/*? ______________________________________________________ */
+/* ! */
+.part_0 {
+    display: none;
+}
+/*! 0.Заголовок */
