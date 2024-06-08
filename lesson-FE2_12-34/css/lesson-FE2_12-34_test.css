@@ -78,13 +78,13 @@ body {
     /* white-space: nowrap; */
 }
 
-/*?  Встановлюємо базову ширину adaptive контейнера. */
+/*? Встановлюємо базову (початкову) ширину adaptive контейнера. */
 .container.adaptive {
     max-width: 400px;
     margin-bottom: 40px;
 }
 
-/*?  Встановлюємо максимальну ширину responsive контейнера. */
+/*? Встановлюємо максимальну ширину responsive контейнера. */
 .container.responsive {
     max-width: 1140px;
 }
