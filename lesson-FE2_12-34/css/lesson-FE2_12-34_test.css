@@ -10,7 +10,8 @@
 body {
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
-    padding: 20px 20px 150px;
+    /* padding: 20px 20px 150px; */
+    padding: 20px 0px 150px;
     /* min-height: 100vh; */
     /* display: flex; */
     flex-direction: column;
@@ -63,64 +64,97 @@ body {
     display: none;
 } */
 /*! 1.Адаптивна (adaptive) та Чутлива (responsive) верстки */
+/** 01. Від 320px до 599px - orange */
 /*? Загальні стилі container */
 .container {
     min-width: 320px;
     margin: 0 auto;
-    background-color: #ffc107;
-
-    /*  Text styles  */
+    padding-top: 20px;
+    background-color: orange;
+    /*?  Text styles  */
     text-align: center;
-    /* line-height: 180px; */
-    height: 180px;
+    height: 200px;
     font-size: 32px;
     /* white-space: nowrap; */
 }
 
-/* Set the base width of a adaptive container. */
+/*?  Встановлюємо базову ширину adaptive контейнера. */
 .container.adaptive {
     max-width: 400px;
     margin-bottom: 40px;
 }
-/* Set the maximum width of the responsive container. */
+
+/*?  Встановлюємо максимальну ширину responsive контейнера. */
 .container.responsive {
     max-width: 1140px;
-    
 }
 
+.label {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/*? Приховуємо зайві заголовки медіазапитів  */
+.label-2,
+.label-3,
+.label-4 {
+    display: none;
+}
+
+
+/*? Медіа-запити: */
+/** 02. Від 600px до 899px - skyblue */
 @media screen and (min-width: 600px) {
     .container {
-        background-color: #00bcd4;
+        background-color: skyblue;
     }
-    /* Change the current width of the adaptive container at each breakpoint. */
     .container.adaptive {
         max-width: 600px;
     }
+    .label-1,
+    .label-3,
+    .label-4 {
+        display: none;
+    }
+    .label-2 {
+        display: block;
+    }
 }
 
+/** 03. Від 900px до 1139px - lightgreen */
 @media screen and (min-width: 900px) {
     .container {
-        background-color: #8bc34a;
+        background-color: lightgreen;
     }
-    /* Change the current width of the adaptive container at each breakpoint. */
     .container.adaptive {
         max-width: 900px;
     }
+    .label-1,
+    .label-2,
+    .label-4 {
+        display: none;
+    }
+    .label-3 {
+        display: block;
+    }
 }
 
+/** 04. Від 1140px до ~ - tomato */
 @media screen and (min-width: 1140px) {
     .container {
-        background-color: #ff5252;
+        background-color: tomato;
     }
-    /* Change the current width of the adaptive container at each breakpoint. */
     .container.adaptive {
         max-width: 1140px;
     }
-}
-
-.container .label {
-    /* margin-top: 0; */
-    width: 100%;
+    .label-1,
+    .label-2,
+    .label-3 {
+        display: none;
+    }
+    .label-4 {
+        display: block;
+    }
 }
 
 
