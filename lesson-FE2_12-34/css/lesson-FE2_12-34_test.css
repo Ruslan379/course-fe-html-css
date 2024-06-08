@@ -7,17 +7,17 @@
     --color-title-subsection: blue;
 }
 
-body- {
+body {
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
     padding: 20px 20px 150px;
     /* min-height: 100vh; */
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 20px;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    text-align: center;
+    /* text-align: center; */
     /* align-items: center; */
     color: var(--color-font-body);
     background-color: var(--color-background-body);
@@ -51,8 +51,9 @@ body- {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
+    /* margin: 0 auto; */
     min-height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     /* outline: 1px solid red; */
 }
 
@@ -70,9 +71,10 @@ body- {
 
     /*  Text styles  */
     text-align: center;
-    line-height: 180px;
+    /* line-height: 180px; */
+    height: 180px;
     font-size: 32px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 /* Set the base width of a adaptive container. */
@@ -80,7 +82,6 @@ body- {
     max-width: 400px;
     margin-bottom: 40px;
 }
-
 /* Set the maximum width of the responsive container. */
 .container.responsive {
     max-width: 1140px;
@@ -91,7 +92,6 @@ body- {
     .container {
         background-color: #00bcd4;
     }
-
     /* Change the current width of the adaptive container at each breakpoint. */
     .container.adaptive {
         max-width: 600px;
@@ -102,7 +102,6 @@ body- {
     .container {
         background-color: #8bc34a;
     }
-
     /* Change the current width of the adaptive container at each breakpoint. */
     .container.adaptive {
         max-width: 900px;
@@ -113,7 +112,6 @@ body- {
     .container {
         background-color: #ff5252;
     }
-
     /* Change the current width of the adaptive container at each breakpoint. */
     .container.adaptive {
         max-width: 1140px;
@@ -121,7 +119,8 @@ body- {
 }
 
 .container .label {
-    margin-top: 0;
+    /* margin-top: 0; */
+    width: 100%;
 }
 
 
