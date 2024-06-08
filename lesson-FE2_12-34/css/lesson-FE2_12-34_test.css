@@ -1,7 +1,7 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #e1ffde;
+    --color-background-body: #ffe8fb;
     --color-title-lesson: #4b4200;
     --color-title-section: red;
     --color-title-subsection: blue;
@@ -17,8 +17,8 @@ body {
     gap: 20px;
     /* flex-wrap: wrap; */
     /* justify-content: center; */
-    /* text-align: center; */
-    align-items: center;
+    text-align: center;
+    /* align-items: center; */
     color: var(--color-font-body);
     background-color: var(--color-background-body);
 }
@@ -48,10 +48,11 @@ body {
 }
 
 .part {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
     min-height: 100vh;
+    width: 100vw;
     /* outline: 1px solid red; */
 }
 
@@ -60,41 +61,67 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.position: static */
-.part_1 .father {
-    width: 500px;
-    height: 200px;
-    margin-bottom: 20px;
-    color: red;
-    background: #fffdd6;
-    outline: 4px double rgb(61, 56, 0);
+/*! 1.Адаптивна (adaptive) та Чутлива (responsive) верстки */
+/*? Загальні стилі container */
+.part_1 .container {
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: #ffc107;
+
+    /*  Text styles  */
+    text-align: center;
+    line-height: 180px;
+    font-size: 32px;
+    white-space: nowrap;
 }
 
-.part_1 .title {
-    position: static; /* ! */
-    left: 10%;
-    top: 10%;
-    font-size: 1.5rem;
-    color: var(--color-font-body);
-    background: #b8f1ff;
-    outline: 1px dashed green;
+/* Set the base width of a adaptive container. */
+.part_1 .container.adaptive {
+    max-width: 500px;
+    margin-bottom: 40px;
 }
 
-.part_1 .title::after {
-    content: '(::after - без позиціонування)';
-    margin-left: 5px;
-    font-size: initial;
-    font-style: italic;
-    color: initial;
-    outline: 1px dashed #ff6d6d;
+/* Set the maximum width of the responsive container. */
+.part_1 .container.responsive {
+    max-width: 1140px;
+    
 }
 
-.part_1 .child {
-    width: 70%;
-    height: 6rem;
-    color: initial;
-    background: #fffaa5;
-    outline: 1px dotted blue;
+@media screen and (min-width: 600px) {
+    .part_1 .container {
+        background-color: #00bcd4;
+    }
+
+    /* Change the current width of the adaptive container at each breakpoint. */
+    .part_1 .container.adaptive {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .part_1 .container {
+        background-color: #8bc34a;
+    }
+
+    /* Change the current width of the adaptive container at each breakpoint. */
+    .part_1 .container.adaptive {
+        max-width: 900px;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .part_1 .container {
+        background-color: #ff5252;
+    }
+
+    /* Change the current width of the adaptive container at each breakpoint. */
+    .part_1 .container.adaptive {
+        max-width: 1140px;
+    }
+}
+
+.part_1 .container .label {
+    margin-top: 0;
 }
 
 
@@ -114,7 +141,8 @@ body {
 
 .part_2 .title {
     /* position: static; */
-    position: relative; /* ! */
+    position: relative;
+    /* ! */
     /* todo var.1 */
     left: 10%;
     top: 10%;
@@ -149,6 +177,7 @@ body {
 .part_31 {
     display: none;
 }
+
 /*! 3-1.position: absolute від <body> */
 .part_31 .father {
     width: 500px;
@@ -162,7 +191,8 @@ body {
 .part_31 .title {
     /* position: static; */
     /* position: relative; */
-    position: absolute; /* ! */
+    position: absolute;
+    /* ! */
     left: 10%;
     top: 10%;
     font-size: 1.5rem;
@@ -201,7 +231,8 @@ body {
 }
 
 .part_32 .father {
-    position: relative; /* ! */
+    position: relative;
+    /* ! */
     /* left: 10%; */
     /* top: 10%; */
     width: 500px;
@@ -215,7 +246,8 @@ body {
 .part_32 .title {
     /* position: static; */
     /* position: relative; */
-    position: absolute; /* ! */
+    position: absolute;
+    /* ! */
     left: 10%;
     top: 10%;
     width: 516px;
@@ -248,6 +280,7 @@ body {
     /* display: none; */
     height: auto;
 }
+
 /*! 4.position: fixed */
 .part_4 .father {
     width: 500px;
@@ -304,10 +337,12 @@ body {
     background-color: #a2cfff;
     cursor: pointer;
 }
+
 /* ? Кнопка-догори */
 .part_4 .up-button {
     top: 30px;
 }
+
 /* ? Кнопка-донизу */
 .part_4 .down-button {
     align-self: flex-end;
@@ -320,6 +355,7 @@ body {
     /* display: none; */
     height: auto;
 }
+
 /*! 5.position:sticky */
 .part_5 .father {
     width: 500px;
@@ -339,11 +375,12 @@ body {
     outline: 1px dotted blue;
 }
 
-.part_5 .child img{
+.part_5 .child img {
     margin: 10px auto;
     background: #fef39c;
 }
-.part_5 .child img:first-child{
+
+.part_5 .child img:first-child {
     background: #edc2fd;
 }
 
@@ -359,7 +396,7 @@ body {
     /* outline: 1px dashed green; */
 }
 
-.part_5 p + img + .title {
+.part_5 p+img+.title {
     background: #fffb80;
 }
 
@@ -435,6 +472,7 @@ body {
 .part_7 {
     display: none;
 }
+
 /*! 7.HW-25 */
 .part_7 .container {
     width: 100px;
@@ -487,4 +525,5 @@ body {
 .part_0 {
     display: none;
 }
+
 /*! 0.Заголовок */
