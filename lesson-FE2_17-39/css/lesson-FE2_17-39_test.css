@@ -63,8 +63,12 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Адаптивна (adaptive) та Чутлива (responsive) верстки */
-
+/*! 1.Розмітка в Bootstrap */
+.row .col-sm {
+    text-align: center;
+    background-color: #d0d0d0;
+    outline: 1px solid red;
+}
 
 
 /* ! */
