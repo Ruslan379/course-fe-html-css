@@ -8,7 +8,9 @@
 }
 
 .container {
-    width: 1110px;
+    min-width: 360px;
+    // width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     // outline: 1px dashed tomato;
     // ! міксін outline
@@ -19,4 +21,9 @@
     // @include outline();
     // @include outline(3px);
     // @include outline($type: dashed);
+
+    //! Медіа-запити
+    // @media screen and (max-width: 480px) {
+    //     width: 480px;
+    // }
 }
