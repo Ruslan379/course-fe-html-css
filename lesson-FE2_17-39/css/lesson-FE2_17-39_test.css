@@ -63,8 +63,8 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Розмітка в Bootstrap */
-.row .col-sm {
+/*! 1.Розмітка в Bootstrap (3 колонки від sm) */
+.a {
     text-align: center;
     background-color: #d0d0d0;
     outline: 1px solid red;
@@ -75,7 +75,12 @@ body {
 /* .part_2 {
     display: none;
 } */
-/*! 2.position: relative */
+/*! 2.Розмітка в Bootstrap (2 сітки від xs) */
+.b {
+    text-align: center;
+    background-color: #e6e7ff;
+    outline: 1px solid blue;
+}
 
 
 /*? ______________________________________________________ */
