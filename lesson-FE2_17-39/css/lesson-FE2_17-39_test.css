@@ -83,6 +83,18 @@ body {
 }
 
 
+/* ! */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Схема навігації - breadcrumbs ("хлібні крихти") */
+.с {
+    /* text-align: center; */
+    background-color: #fffce6;
+    outline: 1px solid green;
+}
+
+
 /*? ______________________________________________________ */
 /* ! */
 .part_0 {
