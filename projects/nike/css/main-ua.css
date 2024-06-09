@@ -172,7 +172,7 @@ body {
 .hero {
   padding-top: 94px;
   padding-bottom: 183px;
-  /* height: 858px; */
+  height: 858px;
   background-color: #012d63;
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
@@ -296,6 +296,7 @@ body {
 }
 
 .reviews {
+  height: 522px;
   padding-top: 25px;
   padding-bottom: 114px;
   border-bottom: 2px solid #FFFFFF;
