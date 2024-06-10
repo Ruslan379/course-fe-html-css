@@ -1,8 +1,9 @@
 //! ----------- Загальні стилі для ВСІХ кнопок -----------
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @extend %flex-JCcen-AIcen;
 
     // font-family: $font-family;
     // font-weight: 400;
@@ -37,28 +38,29 @@
     }
 }
 
+//! перенесено в _animation.scss
 // todo var.2 Анімація на кнопці при події hover
-@keyframes pulse-button {
-    0% {
-        transform: scale(1);
-        // color: $color-buttons-hover; 
-        // border: 1px solid $color-buttons-hover;
-        // background-color: $color-brand-hover;
-    }
+// @keyframes pulse-button {
+//     0% {
+//         transform: scale(1);
+//         // color: $color-buttons-hover; 
+//         // border: 1px solid $color-buttons-hover;
+//         // background-color: $color-brand-hover;
+//     }
 
-    50% {
-        transform: scale(1.05);
-        color: $color-buttons-hover;
-        border: 1px solid $color-buttons-hover;
-        background-color: $color-brand-hover;
-    }
+//     50% {
+//         transform: scale(1.05);
+//         color: $color-buttons-hover;
+//         border: 1px solid $color-buttons-hover;
+//         background-color: $color-brand-hover;
+//     }
 
-    100% {
-        transform: scale(1);
-        // transform: scale(0.9);
-        // color: $color-buttons-hover;
-        // border: 1px solid$color-buttons-hover;
-        // background-color:$color-brand-hover;
-    }
-}
+//     100% {
+//         transform: scale(1);
+//         // transform: scale(0.9);
+//         // color: $color-buttons-hover;
+//         // border: 1px solid$color-buttons-hover;
+//         // background-color:$color-brand-hover;
+//     }
+// }
 

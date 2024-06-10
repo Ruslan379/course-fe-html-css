@@ -66,6 +66,12 @@ button:hover:disabled {
   align-items: center;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-family: "Roboto";
   color: #ffffb1;
@@ -83,9 +89,6 @@ body {
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 24px;
   border: none;
   border-radius: 10px;
@@ -100,20 +103,6 @@ body {
   animation-direction: alternate;
 }
 
-@keyframes pulse-button {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-    color: #26c6ea;
-    border: 1px solid #26c6ea;
-    background-color: #c33bde;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .section-title {
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;
