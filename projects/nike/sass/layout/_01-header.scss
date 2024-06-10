@@ -4,70 +4,81 @@
 .header {
     padding-top: 16px;
     padding-bottom: 14px;
-    background-color: $color-background-brand;
+    // todo var.1
+    // background-color: $color-background-brand;
+    // todo var.3
+    background-color: getColor('background-brand');
 
     .container {
         //! Додаткові flex-властивості до container
-        display: flex;
-        align-items: center;
-        
-        .navigation,
-        .nav-list,
-        .lang-list {
-            display: flex;
-            align-items: center;
-        }
-    
+        // display: flex;
+        // align-items: center;
+        @extend %flex__AIcen;
+
         .navigation {
             margin-right: 73px;
-        }
+            @extend %flex__AIcen;
+
+            .header-logo {
+                //! var.1 - Вибір властивості для сторінки index-ua.html або index.html (eng) 
+                // //* властивість для сторінки index.html (eng)
+                // margin-right: 152px;
+                // //* інша властивість для сторінки index-ua.html
+                // @if $lang == ua {
+                //     margin-right: 116px;
+                // }
+                //! var.2 - Вибір властивості для сторінки index-ua.html або index.html (eng)
+                margin-right: if($lang == ua, 116px, 152px);
     
-        .header-logo{
-            margin-right: 152px;
-            //! Інші властивості для сторінки index-ua.html
-            @if $lang == ua {
-                margin-right: 116px;
+                //* outline
+                // outline: 1px dotted yellowgreen;
+                // ! міксін outline
+                // @include outline(1px, dotted, yellowgreen);
             }
-            //* outline
-            // outline: 1px dotted yellowgreen;
-            // ! міксін outline
-            // @include outline(1px, dotted, yellowgreen);
-        }
-    
-        .nav-list {
-            gap: 29px;
-        
-            &__item:last-child {
-                margin-left: -9px;
-            }
-            &__item:hover .nav-list__link {
-                color: $color-brand-hover;
-                transform: scale(1.1);
-            }
-        
-            &__link {
-                display: flex;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 1.25;
-                color: $color-font-main;
-                /** анімація */
-                transition: 
-                    transform,color, 
-                    300ms 
-                    ease-in-out;
-                // outline: 2px dashed green;
-                &--active {
-                    font-weight: 400;
+
+            .nav-list {
+                @extend %flex__AIcen;
+                gap: 29px;
+            
+                &__item:last-child {
+                    margin-left: -9px;
+                }
+                &__item:hover .nav-list__link {
                     // todo var.1
-                    // color: $color-light;
-                    // todo var.2
-                    color: getColor('light');
+                    color: $color-brand-hover;
+                    // todo var.3
+                    color: getColor('brand-hover');
+                    transform: scale(1.1);
+                }
+            
+                &__link {
+                    display: flex;
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 1.25;
+                    // todo var.1
+                    // color: $color-font-main;
+                    // todo var.3
+                    color: getColor('font-main');
+                    //* анімація
+                    transition: 
+                        transform,color, 
+                        300ms 
+                        ease-in-out;
+                    // outline: 2px dashed green;
+                    &--active {
+                        font-weight: 400;
+                        // todo var.1
+                        // color: $color-light;
+                        // todo var.3
+                        color: getColor('light');
+                    }
                 }
             }
         }
-
+        
         .lang-list {
+            @extend %flex__AIcen;
             gap: 12px;
         
             &__item:hover .lang-list__link {
@@ -81,7 +92,7 @@
                 font-size: 24px;
                 line-height: 1.25;
                 color: $color-font-second;
-                /** анімація */
+                //* анімація
                 transition: 
                     transform, color,
                     300ms 

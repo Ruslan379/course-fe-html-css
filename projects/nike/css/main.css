@@ -47,6 +47,25 @@ button:hover:disabled {
   opacity: 0.5;
 }
 
+@keyframes pulse-button {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    color: #26c6ea;
+    border: 1px solid #26c6ea;
+    background-color: #c33bde;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.header .container .lang-list, .header .container .navigation .nav-list, .header .container .navigation, .header .container {
+  display: flex;
+  align-items: center;
+}
+
 body {
   font-family: "Roboto";
   color: #FFFFFF;
@@ -67,7 +86,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   font-size: 24px;
   border: none;
   border-radius: 10px;
@@ -109,42 +127,32 @@ body {
   padding-bottom: 14px;
   background-color: #012d63;
 }
-.header .container {
-  display: flex;
-  align-items: center;
-}
-.header .container .navigation,
-.header .container .nav-list,
-.header .container .lang-list {
-  display: flex;
-  align-items: center;
-}
 .header .container .navigation {
   margin-right: 73px;
 }
-.header .container .header-logo {
+.header .container .navigation .header-logo {
   margin-right: 152px;
 }
-.header .container .nav-list {
+.header .container .navigation .nav-list {
   gap: 29px;
 }
-.header .container .nav-list__item:last-child {
+.header .container .navigation .nav-list__item:last-child {
   margin-left: -9px;
 }
-.header .container .nav-list__item:hover .nav-list__link {
+.header .container .navigation .nav-list__item:hover .nav-list__link {
+  color: #c33bde;
   color: #c33bde;
   transform: scale(1.1);
 }
-.header .container .nav-list__link {
+.header .container .navigation .nav-list__link {
   display: flex;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.25;
   color: #c7c7c7;
-  /** анімація */
   transition: transform, color, 300ms ease-in-out;
 }
-.header .container .nav-list__link--active {
+.header .container .navigation .nav-list__link--active {
   font-weight: 400;
   color: #FFFFFF;
 }
@@ -161,7 +169,6 @@ body {
   font-size: 24px;
   line-height: 1.25;
   color: #dcdcdc;
-  /** анімація */
   transition: transform, color, 300ms ease-in-out;
 }
 .header .container .lang-list__link--active {
