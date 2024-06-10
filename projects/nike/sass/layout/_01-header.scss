@@ -45,7 +45,7 @@
                 }
                 &__item:hover .nav-list__link {
                     // todo var.1
-                    color: $color-brand-hover;
+                    // color: $color-brand-hover;
                     // todo var.3
                     color: getColor('brand-hover');
                     transform: scale(1.1);
@@ -62,10 +62,11 @@
                     color: getColor('font-main');
                     //* анімація
                     transition: 
-                        transform,color, 
+                        transform, color, 
                         300ms 
                         ease-in-out;
                     // outline: 2px dashed green;
+
                     &--active {
                         font-weight: 400;
                         // todo var.1
@@ -82,7 +83,10 @@
             gap: 12px;
         
             &__item:hover .lang-list__link {
-                color: $color-brand-hover;
+                // todo var.1
+                // color: $color-brand-hover;
+                // todo var.3
+                color: getColor('brand-hover');
                 transform: scale(1.1);
             }
         
@@ -91,16 +95,23 @@
                 font-weight: 300;
                 font-size: 24px;
                 line-height: 1.25;
+                // todo var.1
                 color: $color-font-second;
+                // todo var.3
+                color: getColor('font-second');
                 //* анімація
                 transition: 
                     transform, color,
                     300ms 
                     ease-in-out;
                 // outline: 2px dashed red;
+
                 &--active {
                     font-weight: 400;
+                    // todo var.1
                     color: $color-light;
+                    // todo var.3
+                    color: getColor('light');
                 }
             }
         }

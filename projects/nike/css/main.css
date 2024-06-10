@@ -130,7 +130,6 @@ body {
 }
 .header .container .navigation .nav-list__item:hover .nav-list__link {
   color: #c33bde;
-  color: #c33bde;
   transform: scale(1.1);
 }
 .header .container .navigation .nav-list__link {
@@ -158,10 +157,12 @@ body {
   font-size: 24px;
   line-height: 1.25;
   color: #dcdcdc;
+  color: #dcdcdc;
   transition: transform, color, 300ms ease-in-out;
 }
 .header .container .lang-list__link--active {
   font-weight: 400;
+  color: #FFFFFF;
   color: #FFFFFF;
 }
 
