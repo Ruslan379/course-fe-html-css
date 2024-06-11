@@ -53,7 +53,7 @@ $colors: (
 
 //? ======== var-03.map-get --> getColor ========
 // * ================= fonts ===================
-@function getFonts($key) {
+@function getFont($key) {
     @return map-get($fonts, $key);
 }
 // * ================= colors ==================
