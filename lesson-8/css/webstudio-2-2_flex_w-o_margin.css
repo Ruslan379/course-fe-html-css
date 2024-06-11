@@ -71,6 +71,7 @@ body {
     position: fixed;
     width: 100%;
     max-width: 1600px;
+    /* left: 0; */
     top: 0;
     z-index: 1;
     /* display: none; */
