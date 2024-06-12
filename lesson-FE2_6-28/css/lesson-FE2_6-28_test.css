@@ -1178,7 +1178,7 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*! Задаємо перспективу для кожного елемента окремо */
     transform: perspective(400px) rotateY(45deg);
-    /* animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms; */
+    /* animation: rotateY-16 3000ms infinite alternate backwards ease-in-out 1000ms; */
 }
 
 .part_16 .box:nth-child(1) {
@@ -1217,7 +1217,7 @@ body {
     background-color: #e91e63;
 }
 
-@keyframes rotateY {
+@keyframes rotateY-16 {
     0% {
         transform: perspective(400px) rotateY(60deg);
     }
