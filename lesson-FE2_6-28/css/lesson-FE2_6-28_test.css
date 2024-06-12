@@ -1106,13 +1106,13 @@ body {
 }
 
 .part_15 .box.rotate-x {
-      transform: perspective(400px) rotateX(45deg);
+    transform: perspective(400px) rotateX(45deg);
     /* animation: rotateX-15 1500ms infinite alternate ease-in-out 1000ms; */
     background-color: red;
 }
 
 .part_15 .box.rotate-y {
-      transform: perspective(400px) rotateY(45deg);
+    transform: perspective(400px) rotateY(45deg);
     /* animation: rotateY-15 1500ms infinite alternate ease-in-out 1000ms; */
     background-color: blue;
 }
@@ -1122,6 +1122,7 @@ body {
     0% {
         transform: perspective(400px) rotateX(0deg);
     }
+
     100% {
         transform: perspective(400px) rotateX(60deg);
     }
@@ -1131,10 +1132,89 @@ body {
     0% {
         transform: perspective(400px) rotateY(0deg);
     }
+
     100% {
         transform: perspective(400px) rotateY(60deg);
     }
 }
+
+
+/* ! */
+/* .part_16 {
+    display: none;
+} */
+/*! 16.Однакова перспектива для групи елементів​ */
+.part_16 .scene {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 390px;
+    border: 3px solid black;
+    border-radius: 4px;
+    margin: -10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.part_16 .box {
+    flex-basis: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*! Задаємо перспективу для кожного елемента окремо */
+    transform: perspective(400px) rotateY(45deg);
+    /* animation: rotateY 3000ms infinite alternate backwards ease-in-out 1000ms; */
+}
+
+.part_16 .box:nth-child(1) {
+    background-color: #f44336;
+}
+
+.part_16 .box:nth-child(2) {
+    background-color: #9c27b0;
+}
+
+.part_16 .box:nth-child(3) {
+    background-color: #3f51b5;
+}
+
+.part_16 .box:nth-child(4) {
+    background-color: #03a9f4;
+}
+
+.part_16 .box:nth-child(5) {
+    background-color: #009688;
+}
+
+.part_16 .box:nth-child(6) {
+    background-color: #4caf50;
+}
+
+.part_16 .box:nth-child(7) {
+    background-color: #ffc107;
+}
+
+.part_16 .box:nth-child(8) {
+    background-color: #795548;
+}
+
+.part_16 .box:nth-child(9) {
+    background-color: #e91e63;
+}
+
+@keyframes rotateY {
+    0% {
+        transform: perspective(400px) rotateY(60deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(-60deg);
+    }
+}
+
+
 
 
 
