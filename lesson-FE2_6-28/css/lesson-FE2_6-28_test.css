@@ -47,10 +47,13 @@ body {
     text-shadow: 4px 2px 6px #0114a1bd;
 }
 
+
 .part {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    /* outline: 1px solid red; */
 }
 
 /* *======================================= */
@@ -373,7 +376,7 @@ body {
 /* .part_6 {
     display: none;
 } */
-/*! 5.CSS-переходи (transition-delay) */
+/*! 6.CSS-переходи (сценарії з transition-delay) */
 .box6 {
     margin-top: 30px;
     width: 300px;
@@ -391,6 +394,7 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*todo  Встановлює значення всіх переходів:  */
+    /** Короткий запис CSS-переходів​ */
     transition: 
         background-color 1000ms linear, 
         transform 500ms ease-in-out 1000ms;
