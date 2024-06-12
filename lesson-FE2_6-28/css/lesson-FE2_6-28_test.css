@@ -688,7 +688,7 @@ body {
 
 .box11:nth-child(2) {
     background-color: #03a9f4;
-    transition-duration: 1000ms;
+    transition-duration: 2000ms;
 }
 
 .container11:hover .box11:nth-child(2) {
@@ -697,8 +697,7 @@ body {
 
 .box11:nth-child(3) {
     background-color: palevioletred;
-
-    transition-duration: 1000ms;
+    transition-duration: 3000ms;
 }
 
 .container11:hover .box11:nth-child(3) {
