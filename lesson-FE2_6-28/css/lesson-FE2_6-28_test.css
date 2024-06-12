@@ -846,8 +846,12 @@ body {
     display: none;
 } */
 /*! 13.Приклади різних трансформацій​ */
+.part_13 .title-section {
+    margin-top: 100px;
+}
+
 .part_13 .container {
-    min-height: 50vh;
+    min-height: 70vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
