@@ -842,23 +842,23 @@ body {
 
 
 /* ! */
-/* .part_13 {
-    display: none;
+.part_13 {
+    /* display: none; */
     outline: 1px solid red;
-} */
+}
 /*! 13.Приклади різних трансформацій​ */
 .part_13 .title-section {
     margin-top: 100px;
 }
 
 .part_13 .container {
-    min-height: 50vh;
+    min-height: 70vh;
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    /* outline: 1px dashed blue; */
+    outline: 1px dashed blue;
 }
 
 .part_13 kbd {
