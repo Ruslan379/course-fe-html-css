@@ -608,12 +608,18 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     /*todo декілька трансформацій одного елемента */
-    /* transform: translate(-50%, -50%) rotate(90deg) scale(2.0); */
+    /* transform: translate(-50%, -50%) rotate(90deg) scale(1.5); */
 
     border: 10px solid #d74400;
     border-radius: 10px;
     background-color: #8b1e00;
 }
+
+/** Центрування елемента з декількома трансформаціями при ховері */
+/* .parent10:hover .box10 {
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(90deg) scale(1.5);
+} */
 
 
 /* ! */
