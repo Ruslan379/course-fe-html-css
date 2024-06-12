@@ -1004,6 +1004,10 @@ body {
     display: none;
 } */
 /*! 14.Перспектива (базовий приклад)​ */
+.part_14 .title-section {
+    margin-bottom: 50px;
+}
+
 .part_14 .container {
     display: flex;
     justify-content: center;
@@ -1073,6 +1077,10 @@ body {
     display: none;
 } */
 /*! 15.Перспектива (з функцією perspective()​)​ */
+.part_15 .title-section {
+    margin-bottom: 50px;
+}
+
 .part_15 .container {
     display: flex;
     justify-content: center;
@@ -1144,6 +1152,10 @@ body {
     display: none;
 } */
 /*! 16.Однакова перспектива для групи елементів​ */
+.part_16 .title-section {
+    margin-bottom: 50px;
+}
+
 .part_16 .scene {
     display: flex;
     flex-wrap: wrap;
