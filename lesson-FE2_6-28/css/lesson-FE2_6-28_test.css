@@ -1038,33 +1038,106 @@ body {
 
 .part_14 .box.rotate-x {
     transform: rotateX(60deg);
-    /* animation: rotateX 1500ms infinite alternate ease-in-out 1000ms; */
-    background-color: tomato;
+    /* animation: rotateX-14 1500ms infinite alternate ease-in-out 1000ms; */
+    background-color: orange;
 }
 
 .part_14 .box.rotate-y {
     transform: rotateY(60deg);
-    /* animation: rotateY 1500ms infinite alternate ease-in-out 1000ms; */
-    background-color: blue;
+    /* animation: rotateY-14 1500ms infinite alternate ease-in-out 1000ms; */
+    background-color: teal;
 }
 
-@keyframes rotateX {
+@keyframes rotateX-14 {
     0% {
         transform: rotateX(0deg);
     }
+
     100% {
         transform: rotateX(60deg);
     }
 }
 
-@keyframes rotateY {
+@keyframes rotateY-14 {
     0% {
         transform: rotateY(0deg);
     }
+
     100% {
         transform: rotateY(60deg);
     }
 }
+
+/* ! */
+/* .part_15 {
+    display: none;
+} */
+/*! 15.Перспектива (з функцією perspective()​)​ */
+.part_15 .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    /* outline: 1px dashed blue; */
+}
+
+.part_15 .scene {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.part_15 .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    transition: transform 1s ease-in-out;
+}
+
+.part_15 .box.rotate-x {
+      transform: perspective(400px) rotateX(45deg);
+    /* animation: rotateX-15 1500ms infinite alternate ease-in-out 1000ms; */
+    background-color: red;
+}
+
+.part_15 .box.rotate-y {
+      transform: perspective(400px) rotateY(45deg);
+    /* animation: rotateY-15 1500ms infinite alternate ease-in-out 1000ms; */
+    background-color: blue;
+}
+
+
+@keyframes rotateX-15 {
+    0% {
+        transform: perspective(400px) rotateX(0deg);
+    }
+    100% {
+        transform: perspective(400px) rotateX(60deg);
+    }
+}
+
+@keyframes rotateY-15 {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(60deg);
+    }
+}
+
+
+
 
 
 /*? ______________________________________________________ */
