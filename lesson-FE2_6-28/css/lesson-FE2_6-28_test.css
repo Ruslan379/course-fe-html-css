@@ -128,6 +128,7 @@ body {
             rgba(27, 29, 88, 0.45)),
         url("../images/pano_img_3691-3720_for_tl.jpg");
     /* todo____________________________ */
+    /**  Анимация-2  */
     animation-name: move;
     animation-direction: alternate;
     /* animation-direction: alternate-reverse; */
@@ -182,7 +183,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    /*todo  Встановлює значення переходу:  */
+    /*?  Анимация-1 - Встановлює значення переходу: */
     /** transition-property */
     /* transition-property: all; */
     /* transition-property: background-color; */
@@ -204,7 +205,7 @@ body {
     /* transition-delay: 500ms; */
     /* transition-delay: 1500ms; */
 
-    /*todo Зміна властивостей transition-property без єфекту over */
+    /*todo Зміна властивостей transition-property без єфекту hover */
     /* background-color: teal;
     transform: rotate(180deg); */
 }
@@ -245,6 +246,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*?  Анимация-1 */
     transition-property: transform;
 }
 
@@ -290,7 +292,8 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-    transform: translatex(0);
+    transform: translateX(0);
+    /*?  Анимация-1 */
     transition-property: transform;
     transition-duration: 2000ms;
 }
@@ -300,7 +303,7 @@ body {
 }
 
 .box4:hover .circle4 {
-    transform: translatex(calc(80vw - 80px));
+    transform: translateX(calc(80vw - 80px));
 }
 
 .circle4:nth-child(1) {
@@ -355,7 +358,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    /*todo  Встановлює значення переходу:  */
+    /*?  Анимация-1 */
     /** transition-property */
     transition-property: background-color, transform;
     /** transition-duration */
@@ -397,7 +400,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    /*todo  Встановлює значення всіх переходів:  */
+    /*?  Анимация-1 */
     transition-property: background-color, transform;
     transition-duration: 1000ms, 500ms;
     transition-timing-function: linear, ease-in-out;
@@ -444,6 +447,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*?  Анимация-1 */
     transition-property: transform;
 }
 
@@ -503,6 +507,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*?  Анимация-1 */
     transition-property: transform;
 }
 
@@ -564,6 +569,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*?  Анимация-1 */
     transition-property: transform;
 }
 
@@ -667,6 +673,7 @@ body {
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    /*?  Анимация-1 */
     transition-property: transform;
 }
 
