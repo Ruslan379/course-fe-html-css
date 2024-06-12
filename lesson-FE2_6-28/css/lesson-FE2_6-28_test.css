@@ -398,12 +398,15 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*todo  Встановлює значення всіх переходів:  */
+    transition-property: background-color, transform;
+    transition-duration: 1000ms, 500ms;
+    transition-timing-function: linear, ease-in-out;
+    transition-delay: 0ms, 1000ms;
     /** Короткий запис CSS-переходів​ */
-    transition:
+    /* transition:
         background-color 1000ms linear,
-        transform 500ms ease-in-out 1000ms;
+        transform 500ms ease-in-out 1000ms; */
 }
-
 
 /*todo При наведенні змінюється значення анімованих властивостей. */
 .box6:hover {
