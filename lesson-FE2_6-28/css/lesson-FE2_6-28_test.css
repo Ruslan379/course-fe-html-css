@@ -620,7 +620,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*todo декілька трансформацій одного елемента */
+    /*! Поєднання декількох трансформацій одного елемента */
     /* transform: translate(-50%, -50%) rotate(90deg) scale(1.5); */
 
     border: 10px solid #d74400;
@@ -845,9 +845,9 @@ body {
 /* .part_13 {
     display: none;
 } */
-/*! >13.Поєднання декількох трансформацій одного елемента​ */
+/*! 13.Приклади різних трансформацій​ */
 .part_13 .container {
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
