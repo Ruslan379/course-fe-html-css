@@ -5,6 +5,9 @@
     --color-title-lesson: #4b4200;
     --color-title-section: red;
     --color-title-subsection: blue;
+
+    /* Розмір Точки трансформації (тільки для lesson-FE2_6-28_test) */
+    --dot-size: 16px;
 }
 
 body {
@@ -76,6 +79,7 @@ body {
 
     /* outline: 1px dotted red; */
 }
+
 .code1 {
     font-size: 2rem;
     font-weight: 700;
@@ -101,13 +105,13 @@ body {
     border: 15px solid rgb(0, 66, 0);
     border-radius: 50px;
     box-shadow:
-    /* inset 0 0 6px 12px rgba(0, 0, 0, 0.4), */
-    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.048), 
-    12.5px 12.5px 10px rgba(0, 0, 0, 0.06),
-    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.072), 
-    41.8px 41.8px 33.4px rgba(202, 73, 18, 0.429),
-    00px 100px 80px rgba(202, 94, 18, 0.466);
+        /* inset 0 0 6px 12px rgba(0, 0, 0, 0.4), */
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.06),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        41.8px 41.8px 33.4px rgba(202, 73, 18, 0.429),
+        00px 100px 80px rgba(202, 94, 18, 0.466);
     /* ? */
     outline: 2px solid rgba(255, 99, 71, 0.5);
 }
@@ -118,12 +122,10 @@ body {
     height: 600px;
     background-position: left top;
     background-size: auto 600px;
-    background-image: 
-        linear-gradient(
-            to right,
+    background-image:
+        linear-gradient(to right,
             rgba(255, 241, 91, 0.1),
-            rgba(27, 29, 88, 0.45)
-        ),
+            rgba(27, 29, 88, 0.45)),
         url("../images/pano_img_3691-3720_for_tl.jpg");
     /* todo____________________________ */
     animation-name: move;
@@ -135,10 +137,12 @@ body {
     animation-delay: 1500ms;
     animation-iteration-count: infinite;
 }
+
 @keyframes move {
     0% {
         transform: translatex(0);
     }
+
     100% {
         transform: translatex(-4205px);
     }
@@ -173,29 +177,29 @@ body {
     border-radius: 10px;
     color: #f2ffd6;
     background-color: tomato;
-    box-shadow: 
-    inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
+    box-shadow:
+        inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*todo  Встановлює значення переходу:  */
-        /** transition-property */
+    /** transition-property */
     /* transition-property: all; */
     /* transition-property: background-color; */
     /* transition-property: background-color, transform; */
-        /** transition-duration */
+    /** transition-duration */
     /* transition-duration: 0ms; */
     /* transition-duration: 500ms; */
     /* transition-duration: 1500ms; */
     /* transition-duration: 2500ms; */
-        /** transition-timing-function */
+    /** transition-timing-function */
     /* transition-timing-function: ease; */
     /* transition-timing-function: linear; */
     /* transition-timing-function: ease-in; */
     /* transition-timing-function: ease-out; */
     /* transition-timing-function: ease-in-out; */
     /* transition-timing-function: cubic-bezier(0.39, 1.03, 0.82, 0.08); */
-        /** transition-delay */
+    /** transition-delay */
     /* transition-delay: 0; */
     /* transition-delay: 500ms; */
     /* transition-delay: 1500ms; */
@@ -205,7 +209,7 @@ body {
     transform: rotate(180deg); */
 }
 
-  /*todo При наведенні змінюється значення анімованих властивостей. */
+/*todo При наведенні змінюється значення анімованих властивостей. */
 .box2:hover {
     cursor: pointer;
     background-color: teal;
@@ -237,9 +241,9 @@ body {
     /* margin-left: 30px;
     margin-right: 30px; */
     border-radius: 50%;
-    box-shadow: 
+    box-shadow:
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: transform;
 }
@@ -283,7 +287,7 @@ body {
     border-radius: 50%;
     box-shadow:
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
     transform: translatex(0);
@@ -346,25 +350,25 @@ body {
     border-radius: 10px;
     color: #f2ffd6;
     background-color: green;
-    box-shadow: 
-    inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
+    box-shadow:
+        inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*todo  Встановлює значення переходу:  */
-        /** transition-property */
+    /** transition-property */
     transition-property: background-color, transform;
-        /** transition-duration */
+    /** transition-duration */
     transition-duration: 1500ms;
-        /** transition-timing-function */
+    /** transition-timing-function */
     transition-timing-function: linear;
-        /** transition-delay */
+    /** transition-delay */
     /* transition-delay: 0; */
     transition-delay: 500ms;
     /* transition-delay: 1500ms; */
 }
 
-  /*todo При наведенні змінюється значення анімованих властивостей. */
+/*todo При наведенні змінюється значення анімованих властивостей. */
 .box5:hover {
     cursor: pointer;
     background-color: red;
@@ -388,20 +392,20 @@ body {
     border-radius: 10px;
     color: #f2ffd6;
     background-color: yellow;
-    box-shadow: 
-    inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
+    box-shadow:
+        inset 0 0 24px 12px rgba(0, 0, 0, 0.4),
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*todo  Встановлює значення всіх переходів:  */
     /** Короткий запис CSS-переходів​ */
-    transition: 
-        background-color 1000ms linear, 
+    transition:
+        background-color 1000ms linear,
         transform 500ms ease-in-out 1000ms;
 }
 
 
-  /*todo При наведенні змінюється значення анімованих властивостей. */
+/*todo При наведенні змінюється значення анімованих властивостей. */
 .box6:hover {
     /* cursor: pointer; */
     background-color: blue;
@@ -433,9 +437,9 @@ body {
     height: 150px;
     font-weight: 700;
     border-radius: 50%;
-    box-shadow: 
+    box-shadow:
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: transform;
 }
@@ -444,6 +448,7 @@ body {
     background-color: orange;
     transition-duration: 1000ms;
 }
+
 .container7:hover .box7:nth-child(1) {
     transform: scale(1.25);
 }
@@ -452,15 +457,17 @@ body {
     background-color: #03a9f4;
     transition-duration: 1000ms;
 }
+
 .container7:hover .box7:nth-child(2) {
     transform: scale(1.0);
 }
 
 .box7:nth-child(3) {
     background-color: palevioletred;
-    
+
     transition-duration: 1000ms;
 }
+
 .container7:hover .box7:nth-child(3) {
     transform: scale(0.75);
 }
@@ -489,9 +496,9 @@ body {
     height: 180px;
     font-weight: 700;
     border-radius: 20px;
-    box-shadow: 
+    box-shadow:
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: transform;
 }
@@ -500,6 +507,7 @@ body {
     background-color: orange;
     transition-duration: 1000ms;
 }
+
 .container8:hover .box8:nth-child(1) {
     transform: rotate(30deg);
 }
@@ -508,15 +516,17 @@ body {
     background-color: #03a9f4;
     transition-duration: 1000ms;
 }
+
 .container8:hover .box8:nth-child(2) {
     transform: rotate(115deg);
 }
 
 .box8:nth-child(3) {
     background-color: palevioletred;
-    
+
     transition-duration: 1000ms;
 }
+
 .container8:hover .box8:nth-child(3) {
     transform: rotate(-45deg);
 }
@@ -547,9 +557,9 @@ body {
     font-weight: 700;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 
+    box-shadow:
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: transform;
 }
@@ -558,6 +568,7 @@ body {
     background-color: orange;
     transition-duration: 1000ms;
 }
+
 .container9:hover .box9:nth-child(1) {
     transform: translateX(50px);
 }
@@ -566,15 +577,17 @@ body {
     background-color: #03a9f4;
     transition-duration: 1000ms;
 }
+
 .container9:hover .box9:nth-child(2) {
     transform: translateY(110px);
 }
 
 .box9:nth-child(3) {
     background-color: palevioletred;
-    
+
     transition-duration: 1000ms;
 }
+
 .container9:hover .box9:nth-child(3) {
     transform: translate(-50px, -100px);
 }
@@ -589,7 +602,7 @@ body {
     position: relative;
     width: 500px;
     height: 300px;
-    
+
     border: 10px solid #165d10;
     border-radius: 10px;
     background-color: #4db53f;
@@ -647,9 +660,9 @@ body {
     font-weight: 700;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 
+    box-shadow:
         0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     transition-property: transform;
 }
@@ -658,6 +671,7 @@ body {
     background-color: orange;
     transition-duration: 1000ms;
 }
+
 .container11:hover .box11:nth-child(1) {
     transform: skewX(30deg);
 }
@@ -666,19 +680,167 @@ body {
     background-color: #03a9f4;
     transition-duration: 1000ms;
 }
+
 .container11:hover .box11:nth-child(2) {
     transform: skewY(30deg);
 }
 
 .box11:nth-child(3) {
     background-color: palevioletred;
-    
+
     transition-duration: 1000ms;
 }
+
 .container11:hover .box11:nth-child(3) {
     transform: skew(30deg, 30deg);
     /* transform: skew(30deg, -30deg); */
 }
+
+
+
+/* ! */
+/* .part_12 {
+    display: none;
+} */
+/*! 12.Точка трансформації​ */
+.part_12 .container {
+    min-height: 100vh;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.part_12 .box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid tomato;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.part_12 .box::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /**  Анимация-2  */
+    animation: rotateWithOrigin 3000ms linear 1000ms infinite;
+}
+
+.part_12 .box:nth-child(1)::before {
+    transform-origin: top left;
+}
+
+.part_12 .box:nth-child(2)::before {
+    transform-origin: top center;
+}
+
+.part_12 .box:nth-child(3)::before {
+    transform-origin: top right;
+}
+
+.part_12 .box:nth-child(4)::before {
+    transform-origin: center left;
+}
+
+.part_12 .box:nth-child(5)::before {
+    transform-origin: center center;
+}
+
+.part_12 .box:nth-child(6)::before {
+    transform-origin: center right;
+}
+
+.part_12 .box:nth-child(7)::before {
+    transform-origin: bottom left;
+}
+
+.part_12 .box:nth-child(8)::before {
+    transform-origin: bottom center;
+}
+
+.part_12 .box:nth-child(9)::before {
+    transform-origin: bottom right;
+}
+
+.part_12 .box::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: var(--dot-size);
+    height: var(--dot-size);
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.part_12 .box:nth-child(1)::after {
+    top: calc(var(--dot-size) / -2);
+    left: calc(var(--dot-size) / -2);
+}
+
+.part_12 .box:nth-child(2)::after {
+    top: calc(var(--dot-size) / -2);
+    left: center;
+}
+
+.part_12 .box:nth-child(3)::after {
+    top: calc(var(--dot-size) / -2);
+    right: calc(var(--dot-size) / -2);
+}
+
+.part_12 .box:nth-child(4)::after {
+    top: center;
+    left: calc(var(--dot-size) / -2);
+}
+
+.part_12 .box:nth-child(5)::after {
+    top: center;
+    left: center;
+}
+
+.part_12 .box:nth-child(6)::after {
+    top: center;
+    right: calc(var(--dot-size) / -2);
+}
+
+.part_12 .box:nth-child(7)::after {
+    bottom: calc(var(--dot-size) / -2);
+    left: calc(var(--dot-size) / -2);
+}
+
+.part_12 .box:nth-child(8)::after {
+    bottom: calc(var(--dot-size) / -2);
+    left: center;
+}
+
+.part_12 .box:nth-child(9)::after {
+    bottom: calc(var(--dot-size) / -2);
+    right: calc(var(--dot-size) / -2);
+}
+
+@keyframes rotateWithOrigin {
+    0% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
+
+
 
 
 
@@ -688,4 +850,5 @@ body {
 .part_0 {
     display: none;
 }
+
 /*! 0.Заголовок */
