@@ -885,6 +885,7 @@ body {
     height: 100px;
     line-height: 100px;
     margin: 0 auto;
+    /*?  Анимация-1  */
     -o-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -997,7 +998,6 @@ body {
     -moz-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
     -webkit-transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
     transform: matrix(1.2, 0, 0.5, 1.2, 50, 0);
-    transform: matrix();
 }
 
 
@@ -1039,18 +1039,20 @@ body {
     font-size: 20px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
+    /*?  Анимация-1  */
     transition: transform 1s ease-in-out;
 }
 
 .part_14 .box.rotate-x {
     transform: rotateX(60deg);
+    /**  Анимация-2  */
     /* animation: rotateX-14 1500ms infinite alternate ease-in-out 1000ms; */
     background-color: orange;
 }
 
 .part_14 .box.rotate-y {
     transform: rotateY(60deg);
+    /**  Анимация-2  */
     /* animation: rotateY-14 1500ms infinite alternate ease-in-out 1000ms; */
     background-color: teal;
 }
@@ -1112,18 +1114,20 @@ body {
     font-size: 20px;
     box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
+    /*?  Анимация-1  */
     transition: transform 1s ease-in-out;
 }
 
 .part_15 .box.rotate-x {
     transform: perspective(400px) rotateX(45deg);
+    /**  Анимация-2  */
     /* animation: rotateX-15 1500ms infinite alternate ease-in-out 1000ms; */
     background-color: red;
 }
 
 .part_15 .box.rotate-y {
     transform: perspective(400px) rotateY(45deg);
+    /**  Анимация-2  */
     /* animation: rotateY-15 1500ms infinite alternate ease-in-out 1000ms; */
     background-color: blue;
 }
@@ -1181,6 +1185,9 @@ body {
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     /*! Задаємо перспективу для кожного елемента окремо */
     transform: perspective(400px) rotateY(45deg);
+    /*?  Анимация-1  */
+    transition: transform 1s ease-in-out;
+    /**  Анимация-2  */
     /* animation: rotateY-16 3000ms infinite alternate backwards ease-in-out 1000ms; */
 }
 
