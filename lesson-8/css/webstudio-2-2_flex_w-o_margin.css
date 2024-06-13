@@ -326,13 +326,15 @@ body {
     height: 100%;
     background-color: var(--color-background-backdrop);
     opacity: 1;
+    /* ! */
+    overflow-y: scroll;
 }
 
 .is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
+} 
 
 .no-scroll {
     overflow: hidden;
