@@ -159,6 +159,7 @@ body {
     /*? Анімація-1 - шлях */
     transition:
         bottom 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 0ms,
+        background-color 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 0ms,
         transform 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 0ms,
         opacity 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 0ms;
         
@@ -176,9 +177,13 @@ body {
 .nav-item:hover .nav-link.active-link::after {
     /* transform: scale(1); */
     /* opacity: 1; */
+
     bottom: -25px;
     /*! Не працює разом з @keyframes underlining */
     /* transform: translateY(-8px); */
+
+    background-color:  #b70000;
+
 }
 /** Анімація-2 - зміна стану + тригер */
 @keyframes underlining {
@@ -1493,16 +1498,18 @@ body {
     line-height: 1.555;
     letter-spacing: 0.03em;
     color: var(--color-light);
-    background-color: var(--color-background-overlay);
+    /* background-color: var(--color-background-overlay); */
+    background-color: #222222;
     /** анімація */
     transition: 
-        transform
-        250ms 
+        transform, background-color,
+        1000ms 
         cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-item:hover .card-text {
+    background-color: var(--color-background-overlay);
     /* todo var.1 */
-    transform: translateY(0);
+    /* transform: translateY(0); */
     /* todo var.2 */
     /* transform: translateY(-294px); */
     transform: translateY(-100%);
