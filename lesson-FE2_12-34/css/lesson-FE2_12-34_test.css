@@ -67,7 +67,8 @@ body {
 /** 01. Від 320px до 599px - orange */
 /*? Загальні стилі container */
 .container {
-    min-width: 320px; /* ! ширина в'юпорту, нижче якої дизайн не підтримується */
+    min-width: 320px;
+    /* ! ширина в'юпорту, нижче якої дизайн не підтримується */
     margin: 0 auto;
     padding-top: 20px;
     background-color: orange;
@@ -80,8 +81,8 @@ body {
 
 /*? Встановлюємо базову (початкову) ширину adaptive контейнера. */
 .container.adaptive {
-    
-    max-width: 320px; /*! початкове значення максимальної ширини */
+    max-width: 320px;
+    /*! початкове значення максимальної ширини */
     margin-bottom: 40px;
 }
 
@@ -109,14 +110,17 @@ body {
     .container {
         background-color: skyblue;
     }
+
     .container.adaptive {
         max-width: 600px;
     }
+
     .label-1,
     .label-3,
     .label-4 {
         display: none;
     }
+
     .label-2 {
         display: block;
     }
@@ -127,14 +131,17 @@ body {
     .container {
         background-color: lightgreen;
     }
+
     .container.adaptive {
         max-width: 900px;
     }
+
     .label-1,
     .label-2,
     .label-4 {
         display: none;
     }
+
     .label-3 {
         display: block;
     }
@@ -145,14 +152,17 @@ body {
     .container {
         background-color: tomato;
     }
+
     .container.adaptive {
         max-width: 1140px;
     }
+
     .label-1,
     .label-2,
     .label-3 {
         display: none;
     }
+
     .label-4 {
         display: block;
     }
@@ -163,7 +173,84 @@ body {
 /* .part_2 {
     display: none;
 } */
-/*! 2.position: relative */
+/*! 2.Стратегія Mobile First */
+.mobile-first {
+    margin-top: 400px;
+}
+/** 01. Від 320px до 767px - orange */
+/*? Загальні стилі container */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.element {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.element:nth-child(1) {
+    background-color: #F44336;
+}
+.element:nth-child(2) {
+    background-color: #3F51B5;
+}
+.element:nth-child(3) {
+    background-color: #4CAF50;
+}
+.element:nth-child(4) {
+    background-color: #00BCD4;
+}
+.element:nth-child(5) {
+    background-color: #E91E63;
+}
+.element:nth-child(6) {
+    background-color: #009688;
+}
+
+/** SASS loop for background color generation. */
+/* $colors: "#F44336", "#3F51B5", "#4CAF50", "#00BCD4", "#E91E63", "#009688"; */
+
+/* @each $color in $colors {
+    $idx: index($colors, $color);
+    .element:nth-child(#{$idx}) {
+        background-color: #{$color};
+    }
+} */
+
+/*? Медіа-запити: */
+/** 02. Від 768px до 1023px */
+@media screen and (min-width: 768px) {
+    .container2 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .element {
+        flex-basis: calc((100% - 10px) / 2);
+        font-size: 32px;
+    }
+}
+
+/** 02. Від 1024px до ~ */
+@media screen and (min-width: 1024px) {
+    .container2 {
+        gap: 15px;
+    }
+    .element {
+        flex-basis: calc((100% - 30px) / 3);
+    }
+}
+
+
+
 
 
 /*? ______________________________________________________ */
