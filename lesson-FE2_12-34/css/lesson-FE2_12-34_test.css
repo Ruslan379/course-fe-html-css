@@ -177,7 +177,7 @@ body {
 .mobile-first {
     margin-top: 600px;
 }
-/** 01. Від 320px до 767px - orange */
+/** 01. Від 320px до 767px  */
 /*? Загальні стилі container */
 .container2 {
     display: flex;
@@ -194,6 +194,8 @@ body {
     text-align: center;
     font-size: 24px;
     color: #fff;
+    /*! Застосується до всіх медіа-запитів */
+    /* border: 2px solid black; */
 }
 
 .element:nth-child(1) {
@@ -226,6 +228,13 @@ body {
 } */
 
 /*? Медіа-запити: */
+/** 01. Від ~ до 767px  */
+@media (max-width: 767px) {
+    .element {
+        border: 2px solid black;
+    }
+}
+
 /** 02. Від 768px до 1023px */
 @media screen and (min-width: 768px) {
     .container2 {
@@ -236,6 +245,7 @@ body {
     .element {
         flex-basis: calc((100% - 10px) / 2);
         font-size: 32px;
+        font-weight: 700;
     }
 }
 
@@ -246,6 +256,7 @@ body {
     }
     .element {
         flex-basis: calc((100% - 40px) / 3);
+        font-style: italic;
     }
 }
 
