@@ -67,7 +67,7 @@ body {
 /** 01. Від 320px до 599px - orange */
 /*? Загальні стилі container */
 .container {
-    min-width: 320px;
+    min-width: 320px; /* ! ширина в'юпорту, нижче якої дизайн не підтримується */
     margin: 0 auto;
     padding-top: 20px;
     background-color: orange;
@@ -80,7 +80,8 @@ body {
 
 /*? Встановлюємо базову (початкову) ширину adaptive контейнера. */
 .container.adaptive {
-    max-width: 400px;
+    
+    max-width: 320px; /*! початкове значення максимальної ширини */
     margin-bottom: 40px;
 }
 
