@@ -1460,6 +1460,11 @@ body {
     flex-basis: calc((100% - 60px) / 3);
     /*todo ❌ border var. 1 - невірний */
     /* border: 1px solid #fffa69;; */
+    /*? Анімація-1 */
+    transition: 
+        box-shadow,
+        1000ms 
+        cubic-bezier(0.4, 0, 0.2, 1);
     /* outline: 1px dotted rgb(255, 94, 247); */
 }
 .card-item:hover {
@@ -1502,7 +1507,7 @@ body {
     color: var(--color-light);
     /* background-color: var(--color-background-overlay); */
     background-color: #222222;
-    /** анімація */
+    /*? Анімація-1 */
     transition: 
         transform, background-color,
         1000ms 
