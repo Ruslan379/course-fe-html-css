@@ -160,19 +160,21 @@ label {
         content: '';
         display: block;
         width: 25px;
-        height: 2px;
-        background: #333;
+        height: 4px;
+        background-color: green;
         position: absolute;
         right: 0;
-        transition: .3s;
+        transition: 3s;
     }
 
     label span::before {
         top: -8px;
+        background-color: red;
     }
 
     label span::after {
         top: 8px;
+        background-color: blue;
     }
 
     .nav-list {
@@ -185,15 +187,18 @@ label {
         outline: 1px dotted red;
     }
 
+    /** green */
     input[type="checkbox"]:checked~label span {
-        transform: rotate(-45deg);
+        transform: rotate(-45deg); 
     }
 
+    /*! red */
     input[type="checkbox"]:checked~label span::before {
         top: 0;
-        transform: rotate(0);
+        /* transform: rotate(0); */
     }
 
+    /*? blue */
     input[type="checkbox"]:checked~label span::after {
         top: 0;
         transform: rotate(90deg);
