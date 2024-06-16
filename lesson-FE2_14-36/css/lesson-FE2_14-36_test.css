@@ -1,0 +1,228 @@
+:root {
+    /** ============ CSS-змінні ============ */
+    --color-font-body: #4b2500;
+    --color-background-body: #daffd2;
+    --color-title-lesson: #6b5f00;
+    --color-title-section: red;
+    --color-title-subsection: blue;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    padding: 20px 20px 150px;
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+    /* ! for position: fixed */
+    /* margin-bottom: 350px; */
+}
+
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
+}
+
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+/* .part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* *======================================= */
+/*! =============================== */
+/* .part_1 {
+    display: none;
+} */
+/*! 1.Верстка та адаптація мобільного меню */
+header {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+    /* padding: 35px 16px; */
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 1px solid black;
+}
+
+header a {
+    font-size: 25px;
+    font-weight: 600;
+    flex-grow: 1;
+    outline: 1px dashed darkgreen;
+}
+
+/* nav-menu */
+nav {
+    /*   width: 65%; */
+    flex-grow: 3;
+    outline: 2px dashed orangered;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    outline: 2px dotted blue;
+}
+
+.nav-list__link,
+.join_block {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+input[type="checkbox"],
+label {
+    display: none;
+}
+
+/* join_block */
+.join_block {
+    flex-grow: 1;
+    text-align: right;
+    outline: 1px dashed green;
+}
+
+.join {
+    background: none;
+    border: none;
+    padding: 0 20px;
+    transition: opacity .3s;
+}
+
+.started {
+    background: #ffcc01;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 25px 13px;
+    transition: opacity .3s;
+}
+
+.join:hover,
+.started:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+/* mobile menu */
+@media (max-width: 768px) {
+    nav {
+        order: 1;
+    }
+
+    label {
+        display: block;
+        height: 30px;
+        width: 30px;
+        margin-left: auto;
+        position: relative;
+    }
+
+    label:hover {
+        cursor: pointer;
+    }
+
+    label span {
+        top: 15px;
+    }
+
+    label span,
+    label span::before,
+    label span::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        right: 0;
+        transition: .3s;
+    }
+
+    label span::before {
+        top: -8px;
+    }
+
+    label span::after {
+        top: 8px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked~.nav-list {
+        display: flex;
+        flex-direction: column;
+        outline: 1px dotted red;
+    }
+
+    input[type="checkbox"]:checked~label span {
+        transform: rotate(-45deg);
+    }
+
+    input[type="checkbox"]:checked~label span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    input[type="checkbox"]:checked~label span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 12px 8px #ececec;
+        outline: 1px dotted blue;
+    }
+
+    .nav-list__item {
+        margin: 15px 0;
+    }
+}
+
+
+
+
+
+/*? ______________________________________________________ */
+/*! =============================== */
+.part_0 {
+    display: none;
+}
+
+/*! 0.Заголовок */
