@@ -1,7 +1,7 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #4b2500;
-    --color-background-body: #daffd2;
+    --color-background-body: #e6ffe0;
     --color-title-lesson: #6b5f00;
     --color-title-section: red;
     --color-title-subsection: blue;
@@ -60,11 +60,13 @@ body {
 } */
 /*! 1.Верстка та адаптація мобільного меню */
 header {
-    width: 1024px;
-    max-width: 100%;
+    /* width: 1024px;
+    max-width: 100%; */
+    width: 100%;
+    max-width: 1024px;
     margin: 0 auto;
-    /* padding: 35px 16px; */
-    padding: 35px 0px;
+    padding: 35px 16px;
+    /* padding: 35px 0px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,9 +80,9 @@ header a {
     outline: 1px dashed darkgreen;
 }
 
-/* nav-menu */
+/*? nav-menu */
 nav {
-    /*   width: 65%; */
+    /* width: 65%; */
     flex-grow: 3;
     outline: 2px dashed orangered;
 }
@@ -99,12 +101,13 @@ nav {
     font-weight: 400;
 }
 
+button,
 input[type="checkbox"],
 label {
     display: none;
 }
 
-/* join_block */
+/*? join_block */
 .join_block {
     flex-grow: 1;
     text-align: right;
@@ -132,29 +135,30 @@ label {
     cursor: pointer;
 }
 
-/* mobile menu */
+/*? mobile menu */
 @media (max-width: 768px) {
     nav {
         order: 1;
     }
 
     label {
+        position: relative;
         display: block;
         height: 30px;
         width: 30px;
         margin-left: auto;
-        position: relative;
+        background-color: aqua;
     }
 
     button {
+        position: relative;
         height: 30px;
         width: 30px;
+        /* margin-left: auto; */
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        margin-left: auto;
-        position: relative;
+        border: 1px solid blue;
     }
 
     label:hover {
@@ -162,7 +166,10 @@ label {
     }
 
     label span {
-        top: 15px;
+        /* top: 15px;  */ /*todo old */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     label span,
@@ -174,7 +181,7 @@ label {
         height: 4px;
         background-color: green;
         position: absolute;
-        right: 0;
+        /* right: 0; */ /*todo old */
         transition: 3s;
     }
     button span,
@@ -186,7 +193,7 @@ label {
         height: 4px;
         background-color: green;
         position: absolute;
-        right: 0;
+        /* right: 0; */
         transition: 3s;
     }
 
@@ -215,13 +222,14 @@ label {
     input[type="checkbox"]:checked~.nav-list {
         display: flex;
         flex-direction: column;
-        outline: 1px dotted red;
+        outline: 2px dotted red;
     }
 
-    /* +++++++++++++++++++++++++++++++++++++++++++ */
+    /*? +++++++++++++++++++++++++++++++++++++++++++ */
     /** green */
     input[type="checkbox"]:checked~label span {
-        transform: rotate(-45deg); 
+        /* transform: rotate(-45deg); */ /*todo old */
+        transform: translate(-50%, -50%) rotate(-45deg); 
     }
     /** green */
     button:hover > span {
@@ -249,7 +257,7 @@ label {
         top: 0;
         transform: rotate(90deg);
     }
-    /* +++++++++++++++++++++++++++++++++++++++++++ */
+    /*? ___________________________________________ */
 
     .nav-list {
         position: absolute;
@@ -257,13 +265,13 @@ label {
         left: 0;
         width: 100%;
         padding: 20px;
-        background: #fff;
-        box-shadow: 0 12px 8px #ececec;
-        outline: 1px dotted blue;
+        background-color: burlywood;
+        box-shadow: 0 12px 8px #797979;
     }
 
     .nav-list__item {
         margin: 15px 0;
+        outline: 1px solid olivedrab;
     }
 }
 
