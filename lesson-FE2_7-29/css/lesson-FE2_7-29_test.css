@@ -228,7 +228,7 @@ body {
 /* .part_1-2 {
     display: none;
 } */
-/*! 1-1_2.Відкриття приховування елемента без використання JS */
+/*! 1-1_2.Відкриття та приховування елемента без використання JS */
 /* ? Просто input */
 .part_1-2 .input-box,
 .part_1-2 .input-button-box {
@@ -242,7 +242,6 @@ body {
     outline: 4px double tomato;
 }
 
-/* .part_1-2 .input-box>input, */
 .part_1-2 .input-box>label {
     outline: 1px solid grey;
 }
@@ -287,7 +286,6 @@ body {
 .part_1-2 .input-button-box>input:checked+label {
     background-color: #e8ffcd;
 }
-
 
 /*! Робимо внутрішній контент (горизонтальні рисочки) кнопки-label */
 .input-button-span::after,
