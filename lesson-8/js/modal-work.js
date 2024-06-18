@@ -7,7 +7,7 @@
         modal: document.querySelector("[data-modal]"),
         form: document.querySelector(".modal-form"),
         submitBtn: document.querySelector(".modal-form__button-submit"),
-        modal: document.querySelector("[data-modal]"),
+        modalThanks: document.querySelector("[data-modal-thanks]"),
     };
     
     refs.openModalBtn.addEventListener("click", toggleModal);
@@ -53,6 +53,8 @@
 
         //! Додатковий функціонал – закриття модального вікна після відправлення форми
         // toggleModal();
+        //! Додатковий функціонал – відкриття модального вікно-подяки після відправлення форми
+        refs.modalThanks.classList.toggle("is-hidden");
     }
 })();
 
