@@ -224,12 +224,12 @@ body {
 }
 
 
-
 /*! =============================== */
 /* .part_1-2 {
     display: none;
 } */
 /*! 1-1_2.Відкриття приховування елемента без використання JS */
+/* ? Просто input */
 .part_1-2 .input-box,
 .part_1-2 .input-button-box {
     margin-bottom: 40px;
@@ -244,7 +244,6 @@ body {
 
 /* .part_1-2 .input-box>input, */
 .part_1-2 .input-box>label {
-
     outline: 1px solid grey;
 }
 
@@ -252,34 +251,45 @@ body {
     background-color: #e8ffcd;
 }
 
-/*! input-button-box */
+/*? Кнопка-label */
 .part_1-2 .input-button-box {
+    position: relative;
+    /* flex-direction: column; */
+    height: auto;
+    padding: 25px 25px;
     outline: 4px double rgb(71, 151, 255);
 }
 
+/*! Приховуємо input */
 .part_1-2 .input-button-box>input {
     display: none;
 }
 
+/*! Робимо з label вигляд кнопки (кнопка-label) */
 .part_1-2 .input-button-box>label {
     /* position: relative; */
-    height: 70px;
     width: 70px;
+    height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    /* margin-left: auto; */
+    margin-left: auto;
     outline: 1px solid grey;
     /* background-color: #e8ffcd; */
 }
+.part_1-2 .input-button-box>label:hover{
+    box-shadow: inset 0 0 8px gray;
+}
 
+/*! Подія :checked змінює background-color на label */
 .part_1-2 .input-button-box>input:checked+label {
     background-color: #e8ffcd;
 }
 
 
+/*! Робимо внутрішній контент (горизонтальні рисочки) кнопки-label */
 .input-button-span::after,
 .input-button-span::before,
 .input-button-span {
@@ -292,22 +302,73 @@ body {
     background-color: #393939;
     background-color: green;
     /*?  Анимация-1  */
-    /* transition: 3s; */
+    transition: 1s;
 }
-
 .input-button-span::before {
     /* top: -8px; */
     margin-top: -20px;
     background-color: red;
-    opacity: 0.5;
+    /* opacity: 0.5; */
 }
-
 .input-button-span::after {
     /* top: 8px; */
     margin-top: 32px;
     background-color: blue;
 }
 
+/*! Список, що розкривається знизу */
+.part_1-2 .list {
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    outline: 4px double rgb(71, 151, 255);
+    /*?  Анимация-1 */
+    transition: 1s;
+}
+
+.part_1-2 .item {
+    padding: 10px 20px;
+    border: 2px solid green;
+    border-radius: 8px;
+    background-color: #e8ffcd;
+    /*?  Анимация-1 */
+    transition: .5s;
+}
+.part_1-2 .item:hover {
+    border-color: #00b5b5;
+    background-color: #92ffff;
+    box-shadow: inset 0 0 8px gray; ;
+}
+
+/*! Подія :checked змінює контент (горизонтальні рисочки) кнопки-label на хрестик */
+.part_1-2 .input-button-box>input:checked+label>.input-button-span {
+    transform: rotate(45deg);
+}
+.part_1-2 .input-button-box>input:checked+label>.input-button-span::before {
+    margin-top: 0;
+    transform: rotate(0);
+}
+.part_1-2 .input-button-box>input:checked+label>.input-button-span::after {
+    margin-top: -8px;
+    transform: rotate(-90deg);
+}
+
+/*! Подія :checked відкриває або приховує список, що розкривається знизу*/
+.part_1-2 .input-button-box>input:checked+label ~ .list {
+    top: 100%;
+    /* display: flex; */
+    /* visibility: visible; */
+    opacity: 1;
+}
 
 
 /*! =============================== */
@@ -326,7 +387,6 @@ body {
     position: relative;
     display: block;
     padding: 10px 20px;
-    text-decoration: none;
     color: currentColor;
     border: 2px solid green;
     border-radius: 8px;
