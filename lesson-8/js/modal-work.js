@@ -5,10 +5,13 @@
         closeModalBtn: document.querySelector("[data-modal-close]"),
         backdrop: document.querySelector("[data-backdrop]"),
         modal: document.querySelector("[data-modal]"),
+        form: document.querySelector(".modal-form"),
+        submitBtn: document.querySelector(".modal-form__button-submit")
     };
     
     refs.openModalBtn.addEventListener("click", toggleModal);
     refs.closeModalBtn.addEventListener("click", toggleModal);
+    refs.form.addEventListener("submit", handleFormSubmit);
     
     function toggleModal() {
         refs.backdrop.classList.toggle("is-hidden");
@@ -16,11 +19,10 @@
     }
 
 
-
     //! Логіка кліків в бєкдроп та модальне вікно
     isOnlyBackdrop = true;
     
-    //! клік в бєкдроп
+    //! Клік в бєкдроп
     refs.backdrop.addEventListener("click", logBackdropClick);
     
     function logBackdropClick() {
@@ -31,7 +33,7 @@
         isOnlyBackdrop = true;
     }
     
-    //! клік в модальне вікно
+    //! Клік в модальне вікно
     refs.modal.addEventListener("click", logModalClick);
     
     function logModalClick() {
@@ -40,5 +42,16 @@
         console.log("Це клік в модальне вікно");
         };
     }
-    
+
+    function handleFormSubmit(event) {
+        //! Запобігаємо перезавантаженню сторінки після надсилання форми
+        event.preventDefault();  
+
+        //! Очищення полів форми після надсилання форми
+        refs.form.reset();
+
+        //! Додатковий функціонал – закриття модального вікна після відправлення форми
+        // toggleModal();
+    }
 })();
+
