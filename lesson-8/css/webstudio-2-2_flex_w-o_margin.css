@@ -832,6 +832,7 @@ body {
     background-color: var(--color-brand-main);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+/*! Так не працює */
 /* .modal-form__button-submit:active ~ .modal-thanks {
     display: block;
 } */
@@ -845,6 +846,10 @@ body {
 /** Модальне вікно-подяка */
 .modal-thanks {
     /* display: none; */
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 40px;
     position: absolute;
     top: 0;
@@ -853,8 +858,6 @@ body {
     height: 100%;
     border-radius: 4px;
     background-color: seashell;
-    /* opacity: 0.5; */
-    /* transform: translate(-50%, -50%) scale(1); */
     /*? Анімація-1 - шлях */
     /* transition: 
         transform, opacity,
