@@ -80,15 +80,15 @@ body {
     cursor: pointer;
     background-color: #008080;
     text-shadow:
-    1px 1px 2px rgba(0, 0, 0, 0.4),
-    2px 2px 4px rgba(0, 0, 0, 0.2),
-    4px 4px 8px rgba(0, 0, 0, 0.1);
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.2),
+        4px 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow:
         inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
     /*? Анімація-1 - шлях */
@@ -110,15 +110,9 @@ body {
     background-size: 45px 45px;
     background-position: center;
     /*? Анімація-1 - шлях (збірна властивість) */
-    transition: 
-        transform 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms,
-        opacity 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms;
+    transition:
+        transform 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms,
+        opacity 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms;
 }
 
 .btn1::before {
@@ -171,6 +165,7 @@ body {
     height: 100px;
     /* outline: 1px solid red; */
 }
+
 .btn1-1 {
     position: absolute;
     display: flex;
@@ -191,15 +186,15 @@ body {
     cursor: pointer;
     background-color: #008080;
     text-shadow:
-    1px 1px 2px rgba(0, 0, 0, 0.4),
-    2px 2px 4px rgba(0, 0, 0, 0.2),
-    4px 4px 8px rgba(0, 0, 0, 0.1);
+        1px 1px 2px rgba(0, 0, 0, 0.4),
+        2px 2px 4px rgba(0, 0, 0, 0.2),
+        4px 4px 8px rgba(0, 0, 0, 0.1);
     box-shadow:
         inset 0 0 16px 8px rgba(0, 0, 0, 0.3),
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048), 
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
         0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072), 
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
     /*? Анімація-1 - шлях */
@@ -235,17 +230,82 @@ body {
     display: none;
 } */
 /*! 1-1_2.Відкриття приховування елемента без використання JS */
-.part_1-2 .input-box {
+.part_1-2 .input-box,
+.part_1-2 .input-button-box {
+    margin-bottom: 40px;
     width: 400px;
-    height: 100px;display: flex;
+    height: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     outline: 4px double tomato;
 }
-.part_1-2 .input-box>input,
+
+/* .part_1-2 .input-box>input, */
 .part_1-2 .input-box>label {
-    background-color: rgb(232, 255, 205);
+
+    outline: 1px solid grey;
+}
+
+.part_1-2 .input-box>input:checked+label {
+    background-color: #e8ffcd;
+}
+
+/*! input-button-box */
+.part_1-2 .input-button-box {
+    outline: 4px double rgb(71, 151, 255);
+}
+
+.part_1-2 .input-button-box>input {
+    display: none;
+}
+
+.part_1-2 .input-button-box>label {
+    /* position: relative; */
+    height: 70px;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    /* margin-left: auto; */
+    outline: 1px solid grey;
+    /* background-color: #e8ffcd; */
+}
+
+.part_1-2 .input-button-box>input:checked+label {
+    background-color: #e8ffcd;
+}
+
+
+.input-button-span::after,
+.input-button-span::before,
+.input-button-span {
+    content: '';
+    display: block;
+    /* position: absolute; */
+    /* right: 0; */
+    width: 50px;
+    height: 8px;
+    background-color: #393939;
+    background-color: green;
+    /*?  Анимация-1  */
+    /* transition: 3s; */
+}
+
+.input-button-span::before {
+    /* top: -8px; */
+    margin-top: -20px;
+    background-color: red;
+    opacity: 0.5;
+}
+
+.input-button-span::after {
+    /* top: 8px; */
+    margin-top: 32px;
+    background-color: blue;
 }
 
 
@@ -274,10 +334,7 @@ body {
     /* transform: scale(1); */
     /*? Анімація-1+ - шлях (збірна властивість) */
     transition:
-        transform 
-        500ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        1000ms;
+        transform 500ms cubic-bezier(0.83, -0.08, 0.32, 1) 1000ms;
 }
 
 /* .link2::after { */
@@ -295,14 +352,8 @@ body {
     transform: scaleX(0);
     /*? Анімація-1 - шлях (збірна властивість) */
     transition:
-        transform 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms,
-        opacity 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms;
+        transform 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms,
+        opacity 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms;
 }
 
 /*? Анімація-1 - кінцевий стан + тригер */
@@ -357,14 +408,8 @@ body {
     transform: translateX(-100%);
     /*? Анімація-1-overlay - шлях (збірна властивість) */
     transition:
-        transform 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms,
-        opacity 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms;
+        transform 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms,
+        opacity 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms;
 }
 
 /*todo блок кнопки-іконки */
@@ -379,11 +424,8 @@ body {
     /* ! */
     opacity: 0;
     /*? Анімація-1-box - шлях (збірна властивість) */
-    transition: 
-        opacity 
-        1000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms;
+    transition:
+        opacity 1000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms;
 }
 
 /*todo кнопки та іконки */
@@ -474,15 +516,10 @@ body {
     transform: translate(-50%, -50%) scale(1);
     /*? Анімація-1 - шлях */
     transition:
-        transform 
-        3000ms
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms,
-        opacity 
-        3000ms 
-        cubic-bezier(0.83, -0.08, 0.32, 1) 
-        500ms;
+        transform 3000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms,
+        opacity 3000ms cubic-bezier(0.83, -0.08, 0.32, 1) 500ms;
 }
+
 .modal .btn {
     position: absolute;
     top: 10px;
@@ -506,4 +543,5 @@ body {
 .part_0 {
     display: none;
 }
+
 /*! 0.Заголовок */
