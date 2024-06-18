@@ -60,7 +60,7 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Анімовані властивості події hover на кнопці */
+/*! 1-1.Анімовані властивості події hover на кнопці */
 .btn1 {
     position: relative;
     display: inline-flex;
@@ -164,7 +164,7 @@ body {
 /* .part_1-1 {
     display: none;
 } */
-/*! 1-1.Анімовані властивості зміни контенту на кнопці */
+/*! 1-1_1.Анімовані властивості зміни контенту на кнопці */
 .box-btn1-1 {
     position: relative;
     width: 500px;
@@ -229,11 +229,32 @@ body {
 }
 
 
+
+/*! =============================== */
+/* .part_1-2 {
+    display: none;
+} */
+/*! 1-1_2.Відкриття приховування елемента без використання JS */
+.part_1-2 .input-box {
+    width: 400px;
+    height: 100px;display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    outline: 4px double tomato;
+}
+.part_1-2 .input-box>input,
+.part_1-2 .input-box>label {
+    background-color: rgb(232, 255, 205);
+}
+
+
+
 /*! =============================== */
 /* .part_2 {
     display: none;
 } */
-/*! 2.Підкреслення вкладки при ховері в меню: */
+/*! 2.Підкреслення вкладки при ховері в меню */
 .list2 {
     display: flex;
     gap: 12px;
