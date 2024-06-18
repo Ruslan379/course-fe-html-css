@@ -6,7 +6,8 @@
         backdrop: document.querySelector("[data-backdrop]"),
         modal: document.querySelector("[data-modal]"),
         form: document.querySelector(".modal-form"),
-        submitBtn: document.querySelector(".modal-form__button-submit")
+        submitBtn: document.querySelector(".modal-form__button-submit"),
+        modal: document.querySelector("[data-modal]"),
     };
     
     refs.openModalBtn.addEventListener("click", toggleModal);
