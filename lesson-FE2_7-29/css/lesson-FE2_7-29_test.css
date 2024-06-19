@@ -229,7 +229,7 @@ body {
     display: none;
 } */
 /*! 1-1_2.Відкриття та приховування елемента без використання JS */
-/* ? Просто input */
+/*? Просто input */
 .part_1-2 .input-box,
 .part_1-2 .input-button-box {
     margin-bottom: 40px;
@@ -250,7 +250,7 @@ body {
     background-color: #e8ffcd;
 }
 
-/*? Кнопка-label */
+/*? Кнопка-label з випадаючим меню */
 .part_1-2 .input-button-box {
     position: relative;
     /* flex-direction: column; */
