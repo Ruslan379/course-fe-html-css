@@ -832,9 +832,11 @@ body {
     background-color: var(--color-brand-main);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-/*! Так не працює */
+/*! Так не працює, бо подія буде тільки при натисканні на кнопку, а це не КЛІК! */
 /* .modal-form__button-submit:active ~ .modal-thanks {
-    display: block;
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
 } */
 
 /** колір фону input та textarea */
