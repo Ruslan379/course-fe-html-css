@@ -230,8 +230,8 @@ body {
 } */
 /*! 1-1_2.Відкриття та приховування елемента без використання JS */
 /*? Просто input */
-.part_1-2 .input-box,
-.part_1-2 .input-button-box {
+.part_1-2 .header,
+.part_1-2 .input-box {
     margin-bottom: 40px;
     width: 400px;
     height: 100px;
@@ -251,7 +251,11 @@ body {
 }
 
 /*? Кнопка-label з випадаючим меню */
-.part_1-2 .input-button-box {
+/* ! */
+/* .part_1-2 .header {
+    display: none;
+} */
+.part_1-2 .header {
     position: relative;
     /* flex-direction: column; */
     height: auto;
@@ -260,12 +264,12 @@ body {
 }
 
 /*! Приховуємо input */
-.part_1-2 .input-button-box>input {
+.part_1-2 .header>input {
     display: none;
 }
 
 /*! Робимо з label вигляд кнопки (кнопка-label) */
-.part_1-2 .input-button-box>label {
+.part_1-2 .header>label {
     /* position: relative; */
     width: 70px;
     height: 70px;
@@ -275,15 +279,16 @@ body {
     align-items: center;
     border-radius: 10px;
     margin-left: auto;
-    outline: 1px solid grey;
+    outline: 2px solid grey;
     /* background-color: #e8ffcd; */
+    box-shadow: 4px 4px 8px gray;
 }
-.part_1-2 .input-button-box>label:hover{
+.part_1-2 .header>label:hover{
     box-shadow: inset 0 0 8px gray;
 }
 
 /*! Подія :checked змінює background-color на label */
-.part_1-2 .input-button-box>input:checked+label {
+.part_1-2 .header>input:checked+label {
     background-color: #e8ffcd;
 }
 
@@ -348,20 +353,20 @@ body {
 }
 
 /*! Подія :checked змінює контент (горизонтальні рисочки) кнопки-label на хрестик */
-.part_1-2 .input-button-box>input:checked+label>.input-button-span {
+.part_1-2 .header>input:checked+label>.input-button-span {
     transform: rotate(45deg);
 }
-.part_1-2 .input-button-box>input:checked+label>.input-button-span::before {
+.part_1-2 .header>input:checked+label>.input-button-span::before {
     margin-top: 0;
     transform: rotate(0);
 }
-.part_1-2 .input-button-box>input:checked+label>.input-button-span::after {
+.part_1-2 .header>input:checked+label>.input-button-span::after {
     margin-top: -8px;
     transform: rotate(-90deg);
 }
 
 /*! Подія :checked відкриває або приховує список, що розкривається знизу*/
-.part_1-2 .input-button-box>input:checked+label ~ .list {
+.part_1-2 .header>input:checked+label ~ .list {
     top: 100%;
     /* display: flex; */
     /* visibility: visible; */
