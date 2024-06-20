@@ -63,17 +63,16 @@ body {
 /*! 1-1.Анімовані властивості події hover на кнопці */
 .btn1 {
     position: relative;
-    display: inline-flex;
-    align-items: center;
+    /* ! */
+    overflow: hidden;
     height: 100px;
     margin: 50px 0;
     padding: 0 30px;
-    /* ! */
-    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     font-size: 4rem;
-    /* font: inherit; */
     border: none;
     border-radius: 12px;
     color: #ffffff;
@@ -170,17 +169,16 @@ body {
 
 .part_1-1_1 .btn {
     position: absolute;
+    /* ! */
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    /* ! */
-    /* overflow: hidden; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 700;
     font-size: 4rem;
-    /* font: inherit; */
     border: none;
     border-radius: 12px;
     color: #ffffff;
@@ -233,11 +231,11 @@ body {
 /*! 1-1_1(2).Анімовані властивості зміни контенту на кнопці (2-й варіант) */
 .part_1-1_2 .btn {
     position: relative;
+    width: 600px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 100px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 4rem;
@@ -322,11 +320,12 @@ body {
 /*! 1-1_1(3).Анімовані властивості зміни контенту на кнопці (3-й варіант) */
 .part_1-1_3 .btn {
     position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 100px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 4rem;
@@ -347,72 +346,81 @@ body {
         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
         0 100px 80px rgba(0, 0, 0, 0.12);
-    /*? Анімація-1 - шлях */
-    /* transition-property: all; */
-    transition-property: background-color, color;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
-    transition-delay: 100ms;
+    /*? Анімація-1 - шлях (збірна властивість) */
+    transition:
+        background-color,
+        1s 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        100ms;
 }
 
 .part_1-1_3 .content {
+    position: absolute;
     width: 100%;
-    /*? Анімація-1 - шлях */
-    transition-property: all;
-    /* transition-property: opacity; */
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
-    transition-delay: 100ms;
-    /*! Це потрібно, якщо використовувати opacity: 0/1; */
-    position: absolute; 
+    /*? Анімація-1 - шлях (збірна властивість) */
+    transition:
+        transform, color,
+        1s 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        100ms;
 }
 
 /*? Створюэмо додаткові елементи-контенти: */
 .part_1-1_3 .content::before {
-    opacity: 0;
     content: "Ну, клікай вже!";
     position: absolute;
     width: 100%;
     left: 0;
     transform: translateY(-120%);
+    opacity: 0;
     /*? Анімація-1 - шлях (збірна властивість) */
     transition:
-        transform, opacity,
-        .5s 
+        transform, opacity, color,
+        1s 
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         100ms;
 }
 
-.part_1-1_3 .btn::before {
-    /* opacity: 0; */
-    content: "Оце так клік!";
+.part_1-1_3 .btn::after {
+    content: "Чудовий клік!";
     position: absolute;
     transform: translateY(-120%);
+    opacity: 0;
     /*? Анімація-1 - шлях (збірна властивість) */
     transition:
         transform, opacity, color,
-        .5s 
+        1s 
         cubic-bezier(0.83, -0.08, 0.32, 1) 
         100ms;
 }
 
 /*? :hover та Анімація-1 */
+.part_1-1_3 .btn:hover {
+    background-color: #d87093;
+}
 .part_1-1_3 .btn:hover .content {
-    /* opacity: 0; */
+    /* opacity: 0; */ /*! НЕ ПРАЦЮЄ, бо ховає ще .content::before !!! */
     transform: translateY(120%);
 }
 .part_1-1_3 .btn:hover .content::before {
     opacity: 1;
+    color: #25ffff;
 }
 
 /*? :active та Анімація-1 */
+.part_1-1_3 .btn:active {
+    background-color: #00b000;
+}
 .part_1-1_3 .btn:active .content {
     transform: translateY(220%);
 }
-.part_1-1_3 .btn:active::before {
+.part_1-1_3 .btn:active .content::before {
+    opacity: 0;
+}
+.part_1-1_3 .btn:active::after {
     opacity: 1;
     transform: translateY(0);
-    color: red;
+    color: #d70000;
 }
 
 
