@@ -323,10 +323,9 @@ body {
 .part_1-1_3 .btn {
     position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
+    width: 500px;
     height: 100px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
@@ -356,38 +355,54 @@ body {
     transition-delay: 100ms;
 }
 
-/* .part_1-1_3 .first-content, */
-/* .part_1-1_3 .second-content, */
 .part_1-1_3 .content {
     width: 100%;
     /*? Анімація-1 - шлях */
-    /* transition-property: all; */
-    transition-property: opacity;
+    transition-property: all;
+    /* transition-property: opacity; */
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
-    transition-delay: 110ms;
+    transition-delay: 100ms;
     /*! Це потрібно, якщо використовувати opacity: 0/1; */
     position: absolute; 
 }
 
-/*? Створюэмо додаткові контенти: */
+/*? Створюэмо додаткові елементи-контенти: */
 .part_1-1_3 .content::before {
+    opacity: 0;
     content: "Ну, клікай вже!";
     position: absolute;
     width: 100%;
     left: 0;
     transform: translateY(-120%);
+    /*? Анімація-1 - шлях (збірна властивість) */
+    transition:
+        transform, opacity,
+        .5s 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        100ms;
 }
 
 .part_1-1_3 .btn::before {
+    /* opacity: 0; */
     content: "Оце так клік!";
     position: absolute;
     transform: translateY(-120%);
+    /*? Анімація-1 - шлях (збірна властивість) */
+    transition:
+        transform, opacity, color,
+        .5s 
+        cubic-bezier(0.83, -0.08, 0.32, 1) 
+        100ms;
 }
 
 /*? :hover та Анімація-1 */
 .part_1-1_3 .btn:hover .content {
+    /* opacity: 0; */
     transform: translateY(120%);
+}
+.part_1-1_3 .btn:hover .content::before {
+    opacity: 1;
 }
 
 /*? :active та Анімація-1 */
@@ -395,6 +410,7 @@ body {
     transform: translateY(220%);
 }
 .part_1-1_3 .btn:active::before {
+    opacity: 1;
     transform: translateY(0);
     color: red;
 }
