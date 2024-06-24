@@ -205,6 +205,34 @@ body {
     /* animation-direction: alternate; */
 }
 
+/*! =============================== */
+/* .part_3-1 {
+    display: none;
+} */
+.part_3-1 .button {
+    padding: 15px 25px; 
+    font-size: 3rem;
+    background-color: #00dfdf;
+    /*? Анімація-1 - шлях */
+    transition:
+        opacity 3s cubic-bezier(0.83, -0.08, 0.32, 1) 100ms,
+        transform 3s cubic-bezier(0.83, -0.08, 0.32, 1) 100ms;
+}
+
+/*! 3.CSS-переходи на кнопці при події hover */
+.part_3-1 .button:hover {
+    opacity: 0.3;
+    transform: scale(1.1);
+    /*? Анімація-1_1 */
+    /* transition:
+        opacity 3s cubic-bezier(0.83, -0.08, 0.32, 1) 100ms,
+        transform 3s cubic-bezier(0.83, -0.08, 0.32, 1) 100ms; */
+    /*? Анімація-1_2 */
+    /* transition:
+        opacity 1s cubic-bezier(0.83, -0.08, 0.32, 1) 100ms,
+        transform 1s cubic-bezier(0.83, -0.08, 0.32, 1) 100ms; */
+}
+
 
 /*! =============================== */
 /* .part_4 {
