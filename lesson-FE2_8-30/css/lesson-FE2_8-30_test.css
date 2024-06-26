@@ -483,9 +483,9 @@ body {
 
 
 /*! =============================== */
-/* .part_6 {
+.part_6 {
     display: none;
-} */
+}
 /*! 6.HW-30 (1-й варіант) */
 .part_6 .container {
     position: relative;
@@ -559,9 +559,9 @@ body {
 
 
 /*! =============================== */
-/* .part_7 {
+.part_7 {
     display: none;
-} */
+}
 /*! 7.HW-30 (2-й варіант) */
 .part_7 .container {
     /* position: relative; */
