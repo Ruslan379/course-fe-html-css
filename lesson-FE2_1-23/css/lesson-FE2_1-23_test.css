@@ -93,6 +93,14 @@ body {
     stroke: orange;
     stroke-width: 12px;
 } */
+/*? або так: */
+/* .svg2>rect{
+    width: 300px;
+    height: 200px;
+    fill: blue;
+    stroke: orange;
+    stroke-width: 12px;
+} */
 
 
 /* ! */
