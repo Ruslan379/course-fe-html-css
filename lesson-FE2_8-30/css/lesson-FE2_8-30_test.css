@@ -144,7 +144,7 @@ body {
     /* animation-play-state:paused; */
     /*! 9.Збірна властивість animation */
     /*? дозволяє коротше записати властивості анімації */
-    /* animation: bouncing 3000ms linear 1s infinite alternate forwards paused; */
+    /* animation: bouncing 3000ms linear 1s infinite alternate forwards running; */
 }
 
 /** Анімація-2 - зміна стану + тригер */
