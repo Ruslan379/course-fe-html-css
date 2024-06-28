@@ -175,16 +175,24 @@ body {
     stroke-width: 2; /* ✅ */
 }
 
+#my-group- circle {
+    fill: orange; /* ✅ */
+    fill-opacity: 0.5; /* ✅ */
+    stroke: black; /* ✅ */
+    stroke-width: 2; /* ✅ */
+}
+
 
 /* ! */
-/* .part_10 {
+.part_10-1 {
+    /* display: none; */
+    min-height: auto;
+}
+/* .part_10-2 {
     display: none;
 } */
 /*! 10-1.Елемент <symbol> ПРИКЛАД-1 (перевикористання SVG) */
 /*! 10-2.Елемент <use>: перевикористання за допомогою елемента <symbol> ПРИКЛАД-1 */
-.part_10 {
-    height: 50vh;
-}
 #sym01 {
     fill: green; /* ❌ */
     fill-opacity: 0.5; /* ✅ */
@@ -192,7 +200,11 @@ body {
 
 
 /* ! */
-/* .part_11 {
+.part_11-1 {
+    /* display: none; */
+    min-height: auto;
+}
+/* .part_11-2 {
     display: none;
 } */
 /*! 11-1.Елемент <symbol> ПРИКЛАД-2 (перевикористання SVG) */
@@ -208,16 +220,16 @@ body {
 
 
 /* ! */
-/* .part_12 {
-    display: none;
-} */
-/* .part_12 {
-    height: auto;
-} */
+.part_12 {
+    /* display: none; */
+    min-height: auto;
+}
 /*! 12.SVG-документ */
 /* ❌ + ✅ */
 .part_12 svg {
-    fill: green;
+    outline: 1px solid orangered; /* ❌ */
+    background-color: #00aeff; /* ✅ */
+    fill: green; /* ❌ */
 }
 
 
@@ -225,11 +237,10 @@ body {
 /* .part_13 {
     display: none;
 } */
-
 /*! 13.Файл icon.svg */
 .svg-icon {
-    outline: 1px solid orangered;
-    background-color: #00aeff;
+    outline: 1px solid orangered; /* ✅ */
+    background-color: #00aeff; /* ✅ */
     fill: green; /* ❌ */
 }
 
