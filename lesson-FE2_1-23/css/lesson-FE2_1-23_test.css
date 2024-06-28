@@ -61,17 +61,21 @@ body {
     display: none;
 } */
 /*! 1.Елемент <svg> */
-.svg1 {
-    background-color: #786a00;
-    outline: 2px dashed red;
-    fill: brown;
-}
 .part_1 img {
-    margin-top: 5px;
+    margin-bottom: 15px;
     background-color: #786a00;
+    /* background-color: #067800; */
     outline: 2px solid orangered;
 }
 
+.svg1 {
+    /* display: none; */
+    background-color: #786a00; /* ✅ */
+    outline: 2px solid orangered; /* ❌ */
+    fill: brown; /* ❌ */
+}
+
+/*? властивості оформлення фігур */
 /* #fresh-food {
     fill: green;
     fill-opacity: 0.5;
