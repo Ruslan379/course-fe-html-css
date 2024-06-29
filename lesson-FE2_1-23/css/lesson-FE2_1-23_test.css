@@ -246,10 +246,15 @@ body {
 
 
 /* ! */
-/* .part_14 {
-    display: none;
-} */
+.part_14 {
+    /* display: none; */
+    outline: 2px solid blue;
+}
 /*! 14.Оформлення фігур шляхом перевикористання */
+.svg14 {
+    outline: 1px dashed green;
+}
+
 .container14 {
     padding: 16px;
     display: flex;
@@ -262,6 +267,7 @@ body {
     border-radius: 8px;
     fill: red; /* ✅ */
     stroke: #00aeff; /* ✅ */
+    stroke-width: 2px; /* ✅ */
 }
 /* ✅ */
 .icon14:last-child {
@@ -273,7 +279,9 @@ body {
     fill: #00aeff;
     fill-opacity: 0.7;
     stroke: red;
-    stroke-width: 2px;
+    stroke-opacity: 0.7;
+    stroke-width: 1px;
+    
 }
 
 
@@ -307,8 +315,7 @@ body {
 .instagram-icon-svg17 {
     margin-left: 12px;
     margin-right: 12px;
-    border: 2px dashed #2a2a2a;
-    border-radius: 8px;
+    outline: 1px dashed #2a2a2a;
     /* ✅ */
     fill: blue;
     stroke: #ff0000;
