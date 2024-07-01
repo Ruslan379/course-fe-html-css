@@ -98,7 +98,7 @@ body {
     stroke-width: 12px;
 } */
 /*? або так: */
-/* .svg2>rect{
+/* .svg2>rect {
     width: 300px;
     height: 200px;
     fill: blue;
@@ -209,9 +209,6 @@ body {
 } */
 /*! 11-1.Елемент <symbol> ПРИКЛАД-2 (перевикористання SVG) */
 /*! 11-2.Елемент <use>: перевикористання за допомогою елемента <symbol> ПРИКЛАД-2 */
-.part_11 {
-    height: 50vh;
-}
 #sym02 {
     fill: red; /* ❌ */
     stroke: orange; /* ✅ */
