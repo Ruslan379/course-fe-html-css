@@ -173,13 +173,20 @@ body {
 /* .part_2 {
     display: none;
 } */
-/*! 2.Стратегія Mobile First */
+/*! 2.CSS-інструменти для responsive */
+
+
+/* ! */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Стратегія Mobile First */
 .mobile-first {
     margin-top: 600px;
 }
 /** 01. Від 320px до 767px  */
 /*? Загальні стилі container */
-.container2 {
+.container3 {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -188,7 +195,7 @@ body {
     margin: 0 auto;
 }
 
-.element {
+.element3 {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -198,22 +205,22 @@ body {
     /* border: 2px solid black; */
 }
 
-.element:nth-child(1) {
+.element3:nth-child(1) {
     background-color: #F44336;
 }
-.element:nth-child(2) {
+.element3:nth-child(2) {
     background-color: #3F51B5;
 }
-.element:nth-child(3) {
+.element3:nth-child(3) {
     background-color: #4CAF50;
 }
-.element:nth-child(4) {
+.element3:nth-child(4) {
     background-color: #00BCD4;
 }
-.element:nth-child(5) {
+.element3:nth-child(5) {
     background-color: #E91E63;
 }
-.element:nth-child(6) {
+.element3:nth-child(6) {
     background-color: #009688;
 }
 
@@ -222,7 +229,7 @@ body {
 
 /* @each $color in $colors {
     $idx: index($colors, $color);
-    .element:nth-child(#{$idx}) {
+    .element3:nth-child(#{$idx}) {
         background-color: #{$color};
     }
 } */
@@ -230,19 +237,19 @@ body {
 /*? Медіа-запити: */
 /** 01. Від ~ до 767px  */
 @media (max-width: 767px) {
-    .element {
+    .element3 {
         border: 2px solid black;
     }
 }
 
 /** 02. Від 768px до 1023px */
 @media screen and (min-width: 768px) {
-    .container2 {
+    .container3 {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
     }
-    .element {
+    .element3 {
         flex-basis: calc((100% - 10px) / 2);
         font-size: 32px;
         font-weight: 700;
@@ -251,10 +258,10 @@ body {
 
 /** 02. Від 1024px до ~ */
 @media screen and (min-width: 1024px) {
-    .container2 {
+    .container3 {
         gap: 20px;
     }
-    .element {
+    .element3 {
         flex-basis: calc((100% - 40px) / 3);
         font-style: italic;
     }
