@@ -174,7 +174,32 @@ body {
     display: none;
 } */
 /*! 2.CSS-інструменти для responsive */
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: cadetblue;
+}
 
+.element2-1 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: rgb(235, 135, 139);
+}
+
+.element2-2 {
+    width: 50vmin;
+    height: 50vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: rgb(132, 222, 150);
+}
 
 /* ! */
 /* .part_3 {
