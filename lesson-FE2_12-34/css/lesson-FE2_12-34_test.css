@@ -175,7 +175,7 @@ body {
 } */
 /*! 2.CSS-інструменти для responsive */
 .container2 {
-    /*? для .element2-2  */
+    /*? для .element2-1  */
     /* width: 80vw; */
     /*? для .element2-3  */
     width: 100vw;
@@ -186,16 +186,6 @@ body {
 }
 
 .element2-1 {
-    width: 50vw;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: blue;
-    background-color: rgb(235, 135, 139);
-}
-
-.element2-2 {
     width: 50%;
     height: 50%;
     display: flex;
@@ -203,6 +193,16 @@ body {
     align-items: center;
     color: blue;
     background-color: rgb(235, 135, 232);
+}
+
+.element2-2 {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: rgb(235, 135, 139);
 }
 
 .element2-3 {
