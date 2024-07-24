@@ -175,9 +175,13 @@ body {
 } */
 /*! 2.CSS-інструменти для responsive */
 .container2 {
+    /*? для .element2-2  */
+    /* width: 80vw; */
+    /*? для .element2-3  */
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     background-color: cadetblue;
 }
 
@@ -192,6 +196,16 @@ body {
 }
 
 .element2-2 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    background-color: rgb(235, 135, 232);
+}
+
+.element2-3 {
     width: 50vmin;
     height: 50vmax;
     display: flex;
