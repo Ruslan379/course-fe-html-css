@@ -78,10 +78,11 @@ body {
 } */
 
 
-/*! 3.Стратегія Mobile First */
+/*! 1.Mobile-first верстка */
 .mobile-first {
-    margin-top: 600px;
+    margin-top: 300px;
 }
+
 /** 01. Від 320px до 767px  */
 /*? Загальні стилі container */
 .container3 {
