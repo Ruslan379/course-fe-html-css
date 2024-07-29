@@ -265,16 +265,6 @@ body {
     background-color: #009688;
 }
 
-/** SASS loop for background color generation. */
-/* $colors: "#F44336", "#3F51B5", "#4CAF50", "#00BCD4", "#E91E63", "#009688"; */
-
-/* @each $color in $colors {
-    $idx: index($colors, $color);
-    .element3:nth-child(#{$idx}) {
-        background-color: #{$color};
-    }
-} */
-
 /*! Медіа-запити: */
 /** 02. Від 768px */
 @media screen and (min-width: 768px) {
