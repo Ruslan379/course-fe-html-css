@@ -83,7 +83,7 @@ body {
     margin-top: 300px;
 }
 
-/** 01. Від 320px до 767px  */
+/** 01. Від 0 (320px) (до 767px)  */
 /*? Загальні стилі container */
 .container3 {
     display: flex;
@@ -133,15 +133,15 @@ body {
     }
 } */
 
-/*? Медіа-запити: */
-/** 01. Від ~ до 767px  */
-@media (max-width: 767px) {
+/*! Медіа-запити: */
+/*? 01-1. Від 0 до 767px  */
+@media screen and (max-width: 767px) {
     .element3 {
         border: 2px solid black;
     }
 }
 
-/** 02. Від 768px до 1023px */
+/** 02. Від 768px */
 @media screen and (min-width: 768px) {
     .container3 {
         flex-direction: row;
@@ -155,7 +155,14 @@ body {
     }
 }
 
-/** 02. Від 1024px до ~ */
+/*? 02-1. Від 768px до 1023px  */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .element3 {
+        text-shadow: 6px 6px 4px #000000;;
+    }
+}
+
+/** 03. Від 1024px до ~ */
 @media screen and (min-width: 1024px) {
     .container3 {
         gap: 20px;

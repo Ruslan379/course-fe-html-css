@@ -64,7 +64,7 @@ body {
     display: none;
 } */
 /*! 1.Адаптивна (adaptive) та Чутлива (responsive) верстки */
-/** 01. Від 320px до 599px - orange */
+/** 01. Від 0 (320px) (до 599px) - orange */
 /*? Загальні стилі container */
 .container {
     min-width: 320px;
@@ -105,7 +105,7 @@ body {
 
 
 /*? Медіа-запити: */
-/** 02. Від 600px до 899px - skyblue */
+/** 02. Від 600px - skyblue */
 @media screen and (min-width: 600px) {
     .container {
         background-color: skyblue;
@@ -126,7 +126,7 @@ body {
     }
 }
 
-/** 03. Від 900px до 1139px - lightgreen */
+/** 03. Від 900px - lightgreen */
 @media screen and (min-width: 900px) {
     .container {
         background-color: lightgreen;
@@ -224,7 +224,7 @@ body {
     margin-top: 600px;
 }
 
-/** 01. Від 320px до 767px  */
+/** 01. Від 0 (320px) (до 767px)  */
 /*? Загальні стилі container */
 .container3 {
     display: flex;
@@ -236,6 +236,7 @@ body {
 }
 
 .element3 {
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -274,15 +275,8 @@ body {
     }
 } */
 
-/*? Медіа-запити: */
-/** 01. Від ~ до 767px  */
-@media (max-width: 767px) {
-    .element3 {
-        border: 2px solid black;
-    }
-}
-
-/** 02. Від 768px до 1023px */
+/*! Медіа-запити: */
+/** 02. Від 768px */
 @media screen and (min-width: 768px) {
     .container3 {
         flex-direction: row;
@@ -296,7 +290,7 @@ body {
     }
 }
 
-/** 02. Від 1024px до ~ */
+/** 03. Від 1024px до ~ */
 @media screen and (min-width: 1024px) {
     .container3 {
         gap: 20px;
