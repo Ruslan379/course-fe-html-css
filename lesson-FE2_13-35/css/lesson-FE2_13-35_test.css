@@ -59,33 +59,15 @@ body {
 }
 
 /* *======================================= */
-/* ! */
-/* .part_1 {
-    display: none;
-} */
-/*! 1.Адаптивна (adaptive) та Чутлива (responsive) верстки */
-
-/* ! */
-/* .part_2 {
-    display: none;
-} */
-/*! 2.CSS-інструменти для responsive */
-
-
-/* ! */
-/* .part_3 {
-    display: none;
-} */
-
-
 /*! 1.Стратегія Mobile First {Чутлива (responsive) верстка} */
-.mobile-first {
-    margin-top: 300px;
+.title-section {
+    margin-top: 500px;
+    margin-bottom: 50px;
 }
 
 /** 01. Від 0 (320px) (до 767px)  */
 /*? Загальні стилі container */
-.container3 {
+.container1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,8 +77,8 @@ body {
     margin: 0 auto;
 }
 
-/*? Загальні стилі element3 */
-.element3 {
+/*? Загальні стилі element1 */
+.element1 {
     /*! Чутлива (responsive) верстка */
     width: 100%;
     /*! Адаптивна (adaptive) верстка */
@@ -112,22 +94,22 @@ body {
     /* border: 2px solid black; */
 }
 
-.element3:nth-child(1) {
+.element1:nth-child(1) {
     background-color: #F44336;
 }
-.element3:nth-child(2) {
+.element1:nth-child(2) {
     background-color: #3F51B5;
 }
-.element3:nth-child(3) {
+.element1:nth-child(3) {
     background-color: #4CAF50;
 }
-.element3:nth-child(4) {
+.element1:nth-child(4) {
     background-color: #00BCD4;
 }
-.element3:nth-child(5) {
+.element1:nth-child(5) {
     background-color: #E91E63;
 }
-.element3:nth-child(6) {
+.element1:nth-child(6) {
     background-color: #009688;
 }
 
@@ -136,7 +118,7 @@ body {
 
 /* @each $color in $colors {
     $idx: index($colors, $color);
-    .element3:nth-child(#{$idx}) {
+    .element1:nth-child(#{$idx}) {
         background-color: #{$color};
     }
 } */
@@ -146,7 +128,7 @@ body {
 /* todo Приклад Медіа-функції max-width: */
     /*? додаткові властивості */
 @media screen and (max-width: 767px) {
-    .element3 {
+    .element1 {
         border: 2px solid black;
     }
 }
@@ -155,7 +137,7 @@ body {
 /* todo Приклад Логічних операторів (оператор ,​ (буквально «АБО»)) */
     /*? додаткові властивості */
     /* @media screen and (max-width: 767px), (min-width: 1024px) {
-        .element3 {
+        .element1 {
             border: 2px solid black;
         }
     } */
@@ -163,14 +145,14 @@ body {
 /*! Медіа-запити: */
 /** 02. Від 768px (до 1023px) */
 @media screen and (min-width: 768px) {
-    .container3 {
+    .container1 {
         /*? зміни властивостей та додаткові властивості */
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
-    .element3 {
+    .element1 {
         /*! Чутлива (responsive) верстка */
         flex-basis: calc((100% - 10px) / 2);
         /*! Адаптивна (adaptive) верстка */
@@ -185,14 +167,14 @@ body {
 /* todo Приклад Логічних операторів (Оператор and​ (буквально «І»))) */
     /*? додаткові властивості */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .element3 {
+    .element1 {
         text-shadow: 6px 6px 4px #000000;;
     }
 }
 
 /** 03. Від 1024px (до ~) */
 @media screen and (min-width: 1024px) {
-    .container3 {
+    .container1 {
         /*? зміна властивості */
         gap: 20px;
         /*! Адаптивна (adaptive) верстка */
@@ -200,7 +182,7 @@ body {
         /* display: grid;
         grid-template-columns: repeat(3, max(calc((1024px - 40px) / 3))); */
     }
-    .element3 {
+    .element1 {
         /*! Чутлива (responsive) верстка */
         flex-basis: calc((100% - 40px) / 3);
         /*! Адаптивна (adaptive) верстка */
@@ -209,6 +191,15 @@ body {
         font-style: italic;
     }
 }
+
+
+/*! 2.Приклад застосування стратегії Mobile First */
+.link2 {
+    display: block;
+    text-align: center;
+}
+
+
 
 
 

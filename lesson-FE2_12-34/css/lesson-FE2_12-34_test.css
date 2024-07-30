@@ -222,6 +222,7 @@ body {
 /*! 3.Стратегія Mobile First {Адаптивна (adaptive) верстка} */
 .mobile-first {
     margin-top: 600px;
+    margin-bottom: 50px;
 }
 
 /** 01. Від 0 (320px) (до 767px)  */
