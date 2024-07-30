@@ -78,7 +78,7 @@ body {
 } */
 
 
-/*! 1.Mobile-first верстка */
+/*! 1.Стратегія Mobile First {Чутлива (responsive) верстка} */
 .mobile-first {
     margin-top: 300px;
 }
@@ -88,13 +88,21 @@ body {
 .container3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+/*? Загальні стилі element3 */
 .element3 {
+    /*! Чутлива (responsive) верстка */
+    width: 100%;
+    /*! Адаптивна (adaptive) верстка */
+    /* width: 100%;
+    max-width: 480px; */
+
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -134,45 +142,73 @@ body {
 } */
 
 /*! Медіа-запити: */
-/*? 01-1. Від 0 до 767px  */
+/*? 01-1. (від 0) до 767px  */
+/* todo Приклад Медіа-функції max-width: */
+    /*? додаткові властивості */
 @media screen and (max-width: 767px) {
     .element3 {
         border: 2px solid black;
     }
 }
 
-/** 02. Від 768px */
+/*? 01-2. (від 0) до 767px та від 1024px (до ~) */
+/* todo Приклад Логічних операторів (оператор ,​ (буквально «АБО»)) */
+    /*? додаткові властивості */
+    /* @media screen and (max-width: 767px), (min-width: 1024px) {
+        .element3 {
+            border: 2px solid black;
+        }
+    } */
+
+/*! Медіа-запити: */
+/** 02. Від 768px (до 1023px) */
 @media screen and (min-width: 768px) {
     .container3 {
+        /*? зміни властивостей та додаткові властивості */
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
     .element3 {
+        /*! Чутлива (responsive) верстка */
         flex-basis: calc((100% - 10px) / 2);
+        /*! Адаптивна (adaptive) верстка */
+        /* max-width: calc((768px - 10px) / 2); */
+        /*? додаткові властивості */
         font-size: 32px;
         font-weight: 700;
     }
 }
 
 /*? 02-1. Від 768px до 1023px  */
+/* todo Приклад Логічних операторів (Оператор and​ (буквально «І»))) */
+    /*? додаткові властивості */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .element3 {
         text-shadow: 6px 6px 4px #000000;;
     }
 }
 
-/** 03. Від 1024px до ~ */
+/** 03. Від 1024px (до ~) */
 @media screen and (min-width: 1024px) {
     .container3 {
+        /*? зміна властивості */
         gap: 20px;
+        /*! Адаптивна (adaptive) верстка */
+        /*? зміни властивостей та додаткові властивості */
+        /* display: grid;
+        grid-template-columns: repeat(3, max(calc((1024px - 40px) / 3))); */
     }
     .element3 {
+        /*! Чутлива (responsive) верстка */
         flex-basis: calc((100% - 40px) / 3);
+        /*! Адаптивна (adaptive) верстка */
+        /* max-width: calc((1024px - 40px) / 3);  */ /*! так працює не зовсім вірно */
+        /*? додаткові властивості */
         font-style: italic;
     }
 }
-
 
 
 

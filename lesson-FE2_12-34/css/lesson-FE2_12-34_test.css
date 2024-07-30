@@ -219,7 +219,7 @@ body {
 /* .part_3 {
     display: none;
 } */
-/*! 3.Стратегія Mobile First */
+/*! 3.Стратегія Mobile First {Адаптивна (adaptive) верстка} */
 .mobile-first {
     margin-top: 600px;
 }
@@ -229,14 +229,21 @@ body {
 .container3 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 5px;
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
 }
 
+/*? Загальні стилі element3 */
 .element3 {
+    /*! Чутлива (responsive) верстка */
     width: 100%;
+    /*! Адаптивна (adaptive) верстка */
+    width: 100%;
+    max-width: 480px;
+
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -266,27 +273,42 @@ body {
 }
 
 /*! Медіа-запити: */
-/** 02. Від 768px */
+/** 02. Від 768px (до 1023px) */
 @media screen and (min-width: 768px) {
     .container3 {
+        /*? зміни властивостей та додаткові властивості */
         flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
     }
     .element3 {
-        flex-basis: calc((100% - 10px) / 2);
+        /*! Чутлива (responsive) верстка */
+        /* flex-basis: calc((100% - 10px) / 2); */
+        /*! Адаптивна (adaptive) верстка */
+        max-width: calc((768px - 10px) / 2);
+        /*? додаткові властивості */
         font-size: 32px;
         font-weight: 700;
     }
 }
 
-/** 03. Від 1024px до ~ */
+/** 03. Від 1024px (до ~) */
 @media screen and (min-width: 1024px) {
     .container3 {
+        /*? зміна властивості */
         gap: 20px;
+        /*! Адаптивна (adaptive) верстка */
+        /*? зміни властивостей та додаткові властивості */
+        display: grid;
+        grid-template-columns: repeat(3, max(calc((1024px - 40px) / 3)));
     }
     .element3 {
-        flex-basis: calc((100% - 40px) / 3);
+        /*! Чутлива (responsive) верстка */
+        /* flex-basis: calc((100% - 40px) / 3); */
+        /*! Адаптивна (adaptive) верстка */
+        /* max-width: calc((1024px - 40px) / 3);  */ /*! так працює не зовсім вірно */
+        /*? додаткові властивості */
         font-style: italic;
     }
 }
