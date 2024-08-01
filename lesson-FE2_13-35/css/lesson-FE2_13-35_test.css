@@ -127,20 +127,20 @@ body {
 /*? 01-1. (від 0) до 767px  */
 /* todo Приклад Медіа-функції max-width: */
     /*? додаткові властивості */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .element1 {
         border: 2px solid black;
     }
-}
+} */
 
 /*? 01-2. (від 0) до 767px та від 1024px (до ~) */
 /* todo Приклад Логічних операторів (оператор ,​ (буквально «АБО»)) */
     /*? додаткові властивості */
-    /* @media screen and (max-width: 767px), (min-width: 1024px) {
+    @media screen and (max-width: 767px), (min-width: 1024px) {
         .element1 {
             border: 2px solid black;
         }
-    } */
+    }
 
 /*! Медіа-запити: */
 /** 02. Від 768px (до 1023px) */

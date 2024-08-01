@@ -240,7 +240,7 @@ body {
 /*? Загальні стилі element3 */
 .element3 {
     /*! Чутлива (responsive) верстка */
-    width: 100%;
+    /* width: 100%; */
     /*! Адаптивна (adaptive) верстка */
     width: 100%;
     max-width: 480px;
