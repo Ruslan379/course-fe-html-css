@@ -73,11 +73,12 @@ header {
     outline: 1px solid black;
 }
 
-header a {
+.logo {
     font-size: 25px;
     font-weight: 600;
     flex-grow: 1;
     outline: 1px dashed darkgreen;
+    
 }
 
 /*? nav-menu */
@@ -85,6 +86,13 @@ nav {
     /* width: 65%; */
     flex-grow: 3;
     outline: 2px dashed orangered;
+}
+
+/*? Приховуємо ці елементи в мобільному меню */
+button,
+input[type="checkbox"],
+label {
+    display: none;
 }
 
 .nav-list {
@@ -101,11 +109,6 @@ nav {
     font-weight: 400;
 }
 
-button,
-input[type="checkbox"],
-label {
-    display: none;
-}
 
 /*? join_block */
 .join_block {
