@@ -60,11 +60,10 @@ body {
 } */
 /*! 1.Верстка та адаптація мобільного меню */
 header {
-    /* width: 1024px;
-    max-width: 100%; */
+    position: relative;
     width: 100%;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 35px 16px;
     /* padding: 35px 0px; */
     display: flex;
@@ -89,7 +88,7 @@ nav {
 }
 
 /*? Приховуємо ці елементи в мобільному меню */
-button,
+button.button,
 input[type="checkbox"],
 label {
     display: none;
@@ -103,12 +102,20 @@ label {
     outline: 2px dotted blue;
 }
 
+.nav-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+
 .nav-list__link,
 .join_block {
     font-size: 13px;
     font-weight: 400;
+    /* outline: 1px dotted tomato; */
 }
-
 
 /*? join_block */
 .join_block {
@@ -118,18 +125,22 @@ label {
 }
 
 .join {
-    background: none;
-    border: none;
     padding: 0 20px;
+    border: none;
+    background: none;
     transition: opacity .3s;
 }
 
 .started {
-    background: #ffcc01;
+    padding: 14px 20px;
     border: none;
     border-radius: 6px;
-    padding: 14px 25px 13px;
+    background: #ffcc01;
     transition: opacity .3s;
+}
+.button-text {
+    font-size: 14px;
+    outline: 1px dashed blue;
 }
 
 .join:hover,
@@ -139,7 +150,7 @@ label {
 }
 
 /*? mobile menu */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     nav {
         order: 1;
     }
@@ -153,7 +164,7 @@ label {
         background-color: aqua;
     }
 
-    button {
+    button.button {
         position: relative;
         height: 30px;
         width: 30px;
@@ -168,16 +179,16 @@ label {
         cursor: pointer;
     }
 
-    label span {
+    label span.toggle-label {
         /* top: 15px;  */ /*todo old */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-    label span,
-    label span::before,
-    label span::after {
+    label span.toggle-label,
+    label span.toggle-label::before,
+    label span.toggle-label::after {
         content: '';
         display: block;
         width: 25px;
@@ -185,11 +196,11 @@ label {
         background-color: green;
         position: absolute;
         /* right: 0; */ /*todo old */
-        transition: 3s;
+        transition: 0.5s;
     }
-    button span,
-    button span::before,
-    button span::after {
+    button span.toggle-btn,
+    button span.toggle-btn::before,
+    button span.toggle-btn::after {
         content: '';
         display: block;
         width: 25px;
@@ -197,23 +208,23 @@ label {
         background-color: green;
         position: absolute;
         /* right: 0; */
-        transition: 3s;
+        transition: 0.5s;
     }
 
-    label span::before {
+    label span.toggle-label::before {
         top: -8px;
         background-color: red;
     }
-    button span::before {
+    button span.toggle-btn::before {
         top: -8px;
         background-color: red;
     }
 
-    label span::after {
+    label span.toggle-label::after {
         top: 8px;
         background-color: blue;
     }
-    button span::after {
+    button span.toggle-btn::after {
         top: 8px;
         background-color: blue;
     }
@@ -230,33 +241,33 @@ label {
 
     /*? +++++++++++++++++++++++++++++++++++++++++++ */
     /** green */
-    input[type="checkbox"]:checked~label span {
+    input[type="checkbox"]:checked~label span.toggle-label {
         /* transform: rotate(-45deg); */ /*todo old */
         transform: translate(-50%, -50%) rotate(-45deg); 
     }
     /** green */
-    button:hover > span {
+    button:hover > span.toggle-btn {
         transform: rotate(-45deg); 
     }
     
     /*! red */
-    input[type="checkbox"]:checked~label span::before {
+    input[type="checkbox"]:checked~label span.toggle-label::before {
         top: 0;
         /* transform: rotate(0); */
     }
     /*! red */
-    button:hover > span::before {
+    button:hover > span.toggle-btn::before {
         top: 0;
         /* transform: rotate(0); */
     }
 
     /*? blue */
-    input[type="checkbox"]:checked~label span::after {
+    input[type="checkbox"]:checked~label span.toggle-label::after {
         top: 0;
         transform: rotate(90deg);
     }
     /*? blue */
-    button:hover > span::after {
+    button:hover > span.toggle-btn::after {
         top: 0;
         transform: rotate(90deg);
     }
@@ -264,11 +275,11 @@ label {
 
     .nav-list {
         position: absolute;
-        top: 160px;
+        top: 120%;
         left: 0;
         width: 100%;
         padding: 20px;
-        background-color: burlywood;
+        background-color: rgb(255, 230, 198);
         box-shadow: 0 12px 8px #797979;
     }
 

@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <!-- <h1 class="title-lesson">Урок-14. “Верстка мобільного меню”</h1> -->
+    <h1 class="title-lesson">Урок-14. “Верстка мобільного меню”</h1>
 
     <!--! 1.Верстка та адаптація мобільного меню -->
     <!-- <div class="part part_1"> -->
@@ -46,13 +46,13 @@
                 <!--! input -->
                 <input type="checkbox" id="toggle">
                 <label for="toggle">
-                    <span></span>
+                    <span class="toggle-label"></span>
                 </label>
 
                 <!--! button -->
-                <button type="button" class="button">
+                <!-- <button class="button" type="button">
                     <span class="toggle-btn"></span>
-                </button>
+                </button> -->
 
                 <ul class="nav-list">
                     <li class="nav-list__item">
@@ -74,8 +74,12 @@
             </nav>
 
             <div class="join_block">
-                <input type="button" class="join" value="Join us" >
-                <input type="button" class="started" value="Getting started" >
+                <!--todo OLD variant -->
+                <!-- <input class="join" type="button" value="Join us"> -->
+                <!-- <input class="started" type="button" value="Getting started"> -->
+                <!--todo NEW variant -->
+                <button class="join" type="button">Join us</button>
+                <button class="started" type="button">Getting started</button>
             </div>
         </header>
     <!-- </div> -->
