@@ -128,7 +128,7 @@ label {
     padding: 0 20px;
     border: none;
     background: none;
-    transition: opacity .3s;
+    transition: opacity .5s;
 }
 
 .started {
@@ -136,7 +136,7 @@ label {
     border: none;
     border-radius: 6px;
     background: #ffcc01;
-    transition: opacity .3s;
+    transition: opacity .5s;
 }
 .button-text {
     font-size: 14px;
@@ -196,7 +196,7 @@ label {
         background-color: green;
         position: absolute;
         /* right: 0; */ /*todo old */
-        transition: 0.5s;
+        transition: .5s;
     }
     button span.toggle-btn,
     button span.toggle-btn::before,
@@ -208,7 +208,7 @@ label {
         background-color: green;
         position: absolute;
         /* right: 0; */
-        transition: 0.5s;
+        transition: .5s;
     }
 
     label span.toggle-label::before {
