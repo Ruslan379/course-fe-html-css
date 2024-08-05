@@ -138,10 +138,6 @@ label {
     background: #ffcc01;
     transition: opacity .5s;
 }
-.button-text {
-    font-size: 14px;
-    outline: 1px dashed blue;
-}
 
 .join:hover,
 .started:hover {
@@ -153,6 +149,7 @@ label {
 @media (max-width: 767px) {
     nav {
         order: 1;
+        display: flex;
     }
 
     label {
@@ -168,11 +165,12 @@ label {
         position: relative;
         height: 30px;
         width: 30px;
-        /* margin-left: auto; */
+        margin-left: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid blue;
+        background-color: rgb(255, 198, 198);
     }
 
     label:hover {
@@ -191,19 +189,19 @@ label {
     label span.toggle-label::after {
         content: '';
         display: block;
-        width: 25px;
+        width: 24px;
         height: 4px;
         background-color: green;
         position: absolute;
         /* right: 0; */ /*todo old */
         transition: .5s;
     }
-    button span.toggle-btn,
-    button span.toggle-btn::before,
-    button span.toggle-btn::after {
+    button.button span.toggle-btn,
+    button.button span.toggle-btn::before,
+    button.button span.toggle-btn::after {
         content: '';
         display: block;
-        width: 25px;
+        width: 24px;
         height: 4px;
         background-color: green;
         position: absolute;
@@ -215,7 +213,7 @@ label {
         top: -8px;
         background-color: red;
     }
-    button span.toggle-btn::before {
+    button.button span.toggle-btn::before {
         top: -8px;
         background-color: red;
     }
@@ -224,7 +222,7 @@ label {
         top: 8px;
         background-color: blue;
     }
-    button span.toggle-btn::after {
+    button.button span.toggle-btn::after {
         top: 8px;
         background-color: blue;
     }
@@ -238,6 +236,11 @@ label {
         flex-direction: column;
         outline: 2px dotted red;
     }
+    button.button:active~.nav-list {
+        display: flex;
+        flex-direction: column;
+        outline: 2px dotted red;
+    }
 
     /*? +++++++++++++++++++++++++++++++++++++++++++ */
     /** green */
@@ -246,7 +249,7 @@ label {
         transform: translate(-50%, -50%) rotate(-45deg); 
     }
     /** green */
-    button:hover > span.toggle-btn {
+    button.button:hover > span.toggle-btn {
         transform: rotate(-45deg); 
     }
     
@@ -256,7 +259,7 @@ label {
         /* transform: rotate(0); */
     }
     /*! red */
-    button:hover > span.toggle-btn::before {
+    button.button:hover > span.toggle-btn::before {
         top: 0;
         /* transform: rotate(0); */
     }
@@ -267,7 +270,7 @@ label {
         transform: rotate(90deg);
     }
     /*? blue */
-    button:hover > span.toggle-btn::after {
+    button.button:hover > span.toggle-btn::after {
         top: 0;
         transform: rotate(90deg);
     }
