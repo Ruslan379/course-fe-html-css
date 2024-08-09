@@ -58,12 +58,12 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Верстка та адаптація мобільного меню */
+/*! 1.Верстка та адаптація мобільного меню без використання Java Script */
 header {
     position: relative;
     width: 100%;
     max-width: 1024px;
-    margin: 40px auto;
+    margin: 40px auto 50vh;
     padding: 35px 16px;
     /* padding: 35px 0px; */
     display: flex;
@@ -290,6 +290,13 @@ label {
         margin: 15px 0;
         outline: 1px solid olivedrab;
     }
+}
+
+
+/*! 2.Приклад мобільного меню з використанням Java Script */
+.link2 {
+    display: block;
+    text-align: center;
 }
 
 
