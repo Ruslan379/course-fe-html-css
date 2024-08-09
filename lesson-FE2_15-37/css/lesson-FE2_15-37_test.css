@@ -1,0 +1,77 @@
+:root {
+    /** ============ CSS-змінні ============ */
+    --color-font-body: #4b2500;
+    --color-background-body: #c0fff7;
+    --color-title-lesson: #6b5f00;
+    --color-title-section: red;
+    --color-title-subsection: blue;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5rem;
+    padding: 20px 20px 150px;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    align-items: center;
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+    /* ! for position: fixed */
+    /* margin-bottom: 350px; */
+}
+
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
+}
+
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    /* outline: 1px solid red; */
+}
+
+/* *======================================= */
+/*! =============================== */
+/* .part_1 {
+    display: none;
+} */
+/*! 1.Верстка та адаптація мобільного меню без використання Java Script */
+
+
+
+
+
+
+
+/*? ______________________________________________________ */
+/*! =============================== */
+.part_0 {
+    display: none;
+}
+
+/*! 0.Заголовок */
