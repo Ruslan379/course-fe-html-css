@@ -75,7 +75,7 @@ body {
 /* .part_2 {
     display: none;
 } */
-/*! 1.Ретинізація графіки */
+/*! 2.Респонсивні зображення */
 .part_2 .thumb {
     max-width: 960px;
     min-width: 320px;
@@ -88,6 +88,30 @@ body {
     max-width: 100%;
 }
 
+
+/*! =============================== */
+/* .part_2 {
+    display: none;
+} */
+/*! 3.Респонсивні фонові зображення */
+/*? 1x screens. Базові стилі і 1x зображення: 320x240 */
+.part_3 .box {
+    margin: 0 auto;
+    width: 320px;
+    height: 240px;
+    background-image: url("https://picsum.photos/id/235/320/240");
+    background-size: 320px 240px;
+}
+
+/*? 2x screens, retina. Перевизначаємо шлях до 2x зображення: 640x480 image */
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .part_2 .box {
+        /* background-image: url("https://picsum.photos/id/235/640/480"); */
+        background-image: url("https://picsum.photos/id/238/640/480");
+    }
+}
 
 
 
