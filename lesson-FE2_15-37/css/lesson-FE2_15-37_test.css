@@ -114,6 +114,17 @@ body {
     }
 }
 
+/*! =============================== */
+/* .part_4 {
+    display: none;
+} */
+/*! 4.Респонсивний елемент <img> */
+.part_4 .thumb {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+}
+
 
 
 
