@@ -11,6 +11,7 @@ body {
     font-family: 'Montserrat', serif;
     font-size: 1.5rem;
     padding: 20px 20px 150px;
+    padding: 20px 0px 150px;
     /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
@@ -75,10 +76,17 @@ body {
     display: none;
 } */
 /*! 1.Ретинізація графіки */
-.part_2 {
-    /* font-size: larger; */
+.part_2 .thumb {
+    max-width: 960px;
+    min-width: 320px;
+    margin: 0 auto;
+    outline: 1px solid tomato;
 }
 
+.part_2 img {
+    display: block;
+    max-width: 100%;
+}
 
 
 
