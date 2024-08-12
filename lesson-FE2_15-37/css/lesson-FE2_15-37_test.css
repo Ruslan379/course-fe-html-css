@@ -105,6 +105,7 @@ body {
 
 /*? 2x screens, retina. Перевизначаємо шлях до 2x зображення: 640x480 image */
 @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2), /* автопрефіксор */
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .part_3 .box {
