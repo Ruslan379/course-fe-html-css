@@ -61,41 +61,62 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Ретинізація графіки */
-.part_1 {
-    font-size: larger;
+/*! 1.Арифметика пикселей */
+.part_1 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 20px 30px;
+    background-color: hsla(60, 100%, 89%, 0.5);
+    outline: 1px solid red;
+}
+.part_1 .other-densities {
+    color: rgba(128, 128, 128, 0.5);
+    font-style: italic;
 }
 
-.part_1 .title-section {
-    font-size: 36px;
-}
 
 
 /*! =============================== */
 /* .part_2 {
     display: none;
 } */
-/*! 2.Респонсивні зображення */
-.part_2 .thumb {
+/*! 1.Ретинізація графіки */
+.part_2 {
+    font-size: larger;
+}
+
+.part_2 .title-section {
+    font-size: 36px;
+}
+
+
+/*! =============================== */
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Респонсивні зображення */
+.part_3 .thumb {
     max-width: 960px;
     min-width: 320px;
     margin: 0 auto;
     outline: 1px solid tomato;
 }
 
-.part_2 img {
+.part_3 img {
     display: block;
     max-width: 100%;
 }
 
 
 /*! =============================== */
-/* .part_2 {
+/* .part_4 {
     display: none;
 } */
-/*! 3.Респонсивні фонові зображення */
+/*! 4.Респонсивні фонові зображення */
 /*? 1x screens. Базові стилі і 1x зображення: 320x240 */
-.part_3 .box {
+.part_4 .box {
     margin: 0 auto;
     width: 320px;
     height: 240px;
@@ -115,11 +136,11 @@ body {
 }
 
 /*! =============================== */
-/* .part_4 {
+/* .part_5 {
     display: none;
 } */
-/*! 4.Респонсивний елемент <img> */
-.part_4 .thumb {
+/*! 5.Респонсивний елемент <img> */
+.part_5 .thumb {
     width: 320px;
     height: 240px;
     margin: 0 auto;

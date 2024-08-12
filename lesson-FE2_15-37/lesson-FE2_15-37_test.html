@@ -37,9 +37,36 @@
 <body>
     <h1 class="title-lesson">Урок-15. “Адаптивні зображення. Ретинізація”</h1>
 
-    <!--! 1.Ретинізація графіки​ -->
+    <!--! 1.Арифметика пикселей -->
     <div class="part part_1">
-        <h2 class="title-section">1.Ретинізація графіки​</h2>
+        <h2 class="title-section">
+            1.Арифметика пікселів <br>
+            <i>Приктичний приклад розрахунку щільністі пікселів</i>
+        </h2>
+        <div class="container">
+            <p>Ширина екрану <i>(в px)</i> = 1920px</p>
+            <p>Ширина екрану <i>(в см)</i> = 51см</p>
+            <p><b>Ширина екрану</b> <i>(в дюймах)</i> = 51см / 2,54cм = <b>20in</b> <i>(inch)</i></p>
+            <br>
+            <p><b><u>Щільність екрану</u></b> <i>(pixel density - pixels per inch)</i> = 1920px / 20inch = <b>96ppi</b> <i>(px/inch)</i></p>
+            <br>
+            <p><b><u>Щільність пікселів</u></b> <i>(dppx (dots per pixel))</i>: 
+                <br>
+                1x - <b>1dppx = 96ppi</b> 
+                <br>
+                <span class="other-densities">2x - <b>2dppx = 192ppi</b></span>
+                <br>
+                <span class="other-densities">3x - <b>3dppx = 288ppi</b></span>
+            </p>
+            <p><u><i>Розмір Фізичного пікселя</i></u> <i>(bitmap pixels)</i> = 20 inch / 96 px/inch  ~ <u><i>0,21in</i></u> <i>(inch)</i></p>
+            
+        </div>
+    </div>
+
+
+    <!--! 2.Ретинізація графіки​ -->
+    <div class="part part_2">
+        <h2 class="title-section">2.Ретинізація графіки​</h2>
         x1
         <img 
             src="https://picsum.photos/id/237/320/240" 
@@ -66,9 +93,9 @@
     </div>
         
         
-    <!--! 2.Респонсивні зображення -->
-    <div class="part part_2">
-        <h2 class="title-section">2.Респонсивні зображення</h2>
+    <!--! 3.Респонсивні зображення -->
+    <div class="part part_3">
+        <h2 class="title-section">3.Респонсивні зображення</h2>
         <div class="thumb">
             <!-- <img src="https://unsplash.it/960/480" alt="A random image" /> -->
             <img src="./images/image-960x480.jpg" alt="Man looking into the distance" />
@@ -76,16 +103,16 @@
     </div>
 
 
-    <!--! 3.Респонсивні фонові зображення -->
-    <div class="part part_3">
-        <h2 class="title-section">3.Респонсивні фонові зображення</h2>
+    <!--! 4.Респонсивні фонові зображення -->
+    <div class="part part_4">
+        <h2 class="title-section">4.Респонсивні фонові зображення</h2>
         <div class="box"></div>
     </div>
 
 
-    <!--! 4.Респонсивний елемент <img> -->
-    <div class="part part_4">
-        <h2 class="title-section">4.Респонсивний елемент img</h2>
+    <!--! 5.Респонсивний елемент <img> -->
+    <div class="part part_5">
+        <h2 class="title-section">5.Респонсивний елемент img</h2>
         <div class="thumb">
             <img 
                 srcset="https://picsum.photos/id/237/320/240 1x, 
