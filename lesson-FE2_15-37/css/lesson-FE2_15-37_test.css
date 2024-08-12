@@ -107,7 +107,7 @@ body {
 @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .part_2 .box {
+    .part_3 .box {
         /* background-image: url("https://picsum.photos/id/235/640/480"); */
         background-image: url("https://picsum.photos/id/238/640/480");
     }
