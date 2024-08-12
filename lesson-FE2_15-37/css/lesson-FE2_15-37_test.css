@@ -60,9 +60,23 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! >1.Ретинізація графіки */
+/*! 1.Ретинізація графіки */
 .part_1 {
     font-size: larger;
+}
+
+.part_1 .title-section {
+    font-size: 36px;
+}
+
+
+/*! =============================== */
+/* .part_2 {
+    display: none;
+} */
+/*! 1.Ретинізація графіки */
+.part_2 {
+    /* font-size: larger; */
 }
 
 
