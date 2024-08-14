@@ -71,6 +71,10 @@ body {
     background-color: hsla(60, 100%, 89%, 0.5);
     outline: 1px solid red;
 }
+.part_1 .monitor-resolution {
+    font-size: larger;
+    color: #000a7b;
+}
 .part_1 .other-densities {
     color: rgba(128, 128, 128, 0.5);
     font-style: italic;
