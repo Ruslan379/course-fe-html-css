@@ -164,7 +164,7 @@
 
 
     <!--! 8.Елемент <picture> -->
-    <div class="part part_7">
+    <div class="part part_8">
         <h2 class="title-section">8.Елемент &lt;picture&gt;</h2>
         <div class="thumb">
             <picture>
@@ -182,6 +182,32 @@
             </picture>
         </div>
     </div>
+
+
+    <!--! 9.Елемент <picture> (фінальний приклад) -->
+        <div class="part part_9">
+            <h2 class="title-section">9.Елемент &lt;picture&gt; (фінальний приклад)</h2>
+            <div class="thumb">
+                <picture>
+                    <source 
+                        srcset="./images/Nikolai_Tarasov_1200-1x-min.jpg   1x, 
+                                ./images/Nikolai_Tarasov_1200-2x-min.jpg   2x" 
+                        media="(min-width: 1200px)"
+                    >
+                    <source 
+                        srcset="./images/Nikolai_Tarasov_768-1x-min.jpg    1x,
+                                ./images/Nikolai_Tarasov_768-2x-min.jpg    2x" 
+                        media="(min-width: 768px)"
+                    >
+                    <source 
+                        srcset="./images/Nikolai_Tarasov_480-1x-min.jpg    1x,
+                                ./images/Nikolai_Tarasov_480-2x-min.jpg    2x" 
+                        media="(min-width: 480px)"
+                    >
+                    <img src="./images/Nikolai_Tarasov_480-1x-min.jpg" alt="Николай Тарасов">
+                </picture>
+            </div>
+        </div>
     
 
 
