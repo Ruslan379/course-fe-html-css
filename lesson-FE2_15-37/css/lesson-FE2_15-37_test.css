@@ -99,18 +99,33 @@ body {
 /*! =============================== */
 /* .part_3 {
     display: none;
+    min-height: auto;
 } */
 /*! 3.Респонсивні зображення */
 .part_3 .thumb {
+    width: 100vw;
     max-width: 960px;
+    max-width: 1024px;
     min-width: 320px;
     margin: 0 auto;
     outline: 1px solid tomato;
 }
 
-.part_3 img {
+.part_3 .thumb img {
+    /* margin: 0 auto; */
     display: block;
     max-width: 100%;
+    height: auto;
+}
+
+.part_3 .thumb .box {
+    /* margin: 0 auto; */
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    background-color: #ff00f7;
 }
 
 
@@ -133,7 +148,7 @@ body {
     (-webkit-min-device-pixel-ratio: 2), /* автопрефіксор */
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .part_3 .box {
+    .part_4 .box {
         /* background-image: url("https://picsum.photos/id/235/640/480"); */
         background-image: url("https://picsum.photos/id/238/640/480");
     }
