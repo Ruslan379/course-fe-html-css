@@ -75,6 +75,7 @@
             alt="Cute puppy" 
             width="320" 
             height="240"
+            alt="dog"
         >
         
         x2
@@ -83,6 +84,7 @@
             alt="Cute puppy" 
             width="320" 
             height="240"
+            alt="dog"
         >
         
         x3
@@ -91,6 +93,7 @@
             alt="Cute puppy" 
             width="320" 
             height="240"
+            alt="dog"
         >
     </div>
 
@@ -122,14 +125,14 @@
                         https://picsum.photos/id/199/640/480 2x,
                         https://picsum.photos/id/199/960/720 3x" 
                 src="https://picsum.photos/id/199/320/240" 
-                alt="Cute puppy" 
+                alt="Опис зображення для всіх версій" 
             />
         </div>
     </div>
 
 
     <!--! 6.Респонсивний елемент <img> (дескриптор w​) -->
-    <div class="part part_5">
+    <div class="part part_6">
         <h2 class="title-section">6.Респонсивний елемент &lt;img&gt; (дескриптор w​)</h2>
         <div class="thumb">
             <img 
@@ -137,7 +140,24 @@
                         https://picsum.photos/id/201/640/480 640w,
                         https://picsum.photos/id/201/960/720 720w" 
                 src="https://picsum.photos/id/201/320/240" 
-                alt="Cute puppy" 
+                alt="Опис зображення для всіх версій" 
+            />
+        </div>
+    </div>
+
+
+    <!--! 7.Респонсивний елемент <img> (дескриптор w + атрибут sizes​​) -->
+    <div class="part part_7">
+        <h2 class="title-section">7.Респонсивний елемент &lt;img&gt; (дескриптор w + атрибут sizes​​)</h2>
+        <div class="thumb">
+            <!-- sizes="300px" -->
+            <img 
+                srcset="https://picsum.photos/id/217/320/240 320w, 
+                        https://picsum.photos/id/217/640/480 600w,
+                        https://picsum.photos/id/217/960/720 900w" 
+                sizes="(min-width: 900px) 720px, (min-width: 600px) 480px, 100vw"
+                src="https://picsum.photos/id/217/320/240" 
+                alt="Опис зображення для всіх версій" 
             />
         </div>
     </div>
