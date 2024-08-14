@@ -170,13 +170,24 @@ body {
 /* .part_5 {
     display: none;
 } */
-/*! 5.Респонсивний елемент <img> */
+/*! 5.Респонсивний елемент <img> (дескриптор x​) */
 .part_5 .thumb {
     width: 320px;
     height: 240px;
     margin: 0 auto;
 }
 
+
+/*! =============================== */
+/* .part_6 {
+    display: none;
+} */
+/*! 6.Респонсивний елемент <img> (дескриптор x​) */
+.part_6 .thumb {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto;
+}
 
 
 
