@@ -154,6 +154,18 @@ body {
     }
 }
 
+/*? 3x screens, retina. Перевизначаємо шлях до 3x зображення: 960x720 image */
+@media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3), /* автопрефіксор */
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .part_4 .box {
+        /* background-image: url("https://picsum.photos/id/235/960/720"); */
+        background-image: url("https://picsum.photos/id/244/960/720");
+    }
+}
+
+
 /*! =============================== */
 /* .part_5 {
     display: none;
