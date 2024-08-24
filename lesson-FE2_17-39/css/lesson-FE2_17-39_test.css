@@ -49,11 +49,11 @@ body {
 }
 
 .part {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* margin: 0 auto; */
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* min-height: 100vh; */
     /* width: 100vw; */
     /* outline: 1px solid red; */
 }
@@ -93,6 +93,20 @@ body {
     background-color: #fffce6;
     outline: 1px solid green;
 }
+
+
+/* ! */
+/* .part_4 {
+    display: none;
+} */
+/*! 4.Кнопки (buttons) */
+.part_4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
 
 
 /*? ______________________________________________________ */
