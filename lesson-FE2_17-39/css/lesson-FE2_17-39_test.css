@@ -64,7 +64,7 @@ body {
     display: none;
 } */
 /*! 1.Розмітка в Bootstrap (3 колонки від sm) */
-.a {
+.part_1 .other-styles {
     text-align: center;
     background-color: #d0d0d0;
     outline: 1px solid red;
@@ -76,7 +76,7 @@ body {
     display: none;
 } */
 /*! 2.Розмітка в Bootstrap (2 сітки від xs) */
-.b {
+.part_2 .other-styles {
     text-align: center;
     background-color: #e6e7ff;
     outline: 1px solid blue;
@@ -89,18 +89,10 @@ body {
 } */
 /*! 3.Схема навігації - breadcrumbs ("хлібні крихти") */
 .part_3  .container {
-    display: flex;
-    align-items: center;
     outline: 1px solid tomato;
 }
 
-/* .part_3  nav {
-    display: flex;
-    align-items: center;
-    outline: 1px solid rgb(92, 255, 71);
-} */
-
-.part_3  .с {
+.part_3 .other-styles {
     background-color: #fffce6;
     outline: 1px dotted green;
 }
@@ -112,10 +104,7 @@ body {
 } */
 /*! 4.Кнопки (buttons) */
 .part_4 .buttons-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 10px;
+    outline: 1px solid tomato;
 }
 
 

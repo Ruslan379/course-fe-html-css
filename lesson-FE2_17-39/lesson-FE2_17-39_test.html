@@ -38,31 +38,32 @@
 <body>
     <h1 class="title-lesson">Урок-17. “Бібліотеки. Знайомство з Bootstrap, підключення та використання”</h1>
 
-
     <!--! 1.Розмітка в Bootstrap (3 колонки від sm) -->
-    <!-- <div class="part part_1"> -->
-    <h2 class="title-section">1.Розмітка в Bootstrap (3 колонки від sm)</h2>
-    <div class="container">
-    <!-- <div class="container-fluid"> -->
-        <div class="row">
-            <div class="col-sm a">Перша колонока</div>
-            <div class="col-sm a">Друга колонока</div>
-            <div class="col-sm a">Третя колонока</div>
+    <div class="part part_1">
+        <h2 class="title-section">1.Розмітка в Bootstrap (3 колонки від sm)</h2>
+        <div class="container">
+        <!-- <div class="container-fluid"> -->
+            <div class="row">
+                <div class="col-sm other-styles">Перша колонока</div>
+                <div class="col-sm other-styles">Друга колонока</div>
+                <div class="col-sm other-styles">Третя колонока</div>
+            </div>
         </div>
     </div>
 
+    
     <!--! 2.Розмітка в Bootstrap (2 сітки від xs) -->
     <div class="part part_2">
         <h2 class="title-section">2.Розмітка в Bootstrap (2 сітки від xs)</h2>
         <div class="container">
             <div class="row">
-                <div class="col b">1 з 2</div>
-                <div class="col b">2 з 2</div>
+                <div class="col other-styles">1 з 2</div>
+                <div class="col other-styles">2 з 2</div>
             </div>
             <div class="row">
-                <div class="col b">1 з 3</div>
-                <div class="col b">2 з 3</div>
-                <div class="col b">3 з 3</div>
+                <div class="col other-styles">1 з 3</div>
+                <div class="col other-styles">2 з 3</div>
+                <div class="col other-styles">3 з 3</div>
             </div>
         </div>
     </div>
@@ -74,9 +75,9 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item с"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item с"><a href="#">Library</a></li>
-                    <li class="breadcrumb-item active с" aria-current="page">Data</li>
+                    <li class="breadcrumb-item other-styles"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item other-styles"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active other-styles" aria-current="page">Data</li>
                 </ol>
             </nav>
         </div>
@@ -96,10 +97,14 @@
             <button type="button" class="btn btn-light">Світлий</button>
             <button type="button" class="btn btn-dark">Темний</button>
             <button type="button" class="btn btn-link">Лінк</button>
-            <!--? Змінюємо розмір кнопок -->
-            <!--* додаємо клас .btn-lg -->
+        </div>
+        <br>
+        <br>
+        <!--? Змінюємо розмір кнопок -->
+        <div class="buttons-container">
+            <!--? додаємо клас .btn-lg -->
             <button type="button" class="btn btn-primary btn-lg">Велика кнопка</button>
-            <!--* додаємо клас .btn-sm -->
+            <!--? додаємо клас .btn-sm -->
             <button type="button" class="btn btn-primary btn-sm">Мала кнопка</button>
         </div>
     </div>
