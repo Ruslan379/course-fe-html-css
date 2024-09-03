@@ -68,6 +68,7 @@ body {
     margin: 5px auto;
     border: 2px dashed #2a2a2a;
     border-radius: 8px;
+    /* ✅ */
     background-color: rgb(255, 238, 193);
 }
 
