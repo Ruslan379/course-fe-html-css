@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'my-font';
-  src:  url('./fonts/my-font.eot?nvpiw');
-  src:  url('./fonts/my-font.eot?nvpiw#iefix') format('embedded-opentype'),
-        url('./fonts/my-font.ttf?nvpiw') format('truetype'),
-        url('./fonts/my-font.woff?nvpiw') format('woff'),
-        url('./fonts/my-font.svg?nvpiw#my-font') format('svg');
+  src:  url('fonts/my-font.eot?nvpiw');
+  src:  url('fonts/my-font.eot?nvpiw#iefix') format('embedded-opentype'),
+        url('fonts/my-font.ttf?nvpiw') format('truetype'),
+        url('fonts/my-font.woff?nvpiw') format('woff'),
+        url('fonts/my-font.svg?nvpiw#my-font') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
