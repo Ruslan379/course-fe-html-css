@@ -120,7 +120,8 @@ body {
     display: none;
 } */
 /*! 3.Підключення векторної графіки як як вбудований SVG (inline SVG) */
-.part_3 .icon {
+.part_3 .icon-facebook,
+.part_3 .icon-twitter {
     width: 200px;
     height: 200px;
     /* ❌ */
@@ -128,22 +129,24 @@ body {
     fill: grey; 
 }
 
-.part_3 .icon:hover {
+.part_3 .icon-facebook:hover,
+.part_3 .icon-twitter:hover {
     cursor: pointer;
-    /* ✅ */
+    /* ✅ ✅*/
     stroke: orange;
-    /* ❌ */
+    /* ❌ ❌ */
     fill: green;
+    /* ❌ ✅ */
     background-color: yellow;
 }
 
 /* ✅ */
-/* .part_3 .icon:hover .letter {
+/* .part_3 .icon-facebook:hover .letter {
     cursor: pointer;
     fill: palevioletred;
 } */
 /* ✅ */
-/* .part_3 .icon:hover .background {
+/* .part_3 .icon-facebook:hover .background {
     cursor: pointer;
     fill: green;
     stroke: yellow;
