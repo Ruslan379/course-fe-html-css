@@ -334,26 +334,27 @@ body {
 /* ❌ - НЕ ПРАЦЮЄ */
 /*! 9.Іконочний шрифт-3 ​*/
 .part_9 .social-networks {
-    padding: 10px;
+    padding: 16px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     outline: 1px dashed orange;
 }
+
 .part_9 a {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    border-radius: 50%;
+    outline: 1px dotted pink;
 }
+
 .part_9 .icon-home {
     font-size: 40px;
 }
 .part_9 a:hover .icon-home {
-    font-style: italic;
+    font-weight: 900;
     color: teal;
 }
 
@@ -369,7 +370,6 @@ body {
 
 .part_9 .icon-droplet {
     font-size: 70px;
-    text-decoration: underline;
 }
 .part_9 a:hover .icon-droplet {
     font-style: italic;
@@ -381,10 +381,12 @@ body {
 .part_9 .icon-music {
     color: green;
     font-weight: 900;
+    text-decoration: underline;
 }
 .part_9 a:hover .icon-music {
     scale: 1.5;
     color: orangered;
+    text-decoration: none;
 }
 
 
