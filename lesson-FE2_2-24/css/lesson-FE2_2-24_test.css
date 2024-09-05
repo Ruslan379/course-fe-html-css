@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
@@ -264,12 +266,12 @@ body {
 
 
 /* ! */
-.part_8 {
+/* .part_8 {
     display: none;
-}
-/* ❌ - НЕ ПРАЦЮЄ */
+} */
+/* ✅ - ПРАЦЮЄ */
 /*! 8.Іконочний шрифт-2 ​*/ 
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css); */
 
 .part_8 .social-networks {
     display: flex;
@@ -286,13 +288,16 @@ body {
 .part_8 .social-networks i {
     color: #fff;
     position: absolute;
-    top: 21px;
-    left: 21px;
+    /* top: 21px; */
+    /* left: 21px; */
     transition: all 0.3s ease-out;
 }
 
 .part_8 .social-networks a {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .part_8 .social-networks a:before {
@@ -307,15 +312,64 @@ body {
 }
 
 .part_8 .social-networks a:hover:before {
+    /* background: none; */
     transform: scale(0);
     transition: all 0.3s ease-in;
 }
 
 .part_8 .social-networks a:hover i {
-    transform: scale(2.2);
+    transform: scale(1.5);
     color: #1441e6;
-    background: -webkit-linear-gradient(45deg,  #1441e6, #00ff72);
+    /* background: -webkit-linear-gradient(45deg,  #00ff72, #1441e6); */
+    background: none;
     transition: all 0.2s ease-in;
+}
+
+
+/* ! */
+/* .part_9 {
+    display: none;
+} */
+/* ✅ - ПРАЦЮЄ */
+/*! 9.Іконочний шрифт-3 ​*/
+.part_9 .social-networks {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    outline: 1px dashed orange;
+}
+.part_9 a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.part_9 .icon-home {
+    font-size: 40px;
+}
+.part_9 a:hover .icon-home {
+    font-style: italic;
+}
+
+.part_9 .icon-pencil {
+    color: brown;
+    font-style: italic;
+}
+.part_9 a:hover .icon-pencil {
+    color: yellow;
+}
+
+.part_9 a:hover .icon-droplet {
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(42, 165, 85);
+}
+.part_9 a:hover .icon-music {
+    scale: 1.5;
 }
 
 

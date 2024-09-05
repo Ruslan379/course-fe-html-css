@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?eifusp');
-  src:  url('fonts/icomoon.eot?eifusp#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?eifusp') format('truetype'),
-    url('fonts/icomoon.woff?eifusp') format('woff'),
-    url('fonts/icomoon.svg?eifusp#icomoon') format('svg');
+  font-family: 'my-font';
+  src:  url('fonts/my-font.eot?nvpiw');
+  src:  url('fonts/my-font.eot?nvpiw#iefix') format('embedded-opentype'),
+    url('fonts/my-font.ttf?nvpiw') format('truetype'),
+    url('fonts/my-font.woff?nvpiw') format('woff'),
+    url('fonts/my-font.svg?nvpiw#my-font') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,9 +12,8 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  /* speak: never; */
-  /* speak-as: never; */
+  font-family: 'my-font' !important;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -26,24 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-compass2:before {
-  content: "\e94a";
+.icon-home:before {
+  content: "\e901";
 }
-.icon-map:before {
-  content: "\e94b";
+.icon-pencil:before {
+  content: "\e905";
 }
-.icon-clock2:before {
-  content: "\e94f";
+.icon-droplet:before {
+  content: "\e90b";
 }
-.icon-bell:before {
-  content: "\e951";
-}
-.icon-keyboard:before {
-  content: "\e955";
-}
-.icon-display:before {
-  content: "\e956";
-}
-.icon-key:before {
-  content: "\e98d";
+.icon-music:before {
+  content: "\e911";
 }
