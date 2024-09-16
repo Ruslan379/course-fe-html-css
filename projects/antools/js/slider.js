@@ -1,15 +1,25 @@
-const slider = document.querySelector('.slider');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
+// const slider = document.querySelector('.slider');
+const slider = document.querySelector("[data-slider]");
+// const prevBtn = document.getElementById('prevBtn');
+const prevBtn = document.querySelector("[data-slider-prevBtn]");
+// const nextBtn = document.getElementById('nextBtn');
+const nextBtn = document.querySelector("[data-slider-nextBtn]");
+
 // Задаємо початковий стан (колір) кнопок < та >
 prevBtn.querySelector('path').setAttribute('stroke', 'rgba(255, 255, 255, 0.28)');
 nextBtn.querySelector('path').setAttribute('stroke', '#FF6E30');
 prevBtn.disabled = true; // Робимо кнопку < неактивной
-const slides = document.querySelectorAll('.slider .team-item');
+// const slides = document.querySelectorAll('.slider .team-item');
+const slides = document.querySelectorAll("[data-slider] [data-slider-item]");
+// console.log("slides:", slides);
+
 // Пагінація
-const paginationFirst = document.getElementById('first');
-const paginationSecond = document.getElementById('second');
-const paginationThird = document.getElementById('third');
+// const paginationFirst = document.getElementById('first');
+const paginationFirst = document.querySelector("[data-slider-pagination-first]");
+// const paginationSecond = document.getElementById('second');
+const paginationSecond = document.querySelector("[data-slider-pagination-second]");
+// const paginationThird = document.getElementById('third');
+const paginationThird = document.querySelector("[data-slider-pagination-third]");
 const slideWidth = slides[0].clientWidth;
 // console.log("slideWidth:", slideWidth);
 let currentIndex = 0;

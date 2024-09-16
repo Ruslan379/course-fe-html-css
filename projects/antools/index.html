@@ -572,8 +572,8 @@
             <section class="team">
             <div class="container">
                 <div class="slider-box">
-                    <ul class="slider-team-list slider">
-                        <li class="team-item">
+                    <ul class="slider-team-list slider" data-slider>
+                        <li class="team-item" data-slider-item >
                             <div class="team-img-box">
                                 <img 
                                     class="team-img" 
@@ -609,7 +609,7 @@
                                 </p> -->
                             </div>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item"data-slider-item >
                             <div class="team-img-box">
                                 <img 
                                     class="team-img" 
@@ -645,7 +645,7 @@
                                 </p> -->
                             </div>
                         </li>
-                        <li class="team-item">
+                        <li class="team-item" data-slider-item >
                             <div class="team-img-box">
                                 <img 
                                     class="team-img" 
@@ -684,7 +684,12 @@
                     </ul>
                     <ul class="slider-buttons-list">
                         <li class="slider-buttons-item">
-                            <button class="slider-button-left" id="prevBtn" type="button">
+                            <button 
+                                class="slider-button-left"
+                                type="button"
+                                data-slider-prevBtn
+                                id="prevBtn" 
+                            >
                                 <!-- <img src="./images/team-slider-button-left.svg" alt="slider button left"> -->
                                 <svg 
                                     width="48" 
@@ -703,7 +708,12 @@
                             </button>
                         </li>
                         <li class="slider-buttons-item">
-                            <button class="slider-button-right" id="nextBtn" type="button">
+                            <button 
+                                class="slider-button-right"
+                                type="button"
+                                id="nextBtn"
+                                data-slider-nextBtn
+                            >
                                 <!-- <img src="./images/team-slider-button-right.svg" alt="slider button right"> -->
                                 <svg 
                                     width="48" 
@@ -724,9 +734,9 @@
                         
                     </ul>
                     <ul class="slider-pagination-list">
-                        <li class="slider-pagination-item" id="first"></li>
-                        <li class="slider-pagination-item" id="second"></li>
-                        <li class="slider-pagination-item" id="third"></li>
+                        <li class="slider-pagination-item" id="first" data-slider-pagination-first ></li>
+                        <li class="slider-pagination-item" id="second" data-slider-pagination-second ></li>
+                        <li class="slider-pagination-item" id="third" data-slider-pagination-third ></li>
                     </ul>
                 </div>
             </div>
