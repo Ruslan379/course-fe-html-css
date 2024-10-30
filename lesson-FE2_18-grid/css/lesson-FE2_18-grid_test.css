@@ -66,7 +66,7 @@ body {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Властивість display: grid; */
+/*! 1-1.Властивість display: grid; */
 .part_1 .container,
 .part_2 .container {
     width: 400px;
@@ -92,7 +92,7 @@ body {
 /* .part_2 {
     display: none;
 } */
-/*! 2.Властивість display: inline-grid; */
+/*! 1-2.Властивість display: inline-grid; */
 .part_2 .container {
     width: 400px;
     height: 400px;
