@@ -166,7 +166,7 @@ body {
 /*! 4.Явні і неявні сітки */
 .part_4 .container {
     display: grid;
-    gap: 10px;
+    gap: 20px;
     
     /*? 2 (дві) колонки з шириною 100px 200px */
     grid-template-columns: 100px 200px;
@@ -179,6 +179,12 @@ body {
     /* grid-auto-rows: 100px; */
     /** 2 (два) додаткові рядки з висотою 400px 100px */
     grid-auto-rows: 400px 100px;
+    
+    /** ПРИКЛАД:
+    /*? 4 (чотири) колонки з однаковою шириною */
+    /*todo та з висотою 200px */
+    /* grid-template-columns: repeat(4, auto);
+    grid-auto-rows: 200px; */
 }
 
 
