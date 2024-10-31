@@ -1,3 +1,6 @@
+/* lesson styles */
+@import url(./basic-styles.css);
+
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
@@ -63,7 +66,7 @@ body {
 
 /* *======================================= */
 /* ! */
-/* .part_1 {
+/* .part_1-1 {
     display: none;
 } */
 /*! 1-1.Властивість display: grid; */
@@ -87,7 +90,7 @@ body {
 
 
 /* ! */
-/* .part_2 {
+/* .part_1-2 {
     display: none;
 } */
 /*! 1-2.Властивість display: inline-grid; */
@@ -107,6 +110,23 @@ body {
 
 .part_1-2 .container {
     display: inline-grid;
+}
+
+
+/* ! */
+/* .part_2 {
+    display: none;
+} */
+/*! 1-2.Властивість display: inline-grid; */
+.grid-item {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: #ffa7a7;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 
