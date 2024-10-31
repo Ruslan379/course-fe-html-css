@@ -1,5 +1,5 @@
 /* lesson styles */
-@import url(./basic-styles.css);
+/* @import url(./basic-styles.css); */
 
 :root {
     /** ============ CSS-змінні ============ */
@@ -66,9 +66,9 @@ body {
 
 /* *======================================= */
 /* ! */
-/* .part_1-1 {
+.part_1-1 {
     display: none;
-} */
+}
 /*! 1-1.Властивість display: grid; */
 .part_1-1 .container {
     width: 400px;
@@ -90,9 +90,9 @@ body {
 
 
 /* ! */
-/* .part_1-2 {
+.part_1-2 {
     display: none;
-} */
+}
 /*! 1-2.Властивість display: inline-grid; */
 .part_1-2 .container {
     width: 400px;
@@ -122,14 +122,31 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    font-size: 35px;
     border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    font-size: 35px;
-    background-color: #ffa7a7;
     color: rgba(0, 0, 0, 0.5);
+    background-color: #ffa7a7;
 }
 
+.part_2 .container {
+    display: grid;
+    /*? КОЛОНКИ:
+    /*? 3 (три) колонки з однаковими розмірами */
+    /* grid-template-columns: repeat(3, auto);  */
+    /*? 3 (три) колонки з однаковими розмірами */
+    /* grid-template-columns: auto auto auto;  */
+    /*? 3 (три) колонки з розмірами  100px 200px 400px */
+    grid-template-columns: 100px 200px 400px;
 
+    /*todo РЯДКИ:
+    /*todo 3 (три) рядки з однаковими розмірами */
+    /* grid-template-rows: repeat(2, auto);  */
+    /*todo 3 (три) рядки з однаковими розмірами */
+    /* grid-template-rows: auto auto auto;  */
+    /*todo 3 (три) рядки з розмірами  100px 200px 400px */
+    grid-template-rows: 100px 200px 400px;
+}
 
 /*? ______________________________________________________ */
 /* ! */
