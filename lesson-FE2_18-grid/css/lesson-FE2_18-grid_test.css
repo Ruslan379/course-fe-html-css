@@ -56,7 +56,7 @@ body {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
-    padding: 10px 0 0;
+    padding: 10px 0;
     margin: 0 auto 10px;
     min-height: 100vh;
     width: 90vw;
@@ -333,17 +333,23 @@ body {
 } */
 /*! 8.Розміщення елементів всередині Grid-контейнера */
 .part_8 .container {
-    /* width: 1000px; */
-    /* margin: 0 auto; */
+    width: 1000px;
+    margin: 0 auto;
     display: grid;
-    /* ! */
-    /* gap: 20px; */
+    gap: 20px;
+    box-shadow: 6px 6px 8px #333333;
     
     /** Встановлюємо сітку контейнера */
     /*?_(1)_ 4 (чотири) колонки з однаковою шириною */
     grid-template-columns: repeat(4, 1fr);
     /*todo_(1)_  3 (три) рядки з однаковою висотою 150px */
     grid-template-rows: repeat(3, 150px);
+}
+
+.part_8 > img {
+    margin: 0 auto 50px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px #333333;
 }
 
 /** Задаємо розміщення кожного елемента */
@@ -369,7 +375,10 @@ body {
     /*? розміщення .aside по КОЛОНКАМ */
     grid-column: 4 / 5;
     /*todo розміщення .aside по РЯДКАМ */
-    grid-row: 2 / 3; 
+    /* grid-row: 2 / 3; */
+    /*todo можна задавати Від'ємні значення */
+    grid-row: -3 / -2;
+    grid-row: -2 / -3;
 }
 
 .footer {
