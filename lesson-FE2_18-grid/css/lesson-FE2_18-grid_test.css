@@ -189,16 +189,16 @@ body {
 
 
 /* ! */
-.part_5 {
+/* .part_5 {
     display: none;
-}
+} */
 /*! 5.Властивість grid-auto-flow */
 .part_5 .container {
     display: grid;
     gap: 20px;
     
-    /*? 2 (дві) колонки з шириною 100px 200px */
-    grid-template-columns: 100px 200px;
+    /*? 2 (дві) колонки з шириною 200px 400px */
+    grid-template-columns: 200px 400px;
     
     /** grid-auto-flow - автоматичне створенння колонок або рядків */
     /*? додаткові колонки з однаковою шириною */
@@ -206,30 +206,34 @@ body {
     /*todo додаткові рядки з однаковою висотою (значення за замовчуванням) */
     /* grid-auto-flow: row; */
     
-    /** ПРИКЛАД:
-    /* grid-template-columns: minmax( ); */
+    /** ПРИКЛАД: */
+    
 }
 
 
 /* ! */
-/* .part_5-1 {
+.part_5-1 {
     display: none;
-} */
+}
 /*! 5-1.Використання функції minmax() в grid-template-columns */
 .part_5-1 .container {
-        display: grid;
-        grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
-        grid-gap: 5px;
-        box-sizing: border-box;
-        height: 200px;
-        width: 100%;
-        background-color: #b4ffc1;
-        padding: 10px;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    background-color: #b4ffc1;
+    
+    display: grid;
+    grid-gap: 5px; /* ! */
+    /*? Перший елемент із гнучкою шириною, як і вміст */
+    /* grid-template-columns: minmax(min-content, max-content) minmax(200px, 1fr) 150px; */
+    /*? Елемент такої самої ширини, як і вміст, але не більше 300px - !!! */
+    grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
+    
 }
 
 .part_5-1 .container > div {
-    background-color: #b6c2ff;
     padding: 5px;
+    background-color: #b6c2ff;
 }
 
 
