@@ -65,6 +65,11 @@ body {
 }
 
 /* *======================================= */
+/*! Загальні властивості до .container */
+.container {
+    outline: 2px solid blue;
+}
+
 /* ! */
 .part_1-1 {
     display: none;
@@ -189,9 +194,9 @@ body {
 
 
 /* ! */
-/* .part_5 {
+.part_5 {
     display: none;
-} */
+}
 /*! 5.Властивість grid-auto-flow */
 .part_5 .container {
     display: grid;
@@ -235,6 +240,34 @@ body {
     padding: 5px;
     background-color: #b6c2ff;
 }
+
+
+
+/* ! */
+/* .part_6 {
+    display: none;
+} */
+/*! 6.Робота з розмірами в CSS Grid */
+.part_6 .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    
+    /*? 3 (три) колонки з шириною 100px 200px 400px */
+    grid-template-columns: 100px 200px 400px;
+    
+    /** grid-auto-flow - автоматичне створенння колонок або рядків */
+    /*? додаткові колонки з однаковою шириною */
+    /* grid-auto-flow: column; */
+    /*todo додаткові рядки з однаковою висотою (значення за замовчуванням) */
+    /* grid-auto-flow: row; */
+    
+    /** ПРИКЛАД: */
+    
+}
+
+
 
 
 
