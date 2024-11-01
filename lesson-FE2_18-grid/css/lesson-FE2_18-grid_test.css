@@ -141,17 +141,17 @@ body {
     display: grid;
     
     /*? КОЛОНКИ (width): */
-    /*? 3 (три) колонки з однаковою шириною */
+    /*?_(1)_  3 (три) колонки з однаковою шириною */
     /* grid-template-columns: repeat(3, auto);  */
-    /*? 3 (три) колонки з однаковою шириною */
+    /*?_(2)_  3 (три) колонки з однаковою шириною */
     /* grid-template-columns: auto auto auto;  */
-    /*? 3 (три) колонки з шириною 100px 200px 400px */
+    /*?_(3)_  3 (три) колонки з шириною 100px 200px 400px */
     grid-template-columns: 100px 200px 400px;
     
     /*todo РЯДКИ (height): */
-    /*todo 3 (три) рядки з висотою 100px 200px 400px */
-    grid-template-rows: 100px 200px 400px;
-    /*todo 4 (чотири) рядки з висотою 100px 200px 400px 100px */
+    /*todo_(1)_  3 (три) рядки з висотою 100px 200px 400px */
+    /* grid-template-rows: 100px 200px 400px; */
+    /*todo_(2)_  4 (чотири) рядки з висотою 100px 200px 400px 100px */
     grid-template-rows: 100px 200px 400px 100px;
     
     /** ВІДСТУПИ */
@@ -182,15 +182,16 @@ body {
     grid-template-rows: 100px 200px;
     
     /** НЕЯВНІ СІТКИ */
-    /** 2 (два) додаткових рядка з однаковою висотою 100px */
+    /**_(1) 2 (два) додаткових рядка з однаковою висотою 100px */
     /* grid-auto-rows: 100px; */
-    /** 2 (два) додаткових рядка з висотою 400px 100px */
+    /**_(2) 2 (два) додаткових рядка з висотою 400px 100px */
     grid-auto-rows: 400px 100px;
     
-    /** ПРИКЛАД:
-    /*? 4 (чотири) колонки з однаковою шириною */
+    /** ПРИКЛАД: */
+    /*?_(1-1) 4 (чотири) колонки з однаковою шириною */
     /* grid-template-columns: repeat(4, auto); */
-    /*? ❗️❗️❗️ auto працює НЕ ОДНАКОВО з 1fr (дивись далі...)*/
+    /*?_(1-2) 4 (чотири) колонки з однаковою шириною */
+    /*?     ❗️❗️❗️ auto працює НЕ ОДНАКОВО з 1fr (дивись далі...)*/
     /* grid-template-columns: repeat(4, 1fr); */
     /*todo та з висотою 200px */
     /* grid-auto-rows: 200px; */
@@ -226,16 +227,16 @@ body {
 }
 /*! 5-1.Використання функції minmax() в grid-template-columns */
 .part_5-1 .container {
-    width: 100%;
+    /* width: 100%; */
     height: 200px;
     padding: 10px;
     background-color: #b4ffc1;
     
     display: grid;
     grid-gap: 5px; /* ! */
-    /*? Перший елемент із гнучкою шириною, як і вміст */
+    /*?_(1-1) Перший елемент із гнучкою шириною, як і вміст */
     /* grid-template-columns: minmax(min-content, max-content) minmax(200px, 1fr) 150px; */
-    /*? Елемент такої самої ширини, як і вміст, але не більше 300px - !!! */
+    /*?_(1-2) Елемент такої самої ширини, як і вміст, але не більше 300px - !!! */
     grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
     
 }
@@ -288,11 +289,50 @@ body {
 
 
 /* ! */
-/* .part_7 {
+.part_7 {
     display: none;
-} */
+}
 /*! 7.Функція repeat в СSS Grid */
 .part_7 .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    
+    /*?_(1)_  4 (чотири) колонки з однаковою шириною 200px*/
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /*?_(2)_  4 (чотири) колонки з однаковою шириною 200px*/
+    /* grid-template-columns: repeat(4, 200px); */
+    /*?_(3)_ 4 (чотири) колонки з однаковою шириною = 1fr (одна наша фракція) = 235px */
+    /*?     ❗️ 1fr (фракція, одиниця гнучкості) = 1 частині доступного простору */
+    /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*3)/4=235px */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /*?_(3-1)_  4 (чотири) колонки з НЕ однаковою шириною
+    /*?     ❗️❗️❗️ auto працює НЕ ОДНАКОВО з 1fr !!! */
+    /*?     ❗️❗️ <div class="grid-item">10 - ширший за всіх!</div> */
+    /* grid-template-columns: repeat(4, auto); */
+    /*?_(4)_  8 (вісім) колонок з шириною по 100px та 200px послідовно */
+    /* grid-template-columns: repeat(4, 100px 200px); */
+    /*?_(5)_  5 (п'ять) колонок з шириною 100px 177.33px 177.33px 177.33px 300px */
+    /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*4-100px-300px)/3=177.33px */
+    /* grid-template-columns: 100px repeat(3, 1fr) 300px; */
+    /*?_(6)_  5 (п'ять) колонок з шириною 100px 260px 260px 260px 40px */
+    /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*4-100px-40px)/3=260px */
+    grid-template-columns: 100px repeat(3, 1fr) auto;
+    
+    /** ПРИКЛАД: */
+    
+}
+
+
+
+/* ! */
+/* .part_8 {
+    display: none;
+} */
+/*! 8.Розміщення елементів всередині Grid-контейнера */
+.part_8 .container {
     width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -324,6 +364,7 @@ body {
     /** ПРИКЛАД: */
     
 }
+
 
 
 
