@@ -332,6 +332,12 @@ body {
     display: none;
 } */
 /*! 8.Розміщення елементів всередині Grid-контейнера */
+.part_8 > img {
+    margin: 0 auto 50px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px #333333;
+}
+
 .part_8 .container {
     width: 1000px;
     margin: 0 auto;
@@ -344,12 +350,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     /*todo_(1)_  3 (три) рядки з однаковою висотою 150px */
     grid-template-rows: repeat(3, 150px);
-}
-
-.part_8 > img {
-    margin: 0 auto 50px;
-    border-radius: 25px;
-    box-shadow: 6px 6px 8px #333333;
 }
 
 /** Задаємо розміщення кожного елемента */
