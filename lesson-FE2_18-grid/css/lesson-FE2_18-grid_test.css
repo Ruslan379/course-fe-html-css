@@ -65,7 +65,7 @@ body {
 }
 
 /* *======================================= */
-/*! Загальні властивості до .container */
+/*? Загальні властивості до .container */
 .container {
     outline: 2px solid blue;
 }
@@ -124,12 +124,14 @@ body {
 }
 /*! 2.Створення колонок і рядків в CSS Grid */
 /*! 3.Відступи між рядками та колонками */
+/*? Загальні властивості до .grid-item */
 .grid-item {
     display: grid;
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* border: 2px solid rgba(0, 0, 0, 0.5); */
+    outline: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     color: rgba(0, 0, 0, 0.5);
     background-color: #ffa7a7;
@@ -249,19 +251,34 @@ body {
 } */
 /*! 6.Робота з розмірами в CSS Grid */
 .part_6 .container {
-    width: 1000px;
+    width: 1000px; /* ! */
     margin: 0 auto;
     display: grid;
-    gap: 20px;
+    /* ! */
+    gap: 20px; 
     
-    /*? 3 (три) колонки з шириною 100px 200px 400px */
-    grid-template-columns: 100px 200px 400px;
-    
-    /** grid-auto-flow - автоматичне створенння колонок або рядків */
-    /*? додаткові колонки з однаковою шириною */
-    /* grid-auto-flow: column; */
-    /*todo додаткові рядки з однаковою висотою (значення за замовчуванням) */
-    /* grid-auto-flow: row; */
+    /*?_(1)_ 4 (чотири) колонки з шириною 100px 200px 400px */
+    /* grid-template-columns: 100px 200px 300px 400px; */
+    /*?_(2)_ 4 (чотири) колонки з однаковою шириною = 25% = 250px */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /*?_(3)_ 4 (чотири) колонки з однаковою шириною = 1fr (одна наша фракція) = 235px */
+    /*?     1fr (фракція, одиниця гнучкості) = 1 частині доступного простору */
+    /*?     1fr (одна наша фракція) = (1000px-20px*3)/4=235px */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /*?_(4)_ 4 (чотири) колонки з з шириною 100px 280px 280px 280px */
+    /*?     1fr (одна наша фракція) = (1000px-20px*3-100px)/3=280px */
+    /* grid-template-columns: 100px 1fr 1fr 1fr; */
+    /*?_(5)_ 4 (чотири) колонки з з шириною 100px 210px 420px 210px */
+    /*?     1fr (одна наша фракція) = (1000px-20px*3-100px)/4=210px */
+    /* grid-template-columns: 100px 1fr 2fr 1fr; */
+    /*?_(6)_ 4 (чотири) колонки з з шириною 100px 210px 420px 210px */
+    /*?     1fr (одна наша фракція) = (1000px-20px*3-100px)/4=210px */
+    /* grid-template-columns: 100px 1fr 2fr 1fr; */
+    /*?_(7)_ 4 (чотири) колонки з з шириною 100px auto(40.02px) 533.33px 266.66px */
+    /*?     auto = ширини контенту */
+    /*?     1fr (одна наша фракція) = (1000px-20px*3-100px)/4=210px */
+    grid-template-columns: 100px auto 2fr 1fr;
+    /*?_(7-1) <div class="grid-item">2-Ggid</div> */
     
     /** ПРИКЛАД: */
     
