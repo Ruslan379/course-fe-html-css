@@ -556,6 +556,15 @@ body {
     display: none;
 } */
 /*! 10-1.Приклад використання функції minmax() в grid-template-columns */
+/*? Загальні властивості до .grid_item */
+.part_12 .grid_item {
+    font-size: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #ffa7a7;
+}
+
 .part_12 .container {
     width: 1000px;
     height: 600px;
@@ -567,21 +576,53 @@ body {
     grid-template-columns: repeat(4, 150px);
     /*todo Створюємо 3 (три) рядки з однаковою висотою 150px */
     grid-template-rows: repeat(3, 150px);
+
+    /** Додаткові властивості контейнера: */
+    /*! justify-items */
+    justify-items: stretch; /*todo (значення за замовчуванням) */
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: center; */
     
+    /*! align-items */
+    align-items: stretch; /*todo (значення за замовчуванням) */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+
+    /*! justify-content */
+    justify-content: start; /*todo (значення за замовчуванням) */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    
+    /*! align-content */
+    align-content: start; /*todo (значення за замовчуванням) */
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    /* align-content: space-evenly; */
 }
 
-/*? Загальні властивості до .grid_item */
-.grid_item {
-    font-size: 40px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    color: rgba(0, 0, 0, 0.5);
-    background-color: #ffa7a7;
+/** Додаткові властивості елемента: */
+.part_12 .item-self {
+    /*! justify-self */
+    justify-self: stretch; /*todo (значення за замовчуванням) */
+    /* justify-self: start; */
+    /* justify-self: end; */
+    /* justify-self: center; */
+    
+    /*! align-self */
+    align-self: stretch; /*todo (значення за замовчуванням) */
+    /* align-self: start; */
+    /* align-self: end; */
+    /* align-self: center; */
 }
 
-/* .part_12 .grid_item {
-    
-} */
+
 
 
 
