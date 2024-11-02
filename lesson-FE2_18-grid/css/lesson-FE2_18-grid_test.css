@@ -434,9 +434,9 @@ body {
 
 
 /* ! */
-/* .part_11 {
+.part_11 {
     display: none;
-} */
+}
 /*! 11.Розміщення елементів всередині Grid-контейнера */
 .part_11 > img {
     margin: 0 auto 50px;
@@ -549,6 +549,40 @@ body {
         ;
     }
 }
+
+
+/* ! */
+/* .part_12 {
+    display: none;
+} */
+/*! 10-1.Приклад використання функції minmax() в grid-template-columns */
+.part_12 .container {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    display: grid;
+    /* gap: 20px; */
+    
+    /*? Створюємо 4 (чотири) колонки з однаковою шириною 150px */
+    grid-template-columns: repeat(4, 150px);
+    /*todo Створюємо 3 (три) рядки з однаковою висотою 150px */
+    grid-template-rows: repeat(3, 150px);
+    
+}
+
+/*? Загальні властивості до .grid_item */
+.grid_item {
+    font-size: 40px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #ffa7a7;
+}
+
+/* .part_12 .grid_item {
+    
+} */
+
 
 
 /*? ______________________________________________________ */
