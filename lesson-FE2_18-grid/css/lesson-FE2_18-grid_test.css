@@ -222,33 +222,6 @@ body {
 
 
 /* ! */
-.part_5-1 {
-    display: none;
-}
-/*! 5-1.Використання функції minmax() в grid-template-columns */
-.part_5-1 .container {
-    /* width: 100%; */
-    height: 200px;
-    padding: 10px;
-    background-color: #b4ffc1;
-    
-    display: grid;
-    grid-gap: 5px; /* ! */
-    /*?_(1-1) Перший елемент із гнучкою шириною, як і вміст */
-    /* grid-template-columns: minmax(min-content, max-content) minmax(200px, 1fr) 150px; */
-    /*?_(1-2) Елемент такої самої ширини, як і вміст, але не більше 300px - !!! */
-    grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
-    
-}
-
-.part_5-1 .container > div {
-    padding: 5px;
-    background-color: #b6c2ff;
-}
-
-
-
-/* ! */
 .part_6 {
     display: none;
 }
@@ -308,7 +281,7 @@ body {
     /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*3)/4=235px */
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     /* grid-template-columns: repeat(4, 1fr); */
-    /*?_(3-1)_  4 (чотири) колонки з НЕ однаковою шириною
+    /*?_(3-1)_  4 (чотири) колонки з НЕ однаковою шириною */
     /*?     ❗️❗️❗️ auto працює НЕ ОДНАКОВО з 1fr !!! */
     /*?     ❗️❗️ <div class="grid-item">10 - ширший за всіх!</div> */
     /* grid-template-columns: repeat(4, auto); */
@@ -352,7 +325,7 @@ body {
 }
 
 /** Задаємо розміщення кожного елемента */
-.header {
+.part_8 .container > .header {
     /*? розміщення .header по КОЛОНКАМ */
     /* grid-column-start: 1; */
     /* grid-column-end: 5; */
@@ -364,7 +337,7 @@ body {
     background-color: lightsalmon;
 }
 
-.main {
+.part_8 .container > .main {
     /*? розміщення .main по КОЛОНКАМ */
     grid-column: 1 / 3;
     /*todo розміщення .main по РЯДКАМ */
@@ -372,7 +345,7 @@ body {
     background-color: lightskyblue;
 }
 
-.aside {
+.part_8 .container > .aside {
     /*? розміщення .aside по КОЛОНКАМ */
     grid-column: 4 / 5;
     /*todo розміщення .aside по РЯДКАМ */
@@ -383,7 +356,7 @@ body {
     background-color: lightcoral;
 }
 
-.footer {
+.part_8 .container > .footer {
     /*? розміщення .footer по КОЛОНКАМ */
     grid-column: 1 / 5;
     /*todo розміщення .footer по РЯДКАМ */
@@ -393,22 +366,135 @@ body {
 
 
 /* ! */
-/* .part_9 {
+.part_9 {
     display: none;
-} */
-/*! 9.Властивості auto-fit та auto-fill */
+}
+/*! 9.Властивості auto-fill та auto-fit */
 .part_9 .container {
     width: 1000px;
     margin: 0 auto;
     display: grid;
     gap: 20px;
     
-    /*?_(1)_ 4 (чотири) колонки з однаковою шириною 150px*/
+    /*?_(1)_ 4 (чотири) колонки з однаковою шириною 150px */
     /* grid-template-columns: repeat(4, 150px); */
-    /*?_(2)_ 4 (чотири) колонки з однаковою шириною 150px*/
+    /*?_(2)_ 4 (чотири) колонки з однаковою шириною 150px */
     /* grid-template-columns: repeat(auto-fill, 150px); */
-    /*?_(3)_ 4 (чотири) колонки з однаковою шириною 150px*/
+    /*?_(3)_ 4 (чотири) колонки з однаковою шириною 150px */
     grid-template-columns: repeat(auto-fit, 150px);
+}
+
+
+/* ! */
+.part_10 {
+    display: none;
+}
+/*! 10.Інструкція minmax() */
+.part_10 .container {
+    /* width: 1000px; */
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    
+    /*?_(1)_ 4 (чотири) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /** Приклад майже респонсивної(чутливої)верстки */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /*?_(2)_ 4 (чотири) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /** Приклад 100% респонсивної (чутливої) верстки */
+    /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+
+/* ! */
+.part_10-1 {
+    display: none;
+}
+/*! 10-1.Приклад використання функції minmax() в grid-template-columns */
+.part_10-1 .container {
+    /* width: 100%; */
+    height: 200px;
+    padding: 10px;
+    background-color: #b4ffc1;
+    
+    display: grid;
+    grid-gap: 5px; /* ! */
+    /*?_(1-1) Перший елемент із гнучкою шириною, як і вміст */
+    /* grid-template-columns: minmax(min-content, max-content) minmax(200px, 1fr) 150px; */
+    /*?_(1-2) Елемент такої самої ширини, як і вміст, але не більше 300px - !!! */
+    grid-template-columns: minmax(min-content, 300px) minmax(200px, 1fr) 150px;
+    
+}
+
+.part_10-1 .container > div {
+    padding: 5px;
+    background-color: #b6c2ff;
+}
+
+
+/* ! */
+/* .part_11 {
+    display: none;
+} */
+/*! 11.Розміщення елементів всередині Grid-контейнера */
+.part_11 > img {
+    margin: 0 auto 50px;
+    border-radius: 25px;
+    box-shadow: 6px 6px 8px #213c3d;
+}
+
+.part_11 .container {
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    box-shadow: 6px 6px 8px #1e245cc2;
+    
+    /** Встановлюємо сітку контейнера */
+    /*? 4 (чотири) колонки з однаковою шириною */
+    grid-template-columns: repeat(4, 1fr);
+    /*todo 3 (три) рядки з однаковою висотою 150px */
+    grid-template-rows: repeat(3, 150px);
+}
+
+/** Задаємо розміщення кожного елемента */
+.part_11 .container > .header {
+    /*? розміщення .header по КОЛОНКАМ */
+    /* grid-column-start: 1; */
+    /* grid-column-end: 5; */
+    grid-column: 1 / 5; /*? скорочений запис */
+    /*todo розміщення .header по РЯДКАМ */
+    /* grid-row-start: 1; */
+    /* grid-row-end: 2; */
+    grid-row: 1 / 2; /*? скорочений запис */
+    background-color: lightsalmon;
+}
+
+.part_11 .container >.main {
+    /*? розміщення .main по КОЛОНКАМ */
+    grid-column: 1 / 3;
+    /*todo розміщення .main по РЯДКАМ */
+    grid-row: 2 / 3; 
+    background-color: lightskyblue;
+}
+
+.part_11 .container > .aside {
+    /*? розміщення .aside по КОЛОНКАМ */
+    grid-column: 4 / 5;
+    /*todo розміщення .aside по РЯДКАМ */
+    /* grid-row: 2 / 3; */
+    /*todo можна задавати Від'ємні значення */
+    grid-row: -3 / -2;
+    grid-row: -2 / -3;
+    background-color: lightcoral;
+}
+
+.part_11 .container > .footer {
+    /*? розміщення .footer по КОЛОНКАМ */
+    grid-column: 1 / 5;
+    /*todo розміщення .footer по РЯДКАМ */
+    grid-row: 3 / 4;
+    background-color: darkseagreen;
 }
 
 
