@@ -59,7 +59,8 @@ body {
     padding: 10px 0;
     margin: 0 auto 10px;
     min-height: 100vh;
-    width: 90vw;
+    /* width: 90vw; */
+    width: 90%;
     background-color: #feffed;
     outline: 1px solid red;
 }
@@ -444,8 +445,8 @@ body {
 }
 
 .part_11 .container {
-    width: 1000px;
-    margin: 0 auto;
+    /* width: 1000px; */
+    /* margin: 0 auto; */
     display: grid;
     gap: 20px;
     box-shadow: 6px 6px 8px #1e245cc2;
@@ -455,46 +456,86 @@ body {
     grid-template-columns: repeat(4, 1fr);
     /*todo 3 (три) рядки з однаковою висотою 150px */
     grid-template-rows: repeat(3, 150px);
+
+    /** Робимо розмітку сітки контейнера */
+    grid-template-areas:
+    /* todo довгі назви елементів */
+        /* "header header header header"
+        "main main . aside"
+        "footer footer footer footer"
+        ; */
+    /** скорочені назви елементів */
+        "h h h h"
+        "m m . a"
+        "f f f f"
+        ;
 }
 
 /** Задаємо розміщення кожного елемента */
 .part_11 .container > .header {
     /*? розміщення .header по КОЛОНКАМ */
-    /* grid-column-start: 1; */
-    /* grid-column-end: 5; */
-    grid-column: 1 / 5; /*? скорочений запис */
+    /* grid-column: 1 / 5; */
     /*todo розміщення .header по РЯДКАМ */
-    /* grid-row-start: 1; */
-    /* grid-row-end: 2; */
-    grid-row: 1 / 2; /*? скорочений запис */
+    /* grid-row: 1 / 2;  */
     background-color: lightsalmon;
+    /** розміщення main в контейнері */
+    /* todo довгі назви елементів */
+    /* grid-area: header; */
+    /** скорочені назви елементів */
+    grid-area: h;
 }
 
 .part_11 .container >.main {
     /*? розміщення .main по КОЛОНКАМ */
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
     /*todo розміщення .main по РЯДКАМ */
-    grid-row: 2 / 3; 
+    /* grid-row: 2 / 3; */
     background-color: lightskyblue;
+
+    /** розміщення main в контейнері */
+    /* todo довгі назви елементів */
+    /* grid-area: main; */
+    /** скорочені назви елементів */
+    grid-area: m;
 }
 
 .part_11 .container > .aside {
     /*? розміщення .aside по КОЛОНКАМ */
-    grid-column: 4 / 5;
+    /* grid-column: 4 / 5; */
     /*todo розміщення .aside по РЯДКАМ */
     /* grid-row: 2 / 3; */
-    /*todo можна задавати Від'ємні значення */
-    grid-row: -3 / -2;
-    grid-row: -2 / -3;
     background-color: lightcoral;
+
+    /** розміщення aside в контейнері */
+    /* todo довгі назви елементів */
+    /* grid-area: aside; */
+    /** скорочені назви елементів */
+    grid-area: a;
 }
 
 .part_11 .container > .footer {
     /*? розміщення .footer по КОЛОНКАМ */
-    grid-column: 1 / 5;
+    /* grid-column: 1 / 5; */
     /*todo розміщення .footer по РЯДКАМ */
-    grid-row: 3 / 4;
+    /* grid-row: 3 / 4; */
     background-color: darkseagreen;
+
+    /** розміщення footer в контейнері */
+    /* todo довгі назви елементів */
+    /* grid-area: footer; */
+    /** скорочені назви елементів */
+    grid-area: f;
+}
+
+/** Змінюємо розмітку сітки контейнера при ширині єкрану ДО 700px */
+@media screen and (max-width: 700px) {
+    .part_11 .container {
+    grid-template-areas:
+        "a h h h"
+        "a m m m"
+        "a f f f"
+        ;
+    }
 }
 
 
