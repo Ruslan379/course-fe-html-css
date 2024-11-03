@@ -397,10 +397,10 @@ body {
     display: grid;
     gap: 20px;
     
-    /*?_(1)_ 4 (чотири) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /*?_(1)_ 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
     /** Приклад майже респонсивної(чутливої)верстки */
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    /*?_(2)_ 4 (чотири) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /*?_(2)_ 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
     /** Приклад 100% респонсивної (чутливої) верстки */
     /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -552,10 +552,10 @@ body {
 
 
 /* ! */
-/* .part_12 {
+.part_12 {
     display: none;
-} */
-/*! 10-1.Приклад використання функції minmax() в grid-template-columns */
+}
+/*! 12.Grid Alignment and Justification */
 /*? Загальні властивості до .grid_item */
 .part_12 .grid_item {
     font-size: 40px;
@@ -620,6 +620,62 @@ body {
     /* align-self: start; */
     /* align-self: end; */
     /* align-self: center; */
+}
+
+
+
+/* ! */
+/* .part_13-1 {
+    display: none;
+} */
+/*! 13-1.Вкладені сітки (Nested Grids) */
+/*? Загальні властивості до .grid_item */
+.part_13-1 .grid_item {
+    font-size: 60px;
+    line-height: 1.5;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #ffa7a7;
+}
+
+.part_13-1 .container {
+    /* width: 1000px; */
+    /* margin: 0 auto; */
+    display: grid;
+    gap: 20px;
+    
+    /*? 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /** Приклад 100% респонсивної (чутливої) верстки */
+    /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+}
+
+/**  */
+.part_13-1 .grid_item {
+    display: grid;
+    gap: 10px;
+    /*? 2 (дві) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* ! */
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
+.part_13-1 .grid_item-image {
+    /* ! */
+    /* width: 70px; */
+    /* height: 70px; */
+    text-align: center;
+    font-size: 18px;
+    line-height: 70px;
+    background-color: lightgreen;
+}
+
+.part_13-1 .grid_item-text {
+    text-align: center;
+    background-color: lightgray;
 }
 
 
