@@ -17,10 +17,15 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
 
-    <!--! завантаження шрифтів: 'Roboto' 400, 700 -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!--! завантаження шрифтів: 'Roboto' 400, 500,700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--! Завантаження шрифтів: 'Poppins' 400, 500, 700, 900 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <!--! файл reset.css -->
     <link rel="stylesheet" href="./css/reset.css">
@@ -294,54 +299,78 @@
 
 
     <!--! 13-2.Приклад використання вкладених сіток (Nested Grids) для респонсивної верстки -->
-    <div class="part part_13-2">
+    <div class="part_13-2">
         <h2 class="title-section">13-2.Приклад використання вкладених сіток (<u>Nested Grids</u>) для респонсивної верстки</h2>
         <section class="skills">
             <div class="container">
                 <h2 class="section-title">Skills</h2>
                 <ul class="list grid-container-main">
                     <li class="item grid-container-card">
-                        <h3 class="item-title">Speaking</h3>
-                        <p class="item-text">
-                            Improve your English skills and 
-                            confidence. Live classes and interactive 
-                            lessons online. 20% extra free for 
-                            a limited time only
-                            <br>
-                            Learn English online and improve your 
-                            skills through our high-quality courses 
-                            and resources – all designed for adult 
-                            language learners.
-                        </p>
-                        <button class="item-button">Learn more</button>
+                        <div class="thumb">
+                            <img src="./images/skills-01-speaking.png" alt="speaking">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="item-title">Speaking</h3>
+                            <p class="item-text">
+                                Improve your English skills and 
+                                confidence. Live classes and interactive 
+                                lessons online. 20% extra free for 
+                                a limited time only
+                                <br>
+                                Learn English online and improve your 
+                                skills through our high-quality courses 
+                                and resources – all designed for adult 
+                                language learners.
+                            </p>
+                            <button class="item-button">Learn more</button>
+                        </div>
+                        
                     </li>
-                    <li class="item">
-                        <h3 class="item-title">Writing</h3>
-                        <p class="item-text">
-                            One of the most important and extensive 
-                            areas of natural science, the science that 
-                            studies substances, also their composition 
-                        </p>
-                        <button class="item-button">Learn more</button>
+                    <li class="item grid-container-card">
+                        <div class="thumb">
+                            <img src="./images/skills-02-writing.png" alt="writing">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="item-title">Writing</h3>
+                            <p class="item-text">
+                                One of the most important and extensive 
+                                areas of natural science, the science that 
+                                studies substances, also their composition 
+                            </p>
+                            <button class="item-button">Learn more</button>
+                        </div>
+                        
                     </li>
-                    <li class="item">
-                        <h3 class="item-title">Reading</h3>
-                        <p class="item-text">
-                            Perception and response actions 
-                            of the user resulting from the use and
-                            or up coming use of the product, <br>
-                            system or service
-                        </p>
+                    <li class="item grid-container-card">
+                        <div class="thumb">
+                            <img src="./images/skills-03-reading.png" alt="reading">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="item-title">Reading</h3>
+                            <p class="item-text">
+                                Perception and response actions 
+                                of the user resulting from the use and
+                                or up coming use of the product, <br>
+                                system or service
+                            </p>
                         <button class="item-button">Learn more</button>
+                        </div>
+                        
                     </li>
-                    <li class="item">
-                        <h3 class="item-title">Listening</h3>
-                        <p class="item-text">
-                            Here you can find activities to practise 
-                            your listening skills. Listening will help 
-                            you to improve your understanding 
-                        </p>
-                        <button class="item-button">Learn more</button>
+                    <li class="item grid-container-card">
+                        <div class="thumb">
+                            <img src="./images/skills-04-listening.png" alt="listening">
+                        </div>
+                        <div class="wrapper">
+                            <h3 class="item-title">Listening</h3>
+                            <p class="item-text">
+                                Here you can find activities to practise 
+                                your listening skills. Listening will help 
+                                you to improve your understanding 
+                            </p>
+                            <button class="item-button">Learn more</button>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>

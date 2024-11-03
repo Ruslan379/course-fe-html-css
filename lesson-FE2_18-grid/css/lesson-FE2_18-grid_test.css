@@ -683,53 +683,125 @@ body {
     display: none;
 } */
 /*! 13-2.Приклад використання вкладених сіток (Nested Grids) для респонсивної верстки */
-/*? Загальні властивості до .grid_item */
-.part_13-2 .grid_item {
-    font-size: 60px;
+.part_13-2 .skills {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    font-family: "Poppins";
+    /* font-family: "Roboto"; */
+    font-size: 0.875rem; /*? 14px */
     line-height: 1.5;
-    border: 5px solid rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    color: rgba(0, 0, 0, 0.5);
-    background-color: #ffa7a7;
+    color: #000000;
+    background-color: #d5f5ff;
 }
 
 .part_13-2 .container {
-    /* width: 1000px; */
-    /* margin: 0 auto; */
-    display: grid;
-    gap: 20px;
-    
-    /*? 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
-    /** Приклад 100% респонсивної (чутливої) верстки */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
+    /* width: 100%; */
+    min-width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
+    outline: 1px solid tomato;
+}
+/*! Медіа запити */
+@media screen and (min-width: 480px) {
+    .part_13-2 .container {
+        max-width: 480px;
+        padding: 0 15px;
+        outline: 1px solid green;
+    }
+}
+@media screen and (min-width: 768px) {
+    .part_13-2 .container {
+        max-width: 768px;
+        padding: 0 20px;
+        outline: 1px solid blue;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .part_13-2 .container {
+        max-width: 1200px;
+        padding: 0 30px;
+        outline: 1px solid red;
+    }
 }
 
-/**  */
-.part_13-2 .grid_item {
-    display: grid;
-    gap: 10px;
-    /*? 2 (дві) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* ! */
-    /* justify-items: center; */
-    /* align-items: center; */
-}
-
-.part_13-2 .grid_item-image {
-    /* ! */
-    /* width: 70px; */
-    /* height: 70px; */
+.part_13-2 .section-title {
+    /* margin-bottom: 10px; */
+    font-weight: 900;
+    /* font-size: 1.17em;;  */ /*? 16.38px */
+    line-height: 2.5;
     text-align: center;
-    font-size: 18px;
-    line-height: 70px;
-    background-color: lightgreen;
+    /* outline: 1px solid red; */
 }
 
-.part_13-2 .grid_item-text {
-    text-align: center;
-    background-color: lightgray;
+.part_13-2 .list.grid-container-main {
+    outline: 1px solid  darkkhaki;
 }
+
+.part_13-2 .item.grid-container-card {
+    outline: 1px solid blueviolet;
+}
+
+.part_13-2 .thumb {
+    /* min-width: 204px; */
+    /* max-width: 236px; */
+    width: 240px;
+    /* min-height: 154px; */
+    /* max-height: 213px; */
+    height: 240px;
+    /* margin-bottom: 20px; */ /*? gap: 20px; */
+    border-radius: 10px;
+    background-color: #b4edff;
+}
+
+.part_13-2 .thumb>img {
+    height: 100%;
+    /* width: 100%; */
+    /** застосовуємо властивість object-fit: */
+    object-fit: fill;
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+    object-fit: scale-down;
+    /* object-fit: none; */
+    border-radius: 10px;
+    background-color: #8be4ff;
+}
+
+.part_13-2 .wrapper {
+    background-color: #b7c6ff;
+}
+
+.part_13-2 .item-title {
+    /* margin-bottom: 10px; */
+    /* font-weight: 900; */
+    /* font-size: 1.5em;  */ /*? 21px */
+    line-height: 2.0;
+    /* text-align: center; */
+    color: #263238;
+    /* outline: 1px solid red; */
+}
+
+.part_13-2 .item-text {
+    margin-bottom: 20px;
+    /* font-weight: 400; */
+    /* font-size: 0.875rem; */ /*? 14px */
+    /* line-height: 1.5; */
+    /* text-align: center; */
+    color: #8f95a5;
+    /* outline: 1px solid red; */
+}
+
+.part_13-2 .item-button {
+    /* width: $width; */
+	/* height: $height; */
+    padding: 10px 20px;
+	font-weight: 500;
+    font-size: 0.875rem; /*? 14px */
+	border-radius: 5px;
+	color: #ffffff;
+    background-color: #263238;
+}
+
+
 
 
 
