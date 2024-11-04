@@ -626,9 +626,9 @@ body {
 
 
 /* ! */
-.part {
+/* .part {
     display: none;
-}
+} */
 /* .part_13 {
     display: none;
 } */
@@ -670,6 +670,9 @@ body {
     
     /*? 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
     /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
+    /**     Мінимальна ширина КОНТЕЙНЕРА для створення ЧОТИРЬОХ колонок */
+    /** = 660px (=4*150px+3*20px(gap:)) */
+    /** Тоді ширина ЕЛЕМЕНТА = 150.14px */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
@@ -678,8 +681,10 @@ body {
 .part_13 .grid_item {
     display: grid;
     gap: 10px;
-
-    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=100px */
+    
+    /*? 1 - 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=100px */
+    /**     Мінимальна ширина ЕЛЕМЕНТА для створення ДВОХ колонок */
+    /** = 220px (=100px+100px+10px(gap:)+2*5px(border)) */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     /* ! */
     /* justify-items: center; */
@@ -688,14 +693,15 @@ body {
 
 
 /* ! */
-/* .part,
+.part,
 .part-13 {
     display: none;
-}  */
-.part_13-1 {
+} 
+/* .part_13-1 {
     display: none;
-}
+} */
 /*! 13-1.Приклад використання вкладених сіток (Nested Grids) для респонсивної верстки */
+/*? Базові властивості до СЕКЦІЇ .skills */
 .part_13-1 .skills {
     padding-top: 0px;
     padding-bottom: 50px;
@@ -707,6 +713,7 @@ body {
     background-color: #eddaff;
 }
 
+/*? Властивості Адаптивної верстки до КОНТЕЙНЕРА .container */
 .part_13-1 .container {
     /* width: 100%; */
     min-width: 320px;
@@ -715,7 +722,7 @@ body {
     outline: 1px solid tomato;
 }
 /*! Медіа запити */
-/*? 360 480 575 768 940 1300 1750*/
+/*? 360 480 -575- 768 940 1300 1750 */
 @media screen and (min-width: 360px) {
     .part_13-1 .container {
         max-width: 360px;
@@ -730,13 +737,13 @@ body {
         outline: 1px solid red;
     }
 }
-@media screen and (min-width: 575px) {
+/* @media screen and (min-width: 575px) {
     .part_13-1 .container {
         max-width: 575px;
         padding: 0 15px;
         outline: 1px solid blue;
     }
-}
+} */
 @media screen and (min-width: 768px) {
     .part_13-1 .container {
         max-width: 768px;
@@ -766,6 +773,7 @@ body {
     }
 }
 
+/*? Базові властивості до ЗАГОЛОВКА Секції .section-title */
 .part_13-1 .section-title {
     /* margin-bottom: 10px; */
     font-weight: 900;
@@ -775,20 +783,24 @@ body {
     /* outline: 1px solid red; */
 }
 
+/**     Застосування Nested CSS Grids до КОНТЕЙНЕРА .list */
+/** для створення респонсивної (чутливої) верстки */
 .part_13-1 .list.grid-container-main {
     display: grid;
     gap: 20px;
-    /* ? 4 (від одної до чотирьох) колонок з однаковою з ГНУЧКОЮ шириною min=150px */
-    /** Приклад 100% респонсивної (чутливої) верстки */
+
+    /* ? 1 - 4 (від одної до чотирьох) колонок з однаковою з ГНУЧКОЮ шириною min=150px */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* outline: 1px solid  darkkhaki; */
 }
 
+/**     Застосування Nested CSS Grids до ЕЛЕМЕНТА КОНТЕЙНЕРА .item */
+/** для створення респонсивної (чутливої) верстки */
 .part_13-1 .item.grid-container-card {
     display: grid;
     /* gap: 20px; */
-    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=240px */
-    /** Приклад 100% респонсивної (чутливої) верстки */
+
+    /*? 1 - 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=240px */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* ! */
     justify-items: center;
@@ -798,6 +810,7 @@ body {
     /* outline: 1px solid blueviolet; */
 }
 
+/*? Базові властивості до ТУМБИ (контейнера) Зображення Картки (елемента) .thumb */
 .part_13-1 .thumb {
     /* min-width: 204px; */
     /* max-width: 236px; */
@@ -807,12 +820,12 @@ body {
     /* max-height: 213px; */
     /* height: 240px; */
     height: 200px;
-    /* margin-bottom: 20px; */ /*? gap: 20px; */
-    align-self: center;
+    align-self: center; /* ! тільки на цих елемнтах */
     border-radius: 10px;
     /* background-color: #b4edff; */
 }
 
+/*? Базові властивості до ЗОБРАЖЕННЯ Картки (елемента) .thumb */
 .part_13-1 .thumb>img {
     height: 100%;
     /* width: 100%; */
@@ -826,6 +839,7 @@ body {
     /* background-color: #8be4ff; */
 }
 
+/*? Базові властивості до КОНТЕЙНЕРА ТЕКСТОВОГО КОНТЕНТУ Картки (елемента) .wrapper */
 .part_13-1 .wrapper {
     padding: 10px;
     display: flex;
@@ -834,6 +848,7 @@ body {
     /* background-color: #b7c6ff; */
 }
 
+/*? Базові властивості до ЗАГОЛОВКА Картки (елемента) .item-title */
 .part_13-1 .item-title {
     /* flex-grow: 1; */
     /* margin-bottom: 10px; */
@@ -846,6 +861,7 @@ body {
     /* outline: 1px solid red; */
 }
 
+/*? Базові властивості до ТЕКСТУ Картки (елемента) .item-text */
 .part_13-1 .item-text {
     /* min-height: 168px; */
     margin-bottom: 20px;
@@ -858,6 +874,7 @@ body {
     /* outline: 1px solid red; */
 }
 
+/*? Базові властивості до КНОПКИ Картки (елемента) .item-button */
 .part_13-1 .item-button {
     display: inline-flex;
     align-self: start;
