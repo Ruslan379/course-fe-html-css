@@ -52,7 +52,8 @@ body {
     text-shadow: 4px 2px 6px #0114a1bd;
 }
 
-.part {
+.part,
+.part-a {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
@@ -625,6 +626,9 @@ body {
 
 
 /* ! */
+.part {
+    display: none;
+}
 /* .part_13 {
     display: none;
 } */
@@ -651,11 +655,11 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-/**  */
 .part_13 .grid_item {
     display: grid;
     gap: 10px;
-    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=100px */
+    /** Приклад 100% респонсивної (чутливої) верстки */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     /* ! */
     /* justify-items: center; */
@@ -679,9 +683,13 @@ body {
 
 
 /* ! */
-/* .part_13-1 {
+/* .part,
+.part-a {
     display: none;
-} */
+}  */
+.part_13-1 {
+    display: none;
+}
 /*! 13-1.Приклад використання вкладених сіток (Nested Grids) для респонсивної верстки */
 .part_13-1 .skills {
     padding-top: 0px;
@@ -804,8 +812,8 @@ body {
     height: 100%;
     /* width: 100%; */
     /** застосовуємо властивість object-fit: */
-    object-fit: fill;
-    object-fit: contain;
+    /* object-fit: fill; */
+    /* object-fit: contain; */
     /* object-fit: cover; */
     object-fit: scale-down;
     /* object-fit: none; */
