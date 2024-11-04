@@ -879,9 +879,44 @@ body {
     padding: 10px 20px;
 	font-weight: 500;
     /* font-size: 0.875rem; */ /*? 14px */
+    cursor: pointer;
 	border-radius: 5px;
 	color: #ffffff;
     background-color: #263238;
+}
+
+
+/* ! */
+/* .part_14 {
+    display: none;
+} */
+/*! 14.Приклад застосування технології CSS Grid у проекті “Котодім” */
+.part_14 .link {
+    width: max-content;
+    padding: 20px 40px;
+    margin: 0 auto;
+    display: block;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.5rem; /*? 24px */
+    line-height: 1.5; /*? 36px */
+    /* cursor: pointer; */
+	border-radius: 10px;
+    border: 1px solid red;
+	color: #ffffff;
+    background-color: #263238;
+    box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+.part_14 .link:hover {
+    color: yellow;
+    border: 3px solid yellowgreen;
+    box-shadow: 4px 4px 10px rgba(153, 205, 50, 0.7);
+}
+.part_14 .link:active {
+    color: yellowgreen;
+    border: 1px solid yellowgreen;
+    box-shadow: 2px 2px 4px rgba(153, 205, 50, 0.7);
 }
 
 
