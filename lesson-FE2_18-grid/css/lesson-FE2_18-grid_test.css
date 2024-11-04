@@ -693,10 +693,10 @@ body {
 
 
 /* ! */
-.part,
+/* .part,
 .part-13 {
     display: none;
-} 
+}  */
 /* .part_13-1 {
     display: none;
 } */
@@ -775,7 +775,7 @@ body {
 
 /*? Базові властивості до ЗАГОЛОВКА Секції .section-title */
 .part_13-1 .section-title {
-    /* margin-bottom: 10px; */
+    /* margin-bottom: 10px; */ /*? line-height: 2.5; */
     font-weight: 900;
     /* font-size: 1.5em;  */ /*? 21px */
     line-height: 2.5;
@@ -820,7 +820,7 @@ body {
     /* max-height: 213px; */
     /* height: 240px; */
     height: 200px;
-    align-self: center; /* ! тільки на цих елемнтах */
+    align-self: center; /* ! тільки на цих Grid-елементах */
     border-radius: 10px;
     /* background-color: #b4edff; */
 }
@@ -829,7 +829,7 @@ body {
 .part_13-1 .thumb>img {
     height: 100%;
     /* width: 100%; */
-    /** застосовуємо властивість object-fit: */
+    /** застосовуємо одну з властивостей object-fit: */
     /* object-fit: fill; */
     /* object-fit: contain; */
     /* object-fit: cover; */
@@ -850,13 +850,12 @@ body {
 
 /*? Базові властивості до ЗАГОЛОВКА Картки (елемента) .item-title */
 .part_13-1 .item-title {
-    /* flex-grow: 1; */
-    /* margin-bottom: 10px; */
-    /* font-weight: 900; */
+    /* margin-bottom: 10px; */ /*? line-height: 2.0; */
+    /* flex-grow: 1; */ /*? додатковий відступ */
+    /* font-weight: 700; */
     /* font-size: 1.17em;;  */ /*? 16.38px */
     line-height: 2.0;
     text-indent: 0.5em;
-    /* text-align: center; */
     color: #263238;
     /* outline: 1px solid red; */
 }
@@ -869,7 +868,6 @@ body {
     /* font-weight: 400; */
     /* font-size: 0.875rem; */ /*? 14px */
     /* line-height: 1.5; */
-    /* text-align: center; */
     color: #8f95a5;
     /* outline: 1px solid red; */
 }
@@ -877,10 +875,10 @@ body {
 /*? Базові властивості до КНОПКИ Картки (елемента) .item-button */
 .part_13-1 .item-button {
     display: inline-flex;
-    align-self: start;
+    align-self: start; /* ! тільки на цих Flex-елементах */
     padding: 10px 20px;
 	font-weight: 500;
-    font-size: 0.875rem; /*? 14px */
+    /* font-size: 0.875rem; */ /*? 14px */
 	border-radius: 5px;
 	color: #ffffff;
     background-color: #263238;
