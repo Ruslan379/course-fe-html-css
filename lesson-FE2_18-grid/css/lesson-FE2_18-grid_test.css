@@ -57,7 +57,7 @@ body {
     /* flex-direction: column; */
     /* align-items: center; */
     padding: 10px 0;
-    margin: 0 auto 10px;
+    margin: 0 auto 50px;
     min-height: 100vh;
     /* width: 90vw; */
     width: 90%;
@@ -72,9 +72,9 @@ body {
 }
 
 /* ! */
-.part_1-1 {
+/* .part_1-1 {
     display: none;
-}
+} */
 /*! 1-1.Властивість display: grid; */
 .part_1-1 .container {
     width: 400px;
@@ -96,9 +96,9 @@ body {
 
 
 /* ! */
-.part_1-2 {
+/* .part_1-2 {
     display: none;
-}
+} */
 /*! 1-2.Властивість display: inline-grid; */
 .part_1-2 .container {
     width: 400px;
@@ -120,9 +120,9 @@ body {
 
 
 /* ! */
-.part_2and3 {
+/* .part_2and3 {
     display: none;
-}
+} */
 /*! 2.Створення колонок і рядків в CSS Grid */
 /*! 3.Відступи між рядками та колонками */
 /*? Загальні властивості до .grid-item */
@@ -168,9 +168,9 @@ body {
 
 
 /* ! */
-.part_4 {
+/* .part_4 {
     display: none;
-}
+} */
 /*! 4.Явні і неявні сітки */
 .part_4 .container {
     display: grid;
@@ -200,9 +200,9 @@ body {
 
 
 /* ! */
-.part_5 {
+/* .part_5 {
     display: none;
-}
+} */
 /*! 5.Властивість grid-auto-flow */
 .part_5 .container {
     display: grid;
@@ -223,9 +223,9 @@ body {
 
 
 /* ! */
-.part_6 {
+/* .part_6 {
     display: none;
-}
+} */
 /*! 6.Робота з розмірами в CSS Grid */
 .part_6 .container {
     width: 1000px; /* ! */
@@ -263,9 +263,9 @@ body {
 
 
 /* ! */
-.part_7 {
+/* .part_7 {
     display: none;
-}
+} */
 /*! 7.Функція repeat в СSS Grid */
 .part_7 .container {
     width: 1000px;
@@ -301,9 +301,9 @@ body {
 
 
 /* ! */
-.part_8 {
+/* .part_8 {
     display: none;
-}
+} */
 /*! 8.Розміщення елементів всередині Grid-контейнера */
 .part_8 > img {
     margin: 0 auto 50px;
@@ -367,9 +367,9 @@ body {
 
 
 /* ! */
-.part_9 {
+/* .part_9 {
     display: none;
-}
+} */
 /*! 9.Властивості auto-fill та auto-fit */
 .part_9 .container {
     width: 1000px;
@@ -387,9 +387,9 @@ body {
 
 
 /* ! */
-.part_10 {
+/* .part_10 {
     display: none;
-}
+} */
 /*! 10.Інструкція minmax() */
 .part_10 .container {
     /* width: 1000px; */
@@ -408,9 +408,9 @@ body {
 
 
 /* ! */
-.part_10-1 {
+/* .part_10-1 {
     display: none;
-}
+} */
 /*! 10-1.Приклад використання функції minmax() в grid-template-columns */
 .part_10-1 .container {
     /* width: 100%; */
@@ -434,9 +434,9 @@ body {
 
 
 /* ! */
-.part_11 {
+/* .part_11 {
     display: none;
-}
+} */
 /*! 11.Розміщення елементів всередині Grid-контейнера */
 .part_11 > img {
     margin: 0 auto 50px;
@@ -456,7 +456,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     /*todo 3 (три) рядки з однаковою висотою 150px */
     grid-template-rows: repeat(3, 150px);
-
+    
     /** Робимо розмітку сітки контейнера */
     grid-template-areas:
     /* todo довгі назви елементів */
@@ -478,6 +478,7 @@ body {
     /*todo розміщення .header по РЯДКАМ */
     /* grid-row: 1 / 2;  */
     background-color: lightsalmon;
+
     /** розміщення main в контейнері */
     /* todo довгі назви елементів */
     /* grid-area: header; */
@@ -491,7 +492,7 @@ body {
     /*todo розміщення .main по РЯДКАМ */
     /* grid-row: 2 / 3; */
     background-color: lightskyblue;
-
+    
     /** розміщення main в контейнері */
     /* todo довгі назви елементів */
     /* grid-area: main; */
@@ -505,7 +506,7 @@ body {
     /*todo розміщення .aside по РЯДКАМ */
     /* grid-row: 2 / 3; */
     background-color: lightcoral;
-
+    
     /** розміщення aside в контейнері */
     /* todo довгі назви елементів */
     /* grid-area: aside; */
@@ -519,7 +520,7 @@ body {
     /*todo розміщення .footer по РЯДКАМ */
     /* grid-row: 3 / 4; */
     background-color: darkseagreen;
-
+    
     /** розміщення footer в контейнері */
     /* todo довгі назви елементів */
     /* grid-area: footer; */
@@ -552,9 +553,9 @@ body {
 
 
 /* ! */
-.part_12 {
+/* .part_12 {
     display: none;
-}
+} */
 /*! 12.Grid Alignment and Justification */
 /*? Загальні властивості до .grid_item */
 .part_12 .grid_item {
@@ -576,7 +577,7 @@ body {
     grid-template-columns: repeat(4, 150px);
     /*todo Створюємо 3 (три) рядки з однаковою висотою 150px */
     grid-template-rows: repeat(3, 150px);
-
+    
     /** Додаткові властивості контейнера: */
     /*! justify-items */
     justify-items: stretch; /*todo (значення за замовчуванням) */
@@ -589,7 +590,7 @@ body {
     /* align-items: start; */
     /* align-items: end; */
     /* align-items: center; */
-
+    
     /*! justify-content */
     justify-content: start; /*todo (значення за замовчуванням) */
     /* justify-content: end; */
@@ -624,12 +625,12 @@ body {
 
 
 /* ! */
-.part_13-1 {
+/* .part_13 {
     display: none;
-}
-/*! 13-1.Вкладені сітки (Nested Grids) */
+} */
+/*! 13.Вкладені сітки (Nested Grids) */
 /*? Загальні властивості до .grid_item */
-.part_13-1 .grid_item {
+.part_13 .grid_item {
     font-size: 60px;
     line-height: 1.5;
     border: 5px solid rgba(0, 0, 0, 0.5);
@@ -638,7 +639,7 @@ body {
     background-color: #ffa7a7;
 }
 
-.part_13-1 .container {
+.part_13 .container {
     /* width: 1000px; */
     /* margin: 0 auto; */
     display: grid;
@@ -648,21 +649,20 @@ body {
     /** Приклад 100% респонсивної (чутливої) верстки */
     /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
 }
 
 /**  */
-.part_13-1 .grid_item {
+.part_13 .grid_item {
     display: grid;
     gap: 10px;
-    /*? 2 (дві) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     /* ! */
     /* justify-items: center; */
     /* align-items: center; */
 }
 
-.part_13-1 .grid_item-image {
+.part_13 .grid_item-image {
     /* ! */
     /* width: 70px; */
     /* height: 70px; */
@@ -672,18 +672,18 @@ body {
     background-color: lightgreen;
 }
 
-.part_13-1 .grid_item-text {
+.part_13 .grid_item-text {
     text-align: center;
     background-color: lightgray;
 }
 
 
 /* ! */
-/* .part_13-2 {
+/* .part_13-1 {
     display: none;
 } */
-/*! 13-2.Приклад використання вкладених сіток (Nested Grids) для респонсивної верстки */
-.part_13-2 .skills {
+/*! 13-1.Приклад використання вкладених сіток (Nested Grids) для респонсивної верстки */
+.part_13-1 .skills {
     padding-top: 0px;
     padding-bottom: 50px;
     font-family: "Poppins";
@@ -691,97 +691,152 @@ body {
     font-size: 0.875rem; /*? 14px */
     line-height: 1.5;
     color: #000000;
-    background-color: #d5f5ff;
+    background-color: #eddaff;
 }
 
-.part_13-2 .container {
+.part_13-1 .container {
     /* width: 100%; */
     min-width: 320px;
-    padding: 0 10px;
+    padding: 0 5px;
     margin: 0 auto;
     outline: 1px solid tomato;
 }
 /*! Медіа запити */
-@media screen and (min-width: 480px) {
-    .part_13-2 .container {
-        max-width: 480px;
-        padding: 0 15px;
+/*? 360 480 575 768 940 1300 1750*/
+@media screen and (min-width: 360px) {
+    .part_13-1 .container {
+        max-width: 360px;
+        padding: 0 10px;
         outline: 1px solid green;
     }
 }
-@media screen and (min-width: 768px) {
-    .part_13-2 .container {
-        max-width: 768px;
-        padding: 0 20px;
-        outline: 1px solid blue;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .part_13-2 .container {
-        max-width: 1200px;
-        padding: 0 30px;
+@media screen and (min-width: 480px) {
+    .part_13-1 .container {
+        max-width: 480px;
+        padding: 0 15px;
         outline: 1px solid red;
     }
 }
+@media screen and (min-width: 575px) {
+    .part_13-1 .container {
+        max-width: 575px;
+        padding: 0 15px;
+        outline: 1px solid blue;
+    }
+}
+@media screen and (min-width: 768px) {
+    .part_13-1 .container {
+        max-width: 768px;
+        padding: 0 20px;
+        outline: 1px solid #ffff1d;
+    }
+}
+@media screen and (min-width: 940px) {
+    .part_13-1 .container {
+        max-width: 940px;
+        padding: 0 20px;
+        outline: 1px solid orange;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .part_13-1 .container {
+        max-width: 1300px;
+        padding: 0 20px;
+        outline: 1px solid lightskyblue;
+    }
+}
+@media screen and (min-width: 1750px) {
+    .part_13-1 .container {
+        max-width: 1750px;
+        padding: 0 20px;
+        outline: 1px solid darkred;
+    }
+}
 
-.part_13-2 .section-title {
+.part_13-1 .section-title {
     /* margin-bottom: 10px; */
     font-weight: 900;
-    /* font-size: 1.17em;;  */ /*? 16.38px */
+    /* font-size: 1.5em;  */ /*? 21px */
     line-height: 2.5;
     text-align: center;
     /* outline: 1px solid red; */
 }
 
-.part_13-2 .list.grid-container-main {
-    outline: 1px solid  darkkhaki;
+.part_13-1 .list.grid-container-main {
+    display: grid;
+    gap: 20px;
+    /* ? 4 (від одної до чотирьох) колонок з однаковою з ГНУЧКОЮ шириною min=150px */
+    /** Приклад 100% респонсивної (чутливої) верстки */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* outline: 1px solid  darkkhaki; */
 }
 
-.part_13-2 .item.grid-container-card {
-    outline: 1px solid blueviolet;
+.part_13-1 .item.grid-container-card {
+    display: grid;
+    /* gap: 20px; */
+    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=240px */
+    /** Приклад 100% респонсивної (чутливої) верстки */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* ! */
+    justify-items: center;
+    /* align-items: center; */
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    /* outline: 1px solid blueviolet; */
 }
 
-.part_13-2 .thumb {
+.part_13-1 .thumb {
     /* min-width: 204px; */
     /* max-width: 236px; */
-    width: 240px;
+    /* width: 240px; */
+    width: 200px;
     /* min-height: 154px; */
     /* max-height: 213px; */
-    height: 240px;
+    /* height: 240px; */
+    height: 200px;
     /* margin-bottom: 20px; */ /*? gap: 20px; */
+    align-self: center;
     border-radius: 10px;
-    background-color: #b4edff;
+    /* background-color: #b4edff; */
 }
 
-.part_13-2 .thumb>img {
+.part_13-1 .thumb>img {
     height: 100%;
     /* width: 100%; */
     /** застосовуємо властивість object-fit: */
     object-fit: fill;
-    /* object-fit: contain; */
+    object-fit: contain;
     /* object-fit: cover; */
     object-fit: scale-down;
     /* object-fit: none; */
     border-radius: 10px;
-    background-color: #8be4ff;
+    /* background-color: #8be4ff; */
 }
 
-.part_13-2 .wrapper {
-    background-color: #b7c6ff;
+.part_13-1 .wrapper {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-self: start; */
+    /* background-color: #b7c6ff; */
 }
 
-.part_13-2 .item-title {
+.part_13-1 .item-title {
+    /* flex-grow: 1; */
     /* margin-bottom: 10px; */
     /* font-weight: 900; */
-    /* font-size: 1.5em;  */ /*? 21px */
+    /* font-size: 1.17em;;  */ /*? 16.38px */
     line-height: 2.0;
+    text-indent: 0.5em;
     /* text-align: center; */
     color: #263238;
     /* outline: 1px solid red; */
 }
 
-.part_13-2 .item-text {
+.part_13-1 .item-text {
+    /* min-height: 168px; */
     margin-bottom: 20px;
+    flex-grow: 1;
     /* font-weight: 400; */
     /* font-size: 0.875rem; */ /*? 14px */
     /* line-height: 1.5; */
@@ -790,9 +845,9 @@ body {
     /* outline: 1px solid red; */
 }
 
-.part_13-2 .item-button {
-    /* width: $width; */
-	/* height: $height; */
+.part_13-1 .item-button {
+    display: inline-flex;
+    align-self: start;
     padding: 10px 20px;
 	font-weight: 500;
     font-size: 0.875rem; /*? 14px */
@@ -800,9 +855,6 @@ body {
 	color: #ffffff;
     background-color: #263238;
 }
-
-
-
 
 
 
