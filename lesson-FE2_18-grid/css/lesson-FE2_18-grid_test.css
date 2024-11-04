@@ -53,7 +53,7 @@ body {
 }
 
 .part,
-.part-a {
+.part-13 {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: center; */
@@ -633,7 +633,7 @@ body {
     display: none;
 } */
 /*! 13.Вкладені сітки (Nested Grids) */
-/*? Загальні властивості до .grid_item */
+/*? Загальні властивості до ЕЛЕМЕНТА КОНТЕЙНЕРА .grid_item */
 .part_13 .grid_item {
     font-size: 60px;
     line-height: 1.5;
@@ -643,29 +643,7 @@ body {
     background-color: #ffa7a7;
 }
 
-.part_13 .container {
-    /* width: 1000px; */
-    /* margin: 0 auto; */
-    display: grid;
-    gap: 20px;
-    
-    /*? 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
-    /** Приклад 100% респонсивної (чутливої) верстки */
-    /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.part_13 .grid_item {
-    display: grid;
-    gap: 10px;
-    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=100px */
-    /** Приклад 100% респонсивної (чутливої) верстки */
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    /* ! */
-    /* justify-items: center; */
-    /* align-items: center; */
-}
-
+/*? Базові (початкові) властівості Елемента .grid_item-image */
 .part_13 .grid_item-image {
     /* ! */
     /* width: 70px; */
@@ -676,15 +654,42 @@ body {
     background-color: lightgreen;
 }
 
+/*? Базові (початкові) властівості Елемента .grid_item-text */
 .part_13 .grid_item-text {
     text-align: center;
     background-color: lightgray;
 }
 
+/**     Застосування Nested CSS Grids до КОНТЕЙНЕРА */
+/** для створення респонсивної (чутливої) верстки */
+.part_13 .container {
+    /* width: 1000px; */
+    /* margin: 0 auto; */
+    display: grid;
+    gap: 20px;
+    
+    /*? 4 (чотири або більше) колонки з однаковою з ГНУЧКОЮ шириною min=150px */
+    /*?     ❗️auto-fit - Не використовує пусті колонки на відміну від auto-fill */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+/**     Застосування Nested CSS Grids до ЕЛЕМЕНТА КОНТЕЙНЕРА */
+/** для створення респонсивної (чутливої) верстки */
+.part_13 .grid_item {
+    display: grid;
+    gap: 10px;
+
+    /*? 1 або 2 (одна або дві) колонки з однаковою з ГНУЧКОЮ шириною min=100px */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /* ! */
+    /* justify-items: center; */
+    /* align-items: center; */
+}
+
 
 /* ! */
 /* .part,
-.part-a {
+.part-13 {
     display: none;
 }  */
 .part_13-1 {
