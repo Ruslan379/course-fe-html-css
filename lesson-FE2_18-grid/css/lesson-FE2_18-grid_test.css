@@ -420,7 +420,7 @@ body {
     background-color: #b4ffc1;
     
     display: grid;
-    grid-gap: 5px; /* ! */
+    gap: 5px;
     /*?_(1-1) Перший елемент із гнучкою шириною, як і вміст */
     /* grid-template-columns: minmax(min-content, max-content) minmax(200px, 1fr) 150px; */
     /*?_(1-2) Елемент такої самої ширини, як і вміст, але не більше 300px - !!! */
