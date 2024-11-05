@@ -331,38 +331,52 @@ body {
     /*? розміщення .header по КОЛОНКАМ */
     /* grid-column-start: 1; */
     /* grid-column-end: 5; */
-    grid-column: 1 / 5; /*? скорочений запис */
+    /*? скорочений запис: */
+    /* grid-column: 1 / 5;  */
     /*todo розміщення .header по РЯДКАМ */
     /* grid-row-start: 1; */
     /* grid-row-end: 2; */
-    grid-row: 1 / 2; /*? скорочений запис */
+    /*? скорочений запис: */
+    /* grid-row: 1 / 2; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    grid-area: 1 / 1 / 2 / 5;
     background-color: lightsalmon;
 }
 
 .part_8 .container > .main {
     /*? розміщення .main по КОЛОНКАМ */
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
     /*todo розміщення .main по РЯДКАМ */
-    grid-row: 2 / 3; 
+    /* grid-row: 2 / 3; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    grid-area: 2 / 1 / 3 / 3;
     background-color: lightskyblue;
 }
 
 .part_8 .container > .aside {
     /*? розміщення .aside по КОЛОНКАМ */
-    grid-column: 4 / 5;
+    /* grid-column: 4 / 5; */
     /*todo розміщення .aside по РЯДКАМ */
-    /* grid-row: 2 / 3; */
+    grid-row: 2 / 3;
     /*todo можна задавати Від'ємні значення */
-    grid-row: -3 / -2;
-    grid-row: -2 / -3;
+    /* grid-row: -3 / -2; */
+    /* grid-row: -2 / -3; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    grid-area: 2 / 4 / 3 / 5;
     background-color: lightcoral;
 }
 
 .part_8 .container > .footer {
     /*? розміщення .footer по КОЛОНКАМ */
-    grid-column: 1 / 5;
+    /* grid-column: 1 / 5; */
     /*todo розміщення .footer по РЯДКАМ */
-    grid-row: 3 / 4;
+    /* grid-row: 3 / 4; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    grid-area: 3 / 1 / 4 / 5;
     background-color: darkseagreen;
 }
 
@@ -478,8 +492,11 @@ body {
     /* grid-column: 1 / 5; */
     /*todo розміщення .header по РЯДКАМ */
     /* grid-row: 1 / 2;  */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    /* grid-area: 1 / 1 / 2 / 5; */
     background-color: lightsalmon;
-
+    
     /** розміщення main в контейнері */
     /* todo довгі назви елементів */
     /* grid-area: header; */
@@ -492,6 +509,9 @@ body {
     /* grid-column: 1 / 3; */
     /*todo розміщення .main по РЯДКАМ */
     /* grid-row: 2 / 3; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    /* grid-area: 2 / 1 / 3 / 3; */
     background-color: lightskyblue;
     
     /** розміщення main в контейнері */
@@ -506,6 +526,9 @@ body {
     /* grid-column: 4 / 5; */
     /*todo розміщення .aside по РЯДКАМ */
     /* grid-row: 2 / 3; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    /* grid-area: 2 / 4 / 3 / 5; */
     background-color: lightcoral;
     
     /** розміщення aside в контейнері */
@@ -520,6 +543,9 @@ body {
     /* grid-column: 1 / 5; */
     /*todo розміщення .footer по РЯДКАМ */
     /* grid-row: 3 / 4; */
+    /** короткий запис з grid-area */
+    /* * grid-area: row-start / column-start / row-end / column-end; */
+    /* grid-area: 3 / 1 / 4 / 5; */
     background-color: darkseagreen;
     
     /** розміщення footer в контейнері */
@@ -529,7 +555,7 @@ body {
     grid-area: f;
 }
 
-/* Приклад стратегії адаптивної верстки Desktop first: */
+/*! Приклад стратегії адаптивної верстки Desktop first: */
 /** Змінюємо розмітку сітки контейнера при ширині єкрану ДО 700px */
 @media screen and (max-width: 700px) {
     .part_11 .container {
