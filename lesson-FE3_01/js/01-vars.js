@@ -63,7 +63,7 @@ let clientname;
 // clientname = "Mango";
 // console.log('clientname:', clientname); // "Mango"
 
-age = 15; // Uncaught TypeError: Assignment to constant variable.
+// age = 15; // Uncaught TypeError: Assignment to constant variable.
 // console.log('age:', age); // ReferenceError: age is not defined
 
 
