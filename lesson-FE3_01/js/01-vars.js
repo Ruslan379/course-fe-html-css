@@ -1,8 +1,7 @@
-'use strict';
-// Код у суворому режимі
+console.log('Оголошення змінних');
 
 /*
-// - Виведення даних
+    !- Виведення даних
  * - console.log()
  * - Змінні
  * - const та let
@@ -15,59 +14,63 @@
 // console.log(50);
 // console.log("Hello");
 
-// Оголошення змінної......................................
-// Оголошення змінної починається з ключового слова 
-// потім ідентифікатор (унікальне імя)
-// оператор присвоєння
-// Інструкція оголошення змінної
+//! Оголошення змінної......................................
+// Оголошення змінної починається з ключового слова -> (const)
+// потім ідентифікатор (унікальне імя) -> (age)
+// потім оператор присвоєння -> (=)
+// потім значення -> (20)
 
-// ключове слово const...................................
+//? Інструкція оголошення змінної з ключовим словом const
+
 const age = 20;
 // console.log(age); // 20
-// console.log("age", age);
+// console.log("age:", age);
 
 const username = "Mango";
 // console.log(username); // "Mango"
+// console.log("username:", age);
 
-// ключове слово let...................................
-// !!!!!!! Для оголошення змінної, 
-// якій згодом можна задати нове значення - let
+//! Ключове слово let
+//? Для оголошення змінної, 
+//? якій згодом можна задати нове значення - let
+// let myName;
 let myName = "Mango";
-// console.log(myName); // "Mango"
+// console.log('myName:', myName); // "Mango"
 
-myName = "Poly";
-// console.log(myName); // "Poly"
+// myName = "Poly";
+// console.log('myName:', myName); // "Poly"
 
-// !!!!! Якщо змінна оголошена як const, 
-// перевизначити її значення неможливо .................
+//! Ключове слово const
+//todo Якщо змінна оголошена як const, 
+//todo перевизначити її значення неможливо!!! 
 
 const companyName = "Mango";
-// console.log(username); // "Mango"
+// console.log('companyName:', username); // "Mango"
 
-// ❌ Неправильно, буде помилка
-// username = "Poly"; // TypeError: Assignment to constant variable.
+//! ❌ Неправильно, буде помилка
+// username = "Poly"; //! TypeError: Assignment to constant variable.
 
 // Створення змінної без ключового слова let або const 
 // у режимі ”strict mode” призведе до помилки................
 
 
-// оголошення .....................................
+// //! Ключове слово let (2-й варіант)
 let clientname;
-// змінна let ініціалізується зі спеціальним значенням undefined
-// console.log(clientname); // undefined
+//? змінна let ініціалізується зі спеціальним значенням undefined
+// console.log('clientname:', clientname); //! undefined
 
-// ініціалізація .....................................
-clientname = "Mango";
-// console.log(clientname); // "Mango"
+//? Ініціалізація clientname
+// clientname = "Mango";
+// console.log('clientname:', clientname); // "Mango"
 
-// age = 15; // ReferenceError: Cannot access 'age' before initialization
-// console.log(age); // ReferenceError: age is not defined
+age = 15; // Uncaught TypeError: Assignment to constant variable.
+// console.log('age:', age); // ReferenceError: age is not defined
 
 
 // розробник звертається до змінної до її оголошення...........
 // Неможливо отримати доступ до змінної до її ініціалізаці
 // ❌ Неправильно, буде помилка
-// console.log(age); // ReferenceError: age is not defined
+// console.log('age:', age); // ReferenceError: age is not defined
 
 // Оголошення змінної age
 // let age = 20;
