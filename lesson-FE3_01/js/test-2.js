@@ -1,6 +1,6 @@
 // "use strict" //! Суворий режим
 
-console.log('Підключення декількох скриптів');
+console.log('2.Підключення декількох скриптів');
 
 const a = "Hello-2";
 console.log(a);
