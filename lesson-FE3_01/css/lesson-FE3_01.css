@@ -53,19 +53,42 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* width: 100vw; */
     /* outline: 1px solid red; */
 }
 
 /* *======================================= */
+/*? Загальні властивості кнопок */
+button {
+    padding: 5px 10px;
+    font-family: monospace;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: gray;
+    color: white;
+    /* color: yellow; */
+    /* On */
+    background-color: red;
+    /* background-color: green; */
+    /* On */
+    box-shadow: 6px 6px 8px #636363;
+    /* box-shadow: 3px 3px 4px #969696; */
+    /* On */
+}
+
+
 /* ! */
 /* .part_1 {
     display: none;
 } */
-/*! 1.--- */
+/*! 1.Підключення скріптів */
 
 
+/* .part_2 {
+    display: none;
+} */
+/*! 1.Підключення скріптів */
 
 
 
