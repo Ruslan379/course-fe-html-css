@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loadAndExecuteScript('./js/test-1.js');
         } else {
             button1.textContent = 'Off';
-            button1.style.backgroundColor = 'red';
+            button1.style.backgroundColor = '#b70000';
             button1.style.color = 'white';
             button1.style.boxShadow = '6px 6px 8px #636363';
         }
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loadAndExecuteScript('./js/test-2.js');
         } else {
             button2.textContent = 'Off';
-            button2.style.backgroundColor = 'red';
+            button2.style.backgroundColor = '#b70000';
             button2.style.color = 'white';
             button2.style.boxShadow = '6px 6px 8px #636363';
         }
