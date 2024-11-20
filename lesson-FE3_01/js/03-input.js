@@ -40,21 +40,19 @@ const myMmessage = "JavaScript is awesome!";
 //? Важлива особливість prompt полягає в тому,
 //?  що незалежно від того, що ввів користувач, 
 //? завжди повернеться рядок
-let quantity = prompt('Введіть кількість товарів');
-console.log('quantity-1:', quantity);
-console.log('typeof quantity =', typeof quantity);
+// let quantity = prompt('Введіть кількість товарів');
+// console.log('quantity-1:', quantity);
+// console.log('typeof quantity =', typeof quantity);
 
 //? Зміна типу зі string на number
-quantity = Number(quantity);
-console.log('quantity-2:', quantity);
-console.log('typeof quantity-2 =', typeof quantity);
+// quantity = Number(quantity);
+// console.log('quantity-2:', quantity);
+// console.log('typeof quantity-2 =', typeof quantity);
 
 
 
 
-// практика
-
-
+//! практика
 
 // const shouldRenew = confirm('Хочете продовжити підпистку?');
 // console.log(shouldRenew);
