@@ -1,4 +1,5 @@
 console.log('4.Tипи даних. Спеціальні значення. Оператор typeof ');
+
 //! 4-1.Tипи даних
 //! 4-2.Спеціальні значення
 //! 4-3.Оператор typeof
@@ -6,31 +7,39 @@ console.log('4.Tипи даних. Спеціальні значення. Опе
 
 
 //! 4-1.Tипи даних
+//? Number —  цілі числа і числа з плаваючою комою (крапкою).
 const myAge = 10;
 const totalPrice = 200.74;
 // const totalPrice = 200,74;
+
+//? String   — рядки, послідовність з нуля або більше символів. 
+//? Рядок починається і закінчується одинарними ', або подвійними лапками ".
 const userName = 'Chelsy';
 const message = 'welcome!';
 const username = 'Mango995';
 const description = "JavaScript is awesome!";
+// console.log('username:', username); // Mango995
 
+
+//? Boolean   — логічний тип даних, прапорці стану.
 const isOpen = true;
 const shouldConfirm = false;
 const isModalOpen = true;
 const isLoggedIn = false;
+// console.log('isLoggedIn:', isLoggedIn); // false
 
-// null явно вказує на відсутність значення
+
+//? null — особливе значення, яке по суті означає ніщо. 
+//? Використовується в тих ситуаціях, коли необхідно 
+//? явно вказати порожнечу. 
 let value = null;
-// console.log(value); // null
+// console.log('value:', value); // null
 
 
-// undefined - значення на даний момент невідоме чи невизначене.
-
-// змінна була оголошена, але ще не була ініціалізована значенням
-
+//? undefined - значення на даний момент невідоме чи невизначене.
+//? змінна була оголошена, але ще не була ініціалізована значенням
 let myValue;
-// console.log(myValue); // undefined
-
+// console.log('myValue:', myValue); // undefined
 
 
 
