@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button2 = document.querySelector('.button-2');
     const button3 = document.querySelector('.button-3');
     const button4 = document.querySelector('.button-4');
+    const button5 = document.querySelector('.button-5');
 
     //! Функція для завантаження та виконання скрипту
     const loadAndExecuteScript = (scriptSrc) => {
@@ -104,6 +105,22 @@ document.addEventListener('DOMContentLoaded', () => {
             button4.style.backgroundColor = '#b70000';
             button4.style.color = 'white';
             button4.style.boxShadow = '6px 6px 8px #636363';
+        }
+    });
+
+    //! Оброблювач події для Кнопки-5
+    button5.addEventListener('click', () => {
+        if (button5.textContent === 'Off') {
+            button5.textContent = 'On';
+            button5.style.backgroundColor = 'green';
+            button5.style.color = 'yellow';
+            button5.style.boxShadow = '3px 3px 4px #969696';
+            loadAndExecuteScript('./js/03-input.js');
+        } else {
+            button5.textContent = 'Off';
+            button5.style.backgroundColor = '#b70000';
+            button5.style.color = 'white';
+            button5.style.boxShadow = '6px 6px 8px #636363';
         }
     });
 

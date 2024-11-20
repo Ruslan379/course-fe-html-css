@@ -1,4 +1,4 @@
-console.log('4.Tипи даних. Спеціальні значення. Оператор typeof ');
+console.log('4.Tипи даних. Спеціальні значення. Оператор typeof.');
 
 //! 4-1.Tипи даних
 //! 4-2.Спеціальні значення
@@ -48,22 +48,22 @@ let myValue;
 * вказаного після нього — рядок, в якому вказано тип.
 */
 const quantity = 17;
-console.log('typeof quantity =', typeof quantity); // виведе "number"
+// console.log('typeof quantity =', typeof quantity); // виведе "number"
 
 const myMessage = "JavaScript is awesome!";
-console.log('typeof myMessage =', typeof myMessage); // виведе "string"
+// console.log('typeof myMessage =', typeof myMessage); // виведе "string"
 
 const isSidebarOpen = false;
-console.log('typeof isSidebarOpen =', typeof isSidebarOpen); // виведе "boolean"
+// console.log('typeof isSidebarOpen =', typeof isSidebarOpen); // виведе "boolean"
 
 let userAge;
-console.log('typeof userAge =', typeof userAge); // виведе "undefined"
+// console.log('typeof userAge =', typeof userAge); // виведе "undefined"
 
 const type = typeof isOpen;
-console.log('type:', type); // виведе "boolean"
+// console.log('type:', type); // виведе "boolean"
 
 let myStatus = null;
-console.log('typeof myStatus =', typeof myStatus); // виведе "object"
+// console.log('typeof myStatus =', typeof myStatus); // виведе "object"
 //?  В ранніх версіях JavaScript null було розглянуто 
 //?  як спеціальний випадок об’єкта.
 //?  Це була помилка в реалізації мови, збережена для 
@@ -80,7 +80,7 @@ console.log('typeof myStatus =', typeof myStatus); // виведе "object"
 * які можуть бути більшими за максимальне значення
 */
 const bigInteger = 12345678901234567890123456789n;
-console.log('typeof bigInteger =', typeof bigInteger); // виведе "bigint"
+// console.log('typeof bigInteger =', typeof bigInteger); // виведе "bigint"
 
 
 //? Symbol
@@ -90,29 +90,15 @@ console.log('typeof bigInteger =', typeof bigInteger); // виведе "bigint"
 * переплутані з іншими ідентифікаторами,
 */
 let id = Symbol("id");
-console.log('typeof id =', typeof id); // виведе "symbol"
-
-
-// alert.....................................................
-// const myMmessage = "JavaScript is awesome!";
-
-// alert(myMmessage);
-
-/*
- * - як window.alert() блокує інтерпретацію
- */
-
-// console.log('До');
-// alert('qweqweqwe');
-// console.log('После');
+// console.log('typeof id =', typeof id); // виведе "symbol"
 
 
 
 
 
-// практика
 
-// 1
+//! практика
+//? 1
 // Оголоси наступні змінні, використовуючи ключове слово const 
 //  і присвой їм відповідні значення.
 
@@ -135,5 +121,5 @@ console.log('typeof id =', typeof id); // виведе "symbol"
 // console.log('This is a number: ', age);
 
 
-// 2
+//? 2
 // Оголоси змінну з привітанням, виведи її через alert()

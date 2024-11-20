@@ -1,3 +1,19 @@
+console.log('5.Взаємодія з користувачем. Отримання даних.');
+
+//! alert
+// const myMmessage = "JavaScript is awesome!";
+// alert(myMmessage);
+
+/*
+ * - як window.alert() блокує інтерпретацію
+ */
+// console.log('До');
+// alert('УВАГА!');
+// console.log('После');
+
+
+
+
 /*
  * - Отримання даних
  * - Методи window.confirm() та window.prompt()
