@@ -1,65 +1,53 @@
 console.log('5.Взаємодія з користувачем. Отримання даних.');
 
 //! alert
-// const myMmessage = "JavaScript is awesome!";
+const myMmessage = "JavaScript is awesome!";
+// console.log(myMmessage);
 // alert(myMmessage);
 
-/*
- * - як window.alert() блокує інтерпретацію
- */
+//* Приклад того як window.alert() блокує інтерпретацію
 // console.log('До');
 // alert('УВАГА!');
-// console.log('После');
+// console.log('Після');
 
 
 
+//! Отримання даних
+//* Методи window.confirm() та window.prompt()
 
-/*
- * - Отримання даних
- * - Методи window.confirm() та window.prompt()
- */
+//! confirm() 
+//? Виводить модальне вікно з повід, і дві кнопки, Ok і Cancel. 
+//? Натискаючи на Ok, результатом будет true, 
+//? Натискаючи на Cancel — повертається false.
 
-// confirm() — 
-// виводить модальне вікно з повід, і дві кнопки, Ok і Cancel. 
-//  Натискаючи на Ok, результатом будет true, на Cancel — повертається false.
-
-
-// Просимо клієнта підтвердити бронювання готелю
-// і зберігаємо результат роботи confirm у змінну
-
+//todo Просимо клієнта підтвердити бронювання готелю
+//todo і зберігаємо результат роботи confirm у змінну
 // const isComing = confirm("Please confirm hotel reservation");
-// console.log(isComing);
+// console.log('isComing:', isComing);
 
 
+//! prompt()  
+//? Виводить модальне вікно з полем введення і кнопками Ok і Cancel.
+//? Повертається Ok - що ввів користувач, у випадку Cancel — null.
 
-
-
-
-// prompt() — 
-// виводить мод вікно з полем введення і кнопками Ok і Cancel.
-// повертається Ok - що ввів користувач, у випадку Cancel — null.
-
-// Запитуємо назву готеля, в якому хотів би зупинитися клієнт
-// і зберігаємо результат виклику prompt у змінну.
+//todo Запитуємо назву готеля, в якому хотів би зупинитися клієнт
+//todo і зберігаємо результат виклику prompt у змінну.
 
 // const hotelName = prompt("Please enter desired hotel name");
-// console.log(hotelName);
+// console.log('hotelName:', hotelName);
 
 
+//? Важлива особливість prompt полягає в тому,
+//?  що незалежно від того, що ввів користувач, 
+//? завжди повернеться рядок
+let quantity = prompt('Введіть кількість товарів');
+console.log('quantity-1:', quantity);
+console.log('typeof quantity =', typeof quantity);
 
-
-// Важлива особливість prompt полягає в тому,
-//  що незалежно від того, що ввів користувач, 
-// завжди повернеться рядок...........................
-
-
-// let quantity = prompt('введіть кількість товарів');
-// console.log(quantity);
-// console.log(typeof quantity);
-
-// quantity = Number(quantity);
-// console.log(quantity);
-// console.log(typeof quantity);
+//? Зміна типу зі string на number
+quantity = Number(quantity);
+console.log('quantity-2:', quantity);
+console.log('typeof quantity-2 =', typeof quantity);
 
 
 
