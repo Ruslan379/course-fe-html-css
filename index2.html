@@ -4,31 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link 
-            href="https://img.icons8.com/emoji/48/house-emoji.png" 
+            href="https://img.icons8.com/emoji/16/house-emoji.png" 
             type="image/x-icon"
             rel="shortcut icon" 
         >
         <style>
             body {
-            padding-top: 8px;
-            display: flex;
-            flex-direction: column; /* Вертикальная основная ось */
-            /* Центрирование элементов по вертикали: */
-            /* justify-content: center;  */
-            align-items: center; /* Центрирование элементов по горизонтали */
-            /* Добавляем ШИРИНУ на весь экран (viewport height) */
-            /* Так будет горизонтальная полоса прокрутки: */
-            /* width: 100vw; */
-            /* Так НЕ будет горизонтальной полосы прокрутки: */
-            width: 100%;
-            /* Добавляем ВЫСОТУ на весь экран (viewport height) */
-            /* height: 100vh;  */
-            margin: 0px; /* Убираем внешние отступы */
-            /* padding-left: 10px; */
-            background-color: rgb(181, 255, 255);
+                padding-top: 8px;
+                display: flex;
+                flex-direction: column; /* Вертикальная основная ось */
+                /* Центрирование элементов по вертикали: */
+                /* justify-content: center;  */
+                align-items: center; /* Центрирование элементов по горизонтали */
+                /* Добавляем ШИРИНУ на весь экран (viewport height) */
+                /* Так будет горизонтальная полоса прокрутки: */
+                /* width: 100vw; */
+                /* Так НЕ будет горизонтальной полосы прокрутки: */
+                width: 100%;
+                /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+                /* height: 100vh;  */
+                margin: 0px; /* Убираем внешние отступы */
+                /* padding-left: 10px; */
+                background-color: #bfffff;
             }
+
             /* Убираем стандартные отступы и маркеры для упорядоченных списков */
-            ul, ol{
+            ul, ol {
                 margin: 0;
                 padding: 0;
                 list-style: none;
@@ -63,7 +64,11 @@
                 align-items: center;
                 gap: 8px;
             }
-            
+            .active {
+                gap: 0;
+                font-weight: 700;
+                text-decoration: underline;
+            }
         </style>
         <title>HTML/CSS course for FE</title>
     </head>
@@ -83,14 +88,25 @@
                 </a>
             </li>
             <li class="cours-item">
-                <a class="cours-link" href="./index2.html">
+                <a class="cours-link active" href="./index2.html">
                     <img
-                        src="https://img.icons8.com/emoji/48/house-emoji.png" 
+                        src="https://img.icons8.com/emoji/56/house-emoji.png" 
                         alt="FrontEnd-2"
+                        width="56" 
+                        height="56" 
+                    />
+                    FrontEnd-2
+                </a>
+            </li>
+            <li class="cours-item">
+                <a class="cours-link" href="./index3.html">
+                    <img
+                        src="https://img.icons8.com/plasticine/48/home.png" 
+                        alt="FrontEnd-3"
                         width="48" 
                         height="48" 
                     />
-                    FrontEnd-2
+                    FrontEnd-3
                 </a>
             </li>
         </ul>
@@ -130,6 +146,7 @@
             <li><a href="./lesson-FE2_5-27/lesson-FE2_5-27_test.html">Урок-05. <b>Поширені юзкейси техніки позиціонування в сучасній розробці.</b></a></li>
             <li><a href="./lesson-FE2_6-28/lesson-FE2_6-28_test.html">Урок-06. <b>CSS-переходи: властивості transition & transform.</b></a></li>
             <li><a href="./lesson-FE2_7-29/lesson-FE2_7-29_test.html">Урок-07. <b>Принципи анімування ховерів та відкриття/закриття модального вікна. Бібліотеки анімацій, їх підключення.</b></a></li>
+            <li><a href="./lesson-FE2_8-30/lesson-FE2_8-30_test.html">Урок-08. <b>Анімація в CSS animation @keyframes.</b></a></li>
             <li><a href="./lesson-FE2_8-30/lesson-FE2_8-30_test.html">Урок-08. <b>Анімація в CSS animation @keyframes.</b></a></li>
             <li><a href="https://ruslan379.github.io/photoblog-scss/">Урок-09. <b>Препроцесори SASS/SCSS. Підключення до проєкту та імпорт файлів.</b></a></li>
             <li><a href="https://ruslan379.github.io/photoblog-scss/">Урок-10. <b>Змінні, область видимості, назви та вкладеність класів у синтаксисі SCSS.</b></a></li>
