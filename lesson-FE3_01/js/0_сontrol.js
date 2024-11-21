@@ -51,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
             button1.style.backgroundColor = 'green';
             button1.style.color = 'yellow';
             button1.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/test-1.js');
+            loadAndExecuteScript('./js/01-test-1.js');
         } else {
             button1.textContent = 'Off';
             button1.style.backgroundColor = '#b70000';
             button1.style.color = 'white';
-            button1.style.boxShadow = '6px 6px 8px #636363';
+            button1.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
         }
     });
 
@@ -67,12 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
             button2.style.backgroundColor = 'green';
             button2.style.color = 'yellow';
             button2.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/test-2.js');
+            loadAndExecuteScript('./js/02-test-2.js');
         } else {
             button2.textContent = 'Off';
             button2.style.backgroundColor = '#b70000';
             button2.style.color = 'white';
-            button2.style.boxShadow = '6px 6px 8px #636363';
+            button2.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
         }
     });
 
@@ -83,12 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
             button3.style.backgroundColor = 'green';
             button3.style.color = 'yellow';
             button3.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/01-vars.js');
+            loadAndExecuteScript('./js/03-vars.js');
         } else {
             button3.textContent = 'Off';
             button3.style.backgroundColor = '#b70000';
             button3.style.color = 'white';
-            button3.style.boxShadow = '6px 6px 8px #636363';
+            button3.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
         }
     });
 
@@ -99,12 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
             button4.style.backgroundColor = 'green';
             button4.style.color = 'yellow';
             button4.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/02-types.js');
+            loadAndExecuteScript('./js/04-types.js');
         } else {
             button4.textContent = 'Off';
             button4.style.backgroundColor = '#b70000';
             button4.style.color = 'white';
-            button4.style.boxShadow = '6px 6px 8px #636363';
+            button4.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
         }
     });
 
@@ -115,14 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
             button5.style.backgroundColor = 'green';
             button5.style.color = 'yellow';
             button5.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/03-input.js');
+            loadAndExecuteScript('./js/05-input.js');
         } else {
             button5.textContent = 'Off';
             button5.style.backgroundColor = '#b70000';
             button5.style.color = 'white';
-            button5.style.boxShadow = '6px 6px 8px #636363';
+            button5.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
         }
     });
-
 
 });

@@ -67,14 +67,11 @@ button {
     border-radius: 5px;
     border-color: gray;
     color: white;
-    /* color: yellow; */
-    /* On */
+    /* color: yellow; */ /* On */
     background-color: red; /* #b70000 */
-    /* background-color: green; */
-    /* On */
+    /* background-color: green; */ /* On */
     box-shadow: 6px 6px 8px #636363;
-    /* box-shadow: 3px 3px 4px #969696; */
-    /* On */
+    /* box-shadow: 3px 3px 4px #969696; */ /* On */
 }
 
 
@@ -97,6 +94,18 @@ button {
 /*! 3.Оголошення змінних */
 
 
+/* .part_4 {
+    display: none;
+} */
+/*! 4.Tипи даних. Спеціальні значення. Оператор typeof */
+
+
+/* .part_5 {
+    display: none;
+} */
+/*! 5.Взаємодія з користувачем. Отримання даних */
+
+
 
 
 
@@ -104,7 +113,5 @@ button {
 /* ! */
 .part_0 {
     display: none;
-    width: 60vw;
 }
-
 /*! 0.Заголовок */
