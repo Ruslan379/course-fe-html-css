@@ -1,8 +1,8 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #f3ffe8;
-    --color-title-lesson: #4b4200;
+    --color-background-body: #f7e8ff;
+    --color-title-lesson: #1a004b;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
@@ -79,33 +79,43 @@ button {
 /* .part_1 {
     display: none;
 } */
-/*! 1.Підключення скриптів */
+/*! 1.Математичні оператори */
 
 
 /* .part_2 {
     display: none;
 } */
-/*! 2.Підключення декількох скриптів */
+/*! 2.Оператори порівняння */
 
 
 /* .part_3 {
     display: none;
 } */
-/*! 3.Оголошення змінних */
+/*! 3.Строга (сувора) та нестрога (несувора) рівность/нерівность */
 
 
 /* .part_4 {
     display: none;
 } */
-/*! 4.Tипи даних. Спеціальні значення. Оператор typeof */
+/*! 4.Приведення до числа. Методи Number.parseInt() і Number.parseFloat() */
 
 
 /* .part_5 {
     display: none;
 } */
-/*! 5.Взаємодія з користувачем. Отримання даних */
+/*! 5.Перевірка на число. Метод Number.isNaN() */
 
 
+/* .part_6 {
+    display: none;
+} */
+/*! 6.Додавання чисел з плаваючою точкою */
+
+
+/* .part_7 {
+    display: none;
+} */
+/*! 7.Об'єкт Math */
 
 
 
