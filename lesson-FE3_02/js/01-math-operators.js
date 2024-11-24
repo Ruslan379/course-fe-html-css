@@ -23,6 +23,10 @@ const userCash = -800;
 const x = 8;
 const y = 5;
 const x2 = 10;
+console.log("x =", x);
+console.log("y =", y);
+console.log("x2 =", x2);
+console.log("--------------");
 
 //? Додавання
 console.log("x + y =", x + y); 

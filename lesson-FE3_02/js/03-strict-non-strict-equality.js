@@ -1,34 +1,62 @@
-console.log('3.Оператори рівності');
+console.log('3.Оператори рівності та нерівності');
+
+//! Оператори 
+//! строгої(суворої) та 
+//! нестрогої(несуворої)
+//! рівності і нерівності
+let a;
+let b;
+a == b   //? нестрога (несувора) рівність
+a === b  //? строга (сувора) рівність
+a != b   //? нестрога (несувора) нерівність
+a !== b  //? строга (сувора) нерівність
+
+a = 100;
+b = "100";
+console.log("a =", a, ";", "typeof a =", typeof a);
+console.log("b =", b, ";", "typeof b =", typeof b);
+console.log("-----------------------------");
+
+console.log("a == b:", a == b); //! true
+console.log("a === b:", a === b); //! false
+console.log("a != b:", a != b); //! false
+console.log("a !== b:", a !== b); //! true
 
 
-//! Оператори рівності
+//? Оператори нестрогої (несуворої) рівності:
+console.log("ПРИКЛАДИ:");
+console.log("5 == 5:", 5 == 5); //! true 
+console.log("5 == 3:", 5 == 3); //! false 
+console.log("5 != 3:", 5 != 3); //! true
+console.log("5 != 5:", 5 != 5); //! false 
+//todo -  Погано, бо виконується неявне перетворення рядків
+//todo    і булевого значення до ЧИСЛА:
+console.log("------- неявне перетворення до ЧИСЛА -------");
+console.log('5 == 5:', 5 == 5); //! true
+console.log('5 == "5":', 5 == "5"); //! true 
+console.log('5 != "5":', 5 != "5"); //! false 
+//* Boolean
+console.log("1 == true:", 1 == true); //! true
+console.log("1 != true:", 1 != true); //! false
 
-// Оператори несуворої рівності:
-// console.log(5 == 5); 
-// console.log(5 == 3); 
-// console.log(5 != 3); 
-// console.log(5 != 5); 
-// Погано, бо виконується неявне приведення рядків і булевого значення до ЧИСЛА
-// console.log(5 == "5"); 
-// console.log(5 != "5"); 
-// console.log(1 == true); 
-// console.log(1 != true); 
+
+//? Оператори строгої (суворої) рівності:
+//todo -  Добре, перетворення типів не виконується:
+console.log("---- перетворення до ЧИСЛА не виконується ----");
+console.log("5 === 5:", 5 === 5); //! true 
+console.log('5 === "5":', 5 === "5"); //! false 
+console.log('5 !== "5":', 5 !== "5"); //! true
+console.log('5 !== "5":', 5 !== "5"); //! true
+//* Boolean
+console.log("1 === true:", 1 === true); //! false
+console.log("1 != true:", 1 !== true); //! true 
 
 
-// оператори суворої рівності
-// Добре, приведення типів не виконується
-// console.log(5 === 5); 
-// console.log(5 === "5"); 
-// console.log(5 !== "5"); 
-// console.log(5 !== 5); 
-// console.log(1 === true); 
-// console.log(1 !== true); 
 
 
 
 
 //! PRACTICE
-
 //0
 // let resultOne = "25" - 5;
 // console.log(resultOne);
@@ -38,17 +66,17 @@ console.log('3.Оператори рівності');
 // console.log(resultTwo);
 // console.log(typeof resultTwo);
 
-//Приоритет операторов
+// Пріорітет операторів
 
-//Разный приоритет
+// Різний пріорітет
 // let resultOne = 2 - 1 * 5;
 // console.log(resultOne);
 
-//Скобки
+// Скобки
 // let resultTwo = (2 - 1) * 5;
 // console.log(resultTwo);
 
-//Одинаковый приоритет
+//Однаковий пріорітет
 // let resultThree = 2 - 1 + 5;
 // console.log(resultThree);
 
@@ -110,5 +138,3 @@ const isValid = correctPassword === userPassword;
 // let result = 8 - (a = b + 3);
 // console.log("Результат в скобках: " + a);
 // console.log("Общий результат: " + result);
-
-
