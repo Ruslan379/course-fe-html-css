@@ -1,182 +1,90 @@
 console.log('1.Математичні оператори');
 
-// Арифметичні операції
-// Комбіновані оператори
-// Оператори порівняння
+//! Арифметичні операції
+//? Правильне іменування складових виразу. 
+//? + - * / % називаються операторами, 
+//? а то на чому вони застосовуються операндами.
+const userAge = 30 - 6; // Числа 30 та 6 - операнди
+const h = 180;
+const t = 10;
+const userHeight = h - t; // h та t - операнди
 
-//  правильне іменування складових виразу. 
-// + - * / % називаються операторами, 
-// а то на чому вони застосовуються операндами.
-let userAge = 30 - 6; //Числа 30 та 6 - операнди
-let userHeight = 200 - 20; // h та y - операнди
+
+//? Бінарні оператори застосов до двух операндів (-)
+const clientAge = 30 - 6;
+//? Унарні застосов до одного операнда (=)
+const userCash = -800;
 
 
-// Бінарні оператори застосов до двух операндів (-)
-let clientAge = 30 - 6;
-// Унарні застосов до одного операнда (=)
-let userCash = -800;
-
+//? Задаємо змінні
 const x = 8;
 const y = 5;
-// console.log(x + y); 
+const x2 = 10;
 
-// const x = 8;
-// const y = 5;
-// console.log(x - y); 
+//? Додавання
+console.log("x + y =", x + y); 
 
-// const x = 8;
-// const y = 5;
-// console.log(x * y); 
+//? Віднімання
+console.log("x - y =", x - y);
+console.log("y - x =", y - x);
 
-// const x = 8;
-// const y = 5;
-// console.log(x / y); 
+//? Множення
+console.log("y * x =", x * y); 
 
-// const x = 8;
-// const y = 5;
-// console.log(x % y); 
+//? Ділення
+console.log("y / x =", x / y); 
+console.log("y / x2 =", x2 / y);
 
-// const x = 8;
-// const y = 5;
-// console.log(x ** y); // 32768
+//? Залишок від ділення
+console.log("Залишок від ділення y / x =", x % y); 
+console.log("Залишок від ділення y / x2 =", x2 % y); 
 
-// Додавання: +=. Приклад: x += y еквівалентно x = x + y
-// Віднімання: -=. Приклад: x -= y еквівалентно x = x - y
-// Множення: *=. Приклад: x *= y еквівалентно x = x * y
-// Ділення: /=. Приклад: x /= y еквівалентно x = x / y
-// Остача від ділення: %=. Приклад: x %= y еквівалентно x = x % y
-
-let age = 25;
-// age = age + 1;
-// age += 1;
-// console.log(age); 
-
-// Оператори порівняння
-// використовуються для порівняння двох значень і 
-// повертають булеве значення (true або false)
-
-// const a = 2;
-// const b = 5;
-
-// console.log(a > b); 
-// console.log(b > a); 
-// console.log(a >= b); 
-// console.log(b >= a); 
-
-// console.log(a < b); 
-// console.log(b < a); 
-// console.log(a <= b); 
-// console.log(b <= a); 
-
-// Оператори рівності
-
-// Оператори несуворої рівності:
-// console.log(5 == 5); 
-// console.log(5 == 3); 
-// console.log(5 != 3); 
-// console.log(5 != 5); 
-// Погано, бо виконується неявне приведення рядків і булевого значення до ЧИСЛА
-// console.log(5 == "5"); 
-// console.log(5 != "5"); 
-// console.log(1 == true); 
-// console.log(1 != true); 
-
-
-// оператори суворої рівності
-// Добре, приведення типів не виконується
-// console.log(5 === 5); 
-// console.log(5 === "5"); 
-// console.log(5 !== "5"); 
-// console.log(5 !== 5); 
-// console.log(1 === true); 
-// console.log(1 !== true); 
+//? Зведення у ступінь
+console.log("x(8) у ступіні y(5) =", x ** y); // 32768
+console.log("2 у ступіні 3 =", 2 ** 3); // 32768
 
 
 
+//! Комбіновані оператори
+//? Арифметичні операції із заміною
+//todo Ділення: /=. Приклад: 
+//todo Залишок від ділення: %=. Приклад: 
 
-// PRACTICE
+//? Додавання із заміною
+//todo x += y еквівалентно x = x + y
+let valueSum = 10;
+// valueSum = valueSum + 5; //! var 1.
+valueSum += 5;  //! var 2.
+console.log("valueSum:", valueSum);
 
-//0
-// let resultOne = "25" - 5;
-// console.log(resultOne);
-// console.log(typeof resultOne);
+//? Віднімання із заміною
+//todo x -= y еквівалентно x = x - y
+let valueX = 10;
+let valueY = 4;
+// valueX = valueX - valueY; //! var 1.
+valueX -= valueY;  //! var 2.
+console.log("Додавання - valueX:", valueX);
 
-// let resultTwo = 10 * "80";
-// console.log(resultTwo);
-// console.log(typeof resultTwo);
+//? Множення із заміною
+//todo x *= y еквівалентно x = x * y
+let valueG = 4;
+let valueU = 3;
+// valueG = valueG * valueU; //! var 1.
+valueG *= valueU;  ///! var 2.
+console.log("Множення - valueG:", valueG);
 
-//Приоритет операторов
+//? Ділення із заміною
+//todo x /= y еквівалентно x = x / y
+let valueM = 100;
+let valueN = 5;
+// valueM = valueM / valueN; //! var 1.
+valueM /= valueN;  //! var 2.
+console.log("Ділення - valueM:", valueM);
 
-//Разный приоритет
-// let resultOne = 2 - 1 * 5;
-// console.log(resultOne);
-
-//Скобки
-// let resultTwo = (2 - 1) * 5;
-// console.log(resultTwo);
-
-//Одинаковый приоритет
-// let resultThree = 2 - 1 + 5;
-// console.log(resultThree);
-
-
-// 1
-// Доповни код, присвоївши змінній totalPrice вираз для підрахунку 
-// загальної суми замовлення. Змінна pricePerItem зберігає ціну за одиницю товару,
-//  а orderedQuantity - кількість одиниць товару в замовленні.
-
-// const pricePerItem = 3500;
-// const orderedQuantity = 4;
-
-// const totalPrice = pricePerItem * orderedQuantity;
-
-// 2
-// Заміни у виразах стандартні математичні оператори на комбіновані оператори
-
-// let a = 5;
-// let b = 10;
-let c = 15;
-let d = 20;
-
-// Change code below this line
-// a = a + 2;
-// b = b - 4;
-// c = c * 3;
-// d = d / 10;
-
-// a += 2;
-// b -= 4;
-// c *= 3;
-// d /= 10;
-
-// 3
-// Оголоси змінну isAdult та задай їй результат перевірки значення змінної age.
-//  Використай оператори порівняння та доповни код так, щоб 
-//  значенням isAdult було true, якщо вік користувача більше або дорівнює 18 
-//  та false, якщо менше 18.
-
-// const age = 16;
-// 
-const isAdult = age >= 18;
-
-// 4
-// Оголоси змінну isValid і задай їй значенням результат перевірки
-//  рівності паролей в змінних correctPassword і userPassword.
-
-// Якщо паролі співпадають (сувора рівність), значення isValid має бути true
-// Якщо паролі не співпадають, значення isValid має бути false
-
-const correctPassword = "jqueryismyjam";
-const userPassword = "mangodab3st";
-
-const isValid = correctPassword === userPassword;
-
-
-// let a = 1 + 2;
-// let b = 2;
-
-// let result = 8 - (a = b + 3);
-// console.log("Результат в скобках: " + a);
-// console.log("Общий результат: " + result);
-
-
+//? Залишок від ділення із заміною
+//todo x %= y еквівалентно x = x % y
+let valueO = 30;
+let valueP = 20;
+// valueO = valueO % valueP; //! var 1.
+valueO %= valueP;  //! var 2.
+console.log("Залишок від ділення valueO/valueP --> valueO:", valueO);

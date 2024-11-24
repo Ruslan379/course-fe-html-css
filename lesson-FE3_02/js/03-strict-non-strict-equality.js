@@ -1,183 +1,113 @@
 console.log('3.Строга та нестрога рівность/нерівность');
 
-// Перетворення типів: числа
-// Перетворення рядків у числа
-//  Перевірка на число
+//! Оператори рівності
 
-// Для явного перетворення - вбудовану функцію Number(),
-// console.log(Number("5")); 
-// console.log(Number(true)); 
-// console.log(Number(false)); 
-// console.log(Number(null)); 
-// console.log(Number(""));
-
-// Якщо неможливо привести значення до числа
-// console.log(Number(undefined)); 
-// console.log(Number("Jacob")); 
-// console.log(Number("25px")); 
+// Оператори несуворої рівності:
+// console.log(5 == 5); 
+// console.log(5 == 3); 
+// console.log(5 != 3); 
+// console.log(5 != 5); 
+// Погано, бо виконується неявне приведення рядків і булевого значення до ЧИСЛА
+// console.log(5 == "5"); 
+// console.log(5 != "5"); 
+// console.log(1 == true); 
+// console.log(1 != true); 
 
 
-// Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
-// console.log("5" * 2); 
-// console.log(2 * "5");
-// console.log("10" - 5); 
-// console.log(15 - "10");
-// console.log(5 + true); 
-// console.log(true + 5);
-// console.log(5 - true); 
-// console.log(true - 1);
+// оператори суворої рівності
+// Добре, приведення типів не виконується
+// console.log(5 === 5); 
+// console.log(5 === "5"); 
+// console.log(5 !== "5"); 
+// console.log(5 !== 5); 
+// console.log(1 === true); 
+// console.log(1 !== true); 
 
 
-// порівняння (<, >, <=, >=) також виконується неявне перетворення типів. 
-//  перед порівнянням вони приводяться до числа.
-// console.log("10" > 5); 
-// console.log(10 > "5"); 
-// console.log(5 > true); 
-// console.log(5 < true); 
-// console.log("5" < true); 
 
 
-// Перетворення рядків у числа
+//! PRACTICE
 
-// Метод Number.parseInt()
-// 2 аргументи:
-// 1- Рядок - обовязково 
-// 2- Система числення, до якої відноситься рядок ( за замовчуванням десяткова система). 
-// Наприклад, для десяткової системи буде 10, для шістнадцяткової - 16 тощо..
+//0
+// let resultOne = "25" - 5;
+// console.log(resultOne);
+// console.log(typeof resultOne);
 
-// Метод аналізує рядок зліва направо, видаляючи пробіли на початку і
-//  перетворюючи допустимі символи у число до тих пір, поки не зіткнеться 
-//  з першим недопустимим символом.
+// let resultTwo = 10 * "80";
+// console.log(resultTwo);
+// console.log(typeof resultTwo);
 
-// console.log(Number.parseInt("5")); 
-// console.log(Number.parseInt("5.5")); 
-// console.log(Number.parseInt("5cm")); 
-// console.log(Number.parseInt("12qwe74"));  
-// console.log(Number.parseInt("12.46qwe79"));  
-// console.log(Number.parseInt("cm5")); 
-// console.log(Number.parseInt("")); 
-// console.log(Number.parseInt("qweqwe"));
+//Приоритет операторов
 
-// console.log(parseInt('0xff', 16));
-// console.log(parseInt('ff', 16));
+//Разный приоритет
+// let resultOne = 2 - 1 * 5;
+// console.log(resultOne);
 
-// Метод Number.parseFloat() - перетворює рядок на число з плаваючою крапкою.
+//Скобки
+// let resultTwo = (2 - 1) * 5;
+// console.log(resultTwo);
 
-// console.log(Number.parseFloat("5")); 
-// console.log(Number.parseFloat("5.5")); 
-// console.log(Number.parseFloat("3.14")); 
-// console.log(Number.parseFloat("5cm")); 
-// console.log(Number.parseFloat("5.5cm")); 
-// console.log(Number.parseFloat("12qwe74")); 
-// console.log(Number.parseFloat("12.46qwe79"));
-// console.log(Number.parseFloat("cm5")); 
-// console.log(Number.parseFloat("")); 
-// console.log(Number.parseFloat("qweqwe")); 
+//Одинаковый приоритет
+// let resultThree = 2 - 1 + 5;
+// console.log(resultThree);
 
-
-//  Перевірка на число
-
-// метод Number.isNaN(val). Він перевіряє, чи є вказане значення NaN чи ні. 
-// Цей метод відповідає на питання "Це Not A Number?", І повертає:
-// true — якщо значення val це NaN
-// false — якщо значення val це не NaN
-
-// console.log(isNaN(25 + "Привiт!"));
-
-
-// Дробове число
-// результат 0.1 + 0.2 не дорівнює 0.3
-// Число 0.1 у двійковій системі числення, 
-// яку використовує комп'ютер — це нескінченний дріб.
-// При додаванні 0.1 і 0.2 дві неточності складаються, виходить незначна,
-//  але все ж таки помилка в обчисленнях.
-// https://habr.com/ru/articles/112953/
-
-// console.log(0.1 + 0.2 === 0.3); // false
-// console.log(0.1 + 0.2); // 0.30000000000000004
-
-// variant 1
-// console.log(0.1 * 10 + 0.2 * 10); // 3
-// console.log((0.1 * 10 + 0.2 * 10) / 10); // 0.3
-
-// variant 2
-// console.log((0.1 + 0.2).toFixed(1)); // "0.3"
-// console.log((5).toFixed(2));  //  ”5.00”
-// console.log((8.762195).toFixed(4));  //  “8.7622”
-
-// - Метод число.toFixed(digits)
-let salary = 1300.16472;
-// salary = Number(salary.toFixed(2));
-// console.log(salary);
-
-
-// ПРАКТИКА
-
-// 0
-// console.log(2 > 1);
-// console.log(4 < 2);
-// console.log(58 == 36);
-// console.log(8 != 9);
-// console.log('58' > 10);
-// console.log('007' == 7);
-// console.log(true == 1);
-// console.log(false == 0);
-// console.log(0 === false);
-// console.log('007' === 7);
-// console.log('58' !== 58);
-// console.log(null > 0);
-// console.log(null >= 0);
-// console.log(undefined > 0);
-// console.log(undefined == 0);
-// console.log(undefined >= 0);
 
 // 1
-// Змінна value містить величину у вигляді рядка, 
-// що складається з числової частини та одиниці виміру. 
-// Наприклад, 24.5px, 14cm, 20.3vh тощо.
+// Доповни код, присвоївши змінній totalPrice вираз для підрахунку 
+// загальної суми замовлення. Змінна pricePerItem зберігає ціну за одиницю товару,
+//  а orderedQuantity - кількість одиниць товару в замовленні.
 
-// Оголоси змінну numerical і доповни код таким чином, щоб:
+// const pricePerItem = 3500;
+// const orderedQuantity = 4;
 
-// Якщо це можливо, значенням змінної numerical буде число з плаваючою крапкою,
-//  що утворилось з рядка змінної value
-// В іншому випадку, значенням numerical буде NaN.
+// const totalPrice = pricePerItem * orderedQuantity;
 
-const value = "24.5px";
-// 
-const numerical = Number.parseFloat(value);
+// 2
+// Заміни у виразах стандартні математичні оператори на комбіновані оператори
 
-//2
-let elementWidth = '50px';
-elementWidth = Number.parseInt(elementWidth);
-console.log('elementWidth: ', elementWidth);
+// let a = 5;
+// let b = 10;
+let c = 15;
+let d = 20;
 
-let elementHeight = '200.74px';
-// elementHeight = Number.parseFloat(elementHeight);
-// console.log('elementHeight: ', elementHeight);
+// Change code below this line
+// a = a + 2;
+// b = b - 4;
+// c = c * 3;
+// d = d / 10;
 
+// a += 2;
+// b -= 4;
+// c *= 3;
+// d /= 10;
 
 // 3
-let numOne = 5.845;
-// console.log(numOne.toFixed(1));
+// Оголоси змінну isAdult та задай їй результат перевірки значення змінної age.
+//  Використай оператори порівняння та доповни код так, щоб 
+//  значенням isAdult було true, якщо вік користувача більше або дорівнює 18 
+//  та false, якщо менше 18.
 
-// Преобразовать в число
-// console.log(+numOne.toFixed(1));
-// console.log(Number(numOne.toFixed(1)));
+// const age = 16;
+// const isAdult = age >= 18;
+
+// 4
+// Оголоси змінну isValid і задай їй значенням результат перевірки
+//  рівності паролей в змінних correctPassword і userPassword.
+
+// Якщо паролі співпадають (сувора рівність), значення isValid має бути true
+// Якщо паролі не співпадають, значення isValid має бути false
+
+const correctPassword = "jqueryismyjam";
+const userPassword = "mangodab3st";
+
+const isValid = correctPassword === userPassword;
 
 
-// 4додатково якщо є час
-let valueOne = parseInt("150.58px");
-// console.log(valueOne);
-// console.log(typeof valueOne);
+// let a = 1 + 2;
+// let b = 2;
 
-
-// let valueTwo = parseFloat("150.58px");
-// console.log(valueTwo);
-// console.log(typeof valueTwo);
-
-// let valueTwo = parseFloat("a150.58px");
-// console.log(valueTwo);
-// console.log(typeof valueTwo);
-
+// let result = 8 - (a = b + 3);
+// console.log("Результат в скобках: " + a);
+// console.log("Общий результат: " + result);
 
 
