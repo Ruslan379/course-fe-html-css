@@ -1,4 +1,4 @@
-console.log('5.Взаємодія з користувачем. Отримання даних.');
+console.warn('5.Взаємодія з користувачем. Отримання даних.');
 
 //! alert
 const myMmessage = "JavaScript is awesome!";

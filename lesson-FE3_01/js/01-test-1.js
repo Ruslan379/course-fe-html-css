@@ -1,6 +1,7 @@
-// "use strict" //! Суворий режим
+// "use strict";
+//! Суворий режим
 
-console.log('1.Підключення скрипту');
+console.warn('1.Підключення скрипту');
 
 const a = "Hello-1";
 console.log(a);

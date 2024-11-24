@@ -1,5 +1,8 @@
-console.log(`5.Перевірка на число.\n  Метод Number.isNaN()`);
-
+// console.log(`5.Перевірка на число.\n  Метод Number.isNaN()`);
+console.log(
+    '%c 5.Перевірка на число.\n   Метод Number.isNaN() ',
+    'color: white; background-color: #D33F49',
+);
 
 // Перетворення типів: числа
 // Перетворення рядків у числа

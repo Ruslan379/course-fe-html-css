@@ -1,4 +1,8 @@
-console.log(`4.Приведення до числа.\n  Методи Number.parseInt() і\n  Number.parseFloat()`);
+// console.log(`4.Приведення до числа.\n  Методи Number.parseInt() і\n  Number.parseFloat()`);
+console.log(
+    '%c 4.Приведення до числа.\n   Методи Number.parseInt() і\n   Number.parseFloat() ',
+    'color: white; background-color: #D33F49',
+);
 
 // Перетворення типів: числа
 // Перетворення рядків у числа

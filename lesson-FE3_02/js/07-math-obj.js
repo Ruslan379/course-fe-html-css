@@ -1,6 +1,11 @@
 // console.log('7.Об'єкт Math'); //! Приклад неможливості використання одинарних лапок
-console.log("7.Об'єкт Math"); //* var-1. Конкатенація рядків (подвійні лапки)
-// console.log(`7.Об'єкт Math`); //* var-1. Шаблонні рядки (template literals).
+console.log("7.Об'єкт Math"); //? var-1. Конкатенація рядків (подвійні лапки)
+// console.log(`7.Об'єкт Math`); //? var-1. Шаблонні рядки (template literals).
+
+console.log(
+    "%c 7.Об'єкт Math ",
+    "color: white; background-color: #D33F49",
+);
 
 // Клас Math є вбудованим класом JavaScript
 // надає набір методів для виконання математичних операцій та роботи з числами
