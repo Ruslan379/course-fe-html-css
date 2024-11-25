@@ -13,9 +13,12 @@ console.log(
 // https://habr.com/ru/articles/112953/
 
 console.log("0.1 + 0.2 === 0.3:", 0.1 + 0.2 === 0.3); //! false
-console.log("0.1 + 0.2 =", 0.1 + 0.2); // 0.30000000000000004
+console.log("0.1 + 0.2 =", 0.1 + 0.2); //! 0.30000000000000004
 
 //? var. 1
+//? Можна зробити їх цілими, помноживши кожне з них на число
+//? N(10 або 100, в залежності від кількості знаків після коми),
+//? скласти(додати) їх, а потім результат поділити також на N.
 console.warn("Variant 1");
 console.log("0.1 * 10 + 0.2 * 10 =", 0.1 * 10 + 0.2 * 10); //! 3
 const result = (0.1 * 10 + 0.2 * 10) / 10;
@@ -24,14 +27,27 @@ console.log("(0.1 * 10 + 0.2 * 10) / 10 =", result); //! 0.3
 
 //? var. 2
 //! Метод число.toFixed(digits)
+//? Cкласти(додати) числа, а результат скоротити до 
+//? певного знаку після коми за допомогою методу toFixed().
 console.warn("Variant 2");
-// console.log((0.1 + 0.2).toFixed(1)); // "0.3"
-// console.log((5).toFixed(2));  //  ”5.00”
-// console.log((8.762195).toFixed(4));  //  “8.7622”
-
-let salary = 1300.16472;
-// salary = Number(salary.toFixed(2));
-// console.log(salary);
+console.log("(0.1 + 0.2).toFixed(1) =", (0.1 + 0.2).toFixed(1)); //! 0.3
+console.log("(0.1 + 0.2).toFixed(17) =", (0.1 + 0.2).toFixed(17)); //! 0.3000000000000004
+console.log("------------------ Приклади: -----------------");
+console.log("(5).toFixed(2) =", (5).toFixed(2));  //! 5.00
+console.log("(8.762195).toFixed(4) =", (8.762195).toFixed(4));  //! 8.7622
+console.log("----------------------------------------------");
+const salary = 1300.16472;
+// const salary = "1300.16472"; //! якщо це string?
+console.log("salary:", salary);
+const salaryStr = salary.toFixed(2);
+// const salaryStr = Number(salary).toFixed(2); //! якщо це string
+console.log("salaryStr = salary.toFixed(2):", salaryStr);
+console.log("typeof salaryStr:", typeof salaryStr);
+console.log("----------------------------------------------");
+//? Треба привести результат роботи метода toFixed() до числа:
+const salaryNum = Number(salary.toFixed(2));
+console.log("salaryNum = Number(salary.toFixed(2):", salaryNum);
+console.log("typeof salaryNum:", typeof salaryNum);
 
 
 
