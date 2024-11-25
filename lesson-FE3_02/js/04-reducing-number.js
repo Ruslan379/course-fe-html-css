@@ -4,46 +4,70 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
-// Перетворення типів: числа
-// Перетворення рядків у числа
-//  Перевірка на число
-
-// Для явного перетворення - вбудовану функцію Number(),
-// console.log(Number("5")); 
-// console.log(Number(true)); 
-// console.log(Number(false)); 
-// console.log(Number(null)); 
-// console.log(Number(""));
-
-// Якщо неможливо привести значення до числа
-// console.log(Number(undefined)); 
-// console.log(Number("Jacob")); 
-// console.log(Number("36px")); 
-
-
-// Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
-// console.log("5" * 2); 
-// console.log(2 * "5");
-// console.log("10" - 5); 
-// console.log(15 - "10");
-// console.log(5 + true); 
-// console.log(true + 5);
-// console.log(5 - true); 
-// console.log(true - 1);
+//! Перетворення типів у числа
+//? Більшість арифметичних операцій і математичних функцій 
+//? перетворюють значення у число автоматично.
+//? Для того, щоб зробити це явно, використовуйте функцію Number(val), 
+//? передаючи їй у val те, що потрібно привести до числа.
+console.log(
+    "%c Number(val) --> ЧИСЛО ",
+    "color: yellow; background-color: #2274A5",
+);
+console.log('Number(5):', Number(5));  //! 5
+console.log('Number("5"):', Number("5"));  //! 5
+console.log('Number(36 + "432"):', Number(36 + "432")); //? 36432
+console.log('Number(true):', Number(true));  //! 1
+console.log('Number(false):', Number(false));  //! 0
+console.log('Number(null):', Number(null));  //! 0
+console.log('Number(""):', Number(""));  //! 0
+console.log("---------------------------");
 
 
-// порівняння (<, >, <=, >=) також виконується неявне перетворення типів. 
-//  перед порівнянням вони приводяться до числа.
-// console.log("10" > 5); 
-// console.log(10 > "5"); 
-// console.log(5 > true); 
-// console.log(5 < true); 
-// console.log("5" < true); 
+//? Якщо значення привести до числа неможливо, результатом буде 
+//? спеціальне числове значення NaN(Not a Number)
+console.log(
+    "%c Number(val) --> NaN ",
+    "color: yellow; background-color: #2274A5",
+);
+console.log('Number(undefined):', Number(undefined)); //! NaN
+console.log('Number("Jacob"):', Number("Jacob")); //! NaN
+console.log('Number("36px"):', Number("36px")); //! NaN
+console.log('Number(36 + "Привiт!"):', Number(36 + "Привiт!")); //! NaN
+console.log("---------------------------");
 
 
-// Перетворення рядків у числа
+//? Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
+console.log(
+    "%c Арифметичні операції (+, -, *, /) --> ЧИСЛО ",
+    "color: yellow; background-color: #2274A5",
+);
+console.log('Number("5" * 2):', Number("5" * 2));  //! 10
+console.log('Number("2" * "5"):', Number("2" * "5"));  //! 10
+console.log('Number("10" - 7):', Number("10" - 7));  //! 3
+console.log('Number(15 - "10"):', Number(15 - "10"));  //! 5
+console.log('Number(15 - "10px"):', Number(15 - "10px"));  //! NaN
+console.log('Number(true + 5):', Number(true + 5));  //! 6
+console.log('Number(5 - true):', Number(5 - true));  //! 4
+console.log('Number(true - 1):', Number(true - 1));  //! 0
+console.log("---------------------------");
 
-// Метод Number.parseInt()
+
+//? Порівняння (<, >, <=, >=) також виконується неявне перетворення типів. 
+//?  перед порівнянням вони приводяться до числа.
+console.log(
+    "%c Порівняння (<, >, <=, >=) --> ЧИСЛО ",
+    "color: yellow; background-color: #2274A5",
+);
+console.log('Number("10" > 5):', Number("10" > 5));  //! true -> 1
+console.log('Number(10 > "5"):', Number(10 > "5"));  //! true -> 1
+console.log('Number(5 > true):', Number(5 > true));  //! true -> 1
+console.log('Number(5 < true):', Number(5 < true));  //! false -> 0
+console.log('Number("5" < true):', Number("5" < true));  //! false -> 0
+console.log("---------------------------");
+
+
+//! Перетворення рядків у числа
+//! Метод Number.parseInt()
 // 2 аргументи:
 // 1- Рядок - обовязково 
 // 2- Система числення, до якої відноситься рядок ( за замовчуванням десяткова система). 
@@ -113,8 +137,7 @@ let salary = 1300.16472;
 
 
 //! ПРАКТИКА
-
-// 0
+//todo [0]
 // console.log(2 > 1);
 // console.log(4 < 2);
 // console.log(58 == 36);
@@ -132,7 +155,7 @@ let salary = 1300.16472;
 // console.log(undefined == 0);
 // console.log(undefined >= 0);
 
-// 1
+//todo [1]
 // Змінна value містить величину у вигляді рядка, 
 // що складається з числової частини та одиниці виміру. 
 // Наприклад, 24.5px, 14cm, 20.3vh тощо.
@@ -147,17 +170,17 @@ const value = "24.5px";
 // 
 const numerical = Number.parseFloat(value);
 
-//2
+//todo 2
 let elementWidth = '50px';
 elementWidth = Number.parseInt(elementWidth);
-console.log('elementWidth: ', elementWidth);
+// console.log('elementWidth: ', elementWidth);
 
 let elementHeight = '200.74px';
 // elementHeight = Number.parseFloat(elementHeight);
 // console.log('elementHeight: ', elementHeight);
 
 
-// 3
+//todo [3]
 let numOne = 5.845;
 // console.log(numOne.toFixed(1));
 
@@ -166,7 +189,7 @@ let numOne = 5.845;
 // console.log(Number(numOne.toFixed(1)));
 
 
-// 4додатково якщо є час
+//todo [4] (додатково якщо є час)
 let valueOne = parseInt("150.58px");
 // console.log(valueOne);
 // console.log(typeof valueOne);
