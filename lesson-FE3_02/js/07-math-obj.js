@@ -1,7 +1,6 @@
 // console.log('7.Об'єкт Math'); //! var-0.Приклад неможливості використання одинарних лапок
 // console.log("7.Об'єкт Math"); //? var-1. Конкатенація рядків (подвійні лапки)
 // console.log(`7.Об'єкт Math`); //? var-1. Шаблонні рядки (template literals).
-
 console.log(
     "%c 7.Об'єкт Math ",
     "color: white; background-color: #D33F49",
@@ -17,8 +16,9 @@ console.log(
     "%c Math.floor(num): ",
     "color: yellow; background-color: #2274A5",
 );
-// console.log(Math.floor(1.3)); //! 1
-// console.log(Math.floor(1.7)); //! 1
+console.log("Math.floor(1.2):", Math.floor(1.2)); //! 1
+console.log("Math.floor(1.5):", Math.floor(1.5)); //! 1
+console.log("Math.floor(1.9):", Math.floor(1.9)); //! 1
 
 
 //! Math.ceil(num): 
@@ -28,8 +28,9 @@ console.log(
     "%c Math.ceil(num): ",
     "color: yellow; background-color: #2274A5",
 );
-// console.log(Math.ceil(1.3)); //! 2
-// console.log(Math.ceil(1.7)); //! 2
+console.log("Math.ceil(1.2):", Math.ceil(1.2)); //! 2
+console.log("Math.ceil(1.5):", Math.ceil(1.5)); //! 2
+console.log("Math.ceil(1.9):", Math.ceil(1.9)); //! 2
 
 
 //! Math.round(num): 
@@ -39,8 +40,9 @@ console.log(
     "%c Math.round(num): ",
     "color: yellow; background-color: #2274A5",
 ); 
-// console.log(Math.round(1.3)); //! 1
-// console.log(Math.round(1.7)); //! 2
+console.log("Math.round(1.2):", Math.round(1.2)); //! 1
+console.log("Math.round(1.5):", Math.round(1.5)); //! 2
+console.log("Math.round(1.9):", Math.round(1.9)); //! 2
 
 
 //! Math.pow(number, power):
@@ -60,46 +62,54 @@ console.log("primeNumber ** power =", primeNumber ** power);
 
 
 //! Math.max(num1, num2, ...): 
-//?  - повертає найбільше число з набору переданих чисел.
+//?  - повертає НАЙБІЛШЕ число з набору переданих чисел.
 console.log(
     "%c Math.max(num1, num2, ...): ",
     "color: yellow; background-color: #2274A5",
 );
-// console.log(Math.max(20, 10, 50, 40)); // 50
-
+console.log("Math.max(20, 10, 50, 40):", Math.max(20, 10, 50, 40)); //! 50
 
 
 //! Math.min(num1, num2, ...): 
-//? - повертає найменше число з набору переданих чисел
+//? - повертає НАЙМЕНЬШЕ число з набору переданих чисел
 console.log(
     "%c Math.min(num1, num2, ...): ",
     "color: yellow; background-color: #2274A5",
 );
-// console.log(Math.min(20, 10, 50, 40)); // 10
+console.log("Math.min(20, 10, 50, 40):", Math.min(20, 10, 50, 40)); //! 10
 
 
 //! Math.random(): 
 //? -повертає випадкове число
 //?  в діапазоні від 0 (включно) до 1 (за винятком)
-//? Приклад: випадкове число між 0 і 1, наприклад 0.2 ... 0.9166353649342294
+//todo Приклад: Генерація випадкового числа між 0 і 1:
 console.log(
     "%c Math.random(): ",
     "color: yellow; background-color: #2274A5",
 );
-// console.log(Math.random()); 
+console.warn("Math.random():", Math.random()); //! випадкове число від 0 до 1
 
 
-//! Цікавий приклад!!!!!!!!!!
-//! Math.random() * (max - min) + min
-// const colors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];
-// const max = colors.length - 1;
-// const min = 0;
+//! Цікавий приклад - випадкова зміна кольору фона!
+//todo Math.random() * (max - min) + min
+console.log(
+    "%c ПРИКЛАД: випадкова зміна кольору фона ",
+    "color: yellow; background-color: #2274A5",
+);
+const arrayColors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];
+const min = 0;
+const max = arrayColors.length - 1;
+console.log("min =", min, ",", "max =", max);
 
+const mathRandomNumber = Math.random() * (max - min) + min;
+console.log("mathRandomNumber:", mathRandomNumber);
+const index = Math.round(mathRandomNumber);
 // const index = Math.round(Math.random() * (max - min) + min);
+console.log("index:", index);
 
-// const color = colors[index];
-// console.log(color);
-// document.body.style.backgroundColor = color;
+const color = arrayColors[index];
+console.log("background-сolor:", color);
+// document.body.style.backgroundColor = color; //! увімкнути для демонстрації прикладу
 
 
 
