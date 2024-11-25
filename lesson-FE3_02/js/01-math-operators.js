@@ -43,12 +43,12 @@ console.log("y - x =", y - x);
 console.log("y * x =", x * y); 
 
 //? Ділення
-console.log("y / x =", x / y); 
-console.log("y / x2 =", x2 / y);
+console.log("x / y =", x / y);
+console.log("x2 / y =", x2 / y);
 
 //? Залишок від ділення
-console.log("Залишок від ділення y / x =", x % y); 
-console.log("Залишок від ділення y / x2 =", x2 % y); 
+console.log("Залишок від ділення x / y =", x % y);
+console.log("Залишок від ділення x2 / y =", x2 % y); 
 
 //? Зведення у ступінь
 console.log("x(8) у ступіні y(5) =", x ** y); //! 32768
