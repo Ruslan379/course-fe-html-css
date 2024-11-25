@@ -66,30 +66,47 @@ console.log('Number("5" < true):', Number("5" < true));  //! false -> 0
 console.log("---------------------------");
 
 
-//! Перетворення рядків у числа
+//! Перетворення рядків у число. 
+//? Методи Number.parseInt() і Number.parseFloat()​
+//? Перетворюють рядок символ за символом, ДОКИ ЦЕ МОЖЛИВО.
+//? У разі виникнення помилки повертається підсумкове число.
+
+
 //! Метод Number.parseInt()
-// 2 аргументи:
-// 1- Рядок - обовязково 
-// 2- Система числення, до якої відноситься рядок ( за замовчуванням десяткова система). 
-// Наприклад, для десяткової системи буде 10, для шістнадцяткової - 16 тощо..
+//? Number.parseInt() парсить з рядка ціле число.
+//? 2 аргументи:
+//? 1- Рядок - обовязково 
+//? 2- Система числення, до якої відноситься рядок (за замовчуванням десяткова система). 
+//? Наприклад, для десяткової системи буде 10, для шістнадцяткової - 16 тощо..
 
-// Метод аналізує рядок зліва направо, видаляючи пробіли на початку і
-//  перетворюючи допустимі символи у число до тих пір, поки не зіткнеться 
-//  з першим недопустимим символом.
+//? Метод аналізує рядок зліва направо, видаляючи пробіли на початку і
+//? перетворюючи допустимі символи у число до тих пір, поки не зіткнеться 
+//? з першим недопустимим символом.
+console.log(
+    "%c Number.parseInt() ",
+    "color: yellow; background-color: #2274A5",
+);
+console.warn("Decimal system:");
+console.log('Number.parseInt("5"):', Number.parseInt("5"));  //! 5
+console.log('Number.parseInt("5.5"):', Number.parseInt("5.5"));  //! 5
+console.log('Number.parseInt("5cm"):', Number.parseInt("5cm"));  //! 5
+console.log('Number.parseInt("12qwe74"):', Number.parseInt("12qwe74"));  //! 5
+console.log('Number.parseInt("12.46qwe79"):', Number.parseInt("12.46qwe79"));  //! 5
+console.log('Number.parseInt("cm5"):', Number.parseInt("cm5"));  //! 5
+console.log('Number.parseInt(""):', Number.parseInt(""));  //! 5
+console.log('Number.parseInt("qweqwe"):', Number.parseInt("qweqwe"));  //! 5
+console.warn("Hexadecimal system:");
+console.log('Number.parseInt("0xff", 16):', Number.parseInt("0xff", 16));  //! 5
+console.log('Number.parseInt("ff", 16):', Number.parseInt("ff", 16));  //! 5
+//todo Калькулятор:
+console.log(
+    "%c Калькулятор: ",
+    "color: red; background-color: #95B46A",
+    "https://calculat.io/ru/number/hex-to-dec/ff"
+);
 
-// console.log(Number.parseInt("5")); 
-// console.log(Number.parseInt("5.5")); 
-// console.log(Number.parseInt("5cm")); 
-// console.log(Number.parseInt("12qwe74"));  
-// console.log(Number.parseInt("12.46qwe79"));  
-// console.log(Number.parseInt("cm5")); 
-// console.log(Number.parseInt("")); 
-// console.log(Number.parseInt("qweqwe"));
 
-// console.log(parseInt('0xff', 16));
-// console.log(parseInt('ff', 16));
-
-// Метод Number.parseFloat() - перетворює рядок на число з плаваючою крапкою.
+//! Метод Number.parseFloat() - перетворює рядок на число з плаваючою крапкою.
 
 // console.log(Number.parseFloat("5")); 
 // console.log(Number.parseFloat("5.5")); 
