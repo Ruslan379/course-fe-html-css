@@ -60,8 +60,8 @@ console.log("1 != true:", 1 !== true); //! true
 
 
 
-//! PRACTICE
-//0
+//! ПРАКТИКА
+//todo [0]
 // let resultOne = "25" - 5;
 // console.log(resultOne);
 // console.log(typeof resultOne);
@@ -85,7 +85,7 @@ console.log("1 != true:", 1 !== true); //! true
 // console.log(resultThree);
 
 
-// 1
+//todo [1]
 // Доповни код, присвоївши змінній totalPrice вираз для підрахунку 
 // загальної суми замовлення. Змінна pricePerItem зберігає ціну за одиницю товару,
 //  а orderedQuantity - кількість одиниць товару в замовленні.
@@ -95,7 +95,8 @@ console.log("1 != true:", 1 !== true); //! true
 
 // const totalPrice = pricePerItem * orderedQuantity;
 
-// 2
+
+//todo [2]
 // Заміни у виразах стандартні математичні оператори на комбіновані оператори
 
 // let a = 5;
@@ -114,7 +115,8 @@ let d = 20;
 // c *= 3;
 // d /= 10;
 
-// 3
+
+//todo [3]
 // Оголоси змінну isAdult та задай їй результат перевірки значення змінної age.
 //  Використай оператори порівняння та доповни код так, щоб 
 //  значенням isAdult було true, якщо вік користувача більше або дорівнює 18 
@@ -123,7 +125,8 @@ let d = 20;
 // const age = 16;
 // const isAdult = age >= 18;
 
-// 4
+
+//todo [4]
 // Оголоси змінну isValid і задай їй значенням результат перевірки
 //  рівності паролей в змінних correctPassword і userPassword.
 
@@ -132,7 +135,6 @@ let d = 20;
 
 const correctPassword = "jqueryismyjam";
 const userPassword = "mangodab3st";
-
 const isValid = correctPassword === userPassword;
 
 
