@@ -1,5 +1,5 @@
-// console.log('7.Об'єкт Math'); //! Приклад неможливості використання одинарних лапок
-console.log("7.Об'єкт Math"); //? var-1. Конкатенація рядків (подвійні лапки)
+// console.log('7.Об'єкт Math'); //! var-0.Приклад неможливості використання одинарних лапок
+// console.log("7.Об'єкт Math"); //? var-1. Конкатенація рядків (подвійні лапки)
 // console.log(`7.Об'єкт Math`); //? var-1. Шаблонні рядки (template literals).
 
 console.log(
@@ -7,27 +7,28 @@ console.log(
     "color: white; background-color: #D33F49",
 );
 
-// Клас Math є вбудованим класом JavaScript
-// надає набір методів для виконання математичних операцій та роботи з числами
+//? Клас Math є вбудованим класом JavaScript
+//? Надає набір методів для виконання математичних операцій та роботи з числами
 
-// Math.floor(num): повертає найближче ціле число, 
-// яке є меншим або дорівнює вказаному числу num
-
-// console.log(Math.floor(1.3)); // 1
-// console.log(Math.floor(1.7)); // 1
-
-
-// Math.ceil(num): повертає найближче ціле число, 
-// яке є більшим, або дорівнює зазначеному числу num
-
-// console.log(Math.ceil(1.3)); // 2
-// console.log(Math.ceil(1.7)); // 2
+//! Math.floor(num): 
+//? - повертає найближче ціле число, 
+//? яке є МЕНЬШИМ або дорівнює вказаному числу num
+// console.log(Math.floor(1.3)); //! 1
+// console.log(Math.floor(1.7)); //! 1
 
 
-// Math.round(num): повертає значення числа після округлення до найближчого цілого. 
+//! Math.ceil(num): 
+//? - повертає найближче ціле число, 
+//? яке є БІЛЬШИМ, або дорівнює зазначеному числу num
+// console.log(Math.ceil(1.3)); //! 2
+// console.log(Math.ceil(1.7)); //! 2
 
-// console.log(Math.round(1.3)); // 1
-// console.log(Math.round(1.7)); // 2
+
+//! Math.round(num): 
+//? повертає значення числа після 
+//? округлення до найближчого цілого. 
+// console.log(Math.round(1.3)); //! 1
+// console.log(Math.round(1.7)); //! 2
 
 
 
@@ -71,9 +72,13 @@ console.log(
 // document.body.style.backgroundColor = color;
 
 
-//ПРАККТИКА
 
-// 0
+
+
+
+
+//! ПРАККТИКА
+//todo [0]
 // let numOne = Math.ceil(5.8);
 // let numTwo = Math.ceil(2.2);
 // let numThree = Math.ceil(-2.2);
@@ -83,7 +88,7 @@ console.log(
 // console.log(numThree);
 
 
-
+//todo [1]
 // let numOne = Math.round(5.8);
 // let numTwo = Math.round(2.2);
 // let numThree = Math.round(-2.2);
@@ -93,21 +98,19 @@ console.log(
 // console.log(numThree);
 
 
-
-
-
-
+//todo [2]
 // Задача №2. Отримати число 135.58 з рядка
 let value = "135.58px";
 // console.log(Number.parseFloat(value));
 
+//todo [4]
 // Задача №4.
 // Знайти максимальнечисло з 10,58,39,-150,0
 // console.log(Math.max(10,58,39,-150,0));
 
+//todo [5]
 // Задача №5.
 // Округлити число 58.858 до числа 58
-
 
 // console.log(Math.round(58.858));
 // console.log(Math.ceil(58.858));
@@ -115,7 +118,7 @@ let value = "135.58px";
 // console.log(Math.floor(58.858)); //!!!!
 
 
-
+//todo [11]
 /* 1
  * Напиши скрипт який каже користувачу ввести число та ступінь,
  * потім зводить число до ступеню та виводить результат в консоль
@@ -138,7 +141,7 @@ let value = "135.58px";
 // console.log(result);
 
 
-//2
+//todo [12]
 // Напиши скрип,який генерує випадкове число від 10 до 80
 
 // Math.random() * (max - min) + min
@@ -151,8 +154,7 @@ let value = "135.58px";
 // console.log(result);
 
 
-// 3
-
+//todo [13]
 // let numOne = Math.round(5.845 * 10) / 10; // 58.45 -> 58 -> 5.8
 // console.log(numOne);
 
