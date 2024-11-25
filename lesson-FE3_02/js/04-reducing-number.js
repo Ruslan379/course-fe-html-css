@@ -18,7 +18,7 @@ console.log(
 // Якщо неможливо привести значення до числа
 // console.log(Number(undefined)); 
 // console.log(Number("Jacob")); 
-// console.log(Number("25px")); 
+// console.log(Number("36px")); 
 
 
 // Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
@@ -79,17 +79,11 @@ console.log(
 // console.log(Number.parseFloat("qweqwe")); 
 
 
-//  Перевірка на число
-
-// метод Number.isNaN(val). Він перевіряє, чи є вказане значення NaN чи ні. 
-// Цей метод відповідає на питання "Це Not A Number?", І повертає:
-// true — якщо значення val це NaN
-// false — якщо значення val це не NaN
-
-// console.log(isNaN(25 + "Привiт!"));
 
 
-// Дробове число
+
+
+//! Дробове число
 // результат 0.1 + 0.2 не дорівнює 0.3
 // Число 0.1 у двійковій системі числення, 
 // яку використовує комп'ютер — це нескінченний дріб.
@@ -115,7 +109,10 @@ let salary = 1300.16472;
 // console.log(salary);
 
 
-// ПРАКТИКА
+
+
+
+//! ПРАКТИКА
 
 // 0
 // console.log(2 > 1);
@@ -182,6 +179,3 @@ let valueOne = parseInt("150.58px");
 // let valueTwo = parseFloat("a150.58px");
 // console.log(valueTwo);
 // console.log(typeof valueTwo);
-
-
-
