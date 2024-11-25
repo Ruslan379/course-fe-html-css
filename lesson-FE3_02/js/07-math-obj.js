@@ -13,6 +13,10 @@ console.log(
 //! Math.floor(num): 
 //? - повертає найближче ціле число, 
 //? яке є МЕНЬШИМ або дорівнює вказаному числу num
+console.log(
+    "%c Math.floor(num): ",
+    "color: yellow; background-color: #2274A5",
+);
 // console.log(Math.floor(1.3)); //! 1
 // console.log(Math.floor(1.7)); //! 1
 
@@ -20,47 +24,73 @@ console.log(
 //! Math.ceil(num): 
 //? - повертає найближче ціле число, 
 //? яке є БІЛЬШИМ, або дорівнює зазначеному числу num
+console.log(
+    "%c Math.ceil(num): ",
+    "color: yellow; background-color: #2274A5",
+);
 // console.log(Math.ceil(1.3)); //! 2
 // console.log(Math.ceil(1.7)); //! 2
 
 
 //! Math.round(num): 
-//? повертає значення числа після 
-//? округлення до найближчого цілого. 
+//?  - повертає значення числа після 
+//? округлення до найближчого цілого.
+console.log(
+    "%c Math.round(num): ",
+    "color: yellow; background-color: #2274A5",
+); 
 // console.log(Math.round(1.3)); //! 1
 // console.log(Math.round(1.7)); //! 2
 
 
+//! Math.pow(number, power):
+//? - зведення в ступінь
+console.log(
+    "%c Math.pow(number, power): ",
+    "color: yellow; background-color: #2274A5",
+);
+const primeNumber = 2;
+const power = 5;
+console.log("primeNumber =", primeNumber);
+console.log("power =", power);
+console.log("--------------");
+const result = Math.pow(primeNumber, power);
+console.log("Math.pow(primeNumber, power) =", result);
+console.log("primeNumber ** power =", primeNumber ** power);
 
-// const base = 2;
-// const power = 5;
 
-// const result = Math.pow(base, power);
-// console.log(base ** power);
-
-
-
-// Math.max(num1, num2, ...): повертає найбільше число з набору переданих чисел.
-
+//! Math.max(num1, num2, ...): 
+//?  - повертає найбільше число з набору переданих чисел.
+console.log(
+    "%c Math.max(num1, num2, ...): ",
+    "color: yellow; background-color: #2274A5",
+);
 // console.log(Math.max(20, 10, 50, 40)); // 50
 
 
 
-// Math.min(num1, num2, ...): повертає найменше число з набору переданих чисел 
-
+//! Math.min(num1, num2, ...): 
+//? - повертає найменше число з набору переданих чисел
+console.log(
+    "%c Math.min(num1, num2, ...): ",
+    "color: yellow; background-color: #2274A5",
+);
 // console.log(Math.min(20, 10, 50, 40)); // 10
 
-// Math.random(): повертає випадкове число
-//  в діапазоні від 0 (включно) до 1 (за винятком)
 
+//! Math.random(): 
+//? -повертає випадкове число
+//?  в діапазоні від 0 (включно) до 1 (за винятком)
+//? Приклад: випадкове число між 0 і 1, наприклад 0.2 ... 0.9166353649342294
+console.log(
+    "%c Math.random(): ",
+    "color: yellow; background-color: #2274A5",
+);
 // console.log(Math.random()); 
-// випадкове число між 0 і 1, наприклад 0.2 ... 0.9166353649342294
 
 
-// Math.random() * (max - min) + min
-
-
-// цікавий приклад!!!!!!!!!!
+//! Цікавий приклад!!!!!!!!!!
+//! Math.random() * (max - min) + min
 // const colors = ['tomato', 'teal', 'orange', 'deeppink', 'skyblue'];
 // const max = colors.length - 1;
 // const min = 0;
