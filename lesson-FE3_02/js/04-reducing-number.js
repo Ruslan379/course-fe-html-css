@@ -1,6 +1,6 @@
 // console.log(`4.Приведення до числа.\n  Методи Number.parseInt() і\n  Number.parseFloat()`);
 console.log(
-    '%c 4.Приведення до числа.\n   Методи Number.parseInt() і\n   Number.parseFloat() ',
+    '%c 4.Приведення до числа.      \n   Методи Number.parseInt() і\n   Number.parseFloat()       ',
     'color: white; background-color: #D33F49',
 );
 
@@ -20,7 +20,7 @@ console.log('Number(true):', Number(true));  //! 1
 console.log('Number(false):', Number(false));  //! 0
 console.log('Number(null):', Number(null));  //! 0
 console.log('Number(""):', Number(""));  //! 0
-console.log("---------------------------");
+console.log("---------------------------------------------");
 
 
 //? Якщо значення привести до числа неможливо, результатом буде 
@@ -33,7 +33,7 @@ console.log('Number(undefined):', Number(undefined)); //! NaN
 console.log('Number("Jacob"):', Number("Jacob")); //! NaN
 console.log('Number("36px"):', Number("36px")); //! NaN
 console.log('Number(36 + "Привiт!"):', Number(36 + "Привiт!")); //! NaN
-console.log("---------------------------");
+console.log("---------------------------------------------");
 
 
 //? Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
@@ -49,7 +49,7 @@ console.log('Number(15 - "10px"):', Number(15 - "10px"));  //! NaN
 console.log('Number(true + 5):', Number(true + 5));  //! 6
 console.log('Number(5 - true):', Number(5 - true));  //! 4
 console.log('Number(true - 1):', Number(true - 1));  //! 0
-console.log("---------------------------");
+console.log("---------------------------------------------");
 
 
 //? Порівняння (<, >, <=, >=) також виконується неявне перетворення типів. 
@@ -63,14 +63,13 @@ console.log('Number(10 > "5"):', Number(10 > "5"));  //! true -> 1
 console.log('Number(5 > true):', Number(5 > true));  //! true -> 1
 console.log('Number(5 < true):', Number(5 < true));  //! false -> 0
 console.log('Number("5" < true):', Number("5" < true));  //! false -> 0
-console.log("---------------------------");
+console.log("---------------------------------------------");
 
 
 //! Перетворення рядків у число. 
 //? Методи Number.parseInt() і Number.parseFloat()​
 //? Перетворюють рядок символ за символом, ДОКИ ЦЕ МОЖЛИВО.
 //? У разі виникнення помилки повертається підсумкове число.
-
 
 //! Метод Number.parseInt()
 //? Number.parseInt() парсить з рядка ціле число.
@@ -90,35 +89,42 @@ console.warn("Decimal system:");
 console.log('Number.parseInt("5"):', Number.parseInt("5"));  //! 5
 console.log('Number.parseInt("5.5"):', Number.parseInt("5.5"));  //! 5
 console.log('Number.parseInt("5cm"):', Number.parseInt("5cm"));  //! 5
-console.log('Number.parseInt("12qwe74"):', Number.parseInt("12qwe74"));  //! 5
-console.log('Number.parseInt("12.46qwe79"):', Number.parseInt("12.46qwe79"));  //! 5
-console.log('Number.parseInt("cm5"):', Number.parseInt("cm5"));  //! 5
-console.log('Number.parseInt(""):', Number.parseInt(""));  //! 5
-console.log('Number.parseInt("qweqwe"):', Number.parseInt("qweqwe"));  //! 5
+console.log('Number.parseInt("12qwe74"):', Number.parseInt("12qwe74"));  //! 12
+console.log('Number.parseInt("12.46qwe79"):', Number.parseInt("12.46qwe79"));  //! 12
+console.log('Number.parseInt("cm5"):', Number.parseInt("cm5"));  //! NaN
+console.log('Number.parseInt(""):', Number.parseInt(""));  //! NaN
+console.log('Number.parseInt("qweqwe"):', Number.parseInt("qweqwe"));  //! NaN
 console.warn("Hexadecimal system:");
-console.log('Number.parseInt("0xff", 16):', Number.parseInt("0xff", 16));  //! 5
-console.log('Number.parseInt("ff", 16):', Number.parseInt("ff", 16));  //! 5
+console.log('Number.parseInt("0xff", 16):', Number.parseInt("0xff", 16));  //! 255
+console.log('Number.parseInt("ff", 16):', Number.parseInt("ff", 16));  //! 255
 //todo Калькулятор:
 console.log(
     "%c Калькулятор: ",
     "color: red; background-color: #95B46A",
     "https://calculat.io/ru/number/hex-to-dec/ff"
 );
+console.log("---------------------------------------------");
 
-
-//! Метод Number.parseFloat() - перетворює рядок на число з плаваючою крапкою.
-
-// console.log(Number.parseFloat("5")); 
-// console.log(Number.parseFloat("5.5")); 
-// console.log(Number.parseFloat("3.14")); 
-// console.log(Number.parseFloat("5cm")); 
-// console.log(Number.parseFloat("5.5cm")); 
-// console.log(Number.parseFloat("12qwe74")); 
-// console.log(Number.parseFloat("12.46qwe79"));
-// console.log(Number.parseFloat("cm5")); 
-// console.log(Number.parseFloat("")); 
-// console.log(Number.parseFloat("qweqwe")); 
-
+//! Метод Number.parseFloat() 
+//? - перетворює рядок на число з плаваючою крапкою.
+//? Number.parseFloat() парсить з рядка дробове число.
+console.log(
+    "%c Number.parseFloat() ",
+    "color: yellow; background-color: #2274A5",
+);
+console.log('Number.parseFloat("5"):', Number.parseFloat("5"));  //! 5
+console.log('Number.parseFloat("5"):', Number.parseFloat("5"));  //! 5
+console.log('Number.parseFloat("5.5"):', Number.parseFloat("5.5"));  //! 5.5
+console.log('Number.parseFloat("5cm"):', Number.parseFloat("5cm"));  //! 5
+console.log('Number.parseFloat("12qwe74"):', Number.parseFloat("12qwe74"));  //! 12
+console.log('Number.parseFloat("12.46qwe79"):', Number.parseFloat("12.46qwe79"));  //! 12.46
+console.log('Number.parseFloat("cm5"):', Number.parseInt("cm5"));  //! NaN
+console.log('Number.parseFloat(""):', Number.parseFloat(""));  //! NaN
+console.log('Number.parseInt("qweqwe"):', Number.parseFloat("qweqwe"));  //! NaN
+console.warn("Hexadecimal system:");
+console.log('Number.parseFloat("0xff", 16):', Number.parseFloat("0xff", 16));  //! 0
+console.log('Number.parseFloat("ff", 16):', Number.parseFloat("ff", 16));  //! NaN
+console.log("---------------------------------------------");
 
 
 

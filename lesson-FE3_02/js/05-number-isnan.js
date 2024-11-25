@@ -1,6 +1,6 @@
 // console.log(`5.Явне приведення до числа.\n  Перевірка на число.\n  Метод Number.isNaN()`);
 console.log(
-    '%c 5.Явне приведення до числа.\n   Перевірка на число.\n   Метод Number.isNaN() ',
+    '%c 5.Явне приведення до числа.\n   Перевірка на число.      \n   Метод Number.isNaN()     ',
     'color: white; background-color: #D33F49',
 );
 
@@ -57,7 +57,8 @@ console.log('valueNaN = Number("qwerty"):', valueNaN);
 console.log('Number.isNaN(valueNaN):', Number.isNaN(valueNaN)); //* true
 console.log('Number.isNaN(NaN):', Number.isNaN(NaN)); //* true
 console.log("----------------------------------");
-
-console.log('typeof NaN =', typeof NaN);
-console.log('typeof 36 =', typeof 36);
-console.log('typeof "36" =', typeof "36");
+//! Тип значення NaN: number
+console.warn("Тип значення NaN: number");
+console.log('typeof NaN:', typeof NaN);
+console.log('typeof 36:', typeof 36);
+console.log('typeof "36":', typeof "36");
