@@ -19,7 +19,7 @@ console.log('Number(true):', Number(true)); //? 1
 console.log('Number("qwerty"):', Number("qwerty")); //? NaN
 console.log('Number(36 + "Привiт!"):', Number(36 + "Привiт!")); //? NaN
 console.log('Number(36 + "432"):', Number(36 + "432")); //? 36432
-console.log("----------------------------------")
+console.log("----------------------------------");
 
 
 //! Перевірка на число  - метод isNaN(val)
@@ -34,7 +34,8 @@ console.log(
 );
 console.log('isNaN(36 + "Привiт!"):', isNaN(36 + "Привiт!")); //* true, "ТАК, це НЕ ЧИСЛО!"
 console.log('isNaN(36):', isNaN(36)); //! false, "НІ, це - ЧИСЛО!"
-console.log("----------------------------------")
+console.log('isNaN(NaN):', isNaN(NaN)); //* true, "ТАК, це НЕ ЧИСЛО!"
+console.log("----------------------------------");
 
 
 //! Перевірка на NaN - метод Number.isNaN(val)
@@ -51,4 +52,8 @@ let valueNaN = Number("qwerty");
 console.log('valueNaN = Number("qwerty"):', valueNaN);
 console.log('Number.isNaN(valueNaN):', Number.isNaN(valueNaN)); //* true
 console.log('Number.isNaN(NaN):', Number.isNaN(NaN)); //* true
-console.log("----------------------------------")
+console.log("----------------------------------");
+
+console.log('typeof NaN =', typeof NaN);
+console.log('typeof 36 =', typeof 36);
+console.log('typeof "36" =', typeof "36");
