@@ -14,7 +14,7 @@ console.log(myMmessage);
 alert(myMmessage);
 console.log("---------------------------------");
 
-//?o Приклад того як alert() блокує інтерпретацію(компіляцію)
+//? Приклад того як alert() блокує інтерпретацію(компіляцію)
 console.log('До запуска alert()');
 alert('alert() --> Зверніть увагу на консоль!');
 //todo Тут код припиняє свою роботу до
@@ -69,6 +69,7 @@ console.log('typeof quantity(after) =', typeof quantity);
 console.log("---------------------------------");
 
 //todo Перевірка на NaN - метод Number.isNaN(val)
+сheckForNumber();
 
 function сheckForNumber() { 
     const itsNotAnumber = Number.isNaN(quantity);
@@ -91,7 +92,8 @@ function сheckForNumber() {
         return;
     } 
 };
-сheckForNumber();
+
+
 
 
 
