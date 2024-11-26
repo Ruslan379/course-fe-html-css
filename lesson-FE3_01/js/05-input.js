@@ -15,11 +15,11 @@ alert(myMmessage);
 console.log("---------------------------------");
 
 //? Приклад того як alert() блокує інтерпретацію(компіляцію)
-console.log('До запуска alert()');
-alert('alert() --> Зверніть увагу на консоль!');
-//todo Тут код припиняє свою роботу до
-//todo підтерження повідомленя від alert(),
-//todo тобто до натискання на кнопку[OK]
+// console.log('До запуска alert()');
+// alert('alert() --> Зверніть увагу на консоль!');
+// //todo Тут код припиняє свою роботу до
+// //todo підтерження повідомленя від alert(),
+// //todo тобто до натискання на кнопку[OK]
 console.log('Після виконання alert()');
 console.log("---------------------------------");
 
@@ -44,33 +44,33 @@ console.log("---------------------------------");
 //? Отримуємо в змінну hotelName значення = null - якщо користувач НЕ ввів/ввів дані та натиснув КНОПКУ [Cancel].
 //todo Запитуємо назву готеля, в якому хотів би зупинитися клієнт
 //todo і зберігаємо результат виклику prompt у змінну.
+//? name + [OK]
 let hotelName = prompt("prompt() --> Please enter desired hotel name_(name+[OK])");
 console.log('hotelName_(name+[OK]):', hotelName);
-
+//? [OK]
 hotelName = prompt("prompt() --> Please enter desired hotel name_[OK]");
 console.log('hotelName_[OK]:', hotelName);
-
+//? [Cancel]
 hotelName = prompt("prompt() --> Please enter desired hotel name_[Cancel]");
 console.log('hotelName_[Cancel]:', hotelName);
 console.log("---------------------------------");
 
 
 //todo Важлива особливість prompt полягає в тому,
-//todo  що незалежно від того, що ввів користувач,
+//todo що незалежно від того, що ввів користувач,
 //todo тип значення змінної буде - рядок(string)!
 let quantity = prompt('prompt() --> Введіть кількість товарів');
 console.log('quantity(before)):', quantity);
 console.log('typeof quantity(before) =', typeof quantity);
 
-//todo Перетворюємо тип значення змінної quantity зі string на number:
+//? Якщо необхідно, перетворюємо тип значення 
+//? змінної quantity зі string на number:
 quantity = Number(quantity);
 console.log('quantity(after)):', quantity);
 console.log('typeof quantity(after) =', typeof quantity);
 console.log("---------------------------------");
 
-//todo Перевірка на NaN - метод Number.isNaN(val)
-сheckForNumber();
-
+//todo Робимо Перевірку на NaN використовуючі метод Number.isNaN(val)
 function сheckForNumber() { 
     const itsNotAnumber = Number.isNaN(quantity);
     console.log('itsNotAnumber:', itsNotAnumber);
@@ -86,13 +86,15 @@ function сheckForNumber() {
         console.log('quantity(after)):', quantity);
         console.log('typeof quantity(after) =', typeof quantity);
         console.log("---------------------------------");
+        сheckForNumber();
     }
     else {
-        alert("Кількість товару підтверджено!");
+        alert(" ДЯКУЄМО!\n Кількість товару підтверджено!");
         return;
     } 
 };
 
+сheckForNumber();
 
 
 
