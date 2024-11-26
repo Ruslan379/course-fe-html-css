@@ -1,11 +1,17 @@
-console.log('Запитання:');
+// console.log('8.Запитання:');
+console.log(
+    "%c 8.Запитання: ",
+    "color: white; background-color: #D33F49",
+);
 
-console.log(1 === "1"); //false
+//? Яке значення буде в консолі?
 
-console.log(0 == false); //true
+// console.log(1 === "1"); 
 
-console.log(Number(true));  //1
+// console.log(0 == false); 
 
-console.log(Number(null)); //0
+// console.log(Number(true)); 
+
+// console.log(Number(null)); 
 
 

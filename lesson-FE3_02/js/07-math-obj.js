@@ -117,7 +117,7 @@ console.log("background-сolor:", color);
 
 
 
-//! ПРАККТИКА
+//! ПРАКТИКА
 //todo [0]
 // let numOne = Math.ceil(5.8);
 // let numTwo = Math.ceil(2.2);
