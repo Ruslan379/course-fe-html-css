@@ -21,8 +21,8 @@ console.log("-----------------------");
 //? Перше слово пишеться малими літерами, а кожне наступне починається з великої.
 //* Наприклад: user, greetUser, getUserData, isActive, activeGuestCount, totalWorkerSalary.
 
-
-//! Інструкція оголошення змінної з ключовим словом const
+//! const
+//todo Інструкція оголошення змінної з ключовим словом const:
 //? Оголошення змінної починається з ключового слова - const
 //? потім ідентифікатор (унікальне імя) - age
 //? потім оператор присвоєння - =
@@ -33,19 +33,21 @@ console.log("age:", age); //! age: 20
 
 const companyName = "Mango";
 console.log(companyName); //! "Mango"
-console.log("companyName:", companyName); //! username: 20
+console.log("companyName:", companyName); //! companyName: Mango
 
 //todo Якщо змінна оголошена як const,
 //todo перевизначити її значення НЕМОЖЛИВО!!!
-
-//! ❌ Неправильно, буде помилка
-// companyName = "Poly"; //! TypeError: Assignment to constant variable.
+//! ❌ Неправильно, буде помилка:
+// const companyName = "Poly";
+// companyName = "Poly"; //! Uncaught TypeError: Assignment to constant variable.
 console.log("-----------------------");
 
-//! var.1 - Інструкція оголошення змінної з ключовим словом let
-//todo Для того, щоб оголосити змінну, якій у подальшому
-//todo можна буде присвоїти НОВЕ ЗНАЧЕННЯ,
-//todo використовується ключове слово let.
+
+//! let (var.1)
+//* Для того, щоб оголосити змінну, якій у подальшому
+//* можна буде присвоїти НОВЕ ЗНАЧЕННЯ,
+//* використовується ключове слово let.
+//todo Інструкція оголошення змінної з ключовим словом let (var.1)
 //? Оголошення змінної починається з ключового слова - let
 //? потім ідентифікатор (унікальне імя) - сurrentMonth
 //? потім оператор присвоєння - =
@@ -53,86 +55,98 @@ console.log("-----------------------");
 let сurrentMonth = "January";
 console.log('сurrentMonth:', сurrentMonth); //! "January"
 
-//? Ключове слово let
 //* Якщо змінна оголошена як let,
 //* перевизначити її значення МОЖЛИВО!!!
-сurrentMonth = "February";
+// let сurrentMonth = "February"; //! ❌ Неправильно, буде помилка!
+сurrentMonth = "February"; //* ✅ Правильно!
 console.log('сurrentMonth:', сurrentMonth); //! "February"
+console.log("-----------------------");
 
 
-//todo Створення змінної без ключового слова let або const 
+//todo Створення змінної без ключового слова let або const
 //todo у режимі ”strict mode” призведе до помилки
-// currentYear = 2024;
+// currentYear = 2024; //! Uncaught ReferenceError: currentYear is not defined
 
-//! Ключове слово let (Невизначена змінна (undefined))
-// let clientname;
-//?  — це змінна, яка була оголошена ключовим словом let, 
-//? але не ініціалізована значенням. 
+//! let (var.2)
+//todo Інструкція оголошення змінної з ключовим словом let (без задання значення) (var.2)
+//? Оголошення змінної починається з ключового слова - let
+//? потім ідентифікатор (унікальне імя) - сurrentMonth
+//? оператор присвоєння - відсутній
+//? значення - відсутніє
+
+//? let clientName — це змінна, яка була оголошена ключовим словом let,
+//? але не ініціалізована значенням.
 //? За замовчуванням їй присвоюється початкове значення undefined.
-// console.log('clientname:', clientname); //! undefined
+let clientName;
+console.log('clientName:', clientName); //! undefined
 
-//? Ініціалізація clientname
-// clientname = "Mango";
-// console.log('clientname:', clientname); // "Mango"
+//? Ініціалізація clientName значенням:
+// let clientName = "Mango"; //! ❌ Неправильно, буде помилка!
+clientName = "Mango";
+console.log('clientName:', clientName); //! "Mango"
+console.log("-----------------------");
 
-// age = 15; // Uncaught TypeError: Assignment to constant variable.
-// console.log('age:', age); // ReferenceError: age is not defined
 
-
-//! Розробник звертається до змінної до її оголошення
-//! Неможливо отримати доступ до змінної до її ініціалізаці
+//todo Неможливо звернутися до змінної до її оголошення.
 //! ❌ Неправильно, буде помилка:
-// console.log('age:', age); //! ReferenceError: age is not defined
+// console.log('myAge:', myAge); //! Uncaught ReferenceError: myAge is not defined
 
-//? Оголошення змінної age
-// let age = 20;
+//todo Неможливо отримати доступ до змінної до її ініціалізаці
+let myAge;
+console.log('myAge:', myAge); //! myAge: undefined
 
-//* Правильно, звертаємося після оголошення
-// age = 25;
-// console.log("age:", age); // 25
+//? Оголошення змінної myAge:
+myAge = 16;
+//* ✅ Правильно! 
+//* Звертаємося до змінної myAge після її оголошення та ініціалізаці:
+console.log('myAge:', myAge); 
+console.log("-----------------------");
 
 
 //! Імена КОНСТАНТ 
 //? Константа, що зберігає значення кольору
 const COLOR_TEAL = "#009688";
+console.log('COLOR_TEAL:', COLOR_TEAL);
 
 //? Константа, що зберігає повідомлення про результат логіну
 const LOGIN_SUCCESS_MESSAGE = "Ласкаво просимо!";
+console.log('LOGIN_SUCCESS_MESSAGE:', LOGIN_SUCCESS_MESSAGE);
+console.log("-----------------------");
+
+
+
+
 
 
 //! Практика
-//? 1
-// Використовуючи два console.log() напиши код, який виведе в консоль
-// інструментів розробника два значення: рядок "" та число
+//todo [1]
+//? Використовуючи два console.log() напиши код, який виведе в консоль
+//? інструментів розробника два значення: рядок "" та число
 // console.log("Jacob Mercer")
 // console.log(26)
 
-//? 2
-// За допомогою ключового слова const оголоси дві змінні: 
-// productName - для зберігання назви товару, 
-// pricePerItem - для зберігання ціни за одиницю товару.
+//todo [2]
+//? За допомогою ключового слова const оголоси дві змінні:
+//? productName - для зберігання назви товару,
+//? pricePerItem - для зберігання ціни за одиницю товару.
 
-//? 3
-// Ім'я товару змінили на "my cup" і збільшили його ціну на 50 кредитів. 
-// Перевизнач значення змінних pricePerItem і productName після їх оголошення.
-
+//todo [3]
+//? Ім'я товару змінили на "my cup" і збільшили його ціну на 50 кредитів. 
+//? Перевизнач значення змінних pricePerItem і productName після їх оголошення.
 let productName = "cup";
 let pricePerItem = 200;
-
-// Change code below this line
+//? Змініть код під цим рядком:
 productName = "";
 pricePerItem = "";
 
 //? 4 чи є тут помилка?
-
-// const username = "Mango";
-// username = "Poly";
+// const userName = "Mango";
+// userName = "Poly";
 
 
 //? 5 чи є тут помилка?
-
-// console.log(username);
-// const username = "Mango";
+// console.log(userName);
+// const userName = "Mango";
 
 
 
