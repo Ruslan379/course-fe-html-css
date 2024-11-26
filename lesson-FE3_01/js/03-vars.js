@@ -1,59 +1,68 @@
-console.warn('3.Оголошення змінних');
+console.warn('3.Виведення даних в консоль розробника.\n    Оголошення змінних');
 
-//? Змінні  — це контейнери для зберігання даних 
+//! Виведення даних в консоль розробника(DevTools)
+console.log(10);
+console.log(50);
+console.log("50");
+console.log("50");
+console.log("Hello");
+console.log("JavaScript is awesome!");
+console.log(true);
+console.log(null);
+console.log(undefined);
+console.log("-----------------------");
 
-/*
-!- Виведення даних
- * - console.log()
- * - Змінні
- * - const та let
- * - Унiкальнiсть iдентифiкатора
- * - іменування змінних
- */
-//? Виведення даних в консоль розробника
-// console.log("JavaScript is awesome!");
-// console.log(10);
-// console.log(50);
-// console.log("Hello");
 
 //! Оголошення змінної
-//? Оголошення змінної починається з ключового слова -> (const)
-//? потім ідентифікатор (унікальне імя) -> (age)
-//? потім оператор присвоєння -> (=)
-//? потім значення -> (20)
+//? Змінні  — це контейнери(коробки, бокси) для зберігання даних
+
+//! Імена змінних
+//? Використовуэться camelCase - нотація для ідентифікаторів - яка э стандартом!
+//? Перше слово пишеться малими літерами, а кожне наступне починається з великої.
+//* Наприклад: user, greetUser, getUserData, isActive, activeGuestCount, totalWorkerSalary.
+
 
 //! Інструкція оголошення змінної з ключовим словом const
+//? Оголошення змінної починається з ключового слова - const
+//? потім ідентифікатор (унікальне імя) - age
+//? потім оператор присвоєння - =
+//? потім значення - 20
 const age = 20;
-// console.log(age); // 20
-// console.log("age:", age);
-
-const username = "Mango";
-// console.log(username); // "Mango"
-// console.log("username:", age);
-
-//! Ключове слово let
-//? Для оголошення змінної, 
-//? якій згодом можна задати нове значення - let
-// let myName;
-let myName = "Mango";
-// console.log('myName:', myName); // "Mango"
-
-// myName = "Poly";
-// console.log('myName:', myName); // "Poly"
-
-//! Ключове слово const
-//todo Якщо змінна оголошена як const, 
-//todo перевизначити її значення неможливо!!! 
+console.log(age); //! 20
+console.log("age:", age); //! age: 20
 
 const companyName = "Mango";
-// console.log('companyName:', username); // "Mango"
+console.log(companyName); //! "Mango"
+console.log("companyName:", companyName); //! username: 20
+
+//todo Якщо змінна оголошена як const,
+//todo перевизначити її значення НЕМОЖЛИВО!!!
 
 //! ❌ Неправильно, буде помилка
-// username = "Poly"; //! TypeError: Assignment to constant variable.
+// companyName = "Poly"; //! TypeError: Assignment to constant variable.
+console.log("-----------------------");
 
-//? Створення змінної без ключового слова let або const 
-//? у режимі ”strict mode” призведе до помилки................
+//! var.1 - Інструкція оголошення змінної з ключовим словом let
+//todo Для того, щоб оголосити змінну, якій у подальшому
+//todo можна буде присвоїти НОВЕ ЗНАЧЕННЯ,
+//todo використовується ключове слово let.
+//? Оголошення змінної починається з ключового слова - let
+//? потім ідентифікатор (унікальне імя) - сurrentMonth
+//? потім оператор присвоєння - =
+//? потім значення - "January"
+let сurrentMonth = "January";
+console.log('сurrentMonth:', сurrentMonth); //! "January"
 
+//? Ключове слово let
+//* Якщо змінна оголошена як let,
+//* перевизначити її значення МОЖЛИВО!!!
+сurrentMonth = "February";
+console.log('сurrentMonth:', сurrentMonth); //! "February"
+
+
+//todo Створення змінної без ключового слова let або const 
+//todo у режимі ”strict mode” призведе до помилки
+// currentYear = 2024;
 
 //! Ключове слово let (Невизначена змінна (undefined))
 // let clientname;

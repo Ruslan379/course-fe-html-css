@@ -29,7 +29,7 @@ body {
     color: var(--color-title-lesson);
     text-shadow: 4px 2px 6px #43300088;
     /* ! for position: fixed */
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .title-section {
@@ -46,6 +46,15 @@ body {
     font-style: italic;
     color: var(--color-title-subsection);
     text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.information-hint {
+    font-family: Helvetica;
+    font-style: italic;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: darkred;
 }
 
 .part {
