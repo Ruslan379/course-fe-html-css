@@ -146,7 +146,8 @@ const integerValue = 432369;
 let convertedString = integerValue.toString();
 console.log('convertedString:', convertedString);  //! "432369"
 console.log('typeof convertedString:', typeof convertedString);  //! string
-convertedString = parseInt(convertedString);
+convertedString = parseInt(convertedString); //! var.1 - парсить з рядка ціле число
+// convertedString = Number(convertedString); //! var.2 - явно приводить до числа
 console.log('parseInt(convertedString):', convertedString);  //! 432369
 console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
 console.log("---------------------------------------------");
@@ -173,7 +174,7 @@ console.warn("parseInt(stringValue, ?)");
 
 let stringValue = "432369";
 let parsedInteger = parseInt(stringValue);
-console.log('parsedInteger:', parsedInteger);  //! "432369"
+console.log('parsedInteger:', parsedInteger);  //! 432369
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
 console.log("---------------------------------------------");
 parsedInteger = parseInt(stringValue, 2);
