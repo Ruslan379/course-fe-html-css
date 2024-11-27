@@ -38,7 +38,7 @@ console.log("---------------------------------------------");
 
 //? Арифметичні операції (+, -, *, /) виконують неявне перетворення типів.
 console.log(
-    "%c Арифметичні операції (+, -, *, /) --> ЧИСЛО ",
+    "%c Арифметичні операції (+, -, *, /) --> перетворення типів ",
     "color: yellow; background-color: #2274A5",
 );
 console.log('Number("5" * 2):', Number("5" * 2));  //! 10
@@ -46,7 +46,13 @@ console.log('Number("2" * "5"):', Number("2" * "5"));  //! 10
 console.log('Number("10" - 7):', Number("10" - 7));  //! 3
 console.log('Number(15 - "10"):', Number(15 - "10"));  //! 5
 console.log('Number(15 - "10px"):', Number(15 - "10px"));  //! NaN
+console.log('Number(5 + 5):', Number(5 + 5));  //! 10
+console.log('???_Number(5 + "5"):', Number(5 + "5"));  //todo 55 ????
+console.log('???_Number(5 + "5" + 5):', Number(5 + "5" + 5));  //todo 555 ????
+console.log('???_Number(5 + 5 + "5"):', Number(5 + 5 + "5"));  //todo 105 ????
 console.log('Number(true + 5):', Number(true + 5));  //! 6
+console.log('???_Number(true + "5"):', Number(true + "5"));  //todo NaN
+console.log('???_(true + "5"):', true + "5");  //todo true5
 console.log('Number(5 - true):', Number(5 - true));  //! 4
 console.log('Number(true - 1):', Number(true - 1));  //! 0
 console.log("---------------------------------------------");
@@ -125,3 +131,39 @@ console.warn("Hexadecimal system:");
 console.log('Number.parseFloat("0xff", 16):', Number.parseFloat("0xff", 16));  //! 0
 console.log('Number.parseFloat("ff", 16):', Number.parseFloat("ff", 16));  //! NaN
 console.log("---------------------------------------------");
+
+
+//! Перетворення типів даних у рядок
+//! Метод .toString()
+//? Метод.toString() перетворює об'єкт або примітивне значення в рядок у потрібному форматі.
+console.log(
+    "%c Перетворення типів даних у рядок. \n Метод .toString() ",
+    "color: yellow; background-color: #2274A5",
+);
+const integerValue = 432369;
+let convertedString = integerValue.toString();
+console.log('convertedString:', convertedString);  //! "432369"
+console.log('typeof convertedString:', typeof convertedString);  //! string
+convertedString = parseInt(convertedString);
+console.log('parseInt(convertedString):', convertedString);  //! 432369
+console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
+console.log("---------------------------------------------");
+convertedString = integerValue.toString(2);
+console.log('convertedString(2):', convertedString);  //! "1101001100011110001"
+console.log('typeof convertedString:', typeof convertedString);  //! string
+convertedString = parseInt(convertedString);
+console.log('parseInt(convertedString):', convertedString);  //! 1101001100011110001
+console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
+console.log("---------------------------------------------");
+convertedString = integerValue.toString(16);
+console.log('convertedString(16):', convertedString);  //! "698f1"
+console.log('typeof convertedString:', typeof convertedString);  //! string
+convertedString = parseInt(convertedString);
+console.log('parseInt(convertedString):', convertedString);  //! 698f1
+console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
+console.log("---------------------------------------------");
+console.warn("parseInt(stringValue)");
+const stringValue = "432369";
+const parsedInteger = parseInt(stringValue);
+console.log('parsedInteger:', parsedInteger);  //! "432369"
+console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
