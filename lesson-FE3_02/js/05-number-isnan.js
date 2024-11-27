@@ -53,12 +53,12 @@ console.log('Number.isNaN("qwerty"):', Number.isNaN("qwerty")); //! false
 console.log('Number.isNaN(36 + "Привiт!"):', Number.isNaN(36 + "Привiт!")); //! false
 console.log('Number.isNaN(36):', Number.isNaN(36)); //! false
 let valueNaN = Number("qwerty");
-console.log('valueNaN = Number("qwerty"):', valueNaN);
-console.log('Number.isNaN(valueNaN):', Number.isNaN(valueNaN)); //* true
-console.log('Number.isNaN(NaN):', Number.isNaN(NaN)); //* true
+console.log('valueNaN = Number("qwerty"):', valueNaN); //! NaN
+console.log('Number.isNaN(valueNaN):', Number.isNaN(valueNaN)); //! true
+console.log('Number.isNaN(NaN):', Number.isNaN(NaN)); //! true
 console.log("----------------------------------");
 //! Тип значення NaN: number
 console.warn("Тип значення NaN: number");
-console.log('typeof NaN:', typeof NaN);
-console.log('typeof 36:', typeof 36);
-console.log('typeof "36":', typeof "36");
+console.log('typeof NaN:', typeof NaN); //! number
+console.log('typeof 36:', typeof 36); //! number
+console.log('typeof "36":', typeof "36"); //! string

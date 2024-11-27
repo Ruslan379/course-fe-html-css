@@ -32,22 +32,39 @@ console.log("(0.1 * 10 + 0.2 * 10) / 10 =", result); //! 0.3
 console.warn("Variant 2");
 console.log("(0.1 + 0.2).toFixed(1) =", (0.1 + 0.2).toFixed(1)); //! 0.3
 console.log("(0.1 + 0.2).toFixed(17) =", (0.1 + 0.2).toFixed(17)); //! 0.3000000000000004
-console.log("------------------ Приклади: -----------------");
+console.log("------------- Приклади toFixed(): ------------");
 console.log("(5).toFixed(2) =", (5).toFixed(2));  //! 5.00
 console.log("(8.762195).toFixed(4) =", (8.762195).toFixed(4));  //! 8.7622
+console.log("8.762195.toFixed(4) =", 8.762195.toFixed(4));  //! 8.7622
 console.log("----------------------------------------------");
-const salary = 1300.16472;
-// const salary = "1300.16472"; //! якщо це string?
+
+//? Приклад роботи методу toFixed():
+console.warn("Приклад роботи методу toFixed()");
+const salary = 1300.16472; //? тип salary -> number
+// const salary = "1300.16472"; //! тип salary -> string
 console.log("salary:", salary);
-const salaryStr = salary.toFixed(2);
-// const salaryStr = Number(salary).toFixed(2); //! якщо це string
-console.log("salaryStr = salary.toFixed(2):", salaryStr);
-console.log("typeof salaryStr:", typeof salaryStr);
+
+//? тип salary -> number: var.1(крок-1)
+let salaryRounding = salary.toFixed(2); //? тип salary -> number: var.1(крок-1) -> скорочуємо salary до певного знаку після коми(2)
+console.log("salaryRounding = salary.toFixed(2):", salaryRounding); //? тип salary -> number: var.1(крок-1)
+
+//? тип salary -> number: var.2(кроки-1,2)
+// let salaryRounding = Number(salary.toFixed(2)); //? тип salary -> number: var.2(кроки-1,2)  -> можемо зразу зробити явне приведення salaryRounding до числа
+// console.log("salaryRounding = Number(salary.toFixed(2)):", salaryRounding); //? тип salary -> number: var.2(кроки-1,2)
+
+//! тип salary -> string:
+// let salaryRounding = Number(salary).toFixed(2); //! тип salary -> string: спочатку треба зробити явне приведення salary до числа
+// console.log("let salaryRounding = Number(salary).toFixed(2):", salaryRounding); //! тип salary -> string
+
+console.log("typeof salaryRounding:", typeof salaryRounding);
 console.log("----------------------------------------------");
-//? Треба привести результат роботи метода toFixed() до числа:
-const salaryNum = Number(salary.toFixed(2));
-console.log("salaryNum = Number(salary.toFixed(2):", salaryNum);
-console.log("typeof salaryNum:", typeof salaryNum);
+
+//? Далі треба привести результат роботи метода toFixed() до числа:
+//? тип salary -> number: var.1(крок-2)
+//! тип salary -> string
+salaryRounding = Number(salaryRounding); //* тип salary -> number або string: var.1(крок-2) -> потім робимо явне приведення salaryRounding до числа
+console.log("salaryRounding = Number(salaryRounding):", salaryRounding);
+console.log("typeof salaryNum:", typeof salaryRounding);
 
 
 
