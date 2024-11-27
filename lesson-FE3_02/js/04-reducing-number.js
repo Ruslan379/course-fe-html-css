@@ -166,7 +166,9 @@ console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString
 console.log("---------------------------------------------");
 
 
-//? Методи Number.parseInt() и parseInt()
+//todo Методи Number.parseInt() и parseInt()
+//? Функціонально методи ідентичні,
+//? але використання Number.parseInt() переважно
 console.warn("parseInt(stringValue, ?)");
 
 let stringValue = "432369";
