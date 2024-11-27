@@ -164,8 +164,27 @@ convertedString = parseInt(convertedString);
 console.log('parseInt(convertedString):', convertedString);  //! 698f1
 console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
 console.log("---------------------------------------------");
-console.warn("parseInt(stringValue)");
-const stringValue = "432369";
-const parsedInteger = parseInt(stringValue);
+
+
+//? Методи Number.parseInt() и parseInt()
+console.warn("parseInt(stringValue, ?)");
+
+let stringValue = "432369";
+let parsedInteger = parseInt(stringValue);
 console.log('parsedInteger:', parsedInteger);  //! "432369"
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
+console.log("---------------------------------------------");
+parsedInteger = parseInt(stringValue, 2);
+console.log('parsedInteger:', parsedInteger);  //! NaN
+console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
+console.log("---------------------------------------------");
+stringValue = "1101001100011110001";
+parsedInteger = parseInt(stringValue, 2);
+console.log('parsedInteger:', parsedInteger);  //! 432369
+console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
+console.log("---------------------------------------------");
+stringValue = "698f1";
+parsedInteger = parseInt(stringValue, 16);
+console.log('parsedInteger:', parsedInteger);  //! 432369
+console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
+console.log("---------------------------------------------");
