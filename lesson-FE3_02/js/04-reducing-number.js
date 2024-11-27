@@ -1,4 +1,4 @@
-// console.log(`4.Приведення до числа.\n  Методи Number.parseInt() і\n  Number.parseFloat()`);
+// console.log(`4.Приведення до числа.\n  Методи Number.parseInt() і\n  Number.parseFloat()\n  Приведення до рядка.\n  Метод .toString()`);
 console.log(
     '%c 4.Приведення до числа.      \n   Методи Number.parseInt() і\n   Number.parseFloat().      \n   Приведення до рядка.      \n   Метод .toString()         ',
     'color: white; background-color: #D33F49',
