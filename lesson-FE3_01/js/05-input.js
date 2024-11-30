@@ -93,7 +93,6 @@ function сheckForNumber() {
         return;
     } 
 };
-
 сheckForNumber();
 
 
@@ -103,7 +102,7 @@ function сheckForNumber() {
 
 //! Практика
 //todo [1]
-// Оголоси змінну з привітанням, виведи її через alert()
+//? Оголоси змінну з привітанням, виведи її через alert()
 
 
 //todo [2]

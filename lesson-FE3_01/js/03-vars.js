@@ -130,30 +130,3 @@ console.log("-----------------------");
 
 //! Практика
 //todo [1]
-//? Використовуючи два console.log() напиши код, який виведе в консоль
-//? інструментів розробника два значення: рядок "" та число
-// console.log("Jacob Mercer")
-// console.log(26)
-
-//todo [2]
-//? За допомогою ключового слова const оголоси дві змінні:
-//? productName - для зберігання назви товару,
-//? pricePerItem - для зберігання ціни за одиницю товару.
-
-//todo [3]
-//? Ім'я товару змінили на "my cup" і збільшили його ціну на 50 кредитів. 
-//? Перевизнач значення змінних pricePerItem і productName після їх оголошення.
-let productName = "cup";
-let pricePerItem = 200;
-//? Змініть код під цим рядком:
-productName = "";
-pricePerItem = "";
-
-//? 4 чи є тут помилка?
-// const userName = "Mango";
-// userName = "Poly";
-
-
-//? 5 чи є тут помилка?
-// console.log(userName);
-// const userName = "Mango";
