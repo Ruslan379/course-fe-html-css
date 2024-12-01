@@ -36,9 +36,11 @@ console.log("1 + 2 + '4':", 1 + 2 + '4'); //! "34"
 
 
 //todo Перетворення різних типів в рядки
-//? Явне - Функція-конструктор String(value)
+//? ЯВНЕ - вбудована функція (або функція-конструктор) -> String(value)
+//? Використовується для будь-яких перетворень.
+//? Працює на будь-якому типі значень.
 console.log(
-    "%c Явне приведення до рядка - String(value) ",
+    "%c ЯВНЕ приведення до рядка - String(value) ",
     "color: yellow; background-color: #2274A5",
 );
 console.log("String(5):", String(5)); //! "5"
@@ -49,9 +51,10 @@ console.log("String(null):", String(null)); //! "null"
 console.log("String(NaN):", String(NaN)); //! "NaN"
 
 
-//? Явне - метод .toString()
+//? ЯВНЕ - метод .toString()
+//? Використовується для об'єктів або примітивів
 console.log(
-    "%c Явне приведення до рядка - .toString() ",
+    "%c ЯВНЕ приведення до рядка - .toString() ",
     "color: yellow; background-color: #2274A5",
 );
 console.log("(5).toString():", (5).toString()); //! "5"
@@ -64,9 +67,9 @@ console.error(`(null).toString: Cannot read properties of null (reading 'toStrin
 console.log("(NaN).toString:", (NaN).toString()); //! "NaN"
 
 
-//? Неявне - автоматично під час виконання операцій або обчислень
+//? НЕЯВНЕ - автоматично під час виконання операцій або обчислень
 console.log(
-    "%c Неявне приведення до рядка - конкатенація(+) ",
+    "%c НЕЯВНЕ приведення до рядка - Конкатенація(+) ",
     "color: yellow; background-color: #2274A5",
 );
 console.log("'5' + 3:", '5' + 3); //! "53"
