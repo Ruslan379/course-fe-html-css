@@ -8,7 +8,7 @@ console.log(
 //! Метод Number(val)
 //? Більшість арифметичних операцій і математичних функцій 
 //? перетворюють значення у число автоматично.
-//? Для того, щоб зробити це явно, використовуйте функцію Number(val), 
+//? Для того, щоб зробити це явно, використовується функція Number(val), 
 //? передаючи їй у val те, що потрібно привести до числа.
 console.log(
     "%c Number(val) --> ЧИСЛО ",
@@ -135,59 +135,64 @@ console.log('Number.parseFloat("ff", 16):', Number.parseFloat("ff", 16));  //! N
 console.log("---------------------------------------------");
 
 
-//! Перетворення типів даних у рядок
+//! Перетворення деяких типів даних у рядок
 //! Метод .toString()
 //? Метод.toString() перетворює об'єкт або примітивне значення в рядок у потрібному форматі.
 console.log(
-    "%c Перетворення типів даних у рядок. \n Метод .toString() ",
+    "%c Перетворення деяких типів даних у рядок. \n Метод .toString() ",
     "color: yellow; background-color: #2274A5",
 );
 const integerValue = 432369;
 let convertedString = integerValue.toString();
-console.log('convertedString:', convertedString);  //! "432369"
+console.log('convertedString = (432369).toString():', convertedString);  //! "432369"
 console.log('typeof convertedString:', typeof convertedString);  //! string
-convertedString = parseInt(convertedString); //! var.1 - парсить з рядка ціле число
-// convertedString = Number(convertedString); //! var.2 - явно приводить до числа
-console.log('parseInt(convertedString):', convertedString);  //! 432369
-console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
+let convertedNumber = Number.parseInt(convertedString); //! var.1 - парсить з рядка ціле число
+// let convertedNumber = Number(convertedString); //! var.2 - явно приводить до числа
+console.log('convertedNumber = Number.parseInt(convertedString):', convertedNumber);  //! 432369
+console.log('typeof convertedNumber:', typeof convertedNumber);  //! number
 console.log("---------------------------------------------");
+
 convertedString = integerValue.toString(2);
-console.log('convertedString(2):', convertedString);  //! "1101001100011110001"
+console.log('convertedString = (432369).toString(2):', convertedString);  //! "1101001100011110001"
 console.log('typeof convertedString:', typeof convertedString);  //! string
-convertedString = parseInt(convertedString);
-console.log('parseInt(convertedString):', convertedString);  //! 1101001100011110001
-console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
+convertedNumber = Number.parseInt(convertedString);
+console.log('convertedNumber = Number.parseInt(convertedString):', convertedNumber);  //! 1101001100011110001
+console.log('typeof convertedNumber:', typeof convertedNumber);  //! number
 console.log("---------------------------------------------");
+
 convertedString = integerValue.toString(16);
-console.log('convertedString(16):', convertedString);  //! "698f1"
+console.log('convertedString = (432369).toString(16):', convertedString);  //! "698f1"
 console.log('typeof convertedString:', typeof convertedString);  //! string
-convertedString = parseInt(convertedString);
-console.log('parseInt(convertedString):', convertedString);  //! 698f1
-console.log('typeof parseInt(convertedString):', typeof parseInt(convertedString));  //! number
+convertedNumber = Number.parseInt(convertedString, 16);
+console.log('convertedNumber = Number.parseInt(convertedString, 16):', convertedNumber);  //! 432369
+console.log('typeof convertedNumber:', typeof convertedNumber);  //! number
 console.log("---------------------------------------------");
 
 
 //todo Методи Number.parseInt() и parseInt()
 //? Функціонально методи ідентичні,
 //? але використання Number.parseInt() переважно
-console.warn("parseInt(stringValue, ?)");
-
+console.warn("Number.parseInt(stringValue, ?)");
 let stringValue = "432369";
-let parsedInteger = parseInt(stringValue);
+let parsedInteger = Number.parseInt(stringValue);
 console.log('parsedInteger:', parsedInteger);  //! 432369
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
 console.log("---------------------------------------------");
-parsedInteger = parseInt(stringValue, 2);
+
+parsedInteger = Number.parseInt(stringValue, 2);
 console.log('parsedInteger:', parsedInteger);  //! NaN
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
 console.log("---------------------------------------------");
+
 stringValue = "1101001100011110001";
-parsedInteger = parseInt(stringValue, 2);
+parsedInteger = Number.parseInt(stringValue, 2);
 console.log('parsedInteger:', parsedInteger);  //! 432369
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
 console.log("---------------------------------------------");
+
 stringValue = "698f1";
-parsedInteger = parseInt(stringValue, 16);
+parsedInteger = Number.parseInt(stringValue, 16);
 console.log('parsedInteger:', parsedInteger);  //! 432369
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
 console.log("---------------------------------------------");
+
