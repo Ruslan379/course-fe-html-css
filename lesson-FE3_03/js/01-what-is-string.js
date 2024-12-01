@@ -5,97 +5,61 @@ console.log(
     );
 
 //! Що таке "Рядок"
-//? Правила іменування складових виразу:
-//? + - * / % називаються ОПЕРАТОРАМИ, 
-//? а то на чому вони застосовуються - ОПЕРАНДАМИ.
-//? ОПЕРАНД - це значення, до якого застосовується оператор, 
-//? наприклад, в арифметичних або логічних виразах.
-//todo Літерали можуть бути операндами, коли вони беруть участь у виразі.
-const userAge = 30 - 6; //? Числа 30 та 6 є операндами
-const h = 180; //? 180 - числовий літерал
-const t = 10; //? 10 - числовий літерал
-const userHeight = h - t; //? h та t - операнди
+//? Рядок  — це індексований набір з нуля або більше символів,
+//? укладених в одинарні або подвійні лапки. 
 
+const course1 = "JavaScript"; 
+console.log("course1:", course1); //! JavaScript
 
-//? Бінарні оператори застосов до двух операндів(літералів) (-)
-const clientAge = 30 - 6;
-//? Унарні застосов до одного операнда(літералів) (=)
-const userCash = -800;
+const course2 = 'JavaScript';
+console.log("course2:", course2); //! JavaScript
 
+const course3 = `JavaScript`;
+console.log("course3:", course3); //! JavaScript
 
-//? Задаємо змінні
-const x = 8;
-const y = 5;
-const x2 = 10;
-console.log("x =", x);
-console.log("y =", y);
-console.log("x2 =", x2);
-console.log("--------------");
+console.log("-------------------");
+let emptyString;
+// emptyString = "";
+// emptyString = " ";
+// emptyString = "1";
+// emptyString = 1;
+// emptyString = null;
+// emptyString = false;
+// emptyString = true;
+// emptyString = 0;
+// emptyString = "0";
+console.log("emptyString:", emptyString); //! 
+console.log("typeof emptyString:", typeof emptyString); //! string
+console.log("Number(emptyString):", Number(emptyString)); //! string
 
-//? Додавання
-console.log("x + y =", x + y); 
+console.log("-------------------");
+//? Перевірка на ПУСТИЙ РЯДОК, РЯДОК, ЧИСЛО та undefined:
+console.warn("emptyString - що це?");
+if (emptyString === undefined) {
+    console.log("Можливо це - undefined"); //! Можливо це - undefined
+} else {
+    if (emptyString.length === 0) {
+        console.log("Це - ПУСТИЙ РЯДОК"); //! Це - ПУСТИЙ РЯДОК
+    } else {
+        if (emptyString.length >= 0 & typeof emptyString === "string") {
+            console.log("А це - просто РЯДОК"); //! А це - просто РЯДОК
+        }
+    }
+}
+if (Number(emptyString) === NaN) {
+    console.log("А це - просто РЯДОК"); //! ❌ так НЕ ПРАЦЮЄ!!!
+}
+// if (emptyString.length >= 0 & typeof emptyString === "string") {
+//     console.log("А це - просто РЯДОК"); //! А це - просто РЯДОК
+// }
+if (typeof emptyString === "number") {
+    console.log("О, а це вже ЧИСЛО!"); //! О, а це вже ЧИСЛО!
+}
 
-//? Віднімання
-console.log("x - y =", x - y);
-console.log("y - x =", y - x);
+if (emptyString === null) {
+    console.log("Мабуть це всеж таки - null"); //! Мабуть це всеж таки - null
+}
+if (typeof emptyString === "boolean") {
+    console.log("Ого, а це - boolean"); //! Ого, а це - boolean
+}
 
-//? Множення
-console.log("y * x =", x * y); 
-
-//? Ділення
-console.log("x / y =", x / y);
-console.log("x2 / y =", x2 / y);
-
-//? Залишок від ділення
-console.log("Залишок від ділення x / y =", x % y);
-console.log("Залишок від ділення x2 / y =", x2 % y); 
-
-//? Зведення у ступінь
-console.log("x(8) у ступіні y(5) =", x ** y); //! 32768
-console.log("2 у ступіні 3 =", 2 ** 3); //!  8
-
-
-
-//! Комбіновані оператори
-//? Арифметичні операції із заміною
-//todo Ділення: /=. Приклад: 
-//todo Залишок від ділення: %=. Приклад: 
-
-//? Додавання із заміною
-//todo x += y еквівалентно x = x + y
-let valueSum = 10;
-// valueSum = valueSum + 5; //! var 1.
-valueSum += 5;  //! var 2.
-console.log("valueSum:", valueSum);
-
-//? Віднімання із заміною
-//todo x -= y еквівалентно x = x - y
-let valueX = 10;
-let valueY = 4;
-// valueX = valueX - valueY; //! var 1.
-valueX -= valueY;  //! var 2.
-console.log("Додавання - valueX:", valueX);
-
-//? Множення із заміною
-//todo x *= y еквівалентно x = x * y
-let valueG = 4;
-let valueU = 3;
-// valueG = valueG * valueU; //! var 1.
-valueG *= valueU;  ///! var 2.
-console.log("Множення - valueG:", valueG);
-
-//? Ділення із заміною
-//todo x /= y еквівалентно x = x / y
-let valueM = 100;
-let valueN = 5;
-// valueM = valueM / valueN; //! var 1.
-valueM /= valueN;  //! var 2.
-console.log("Ділення - valueM:", valueM);
-
-//? Залишок від ділення із заміною
-//todo x %= y еквівалентно x = x % y
-let valueO = 30;
-let valueP = 20;
-// valueO = valueO % valueP; //! var 1.
-valueO %= valueP;  //! var 2.
-console.log("Залишок від ділення valueO/valueP --> valueO:", valueO);
