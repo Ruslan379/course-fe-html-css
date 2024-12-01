@@ -1,6 +1,6 @@
 // console.log(`4.Приведення до числа.\n  Методи Number.parseInt() і\n  Number.parseFloat()\n  Приведення до рядка.\n  Метод .toString()`);
 console.log(
-    '%c 4.Приведення до числа.      \n   Методи Number.parseInt() і\n   Number.parseFloat().      \n   Приведення до рядка.      \n   Метод .toString()         ',
+    '%c 4.Приведення до числа.       \n   Методи Number.parseInt() і \n   Number.parseFloat().       \n                              \n   Приведення до рядка.       \n   Метод .toString()          ',
     'color: white; background-color: #D33F49',
 );
 
@@ -110,7 +110,7 @@ console.log(
     "color: red; background-color: #95B46A",
     "https://calculat.io/ru/number/hex-to-dec/ff"
 );
-console.log("---------------------------------------------");
+console.log("------------------------------------------------------------");
 
 
 //! Метод Number.parseFloat() 
@@ -139,8 +139,8 @@ console.log("---------------------------------------------");
 //! Метод .toString()
 //? Метод.toString() перетворює об'єкт або примітивне значення в рядок у потрібному форматі.
 console.log(
-    "%c Перетворення деяких типів даних у рядок. \n Метод .toString() ",
-    "color: yellow; background-color: #2274A5",
+    "%c Перетворення деяких типів даних у рядок. \n Метод .toString()                        ",
+    "color: yellow; background-color: darkred",
 );
 const integerValue = 432369;
 let convertedString = integerValue.toString();
@@ -150,7 +150,7 @@ let convertedNumber = Number.parseInt(convertedString); //! var.1 - парсит
 // let convertedNumber = Number(convertedString); //! var.2 - явно приводить до числа
 console.log('convertedNumber = Number.parseInt(convertedString):', convertedNumber);  //! 432369
 console.log('typeof convertedNumber:', typeof convertedNumber);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
 convertedString = integerValue.toString(2);
 console.log('convertedString = (432369).toString(2):', convertedString);  //! "1101001100011110001"
@@ -158,7 +158,7 @@ console.log('typeof convertedString:', typeof convertedString);  //! string
 convertedNumber = Number.parseInt(convertedString);
 console.log('convertedNumber = Number.parseInt(convertedString):', convertedNumber);  //! 1101001100011110001
 console.log('typeof convertedNumber:', typeof convertedNumber);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
 convertedString = integerValue.toString(16);
 console.log('convertedString = (432369).toString(16):', convertedString);  //! "698f1"
@@ -166,33 +166,45 @@ console.log('typeof convertedString:', typeof convertedString);  //! string
 convertedNumber = Number.parseInt(convertedString, 16);
 console.log('convertedNumber = Number.parseInt(convertedString, 16):', convertedNumber);  //! 432369
 console.log('typeof convertedNumber:', typeof convertedNumber);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
 
-//todo Методи Number.parseInt() и parseInt()
+//todo Методи: parseInt() и Number.parseInt()
 //? Функціонально методи ідентичні,
 //? але використання Number.parseInt() переважно
-console.warn("Number.parseInt(stringValue, ?)");
-let stringValue = "432369";
-let parsedInteger = Number.parseInt(stringValue);
-console.log('parsedInteger:', parsedInteger);  //! 432369
+console.log(
+    "%c Методи: parseInt(stringValue, ?) и \n Number.parseInt(stringValue, ?)    ",
+    "color: yellow; background-color: darkred",
+);
+const stringValue10 = "432369";
+// let parsedInteger = parseInt(stringValue10); //! var.1 - парсить з рядка ціле число
+let parsedInteger = Number.parseInt(stringValue10); //! var.2 - також парсить з рядка ціле число
+console.log('parsedInteger = Number.parseInt("432369"):', parsedInteger);  //! 432369
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
-parsedInteger = Number.parseInt(stringValue, 2);
-console.log('parsedInteger:', parsedInteger);  //! NaN
+// parsedInteger = parseInt(stringValue10, 2); //! var.1
+parsedInteger = Number.parseInt(stringValue10, 2); //! var.2
+console.log('parsedInteger = Number.parseInt("432369", 2):', parsedInteger);  //! NaN
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
-stringValue = "1101001100011110001";
-parsedInteger = Number.parseInt(stringValue, 2);
-console.log('parsedInteger:', parsedInteger);  //! 432369
+const stringValue2 = "1101001100011110001";
+// parsedInteger = parseInt(stringValue2); //! var.1
+parsedInteger = Number.parseInt(stringValue2); //! var.2
+console.log('parsedInteger = Number.parseInt("1101001100011110001"):', parsedInteger);  //! 1101001100011110000
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
-stringValue = "698f1";
-parsedInteger = Number.parseInt(stringValue, 16);
-console.log('parsedInteger:', parsedInteger);  //! 432369
+// parsedInteger = parseInt(stringValue2, 2); //! var.1
+parsedInteger = Number.parseInt(stringValue2, 2); //! var.2
+console.log('parsedInteger = Number.parseInt("1101001100011110001", 2):', parsedInteger);  //! 432369
 console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
-console.log("---------------------------------------------");
+console.log("-------------------------------------------------------------------------");
 
+const stringValue16 = "698f1";
+// parsedInteger = parseInt(stringValue16, 16); //! var.1
+parsedInteger = Number.parseInt(stringValue16, 16); //! var.2
+// console.log('parsedInteger = Number.parseInt("698f1", 16):', parsedInteger);  //! 432369
+console.log('typeof parsedInteger:', typeof parsedInteger);  //! number
+console.log("-------------------------------------------------------------------------");

@@ -17,14 +17,14 @@ console.log('("Mango " + "is " + "happy"):', myMessage); //! "Mango is happy"
 const age = 24;
 const newMessage = "Poly is " + age + " years old!";
 console.log('("Poly is " + age + " years old!"):', newMessage); //! "Poly is 24 years old!"
-console.log("-----------------------------------");
+console.log("---------------------------------------------------------");
 
 
 //? Під час конкатенації будь-який тип даних
 //? буде приведено до рядка та поєднано з іншим рядком.
 console.log("'Mango' + 55:", 'Mango' + 55); //! "Mango55"
 console.log("'Mango' + true:", 'Mango' + true); //! "Mangotrue"
-console.log("-----------------------------------");
+console.log("---------------------------------------------------------");
 
 
 //? Порядок операндів має значення.
