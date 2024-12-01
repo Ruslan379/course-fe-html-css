@@ -43,7 +43,7 @@ if (emptyString === undefined) {
             console.log("Це - ПУСТИЙ РЯДОК"); //! Це - ПУСТИЙ РЯДОК
         } else {
             if (emptyString.length >= 0 & typeof emptyString === "string") {
-                console.log("А це - просто РЯДОК"); //! А це - просто РЯДОК
+                console.log("А це - просто РЯДОК (і він НЕ ПУСТИЙ!)"); //! А це - просто РЯДОК
             }
         }
     }
