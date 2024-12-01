@@ -143,11 +143,7 @@ body {
     display: grid;
     
     /*? КОЛОНКИ (width): */
-    /*?_(1)_  3 (три) колонки з однаковою шириною */
-    /* grid-template-columns: repeat(3, auto);  */
-    /*?_(2)_  3 (три) колонки з однаковою шириною */
-    /* grid-template-columns: auto auto auto;  */
-    /*?_(3)_  3 (три) колонки з шириною 100px 200px 400px */
+    /*?_(1)_  3 (три) колонки з шириною 100px 200px 400px */
     grid-template-columns: 100px 200px 400px;
     
     /*todo РЯДКИ (height): */
@@ -252,7 +248,7 @@ body {
     /* grid-template-columns: 100px 1fr 2fr 1fr; */
     /*?_(6)_ 4 (чотири) колонки з з шириною 100px auto(40.02px) 533.33px 266.66px */
     /*?     ❗️ auto = ширини контенту */
-    /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*3-100px)/4=210px */
+    /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*3-100px-40.02px)/3=266.66px */
     grid-template-columns: 100px auto 2fr 1fr;
     /*?_(6-1) ❗️❗️ <div class="grid-item">2-Ggid</div> */
 }
