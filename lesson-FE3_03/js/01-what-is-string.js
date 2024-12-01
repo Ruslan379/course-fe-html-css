@@ -49,7 +49,7 @@ if (emptyString === undefined) {
     }
 }
 if (Number(emptyString) === NaN) {
-    console.log("А це - просто РЯДОК (❌ так НЕ ПРАЦЮЄ!!!)"); //! ❌ так НЕ ПРАЦЮЄ!!!
+    console.log("А це - просто РЯДОК (❌ так НЕ ПРАЦЮЄ!!!)"); //! ❌ так НЕ ПРАЦЮЄ, бо NaN не дорівнює NaN
 }
 if (typeof emptyString === "number") {
     console.log("О, а це вже ЧИСЛО!"); //! О, а це вже ЧИСЛО!
