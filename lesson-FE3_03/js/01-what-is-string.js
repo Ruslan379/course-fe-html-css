@@ -19,7 +19,7 @@ console.log("course3:", course3); //! JavaScript
 
 console.log("-------------------");
 let emptyString;
-// emptyString = "";
+emptyString = "";
 // emptyString = " ";
 // emptyString = "1";
 // emptyString = 1;
@@ -30,7 +30,7 @@ let emptyString;
 // emptyString = "0";
 console.log("emptyString:", emptyString); //! 
 console.log("typeof emptyString:", typeof emptyString); //! string
-console.log("Number(emptyString):", Number(emptyString)); //! string
+console.log("Number(emptyString):", Number(emptyString)); //! 0
 
 console.log("-------------------");
 //? Перевірка на "що це"?:
@@ -38,16 +38,18 @@ console.warn("emptyString - що це?");
 if (emptyString === undefined) {
     console.log("Можливо це - undefined"); //! Можливо це - undefined
 } else {
-    if (emptyString.length === 0) {
-        console.log("Це - ПУСТИЙ РЯДОК"); //! Це - ПУСТИЙ РЯДОК
-    } else {
-        if (emptyString.length >= 0 & typeof emptyString === "string") {
-            console.log("А це - просто РЯДОК"); //! А це - просто РЯДОК
+    if (typeof emptyString === "string") {
+        if (emptyString.length === 0) {
+            console.log("Це - ПУСТИЙ РЯДОК"); //! Це - ПУСТИЙ РЯДОК
+        } else {
+            if (emptyString.length >= 0 & typeof emptyString === "string") {
+                console.log("А це - просто РЯДОК"); //! А це - просто РЯДОК
+            }
         }
     }
 }
 if (Number(emptyString) === NaN) {
-    console.log("А це - просто РЯДОК"); //! ❌ так НЕ ПРАЦЮЄ!!!
+    console.log("А це - просто РЯДОК (❌ так НЕ ПРАЦЮЄ!!!)"); //! ❌ так НЕ ПРАЦЮЄ!!!
 }
 if (typeof emptyString === "number") {
     console.log("О, а це вже ЧИСЛО!"); //! О, а це вже ЧИСЛО!
@@ -56,6 +58,6 @@ if (emptyString === null) {
     console.log("Мабуть це всеж таки - null"); //! Мабуть це всеж таки - null
 }
 if (typeof emptyString === "boolean") {
-    console.log("Ого, а це - boolean"); //! Ого, а це - boolean
+    console.log("Ого, а це - БУЛЬ"); //! Ого, а це - БУЛЬ
 }
 
