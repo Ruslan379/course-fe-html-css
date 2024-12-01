@@ -33,7 +33,7 @@ console.log("typeof emptyString:", typeof emptyString); //! string
 console.log("Number(emptyString):", Number(emptyString)); //! string
 
 console.log("-------------------");
-//? Перевірка на ПУСТИЙ РЯДОК, РЯДОК, ЧИСЛО та undefined:
+//? Перевірка на "що це"?:
 console.warn("emptyString - що це?");
 if (emptyString === undefined) {
     console.log("Можливо це - undefined"); //! Можливо це - undefined
@@ -49,13 +49,9 @@ if (emptyString === undefined) {
 if (Number(emptyString) === NaN) {
     console.log("А це - просто РЯДОК"); //! ❌ так НЕ ПРАЦЮЄ!!!
 }
-// if (emptyString.length >= 0 & typeof emptyString === "string") {
-//     console.log("А це - просто РЯДОК"); //! А це - просто РЯДОК
-// }
 if (typeof emptyString === "number") {
     console.log("О, а це вже ЧИСЛО!"); //! О, а це вже ЧИСЛО!
 }
-
 if (emptyString === null) {
     console.log("Мабуть це всеж таки - null"); //! Мабуть це всеж таки - null
 }
