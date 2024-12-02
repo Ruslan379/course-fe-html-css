@@ -5,44 +5,50 @@ console.log(
 );
 
 //! Шаблонні рядки та інтерполяція ${…}
-//? Шаблонні рядки — це синтаксис, який полегшує об'єднання статичного тексту з динамічним
-//? зворотн лапки(англ.backticks)(``)
-//? Шаблонні рядки дозволяють підставляти значення змінних безпосередньо всередині рядка
-//?  за допомогою синтаксису інтерполяції ${змінна}.
+//? Шаблонні рядки — це синтаксис, який полегшує об'єднання 
+//? статичного тексту з динамічним(змінними)
+//? за допомогою зворотніх(дивних) лапок(англ.backticks)(``)
+//? Шаблонні рядки дозволяють підставляти значення змінних 
+//? безпосередньо всередині рядка
+//? за допомогою синтаксису інтерполяції -  ${змінна}.
 const userName = "Clinton Eastwood";
-const message = `Hello ${userName} !`;
+const message = `Hello, ${userName}!`;
 console.log("message:", message);
-
+console.log("---------------------------------------------------");
 
 const guestName = "Mango";
 const roomNumber = 207;
 
 const greeting1 = "Welcome " + guestName + ", your room number is " + roomNumber + "!";
-// console.log(greeting1);
+console.log("greeting1:", greeting1);
 
-const greeting = `Welcome ${guestName}, your room number is ${roomNumber}!`;
-// console.log(greeting); 
-
-
+const greeting2 = `Welcome ${guestName}, your room number is ${roomNumber}!`;
+console.log("greeting2:", greeting2);
+console.log("---------------------------------------------------");
 
 
 //? Декілька рядків
-let text = `
+let text = 
+`
 Привіт!
 Вітаю на нашому сайті!
 Тут ти знайдеш все, що потрібно!
 `;
 console.log("text:", text);
-
+console.log("---------------------------------------------------");
 
 //? Все що в лапках буде рядком
-const userString = "158";
-const myNum = 158;
-// console.log(userString);
-// console.log(typeof userString);
-// console.log(myNum);
-// console.log(typeof myNum);
-// console.log(userString + myNum);
+const myString = "123";
+const myNumber = 123;
+// console.log(myString);
+console.log("myString:", myString);
+// console.log(typeof myString);
+console.log("typeof myString:", typeof myString);
+// console.log(myNumber);
+// console.log(typeof myNumber);
+console.log("myNumber:", myNumber);
+console.log("typeof myNumber:", typeof myNumber);
+console.log(myString + myNumber);
 
 
 
