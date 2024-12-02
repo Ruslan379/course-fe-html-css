@@ -113,10 +113,14 @@ console.log("userInput.toUpperCase():", normalizedToUpperCaseInput);  //! "SAMSU
 console.log('userInput.toUpperCase() === BRAND_NAME:', normalizedToUpperCaseInput === BRAND_NAME); //! true
 
 
-//! [5] str.indexOf(substr, pos)
+//! [5] indexOf()
 //? Метод str.indexOf(substr, pos) - substr в  str, починаючи з pos
-//? повертає індекс першого входження (індекс першого символу) підрядка, 
+//? повертає індекс першого входження (індекс першого символу) підрядка,
 //? якщо він знайдений або -1, якщо підрядок не виявлено
+console.log(
+    "%c Метод: indexOf() ",
+    "color: yellow; background-color: #2274A5",
+);
 const newMessage = "Welcome to Bahamas!";
 const index = newMessage.indexOf("to");
 // console.log(index);
