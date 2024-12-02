@@ -114,30 +114,37 @@ console.log('userInput.toUpperCase() === BRAND_NAME:', normalizedToUpperCaseInpu
 
 
 //! [5] indexOf()
-//? Метод str.indexOf(substr, pos) - substr в  str, починаючи з pos
-//? повертає індекс першого входження (індекс першого символу) підрядка,
-//? якщо він знайдений або -1, якщо підрядок не виявлено
+//? Метод string.indexOf(substr, pos) - substr в  str, починаючи з pos
+//? Повертає позицію(індекс), на якій знаходиться ПЕРШИЙ збіг підрядка
+//? або - 1, якщо нічого не знайдено.
 console.log(
     "%c Метод: indexOf() ",
     "color: yellow; background-color: #2274A5",
 );
-const newMessage = "Welcome to Bahamas!";
-const index = newMessage.indexOf("to");
-// console.log(index);
-// console.log(newMessage.indexOf("hello")); 
+const message3 = "Welcome to Bahamas!";
+console.log("message3:", message3);  //! "Welcome to Bahamas!" 
+const index = message3.indexOf("to");
+console.log('index = message3.indexOf("to"):', index);  //! 8 
+console.log('message3.indexOf("hello"):', message3.indexOf("hello"));  //! -1
+console.log("---------------------------------------------");
 
 const myLifeMotto1 = "Live! Laugh! Love!";
-// console.log(myLifeMotto1.indexOf('Lau'));
-// console.log(myLifeMotto1.indexOf('Lau', 2));
-// console.log(myLifeMotto1.indexOf('ve', 2));
+console.log("myLifeMotto1:", myLifeMotto1);  //! "Live! Laugh! Love!"
+
+console.log('myLifeMotto1.indexOf("Lau"):', myLifeMotto1.indexOf("Lau"));  //! 6
+console.log('myLifeMotto1.indexOf("Lau", 7):', myLifeMotto1.indexOf("Lau", 7));  //! -1
+
+console.log('myLifeMotto1.indexOf("ve", 2):', myLifeMotto1.indexOf("ve", 2));  //! 2
+console.log('myLifeMotto1.indexOf("ve", 5):', myLifeMotto1.indexOf("ve", 5));  //! 15
 
 
-
-
-// 3  ============================================================ 
-// includes() використовується для перевірки наявності підрядка у рядку
-// str.includes(substring)  => true / false
-
+//! [6] includes()
+//? includes() використовується для перевірки наявності підрядка у рядку
+//? str.includes(substring)  => true / false
+console.log(
+    "%c Метод: includes() ",
+    "color: yellow; background-color: #2274A5",
+);
 const username = 'Jacob Mercer';
 
 // console.log(username.includes('Jacob')); // true
@@ -155,10 +162,9 @@ const myLifeMotto2 = "Live! Laugh! Love!";
 
 
 
-
-// 4  ============================================================ 
-//  Методи startsWith() і endsWith() призначені для перевірки початку й закінчення рядка відповідно.
-//  Вони повертають булеве значення true або false, 
+//! [7] startsWith() і endsWith()
+//? Методи startsWith() і endsWith() призначені для перевірки початку й закінчення рядка відповідно.
+//? Вони повертають булеве значення true або false, 
 
 const str = "Hello, world!";
 
@@ -181,10 +187,9 @@ const searchmyLifeMotto = "LiV";
 
 
 
-
-// 5  ============================================================ 
-//  Метод trim() використовується для видалення 
-// початкових і кінцевих пробілів із рядка.
+//! [8] trim()
+//? Метод trim() використовується для видалення 
+//? початкових і кінцевих пробілів із рядка.
 const input = " JavaScript is awesome!    ";
 const trimmedInput = input.trim();
 // console.log(trimmedInput); // "JavaScript is awesome!"
@@ -192,13 +197,15 @@ const trimmedInput = input.trim();
 
 
 
-
-//   ============================================================
-// 6.padEnd  padStart
+//! [9] padStart і padEnd
+//?  padStart і padEnd 
 const input2 = "JavaScript";
 // console.log(input2.padEnd(20, '!'));
 
 // console.log(input2.padStart(20, ')'));
+
+
+
 
 
 
