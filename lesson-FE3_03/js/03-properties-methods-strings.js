@@ -139,52 +139,67 @@ console.log('myLifeMotto1.indexOf("ve", 5):', myLifeMotto1.indexOf("ve", 5));  /
 
 
 //! [6] includes()
-//? includes() використовується для перевірки наявності підрядка у рядку
-//? str.includes(substring)  => true / false
+//? Перевіряє, чи міститься підрядок в рядку,
+//? повертає буль - true, якщо міститься,
+//? і false - якщо НЕ міститься.
+//? Регістр символів в рядку і підрядку має значення.
 console.log(
     "%c Метод: includes() ",
     "color: yellow; background-color: #2274A5",
 );
-const username = 'Jacob Mercer';
+const username = "Jacob Mercer";
+console.log("username:", username);  //! "Jacob Mercer"
+console.log('username.includes("Jacob"):', username.includes("Jacob"));  //! true
+console.log('username.includes("Jakob"):', username.includes("Jakob"));  //! false
+console.log('username.includes("Mercer"):', username.includes("Mercer"));  //! true
+console.log('username.includes("Jаcob"):', username.includes("Jаcob"));  //! false (літера "а" - ураїньска)!!!
+console.log("---------------------------------------------");
 
-// console.log(username.includes('Jacob')); // true
-// console.log(username.includes('John')); // false
-// console.log(username.includes('Mercer')); // true
-// console.log(username.includes('Doe')); // false
-
-// Регістр символів у рядку й підрядку має значення
-// console.log(username.includes('jacob')); // false
-// console.log(username.includes('mercer')); // false
+//? Регістр символів у рядку й підрядку має значення
+console.log('username.includes("jacob"):', username.includes("jacob"));  //! false
+console.log('username.includes("mercer"):', username.includes("mercer"));  //! false
+console.log("---------------------------------------------");
 
 const myLifeMotto2 = "Live! Laugh! Love!";
-// console.log(myLifeMotto2.includes('Lau'));
-// console.log(myLifeMotto2.includes('Lau', 7));
-
+console.log("myLifeMotto2:", myLifeMotto2);  //! "Live! Laugh! Love!"
+console.log('myLifeMotto2.includes("Lau"):', myLifeMotto2.includes("Lau"));  //! true
+console.log('myLifeMotto2.includes("Lau", 7):', myLifeMotto2.includes("Lau", 7));  //! false
+console.log("---------------------------------------------");
 
 
 //! [7] startsWith() і endsWith()
 //? Методи startsWith() і endsWith() призначені для перевірки початку й закінчення рядка відповідно.
 //? Вони повертають булеве значення true або false, 
+console.log(
+    "%c Методи: startsWith() і endsWith() ",
+    "color: yellow; background-color: #2274A5",
+);
+const myString2 = "Hello, world!";
+console.log("myString2:", myString2);  //! "Hello, world!"
+console.log('myString2.startsWith("Hello"):', myString2.startsWith("Hello"));  //! true
+console.log('myString2.endsWith("world!"):', myString2.endsWith("world!"));  //! true
 
-const str = "Hello, world!";
+//? Метод чутливий до регістру
+console.log('myString2.startsWith("hello"):', myString2.startsWith("hello"));  //! false
+console.log('myString2.endsWith("World!):', myString2.endsWith("World!"));  //! false
+console.log("---------------------------------------------");
 
-// console.log(str.startsWith("Hello")); // true
-// console.log(str.startsWith("hello")); // false (метод чутливий до регістру)
-
-// console.log(str.endsWith("world!")); // true
-// console.log(str.endsWith("World!")); // false (метод чутливий до регістру)
-
-
-// console.log(myLifeMotto2.startsWith('Lau'));
-// console.log(myLifeMotto2.endsWith('!'));
-
-
+//? Приклад-2
 const myLifeMotto3 = "Live! Laugh! Love!";
-const searchmyLifeMotto = "LiV";
+console.log("myLifeMotto3:", myLifeMotto3);  //! "Live! Laugh! Love!"
+console.log('myLifeMotto3.startsWith("Lau"):', myLifeMotto3.startsWith("Lau"));  //! false
+console.log('myString2.endsWith("!"):', myString2.endsWith("!"));  //! true
+console.log("---------------------------------------------");
 
-// console.log(myLifeMotto3.includes(searchmyLifeMotto.toLowerCase()));
-// console.log(myLifeMotto3.toLowerCase().includes(searchmyLifeMotto.toLowerCase()));
-
+const searchmyLifeMotto3 = "LiV";
+console.log(
+    "myLifeMotto3.includes(searchmyLifeMotto3.toLowerCase()):",
+    myLifeMotto3.includes(searchmyLifeMotto3.toLowerCase())
+);  //! false
+console.log(
+    "myLifeMotto3.toLowerCase().includes(searchmyLifeMotto3.toLowerCase()):",
+    myLifeMotto3.toLowerCase().includes(searchmyLifeMotto3.toLowerCase())
+);  //! true
 
 
 //! [8] trim()
