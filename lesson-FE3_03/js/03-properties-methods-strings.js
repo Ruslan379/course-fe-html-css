@@ -5,137 +5,207 @@ console.log(
 );
 
 //! Властивості та методи рядків
-let a;
-let b;
-a == b   //? нестрога (несувора) рівність
-a === b  //? строга (сувора) рівність
-a != b   //? нестрога (несувора) нерівність
-a !== b  //? строга (сувора) нерівність
+//? Властивості -  описові характеристики сутності.
 
-a = 100;
-b = "100";
-console.log("a =", a, ";", "typeof a =", typeof a);
-console.log("b =", b, ";", "typeof b =", typeof b);
-console.log("-----------------------------");
-
-console.log("a == b:", a == b); //! true
-console.log("a === b:", a === b); //! false
-console.log("a != b:", a != b); //! false
-console.log("a !== b:", a !== b); //! true
+//! [1] .length
+//? Довжина. Властивість length
+const textOne = "Live! Laugh! Love!";
+// console.log(textOne.length);
+// console.log("Repair droid".length);
+// console.log("JavaScript is awesome".length);
 
 
-//? Оператори нестрогої (несуворої) рівності:
-console.log("ПРИКЛАДИ:");
-console.log("5 == 5:", 5 == 5); //! true 
-console.log("5 == 3:", 5 == 3); //! false 
-console.log("5 != 3:", 5 != 3); //! true
-console.log("5 != 5:", 5 != 5); //! false 
-//todo -  Погано, бо виконується неявне перетворення рядків
-//todo    і булевого значення до ЧИСЛА:
-console.log("------- неявне перетворення до ЧИСЛА -------");
-console.log('5 == 5:', 5 == 5); //! true
-console.log('5 == "5":', 5 == "5"); //! true 
-console.log('5 != "5":', 5 != "5"); //! false 
-//* Boolean
-console.log("1 == true:", 1 == true); //! true
-console.log('"1" == true:', "1" == true); //! true
-console.log("[1] == true:", [1] == true); //! true
-console.log("1 != true:", 1 != true); //! false
+//! [2] string[index]
+//? Індексація рядків.
+//? Отримуємо символи рядка - string[index]
+const greating = "Доброго дня";
+const firstSymbol = greating[0];
+const secondSymbol = greating[1];
+const lastElementIndex = greating.length - 1;
+
+const lastSymbol = greating[lastElementIndex];
+// const lastSymbol = greating[greating.length - 1];
+// console.log(firstSymbol);
+// console.log(secondSymbol);
+// console.log(lastSymbol);
 
 
-//? Оператори строгої (суворої) рівності:
-//todo -  Добре, перетворення типів не виконується:
-console.log("---- перетворення до ЧИСЛА не виконується ----");
-console.log("5 === 5:", 5 === 5); //! true 
-console.log('5 === "5":', 5 === "5"); //! false 
-console.log('5 !== "5":', 5 !== "5"); //! true
-//* Boolean
-console.log("1 === true:", 1 === true); //! false
-console.log("1 != true:", 1 !== true); //! true 
+//чи можна змінити рядок?  ==========================================
+let title = "Моя історія";
+// title[6] = ".";   // не можна
+// console.log(title);
 
+
+
+//  Методи — це дії, які можна виконати із сутністю
+// Не можна викликати метод рядка без рядка
+// objectName.method()
+
+//! [1] toLowerCase() і toUpperCase()
+//? Зміна регістру - методи не змінюють вихідний рядок
+
+const phrase = "Live! Laugh! Love!";
+// console.log(phrase.toUpperCase());
+// console.log(phrase.toLowerCase());
+
+const message2 = "Welcome to Bahamas!";
+// console.log(message2.toLowerCase()); 
+// console.log(message2);   //  методи не змінюють вихідний рядок
+
+
+// Для чого цей метод ????????????????
+const brandName = 'samsung';
+const userInput = 'saMsUng';
+const lowercaseInput = userInput.toLowerCase();
+
+// console.log(brandName); 
+// console.log(userInput); 
+// console.log(userInput === brandName); 
+// console.log(lowercaseInput); 
+// console.log(lowercaseInput === brandName); 
+
+
+
+
+// 2  ============================================================ 
+// Метод str.indexOf(substr, pos) - substr в  str, починаючи з pos
+
+//повертає індекс першого входження (індекс першого символу) підрядка, якщо він знайдений
+// або -1, якщо підрядок не виявлено
+
+const message = "Welcome to Bahamas!";
+const index = message.indexOf("to");
+// console.log(index); 
+// console.log(message.indexOf("hello")); 
+
+const phrase1 = "Live! Laugh! Love!";
+// console.log(phrase1.indexOf('Lau'));
+// console.log(phrase1.indexOf('Lau', 2));
+// console.log(phrase1.indexOf('ve', 2));
+
+
+
+
+// 3  ============================================================ 
+// includes() використовується для перевірки наявності підрядка у рядку
+// str.includes(substring)  => true / false
+
+const username = 'Jacob Mercer';
+
+// console.log(username.includes('Jacob')); // true
+// console.log(username.includes('John')); // false
+// console.log(username.includes('Mercer')); // true
+// console.log(username.includes('Doe')); // false
+
+// Регістр символів у рядку й підрядку має значення
+// console.log(username.includes('jacob')); // false
+// console.log(username.includes('mercer')); // false
+
+const phrase2 = "Live! Laugh! Love!";
+// console.log(phrase2.includes('Lau'));
+// console.log(phrase2.includes('Lau', 7));
+
+
+
+
+// 4  ============================================================ 
+//  Методи startsWith() і endsWith() призначені для перевірки початку й закінчення рядка відповідно.
+//  Вони повертають булеве значення true або false, 
+
+const str = "Hello, world!";
+
+// console.log(str.startsWith("Hello")); // true
+// console.log(str.startsWith("hello")); // false (метод чутливий до регістру)
+
+// console.log(str.endsWith("world!")); // true
+// console.log(str.endsWith("World!")); // false (метод чутливий до регістру)
+
+
+// console.log(phrase2.startsWith('Lau'));
+// console.log(phrase2.endsWith('!'));
+
+
+const phrase3 = "Live! Laugh! Love!";
+const searchPhrase = "LiV";
+
+// console.log(phrase3.includes(searchPhrase.toLowerCase()));
+// console.log(phrase3.toLowerCase().includes(searchPhrase.toLowerCase()));
+
+
+
+
+// 5  ============================================================ 
+//  Метод trim() використовується для видалення 
+// початкових і кінцевих пробілів із рядка.
+const input = " JavaScript is awesome!    ";
+const trimmedInput = input.trim();
+// console.log(trimmedInput); // "JavaScript is awesome!"
+// console.log(input); // " JavaScript is awesome!    "
+
+
+
+
+//   ============================================================
+// 6.padEnd  padStart
+const input2 = "JavaScript";
+// console.log(input2.padEnd(20, '!'));
+
+// console.log(input2.padStart(20, ')'));
 
 
 
 
 
 //! ПРАКТИКА
-//todo [0]
-// let resultOne = "25" - 5;
-// console.log(resultOne);
-// console.log(typeof resultOne);
-
-// let resultTwo = 10 * "80";
-// console.log(resultTwo);
-// console.log(typeof resultTwo);
-
-//? Пріорітет операторів
-
-//? Різний пріорітет
-// let resultOne = 2 - 1 * 5;
-// console.log(resultOne);
-
-//? Скобки
-// let resultTwo = (2 - 1) * 5;
-// console.log(resultTwo);
-
-//? Однаковий пріорітет
-// let resultThree = 2 - 1 + 5;
-// console.log(resultThree);
-
-
 //todo [1]
-//? Доповни код, присвоївши змінній totalPrice вираз для підрахунку 
-//? загальної суми замовлення. Змінна pricePerItem зберігає ціну за одиницю товару,
-//?  а orderedQuantity - кількість одиниць товару в замовленні.
-
-//? const pricePerItem = 3500;
-//? const orderedQuantity = 4;
-
-//? const totalPrice = pricePerItem * orderedQuantity;
+// змінна з імям, знайти довжину і вивести повідомлення
+// "Username <name> is <length> characters long
 
 
 //todo [2]
-//? Заміни у виразах стандартні математичні оператори на комбіновані оператори
-
-// let a = 5;
-// let b = 10;
-let c = 15;
-let d = 20;
-
-//? Change code below this line
-// a = a + 2;
-// b = b - 4;
-// c = c * 3;
-// d = d / 10;
-
-// a += 2;
-// b -= 4;
-// c *= 3;
-// d /= 10;
+// Який індекс першого елемента рядка?
 
 
 //todo [3]
-//? Оголоси змінну isAdult та задай їй результат перевірки значення змінної age.
-//?  Використай оператори порівняння та доповни код так, щоб 
-//?  значенням isAdult було true, якщо вік користувача більше або дорівнює 18 
-//?  та false, якщо менше 18.
-// const age = 16;
-// const isAdult = age >= 18;
+// Отримати символ "н":
+const fruit = 'апельсин';
+// console.log(fruit[fruit.length - 1])
 
 
 //todo [4]
-//? Оголоси змінну isValid і задай їй значенням результат перевірки
-//?  рівності паролей в змінних correctPassword і userPassword.
-//? Якщо паролі співпадають (сувора рівність), значення isValid має бути true
-//? Якщо паролі не співпадають, значення isValid має бути false
+// Чи правильно змінюється рядок?
+let product = "Морозиво";
+// product[1] = "O";
+// console.log(product);
 
-const correctPassword = "jqueryismyjam";
-const userPassword = "mangodab3st";
-const isValid = correctPassword === userPassword;
 
-// let a = 1 + 2;
-// let b = 2;
+//todo [5]
+// верхній регістр
+const myText3 = 'мій серіал';
+// console.log(product.toUpperCase());
 
-// let result = 8 - (a = b + 3);
-// console.log("Результат в скобках: " + a);
-// console.log("Общий результат: " + result);
+
+//todo [6]
+// чи містить фраза "Jason Neis" це слово "jAsOn" має бути так
+// Здійсни перевірку незалежно від регістру
+const str1 = "Jason Neis".toLowerCase();
+const searchWord = "jAsOn".toLowerCase();
+// console.log(str1);
+// console.log(searchWord);
+
+// console.log(str1.includes(searchWord));
+// console.log(str1.includes("jAsOn".toLowerCase()));
+// console.log("Jason Neis".toLowerCase().includes("jAsOn".toLowerCase()));
+
+
+//todo [7]
+// true чи false ?
+const myText5 = 'стілець';
+// console.log(myText5.includes('лец', 4));
+
+
+//todo [8]
+// 8 "styles.css", перевірити чи закінчується на ".css", ".js"
+
+// console.log("styles.css".endsWith(".css"));
+// console.log("styles.css".endsWith(".js"));

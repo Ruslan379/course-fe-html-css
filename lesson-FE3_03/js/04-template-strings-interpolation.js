@@ -18,10 +18,10 @@ console.log("---------------------------------------------------");
 
 const guestName = "Mango";
 const roomNumber = 207;
-
+//todo var.1
 const greeting1 = "Welcome " + guestName + ", your room number is " + roomNumber + "!";
 console.log("greeting1:", greeting1);
-
+//todo var.1
 const greeting2 = `Welcome ${guestName}, your room number is ${roomNumber}!`;
 console.log("greeting2:", greeting2);
 console.log("---------------------------------------------------");
@@ -47,12 +47,15 @@ console.log("typeof myString:", typeof myString);
 console.log("myNumber:", myNumber);
 console.log("typeof myNumber:", typeof myNumber);
 
+//todo var.1
 const result1 = myString + myNumber;
 console.log("result1:", result1);
 
+//todo var.2
 const result2 = `myString + myNumber`;
 console.log("result2:", result2);
 
+//todo var.3
 const result3 = `${myString} + ${myNumber}`;
 console.log("result3:", result3);
 console.log("---------------------------------------------------");
