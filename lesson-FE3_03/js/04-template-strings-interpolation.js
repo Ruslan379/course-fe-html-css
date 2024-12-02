@@ -40,15 +40,22 @@ console.log("---------------------------------------------------");
 //? Все що в лапках буде рядком
 const myString = "123";
 const myNumber = 123;
-// console.log(myString);
+
 console.log("myString:", myString);
-// console.log(typeof myString);
 console.log("typeof myString:", typeof myString);
-// console.log(myNumber);
-// console.log(typeof myNumber);
+
 console.log("myNumber:", myNumber);
 console.log("typeof myNumber:", typeof myNumber);
-console.log(myString + myNumber);
+
+const result1 = myString + myNumber;
+console.log("result1:", result1);
+
+const result2 = `myString + myNumber`;
+console.log("result2:", result2);
+
+const result3 = `${myString} + ${myNumber}`;
+console.log("result3:", result3);
+console.log("---------------------------------------------------");
 
 
 
