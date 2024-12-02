@@ -189,9 +189,10 @@ const myLifeMotto3 = "Live! Laugh! Love!";
 console.log("myLifeMotto3:", myLifeMotto3);  //! "Live! Laugh! Love!"
 console.log('myLifeMotto3.startsWith("Lau"):', myLifeMotto3.startsWith("Lau"));  //! false
 console.log('myString2.endsWith("!"):', myString2.endsWith("!"));  //! true
-console.log("---------------------------------------------");
+console.log("");
 
 const searchmyLifeMotto3 = "LiV";
+console.log("searchmyLifeMotto3:", searchmyLifeMotto3);  //! "LiV"
 console.log(
     "myLifeMotto3.includes(searchmyLifeMotto3.toLowerCase()):",
     myLifeMotto3.includes(searchmyLifeMotto3.toLowerCase())
@@ -203,21 +204,59 @@ console.log(
 
 
 //! [8] trim()
-//? Метод trim() використовується для видалення 
+//? Метод trim() використовується для видалення(“обрізання”)
 //? початкових і кінцевих пробілів із рядка.
+console.log(
+    "%c Метод: trim() ",
+    "color: yellow; background-color: #2274A5",
+);
+
 const input = " JavaScript is awesome!    ";
+console.log(input); //! " JavaScript is awesome!    "
+console.log(
+    `%c${input}`,
+    "color: darkred; background-color: yellow",
+); //! " JavaScript is awesome!    "
+console.log("");
+
 const trimmedInput = input.trim();
-// console.log(trimmedInput); // "JavaScript is awesome!"
-// console.log(input); // " JavaScript is awesome!    "
+console.log(trimmedInput); //! "JavaScript is awesome!"
+console.log(
+    `%c${trimmedInput}`,
+    "color: yellow; background-color: green",
+); //! "JavaScript is awesome!"
+console.log("");
 
 
-
-//! [9] padStart і padEnd
-//?  padStart і padEnd 
+//! [9] padStart() і padEnd()
+//?  padStart() і padEnd) доповнюють поточний рядок
+//? іншим рядком(кілька разів, якщо потрібно),
+//? доки отриманий рядок не досягне заданої довжини.
+//? Відступ застосовується з кінця / початку поточного рядка.
+console.log(
+    "%c Методи: padStart() і padEnd() ",
+    "color: yellow; background-color: #2274A5",
+);
 const input2 = "JavaScript";
-// console.log(input2.padEnd(20, '!'));
+console.log("input2:", input2);  //! ""JavaScript""
 
-// console.log(input2.padStart(20, ')'));
+console.log('input2.padEnd(20, "!"):', input2.padEnd(20, "!"));  //! JavaScript!!!!!!!!!!
+console.log('input2.padStart(20, "<"):', input2.padStart(20, "<"));  //! <<<<<<<<<<JavaScript
+
+
+//! [10] replace() і replaceAll()
+//? Повертають новий рядок, в якому перше(replace)
+//? або усі збіги(replaceAll) підрядка
+//? замінені на вказане значення.
+
+
+
+//! [10] slice()
+//? Метод рядків slice(startIndex, endIndex) використовується
+//? для створення копії частини або всього рядка.
+//? Він робить копію елементів рядка від startIndex і до,
+//? але не включно endIndex і повертає новий рядок,
+//? не змінюючи оригінал.
 
 
 
