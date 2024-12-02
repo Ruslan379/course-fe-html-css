@@ -5,45 +5,71 @@ console.log(
 );
 
 //! Властивості та методи рядків
-//? Властивості -  описові характеристики сутності.
+//todo Властивості - це описові характеристики сутності.
 
 //! [1] .length
-//? Довжина. Властивість length
-const textOne = "Live! Laugh! Love!";
-// console.log(textOne.length);
-// console.log("Repair droid".length);
-// console.log("JavaScript is awesome".length);
+//? Властивість .length дозволяє отримати довжину рядка,
+//? тобто кількість його символів
+console.log(
+    "%c Властивість .length ",
+    "color: yellow; background-color: #2274A5",
+);
+const massage1 = "Live! Laugh! Love!";
+console.log("massage1.length:", massage1.length); //! 18
+
+console.log('"Repair droid".length:', "Repair droid".length); //! 12
+console.log('"JavaScript is awesome".length:', "JavaScript is awesome".length); //! 21
 
 
 //! [2] string[index]
 //? Індексація рядків.
-//? Отримуємо символи рядка - string[index]
-const greating = "Доброго дня";
-const firstSymbol = greating[0];
-const secondSymbol = greating[1];
-const lastElementIndex = greating.length - 1;
+//? Отримуємо символи рядка згідно индекса - string[index]
+console.log(
+    "%c Індексація рядків: string[index] ",
+    "color: yellow; background-color: #2274A5",
+);
+const myString = "JavaScript";
+console.log("myString:", myString); //! "JavaScript"
+console.log("myString.length:", myString.length); //! 10
+console.log("------------------------------");
 
-const lastSymbol = greating[lastElementIndex];
-// const lastSymbol = greating[greating.length - 1];
-// console.log(firstSymbol);
-// console.log(secondSymbol);
-// console.log(lastSymbol);
+const firstSymbol = myString[0];
+console.log("firstSymbol = myString[0]:", firstSymbol); //! "J"
+const secondSymbol = myString[1];
+console.log("secondSymbol = myString[1]:", secondSymbol); //! "a"
+console.log("------------------------------");
+
+console.warn("Останній символ:");
+const lastElementIndex = myString.length - 1;
+console.log("lastElementIndex = myString.length - 1:", lastElementIndex); //! 9
+
+const lastSymbol = myString[lastElementIndex]; //todo var.1
+// const lastSymbol = myString[myString.length - 1]; //todo var.2
+console.log("lastSymbol = myString[lastElementIndex]:", lastSymbol); //! "t"
 
 
-//чи можна змінити рядок?  ==========================================
+//! [3] Чи можна змінити рядок?
+console.log(
+    "%c Чи можна змінити рядок? ",
+    "color: yellow; background-color: #2274A5",
+);
 let title = "Моя історія";
-// title[6] = ".";   // не можна
-// console.log(title);
+// title[4] = ",";   //! НЕ МОЖНА!
+console.log("title:", title); //! "t"
+console.error("Uncaught TypeError: Cannot assign to read only property '6' of string 'Моя історія'");
 
 
+//todo Методи — це дії, які можна виконати із сутністю
+//todo Не можна викликати метод рядка без рядка
+//todo синтаксис: objectName.method()
 
-//  Методи — це дії, які можна виконати із сутністю
-// Не можна викликати метод рядка без рядка
-// objectName.method()
-
-//! [1] toLowerCase() і toUpperCase()
-//? Зміна регістру - методи не змінюють вихідний рядок
-
+//! [4] toLowerCase() і toUpperCase()
+//? Зміна регістру.
+//? Ці методи не змінюють вихідний рядок.
+console.log(
+    "%c Зміна регістру:               \n toLowerCase() і toUpperCase() ",
+    "color: yellow; background-color: #2274A5",
+);
 const phrase = "Live! Laugh! Love!";
 // console.log(phrase.toUpperCase());
 // console.log(phrase.toLowerCase());
@@ -53,7 +79,7 @@ const message2 = "Welcome to Bahamas!";
 // console.log(message2);   //  методи не змінюють вихідний рядок
 
 
-// Для чого цей метод ????????????????
+//? Для чого цей метод ????????????????
 const brandName = 'samsung';
 const userInput = 'saMsUng';
 const lowercaseInput = userInput.toLowerCase();
