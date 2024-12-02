@@ -14,8 +14,8 @@ console.log(
     "%c Властивість .length ",
     "color: yellow; background-color: #2274A5",
 );
-const massage1 = "Live! Laugh! Love!";
-console.log("massage1.length:", massage1.length); //! 18
+const lifeMotto = "Live! Laugh! Love!";
+console.log("lifeMotto.length:", lifeMotto.length); //! 18
 
 console.log('"Repair droid".length:', "Repair droid".length); //! 12
 console.log('"JavaScript is awesome".length:', "JavaScript is awesome".length); //! 21
@@ -70,44 +70,62 @@ console.log(
     "%c Зміна регістру:               \n toLowerCase() і toUpperCase() ",
     "color: yellow; background-color: #2274A5",
 );
-const phrase = "Live! Laugh! Love!";
-// console.log(phrase.toUpperCase());
-// console.log(phrase.toLowerCase());
+const myLifeMotto = "Live! Laugh! Love!";
+console.log("myLifeMotto:", myLifeMotto); //! "Live! Laugh! Love!"
+console.log("myLifeMotto.toLowerCase():", myLifeMotto.toLowerCase()); //! "live! laugh! love!"
+console.log("myLifeMotto.toUpperCase():", myLifeMotto.toUpperCase()); //! "LIVE! LAUGH! LOVE!"
+console.log("---------------------------------------------");
 
 const message2 = "Welcome to Bahamas!";
-// console.log(message2.toLowerCase()); 
-// console.log(message2);   //  методи не змінюють вихідний рядок
+console.log("message2.toLowerCase():", message2.toLowerCase()); //! "welcome to bahamas!"
+console.log("message2.toUpperCase():", message2.toUpperCase()); //! "WELCOME TO BAHAMAS!"
+//? методи toLowerCase() і toUpperCase() 
+//? не змінюють вихідний рядок:
+console.log("message2:", message2);  //! "Welcome to Bahamas!" 
+console.log("---------------------------------------------");
+
+//todo Для чого потрібні методи toLowerCase() і toUpperCase()?
+console.warn("Використання toLowerCase() і toUpperCase():");
+//? Бувають ситуації, коли всі символи в рядку
+//? необхідно перетворити в один регістр, ВЕРХНІЙ або нижній.
+//? Наприклад, для пошуку за ключовим словом,
+//? коли користувач вводить рядок 'saMsUng',
+//? а порівняти його потрібно з рядком 'samsung' або 'SAMSUNG'.
+console.log('"saMsUng" === "samsung":', "saMsUng" === "samsung"); //! false
+console.log('"saMsUng" === "SAMSUNG":', "saMsUng" === "SAMSUNG"); //! false
+console.log("---------------------------------------------");
+//? Щоб не вимагати абсолютно точне введення, 
+//? можна зробити «нормалізацію» введеного користувачем рядка,
+//? тобто перетворити всі його символи у верхній 
+//? або нижній регістр.
+//? Методи рядка toLowerCase() і toUpperCase() 
+//? повернуть новий рядок у відповідному регістрі,
+//? не змінюючи оригінальний.
+const BRAND_NAME = "SAMSUNG";
+console.log("BRAND_NAME:", BRAND_NAME);  //! "SAMSUNG"
+const userInput = "saMsUng";
+console.log("userInput:", userInput);  //! "saMsUng"
+console.log('userInput === BRAND_NAME:', userInput === BRAND_NAME); //! false
+console.log("---------------------------------------------");
+
+const normalizedToUpperCaseInput = userInput.toUpperCase();
+console.log("userInput.toUpperCase():", normalizedToUpperCaseInput);  //! "SAMSUNG"
+console.log('userInput.toUpperCase() === BRAND_NAME:', normalizedToUpperCaseInput === BRAND_NAME); //! true
 
 
-//? Для чого цей метод ????????????????
-const brandName = 'samsung';
-const userInput = 'saMsUng';
-const lowercaseInput = userInput.toLowerCase();
+//! [5] str.indexOf(substr, pos)
+//? Метод str.indexOf(substr, pos) - substr в  str, починаючи з pos
+//? повертає індекс першого входження (індекс першого символу) підрядка, 
+//? якщо він знайдений або -1, якщо підрядок не виявлено
+const newMessage = "Welcome to Bahamas!";
+const index = newMessage.indexOf("to");
+// console.log(index);
+// console.log(newMessage.indexOf("hello")); 
 
-// console.log(brandName); 
-// console.log(userInput); 
-// console.log(userInput === brandName); 
-// console.log(lowercaseInput); 
-// console.log(lowercaseInput === brandName); 
-
-
-
-
-// 2  ============================================================ 
-// Метод str.indexOf(substr, pos) - substr в  str, починаючи з pos
-
-//повертає індекс першого входження (індекс першого символу) підрядка, якщо він знайдений
-// або -1, якщо підрядок не виявлено
-
-const message = "Welcome to Bahamas!";
-const index = message.indexOf("to");
-// console.log(index); 
-// console.log(message.indexOf("hello")); 
-
-const phrase1 = "Live! Laugh! Love!";
-// console.log(phrase1.indexOf('Lau'));
-// console.log(phrase1.indexOf('Lau', 2));
-// console.log(phrase1.indexOf('ve', 2));
+const myLifeMotto1 = "Live! Laugh! Love!";
+// console.log(myLifeMotto1.indexOf('Lau'));
+// console.log(myLifeMotto1.indexOf('Lau', 2));
+// console.log(myLifeMotto1.indexOf('ve', 2));
 
 
 
@@ -127,9 +145,9 @@ const username = 'Jacob Mercer';
 // console.log(username.includes('jacob')); // false
 // console.log(username.includes('mercer')); // false
 
-const phrase2 = "Live! Laugh! Love!";
-// console.log(phrase2.includes('Lau'));
-// console.log(phrase2.includes('Lau', 7));
+const myLifeMotto2 = "Live! Laugh! Love!";
+// console.log(myLifeMotto2.includes('Lau'));
+// console.log(myLifeMotto2.includes('Lau', 7));
 
 
 
@@ -147,15 +165,15 @@ const str = "Hello, world!";
 // console.log(str.endsWith("World!")); // false (метод чутливий до регістру)
 
 
-// console.log(phrase2.startsWith('Lau'));
-// console.log(phrase2.endsWith('!'));
+// console.log(myLifeMotto2.startsWith('Lau'));
+// console.log(myLifeMotto2.endsWith('!'));
 
 
-const phrase3 = "Live! Laugh! Love!";
-const searchPhrase = "LiV";
+const myLifeMotto3 = "Live! Laugh! Love!";
+const searchmyLifeMotto = "LiV";
 
-// console.log(phrase3.includes(searchPhrase.toLowerCase()));
-// console.log(phrase3.toLowerCase().includes(searchPhrase.toLowerCase()));
+// console.log(myLifeMotto3.includes(searchmyLifeMotto.toLowerCase()));
+// console.log(myLifeMotto3.toLowerCase().includes(searchmyLifeMotto.toLowerCase()));
 
 
 
