@@ -189,7 +189,7 @@ const myLifeMotto3 = "Live! Laugh! Love!";
 console.log("myLifeMotto3:", myLifeMotto3);  //! "Live! Laugh! Love!"
 console.log('myLifeMotto3.startsWith("Lau"):', myLifeMotto3.startsWith("Lau"));  //! false
 console.log('myString2.endsWith("!"):', myString2.endsWith("!"));  //! true
-console.log("");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 const searchmyLifeMotto3 = "LiV";
 console.log("searchmyLifeMotto3:", searchmyLifeMotto3);  //! "LiV"
@@ -210,14 +210,13 @@ console.log(
     "%c Метод: trim() ",
     "color: yellow; background-color: #2274A5",
 );
-
 const input = " JavaScript is awesome!    ";
 console.log(input); //! " JavaScript is awesome!    "
 console.log(
     `%c${input}`,
     "color: darkred; background-color: yellow",
 ); //! " JavaScript is awesome!    "
-console.log("");
+console.log(". . . . . . . . . . . . . .");
 
 const trimmedInput = input.trim();
 console.log(trimmedInput); //! "JavaScript is awesome!"
@@ -225,7 +224,7 @@ console.log(
     `%c${trimmedInput}`,
     "color: yellow; background-color: green",
 ); //! "JavaScript is awesome!"
-console.log("");
+console.log(". . . . . . . . . . . . . .");
 
 
 //! [9] padStart() і padEnd()
@@ -256,16 +255,12 @@ const jsFileName = "script.js";
 console.log("jsFileName:", jsFileName);  //! "script.js"
 const minifiedJsFileName = jsFileName.replace(".js", ".min.js");
 console.log('jsFileName.replace(".js", ".min.js"):', minifiedJsFileName);  //! "script.min.js"
-console.log("---------------------------------------------");
+console.log("----------------------------------------------------");
 
 const cssFileNames = "styles.css, about.css, portfolio.css";
+console.log("cssFileNames:", cssFileNames);  //! "styles.css, about.css, portfolio.css"
 const minifiedCssFileNames = cssFileNames.replaceAll(".css", ".min.css");
-console.log(minifiedCssFileNames); // "styles.min.css, about.min.css, portfolio.min.css"
-
-
-
-
-
+console.log('cssFileNames.replaceAll(".css", ".min.css"):', minifiedCssFileNames);  //! "styles.min.css, about.min.css, portfolio.min.css"
 
 
 //! [10] slice()
@@ -278,13 +273,16 @@ console.log(
     "%c Метод: slice() ",
     "color: yellow; background-color: #2274A5",
 );
-
-
-
-
-
-
-console.log("---------------------------------------------");
+const productName = "Repair droid";
+console.log("productName:", productName);  //! "Repair droid"
+console.log("productName.slice(0, 4):", productName.slice(0, 4)); //! "Repa"
+// console.log(productName.slice(3, 9)); // "air dr"
+console.log("productName.slice(3, 9):", productName.slice(3, 9)); //! "air dr"
+// console.log(productName.slice(0, productName.length)); // "Repair droid"
+console.log("productName.slice(0, productName.length):", productName.slice(0, productName.length)); //! "Repair droid"
+// console.log(productName.slice(7, productName.length)); // "droid"
+console.log("productName.slice(7, productName.length):", productName.slice(7, productName.length)); //! "droid"
+console.log("-------------------------------------------------------");
 
 
 
