@@ -27,7 +27,7 @@ console.log("greeting2:", greeting2);
 console.log("---------------------------------------------------");
 
 
-//? Декілька рядків
+//? Формуємо декілька рядків
 let text = 
 `
 Привіт!
@@ -37,7 +37,7 @@ let text =
 console.log("text:", text);
 console.log("---------------------------------------------------");
 
-//? Все що в лапках буде рядком
+//? Все що в лапках -  буде рядком
 const myString = "123";
 const myNumber = 123;
 
@@ -59,7 +59,6 @@ console.log("result2:", result2);
 const result3 = `${myString} + ${myNumber}`;
 console.log("result3:", result3);
 console.log("---------------------------------------------------");
-
 
 
 
