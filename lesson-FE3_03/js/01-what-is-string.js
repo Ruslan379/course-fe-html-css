@@ -16,8 +16,8 @@ console.log("course2:", course2); //! JavaScript
 
 const course3 = `JavaScript`;
 console.log("course3:", course3); //! JavaScript
-
 console.log("-------------------");
+
 let emptyString;
 emptyString = "";
 // emptyString = " ";
@@ -31,8 +31,8 @@ emptyString = "";
 console.log("emptyString:", emptyString); //! 
 console.log("typeof emptyString:", typeof emptyString); //! string
 console.log("Number(emptyString):", Number(emptyString)); //! 0
-
 console.log("-------------------");
+
 //? Перевірка на "що це"?:
 console.warn("emptyString - що це?");
 if (emptyString === undefined) {
@@ -60,4 +60,4 @@ if (emptyString === null) {
 if (typeof emptyString === "boolean") {
     console.log("Ого, а це - БУЛЬ"); //! Ого, а це - БУЛЬ
 }
-
+console.log("-------------------");

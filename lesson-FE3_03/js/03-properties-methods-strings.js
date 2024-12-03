@@ -248,6 +248,23 @@ console.log('input2.padStart(20, "<"):', input2.padStart(20, "<"));  //! <<<<<<<
 //? Повертають новий рядок, в якому перше(replace)
 //? або усі збіги(replaceAll) підрядка
 //? замінені на вказане значення.
+console.log(
+    "%c Методи: replace() і replaceAll() ",
+    "color: yellow; background-color: #2274A5",
+);
+const jsFileName = "script.js";
+console.log("jsFileName:", jsFileName);  //! "script.js"
+const minifiedJsFileName = jsFileName.replace(".js", ".min.js");
+console.log('jsFileName.replace(".js", ".min.js"):', minifiedJsFileName);  //! "script.min.js"
+console.log("---------------------------------------------");
+
+const cssFileNames = "styles.css, about.css, portfolio.css";
+const minifiedCssFileNames = cssFileNames.replaceAll(".css", ".min.css");
+console.log(minifiedCssFileNames); // "styles.min.css, about.min.css, portfolio.min.css"
+
+
+
+
 
 
 
@@ -257,6 +274,17 @@ console.log('input2.padStart(20, "<"):', input2.padStart(20, "<"));  //! <<<<<<<
 //? Він робить копію елементів рядка від startIndex і до,
 //? але не включно endIndex і повертає новий рядок,
 //? не змінюючи оригінал.
+console.log(
+    "%c Метод: slice() ",
+    "color: yellow; background-color: #2274A5",
+);
+
+
+
+
+
+
+console.log("---------------------------------------------");
 
 
 
