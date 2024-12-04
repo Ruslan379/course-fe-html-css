@@ -48,8 +48,8 @@ console.log(
 //? на ВЕЛИКУ(заглавну літеру) - "E" (буде в обох прикладах).
 //? Вивести в консоль повідомлення, використовуючи 
 //? значення всіх трьох змінних у такому форматі:
-//? "The last letter in my favorite actor's Russell Crowe is 'E'!" або
-//? "The last letter in favorite actress's Juliette Binoche is 'E'!".
+//? "The last letter in my favorite actor's name Russell Crowe is "E"!" або
+//? "The last letter in my favorite actress's name Juliette Binoche is "E"!".
 //! Код виконаного завдання
 
 
