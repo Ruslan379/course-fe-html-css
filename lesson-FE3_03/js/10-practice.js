@@ -100,6 +100,7 @@ console.log(
 );
 //? Що буде у консолі - true чи false?
 const myText5 = "стілець";
+console.log("myText5:", myText5); 
 console.log(myText5.includes("лец", 4)); //! false або true?
 //? Нащо треба змінити другий аргумент, 
 //? щоб у консолі було true?
