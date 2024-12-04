@@ -53,10 +53,10 @@ console.log(
     `%c Лапки \\' та \\" `,
     "color: yellow; background-color: #2274A5",
 );
-const text3 = 'Привіт моя сім\'я';
+const text3 = 'Привіт, моя сім\'я';
 console.log(text3);
 
-const text4 = "Привіт моя \"сім\'я\"";
+const text4 = "Привіт, моя \"сім\'я\"";
 console.log(text4);
 
 
