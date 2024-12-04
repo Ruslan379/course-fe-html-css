@@ -260,7 +260,14 @@ const input2 = "JavaScript";
 console.log("input2:", input2);  //! ""JavaScript""
 
 console.log('input2.padEnd(20, "!"):', input2.padEnd(20, "!"));  //! JavaScript!!!!!!!!!!
+console.log('input2.padEnd(input2.length + 1,"!"):', input2.padEnd(input2.length + 1, "!"));  //! JavaScript!
+console.log("--------------------------------------------------");
+
 console.log('input2.padStart(20, "<"):', input2.padStart(20, "<"));  //! <<<<<<<<<<JavaScript
+console.log(
+    '(input2.padStart(input2.length + 1, "<")).padEnd(input2.length + 2, ">"):',
+    (input2.padStart(input2.length + 1, "<")).padEnd(input2.length + 2, ">")
+);  //! <JavaScript>
 
 
 //! [10] replace() і replaceAll()
