@@ -5,7 +5,12 @@ console.log(
 );
 
 //! СПЕЦСИМВОЛИ
-
+//todo Спеціальні символи:
+console.log(
+    "%c Спеціальні символи: ",
+    "color: red; background-color: #95B46A",
+    "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String"
+);
 //? Всередині рядків можна використов спецсимволи
 //? які починаються на зворотний слеш  \ 
 
