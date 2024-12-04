@@ -111,20 +111,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //! Оброблювач події для Кнопки-5
-    // button5.addEventListener('click', () => {
-    //     if (button5.textContent === 'Off') {
-    //         button5.textContent = 'On';
-    //         button5.style.backgroundColor = 'green';
-    //         button5.style.color = 'yellow';
-    //         button5.style.boxShadow = '3px 3px 4px #969696';
-    //         loadAndExecuteScript('./js/05-number-isnan.js');
-    //     } else {
-    //         button5.textContent = 'Off';
-    //         button5.style.backgroundColor = '#b70000';
-    //         button5.style.color = 'white';
-    //         button5.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
-    //     }
-    // });
+    button5.addEventListener('click', () => {
+        if (button5.textContent === 'Off') {
+            button5.textContent = 'On';
+            button5.style.backgroundColor = 'green';
+            button5.style.color = 'yellow';
+            button5.style.boxShadow = '3px 3px 4px #969696';
+            loadAndExecuteScript('./js/05-special-characters.js');
+        } else {
+            button5.textContent = 'Off';
+            button5.style.backgroundColor = '#b70000';
+            button5.style.color = 'white';
+            button5.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+        }
+    });
 
     //! Оброблювач події для Кнопки-6
     // button6.addEventListener('click', () => {

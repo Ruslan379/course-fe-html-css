@@ -1,6 +1,6 @@
-// console.log('6.Практика:');
+// console.log('10.Практика:');
 console.log(
-  "%c 6.Практика: ",
+  "%c 10.Практика: ",
   "color: white; background-color: #D33F49",
 );
 
