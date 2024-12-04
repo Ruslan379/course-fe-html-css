@@ -51,6 +51,9 @@ console.log("typeof myNumber:", typeof myNumber);
 const result1 = myString + myNumber;
 console.log("result1:", result1);
 
+const result12 = "123" + 123;
+console.log("result12:", result12);
+
 //todo var.2
 const result2 = `myString + myNumber`;
 console.log("result2:", result2);
