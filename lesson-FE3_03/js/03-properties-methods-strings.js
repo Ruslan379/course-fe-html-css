@@ -257,7 +257,7 @@ console.log(
     "color: yellow; background-color: #2274A5",
 );
 const input2 = "JavaScript";
-console.log("input2:", input2);  //! ""JavaScript""
+console.log("input2:", input2);  //! "JavaScript"
 
 console.log('input2.padEnd(20, "!"):', input2.padEnd(20, "!"));  //! JavaScript!!!!!!!!!!
 console.log('input2.padEnd(input2.length + 1,"!"):', input2.padEnd(input2.length + 1, "!"));  //! JavaScript!
@@ -290,7 +290,7 @@ const minifiedCssFileNames = cssFileNames.replaceAll(".css", ".min.css");
 console.log('cssFileNames.replaceAll(".css", ".min.css"):', minifiedCssFileNames);  //! "styles.min.css, about.min.css, portfolio.min.css"
 
 
-//! [10] slice()
+//! [11] slice()
 //? Метод рядків slice(startIndex, endIndex) використовується
 //? для створення копії частини або всього рядка.
 //? Він робить копію елементів рядка від startIndex і до,
@@ -307,4 +307,7 @@ console.log("productName.slice(3, 9):", productName.slice(3, 9)); //! "air dr"
 console.log("productName.slice(0, productName.length):", productName.slice(0, productName.length)); //! "Repair droid"
 console.log("productName.slice(0, productName.length - 1):", productName.slice(0, productName.length - 1)); //! "Repair droi"
 console.log("productName.slice(7, productName.length):", productName.slice(7, productName.length)); //! "droid"
+console.warn("Останній символ:");
+// const lastElementIndex = myString.length - 1;
+console.log("productName.slice(-1):", productName.slice(-1)); //! "d"
 console.log("-------------------------------------------------------");
