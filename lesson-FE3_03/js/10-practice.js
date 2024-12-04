@@ -64,6 +64,10 @@ let product = "Морозиво";
 // product[1] = "O"; //! так чи ні?
 console.log("product:", product);
 
+let animal = "кот"
+console.log(animal.charAt(1)); ; //! "о"
+// animal = animal.charAt(1) = "O"; //! так чи ні?
+console.log("animal:", animal);
 
 
 //todo [5]

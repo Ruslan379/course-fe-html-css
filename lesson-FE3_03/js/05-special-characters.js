@@ -77,4 +77,3 @@ console.log(text7);
 const text8 = "[UTF-32] Символ \"копірайт\": \u{00A9}";
 console.log(text8);
 
-
