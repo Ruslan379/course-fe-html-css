@@ -21,7 +21,7 @@ console.log('"Repair droid".length:', "Repair droid".length); //! 12
 console.log('"JavaScript is awesome".length:', "JavaScript is awesome".length); //! 21
 
 
-//! [2] string[index]
+//! [2.1] string[index]
 //? Індексація рядків.
 //? Отримуємо символи рядка згідно индекса - string[index]
 console.log(
@@ -33,9 +33,9 @@ console.log("myString:", myString); //! "JavaScript"
 console.log("myString.length:", myString.length); //! 10
 console.log("------------------------------");
 
-const firstSymbol = myString[0];
+let firstSymbol = myString[0];
 console.log("firstSymbol = myString[0]:", firstSymbol); //! "J"
-const secondSymbol = myString[1];
+let secondSymbol = myString[1];
 console.log("secondSymbol = myString[1]:", secondSymbol); //! "a"
 console.log("------------------------------");
 
@@ -48,15 +48,34 @@ const lastSymbol = myString[lastElementIndex]; //todo var.1
 console.log("lastSymbol = myString[lastElementIndex]:", lastSymbol); //! "t"
 
 
+//! [2.2] charAt().
+//? Індексація рядків.
+//? Отримуємо символи рядка згідно индекса - метод charAt(index)
+console.log(
+    "%c Індексація рядків: метод charAt() ",
+    "color: yellow; background-color: #2274A5",
+);
+console.log("myString:", myString); //! "JavaScript"
+console.log("------------------------------");
+
+firstSymbol = myString.charAt(0);
+console.log("firstSymbol = myString.charAt(0):", firstSymbol); //! "J"
+secondSymbol = myString.charAt(1);
+console.log("secondSymbol = myString.charAt(1):", secondSymbol); //! "a"
+console.log("------------------------------");
+
+
 //! [3] Чи можна змінити рядок?
 console.log(
     "%c Чи можна змінити рядок? ",
     "color: yellow; background-color: #2274A5",
 );
 let title = "Моя історія";
+console.log("title:", title); //! "Моя історія"
 // title[4] = ",";   //! НЕ МОЖНА!
-console.log("title:", title); //! "t"
 console.error("Uncaught TypeError: Cannot assign to read only property '6' of string 'Моя історія'");
+console.log("title:", title); //! "Моя історія"
+
 
 
 //todo Методи — це дії, які можна виконати із сутністю
