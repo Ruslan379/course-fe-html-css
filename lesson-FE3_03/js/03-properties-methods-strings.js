@@ -229,21 +229,22 @@ console.log(
     "%c Метод: trim() ",
     "color: yellow; background-color: #2274A5",
 );
-const input = " JavaScript is awesome!    ";
-console.log(input); //! " JavaScript is awesome!    "
+const input = " JavaScript    ";
+console.log(input); //! " JavaScript    "
 console.log(
     `%c${input}`,
     "color: darkred; background-color: yellow",
-); //! " JavaScript is awesome!    "
-console.log(". . . . . . . . . . . . . .");
+); //! " JavaScript    "
+console.log("input.length:", input.length); //! 15
+console.log(". . . . . . . . .");
 
 const trimmedInput = input.trim();
-console.log(trimmedInput); //! "JavaScript is awesome!"
+console.log(trimmedInput); //! "JavaScript"
 console.log(
     `%c${trimmedInput}`,
     "color: yellow; background-color: green",
-); //! "JavaScript is awesome!"
-console.log(". . . . . . . . . . . . . .");
+); //! "JavaScript!"
+console.log("trimmedInput.length:", trimmedInput.length); //! 10
 
 
 //! [9] padStart() і padEnd()
