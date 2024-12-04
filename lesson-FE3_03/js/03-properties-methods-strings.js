@@ -308,6 +308,5 @@ console.log("productName.slice(0, productName.length):", productName.slice(0, pr
 console.log("productName.slice(0, productName.length - 1):", productName.slice(0, productName.length - 1)); //! "Repair droi"
 console.log("productName.slice(7, productName.length):", productName.slice(7, productName.length)); //! "droid"
 console.warn("Останній символ:");
-// const lastElementIndex = myString.length - 1;
 console.log("productName.slice(-1):", productName.slice(-1)); //! "d"
 console.log("-------------------------------------------------------");
