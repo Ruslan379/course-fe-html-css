@@ -1,6 +1,7 @@
 console.warn('3.Виведення даних в консоль розробника.\n    Оголошення змінних');
 
 //! Виведення даних в консоль розробника(DevTools)
+// https://medium.com/free-code-camp/how-to-use-the-javascript-console-going-beyond-console-log-5128af9d573b
 console.log(10);
 console.log(50);
 console.log("50");
@@ -10,7 +11,9 @@ console.log("JavaScript is awesome!");
 console.log(true);
 console.log(null);
 console.log(undefined);
+console.log("https://medium.com/free-code-camp/how-to-use-the-javascript-console-going-beyond-console-log-5128af9d573b");
 console.log("-----------------------");
+
 
 
 //! Оголошення змінної
