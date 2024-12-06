@@ -35,20 +35,23 @@ console.log(
   "%c [3] ",
   "color: yellow; background-color: #2274A5",
 );
-//? Спочатку зробити дві змінні:
-//? першу - <myFavoriteActor> або <myFavoriteActress>
-//? і значенням = "Ім'я вашого улюбленного актора або актриси"
-//? наприклад, "Russell Crowe" або "Juliette Binoche"
-//? та другу - <male> або <female> зі значенням = "my favorite actor's name"
+//? Спочатку зробити дві змінні: 
+//? ПЕРШУ - <myFavoriteActor> або <myFavoriteActress> 
+//? зі значенням = "Ім'я вашого улюбленного актора або актриси"
+//? (імена можна взяти зі "Списка акторів та актрис", він є нижче)
+//? наприклад, "Russell Ira Crowe" або "Juliette Binoche"
+//? та ДРУГУ - <male> або <female> зі значенням = "my favorite actor's name" 
 //? або "my favorite actress's name".
-//? Отримати ОСТАННІЙ символ (в обох прикладах це - "e")
+//? За доромогою властивості або метода рядка 
+//? отримати ОСТАННІЙ символ(в обох прикладах це - "e") 
 //? змінної <myFavoriteActor> або <myFavoriteActress>
-//? та записати це значення у третю змінну <lastCharacter>.
-//? Зробити перетворення значення змінної <lastCharacter>
+//? та записати це значення у ТРЕТЮ змінну <lastCharacter>.
+//? Зробити перетворення значення змінної <lastCharacter> 
 //? на ВЕЛИКУ(заглавну літеру) - "E" (буде в обох прикладах).
-//? Вивести в консоль повідомлення, використовуючи
-//? значення всіх трьох змінних у такому форматі:
-//? "The last letter in my favorite actor's name Russell Crowe is "E"!" або
+//? Вивести в консоль повідомлення, використовуючи 
+//? значення ВСІХ ТРОЬХ змінних у такому форматі:
+//? "The last letter in my favorite actor's name Russell Ira Crowe is "E"!" 
+//? або
 //? "The last letter in my favorite actress's name Juliette Binoche is "E"!".
 //* Список акторів та актрис:
 // William Bradley Pitt
