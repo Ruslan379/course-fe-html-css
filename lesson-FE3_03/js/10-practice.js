@@ -35,21 +35,34 @@ console.log(
   "%c [3] ",
   "color: yellow; background-color: #2274A5",
 );
-//? Спочатку зробити дві змінні: 
-//? першу - <myFavoriteActor> або <myFavoriteActress> 
+//? Спочатку зробити дві змінні:
+//? першу - <myFavoriteActor> або <myFavoriteActress>
 //? і значенням = "Ім'я вашого улюбленного актора або актриси"
 //? наприклад, "Russell Crowe" або "Juliette Binoche"
-//? та другу - <male> або <female> зі значенням = "my favorite actor's name" 
+//? та другу - <male> або <female> зі значенням = "my favorite actor's name"
 //? або "my favorite actress's name".
-//? Отримати ОСТАННІЙ символ (в обох прикладах це - "e") 
+//? Отримати ОСТАННІЙ символ (в обох прикладах це - "e")
 //? змінної <myFavoriteActor> або <myFavoriteActress>
 //? та записати це значення у третю змінну <lastCharacter>.
-//? Зробити перетворення значення змінної <lastCharacter> 
+//? Зробити перетворення значення змінної <lastCharacter>
 //? на ВЕЛИКУ(заглавну літеру) - "E" (буде в обох прикладах).
-//? Вивести в консоль повідомлення, використовуючи 
+//? Вивести в консоль повідомлення, використовуючи
 //? значення всіх трьох змінних у такому форматі:
 //? "The last letter in my favorite actor's name Russell Crowe is "E"!" або
 //? "The last letter in my favorite actress's name Juliette Binoche is "E"!".
+//* Список акторів та актрис:
+// William Bradley Pitt
+// Philip Anthony Hopkins
+// Juliette Binoche
+// Angelina Jolie
+// Russell Ira Crowe
+// Marilyn Monroe
+// Sean Justin Penn
+// Robin Gayle Wright
+// Thomas Sean Connery
+// Kristin Ann Scott Thomas
+// Hedy Lamarr
+// Uma Karuna Thurman
 //! Код виконаного завдання
 
 
