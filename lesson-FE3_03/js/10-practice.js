@@ -51,10 +51,10 @@ console.log(
 //? Вивести в консоль повідомлення, використовуючи 
 //? значення ВСІХ ТРОЬХ змінних у такому форматі:
 //? "The last letter in my favorite actor's name Russell Ira Crowe is "E"!" 
-//? або
+//? або:
 //? "The last letter in my favorite actress's name Juliette Binoche is "E"!".
 //* Список акторів та актрис:
-// William Bradley Pitt
+// William Bradley Pitt 
 // Philip Anthony Hopkins
 // Juliette Binoche
 // Angelina Jolie
