@@ -1,12 +1,16 @@
 // console.log('9.Практика:');
 console.log(
-  "%c 9.Практика: ",
+  "%c 10.Практика: ",
   "color: white; background-color: #D33F49",
 );
 
 //! ПРАКТИКА
 //! 2.Додаткові завдання
 //todo [1]
+console.log(
+  "%c [1] ",
+  "color: yellow; background-color: #2274A5",
+);
 //? Створіть змінні a1, a2, a3, a4, a5 . 
 //? За допомогою математичних операторів,
 //? знайдіть значення виразів: 5 + 3; 5 - 3; 5 * 3; 5 / 3, 
@@ -24,6 +28,10 @@ const a4 = 5 / 3;
 
 
 //todo [2]
+console.log(
+  "%c [2] ",
+  "color: yellow; background-color: #2274A5",
+);
 //? Створіть змінні a6, a7, a8, a9, a10. 
 //? Помістіть в них результат виразів:
 //? 5 % 3;   3 % 5;   5 + '3';   '5' - 3;   75 + 'кг' 
@@ -42,6 +50,10 @@ const a10 = 75 + 'кг';
 
 
 //todo [3]
+console.log(
+  "%c [3] ",
+  "color: yellow; background-color: #2274A5",
+);
 //? Напишіть скрипт для створення випадкового числа 
 //? з плаваючою крапкою від min до max(не враховуючи max).
 const min = 1;
@@ -58,6 +70,10 @@ const result = Math.random() * (max - min) + min;
 
 
 //todo [4]
+console.log(
+  "%c [4] ",
+  "color: yellow; background-color: #2274A5",
+);
 //? Створіть функцію яка генерує 
 //? випадкове ціле число від min до max включно.
 function getRandomInt(min, max) {
@@ -68,6 +84,10 @@ let randomInt = getRandomInt(1, 10);
 
 
 //todo [5]
+console.log(
+  "%c [5] ",
+  "color: yellow; background-color: #2274A5",
+);
 //? Напишіть скрипт, який просить відвідувача 
 //? ввести два числа, і в результаті показує їх суму.
 // let firstNumber = prompt('Давай число 1');

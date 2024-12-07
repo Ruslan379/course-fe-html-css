@@ -1,6 +1,6 @@
 // console.log('8.Запитання:');
 console.log(
-    "%c 8.Запитання: ",
+    "%c 9.Запитання: ",
     "color: white; background-color: #D33F49",
 );
 
