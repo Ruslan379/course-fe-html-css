@@ -26,17 +26,18 @@ console.log(
 //todo     до false в логічному перетворенні:
 //!  0, null, NaN, порожній рядок: "" (або ''), false, undefined 
 
-console.log("Boolean(0):", Boolean(0));
-console.log("Boolean(null):", Boolean(null));
-console.log("Boolean(NaN):", Boolean(NaN));
-console.log('Boolean(""):', Boolean(""));
-console.log("Boolean(false):", Boolean(false));
-console.log("Boolean(undefined):", Boolean(undefined));
+console.log("Boolean(0):", Boolean(0)); //! false
+console.log("Boolean(null):", Boolean(null)); //! false
+console.log("Boolean(NaN):", Boolean(NaN)); //! false
+console.log('Boolean(""):', Boolean("")); //! false
+console.log("Boolean(false):", Boolean(false)); //! false
+console.log("Boolean(undefined):", Boolean(undefined)); //! false
 console.log("---------------------------");
 
 //?  Абсолютно все інше приводиться до true.
-console.log("Boolean(1456):", Boolean(1456));
-console.log('Boolean("world"):', Boolean("world"));
+console.log("Boolean(1456):", Boolean(1456)); //! true
+console.log("Boolean(-1456):", Boolean(-1456)); //! true
+console.log('Boolean("world"):', Boolean("world")); //! true
 
 
 
