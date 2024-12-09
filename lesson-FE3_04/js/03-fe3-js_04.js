@@ -139,6 +139,27 @@ if (condition31) {
     console.log("тіло else if-3");
 }
 console.log("_____________________________");
-//?
-// console.log("a =", a, ";", "typeof a =", typeof a);
-console.log("-----------------------------");
+
+//? ПРИКЛАД:
+//? При першому true перевірки припиняться і виконається 
+//? лише один сценарій, який відповідає цьому true.
+//? Тому, такий запис варто читати як: 
+//? шукаю перший збіг умови, ігнорую все інше.
+let cost3;
+// const subscription = "free";
+// const subscription = "pro";
+const subscription3 = "premium";
+// const subscription3 = "personal";
+
+if (subscription3 === "free") {
+    cost3 = 0;
+} else if (subscription3 === "pro") {
+    cost3 = 100;
+} else if (subscription3 === "premium") {
+    cost3 = 500;
+} else {
+    console.log("Invalid subscription type");
+}
+
+console.log("cost3:", cost3); //! 500
+
