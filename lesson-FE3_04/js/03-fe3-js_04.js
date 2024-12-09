@@ -112,6 +112,33 @@ console.log(
     "color: yellow; background-color: #2274A5",
 );
 console.warn("https://ruslan379.github.io/course-fe-html-css/lesson-FE3_04/images/03_instructions-else...if.jpg");
+//? Конструкція if...else може перевірити і зреагувати
+//? на виконання або невиконання лише однієї умови.
+//? Блок else...if дозволяє додати після else
+//? ще один оператор if з умовою.
+//? В кінці ланцюжка може бути класичний блок else,
+//? який виконається лише у тому випадку,
+//? якщо жодна умова не приведеться до true.
+// let condition31 = true;
+let condition31 = false;
+
+// let condition32 = true;
+let condition32 = false;
+
+// let condition33 = true;
+let condition33 = false;
+
+if (condition31) {
+    // тіло if-1
+    console.log("тіло if-1");
+} else if (condition32) {
+    // тіло else if-2
+    console.log("тіло else if-2");
+} else if (condition33) {
+    // тіло else if-3
+    console.log("тіло else if-3");
+}
+console.log("_____________________________");
 //?
 // console.log("a =", a, ";", "typeof a =", typeof a);
 console.log("-----------------------------");
