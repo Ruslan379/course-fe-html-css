@@ -40,7 +40,7 @@ const result1 = num > 10 && num < 30;
 console.log("num > 10 && num < 30:", result1); //! true
 
 const result2 = num > 10 && num < 10;
-console.log("num > 10 && num < 10:", result2); //! true
+console.log("num > 10 && num < 10:", result2); //! false
 
 
 //! 2-2.Логічне «АБО» (оператор ||)
@@ -55,18 +55,18 @@ console.log(
 //? Щоб оператор || повернув true, достатньо щоб 
 //? хоч би один операнд був істинним (truthy)
 console.log("false || false:", false || false); //! false
-console.log("false || true:", false || true); //! false
-console.log("true || false:", true || false); //! false
+console.log("false || true:", false || true); //! true
+console.log("true || false:", true || false); //! true
 console.log("true || true:", true || true); //! true
 console.log("----------------------------");
 
 //? Приклади:
-console.log('1 || 4:', 1 || 4); //! 4
-console.log('1 || 4 || 0:', 1 || 4 || 0); //! 0
-console.log('1 || 4 || "mango":', 1 || 4 || "mango"); //! mango
-console.log('1 || 4 || 0 || "mango":', 1 || 4 || 0 || "mango"); //! 0
-console.log('1 || 4 || "":', 1 || 4 || ""); //! пустий рядок 
-console.log('1 || "" || 4:', 1 || "" || 4); //! також пустий рядок
+console.log('1 || 4:', 1 || 4); //! 1
+console.log('1 || 4 || 0:', 1 || 4 || 0); //! 1
+console.log('1 || 4 || "mango":', 1 || 4 || "mango"); //! 1
+console.log('1 || 4 || 0 || "mango":', 1 || 4 || 0 || "mango"); //! 1
+console.log('1 || 4 || "":', 1 || 4 || ""); //! 1 
+console.log('1 || "" || 4:', 1 || "" || 4); //! 1
 console.log("----------------------------");
 
 num = 20;
