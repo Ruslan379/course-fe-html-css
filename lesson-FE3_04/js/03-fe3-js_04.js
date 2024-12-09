@@ -35,25 +35,25 @@ console.log("_____________________________");
 //? ПРИКЛАДИ:
 //? Якщо умова приводиться до true,
 //? то виконується код у фігурних дужках тіла if.
-let cost1 = 0;
-const subscription1 = "pro";
+let cost11 = 0;
+const subscription11 = "pro";
 
-if (subscription1 === "pro") {
-    cost1 = 100;
+if (subscription11 === "pro") {
+    cost11 = 100;
 }
 
-console.log("cost1:", cost1); //! 100
+console.log("cost11:", cost11); //! 100
 
 //? Якщо умова приводиться до false,
 //? код у фігурних дужках буде пропущений.
-let cost2 = 0;
-const subscription2 = "free";
+let cost12 = 0;
+const subscription12 = "free";
 
-if (subscription2 === "pro") {
-    cost2 = 100;
+if (subscription12 === "pro") {
+    cost12 = 100;
 }
 
-console.log("cost2:", cost2); //! 0
+console.log("cost12:", cost12); //! 0
 console.log("-----------------------------");
 
 
@@ -66,8 +66,8 @@ console.warn("https://ruslan379.github.io/course-fe-html-css/lesson-FE3_04/image
 //? Розширює синтаксис if таким чином,
 //? що якщо умова приводиться до false, виконається код у
 //? фігурних дужках після оператора else.
-let condition2 = true;
-// let condition2 = false;
+// let condition2 = true;
+let condition2 = false;
 if (condition2) {
     // тіло if
     console.log("тіло if");
@@ -78,7 +78,31 @@ if (condition2) {
 console.log("_____________________________");
 
 //? ПРИКЛАДИ:
-// console.log("a =", a, ";", "typeof a =", typeof a);
+//? Якщо умова приводиться до true,
+//? тіло блока else ігнорується.
+let cost21;
+const subscription21 = "pro";
+
+if (subscription21 === "pro") {
+    cost21 = 100;
+} else {
+    cost21 = 0;
+}
+
+console.log("cost21:", cost21); //! 100
+
+//? Якщо умова приводиться до false,
+//? тіло блока if ігнорується.
+let cost22;
+const subscription22 = "free";
+
+if (subscription22 === "pro") {
+    cost22 = 100;
+} else {
+    cost22 = 0;
+}
+
+console.log("cost22:", cost22); //! 0
 console.log("-----------------------------");
 
 
