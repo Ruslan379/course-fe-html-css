@@ -162,4 +162,3 @@ if (subscription3 === "free") {
 }
 
 console.log("cost3:", cost3); //! 500
-
