@@ -22,20 +22,20 @@ const x2 = 30;
 const number = 31;
 
 //todo: var.1
-console.log(`Число ${number} входить у відрізок ДО ${x1}? `, "умова");
-console.log(`Число ${number} входить у відрізок ПІСЛЯ ${x2}? `, "умова");
-console.log(`Число ${number} входить у відрізок ВІД ${x1} ДО ${x2}? `, "умова");
-console.log(`Число ${number} входить у відрізок ДО ${x1} або ПІСЛЯ ${x2}? `, "умова");
+console.log(`Число <number> входить у відрізок ДО <x1>? `, "умова");
+console.log(`Число <number> входить у відрізок ПІСЛЯ <x2>? `, "умова");
+console.log(`Число <number> входить у відрізок ВІД <x1> ДО <x2>? `, "умова");
+console.log(`Число <number> входить у відрізок ДО <x1> або ПІСЛЯ <x2>? `, "умова");
 console.log("------------------------------------------------------");
 
 //todo: var.2
 if ("умова") {
-  console.log("умова");
+  console.log(`Число <number> ...`);
 } else if ("умова") {
-  console.log("умова");
+  console.log(`Число <number> ...`);
 } else if ("умова") {
-  console.log(`"умова"`);
+  console.log(`Число <number> ...`);
 } else {
-  console.log(`Число ${number} НІКУДИ не входить!`);
+  console.log(`Число <number> НІКУДИ не входить!`);
 }
 
