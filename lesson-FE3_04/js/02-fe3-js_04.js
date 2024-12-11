@@ -102,17 +102,18 @@ console.log("----------------------------");
 //? Приклади:
 console.log("!1:", !1); //! false
 console.log("!0:", !0); //! true
-console.log("----------------------------")
+console.log("----------------------------");
 console.log(!0); // true
 console.log('!(1 || 4):', !(1 || 4)); //! false
 console.log('!(1 || 4 || 0):', !(1 || 4 || 0)); //! false
 console.log('!(1 || 4 || "mango"):', !(1 || 4 || "mango")); //! false
 console.log('!(1 || 4 || 0 || "mango"):', !(1 || 4 || 0 || "mango")); //! false
+console.log('!(1 && 4 || 0 || "mango"):', !(1 && 4 || 0 || "mango")); //! false
 console.log('!(1 || 4 || ""):', !(1 || 4 || "")); //! false
 console.log('!(1 || "" || 4):', !(1 || "" || 4)); //! false
 console.log('!("" || 1 || 4)', !("" || 1 || 4)); //! false
 console.log('!(false || 0 || ""):', !(false || 0 || "")); //! true
-console.log("----------------------------");
+console.log("-------------------------------");
 
 num = 20;
 const result5 = num > 10 || num < 30;
@@ -124,7 +125,7 @@ console.log("!(num > 10 || num < 10):", !result6); //! false
 //? Подвійна інверсія:
 const result7 = !(num > 10 || num < 10);
 console.log("!!(num > 10 || num < 10):", !result7); //! true
-
+console.log("-------------------------------");
 
 //! 2-4.Порядок обчислення
 console.log(
@@ -137,3 +138,19 @@ console.log(
 //todo:  true || (цей операнд не обчислюється)
 console.log("false && (цей операнд не обчислюється)");
 console.log("true || (цей операнд не обчислюється)");
+console.log("---------------------------------------");
+
+//! УВАГА!
+//! Приклад обчислення послідовності операторів && та || 
+//todo: Послідовність виконання визначається пріоритетами:
+//todo: спочатку обчислюється &&, потім ||
+console.warn("Приклад обчислення послідовності операторів && та ||");
+console.log('1 && 4 || 0 && "mango":', 1 && 4 || 0 && "mango"); //! 4
+console.log('Крок_1 -> (1 && 4):', 1 && 4); //! 4
+console.log('Крок_2 -> (0 && "mango"):', 0 && "mango"); //! 0
+console.log('Крок_3 -> (4 || 0):', 4 || 0); //! 4
+console.log(". . . . . . . . . . . . . . . . . . . .");
+
+console.log('1 && "mango" || 1 && undefined:', 1 && "mango" || 1 && undefined); //! "mango"
+console.log('0 && 1 || 1 && "mango":', 0 && 1 || 1 && "mango"); //! "mango"
+console.log("---------------------------------------");
