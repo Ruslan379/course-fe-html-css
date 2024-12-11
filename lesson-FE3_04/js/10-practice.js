@@ -19,7 +19,7 @@ console.log(
 //? - до х1 або після х2
 const x1 = 10;
 const x2 = 30;
-const number = 31;
+const number = 45;
 
 //todo: var.1
 console.log(`Число <number> входить у відрізок ДО <x1>? `, "умова");
