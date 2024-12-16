@@ -51,25 +51,27 @@ if (true) {
     const blockA = "block-A";
 
     //todo: Бачимо глобальну + локальну A
-    console.log(global); //! "global"
-    console.log(blockA); //! block-A
-
+    console.log("Block scope A:", global); //! "global"
+    console.log("Block scope A:", blockA); //! block-A
+    
     //todo: Змінні blockB і blockC не знайдені в доступних областях видимості.
     //todo: Буде помилка звернення до змінної.
     // console.log(blockB); //! ReferenceError: blockB is not defined
     // console.log(blockC); //! ReferenceError: blockC is not defined
+    console.log("-----------------------");
 
     if (true) {
         const blockB = "block-B";
 
         //todo: Бачимо глобальну + зовнішню A + локальну B
-        console.log(global); //! "global"
-        console.log(blockA); //! "block-A"
-        console.log(blockB); //! "block-B"
-
+        console.log("Block scope B:", global); //! "global"
+        console.log("Block scope B:", blockA); //! "block-A"
+        console.log("Block scope B:", blockB); //! "block-B"
+        
         //todo: Змінна blockC не знайдена в доступних областях видимості.
         //todo: Буде помилка звернення до змінної.
         // console.log(blockC); //! ReferenceError: blockC is not defined
+        console.log("-----------------------");
     }
 }
 
@@ -77,22 +79,22 @@ if (true) {
     const blockC = "block-C";
 
     //todo: Бачимо глобальну + локальну C
-    console.log(global); //! "global"
-    console.log(blockC); //! "block-C"
+    console.log("Block scope C:", global); //! "global"
+    console.log("Block scope C:", blockC); //! "block-C"
 
     //todo: Змінні blockA і blockB не знайдені в доступних областях видимості.
     //todo: Буде помилка звернення до змінної.
     // console.log(blockA); //! ReferenceError: blockA is not defined
     // console.log(blockB); //! ReferenceError: blockB is not defined
+    console.log("-----------------------");
 }
 
 //todo: Бачимо лише глобальну
-console.log(global); //! "global"
+console.log("Block scope GLOBAL:", global); //! "global"
 
 //todo: Змінні blockA, blockB і blockC не знайдені в доступних областях видимості.
 //todo: Буде помилка звернення до змінної.
-console.log(blockA); //! ReferenceError: blockA is not defined
-console.log(blockB); //! ReferenceError: blockB is not defined
-console.log(blockC); //! ReferenceError: blockC is not defined
-
-
+console.log("Block scope GLOBAL:", blockA); //! ReferenceError: blockA is not defined
+console.log("Block scope GLOBAL:", blockB); //! ReferenceError: blockB is not defined
+console.log("Block scope GLOBAL:", blockC); //! ReferenceError: blockC is not defined
+console.log("-----------------------");
