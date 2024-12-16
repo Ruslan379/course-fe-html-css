@@ -4,41 +4,49 @@ console.log(
 );
     
 //! Інструкція switch
-//? Послідовність виконання коду зверху вниз !!!!
-//? Для зміни послідовності використовуються цикли та розгалуження.
+//? У деяких випадках незручність читання складних
+//? розгалужень if...else можна уникнути, використовуючи
+//? «плоскіший» синтаксис інструкції розгалуження switch.
 
-//? Розгалуження — можливість виконати ту чи іншу
-//? послідовність коду в залежності від умови.
-//? Результат перевірки умови - завжди буде true або false
+//? Межі застосування switch обмежені задачами з одним
+//? загальним запитанням(що порівнювати) і рядом
+//? варіантів відповідей(з чим порівнювати).
+console.warn("https://ruslan379.github.io/course-fe-html-css/lesson-FE3_05/images/switch.jpg");
 
-//? Двійкова логіка - булева логіка де
-//? умови бінарні, тобто можуть бути представлені
-//? у вигляді 0 і 1, а також у вигляді слів true і false
+//? Його синтаксис складається із блоку switch (значення)
+//? - що потрібно порівняти і набору окремих випадків case значення
+//? - з чим потрібно порівняти.
+//? Для порівняння використовується оператор строгої рівності ===.
+//? Тобто, не можна порівняти більше або менше, лише рівність.
+const valueOriginal = 50;
+// const valueOriginal = 100;
+// const valueOriginal = 200;
+// const valueOriginal = 400;
 
+const valueToCompare1 = 50;
+const valueToCompare2 = 100;
+const valueToCompare3 = 200;
 
-//! Приведення типів
-//? Приведення явне на - Boolean(value)
-//? в логічних операціях, здійснюється приведення типів операндів
-//? до true або false - Truthy і Falsy
-//? необхідно на вході мати два значення та між ними логічний оператор
+console.log("valueOriginal:", valueOriginal);
+console.log(". . . . . . . . . . .");
+console.log("valueToCompare1:", valueToCompare1);
+console.log("valueToCompare2:", valueToCompare2);
+console.log("valueToCompare3:", valueToCompare3);
 
-//todo ❗️❗️❗️ 6 хибних (falsy) значень, які приводять
-//todo     до false в логічному перетворенні:
-//!  0, null, NaN, порожній рядок: "" (або ''), false, undefined 
+switch (valueOriginal) {
+    case valueToCompare1:
+        console.log("Спрацював код ПЕРШОГО блока"); //! інструкції ПЕРШОГО блока;
+        break;
 
-console.log("Boolean(0):", Boolean(0)); //! false
-console.log("Boolean(null):", Boolean(null)); //! false
-console.log("Boolean(NaN):", Boolean(NaN)); //! false
-console.log('Boolean(""):', Boolean("")); //! false
-console.log("Boolean(false):", Boolean(false)); //! false
-console.log("Boolean(undefined):", Boolean(undefined)); //! false
-console.log("---------------------------");
+    case valueToCompare2:
+        console.log("Спрацював код ДРУГОГО блока"); //! інструкції ДРУГОГО блока;
+        break;
+    
+    case valueToCompare3:
+        console.log("Спрацював код ТРЕТЬОГО блока"); //! інструкції ТРЕТЬОГО блока;
+        break;
 
-//?  Абсолютно все інше приводиться до true.
-console.log("Boolean(1456):", Boolean(1456)); //! true
-console.log("Boolean(-1456):", Boolean(-1456)); //! true
-console.log('Boolean("world"):', Boolean("world")); //! true
-
-
-
-
+    default:
+        console.warn("НЕ спрацював ЖОДЕН блок!"); //! інструкції default блока;
+};
+console.log("----------------------------");
