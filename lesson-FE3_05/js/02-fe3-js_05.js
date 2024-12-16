@@ -56,43 +56,43 @@ if (true) {
 
     //todo: Змінні blockB і blockC не знайдені в доступних областях видимості.
     //todo: Буде помилка звернення до змінної.
-    console.log(blockB); //! ReferenceError: blockB is not defined
-    console.log(blockC); //! ReferenceError: blockC is not defined
+    // console.log(blockB); //! ReferenceError: blockB is not defined
+    // console.log(blockC); //! ReferenceError: blockC is not defined
 
     if (true) {
         const blockB = "block-B";
 
         //todo: Бачимо глобальну + зовнішню A + локальну B
-        console.log(global); // "global"
-        console.log(blockA); // "block-A"
-        console.log(blockB); // "block-B"
+        console.log(global); //! "global"
+        console.log(blockA); //! "block-A"
+        console.log(blockB); //! "block-B"
 
         //todo: Змінна blockC не знайдена в доступних областях видимості.
         //todo: Буде помилка звернення до змінної.
-        console.log(blockC); // ReferenceError: blockC is not defined
+        // console.log(blockC); //! ReferenceError: blockC is not defined
     }
 }
 
 if (true) {
-    const blockC = "block C";
+    const blockC = "block-C";
 
     //todo: Бачимо глобальну + локальну C
-    console.log(global); // global
-    console.log(blockC); // block C
+    console.log(global); //! "global"
+    console.log(blockC); //! "block-C"
 
     //todo: Змінні blockA і blockB не знайдені в доступних областях видимості.
     //todo: Буде помилка звернення до змінної.
-    console.log(blockA); // ReferenceError: blockA is not defined
-    console.log(blockB); // ReferenceError: blockB is not defined
+    // console.log(blockA); //! ReferenceError: blockA is not defined
+    // console.log(blockB); //! ReferenceError: blockB is not defined
 }
 
 //todo: Бачимо лише глобальну
-console.log(global); // global
+console.log(global); //! "global"
 
 //todo: Змінні blockA, blockB і blockC не знайдені в доступних областях видимості.
 //todo: Буде помилка звернення до змінної.
-console.log(blockA); // ReferenceError: blockA is not defined
-console.log(blockB); // ReferenceError: blockB is not defined
-console.log(blockC); // ReferenceError: blockC is not defined
+console.log(blockA); //! ReferenceError: blockA is not defined
+console.log(blockB); //! ReferenceError: blockB is not defined
+console.log(blockC); //! ReferenceError: blockC is not defined
 
 
