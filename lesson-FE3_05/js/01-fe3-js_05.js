@@ -50,3 +50,28 @@ switch (valueOriginal) {
         console.warn("НЕ спрацював ЖОДЕН блок!"); //! інструкції default блока;
 };
 console.log("----------------------------");
+
+//? Приклад:
+let cost;
+// const subscription = "free";
+const subscription = "pro";
+// const subscription = "premium";
+// const subscription = "personal";
+
+switch (subscription) {
+    case "free":
+        cost = 0;
+        break;
+
+    case "pro":
+        cost = 100;
+        break;
+
+    case "premium":
+        cost = 500;
+        break;
+
+    default:
+        console.log("Invalid subscription type");
+}
+console.log("cost:", cost); //! 100

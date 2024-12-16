@@ -146,8 +146,8 @@ console.log("_____________________________");
 //? Тому, такий запис варто читати як: 
 //? шукаю перший збіг умови, ігнорую все інше.
 let cost3;
-// const subscription = "free";
-// const subscription = "pro";
+// const subscription3 = "free";
+// const subscription3 = "pro";
 const subscription3 = "premium";
 // const subscription3 = "personal";
 
