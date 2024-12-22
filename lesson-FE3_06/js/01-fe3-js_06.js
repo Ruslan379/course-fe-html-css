@@ -29,23 +29,26 @@ console.warn("https://ruslan379.github.io/course-fe-html-css/lesson-FE3_06/image
 //? тому тіло може не виконатися жодного разу, 
 //? якщо умова від самого початку - хибна.
 let counter = 0;
+// counter = 4; //? після перевірки умови(хибна) - цикл НЕ виконається
 
-while (counter < 10) {
+while (counter < 4) {
     console.log("ТІЛО ЦИКЛУ --> counter(ДО):", counter);
     counter += 1;
     console.log("ТІЛО ЦИКЛУ --> counter(ПІСЛЯ):", counter);
 };
+
 console.log("____ ПОЗА ЦИКЛУ --> counter:", counter);
 console.log("-----------------------------------------");
 
+
 //? ПРИКЛАД:
 let clientCounter = 18;
-// clientCounter = 30; //? після перевіпки умови(хибна) цикл НЕ виконується
+// clientCounter = 30; //? після перевірки умови(хибна) - цикл НЕ виконається
 const maxClients = 26;
 
 while (clientCounter < maxClients) {
     console.log("ТІЛО ЦИКЛУ --> clientCounter(ДО):", clientCounter);
-    clientCounter += 2;
+    clientCounter += 1;
     console.log("ТІЛО ЦИКЛУ --> clientCounter(ПІСЛЯ):", clientCounter);
 };
 console.log("____ ПОЗА ЦИКЛУ --> clientCounter:", clientCounter);
