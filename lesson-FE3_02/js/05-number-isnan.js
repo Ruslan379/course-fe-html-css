@@ -39,6 +39,18 @@ console.log('isNaN("36"):', isNaN("36")); //! false, "НІ, це - ЧИСЛО!"
 console.log('isNaN(NaN):', isNaN(NaN)); //* true, "ТАК, це НЕ ЧИСЛО!"
 console.log("----------------------------------");
 
+//? Три дивні значення isNaN()
+console.log('isNaN(" "):', isNaN(" ")); //! false, "НІ, це - ЧИСЛО!"
+console.log('isNaN(true):', isNaN(true)); //! false, "НІ, це - ЧИСЛО!"
+console.log('isNaN(null):', isNaN(null)); //! false, "НІ, це - ЧИСЛО!"
+console.log("----------------------------------");
+
+//? Як уникнути трьох дивних значення isNaN()
+console.log('parseFloat(null):', parseFloat(null)); //! NaN
+console.log('parseFloat(" "):', parseFloat(" ")); //! NaN
+console.log('parseFloat(true):', parseFloat(true)); //! NaN
+console.log('isNaN(NaN):', isNaN(NaN)); //* true, "ТАК, це НЕ ЧИСЛО!"
+
 
 //! Перевірка на NaN - метод Number.isNaN(val)
 //? Для всіх значень val крім NaN, при передачі в Number.isNaN(val) поверне false.
