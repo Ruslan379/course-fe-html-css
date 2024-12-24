@@ -24,7 +24,7 @@ console.log("-----------------------------------------");
 let password = "";
 
 do {
-    password = prompt("Введіть пароль довший 4-х символів", "");
+    password = prompt("Введіть пароль довший 4-х символів");
 } while (password.length < 5);
 
 console.log("Ви ввели пароль: ", password);
