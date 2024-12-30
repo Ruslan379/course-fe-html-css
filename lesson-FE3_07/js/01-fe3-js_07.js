@@ -21,7 +21,7 @@ console.log("-----------------------------------------");
 
 
 //! Доступ до елементів
-console.warn("Доступ до елементів: \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_07/indexing-array-elements.jpg");
+console.warn("Доступ до елементів: \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_07/images/indexing-array-elements.jpg");
 //? Для доступу до значення елемента масиву 
 //? використовується синтаксис квадратних дужок масив[індекс]. 
 //? Між іменем змінної, що зберігає масив, 
