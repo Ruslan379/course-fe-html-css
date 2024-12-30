@@ -1,8 +1,8 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #dfffd084;
-    --color-title-lesson: #ae7d00d9;
+    --color-background-body: #dfffd088;
+    --color-title-lesson: #bd0097;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
