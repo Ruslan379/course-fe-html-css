@@ -38,8 +38,11 @@ console.log("---------------------------------------------------------");
 const newNumbers = [1, 2, 3, 4, 5, 6, 7];
 console.log("newNumbers:", newNumbers); //! [1, 2, 3, 4, 5, 6, 7]
 
-const newBooleans = [true, false, true, undefined, null];
-console.log("newBooleans:", newBooleans); //! [true, false, true, undefined, null]
+const newBooleans = [true, false, true, false];
+console.log("newBooleans:", newBooleans); //! [true, false, true, false]
+
+const differentDataTypes = ["Mango", 7, false, undefined, null];
+console.log("differentDataTypes:", differentDataTypes); //! ['Mango', 7, false, undefined, null]
 
 
 //! Перевизначення
