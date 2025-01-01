@@ -35,6 +35,12 @@ console.log("newClients[1]:", newClients[1]); //! Poly
 console.log("newClients[2]:", newClients[2]); //! Ajax
 console.log("---------------------------------------------------------");
 
+const newNumbers = [1, 2, 3, 4, 5, 6, 7];
+console.log("newNumbers:", newNumbers); //! [1, 2, 3, 4, 5, 6, 7]
+
+const newBooleans = [true, false, true, undefined, null];
+console.log("newBooleans:", newBooleans); //! [true, false, true, undefined, null]
+
 
 //! Перевизначення
 console.warn("Перевизначення елементів масиву:");
