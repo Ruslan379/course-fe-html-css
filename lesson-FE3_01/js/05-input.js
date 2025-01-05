@@ -63,7 +63,8 @@ console.log('typeof quantity(before) =', typeof quantity);
 //? Якщо необхідно, перетворюємо тип значення
 //? змінної quantity зі string на number:
 // if (quantity === "" || quantity === null) {
-//     сheckForNumber();
+//     alert(" ПОМИЛКА!\n Це не число!");
+//     return;
 // };
 quantity = Number(quantity);
 console.log('quantity(after)):', quantity);
