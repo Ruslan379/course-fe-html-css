@@ -60,8 +60,11 @@ let quantity = prompt('prompt() --> Введіть кількість товар
 console.log('quantity(before)):', quantity);
 console.log('typeof quantity(before) =', typeof quantity);
 
-//? Якщо необхідно, перетворюємо тип значення 
+//? Якщо необхідно, перетворюємо тип значення
 //? змінної quantity зі string на number:
+// if (quantity === "" || quantity === null) {
+//     сheckForNumber();
+// };
 quantity = Number(quantity);
 console.log('quantity(after)):', quantity);
 console.log('typeof quantity(after) =', typeof quantity);
