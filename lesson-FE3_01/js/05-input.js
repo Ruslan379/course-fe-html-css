@@ -9,9 +9,9 @@ console.warn('5.Взаємодія з користувачем. Отриманн
 
 //! alert()
 //? Виводить модальне вікно з ПОВІДОМЛЕННЯМ і КНОПКОЮ [OK] та чекає підтвердження.
-const myMmessage = "alert() --> JavaScript is awesome!";
-console.log(myMmessage);
-alert(myMmessage);
+const myMessage = "alert() --> JavaScript is awesome!";
+console.log(myMessage);
+// alert(myMessage);
 
 //? Приклад того як alert() блокує інтерпретацію(компіляцію)
 // //todo Тут код припиняє свою роботу до
