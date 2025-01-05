@@ -12,11 +12,8 @@ console.warn('5.Взаємодія з користувачем. Отриманн
 const myMmessage = "alert() --> JavaScript is awesome!";
 console.log(myMmessage);
 alert(myMmessage);
-console.log("---------------------------------");
 
 //? Приклад того як alert() блокує інтерпретацію(компіляцію)
-// console.log('До запуска alert()');
-// alert('alert() --> Зверніть увагу на консоль!');
 // //todo Тут код припиняє свою роботу до
 // //todo підтерження повідомленя від alert(),
 // //todo тобто до натискання на кнопку[OK]
