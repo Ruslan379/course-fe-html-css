@@ -15,8 +15,12 @@ console.warn("Створення масиву:");
 //? Масив оголошується і береться
 //? у квадратні дужки[] - літералом масиву.
 //? Всередині дужок кожен елемент масиву розділяється комою.
+const arrayEmpty = [];
+console.log("arrayEmpty:", arrayEmpty); //! []
+console.log("-----------------------------------------");
 const clients = ["Mango", "Poly", "Ajax"];
 console.log("clients:", clients); //! ['Mango', 'Poly', 'Ajax']
+console.log("typeof clients:", typeof clients); //! object
 console.log("-----------------------------------------");
 
 
