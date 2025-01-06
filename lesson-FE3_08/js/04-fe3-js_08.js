@@ -5,6 +5,64 @@ console.log(
 
 //! 4.Методи push() і pop() та unshift() і shift()
 console.warn("Методи push() і pop() та unshift() і shift(): \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_08/images/methods-push-pop-unshift-shift.jpg");
-//? 
+//? Додають або видаляють крайні елементи масиву. 
+//? Працюють тільки з крайнім лівим 
+//? і крайнім правим елементом, 
+//? і не можуть вставити або видалити 
+//? елемент з довільної позиції.
+
+//! Метод push()
+console.warn("Метод push():");
+//? Метод push() додає один або декілька елементів
+//? наприкінці масиву, без необхідності зазначати
+//? індекси елементів, що додаються.
+//? Повертає довжину масиву після додавання елементів.
+const numbersArr= [];
+console.log("numbersArr:", numbersArr); //! []
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+let push = numbersArr.push("first");
+console.log('numbersArr.push("first"):', numbersArr); //! ['first']
+console.log("push:", push); //! 1
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+push = numbersArr.push("second");
+console.log('numbersArr.push("second"):', numbersArr); //! ['first', 'second']
+console.log("push:", push); //! 2
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+push = numbersArr.push("third");
+console.log('numbersArr.push("third"):', numbersArr); //! ['first', 'second', 'third']
+console.log("push:", push); //! 3
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+push = numbersArr.push("fourth");
+console.log('numbersArr.push("fourth"):', numbersArr); //! ['first', 'second', 'third', 'fourth']
+console.log("push:", push); //! 4
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+push = numbersArr.push("fifth");
+console.log('numbersArr.push("fifth"):', numbersArr); //! ['first', 'second', 'third', 'fourth', 'fifth']
+console.log("push:", push); //! 5
+console.log("-------------------------------------------------------------------");
+
+
+//! Метод pop()
+console.warn("Метод pop():");
+//?
+
+console.log("-----------------------------------------");
+
+
+//! Метод unshift()
+console.warn("Метод unshift():");
+//?
+
+console.log("-----------------------------------------");
+
+
+//! Метод shift()
+console.warn("Метод shift():");
+//?
 
 console.log("-----------------------------------------");
