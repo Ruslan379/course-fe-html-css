@@ -30,4 +30,4 @@ clientsArr = ["Mango", "Ajax", "Poly", "Kiwi"];
 console.log("clientsArr:", clientsArr); //! ['Mango', 'Ajax', 'Poly', 'Kiwi']
 console.log('clientsArr.includes("Poly"):', clientsArr.includes("Poly")); //! true
 console.log('clientsArr.includes("Monkong"):', clientsArr.includes("Monkong")); //! false
-console.log("-----------------------------------------");
+console.log("----------------------------------------------------");

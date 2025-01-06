@@ -14,13 +14,14 @@ let a = 5;
 let b = a;
 console.log("a:", a); //! 5
 console.log("b:", b); //! 5
+console.log(". . . .");
 
 //? Змінимо значення a на 10:
 a = 10;
 console.log("a:", a); //! 10
 //? Значення b не змінилося, оскільки це окрема копія:
 console.log("b:", b); //! 5
-console.log("-----------------------------------------");
+console.log("--------------------------------------");
 
 
 //! Присвоєння за посиланням 
@@ -33,7 +34,7 @@ const arrA = ["Mango"];
 const arrB = arrA;
 console.log("arrA:", arrA); //! ['Mango']
 console.log("arrB:", arrB); //! ['Mango']
-console.log(". . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . .");
 
 //? Змінимо масив, додавши ще один елемент,
 //? використовуючи вказівник з arrA:
@@ -45,7 +46,7 @@ console.log("arrA:", arrA); //! ['Mango', 'Poly']
 //? як і arrA, просто містять посилання на 
 //? одне і те ж саме місце в пам'яті:
 console.log("arrB:", arrB); //! ['Mango', 'Poly']
-console.log(". . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . .");
 
 //? Результат повторюється, 
 //? якщо додати ще один елемент до arrB:
@@ -53,4 +54,4 @@ arrB[arrB.length] = "Ajax"; //todo: var.1
 // arrB.push("Ajax"); //todo: var.2
 console.log("arrA:", arrA); //! ['Mango', 'Poly', 'Ajax']
 console.log("arrB:", arrB); //! ['Mango', 'Poly', 'Ajax']
-console.log("-----------------------------------------");
+console.log("--------------------------------------");
