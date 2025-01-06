@@ -89,14 +89,73 @@ console.log("-------------------------------------------------------------------
 
 //! Метод unshift()
 console.warn("Метод unshift():");
-//?
+//? Метод unshift() додає один або декілька елементів
+//? в початок масиву, без необхідності зазначати
+//? індекси елементів, що додаються.
+//? ПОВЕРТАЄ довжину масиву після додавання елементів.
+console.log("array:", array); //! []
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-console.log("---------------------------------------------------------------------------");
+let unshift = array.unshift("fifth");
+console.log('array.unshift("fifth"):', array); //! ['fifth']
+console.log("unshift:", unshift); //! 1
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
+unshift = array.unshift("fourth");
+console.log('array.unshift("fourth"):', array); //! ['fourth', 'fifth']
+console.log("unshift:", unshift); //! 2
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+unshift = array.unshift("third");
+console.log('array.unshift("third"):', array); //! ['third', 'fourth', 'fifth']
+console.log("unshift:", unshift); //! 3
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+unshift = array.unshift("second");
+console.log('array.unshift("second"):', array); //! ['second', 'third', 'fourth', 'fifth']
+console.log("unshift:", unshift); //! 4
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+unshift = array.unshift("first");
+console.log('array.unshift("first"):', array); //! ['first', 'second', 'third', 'fourth', 'fifth']
+console.log("unshift:", unshift); //! 5
+console.log("-------------------------------------------------------------------------------");
 
 
 //! Метод shift()
 console.warn("Метод shift():");
-//?
+//? Метод shift() видаляє елемент з початку масиву
+//? і ПОВЕРТАЄ видалений елемент. 
+//? Якщо масив порожній, метод ПОВЕРТАЄ undefined.
+console.log("array:", array); //! ['first', 'second', 'third', 'fourth', 'fifth']
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-console.log("---------------------------------------------------------------------------");
+let shift = array.shift();
+console.log('array.shift():', array); //! ['second', 'third', 'fourth', 'fifth']
+console.log("shift:", shift); //! 'first'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+shift = array.shift();
+console.log('array.shift():', array); //! ['third', 'fourth', 'fifth']
+console.log("shift:", shift); //! 'second'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+shift = array.shift();
+console.log('array.shift():', array); //! ['fourth', 'fifth']
+console.log("shift:", shift); //! 'third'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+shift = array.shift();
+console.log('array.shift():', array); //! ['fifth']
+console.log("shift:", shift); //! 'fourth'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+shift = array.shift();
+console.log('array.shift():', array); //! []
+console.log("shift:", shift); //! 'fifth'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+shift = array.shift();
+console.log('array.shift():', array); //! []
+console.log("shift:", shift); //! undefined
+console.log("-------------------------------------------------------------");
