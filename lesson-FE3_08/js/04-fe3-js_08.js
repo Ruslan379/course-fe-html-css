@@ -16,7 +16,7 @@ console.warn("Метод push():");
 //? Метод push() додає один або декілька елементів
 //? наприкінці масиву, без необхідності зазначати
 //? індекси елементів, що додаються.
-//? Повертає довжину масиву після додавання елементів.
+//? ПОВЕРТАЄ довжину масиву після додавання елементів.
 const numbersArr= [];
 console.log("numbersArr:", numbersArr); //! []
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
@@ -49,9 +49,41 @@ console.log("-------------------------------------------------------------------
 
 //! Метод pop()
 console.warn("Метод pop():");
-//?
+//? Метод pop() видаляє останній елемент з кінця масиву
+//? і ПОВЕРТАЄ видалений елемент. 
+//? Якщо масив порожній, метод ПОВЕРТАЄ undefined.
+console.log("numbersArr:", numbersArr); //! ['first', 'second', 'third', 'fourth', 'fifth']
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-console.log("-----------------------------------------");
+let pop = numbersArr.pop();
+console.log('numbersArr.pop():', numbersArr); //! ['first', 'second', 'third', 'fourth']
+console.log("pop:", pop); //! 'fifth'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+pop = numbersArr.pop();
+console.log('numbersArr.pop():', numbersArr); //! ['first', 'second', 'third']
+console.log("pop:", pop); //! 'fourth'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+pop = numbersArr.pop();
+console.log('numbersArr.pop():', numbersArr); //! ['first', 'second']
+console.log("pop:", pop); //! 'third'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+pop = numbersArr.pop();
+console.log('numbersArr.pop():', numbersArr); //! ['first']
+console.log("pop:", pop); //! 'second'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+pop = numbersArr.pop();
+console.log('numbersArr.pop():', numbersArr); //! []
+console.log("pop:", pop); //! 'first'
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+pop = numbersArr.pop();
+console.log('numbersArr.pop():', numbersArr); //! []
+console.log("pop:", pop); //! undefined
+console.log("-------------------------------------------------------------------");
 
 
 //! Метод unshift()
