@@ -17,32 +17,32 @@ console.warn("Метод push():");
 //? наприкінці масиву, без необхідності зазначати
 //? індекси елементів, що додаються.
 //? ПОВЕРТАЄ довжину масиву після додавання елементів.
-const numbersArr= [];
-console.log("numbersArr:", numbersArr); //! []
+const array= [];
+console.log("array:", array); //! []
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-let push = numbersArr.push("first");
-console.log('numbersArr.push("first"):', numbersArr); //! ['first']
+let push = array.push("first");
+console.log('array.push("first"):', array); //! ['first']
 console.log("push:", push); //! 1
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-push = numbersArr.push("second");
-console.log('numbersArr.push("second"):', numbersArr); //! ['first', 'second']
+push = array.push("second");
+console.log('array.push("second"):', array); //! ['first', 'second']
 console.log("push:", push); //! 2
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-push = numbersArr.push("third");
-console.log('numbersArr.push("third"):', numbersArr); //! ['first', 'second', 'third']
+push = array.push("third");
+console.log('array.push("third"):', array); //! ['first', 'second', 'third']
 console.log("push:", push); //! 3
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-push = numbersArr.push("fourth");
-console.log('numbersArr.push("fourth"):', numbersArr); //! ['first', 'second', 'third', 'fourth']
+push = array.push("fourth");
+console.log('array.push("fourth"):', array); //! ['first', 'second', 'third', 'fourth']
 console.log("push:", push); //! 4
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-push = numbersArr.push("fifth");
-console.log('numbersArr.push("fifth"):', numbersArr); //! ['first', 'second', 'third', 'fourth', 'fifth']
+push = array.push("fifth");
+console.log('array.push("fifth"):', array); //! ['first', 'second', 'third', 'fourth', 'fifth']
 console.log("push:", push); //! 5
 console.log("-------------------------------------------------------------------");
 
@@ -52,36 +52,36 @@ console.warn("Метод pop():");
 //? Метод pop() видаляє останній елемент з кінця масиву
 //? і ПОВЕРТАЄ видалений елемент. 
 //? Якщо масив порожній, метод ПОВЕРТАЄ undefined.
-console.log("numbersArr:", numbersArr); //! ['first', 'second', 'third', 'fourth', 'fifth']
+console.log("array:", array); //! ['first', 'second', 'third', 'fourth', 'fifth']
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-let pop = numbersArr.pop();
-console.log('numbersArr.pop():', numbersArr); //! ['first', 'second', 'third', 'fourth']
+let pop = array.pop();
+console.log('array.pop():', array); //! ['first', 'second', 'third', 'fourth']
 console.log("pop:", pop); //! 'fifth'
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-pop = numbersArr.pop();
-console.log('numbersArr.pop():', numbersArr); //! ['first', 'second', 'third']
+pop = array.pop();
+console.log('array.pop():', array); //! ['first', 'second', 'third']
 console.log("pop:", pop); //! 'fourth'
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-pop = numbersArr.pop();
-console.log('numbersArr.pop():', numbersArr); //! ['first', 'second']
+pop = array.pop();
+console.log('array.pop():', array); //! ['first', 'second']
 console.log("pop:", pop); //! 'third'
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-pop = numbersArr.pop();
-console.log('numbersArr.pop():', numbersArr); //! ['first']
+pop = array.pop();
+console.log('array.pop():', array); //! ['first']
 console.log("pop:", pop); //! 'second'
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-pop = numbersArr.pop();
-console.log('numbersArr.pop():', numbersArr); //! []
+pop = array.pop();
+console.log('array.pop():', array); //! []
 console.log("pop:", pop); //! 'first'
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-pop = numbersArr.pop();
-console.log('numbersArr.pop():', numbersArr); //! []
+pop = array.pop();
+console.log('array.pop():', array); //! []
 console.log("pop:", pop); //! undefined
 console.log("-------------------------------------------------------------------");
 
