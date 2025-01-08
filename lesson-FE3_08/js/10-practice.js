@@ -10,4 +10,10 @@ console.log(
   "%c [1] ",
   "color: yellow; background-color: #2274A5",
 );
-//? 
+//? Перетворити масив:
+const arrayOriginal = ["мango-10", "Kiwi-2", "Monkong-2", "Singu-2", "Mango-1", "Ajax-1", "Poly-1", "singu-20"];
+//? на масив:
+const arrayNew = ["Mango-1", "Ajax-1", "Poly-1", "Kiwi-2", "Monkong-2", "Singu-2"];
+//? не змінюючи значення єлементів та використовуючи методи:
+//? push(), pop(), unshift(), shift(),
+//? slice(), splice(), concat() за власним бажанням!
