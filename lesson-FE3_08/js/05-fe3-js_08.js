@@ -14,5 +14,13 @@ console.log("clients:", clients); //!
 
 const clientsSlice = clients.slice(1, 3);
 console.log("clients.slice(1, 3):", clientsSlice); //!
-console.log("-----------------------------------------");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . .");
 
+//? Якщо start та end не зазначені,
+//? буде створена повна копія вихідного масиву.
+const clientsSliceAll = clients.slice();
+console.log("clients.slice():", clientsSliceAll); //!
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+console.log("-----------------------------------------");
