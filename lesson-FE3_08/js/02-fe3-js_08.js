@@ -10,17 +10,17 @@ console.warn("Метод split():");
 //? Якщо роздільник - це порожній рядок,
 //? то створиться масив окремих символів.
 //? Роздільником може бути один або декілька символів.
-const name = "Mango";
-console.log('name:', name);
-const nameArr = name.split("");
-console.log('name.split(""):', nameArr); //! ['M', 'a', 'n', 'g', 'o']
+const string = "Mango";
+console.log('string:', string);
+const stringToArr = string.split("");
+console.log('string.split(""):', stringToArr); //! ['M', 'a', 'n', 'g', 'o']
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . .");
 
 const message = "JavaScript - це цікаво";
 console.log('message:', message);
-const messageArr = message.split(" ");
-console.log('message.split(" "):', messageArr); //! ['JavaScript', '-', 'це', 'цікаво']
-console.log("--------------------------------------------------------------");
+let messageArr = message.split(" ");
+console.log('messageArr = message.split(" "):', messageArr); //! ['JavaScript', '-', 'це', 'цікаво']
+console.log("----------------------------------------------------");
 
 
 //! Метод join()
@@ -30,9 +30,9 @@ console.warn("Метод join():");
 //? У рядку елементи будуть розділені символом
 //? або групою символів, зазначених в delimiter.
 //? Тобто ця операція протилежна методу рядків split(delimiter).
-const wordsArr = ["JavaScript", "це", "цікаво"];
-console.log('wordsArr:', wordsArr);
-console.log('wordsArr.join(""):', wordsArr.join("")); //! "JavaScriptцецікаво"
-console.log('wordsArr.join(" "):', wordsArr.join(" ")); //! "JavaScript це цікаво"
-console.log('wordsArr.join("-"):', wordsArr.join("-")); //! "JavaScript-це-цікаво"
-console.log("--------------------------------------------------------------");
+messageArr = ["JavaScript", "це", "цікаво"];
+console.log('messageArr:', messageArr);
+console.log('messageArr.join(""):', messageArr.join("")); //! "JavaScriptцецікаво"
+console.log('messageArr.join(" "):', messageArr.join(" ")); //! "JavaScript це цікаво"
+console.log('messageArr.join("-"):', messageArr.join("-")); //! "JavaScript-це-цікаво"
+console.log("----------------------------------------------------");
