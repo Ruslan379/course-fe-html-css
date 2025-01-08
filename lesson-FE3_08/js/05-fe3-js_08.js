@@ -50,3 +50,16 @@ console.log("clients.slice(undefined, 3):", clientsSliceEnd3); //! ['Mango', 'Aj
 console.log("---------------------------------------------------------");
 
 
+//? Якщо start чи end негативні(від'ємні), тоді вони
+//? інтерпретуються як довжина об'єкта плюс ix значення.
+const clientsLength = clients.length;
+console.log("clients.length:", clientsLength); //! 4
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+const clientsSliceNegative = clients.slice(-3, -1);
+console.log("clients.slice(-3, -1):", clientsSliceNegative); //! ['Ajax', 'Poly']
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+const clientsSlicePositive = clients.slice(1, 3);
+console.log("clients.slice(1, 3):", clientsSlicePositive); //! ['Ajax', 'Poly']
+console.log("---------------------------------------------------------");
