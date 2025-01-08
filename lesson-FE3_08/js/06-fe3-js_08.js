@@ -29,7 +29,7 @@ console.log("scores.splice(1, 3) --> scores:", scores); //! [10, 50]
 
 //? А масив deletedScores містить три видалені елементи:
 console.log("deletedScores:", deletedScores); //! [20, 30, 40]
-console.log("-----------------------------------------------");
+console.log("-----------------------------------------------------------");
 
 
 //! Додавання елементів в масив за допомогою splice()
@@ -56,4 +56,44 @@ const colorsAdding = colors.splice(2, 0, "yellow", "pink");
 console.log('colors.splice(2, 0, "yellow", "pink") --> colors:', colors); //! ['red', 'green', 'yellow', 'pink', 'blue']
 
 console.log("colorsAdding:", colorsAdding); //! []
-console.log("-----------------------------------------------");
+console.log("-----------------------------------------------------------");
+
+
+//! Заміна елементів в масиві за допомогою splice()
+console.warn("splice() - заміна елементів в масиві:");
+//? Заміна - це операція видалення елементів, в якій
+//? додаються нові елементи в місці видалення старих.
+//? Для цього необхідно передати мінімум ТРИ аргументи:
+//todo: splice(index, num, new_element_1, new_element_2, ...)
+//? index - вказує на індекс першого елемента для видалення
+//? num - визначає кількість елементів, що видаляються
+//? третій, четвертий і всі наступні аргументи
+//? - це нові елементи, які додаються в масив замість видалених(старих).
+//? Кількість елементів, що видаляються і додаються, може не збігатися.
+//? ПОВЕРТАЄ масив, що містить видалені елементи.
+const languages = ["C", "C++", "Java", "JavaScript"];
+console.log("languages:", languages); //! ['C', 'C++', 'Java', 'JavaScript']
+
+//? Заміняємо ОДИН елемент з індексом = 1
+//? на ОДИН новий елемент: "Python"
+let languagesReplacing = languages.splice(1, 1, "Python");
+console.log('languages.splice(1, 1, "Python") --> languages:', languages); //! ['C', 'Python', 'Java', 'JavaScript']
+
+console.log("languagesReplacing:", languagesReplacing); //! []
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+//? Заміняємо ОДИН елемент з індексом = 2
+//? на ДЕКІЛЬКА нових елементів: "C#", "Swift", "Go"
+languagesReplacing = languages.splice(2, 1, "C#", "Swift", "Go");
+console.log('languages.splice(2, 1, "C#", "Swift", "Go") --> languages:', languages); //! ['C', 'Python', 'C#', 'Swift', 'Go', 'JavaScript']
+
+console.log("languagesReplacing:", languagesReplacing); //! []
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+//? Заміняємо ТРИ елемента з починаючи з індекса = 2
+//? на ОДИН новий елемент: "C Sharp"
+languagesReplacing = languages.splice(2, 3, "C Sharp");
+console.log('languages.splice(2, 3, "C Sharp") --> languages:', languages); //! ['C', 'Python', 'C Sharp', 'JavaScript']
+
+console.log("languagesReplacing:", languagesReplacing); //! []
+console.log("-----------------------------------------------------------");
