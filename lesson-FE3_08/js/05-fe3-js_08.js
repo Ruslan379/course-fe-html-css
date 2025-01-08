@@ -15,14 +15,16 @@ console.log("clients:", clients); //! ['Mango', 'Ajax', 'Poly', 'Kiwi']
 const clientsSlice = clients.slice(1, 3);
 console.log("clients.slice(1, 3):", clientsSlice); //! ['Ajax', 'Poly']
 
-console.log("---------------------------------------------------------");
+console.log("--------------------------------------------------------------");
+
 
 
 //? Якщо start та end не зазначені,
 //? буде створена повна копія початкового масиву.
 const clientsSliceAll = clients.slice();
 console.log("clients.slice():", clientsSliceAll); //! ['Mango', 'Ajax', 'Poly', 'Kiwi']
-console.log("---------------------------------------------------------");
+console.log("--------------------------------------------------------------");
+
 
 
 //? Якщо не зазначено end, копіювання буде
@@ -33,7 +35,8 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 const clientsSliceStart3 = clients.slice(3);
 console.log("clients.slice(3):", clientsSliceStart3); //! ['Kiwi']
-console.log("---------------------------------------------------------");
+console.log("--------------------------------------------------------------");
+
 
 
 //? У методі slice() можна не вказувати перший аргумент(start),
@@ -47,7 +50,7 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 const clientsSliceEnd3 = clients.slice(undefined, 3);
 console.log("clients.slice(undefined, 3):", clientsSliceEnd3); //! ['Mango', 'Ajax', 'Poly']
-console.log("---------------------------------------------------------");
+console.log("--------------------------------------------------------------");
 
 
 //? Якщо start чи end негативні(від'ємні), тоді вони
@@ -62,4 +65,5 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 const clientsSlicePositive = clients.slice(1, 3);
 console.log("clients.slice(1, 3):", clientsSlicePositive); //! ['Ajax', 'Poly']
-console.log("---------------------------------------------------------");
+console.log("--------------------------------------------------------------");
+

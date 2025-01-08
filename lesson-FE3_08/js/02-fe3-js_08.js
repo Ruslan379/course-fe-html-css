@@ -20,7 +20,7 @@ const message = "JavaScript - це цікаво";
 console.log('message:', message);
 let messageArr = message.split(" ");
 console.log('messageArr = message.split(" "):', messageArr); //! ['JavaScript', '-', 'це', 'цікаво']
-console.log("----------------------------------------------------");
+console.log("--------------------------------------------------------------------------");
 
 
 //! Метод join()
@@ -35,4 +35,4 @@ console.log('messageArr:', messageArr);
 console.log('messageArr.join(""):', messageArr.join("")); //! "JavaScriptцецікаво"
 console.log('messageArr.join(" "):', messageArr.join(" ")); //! "JavaScript це цікаво"
 console.log('messageArr.join("-"):', messageArr.join("-")); //! "JavaScript-це-цікаво"
-console.log("----------------------------------------------------");
+console.log("--------------------------------------------------------------------------");
