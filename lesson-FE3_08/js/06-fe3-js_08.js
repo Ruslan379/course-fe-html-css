@@ -48,12 +48,12 @@ console.warn("splice() - додавання елементів в масив:");
 const colors = ["red", "green", "blue"];
 console.log("colors:", colors); //! ['red', 'green', 'blue']
 
-//? Додаємо два елементи масиву, починаючи з другого елемента (індекс = 1):
-// console.log(colors.splice(1, 0, "yellow", "pink")); //! []
-const colorsAdding = colors.splice(1, 0, "yellow", "pink");
+//? Додаємо два елементи масиву, починаючи з третього елемента (індекс = 2):
+// console.log(colors.splice(2, 0, "yellow", "pink")); //! []
+const colorsAdding = colors.splice(2, 0, "yellow", "pink");
 
 //? Тепер масив colors містить лише п'ть елементів:
-console.log('colors.splice(1, 0, "yellow", "pink") --> colors:', colors); //! ['red', 'yellow', 'pink', 'green', 'blue']
+console.log('colors.splice(2, 0, "yellow", "pink") --> colors:', colors); //! ['red', 'green', 'yellow', 'pink', 'blue']
 
 console.log("colorsAdding:", colorsAdding); //! []
 console.log("-----------------------------------------------");
