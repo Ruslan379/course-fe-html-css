@@ -10,7 +10,7 @@ console.log(
 //? а то на чому вони застосовуються - ОПЕРАНДАМИ.
 //? ОПЕРАНД - це значення, до якого застосовується оператор, 
 //? наприклад, в арифметичних або логічних виразах.
-//todo Літерали можуть бути операндами, коли вони беруть участь у виразі.
+//todo: Літерали можуть бути операндами, коли вони беруть участь у виразі.
 const userAge = 30 - 6; //? Числа 30 та 6 є операндами
 const h = 180; //? 180 - числовий літерал
 const t = 10; //? 10 - числовий літерал
@@ -58,42 +58,41 @@ console.log("2 у ступіні 3 =", 2 ** 3); //!  8
 
 //! Комбіновані оператори
 //! Арифметичні операції із заміною
-
 //? Додавання із заміною
-//todo x += y еквівалентно x = x + y
+//todo: x += y еквівалентно x = x + y
 let valueSum = 10;
-// valueSum = valueSum + 5; //! var 1.
-valueSum += 5;  //! var 2.
+// valueSum = valueSum + 5; //todo: var 1.
+valueSum += 5;  //todo: var 2.
 console.log("valueSum:", valueSum);
 
 //? Віднімання із заміною
-//todo x -= y еквівалентно x = x - y
+//todo: x -= y еквівалентно x = x - y
 let valueX = 10;
 let valueY = 4;
-// valueX = valueX - valueY; //! var 1.
-valueX -= valueY;  //! var 2.
+// valueX = valueX - valueY; //todo: var 1.
+valueX -= valueY;  //todo: var 2.
 console.log("Додавання - valueX:", valueX);
 
 //? Множення із заміною
-//todo x *= y еквівалентно x = x * y
+//todo: x *= y еквівалентно x = x * y
 let valueG = 4;
 let valueU = 3;
-// valueG = valueG * valueU; //! var 1.
-valueG *= valueU;  ///! var 2.
+// valueG = valueG * valueU; //todo: var 1.
+valueG *= valueU;  //todo: var 2.
 console.log("Множення - valueG:", valueG);
 
 //? Ділення із заміною
-//todo x /= y еквівалентно x = x / y
+//todo: x /= y еквівалентно x = x / y
 let valueM = 100;
 let valueN = 5;
-// valueM = valueM / valueN; //! var 1.
-valueM /= valueN;  //! var 2.
+// valueM = valueM / valueN; //todo: var 1.
+valueM /= valueN;  //todo: var 2.
 console.log("Ділення - valueM:", valueM);
 
 //? Залишок від ділення із заміною
-//todo x %= y еквівалентно x = x % y
+//todo: x %= y еквівалентно x = x % y
 let valueO = 30;
 let valueP = 20;
-// valueO = valueO % valueP; //! var 1.
-valueO %= valueP;  //! var 2.
+// valueO = valueO % valueP; //todo: var 1.
+valueO %= valueP;  //todo: var 2.
 console.log("Залишок від ділення valueO/valueP --> valueO:", valueO);
