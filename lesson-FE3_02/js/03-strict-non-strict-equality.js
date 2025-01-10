@@ -28,6 +28,8 @@ console.log("a !== b:", a !== b); //! true
 
 
 //? Оператори нестрогої (несуворої) рівності:
+console.warn("Нестрога (несувора) рівність: \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_02/images/not-strict-equality.png");
+
 console.log("ПРИКЛАДИ:");
 console.log("5 == 5:", 5 == 5); //! true 
 console.log("5 == 3:", 5 == 3); //! false 
@@ -47,6 +49,8 @@ console.log("1 != true:", 1 != true); //! false
 
 
 //? Оператори строгої (суворої) рівності:
+console.warn("Строга (сувора) нерівність: \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_02/images/strict-equality.png");
+
 //todo -  Добре, перетворення типів не виконується:
 console.log("---- перетворення до ЧИСЛА не виконується ----");
 console.log("5 === 5:", 5 === 5); //! true 
