@@ -50,6 +50,11 @@ console.log('parseFloat(null):', parseFloat(null)); //! NaN
 console.log('parseFloat(" "):', parseFloat(" ")); //! NaN
 console.log('parseFloat(true):', parseFloat(true)); //! NaN
 console.log('isNaN(NaN):', isNaN(NaN)); //* true, "ТАК, це НЕ ЧИСЛО!"
+console.log("----------------------------------");
+console.log('Number.parseFloat(null):', Number.parseFloat(null)); //! NaN
+console.log('Number.parseFloat(" "):', Number.parseFloat(" ")); //! NaN
+console.log('Number.parseFloat(true):', Number.parseFloat(true)); //! NaN
+console.log('Number.isNaN(NaN):', Number.isNaN(NaN)); //* true, "ТАК, це НЕ ЧИСЛО!"
 
 
 //! Перевірка на NaN - метод Number.isNaN(val)
