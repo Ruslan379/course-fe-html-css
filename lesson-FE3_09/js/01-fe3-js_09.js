@@ -51,7 +51,7 @@ console.warn("Параметри та аргументи:");
 //? - перелік даних, які функція очікує на момент виклику.
 //? При виклику функції за допомогою імені та круглих дужок,
 //? всередині цих дужок можуть бути передані АРГУМЕНТИ.
-const add2 = function (a, b, c) {
+const add2 = function(a, b, c) {
     console.log("Це функція 'add2'");
     const sum = a + b + c;
     console.log("sum:", sum);
@@ -71,7 +71,7 @@ console.warn("Параметри за замовчуванням:");
 //? у параметрів якої будуть значення,
 //? відмінні від undefined,
 //? навіть якщо для них не передали аргументи. 
-const add3 = function (a = 10, b = 20, c = 30) {
+const add3 = function(a = 10, b = 20, c = 30) {
     console.log("Це функція 'add3'");
     const sum = a + b + c;
     console.log("sum:", sum);
@@ -97,7 +97,7 @@ console.warn("Оператор return:");
 //? він відразу ж виходить з функції,
 //? і повертає це значення в те місце коду,
 //? де функція була викликана.
-const add4 = function (a, b, c) {
+const add4 = function(a, b, c) {
     console.log("Це функція 'add4'");
     const sum = a + b + c;
     console.log("sum:", sum);
