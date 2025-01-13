@@ -19,6 +19,7 @@ function multiply(x, y, z) {
 
 console.log("Лог ДО виклику функції multiply");
 multiply(2, 3, 5); //! Результат множення дорівнює 30
+console.log(multiply(2, 3, 5)); //! undefined
 console.log("Лог ПІСЛЯ виклику функції multiply");
 
 //todo-1: Послідовність логів в консолі:
