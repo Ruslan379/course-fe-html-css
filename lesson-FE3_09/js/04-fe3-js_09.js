@@ -35,7 +35,7 @@ console.warn("Функція, яка обробляє зняття коштів 
 //? за допомогою оператора return.
 //? Використовуючи цей прийом, ми отримуємо чистіший,
 //? плоскіший і зрозуміліший код, який простіше рефакторити.
-function withdraw2(amount, balance) {
+const withdraw2 = function(amount, balance) {
     console.log("amount:", amount);
     console.log("balance:", balance);
     //todo:  Якщо умова виконується, викликається console.log
