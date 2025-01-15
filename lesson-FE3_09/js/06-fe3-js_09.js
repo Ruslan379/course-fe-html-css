@@ -122,7 +122,6 @@ const foo = function() {
             console.log("if --> b:", b); //! 20
             console.log("if --> c:", c); //! 30
             console.log("if --> d:", d); //! 40
-            console.log(". .  . . . .  . . . . . . .");
         };
     };
 };
