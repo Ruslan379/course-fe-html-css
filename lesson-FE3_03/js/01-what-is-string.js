@@ -8,10 +8,10 @@ console.log(
 //? Рядок  — це індексований набір з нуля або більше символів,
 //? укладених в одинарні або подвійні лапки. 
 
-const course1 = "JavaScript"; 
+const course1 = 'JavaScript'; 
 console.log("course1:", course1); //! JavaScript
 
-const course2 = 'JavaScript';
+const course2 = "JavaScript";
 console.log("course2:", course2); //! JavaScript
 
 const course3 = `JavaScript`;
