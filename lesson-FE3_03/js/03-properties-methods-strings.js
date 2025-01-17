@@ -308,6 +308,13 @@ console.log("productName.slice(3, 9):", productName.slice(3, 9)); //! "air dr"
 console.log("productName.slice(0, productName.length):", productName.slice(0, productName.length)); //! "Repair droid"
 console.log("productName.slice(0, productName.length - 1):", productName.slice(0, productName.length - 1)); //! "Repair droi"
 console.log("productName.slice(7, productName.length):", productName.slice(7, productName.length)); //! "droid"
+
 console.warn("Останній символ:");
 console.log("productName.slice(-1):", productName.slice(-1)); //! "d"
+
+console.warn("Від'ємні значення:");
+console.log("productName.slice(-5):", productName.slice(-5)); //! "droid"
+console.log("productName.length:", productName.length); //! 12
+console.log("productName.length - 5 = 12 - 5 =", productName.length - 5); //! 7
+console.log("productName.slice(7):", productName.slice(7)); //! "droid"
 console.log("-------------------------------------------------------");
