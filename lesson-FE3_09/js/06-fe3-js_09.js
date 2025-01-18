@@ -56,8 +56,8 @@ for (let i = 0; i < 3; i++) {
         console.log("if --> globalValue:", globalValue); //! 100
         const ifValue = 40;
         console.log("if --> ifValue:", ifValue); //! 40
+        console.log("if --> forValue:", forValue); //! 30
         // console.log("if --> funcValue:", funcValue); //! Uncaught ReferenceError: funcValue is not defined
-        // console.log("if --> forValue:", forValue); //! Uncaught ReferenceError: funcValue is not defined
         console.log(". .  . . . .  . . . . . . .");
     };
 };
