@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson-FE3-JS_09</title>
+    <title>lesson-FE3-JS_10</title>
     
-    <!-- <link href="https://img.icons8.com/ios/16/9.png" type="image/x-icon" rel="shortcut icon"> -->
-    <link href="https://img.icons8.com/officel/16/9.png" type="image/x-icon" rel="shortcut icon">
+    <!-- <link href="https://img.icons8.com/ios/16/10.png" type="image/x-icon" rel="shortcut icon"> -->
+    <link href="https://img.icons8.com/officel/16/10.png" type="image/x-icon" rel="shortcut icon">
 
 
     <!--! завантаження нормалізатора modern-normalize -->
@@ -25,84 +25,66 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <!--! зовнішній файл стилів -->
-    <link rel="stylesheet" href="./css/lesson-FE3_09.css">
+    <link rel="stylesheet" href="./css/lesson-FE3_10.css">
 
 </head>
 
 <body>
-    <h1 class="title-lesson">Урок-JS-09. “Функції”</h1>
+    <h1 class="title-lesson">Урок-JS-10. “Колбек і стрілочні функції”</h1>
     <p class="information-hint">Щоб побачити результати роботи скриптів, відкрийте інструменти розробника <b>DevTools</b>!
 
-    <!--! 1.Поняття функції. Функціональний вираз. Виклик функції. Параметри та аргументи. Параметри за замовчуванням. Оператор return  -->
+    <!--! 1.Колбек-функції. Інлайн колбеки  -->
     <div class="part part_1">
         <h2 class="title-section">
-            1.<a href="./images/function.png">Поняття функції.</a>
-            <br>
-            Функціональний вираз (function expression).
-            <br>
-            Виклик функції.
-            <br>
-            Параметри та аргументи.
-            <br>
-            Параметри за замовчуванням.
-            <br>
-            Повернення значення. Оператор return.
+            1.Колбек-функції. Інлайн колбеки.
         </h2>
         <button class="button-1">Off</button>
     </div>
 
-    <!--! 2.Порядок виконання коду. Стек викликів -->
+    <!--! 2.Абстрагування повторення -->
     <div class="part part_2">
         <h2 class="title-section">
-            2.Порядок виконання коду.
-            <br>
-            <a href="./images/call-stack.png">Стек викликів.</a>
+            2.Абстрагування повторення
         </h2>
         <button class="button-2">Off</button>
     </div>
 
-    <!--! 3.Псевдомасив arguments. Перетворення псевдомасиву ​-->
+    <!--! 3.Фільтрація масиву ​-->
     <div class="part part_3">
         <h2 class="title-section">
-            3.Псевдомасив arguments​.
-            <br>
-            Перетворення псевдомасиву.
+            3.Фільтрація масиву
         </h2>
         <button class="button-3">Off</button>
     </div>
 
-    <!--! 4.Патерн «Раннє повернення» (Guard Clause) -->
+    <!--! 4.Стрілкові функції -->
     <div class="part part_4">
         <h2 class="title-section">
-            4.Патерн «Раннє повернення» (Guard Clause)
+            4.Стрілкові функції
         </h2>
         <button class="button-4">Off</button>
     </div>
 
-    <!--! 5.Оголошення функції (function declaration) -->
+    <!--! 5.Стрілкові функції і arguments -->
     <div class="part part_5">
         <h2 class="title-section">
-            5.Оголошення функції (function declaration)
+            5.Стрілкові функції і arguments
         </h2>
         <button class="button-5">Off</button>
     </div>
 
-    <!--! 6.Область видимості. Область видимості функції. Пошук за ланцюжком областей видимості. -->
+    <!--! 6. -->
     <div class="part part_6">
         <h2 class="title-section">
-            6.Область видимості.
-            <br>
-            Область видимості функції.
-            <br>
-            <a href="./images/scope-chain-search.png">Пошук за ланцюжком областей видимості.</a>
+            6.
         </h2>
         <button class="button-6">Off</button>
     </div>
 
-    <!--! 7.Hoisting (Підняття змінних) -->
+    <!--! 7. -->
     <div class="part part_7">
         <h2 class="title-section">
-            7.Hoisting (Підняття змінних)
+            7.
         </h2>
         <button class="button-7">Off</button>
     </div>
@@ -127,29 +109,29 @@
     <script src="./js/0_сontrol.js" type="module"></script>
     
     <!--! 1.Поняття функції. Функціональний вираз. Виклик функції. Параметри та аргументи. Параметри за замовчуванням. Оператор return  -->
-    <!-- <script src="./js/01-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/01-fe3-js_10.js" type="module" defer></script> -->
     
     <!--! 2.Порядок виконання коду (Стек викликів) -->
-    <!-- <script src="./js/02-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/02-fe3-js_10.js" type="module" defer></script> -->
     
     <!--! 3.Псевдомасив arguments. Перетворення псевдомасиву ​-->
-    <!-- <script src="./js/03-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/03-fe3-js_10.js" type="module" defer></script> -->
     
     <!--! 4.Патерн «Раннє повернення» (Guard Clause) -->
-    <!-- <script src="./js/04-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/04-fe3-js_10.js" type="module" defer></script> -->
     
     <!--! 5.Оголошення функції (function declaration) -->
-    <!-- <script src="./js/05-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/05-fe3-js_10.js" type="module" defer></script> -->
     
     <!--! 6.Область видимості. Область видимості функції. Пошук за ланцюжком областей видимості. -->
-    <!-- <script src="./js/06-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/06-fe3-js_10.js" type="module" defer></script> -->
     
     <!--! 7.Hoisting (Підняття змінних) -->
-    <!-- <script src="./js/07-fe3-js_09.js" type="module" defer></script> -->
+    <!-- <script src="./js/07-fe3-js_10.js" type="module" defer></script> -->
     
     
     <!--todo Запитання -->
-    <!-- <script src="./js/09-questions.js" type="module" defer></script> -->
+    <!-- <script src="./js/10-questions.js" type="module" defer></script> -->
     
     <!--todo Практика -->
     <!-- <script src="./js/10-practice.js" type="module" defer></script> -->
