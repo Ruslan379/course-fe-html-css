@@ -133,3 +133,45 @@ console.log(
 //? чи закінчується на ".css" чи на  ".js"?
 console.log("styles.css");
 //! Код виконаного завдання
+
+
+
+//todo [9]
+// console.log(String(false));
+// console.log(Number(false));
+// console.log(String(null));
+// console.log(Number(null));
+// console.log(Number(undefined));
+// console.log("false" + null)
+// console.log("5" + false);
+// console.log("5" + null);
+
+
+
+//todo [10]
+//? чи буде 579 ?
+const myText2 = 123 + "456";
+//! Код виконаного завдання
+// console.log("myText:", myText);
+
+
+
+//todo [11]
+//? чи вірний напис?
+const actorsName = "Robin Williams";
+let actorsGreeting = 'Hello! My name is ${actorsName}';
+//! Код виконаного завдання
+// console.log("actorsGreeting:", actorsGreeting);
+// actorsGreeting = `Hello! My name is ${actorsName}.`;
+// console.log("actorsGreeting again:", actorsGreeting);
+
+
+
+//todo [12]
+//? Оголоси змінну message і запиши в неї повідомлення про покупку.
+//? "You picked <назва товару>, price per item is <ціна товару> credits".
+//? Напиши скрипт для замовлення цього товару:
+//? Товар <назва товару>, ціна за одну штуку  <ціна товару>,
+//? <ціна доставки>, виводити суму замовлення - message
+//? у форматі "You ordered <назва товару> worth <total price> credits"
+//! Код виконаного завдання
