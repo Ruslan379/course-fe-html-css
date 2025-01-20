@@ -78,6 +78,8 @@ console.warn("Приклад використання Функцій-преди�
 //! Код виконаного завдання
 // const logins = [];
 const logins = ["Rich", "UmaThurman"];
+
+//! 1
 function isLoginValid(login) {
     console.log("1.⏳ -> function isLoginValid(login)");
     console.log("login.length", login.length);
@@ -88,12 +90,14 @@ function isLoginValid(login) {
     return false;
 };
 
+//! 2
 function isLoginUnique(allLogins, login) {
     console.log("2.⏱️ -> function isLoginUnique(allLogins, login)");
     console.log(". . . . . . . . . . . . . . .");
     return !(allLogins.includes(login));
 };
 
+//! 3
 function addLogin(allLogins, login) {
     console.log("3.➕👨‍💼✔️ -> addLogin(allLogins, login)");
 
