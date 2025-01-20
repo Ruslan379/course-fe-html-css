@@ -101,7 +101,6 @@ console.log("-------------------------------------------------------");
 
 console.warn("Приклад використання Предикатних функцій \n  за допомогою Колбек-функцій:");
 //! Код виконаного завдання
-// const logins = [];
 const logins = ["Rich", "UmaThurman"];
 //! 1
 function isLoginValid(login) {
@@ -125,11 +124,11 @@ function isLoginUnique(allLogins, login) {
 function addLogin(allLogins, login, callback1, callback2) {
     console.log("3.➕👨‍💼✔️ -> addLogin(allLogins, login)");
 
-    if (!(isLoginValid(login))) {
+    if (!(callback1(login))) {
         return "Помилка! Логін повинен бути від 4 до 16 символів.";
     };
 
-    if (!(isLoginUnique(allLogins, login))) {
+    if (!(callback2(allLogins, login))) {
         return "Такий логін вже використовується!";
     };
 
@@ -139,28 +138,10 @@ function addLogin(allLogins, login, callback1, callback2) {
     return "Логін успішно доданий!";
 };
 
-// console.warn("1️⃣ - функція isLoginValid(login)");
-// console.log('isLoginValid("Dog"):', isLoginValid("Dog"));
-// console.log("--------------------------------------------");
-// console.log('isLoginValid("Rich"):', isLoginValid("Rich"));
-// console.log("--------------------------------------------");
-// console.log('isLoginValid("UmaThurman"):', isLoginValid("UmaThurman"));
-// console.log("--------------------------------------------");
-// console.log('isLoginValid("UmaKarunaThurman"):', isLoginValid("UmaKarunaThurman"));
-// console.log("--------------------------------------------");
-// console.log('isLoginValid("Uma_Karuna_Thurman"):', isLoginValid("Uma_Karuna_Thurman"));
-// console.log("*****************************************************************************************");
-
-// console.warn("2️⃣ - функція isLoginUnique(allLogins, login)");
-// console.log('isLoginUnique(logins, "UmaThurman"):', isLoginUnique(logins, "UmaThurman"));
-// console.log("--------------------------------------------");
-// console.log('isLoginUnique(logins, "HedyLamarr"):', isLoginUnique(logins, "HedyLamarr"));
-// console.log("*****************************************************************************************");
-
 console.warn("3️⃣ - функція addLogin(allLogins, login)");
 console.log('addLogin(logins, "Dog"):', addLogin(logins, "Dog", isLoginValid, isLoginUnique));
 console.log("---------------------------------------------------------------------------");
-console.log('addLogin(logins, "UmaThurman"):', addLogin(logins, "UmaThurman"));
+console.log('addLogin(logins, "UmaThurman"):', addLogin(logins, "UmaThurman", isLoginValid, isLoginUnique));
 console.log("---------------------------------------------------------------------------");
-console.log('addLogin(logins, "HedyLamarr"):', addLogin(logins, "HedyLamarr"));
+console.log('addLogin(logins, "HedyLamarr"):', addLogin(logins, "HedyLamarr", isLoginValid, isLoginUnique));
 console.log("*****************************************************************************************");
