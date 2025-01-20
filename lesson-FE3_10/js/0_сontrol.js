@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button4 = document.querySelector('.button-4');
     const button5 = document.querySelector('.button-5');
     const button6 = document.querySelector('.button-6');
-    const button7 = document.querySelector('.button-7');
+    // const button7 = document.querySelector('.button-7');
 
     //! Функція для завантаження та виконання скрипту
     const loadAndExecuteScript = (scriptSrc) => {
@@ -143,19 +143,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //! Оброблювач події для Кнопки-7
-    button7.addEventListener('click', () => {
-        if (button7.textContent === 'Off') {
-            button7.textContent = 'On';
-            button7.style.backgroundColor = 'green';
-            button7.style.color = 'yellow';
-            button7.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/07-fe3-js_10.js'); //!
-        } else {
-            button7.textContent = 'Off';
-            button7.style.backgroundColor = '#b70000';
-            button7.style.color = 'white';
-            button7.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
-        }
-    });
+    // button7.addEventListener('click', () => {
+    //     if (button7.textContent === 'Off') {
+    //         button7.textContent = 'On';
+    //         button7.style.backgroundColor = 'green';
+    //         button7.style.color = 'yellow';
+    //         button7.style.boxShadow = '3px 3px 4px #969696';
+    //         loadAndExecuteScript('./js/07-fe3-js_10.js'); //!
+    //     } else {
+    //         button7.textContent = 'Off';
+    //         button7.style.backgroundColor = '#b70000';
+    //         button7.style.color = 'white';
+    //         button7.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+    //     }
+    // });
 
 });
