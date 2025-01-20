@@ -15,6 +15,8 @@ console.log(
 //todo: hasChildren() — «чи є діти?»
 //todo: isEmpty() — «чи порожній?»
 //todo: hasErrors() — «чи є помилки?»
+
+
 console.warn("Що таке Предикатна функція. Приклад:");
 //todo: Функція-предикат isInfant відповідає на питання:
 //todo: «чи це немовля?» та повертає true або false
