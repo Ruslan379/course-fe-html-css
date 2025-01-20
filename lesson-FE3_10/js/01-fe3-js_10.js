@@ -77,7 +77,7 @@ console.warn("Приклад використання Функцій-преди�
 //? результати викликів інших предикатних функцій — isLoginUnique і isLoginValid. 
 //! Код виконаного завдання
 // const logins = [];
-const logins = ["Rich", "UmaThurman", "UmaKarunaThurman"];
+const logins = ["Rich", "UmaThurman"];
 function isLoginValid(login) {
     console.log("1.⏳ -> function isLoginValid(login)");
     console.log("login.length", login.length);
