@@ -4,7 +4,7 @@ console.log(
   "color: white; background-color: #D33F49",
 );
 
-//! ПРАКТИКА-9 (Урок-09_JS)
+//! ПРАКТИКА-10 (Урок-10_JS)
 //todo [1]
 console.log(
   "%c [1] ",
