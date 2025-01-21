@@ -4,6 +4,8 @@ console.log(
 );
 
 //! Предикатні функції
+//todo: Предика́т (лат. praedicatum «заявлене, згадане, сказане»)
+//todo: - це твердження, висловлене про суб'єкт.
 //? Функції-предикати (або функції-питання)
 //? відповідають на якесь запитання
 //? і завжди (без винятків!) повертають або true або false.
@@ -35,6 +37,46 @@ console.log("isInfant(3);", isInfant(3)); //! false
 console.log("--------------------------------------------");
 
 
+//! Приклад-алгоритм приготування кави за допомогою функції "Приготування кави"
+console.warn("Приклад функції \"Приготування кави\":");
+let groundCoffee;
+let hotWater;
+let сoffee;
+
+//! 1 - функція "Приготування меленої кави"
+function makesGroundCoffee() {
+    groundCoffee = "30 грам";
+    console.log("1️⃣ Мелена кава є?", Boolean(groundCoffee));
+    return groundCoffee;
+};
+
+//! 2 - функція "Приготування окропу (гарячої води)".
+function makesHotWater() {
+    hotWater = "250 мілілітрів";
+    console.log("2️⃣ Окріп (гаряча вода) є?", Boolean(hotWater));
+    return hotWater;
+};
+
+//! 3 - функція "Приготування кави"
+function makingCoffee() {
+    if (!(makesGroundCoffee())) {
+        return "Потрібна мелена кава!";
+    };
+
+    if (!(makesHotWater())) {
+        return "Потрібна гаряча вода!";
+    };
+
+    сoffee = groundCoffee + hotWater;
+    сoffee = "Кава готова!"
+    return сoffee;
+};
+
+console.log(makingCoffee());
+console.log("--------------------------------------------");
+
+
+//! Приклад використання Функцій-предикатів
 console.warn("Приклад використання Функцій-предикатів \n  (ДЗ-9, Завдання-7, додаткове):");
 //? Є масив logins з логінами користувачів. 
 //? Напиши скрипт додавання логіна в масив logins. 
@@ -138,4 +180,4 @@ console.log("-------------------------------------------------------------------
 console.log('addLogin(logins, "UmaThurman"):', addLogin(logins, "UmaThurman"));
 console.log("---------------------------------------------------------------------------");
 console.log('addLogin(logins, "HedyLamarr"):', addLogin(logins, "HedyLamarr"));
-console.log("*****************************************************************************************");
+console.log("******************************************************************************");
