@@ -99,9 +99,49 @@ registerGuest2("Полі", function notify2(nameNotify2) {
 console.log("-------------------------------------------------------");
 
 
+//! Приклад-алгоритм "Приготування кави" за допомогою Колбек-функцій 
+console.warn("Приклад функції \"Приготування кави\" за допомогою Колбек-функцій:");
+let groundCoffee;
+let hotWater;
+let сoffee;
+
+//! 1 - функція "Приготування меленої кави"
+function makesGroundCoffee() {
+    groundCoffee = "30 грам";
+    console.log("1️⃣ Мелена кава є?", Boolean(groundCoffee));
+    return groundCoffee;
+};
+
+//! 2 - функція "Приготування окропу (гарячої води)".
+function makesHotWater() {
+    hotWater = "250 мілілітрів";
+    console.log("2️⃣ Окріп (гаряча вода) є?", Boolean(hotWater));
+    return hotWater;
+};
+
+//! 3 - функція "Приготування кави"
+function makingCoffee(callback1, callback2) {
+    if (!(callback1())) {
+        return "Потрібна мелена кава!";
+    };
+
+    if (!(callback2())) {
+        return "Потрібна гаряча вода!";
+    };
+
+    сoffee = groundCoffee + hotWater;
+    сoffee = "✅ Кава готова!"
+    return сoffee;
+};
+
+console.log(makingCoffee(makesGroundCoffee, makesHotWater));
+console.log("--------------------------------------------");
+
+
+// !Приклад використання Предикатних функцій за допомогою Колбек-функцій
 console.warn("Приклад використання Предикатних функцій \n  за допомогою Колбек-функцій:");
-//! Код виконаного завдання
 const logins = ["Rich", "UmaThurman"];
+
 //! 1
 function isLoginValid(login) {
     console.log("1.⏳ -> function isLoginValid(login)");

@@ -68,7 +68,7 @@ function makingCoffee() {
     };
 
     сoffee = groundCoffee + hotWater;
-    сoffee = "Кава готова!"
+    сoffee = "✅ Кава готова!"
     return сoffee;
 };
 
