@@ -55,7 +55,6 @@ const primeNumber = 2;
 const power = 5;
 console.log("primeNumber =", primeNumber);
 console.log("power =", power);
-console.log("--------------");
 const result = Math.pow(primeNumber, power);
 console.log("Math.pow(primeNumber, power) =", result);
 console.log("primeNumber ** power =", primeNumber ** power);
