@@ -41,7 +41,7 @@ console.log("--------------------------------------------");
 console.warn("Приклад функції \"Приготування кави\":");
 let groundCoffee;
 let hotWater;
-let сoffee;
+let coffee;
 
 //! 1 - функція "Приготування меленої кави"
 function makesGroundCoffee() {
@@ -67,9 +67,9 @@ function makingCoffee() {
         return "Потрібна гаряча вода!";
     };
 
-    сoffee = groundCoffee + hotWater;
-    сoffee = "✅ Кава готова!"
-    return сoffee;
+    coffee = groundCoffee + hotWater;
+    coffee = "✅ Кава готова!"
+    return coffee;
 };
 
 console.log(makingCoffee());

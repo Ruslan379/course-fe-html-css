@@ -103,7 +103,7 @@ console.log("-------------------------------------------------------");
 console.warn("Приклад функції \"Приготування кави\" за допомогою Колбек-функцій:");
 let groundCoffee;
 let hotWater;
-let сoffee;
+let coffee;
 
 //! 1 - функція "Приготування меленої кави"
 function makesGroundCoffee() {
@@ -129,16 +129,16 @@ function makingCoffee(callback1, callback2) {
         return "Потрібна гаряча вода!";
     };
 
-    сoffee = groundCoffee + hotWater;
-    сoffee = "✅ Кава готова!"
-    return сoffee;
+    coffee = groundCoffee + hotWater;
+    coffee = "✅ Кава готова!"
+    return coffee;
 };
 
 console.log(makingCoffee(makesGroundCoffee, makesHotWater));
 console.log("--------------------------------------------");
 
 
-// !Приклад використання Предикатних функцій за допомогою Колбек-функцій
+//! Приклад використання Предикатних функцій за допомогою Колбек-функцій
 console.warn("Приклад використання Предикатних функцій \n  за допомогою Колбек-функцій:");
 const logins = ["Rich", "UmaThurman"];
 
