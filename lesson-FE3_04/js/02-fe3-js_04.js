@@ -42,6 +42,7 @@ console.log("num > 10 && num < 30:", result1); //! true
 
 const result2 = num > 10 && num < 10;
 console.log("num > 10 && num < 10:", result2); //! false
+console.log("----------------------------");
 
 
 //! 2-2.Логічне «АБО» (оператор ||)
@@ -78,6 +79,7 @@ console.log("num > 10 || num < 30:", result3); //! true
 
 const result4 = num > 10 || num < 10;
 console.log("num > 10 || num < 10:", result4); //! true
+console.log("----------------------------");
 
 
 //! 2-3.Логічне «НЕ» (оператор !)
@@ -93,17 +95,17 @@ console.log(
 //? а потім замінює його на протилежний.
 console.log("!false:", !false); //! true
 console.log("!true:", !true); //! false
+console.log("----------------------------");
 
 //? Подвійна інверсія - повернення до початкового стану:
-console.log("!!false:", !!false); //! true
-console.log("!!true:", !!true); //! false
+console.log("!!false:", !!false); //! false 
+console.log("!!true:", !!true); //! true
 console.log("----------------------------");
 
 //? Приклади:
 console.log("!1:", !1); //! false
 console.log("!0:", !0); //! true
 console.log("----------------------------");
-console.log(!0); // true
 console.log('!(1 || 4):', !(1 || 4)); //! false
 console.log('!(1 || 4 || 0):', !(1 || 4 || 0)); //! false
 console.log('!(1 || 4 || "mango"):', !(1 || 4 || "mango")); //! false
