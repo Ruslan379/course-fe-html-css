@@ -32,8 +32,8 @@ const isInfant = function (age) {
     //todo: var.2
     return (age <= 1);
 };
-console.log("isInfant(1);", isInfant(1)); //! true
-console.log("isInfant(3);", isInfant(3)); //! false
+console.log("isInfant(1):", isInfant(1)); //! true
+console.log("isInfant(3):", isInfant(3)); //! false
 console.log("--------------------------------------------");
 
 
