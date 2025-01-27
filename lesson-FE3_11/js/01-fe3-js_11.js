@@ -210,10 +210,10 @@ console.warn("Звернення (доступ) до вкладених влас
 //? Далі можна отримати доступ до його елементів
 //? через квадратні дужки та індекс.
 const bookGenres2Item0 = book2.genres2[0];
-console.log("bookGenres2Item0:", bookGenres2Item0); //! 'adventure2'
+console.log("book2.genres2[0]:", bookGenres2Item0); //! 'adventure2'
 
 const bookGenresItem1 = book2.genres[1];
-console.log("bookGenresItem1:", bookGenresItem1); //! 'adventure'
+console.log("book2.genres[1]:", bookGenresItem1); //! 'adventure'
 console.log("----------------------------------------------------------------------------------------------------------");
 
 
@@ -287,8 +287,81 @@ console.log("-------------------------------------------------------------------
 
 //! Обчислювані властивості
 console.warn("Обчислювані властивості:");
+//? ✴️ Бувають ситуації, коли під час оголошення об'єкта
+//? необхідно додати властивість з ім'ям,
+//? яке ми заздалегідь не знаємо,
+//? тому що воно зберігається у якості значення змінної
+//? або у якості результату виконання функції.
+//? ✳️ Раніше для цього необхідно було спочатку створити об'єкт,
+//? а потім додавати властивості через квадратні дужки,
+//? що не зовсім зручно.
+const keyName1 = "name1";
 
+const user1 = {
+    age1: 60,
+};
+
+user1[keyName1] = "Juliette Binoche";
+console.log("user1[keyName1]:", user1[keyName1]); //! 'Juliette Binoche'
+console.log("user1.keyName1:", user1.keyName1); //! undefined
+console.log("user1.name1:", user1.name1); //! 'Juliette Binoche'
+
+console.log("user1:", user1); //! {age1: 60, name1: 'Juliette Binoche'}
+console.log(". . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+//? ✴️ Синтаксис обчислювальних властивостей (computed properties)
+//? допомагає уникнути зайвого коду і, в деяких випадках, спростити його.
+//? Значенням обчислювальної властивості може бути будь-який валідний вираз.
+const keyName2 = "name2";
+
+const user2 = {
+    age2: 60,
+    //todo: Ім'я цієї властивості(ключ) буде взяте зі значення змінної keyName2
+    [keyName2]: "Russell Crowe",
+};
+
+console.log("user2.name2:", user2.name2); //! 'Russell Crowe'
+console.log("user2:", user2); //! {age2: 60, name2: 'Russell Crowe'}
+console.log("----------------------------------------------------------------------------------------------------------");
 
 
 //! Короткі властивості
 console.warn("Короткі властивості:");
+//? ✴️ Іноді, під час створення об'єкта значення властивості
+//? необхідно взяти зі змінної або параметра функції
+//? з таким самим ім'ям, що і у властивості.
+//? ✳️ Синтаксис у наступному прикладі занадто громіздкий,
+//? тому що доводиться дублювати ім'я властивості та ім'я змінної,
+//? в якій зберігається потрібне значення.
+const name3 = "Anthony Hopkins";
+const age3 = 87;
+
+const user3 = {
+    name3: name3,
+    age3: age3,
+};
+
+
+console.log("user3.name3:", user3.name3); //! 'Anthony Hopkins'
+console.log("user3.age3:", user3.age3); //! 87
+console.log("user3:", user3); //! {name3: 'Anthony Hopkins', age3: 87}
+console.log(". . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+//? ✴️ Синтаксис коротких властивостей (shorthand properties)
+//? вирішує цю проблему, дозволяючи використовувати
+//? ім'я змінної у якості імені властивості,
+//? а її значення - у якості значення властивості.
+const name4 = "Uma Thurman";
+const age4 = 54;
+
+const user4 = {
+    name4,
+    age4,
+};
+
+console.log("user4.name4:", user4.name4); //! 'Uma Thurman'
+console.log("user4.age4:", user4.age4); //! 54
+console.log("user4:", user4); //! {name4: 'Uma Thurman', age4: 54}
+console.log("----------------------------------------------------------------------------------------------------------");
