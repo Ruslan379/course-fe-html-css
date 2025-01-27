@@ -144,17 +144,18 @@ const book1 = {
 };
 
 const bookTitle1 = book1["title"];
-console.log("bookTitle1:", bookTitle1); //! 'The Last Kingdom'
+console.log('book1["title"]:', bookTitle1); //! 'The Last Kingdom'
 
 const bookGenres1 = book1["genres"];
-console.log("bookGenres1:", bookGenres1); //! ['historical prose', 'adventurs']
+console.log('book1["genres"]:', bookGenres1); //! ['historical prose', 'adventurs']
 
 const bookGenres21 = book1["genres2"];
-console.log("bookGenres21:", bookGenres21); //! ['adventure2', 'historical prose2']
+console.log('book1["genres2"]:', bookGenres21); //! ['adventure2', 'historical prose2']
 
 const bookPrice1 = book1["price"];
-console.log("bookPrice1:", bookPrice1); //! undefined
+console.log('book1["price"]:', bookPrice1); //! undefined
 
+//* ✅
 const propKey = "author";
 const bookAuthor1 = book1[propKey];
 console.log("bookAuthor1:", bookAuthor1); //! 'Bernard Cornwell'
@@ -181,16 +182,21 @@ const book2 = {
 };
 
 const bookTitle2 = book2.title;
-console.log("bookTitle2:", bookTitle2); //! 'The Last Kingdom'
+console.log("book2.title:", bookTitle2); //! 'The Last Kingdom'
 
 const bookGenres2 = book2.genres;
-console.log("bookGenres2:", bookGenres2); //! ['historical prose', 'adventurs']
+console.log("book2.genres:", bookGenres2); //! ['historical prose', 'adventurs']
 
 const bookGenres22 = book2.genres2;
-console.log("bookGenres22:", bookGenres22); //! ['adventure2', 'historical prose2']
+console.log("book2.genres2:", bookGenres22); //! ['adventure2', 'historical prose2']
 
 const bookPrice2 = book2.price;
-console.log("bookPrice2:", bookPrice2); //! undefined
+console.log("book2.price:", bookPrice2); //! undefined
+
+//! ❌
+const propKey2 = "author";
+const bookAuthor2 = book2.propKey2;
+console.log("book2.propKey2:", bookAuthor2); //! undefined
 console.log(". . . . . . . . . . . . . . . . . . . . . . . .");
 
 
