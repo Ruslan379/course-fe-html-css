@@ -342,7 +342,6 @@ const user3 = {
     age3: age3,
 };
 
-
 console.log("user3.name3:", user3.name3); //! 'Anthony Hopkins'
 console.log("user3.age3:", user3.age3); //! 87
 console.log("user3:", user3); //! {name3: 'Anthony Hopkins', age3: 87}
