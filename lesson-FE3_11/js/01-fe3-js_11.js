@@ -146,7 +146,7 @@ const book1 = {
 const bookTitle1 = book1["title"];
 console.log('book1["title"]:', bookTitle1); //! 'The Last Kingdom'
 
-const bookGenres1 = book1["genres"];
+const bookGenres1 = book1['genres'];
 console.log('book1["genres"]:', bookGenres1); //! ['historical prose', 'adventurs']
 
 const bookGenres21 = book1["genres2"];

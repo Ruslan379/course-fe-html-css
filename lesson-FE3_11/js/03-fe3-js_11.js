@@ -84,7 +84,7 @@ const makingCoffeeNew = {
     }
 };
 
-console.log("⭕️ coffee_before:", makingCoffeeNew.coffee); //! пустий рядок
+console.log("⭕️ coffee_before:", makingCoffeeNew.coffee); //! null
 makingCoffeeNew.getCoffee(30, 250); 
 console.log("☕️ coffee_after:", makingCoffeeNew.coffee); //! 30 грам 250 мілілітрів 
 console.log("---------------------------------------------------------------------");
