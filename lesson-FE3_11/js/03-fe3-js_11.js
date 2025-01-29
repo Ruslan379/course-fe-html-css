@@ -4,6 +4,7 @@ console.log(
 );
 
 //! Доступ до властивостей об'єкта в методах через this
+
 //? ✳️ Методи використовуються для роботи
 //? з властивостями об'єкта, їх зміни.
 //? ✴️ Для доступу до об'єкта в методі використовується
@@ -27,6 +28,7 @@ bookShelf.getBooks(); //! {books: Array(1), getBooks: ƒ}
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
+console.warn("Стек викликів: \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_11/images/this-keyword.jpg");
 
 
 
