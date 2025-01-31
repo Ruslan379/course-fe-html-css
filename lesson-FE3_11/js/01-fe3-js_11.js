@@ -38,8 +38,8 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . .");
 //todo: Приклад-2: створення об'єкта:
 let object = {0: 2, 1: 21, 2: 34, 3: 89, 4: 144};
 
-// for (const element of object) {
-//     console.log(element); //! ❌ TypeError: object is not iterable
+// for (const key of object) {
+//     console.log(key); //! ❌ TypeError: object is not iterable
 // };
 
 for (const key in object) {
