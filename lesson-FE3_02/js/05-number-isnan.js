@@ -33,15 +33,24 @@ console.log(
     "%c isNaN(val) ",
     "color: yellow; background-color: #2274A5",
 );
-console.log('isNaN(36 + "Привiт!"):', isNaN(36 + "Привiт!")); //* true, "ТАК, це НЕ ЧИСЛО!"
 console.log('isNaN(36):', isNaN(36)); //! false, "НІ, це - ЧИСЛО!"
 console.log('isNaN("36"):', isNaN("36")); //! false, "НІ, це - ЧИСЛО!"
+console.log('isNaN("      36      "):', isNaN("      36      ")); //! false, "НІ, це - ЧИСЛО!"
+console.log('isNaN("36px"):', isNaN("36px")); //* true, "ТАК, це НЕ ЧИСЛО!"
+console.log('isNaN(36 + "Привiт!"):', isNaN(36 + "Привiт!")); //* true, "ТАК, це НЕ ЧИСЛО!"
+console.log('isNaN("Привiт!"):', isNaN("Привiт!")); //* true, "ТАК, це НЕ ЧИСЛО!"
 console.log('isNaN(NaN):', isNaN(NaN)); //* true, "ТАК, це НЕ ЧИСЛО!"
+console.log('isNaN(undefined):', isNaN(undefined)); //* true, "ТАК, це НЕ ЧИСЛО!"
 console.log("----------------------------------");
 
 //? Три дивні значення isNaN()
-console.log('isNaN(" "):', isNaN(" ")); //! false, "НІ, це - ЧИСЛО!"
+//todo: [1]
+console.log('isNaN(""):', isNaN("")); //! false, "НІ, це - ЧИСЛО!"
+console.log('isNaN("    "):', isNaN("    ")); //! false, "НІ, це - ЧИСЛО!"
+//todo: [2]
 console.log('isNaN(true):', isNaN(true)); //! false, "НІ, це - ЧИСЛО!"
+console.log('isNaN(false):', isNaN(false)); //! false, "НІ, це - ЧИСЛО!"
+//todo: [3]
 console.log('isNaN(null):', isNaN(null)); //! false, "НІ, це - ЧИСЛО!"
 console.log("----------------------------------");
 
