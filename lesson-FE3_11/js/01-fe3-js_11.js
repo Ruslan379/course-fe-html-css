@@ -42,8 +42,8 @@ let object = {0: 2, 1: 21, 2: 34, 3: 89, 4: 144};
 //     console.log(element); //! ❌ TypeError: object is not iterable
 // };
 
-for (const element in object) {
-    console.log(`${element}: ${object[element]}`); //! ✅
+for (const key in object) {
+    console.log(`${key}: ${object[key]}`); //! ✅
 };
 
 //? Змінемо запис об'єкта не змінюючи його властивостей:
