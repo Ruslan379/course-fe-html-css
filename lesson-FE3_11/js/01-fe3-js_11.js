@@ -71,6 +71,7 @@ const object2 = {
 };
 
 console.log("object2:", object2);
+console.log("bject.keys(object2):", Object.keys(object2)); //! ['перший', 'другий', 'третій', 'четвертий', "п'ятий"]
 console.log(". . . . . . . . . . . . . . . . . . . . . . . .");
 
 //? Замінемо послідовність "індексів"(властивостей (properties))
@@ -84,6 +85,7 @@ const object3 = {
 };
 
 console.log("object3:", object3);
+console.log("bject.keys(object3):", Object.keys(object3)); //! ["п'ятий", 'четвертий', 'перший', 'третій', 'другий']
 //! Послідовність запису властивостей може бути будь якою!
 console.log(". . . . . . . . . . . . . . . . . . . . . . . .");
 
