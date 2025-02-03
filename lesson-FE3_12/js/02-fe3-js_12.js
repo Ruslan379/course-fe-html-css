@@ -12,16 +12,16 @@ console.log(
 //? або декілька методів до об'єкту.
 const bookShelf = {
     books: ["The Last Kingdom"],
-    // getBooks() {
-    //     return this.books;
-    // },
-    // addBook(bookName) {
-    //     this.books.push(bookName);
-    // },
-    // removeBook(bookName) {
-    //     const bookIndex = this.books.indexOf(bookName);
-    //     this.books.splice(bookIndex, 1);
-    // },
+    getBooks() {
+        return this.books;
+    },
+    addBook(bookName) {
+        this.books.push(bookName);
+    },
+    removeBook(bookName) {
+        const bookIndex = this.books.indexOf(bookName);
+        this.books.splice(bookIndex, 1);
+    },
 };
 console.log("books_before:", bookShelf); 
 
@@ -45,7 +45,20 @@ bookShelf.removeBook = function (bookName) {
 console.log("books_after:", bookShelf); 
 
 
-//todo: ✳️ var.2
+//todo: ✳️ var.2 Додавання до об'єкту методів "getBooks", "addBook" і "removeBook":
+Object.assign(bookShelf, {
+    getBooks() {
+        return this.books;
+    },
+    addBook(bookName) {
+        this.books.push(bookName);
+    },
+    removeBook(bookName) {
+        const bookIndex = this.books.indexOf(bookName);
+        this.books.splice(bookIndex, 1);
+    },
+});
+
 
 bookShelf.addBook("The Mist");
 bookShelf.addBook("Dream Guardian");
