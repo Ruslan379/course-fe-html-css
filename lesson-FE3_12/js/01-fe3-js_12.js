@@ -20,6 +20,8 @@ const object = {
     3: 89,
     4: 144
 };
+console.log("object:", object);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 // for (const key of object) {
 //     console.log(key); //! ❌ TypeError: object is not iterable
@@ -47,12 +49,16 @@ console.log("book:", book);
 console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 for (const key in book) {
+    //todo: var.1:
     //! Ключ
     console.log("key:", key);
     //! Значення властивості з таким ключем
     // console.log("this:", this); //! undefined
     console.log("book[key]:", book[key]);
     console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+    
+    //todo: var.2:
+    // console.log(`${key}: ${book[key]}`);
 };
 console.log("--------------------------------------------------------------------------------------------------");
 
