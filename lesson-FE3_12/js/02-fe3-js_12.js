@@ -181,3 +181,68 @@ console.log("Object.values(book):", values); //! ['The Last Kingdom', 'Bernard C
 const entries = Object.entries(book);
 console.log("Object.entries(book):", entries); //! [["title", "The Last Kingdom"], ["author", "Bernard Cornwell"], ["rating", 8.38]]
 console.log("------------------------------------------------------------------------------------------------");
+
+
+//! Метод Object.create()
+console.warn("Метод Object.create():");
+//? ✴️ Метод Object.create() створює копію старого об'єкту
+//? і повертає новий об'єкт, зв'язуючи його зі старим об'єктом.
+//? ✳️ Метод Object.create(animal) створює і повертає новий об'єкт,
+//? зв'язуючи його з об'єктом animal.
+//? ✳️ Тому можна отримати значення властивості legs,
+//? звернувшись до нього як dog.legs,
+//? хоча ця властивість відсутня в об'єкті dog,
+//? ✴️❗️Така можливість існує, тому що властивість legs
+//? - це НЕВЛАСНА властивість об'єкта animal.
+const animal = {
+    legs: 4,
+};
+console.log("animal:", animal); //! {legs: 4}
+
+const dog = Object.create(animal);
+dog.name = "Манго";
+
+console.log("dog:", dog); //! {name: 'Манго'}
+console.log("dog.name:", dog.name); //! 'Манго'
+console.log("dog.legs:", dog.legs); //! 4
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ");
+
+
+//! Метод hasOwnProperty()
+console.warn("Метод hasOwnProperty():");
+//? ✴️ Оператор in, який використовується в циклі for...in,
+//? не робить різниці між ВЛАСНИМИ та НЕВЛАСНИМИ властивостями об'єкта.
+//todo: ❌ Повертає true для всіх властивостей
+console.log('"name" in dog:', "name" in dog); //! true
+console.log('"legs" in dog:', "legs" in dog); //! true
+console.log("`  `  `  `  `  `  `  `");
+
+
+//? ✴️ Цикл for...in також не робить різниці між
+//? ВЛАСНИМИ та НЕВЛАСНИМИ властивостями об'єкта.
+//? ✳️ Це заважає, коли потрібно перебрати тільки ВЛАСНІ властивості.
+for (const key in dog) {
+    console.log(`${key}: ${dog[key]}`); 
+};
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ");
+
+
+//? ✴️❗️ Для того, щоб дізнатись, чи містить об'єкт ВЛАСНУ властивість,
+//? використовується метод hasOwnProperty(),
+//? який повертає true або false.
+//? ✴️✅ Повертає true тільки для власних властивостей:
+console.log('dog.hasOwnProperty("name"):', dog.hasOwnProperty("name")); //! true
+console.log('dog.hasOwnProperty("legs"):', dog.hasOwnProperty("legs")); //! false
+console.log("`  `  `  `  `  `  `  `  `  `  `  `");
+
+//? ✴️✅✅ Повертаємо true тільки для власних властивостей
+//? за допомогою Цикла for...in:
+for (const key in dog) {
+    //todo: Якщо це власна властивість - виконуємо тіло if
+    if (dog.hasOwnProperty(key)) {
+        console.log(`${key}: ${dog[key]}`); //! name: Манго
+        
+    };
+    //todo: Якщо це невласна властивість - нічого не робимо
+}
+console.log("------------------------------------------------------------------------------------------------");
