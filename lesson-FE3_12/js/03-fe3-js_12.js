@@ -1,5 +1,5 @@
 console.log(
-    '%c3.Операції spread і rest ',
+    '%c 3.Операції spread і rest ',
     'color: white; background-color: #D33F49',
 );
 

@@ -1,5 +1,5 @@
 console.log(
-    '%c2.Методи об\'єкта від конструктора Object: \n   Object.assign                          \n   Object.keys()                          \n   Object.values()                        \n   Object.entries()                       ',
+    '%c 2.Методи об\'єкта від конструктора Object: \n   Object.assign                          \n   Object.keys()                          \n   Object.values()                        \n   Object.entries()                       ',
     'color: white; background-color: #D33F49',
 );
 

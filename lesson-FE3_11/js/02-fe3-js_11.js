@@ -1,5 +1,5 @@
 console.log(
-    '%c2.Методи об\'єкта ',
+    '%c 2.Методи об\'єкта ',
     'color: white; background-color: #D33F49',
 );
 

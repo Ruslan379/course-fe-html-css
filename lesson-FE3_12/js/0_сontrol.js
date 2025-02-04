@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button1 = document.querySelector('.button-1');
     const button2 = document.querySelector('.button-2');
     const button3 = document.querySelector('.button-3');
-    // const button4 = document.querySelector('.button-4');
+    const button4 = document.querySelector('.button-4');
     // const button5 = document.querySelector('.button-5');
     // const button6 = document.querySelector('.button-6');
     // const button7 = document.querySelector('.button-7');
@@ -95,20 +95,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //! Оброблювач події для Кнопки-4
-    // button4.addEventListener('click', () => {
-    //     if (button4.textContent === 'Off') {
-    //         button4.textContent = 'On';
-    //         button4.style.backgroundColor = 'green';
-    //         button4.style.color = 'yellow';
-    //         button4.style.boxShadow = '3px 3px 4px #969696';
-    //         loadAndExecuteScript('./js/04-fe3-js_12.js'); //!
-    //     } else {
-    //         button4.textContent = 'Off';
-    //         button4.style.backgroundColor = '#b70000';
-    //         button4.style.color = 'white';
-    //         button4.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
-    //     }
-    // });
+    button4.addEventListener('click', () => {
+        if (button4.textContent === 'Off') {
+            button4.textContent = 'On';
+            button4.style.backgroundColor = 'green';
+            button4.style.color = 'yellow';
+            button4.style.boxShadow = '3px 3px 4px #969696';
+            loadAndExecuteScript('./js/04-fe3-js_12.js'); //!
+        } else {
+            button4.textContent = 'Off';
+            button4.style.backgroundColor = '#b70000';
+            button4.style.color = 'white';
+            button4.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+        }
+    });
 
     //! Оброблювач події для Кнопки-5
     // button5.addEventListener('click', () => {
