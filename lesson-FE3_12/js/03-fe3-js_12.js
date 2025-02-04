@@ -3,7 +3,6 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
-
 //! Операції spread і rest
 //? ✴️ spread і rest - це новий синтаксис
 //? для роботи з ітерабельними сутностями,
@@ -66,8 +65,8 @@ console.log("copyTemps:", copyTemps); //! [0, -4, 25, 8, 11]
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
-//? ✳️ Операція ... (spread) дозволяє,
-//? створюючи нові масиви, замінити метод concat()
+//? ✳️ Операція ...(spread), створюючи нові масиви,
+//? дозволяє замінити метод concat().
 const lastWeekTemps = [-14, -25, -11];
 console.log("lastWeekTemps:", lastWeekTemps); //! [-14, -25, -11]
 
@@ -110,10 +109,9 @@ const secondNew = {propC: 15, propD: 20};
 const thirdNew = { ...firstNew, ...secondNew };
 console.log("thirdNew:", thirdNew); //! {propA: 5, propB: 10, propC: 15, propD: 20}
 
-const fourthNew = { ...secondNew, ...firstNew };
+const fourthNew = {...secondNew, ...firstNew};
 console.log("fourthNew:", fourthNew); //! {propA: 5, propB: 10, propC: 50, propD: 20}
 console.log("---------------------------------------------------------");
-
 
 
 //! 🅰️ Операція rest (збирання всіх аргументів функції)
