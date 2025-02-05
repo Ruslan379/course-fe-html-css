@@ -4,7 +4,9 @@ console.log(
 );
 
 //! Присвоєння за значенням і за посиланням
-console.warn("Присвоєння за значенням і за посиланням (Урок-JS-12): \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/lesson-FE3_12.html");
+const relativePath = "lesson-FE3_12/lesson-FE3_12.html";
+// const urlParts = window.location.href.split('/');
+console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-12): \n ${(window.location.href.split('/')).slice(0, -2).join('/') + '/'}${relativePath}`);
 
 
 //! Присвоєння за значенням
