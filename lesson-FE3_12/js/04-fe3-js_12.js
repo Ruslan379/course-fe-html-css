@@ -10,22 +10,29 @@ console.warn("Присвоєння за значенням і за посила�
 
 //todo: var.2:
 const relativePath = "lesson-FE3_08/lesson-FE3_08.html";
-console.log("window.location.origin:", window.location.origin); //! http://127.0.0.1:5500  или 
+console.log("window.location.origin:", window.location.origin); //! http://127.0.0.1:5500  або  https://ruslan379.github.io
 console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): \n ${window.location.origin}/${relativePath}`);
 
 //todo: var.3:
 const baseUrl = window.location.href.replace(/\/[^/]*$/, "/");
 console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): ${baseUrl}lesson-FE3_08/lesson-FE3_08.html`);
 
-//todo: var.4:
+//todo: var.4: ✅❓
 const url2 = window.location.href;
 const baseUrl2 = url2.split("/lesson-FE3_12/")[0] + "/";
-console.log("baseUrl2:", baseUrl2); //! http://127.0.0.1:5500/ или
+console.log("baseUrl2:", baseUrl2); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
 //todo: var.5:
 const url3 = window.location.href;
 const baseUrl3 = url3.substring(0, url3.lastIndexOf('/') + 1);
-console.log("baseUrl3:", baseUrl3); //! http://127.0.0.1:5500/lesson-FE3_12/ или
+console.log("baseUrl3:", baseUrl3); //! http://127.0.0.1:5500/lesson-FE3_12/  або  https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/
+
+//todo: var.6:✅✅
+const url4 = window.location.href;
+const baseUrl4 = url4.substring(0, url4.lastIndexOf('/'));
+const baseUrl41 = baseUrl4.substring(0, baseUrl4.lastIndexOf('/') + 1);
+console.log("baseUrl41:", baseUrl41); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
+
 
 
 //! Присвоєння за значенням
