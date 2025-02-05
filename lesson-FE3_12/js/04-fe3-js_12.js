@@ -4,7 +4,15 @@ console.log(
 );
 
 //! Присвоєння за значенням і за посиланням
+// location.href = "../../lesson-FE3_08/lesson-FE3_08.html"; //todo: миттєвий перехід за посиланням
+//todo: var.1:
 console.warn("Присвоєння за значенням і за посиланням (Урок-JS-08): \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_08/lesson-FE3_08.html");
+//todo: var.2:
+const relativePath = "../../lesson-FE3_08/lesson-FE3_08.html";
+console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): \n ${window.location.origin}/${relativePath}`);
+//todo: var.3:
+const baseUrl = window.location.href.replace(/\/[^/]*$/, "/");
+console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): ${baseUrl}../../lesson-FE3_08/lesson-FE3_08.html`);
 
 
 //! Присвоєння за значенням
