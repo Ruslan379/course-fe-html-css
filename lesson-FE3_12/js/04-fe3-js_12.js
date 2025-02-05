@@ -42,7 +42,7 @@ console.log("Початковий шлях:", url7); //! http://127.0.0.1:5500/l
 const urlParts = url7.split('/');
 
 const dynamicRelativePath = urlParts.slice(-2).join('/');
-console.log("dynamicRelativePath:", dynamicRelativePath); //! lesson-FE3_12/lesson-FE3_12.htmll  або  
+console.log("dynamicRelativePath:", dynamicRelativePath); //! lesson-FE3_12/lesson-FE3_12.html
 
 const baseUrl7 = urlParts.slice(0, -2).join('/') + '/';
 console.log("baseUrl7:", baseUrl7); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
