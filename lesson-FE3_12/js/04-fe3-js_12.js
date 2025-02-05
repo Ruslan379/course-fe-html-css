@@ -15,7 +15,7 @@ console.warn(`Присвоєння за значенням і за посила�
 
 //todo: var.3:
 const baseUrl3 = window.location.href.replace(/\/[^/]*$/, "/");
-console.log("baseUrl3:", baseUrl3); //! http://127.0.0.1:5500/lesson-FE3_12/   або  
+console.log("baseUrl3:", baseUrl3); //! http://127.0.0.1:5500/lesson-FE3_12/   або  https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/
 console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): ${baseUrl3}lesson-FE3_08/lesson-FE3_08.html`);
 
 //todo: var.4: ✅❓
@@ -37,18 +37,18 @@ console.log("baseUrl61:", baseUrl61); //! http://127.0.0.1:5500/  або  https:
 //todo: var.7:✅✅✅
 console.log("``````````````````````````````````````````````````````````````````````````");
 const url7 = window.location.href;
-console.log("Початковий шлях:", url7); //! http://127.0.0.1:5500/lesson-FE3_12/lesson-FE3_12.html  або 
+console.log("Початковий шлях:", url7); //! http://127.0.0.1:5500/lesson-FE3_12/lesson-FE3_12.html  або  https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/lesson-FE3_12.html
 
 const urlParts = url7.split('/');
 
 const dynamicRelativePath = urlParts.slice(-2).join('/');
-console.log("dynamicRelativePath:", dynamicRelativePath); //! lesson-FE3_12/lesson-FE3_12.html
+console.log("dynamicRelativePath:", dynamicRelativePath); //! lesson-FE3_12/lesson-FE3_12.htmll  або  
 
 const baseUrl7 = urlParts.slice(0, -2).join('/') + '/';
 console.log("baseUrl7:", baseUrl7); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
-const restorePath = `${baseUrl7}/${dynamicRelativePath}`
-console.log("Відновлений шлях.:", restorePath); //! http://127.0.0.1:5500/lesson-FE3_12/lesson-FE3_12.html  або 
+const restorePath = `${baseUrl7}${dynamicRelativePath}`
+console.log("Відновлений шлях.:", restorePath); //! http://127.0.0.1:5500/lesson-FE3_12/lesson-FE3_12.html  або  https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/lesson-FE3_12.html
 console.log("``````````````````````````````````````````````````````````````````````````");
 
 //todo: ❗️ ❗️ ❗️ var.finally: ✅✅✅
