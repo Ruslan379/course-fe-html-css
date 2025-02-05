@@ -9,6 +9,7 @@ console.log(
 console.warn("Присвоєння за значенням і за посиланням (Урок-JS-08): \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_08/lesson-FE3_08.html");
 //todo: var.2:
 const relativePath = "lesson-FE3_08/lesson-FE3_08.html";
+console.log(window.location.origin);
 console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): \n ${window.location.origin}/${relativePath}`);
 //todo: var.3:
 const baseUrl = window.location.href.replace(/\/[^/]*$/, "/");
