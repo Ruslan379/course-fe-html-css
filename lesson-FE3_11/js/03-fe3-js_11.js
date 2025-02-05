@@ -29,6 +29,8 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 console.warn("Схема доступу до властивостей об'єкта в методах через this: \n https://ruslan379.github.io/course-fe-html-css/lesson-FE3_11/images/this-keyword.jpg");
+console.warn("Схема доступу до властивостей об'єкта в методах через this: \n http://127.0.0.1:5500/lesson-FE3_11/images/this-keyword.jpg");
+console.warn(`Схема доступу до властивостей об'єкта в методах через this: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_11/images/this-keyword.jpg"}`);
 //? ✴️ Для того, щоб отримати доступ 
 //? до властивостей об'єкта в методах, 
 //? ми звертаємось до нього через this і далі,
