@@ -15,6 +15,7 @@ console.warn(`Присвоєння за значенням і за посила�
 
 //todo: var.3:
 const baseUrl3 = window.location.href.replace(/\/[^/]*$/, "/");
+console.log("baseUrl3:", baseUrl3); //! http://127.0.0.1:5500/lesson-FE3_12/   або  
 console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): ${baseUrl3}lesson-FE3_08/lesson-FE3_08.html`);
 
 //todo: var.4: ✅❓
