@@ -14,25 +14,30 @@ console.log("window.location.origin:", window.location.origin); //! http://127.0
 console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): \n ${window.location.origin}/${relativePath}`);
 
 //todo: var.3:
-const baseUrl = window.location.href.replace(/\/[^/]*$/, "/");
-console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): ${baseUrl}lesson-FE3_08/lesson-FE3_08.html`);
+const baseUrl3 = window.location.href.replace(/\/[^/]*$/, "/");
+console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): ${baseUrl3}lesson-FE3_08/lesson-FE3_08.html`);
 
 //todo: var.4: ✅❓
-const url2 = window.location.href;
-const baseUrl2 = url2.split("/lesson-FE3_12/")[0] + "/";
-console.log("baseUrl2:", baseUrl2); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
+const url4 = window.location.href;
+const baseUrl4 = url4.split("/lesson-FE3_12/")[0] + "/";
+console.log("baseUrl4:", baseUrl4); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
 //todo: var.5:
-const url3 = window.location.href;
-const baseUrl3 = url3.substring(0, url3.lastIndexOf('/') + 1);
-console.log("baseUrl3:", baseUrl3); //! http://127.0.0.1:5500/lesson-FE3_12/  або  https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/
+const url5 = window.location.href;
+const baseUrl5 = url5.substring(0, url5.lastIndexOf('/') + 1);
+console.log("baseUrl5:", baseUrl5); //! http://127.0.0.1:5500/lesson-FE3_12/  або  https://ruslan379.github.io/course-fe-html-css/lesson-FE3_12/
 
 //todo: var.6:✅✅
-const url4 = window.location.href;
-const baseUrl4 = url4.substring(0, url4.lastIndexOf('/'));
-const baseUrl41 = baseUrl4.substring(0, baseUrl4.lastIndexOf('/') + 1);
-console.log("baseUrl41:", baseUrl41); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
+const url6 = window.location.href;
+const baseUrl6 = url6.substring(0, url6.lastIndexOf('/'));
+const baseUrl61 = baseUrl6.substring(0, baseUrl6.lastIndexOf('/') + 1);
+console.log("baseUrl61:", baseUrl61); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
+//todo: var.6:✅✅✅
+const url7 = window.location.href;
+const urlParts = url7.split('/');
+const baseUrl7 = urlParts.slice(0, -2).join('/') + '/';
+console.log("baseUrl7:", baseUrl7); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
 
 //! Присвоєння за значенням
