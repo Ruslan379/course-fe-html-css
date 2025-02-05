@@ -33,12 +33,25 @@ const baseUrl6 = url6.substring(0, url6.lastIndexOf('/'));
 const baseUrl61 = baseUrl6.substring(0, baseUrl6.lastIndexOf('/') + 1);
 console.log("baseUrl61:", baseUrl61); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
-//todo: var.6:✅✅✅
+//todo: var.7:✅✅✅
+console.log("``````````````````````````````````````````````````````````````````````````");
 const url7 = window.location.href;
+console.log("Початковий шлях:", url7); //! http://127.0.0.1:5500/lesson-FE3_12/lesson-FE3_12.html  або 
+
 const urlParts = url7.split('/');
+
+const dynamicRelativePath = urlParts.slice(-2).join('/');
+console.log("dynamicRelativePath:", dynamicRelativePath); //! lesson-FE3_12/lesson-FE3_12.html
+
 const baseUrl7 = urlParts.slice(0, -2).join('/') + '/';
 console.log("baseUrl7:", baseUrl7); //! http://127.0.0.1:5500/  або  https://ruslan379.github.io/course-fe-html-css/
 
+const restorePath = `${baseUrl7}/${dynamicRelativePath}`
+console.log("Відновлений шлях.:", restorePath); //! http://127.0.0.1:5500/lesson-FE3_12/lesson-FE3_12.html  або 
+console.log("``````````````````````````````````````````````````````````````````````````");
+
+//todo: ❗️ ❗️ ❗️ var.finally: ✅✅✅
+console.warn(`Присвоєння за значенням і за посиланням (Урок-JS-08): \n ${baseUrl7}/${relativePath}`);
 
 //! Присвоєння за значенням
 console.warn("Присвоєння за значенням:");
