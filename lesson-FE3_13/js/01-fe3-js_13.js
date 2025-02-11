@@ -234,3 +234,27 @@ console.log("followers:", followers); //! 5603
 console.log("userViews:", userViews); //! 4827
 console.log("userLikes:", userLikes); //! 1308
 console.log("----------------------------------------------------------------------------------------------------------------------");
+
+
+
+//! Часткова деструктуризація
+console.warn("Часткова деструктуризація:");
+//? ✴️ Використовуючи операцію ... (rest)
+//? можна робити часткову деструктуризацію,
+//? взявши з об'єкта необхідні поля,
+//? а решту зібрати в змінну під ім'ям rest (ім'я змінної довільне),
+//? це буде об'єкт з тими полями,
+//? які ми явно НЕ деструктуризували в змінні.
+const hotel = {
+    name: 'Resort Hotel',
+    stars: 5,
+    capacity: 100,
+};
+console.log("hotel:", hotel);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+const { name: hotelName, ...restRemainingObjectProperties } = hotel;
+
+console.log("hotelName(= name):", hotelName); //! // 'Resort Hotel'
+console.log("restRemainingObjectProperties:", restRemainingObjectProperties); //! {stars: 5, capacity: 100}
+console.log("----------------------------------------------------------------------------------------------------------------------");
