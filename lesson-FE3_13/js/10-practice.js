@@ -27,8 +27,8 @@ const car = {
   features: ['power windows', 'rear camera', 'navigation'],
   safety: {
     airbags: true,
-    antilock_brakes: true,
-    stability_control: true
+    antilockBrakes: true,
+    stabilityControl: true
   },
 };
 
@@ -40,10 +40,10 @@ const movie = {
     nationality: 'American'
   },
   actors: ['Tim Robbins', 'Morgan Freeman'],
-  release_year: 1994,
+  releaseYear: 1994,
   ratings: {
     imdb: 9.3,
-    rotten_tomatoes: 90
+    rottenTomatoes: 90
   },
 };
 
