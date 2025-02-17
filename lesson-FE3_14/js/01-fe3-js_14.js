@@ -128,18 +128,14 @@ console.log(
     `%c
                                                                       
         function calculateEngravingPrice(message, pricePerWord) {     
-            const arrayMessage = message.split(" ");                  
-            const wordСount = arrayMessage.length;                    
-            return wordСount * pricePerWord;                          
+            return message.split(" ").length * pricePerWord;          
         };                                                            
                                                                       `,
     'color: #9bff9b; background-color: #00c1cf',
 );
 
 function calculateEngravingPrice2(message, pricePerWord) {
-    const arrayMessage = message.split(" ");
-    const wordСount = arrayMessage.length;
-    return wordСount * pricePerWord;
+    return message.split(" ").length * pricePerWord;
 };
 console.log("Price:", calculateEngravingPrice2("Той, хто задоволений самим собою – багач", 10)); //! 70
 console.log("-----------------------------------------------------------------------------------------------------------");
