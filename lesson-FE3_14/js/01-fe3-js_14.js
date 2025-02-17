@@ -27,21 +27,22 @@ const book = {
     rating: 8.38,
 };
 console.log("book:", book);
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 
 //todo: Приклад-1. Імперативний код:
 console.log(
-    `
-    %c
+    `%c
+                                                             
         const title = "The Last Kingdom";                    
         const author = "Bernard Cornwell";                   
         const genres = ["historical prose", "adventure"];    
         const isPublic = true;                               
-        const rating = 8.38;                                 `,
-    'color: yellow; background-color: #ff7272',
+        const rating = 8.38;                                 
+                                                             `,
+    'color: #ffff60; background-color: #ff7272',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 console.warn("Приклад-2. Імперативний код:");
@@ -53,8 +54,8 @@ console.warn("Приклад-2. Імперативний код:");
 //? і ціну гравіювання одного слова,
 //? і повертає ціну гравіювання всіх слів в рядку.
 console.log(
-    `
-    %c
+    `%c
+                                                                      
         function calculateEngravingPrice(message, pricePerWord) {     
                                                                       
             let words = 0;                                            
@@ -67,8 +68,12 @@ console.log(
                 } else if (character === ' ') {                       
                     inWord = false;                                   
                 };                                                    
-        };                                                            `,
-    'color: yellow; background-color: #00c1cf',
+            };                                                        
+                                                                      
+            return words * pricePerWord;                              
+        };                                                            
+                                                                      `,
+    'color: #ffff60; background-color: #00c1cf',
 );
 
 function calculateEngravingPrice(message, pricePerWord) {
@@ -90,8 +95,7 @@ function calculateEngravingPrice(message, pricePerWord) {
 
 
 console.log("Price:", calculateEngravingPrice("Той, хто задоволений самим собою – багач", 10)); //! 70
-
-console.log("-------------------------------------------------------------------------------------------------------------");
+console.log("-----------------------------------------------------------------------------------------------------------");
 
 
 //! Декларативний код
@@ -113,14 +117,32 @@ console.warn("Приклад-1. Декларативний код:");
 console.log(
     `
     %c
-        const { title, author, genres, isPublic, rating, coverImage } = book;  `,
+                                                                               
+        const { title, author, genres, isPublic, rating, coverImage } = book;  
+                                                                               `,
     'color: #21ff21; background-color: #ff7272',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 console.warn("Приклад-2. Декларативний код:");
 //todo: Приклад-2. Декларативний код:
+console.log(
+    `%c
+                                                                      
+        function calculateEngravingPrice(message, pricePerWord) {     
+            const arrayMessage = message.split(" ");                  
+            const wordСount = arrayMessage.length;                    
+            return wordСount * pricePerWord;                          
+        };                                                            
+                                                                      `,
+    'color: #9bff9b; background-color: #00c1cf',
+);
 
-
-console.log("-------------------------------------------------------------------------------------------------------------");
+function calculateEngravingPrice2(message, pricePerWord) {
+    const arrayMessage = message.split(" ");
+    const wordСount = arrayMessage.length;
+    return wordСount * pricePerWord;
+};
+console.log("Price:", calculateEngravingPrice2("Той, хто задоволений самим собою – багач", 10)); //! 70
+console.log("-----------------------------------------------------------------------------------------------------------");

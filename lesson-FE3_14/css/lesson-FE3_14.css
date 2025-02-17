@@ -22,7 +22,6 @@ body {
     /* align-items: center; */
     color: var(--color-font-body);
     background-color: var(--color-background-body);
-    color: #ff7272;
 }
 
 .title-lesson {
