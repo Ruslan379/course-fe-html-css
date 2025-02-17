@@ -27,8 +27,6 @@ const book = {
     rating: 8.38,
 };
 console.log("book:", book);
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
-
 
 //todo: Приклад-1. Імперативний код:
 console.log(
@@ -115,11 +113,10 @@ console.warn(`Приклад «Декларативного коду»: \n ${((w
 //todo: Приклади Декларативного коду
 console.warn("Приклад-1. Декларативний код:");
 console.log(
-    `
-    %c
-                                                                               
-        const { title, author, genres, isPublic, rating, coverImage } = book;  
-                                                                               `,
+    `%c
+                                                                            
+    const { title, author, genres, isPublic, rating, coverImage } = book;   
+                                                                            `,
     'color: #21ff21; background-color: #ff7272',
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
