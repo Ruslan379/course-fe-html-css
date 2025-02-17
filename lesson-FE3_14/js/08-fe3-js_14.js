@@ -1,10 +1,10 @@
 console.log(
-    '%c 7.Метод find(). ',
+    '%c 8.Методи every() і some(). ',
     'color: white; background-color: #D33F49',
 );
 
-//! 7.Метод find()
-console.warn("7.Метод find():");
+//! 8.Методи every() і some()
+console.warn("8.Методи every() і some():");
 //? ✴️ 
 //? ✳️ 
 
