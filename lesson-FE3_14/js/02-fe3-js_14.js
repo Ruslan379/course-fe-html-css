@@ -64,7 +64,7 @@ console.log("numbers2_before:", numbers2); //! [1, 2, 3, 4, 5]
 const doubledNumbers = pureMultiply(numbers2, 2);
 
 //todo: Мутація вихідних даних - масиву numbers2 не відбулася:
-console.log("numbers2_before:", numbers2); //! [1, 2, 3, 4, 5]
+console.log("numbers2_after:", numbers2); //! [1, 2, 3, 4, 5]
 
 //todo: Функція повернула новий масив зі зміненими даними:
 console.log("doubledNumbers:", doubledNumbers); //! [2, 4, 6, 8, 10]
