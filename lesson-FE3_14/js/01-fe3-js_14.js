@@ -3,8 +3,23 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
-//! 1.Імперативний і декларативний код
-console.warn("1.Імперативний і декларативний код:");
+//! Приклад Імперативного коду
+console.warn(`Приклад Імперативного коду: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_14/images/imperative-programming-example.jpg"}`);
+
+//? ✴️ 
+//? ✳️ 
+
+// console.log("book:", book);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+console.log("----------------------------------------------------------------------------------------------------------------------");
+
+
+//! Приклад Декларативного коду
+console.warn(`Приклад Декларативного коду: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_14/images/declarative-programming-example.jpg"}`);
+
 //? ✴️ 
 //? ✳️ 
 
