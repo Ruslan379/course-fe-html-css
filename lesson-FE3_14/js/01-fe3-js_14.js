@@ -33,19 +33,63 @@ console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `
 //todo: Приклад-1. Імперативний код:
 console.log(
     `
-        const title = "The Last Kingdom";
-        const author = "Bernard Cornwell";
-        const genres = ["historical prose", "adventure"];
-        const isPublic = true;
-        const rating = 8.38;
-    `
+    %c
+        const title = "The Last Kingdom";                    
+        const author = "Bernard Cornwell";                   
+        const genres = ["historical prose", "adventure"];    
+        const isPublic = true;                               
+        const rating = 8.38;                                 `,
+    'color: yellow; background-color: #ff7272',
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 console.warn("Приклад-2. Імперативний код:");
 //todo: Приклад-2. Імперативний код:
+//? Напиши скрипт підрахунку вартості гравіювання прикрас.
+//? Для цього створи функцію
+//? calculateEngravingPrice(message, pricePerWord)
+//? приймаючу рядок (в рядку будуть тільки слова і прогалини)
+//? і ціну гравіювання одного слова,
+//? і повертає ціну гравіювання всіх слів в рядку.
+console.log(
+    `
+    %c
+        function calculateEngravingPrice(message, pricePerWord) {     
+                                                                      
+            let words = 0;                                            
+            let inWord = false;                                       
+                                                                      
+            for (const character of message.trim()) {                 
+                if (character !== ' ' && !inWord) {                   
+                    words++;                                          
+                    inWord = true;                                    
+                } else if (character === ' ') {                       
+                    inWord = false;                                   
+                };                                                    
+        };                                                            `,
+    'color: yellow; background-color: #00c1cf',
+);
 
+function calculateEngravingPrice(message, pricePerWord) {
+
+    let words = 0;
+    let inWord = false;
+
+    for (const character of message) {
+        if (character !== ' ' && !inWord) {
+            words++;
+            inWord = true;
+        } else if (character === ' ') {
+            inWord = false;
+        };
+    };
+
+    return words * pricePerWord;
+};
+
+
+console.log("Price:", calculateEngravingPrice("Той, хто задоволений самим собою – багач", 10)); //! 70
 
 console.log("-------------------------------------------------------------------------------------------------------------");
 
@@ -68,8 +112,9 @@ console.warn(`Приклад «Декларативного коду»: \n ${((w
 console.warn("Приклад-1. Декларативний код:");
 console.log(
     `
-        const { title, author, genres, isPublic, rating, coverImage } = book;
-    `
+    %c
+        const { title, author, genres, isPublic, rating, coverImage } = book;  `,
+    'color: #21ff21; background-color: #ff7272',
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
