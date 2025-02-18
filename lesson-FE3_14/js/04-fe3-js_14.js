@@ -18,7 +18,7 @@ console.warn("Синтаксис методу forEach:");
 console.log(
     `%c
     array.forEach(function callback(element, index, array) {
-        // Тіло колбек-функції
+        // тіло колбек-функції
     });
     `,
     'color: blue; font-size: 18px',
@@ -28,6 +28,8 @@ console.log(
 //? ✳️ Можна оголошувати тільки необхідні параметри,
 //? найчастіше - це елемент, головне не забувати про їх порядок.
 const numbers = [5, 10, 15, 20, 25];
+console.log("numbers:", numbers);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `");
 
 console.warn("Функціональний forEach:");
 //todo: Функціональний forEach:

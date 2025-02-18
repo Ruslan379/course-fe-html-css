@@ -43,19 +43,25 @@ console.warn("Чиста функція:");
 //? множення елементів масиву, 
 //? що повертає новий масив, не змінюючи вихідний.
 const pureMultiply = (array, value) => {
-    const newArray = [];
+    const newArray1 = [];
+    const newArray2 = [];
 
     //todo: var.1
     for (let i = 0; i < array.length; i += 1) {
-        newArray.push(array[i] * value);
+        newArray1.push(array[i] * value);
     };
 
     //todo: var.2
-    // array.forEach(element => {
-    //     newArray.push(element * value);
-    // });
+    array.forEach(element => {
+        newArray2.push(element * value);
+    });
 
-    return newArray;
+    // return newArray1;
+    // return newArray2;
+    return {
+        newArray1,
+        newArray2
+    };
 };
 
 const numbers2 = [1, 2, 3, 4, 5];
