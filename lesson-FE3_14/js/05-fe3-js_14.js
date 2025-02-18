@@ -21,7 +21,7 @@ console.warn("Синтаксис методу map():");
 //? 🔹 і власне вихідний масив array.
 console.log(
     `%c
-    array.map((element, index, array) => {
+    масив.map((element, index, array) => {
         // тіло колбек-функції
     });
     `,
@@ -91,7 +91,7 @@ console.warn("Синтаксис методу flatMap():");
 //? 🔹 і власне вихідний масив array.
 console.log(
     `%c
-    array.flatMap((element, index, array) => {
+    масив.flatMap((element, index, array) => {
         // тіло колбек-функції
     });
     `,

@@ -17,7 +17,7 @@ console.warn("Синтаксис методу forEach:");
 //? 🔹 і власне вихідний масив array.
 console.log(
     `%c
-    array.forEach(function callback(element, index, array) {
+    масив.forEach(function callback(element, index, array) {
         // тіло колбек-функції
     });
     `,

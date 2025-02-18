@@ -17,7 +17,7 @@ console.log(
 //? і callback-функція callback як аргумент методу.
 console.log(
     `%c
-    array.method(callback[currentValue, index, array]);
+    масив.method(callback[currentValue, index, array]);
     `,
     'color: red; font-size: 20px',
 );
@@ -28,7 +28,7 @@ console.log(
 //? 🔹 і сам вихідний масив array (третій параметр).
 console.log(
     `%c
-    array.method((item, idx, arr) => {
+    масив.method((item, idx, arr) => {
         // логіка, яка буде застосовуватися на кожній ітерації
     });
     `,
@@ -40,7 +40,7 @@ console.log(
 //? але є неофіційні домовленості.
 console.log(
     `%c
-    array.method(item => {
+    масив.method(item => {
         // логіка, яка буде застосовуватися на кожній ітерації
     });
     `,

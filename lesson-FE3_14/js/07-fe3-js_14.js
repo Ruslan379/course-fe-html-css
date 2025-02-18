@@ -24,7 +24,7 @@ console.warn("Синтаксис методу find():");
 //? 🔹 і власне вихідний масив array.
 console.log(
     `%c
-    array.find((element, index, array) => {
+    масив.find((element, index, array) => {
         // тіло колбек-функції
     });
     `,
@@ -75,7 +75,7 @@ console.warn("Синтаксис методу findIndex():");
 //? 🔹 і власне вихідний масив array.
 console.log(
     `%c
-    array.findIndex((element, index, array) => {
+    масив.findIndex((element, index, array) => {
         // тіло колбек-функції
     });
     `,
@@ -83,7 +83,7 @@ console.log(
 );
 
 console.warn("Приклад використання метода findIndex():");
-//? ✳️ 
+//? ✳️ Приклад-1:
 const colorPickerOptions2 = [
     { label: "red", color: "#F44336" },
     { label: "green", color: "#4CAF50" },
