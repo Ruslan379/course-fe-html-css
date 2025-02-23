@@ -99,5 +99,6 @@ console.log("allMyClients:", allMyClients); //! ['Mango', 'Poly', 'Ajax']
 
 const lastElementIndex = allMyClients.length - 1;
 console.log("Останній індекс:", lastElementIndex); //! 2
-console.log("Останній єлемент:", allMyClients[lastElementIndex]); //! "Ajax"
+console.log("Останній елемент:", allMyClients[lastElementIndex]); //! "Ajax"
+console.log("Останній елемент:", allMyClients[allMyClients.length - 1]); //! "Ajax"
 console.log("---------------------------------------------------------");
