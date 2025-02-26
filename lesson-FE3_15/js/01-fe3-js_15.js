@@ -54,7 +54,7 @@ console.warn("Приклад використання метода reduce():");
 const total = [2, 7, 3, 14, 6].reduce((previousValue, number, index) => {
     console.log(`Iteration-${index + 1}:  previousValue: ${previousValue},  number: ${number}  ->  return ${previousValue + number}`);
     return previousValue + number;
-});
+}, 0);
 
 console.log("total:", total); //! 32
 //? ✳️ Тобто метод reduce() використовується,

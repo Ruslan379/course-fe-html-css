@@ -16,9 +16,7 @@ console.warn("Синтаксис методу sort():");
 //?    до рядка і порівняння порядкових номерів у таблиці Unicode.
 console.log(
     `%c
-    массив.sort((a, b) => {
-        // тіло колбек-функції
-    });
+    массив.sort();
     `,
     'color: blue; font-size: 18px',
 );
@@ -83,7 +81,7 @@ console.log(
         // тіло колбек-функції
     });
     `,
-    'color: broun; font-size: 18px',
+    'color: blue; font-size: 18px',
 );
 //? 🔸 a - перший елемент для порівняння.
 //? 🔸 b - другий елемент для порівняння.
@@ -101,6 +99,7 @@ console.log(
 const scores4 = [27, 2, 41, 4, 7, 3, 75];
 const ascendingScores4Old = [...scores4].sort();
 const ascendingScores4New = [...scores4].sort((a, b) => a - b);
+// const ascendingScores4New = [...scores4].sort((a, b) => b - a);
 
 console.log("scores4:", scores4); //! [27, 2, 41, 4, 7, 3, 75]
 console.log("ascendingScores4Old:", ascendingScores4Old);  //! [2, 27, 3, 4, 41, 7, 75]
