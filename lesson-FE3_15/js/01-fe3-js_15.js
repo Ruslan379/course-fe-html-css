@@ -63,6 +63,29 @@ console.log("total:", total); //! 32
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
+//? ❗️❗️❗️ Важливий приклад вірного використання синтаксису метода reduce():
+console.warn("Приклад-1: ВІРНЄ використання синтаксису метода reduce():");
+//todo var.1
+function example1(arr) {
+    arr.reduce((acc, element, index) => {
+        console.log(`Acc: ${acc}; Index-${index}:  Element: ${element}`);
+    }, undefined);
+}
+example1(["Робітник1", "Робітник2", "Робітник3"]);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+
+console.warn("Приклад-2: ПОМИЛКОВЕ використання синтаксису метода reduce():");
+//todo var.2 
+function example2(arr) {
+    arr.reduce((element, index) => {
+        console.log(`Index-${index}:  Element: ${element}`); //todo var.2
+    }, undefined);
+};
+example2(["Робітник1", "Робітник2", "Робітник3"]);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
 //! Масив об'єктів
 console.warn("Масив об'єктів:");
 //? ✳️ Під час роботи з масивом об'єктів
