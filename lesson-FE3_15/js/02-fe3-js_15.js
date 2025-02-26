@@ -177,5 +177,4 @@ const inAlphabeticalOrder = students3.sort((firstStudent, secondStudent) =>
     firstStudent.name.localeCompare(secondStudent.name)
 );
 console.log("inAlphabeticalOrder:", inAlphabeticalOrder); //! 
-
 console.log("----------------------------------------------------------------------------------------------");
