@@ -99,11 +99,12 @@ console.log(
 const scores4 = [27, 2, 41, 4, 7, 3, 75];
 const ascendingScores4Old = [...scores4].sort();
 const ascendingScores4New = [...scores4].sort((a, b) => a - b);
-// const ascendingScores4New = [...scores4].sort((a, b) => b - a);
+const descentingScores4New = [...scores4].sort((a, b) => b - a);
 
 console.log("scores4:", scores4); //! [27, 2, 41, 4, 7, 3, 75]
 console.log("ascendingScores4Old:", ascendingScores4Old);  //! [2, 27, 3, 4, 41, 7, 75]
 console.log("ascendingScores4New:", ascendingScores4New);  //! [2, 3, 4, 7, 27, 41, 75]
+console.log("descentingScores4New:", descentingScores4New);  //! [75, 41, 27, 7, 4, 3, 2]
 
 //! Свій порядок сортування рядків
 console.warn("Свій порядок сортування рядків:");

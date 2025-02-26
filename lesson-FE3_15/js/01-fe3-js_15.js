@@ -42,7 +42,7 @@ console.warn("Приклад використання метода reduce():");
 //? якщо initialValue не задане.
 //? 🔹 previousValue = initialValue = 0; (або previousValue = array(0) = 2).
 //? Потім колбек - функція викликається для кожного елемента масиву.
-//? Поточне значення параметра previousValue 
+//? Поточне значення параметра previousValue
 //? - це те, що повернула колбек - функція на минулій ітерації.
 //?     🔹 Ітерація 1 -> previousValue = 0 -> number = 2 -> return 0 + 2 -> return 2
 //?     🔹 Ітерація 2 -> previousValue = 2 -> number = 7 -> return 2 + 7 -> return 9
@@ -51,7 +51,11 @@ console.warn("Приклад використання метода reduce():");
 //?     🔹 Ітерація 5 -> previousValue = 26 -> number = 6 -> return 26 + 6 -> return 32
 //? Після завершення перебирання всього масиву, метод reduce() повертає значення акумулятора.
 //?       Результат = 32
-const total = [2, 7, 3, 14, 6].reduce((previousValue, number, index) => {
+const array = [2, 7, 3, 14, 6];
+console.log("array:", array);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `")
+
+const total = array.reduce((previousValue, number, index) => {
     console.log(`Iteration-${index + 1}:  previousValue: ${previousValue},  number: ${number}  ->  return ${previousValue + number}`);
     return previousValue + number;
 }, 0);
@@ -72,7 +76,7 @@ function example1(arr) {
     }, undefined);
 }
 example1(["Робітник1", "Робітник2", "Робітник3"]);
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 console.warn("Приклад-2: ПОМИЛКОВЕ використання синтаксису метода reduce():");
