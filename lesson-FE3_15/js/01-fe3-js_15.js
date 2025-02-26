@@ -207,7 +207,8 @@ const getTags3 = tweets =>
         return allTags;
     }, []);
 
-console.log("Tags-3 with countLikes:", getTags2(tweets2)); //! ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
+const tags3 = getTags3(tweets3);
+console.log("Tags-3 with countLikes:", tags3); //! ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
 
 //todo: Винесемо callback-функцію окремо, а в reducе передамо посилання на неї.
 //todo: Це стандартна практика, якщо callback-функція досить велика.
@@ -227,5 +228,5 @@ const getTagStats = (acc, tag) => {
 const countTags = tags => tags.reduce(getTagStats, {});
 
 const tagCount = countTags(tags3);
-console.log("tagCount:", tagCount); //!
+console.log("tagCount:", tagCount); //! {js: 3, nodejs: 3, html: 2, css: 2, react: 2}
 console.log("-------------------------------------------------------------");
