@@ -54,7 +54,7 @@ console.warn("Приклад використання метода reduce():");
 const total = [2, 7, 3, 14, 6].reduce((previousValue, number, index) => {
     console.log(`Iteration-${index + 1}:  previousValue: ${previousValue},  number: ${number}  ->  return ${previousValue + number}`);
     return previousValue + number;
-}, 0);
+});
 
 console.log("total:", total); //! 32
 //? ✳️ Тобто метод reduce() використовується,
@@ -108,15 +108,15 @@ console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 const totalScore = students.reduce((total, student) => {
     return total + student.score;
 }, 0);
-console.log("totalScore:", totalScore);
+console.log("totalScore:", totalScore); //! 337
 
-const averageScore = totalScore / students.length;
+const averageScore = totalScore / students.length; //! 67.4
 console.log("averageScore:", averageScore);
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
-//! Масив об'єктів
-console.warn("Масив об'єктів:");
+//! Просунутий reduce (сума усіх лайків)
+console.warn("Просунутий reduce (сума усіх лайків):");
 //? ✳️ Припустимо у нас є наступна задача:
 //? з масиву постів твіттера окремого користувача
 //? необхідно порахувати суму усіх лайків.
@@ -132,7 +132,7 @@ const tweets1 = [
     { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
 ];
 console.log("tweets1:", tweets1);
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `")
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 //todo: Пройдемо по всіх елементах колекції і додамо значення властивості likes
 //todo: до акумулятора, початкове значення якого вкажемо 0.
@@ -149,6 +149,8 @@ const countLikes = tweets => {
 console.log("likes with countLikes:", countLikes(tweets1)); //! 32
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
+//! Просунутий reduce (масив усіх тегів)
+console.warn("Просунутий reduce (масив усіх тегів):");
 //? ✳️ Продовжуючи тему reduce, 
 //? ми зберемо в масив усі теги, 
 //? які зустрічаються в постах.
@@ -165,20 +167,65 @@ console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `")
 //todo: Пройдемо по всіх елементах колекції і додамо значення властивості tags
 //todo: до акумулятора, початкове значення якого вкажемо порожнім масивом [].
 //todo: На кожній ітерації пушимо в акумулятор усі елементи tweet.tags і повертаємо його.
-const tags = tweets2.reduce((allTags, tweet) => {
+const tags2 = tweets2.reduce((allTags, tweet) => {
     allTags.push(...tweet.tags);
     return allTags;
 }, []);
 
-console.log("tags:", tags);
+console.log("tags2:", tags2); //! ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
 
 //todo: Мабуть, збирання тегів - не одиночна операція, тому напишемо функцію
 //todo: для збирання тегів з колекції
-const getTags = tweets2 =>
+const getTags2 = tweets2 =>
     tweets2.reduce((allTags, tweet) => {
         allTags.push(...tweet.tags);
         return allTags;
     }, []);
 
-console.log("tags with countLikes:", getTags(tweets2));
+console.log("Tags-2 with countLikes:", getTags2(tweets2)); //! ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+//! Просунутий reduce (об'єкт унікальних  тегів)
+console.warn("Просунутий reduce (об'єкт унікальних  тегів):");
+//? ✳️ Продовжуючи тему reduce, 
+//? ми зберемо в масив усі теги, 
+//? які зустрічаються в постах.
+const tweets3 = [
+    { id: "000", likes: 5, tags: ["js", "nodejs"] },
+    { id: "001", likes: 2, tags: ["html", "css"] },
+    { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+    { id: "003", likes: 8, tags: ["css", "react"] },
+    { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+];
+console.log("tweets3:", tweets3);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+const getTags3 = tweets =>
+    tweets.reduce((allTags, tweet) => {
+        allTags.push(...tweet.tags);
+        return allTags;
+    }, []);
+
+console.log("Tags-3 with countLikes:", getTags2(tweets2)); //! ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
+
+//todo: Винесемо callback-функцію окремо, а в reducе передамо посилання на неї.
+//todo: Це стандартна практика, якщо callback-функція досить велика.
+
+//todo: Якщо в об'єкті-акумуляторі acc відсутня своя властивість з ключем tag,
+//todo: то створюємо її і записуємо їй значення 0.
+//todo: В іншому випадку збільшуємо значення на 1.
+const getTagStats = (acc, tag) => {
+    if (!acc.hasOwnProperty(tag)) {
+        acc[tag] = 0;
+    };
+    acc[tag] += 1;
+    return acc;
+};
+
+//todo: Початкове значення акумулятора - це порожній об'єкт {}
+const countTags = tags => tags.reduce(getTagStats, {});
+
+const tagCount = countTags(tags3);
+console.log("tagCount:", tagCount); //!
 console.log("-------------------------------------------------------------");
