@@ -88,7 +88,7 @@ function example2(arr) {
     }, undefined);
 };
 example2(["Робітник1", "Робітник2", "Робітник3"]);
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log("-------------------------------------------------------------");
 
 
 //! Масив об'єктів
@@ -117,7 +117,7 @@ console.log("totalScore:", totalScore); //! 337
 
 const averageScore = totalScore / students.length; //! 67.4
 console.log("averageScore:", averageScore);
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log("-------------------------------------------------------------");
 
 
 //! Просунутий reduce (сума усіх лайків)
@@ -152,7 +152,8 @@ const countLikes = tweets => {
 };
 
 console.log("likes with countLikes:", countLikes(tweets1)); //! 32
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log("-------------------------------------------------------------");
+
 
 //! Просунутий reduce (масив усіх тегів)
 console.warn("Просунутий reduce (масив усіх тегів):");
@@ -188,7 +189,7 @@ const getTags2 = tweets2 =>
     }, []);
 
 console.log("Tags-2 with countLikes:", getTags2(tweets2)); //! ['js', 'nodejs', 'html', 'css', 'html', 'js', 'nodejs', 'css', 'react', 'js', 'nodejs', 'react']
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log("-------------------------------------------------------------");
 
 
 //! Просунутий reduce (об'єкт унікальних тегів)
