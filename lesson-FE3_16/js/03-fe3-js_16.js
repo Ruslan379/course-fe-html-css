@@ -78,10 +78,19 @@ console.warn("Сутності ООП:");
 //! 1.Клас
 console.warn("1.Клас:");
 //? ✴️
+class User {
+    //todo: Тіло класу
+};
+console.log("User:", User); //! {}
 
 //! 2.Екземпляр
 console.warn("2.Екземпляр:");
 //? ✴️
+const mango = new User();
+console.log("mango:", mango); //! {}
+
+const poly = new User();
+console.log("poly:", poly); //! {}
 
 //! 3.Інтерфейс
 console.warn("3.Інтерфейс:");
