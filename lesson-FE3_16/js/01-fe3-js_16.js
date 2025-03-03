@@ -157,7 +157,7 @@ const user2 = {
         console.log("`  `  `  `  `  `  `  `  `  `  `");
 
         function foo() {
-            console.log("this in function foo():", this); //! 
+            console.log("this in function foo():", this); //! undefined
             // console.log("username by this in function foo(): ", this.username); //! ❌ Cannot read properties of undefined (reading 'username')
             console.log("username in function foo(): ", user2.username); //! ✅ Mango
         };
@@ -168,7 +168,7 @@ console.log("user2:", user2); //! {username: 'Mango', showThis2: ƒ}
 console.log("`  `  `  `  `  `  `  `  `  `  `");
 
 user2.showThis2();
-//! this in showThis: {username: 'Mango', showThis2: ƒ}
+//! this in showThis2: {username: 'Mango', showThis2: ƒ}
 //! username in showThis2: Mango
 //! `  `  `  `  `  `  `  `  `  `  `
 //! this in function foo(): undefined
@@ -237,8 +237,8 @@ const user4 = {
         console.log("username in showThis2: ", this.username); //! Mango
         console.log("`  `  `  `  `  `  `  `  `  `  `");
 
-        const foo = () => {
-            console.log("this in function foo():", this);
+        const foo = () => { 
+            console.log("this in function foo():", this); //! {username: 'Mango', showThis4: ƒ}
             console.log("username by this in function foo():", this.username); //! Mango
             console.log("username in function foo():", user4.username); //! Mango
         };
@@ -249,11 +249,12 @@ console.log("user4:", user4); //! {username: 'Mango', showThis2: ƒ}
 console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 user4.showThis4();
-//! this in showThis: {username: 'Mango', showThis4: ƒ}
-//! username in showThis4: Mango
-//! `  `  `  `  `  `  `  `  `  `  `
+//! this in showThis4: {username: 'Mango', showThis4: ƒ}
+//! username in showThis2: Mango
+//!  `  `  `  `  `  `  `  `  `  `  `
+//! this in function foo(): {username: 'Mango', showThis4: ƒ}
 //! username by this in function foo(): Mango
-//! username in in function foo(): Mango
+//! username in function foo(): Mango
 console.log("---------------------------------------------------------------------------------------------");
 
 
