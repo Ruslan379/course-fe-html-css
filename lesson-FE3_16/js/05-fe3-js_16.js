@@ -22,7 +22,7 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
-console.log("---------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");
 
 
 
@@ -36,7 +36,7 @@ class User {
     //todo: Тіло класу
 };
 console.log("User:", User); //! {}
-console.log("---------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");
 
 //! Екземпляр класу
 console.warn("Екземпляр класу:");
@@ -48,7 +48,7 @@ console.log("mango:", mango); //! {}
 
 const poly = new User();
 console.log("poly:", poly); //! {}
-console.log("---------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");
 
 
 //! Конструктор класу
@@ -64,24 +64,91 @@ class User1 {
         this.email = email;
     };
 };
+console.log("User1:", User1); //!
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 const mango1 = new User1("Манго", "mango@mail.com");
 console.log("mango1:", mango1); //! User1 {name: 'Манго', email: 'mango@mail.com'}
 
 const poly1 = new User1("Поли", "poly@mail.com");
 console.log("poly1:", poly1); //! User1 {name: 'Поли', email: 'poly@mail.com'}
-console.log("---------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");
 
 
+//! Об'єкт параметрів
+console.warn("Об'єкт параметрів:");
+//? ✴️ Клас може приймати велику кількість вхідних даних 
+//? для властивостей майбутнього об'єкта. 
+//? Тому, до них також можна застосувати патерн «Об'єкт параметрів», 
+//? передаючи один об'єкт з логічно іменованими властивостями, 
+//? замість непов'язаного набору аргументів.
+class User2 {
+    //todo: Синтаксис оголошення методу класу:
+    //todo: Деструктуризуємо об'єкт:
+    constructor({ name, email, phone }) {
+        //todo: Ініціалізація властивостей екземпляра:
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    };
+};
+console.log("User2:", User2); //!
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+const mango2 = new User2({
+    name: "Манго",
+    email: "mango@mail.com",
+    phone: "111-11-11",
+});
+console.log("mango2:", mango2); //! User2 {name: 'Манго', email: 'mango@mail.com', phone: '111-11-11'}
+
+const poly2 = new User2({
+    name: "Поли",
+    email: "poly@mail.com",
+    phone: "222-22-22",
+});
+console.log("poly2:", poly2); //! User2 {name: 'Поли', email: 'poly@mail.com', phone: '222-22-22'}
+console.log("---------------------------------------------------------------------------------");
 
 
+//! Методи класу
+console.warn("Методи класу:");
+//? ✴️ Для роботи з властивостями майбутнього екземпляра 
+//? використовуються методи класу - функції,
+//? які будуть доступні екземпляру в його прототипі.
+class User3 {
+    //todo: Синтаксис оголошення методу класу:
+    //todo: Деструктуризуємо об'єкт:
+    constructor({ name, email, phone }) {
+        //todo: Ініціалізація властивостей екземпляра:
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    };
 
+    //todo: Метод getEmail
+    getEmail() {
+        return this.email;
+    };
 
+    //todo: Метод changeEmail
+    changeEmail(newEmail) {
+        this.email = newEmail;
+    };
+};
+console.log("User3:", User3); //!
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
+const mango3 = new User3({
+    name: "Манго",
+    email: "mango@mail.com",
+    phone: "111-11-11",
+});
+console.log("mango3:", mango3); //! User3 {name: 'Манго', email: 'mango@mail.com', phone: '111-11-11'}
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
-
-
-
-// console.log("total:", total); //! 32
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . .");
-console.log("---------------------------------------------------");
+console.log("email_before:", mango3.getEmail()); //! email_before: mango@mail.com
+mango3.changeEmail("mango-NEW@mail.com");
+console.log("email_after:", mango3.getEmail()); //! email_after: mango-NEW@mail.com
+console.log("mango3:", mango3); //! User3 {name: 'Манго', email: 'mango-NEW@mail.com', phone: '111-11-11'}
+console.log("---------------------------------------------------------------------------------");
