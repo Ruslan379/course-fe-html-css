@@ -4,7 +4,7 @@ console.log(
 );
 
 //! 4.Прототипне наслідування.
-console.warn(`Прототипне наслідування: \n ${(window.location.href.split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_08/lesson-FE3_08.html"}`);
+console.warn(`Прототипне наслідування: \n ${(window.location.href.split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_12/lesson-FE3_12.html"}`);
 console.log(
     `%c
     прихована властивість [[Prototype]]
