@@ -1,5 +1,5 @@
 console.log(
-    '%c 5.Класи:            \n   Оголошення класу  \n   Екземпляр класу   \n   Конструктор класу \n   Об\'єкт параметрів \n   Методи класу      ',
+    '%c 5.Класи:            \n   Оголошення класу  \n   Екземпляр класу   \n   Конструктор класу \n   Об\'єкт параметрів ',
     'color: white; background-color: #D33F49',
 );
 
@@ -108,47 +108,4 @@ const poly2 = new User2({
     phone: "222-22-22",
 });
 console.log("poly2:", poly2); //! User2 {name: 'Поли', email: 'poly@mail.com', phone: '222-22-22'}
-console.log("---------------------------------------------------------------------------------");
-
-
-//! Методи класу
-console.warn("Методи класу:");
-//? ✴️ Для роботи з властивостями майбутнього екземпляра 
-//? використовуються методи класу - функції,
-//? які будуть доступні екземпляру в його прототипі.
-class User3 {
-    //todo: Синтаксис оголошення методу класу:
-    //todo: Деструктуризуємо об'єкт:
-    constructor({ name, email, phone }) {
-        //todo: Ініціалізація властивостей екземпляра:
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-    };
-
-    //todo: Метод getEmail
-    getEmail() {
-        return this.email;
-    };
-
-    //todo: Метод changeEmail
-    changeEmail(newEmail) {
-        this.email = newEmail;
-    };
-};
-console.log("User3:", User3); //!
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
-
-const mango3 = new User3({
-    name: "Манго",
-    email: "mango@mail.com",
-    phone: "111-11-11",
-});
-console.log("mango3:", mango3); //! User3 {name: 'Манго', email: 'mango@mail.com', phone: '111-11-11'}
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
-
-console.log("email_before:", mango3.getEmail()); //! email_before: mango@mail.com
-mango3.changeEmail("mango-NEW@mail.com");
-console.log("email_after:", mango3.getEmail()); //! email_after: mango-NEW@mail.com
-console.log("mango3:", mango3); //! User3 {name: 'Манго', email: 'mango-NEW@mail.com', phone: '111-11-11'}
 console.log("---------------------------------------------------------------------------------");
