@@ -83,6 +83,11 @@ button {
     /* box-shadow: 3px 3px 4px #969696; */ /* On */
 }
 
+.list, .menu {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #c4d4ff;
+}
 
 /* ! */
 /* .part_1 {
