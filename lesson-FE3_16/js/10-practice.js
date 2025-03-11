@@ -7,7 +7,7 @@ console.log(
 //! ПРАКТИКА-16 (Урок-16_JS)
 //todo [Додаткове 16-1]
 console.log(
-  "%c [Додаткове 15-1] ",
+  "%c [Додаткове 16-1] ",
   "color: yellow; background-color: #2274A5",
 );
 
