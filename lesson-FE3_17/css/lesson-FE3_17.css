@@ -83,11 +83,25 @@ button {
     /* box-shadow: 3px 3px 4px #969696; */ /* On */
 }
 
-.list, .menu {
+.list, 
+.menu,
+.menu2,
+.image,
+.button-box {
     padding: 10px;
     margin-bottom: 10px;
     background-color: #c4d4ff;
 }
+
+.button-box button {
+    color: tomato;
+    background-color: #fffac4;
+}
+
+/* .image {
+    height: 250px;
+} */
+
 
 /* ! */
 /* .part_1 {
