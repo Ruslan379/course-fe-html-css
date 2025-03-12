@@ -64,7 +64,7 @@ console.log("listWithId = document.querySelector('#menu'):", listWithId);
 
 const listWithClass = document.querySelector('.menu');
 console.log("listWithClass = document.querySelector('.menu'):", listWithClass);
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 
 const menuItemsByTagName = document.querySelectorAll("li");
@@ -72,7 +72,7 @@ console.log('menuItemsByTagName = document.querySelectorAll("li"):', menuItemsBy
 
 const menuItemsByClass = document.querySelectorAll(".menu-item");
 console.log('menuItemsByClass = document.querySelectorAll(".menu-item"):', menuItemsByClass);
-console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 
 const alltMenuItem = document.querySelectorAll(".menu-item");
