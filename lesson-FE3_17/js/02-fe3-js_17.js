@@ -27,20 +27,23 @@ console.warn(`Дерево навігації по DOM: \n ${((window.location.h
 console.log(
     `%c
     elem.parentNode - вибере батьківський elem.
+
     elem.childNodes - псевдомасив, зберігає всі дочірні елементи, включно з текстовими.
     elem.children - псевдомасив, зберігає тільки дочірні вузли-елементи, тобто ті, що відповідають тегам.
+
     elem.firstChild - вибере перший дочірній елемент всередині elem, включно з текстовими вузлами.
     elem.firstElementChild - вибере перший дочірній вузол-елемент всередині elem.
     elem.lastChild - вибере останній дочірній елемент всередині elem, включно з текстовими вузлами.
     elem.lastElementChild - вибере останній дочірній вузол-елемент всередині elem.
-    elem.previousSibling - вибере елемент «зліва» від elem (його попереднього сусіда).
-    elem.previousElementSibling - вибере вузол-елемент «зліва» від elem (його попереднього сусіда).
-    elem.nextSibling - вибере елемент «праворуч» від elem (його наступного сусіда)
-    elem.nextElementSibling - вибере вузол-елемент «праворуч» від elem (його наступного сусіда).
+
+    elem.previousSibling - вибере елемент «зліва» (той, що вище) від elem (його попереднього сусіда).
+    elem.previousElementSibling - вибере вузол-елемент «зліва» (той, що вище) від elem (його попереднього сусіда).
+    elem.nextSibling - вибере елемент «праворуч» (той, що нижче) від elem (його наступного сусіда)
+    elem.nextElementSibling - вибере вузол-елемент «праворуч» (той, що нижче) від elem (його наступного сусіда).
     `,
     'color: darkred; font-size: 16px',
 );
-console.log("----------------------------------------------------------------------------------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------------------------------------------------------------------");
 
 
 //! Приклад дерева навігації по DOM
@@ -58,7 +61,7 @@ console.log(
     `,
     'color: blue; font-size: 16px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 // console.log(document);
 console.log("document:", document);
@@ -66,29 +69,64 @@ console.log("document:", document);
 const body = document.body;
 // console.log(body);
 console.log("body = document.body:", body);
+console.log("document.body.parentNode:", document.body.parentNode); //! </html>
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
 
 const list = document.querySelector(".list");
 // console.log(list);
 console.log('list = document.querySelector(".list"):', list);
+console.log("list.parentNode:", list.parentNode); //! </html>
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
-const firstListItem = list.firstElementChild;
-// console.log(firstListItem);
-console.log('firstListItem = list.firstElementChild:', firstListItem);
-
-const lastListItem = list.lastElementChild;
-// console.log(lastListItem);
-console.log('lastListItem = list.lastElementChild:', lastListItem);
-
-const listItems = list.children;
-// console.log(listItems);
-console.log('listItems = list.children:', listItems);
 
 const listItemsNodes = list.childNodes;
 // console.log(listItemsNodes);
 console.log('listItemsNodes = list.childNodes:', listItemsNodes);
 
+const listItems = list.children;
+// console.log(listItems);
+console.log('listItems = list.children:', listItems);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+
+const firstListChild = list.firstChild;
+// console.log(firstListChild);
+console.log('firstListChild = list.firstChild:', firstListChild);
+
+const firstListElementChild = list.firstElementChild;
+// console.log(firstListElementChild);
+console.log('firstListElementChild = list.firstElementChild:', firstListElementChild);
+
+const lastListChild = list.lastChild;
+// console.log(lastListChild);
+console.log('lastListChild = list.lastChild:', lastListChild);
+
+const lastListElementChild = list.lastElementChild;
+// console.log(lastListElementChild);
+console.log('lastListElementChild = list.lastElementChild:', lastListElementChild);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
+
+const previousListSibling = list.previousSibling;
+// console.log(previousListSibling);
+console.log('previousListSibling = list.previousSibling:', previousListSibling);
+
+const previousListElementSibling = list.previousElementSibling;
+// console.log(previousListElementSibling);
+console.log('previousListElementSibling = list.previousElementSibling:', previousListElementSibling);
+
+const nextListSibling = list.nextSibling;
+// console.log(nextListSibling);
+console.log('nextListSibling = list.nextSibling:', nextListSibling);
+
+const nextListElementSibling = list.nextElementSibling;
+// console.log(nextListElementSibling);
+console.log('nextListElementSibling = list.nextElementSibling:', nextListElementSibling);
+console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
+
 //? ❗️❗️❗️ DOM-колекції, 
 //? як-от childNodes і children 
 //? - псевдомасиви (NodeList), 
 //? у них немає більшості методів масиву.
-console.log("----------------------------------------------------------------------------------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------------------------------------------------------------------");
