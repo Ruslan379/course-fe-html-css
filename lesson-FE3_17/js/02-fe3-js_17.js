@@ -78,53 +78,53 @@ console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `
 const list = document.querySelector(".list");
 // console.log(list);
 console.log('list = document.querySelector(".list"):', list);
-console.log("list.parentNode:", list.parentNode); //! </html>
+console.log("list.parentNode:", list.parentNode); //! <div class="part part_2">...</div>
 console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 
 const listItemsNodes = list.childNodes;
 // console.log(listItemsNodes);
-console.log('listItemsNodes = list.childNodes:', listItemsNodes);
+console.log('listItemsNodes = list.childNodes:', listItemsNodes); //! [text, li, text, li, text, li, text, li, text, li, text]
 
 const listItems = list.children;
 // console.log(listItems);
-console.log('listItems = list.children:', listItems);
+console.log('listItems = list.children:', listItems); //! HTMLCollection(5) [li, li, li, li, li]
 console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 
 const firstListChild = list.firstChild;
 // console.log(firstListChild);
-console.log('firstListChild = list.firstChild:', firstListChild);
+console.log('firstListChild = list.firstChild:', firstListChild); //! #text 
 
 const firstListElementChild = list.firstElementChild;
 // console.log(firstListElementChild);
-console.log('firstListElementChild = list.firstElementChild:', firstListElementChild);
+console.log('firstListElementChild = list.firstElementChild:', firstListElementChild); //! <li>First item</li>
 
 const lastListChild = list.lastChild;
 // console.log(lastListChild);
-console.log('lastListChild = list.lastChild:', lastListChild);
+console.log('lastListChild = list.lastChild:', lastListChild); //! #text 
 
 const lastListElementChild = list.lastElementChild;
 // console.log(lastListElementChild);
-console.log('lastListElementChild = list.lastElementChild:', lastListElementChild);
+console.log('lastListElementChild = list.lastElementChild:', lastListElementChild); //! <li>Fifth item</li>
 console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 
 const previousListSibling = list.previousSibling;
 // console.log(previousListSibling);
-console.log('previousListSibling = list.previousSibling:', previousListSibling);
+console.log('previousListSibling = list.previousSibling:', previousListSibling); //! #text 
 
 const previousListElementSibling = list.previousElementSibling;
 // console.log(previousListElementSibling);
-console.log('previousListElementSibling = list.previousElementSibling:', previousListElementSibling);
+console.log('previousListElementSibling = list.previousElementSibling:', previousListElementSibling); //! <h2 class="title-section">...</h2>
 
 const nextListSibling = list.nextSibling;
 // console.log(nextListSibling);
-console.log('nextListSibling = list.nextSibling:', nextListSibling);
+console.log('nextListSibling = list.nextSibling:', nextListSibling); //! #text 
 
 const nextListElementSibling = list.nextElementSibling;
 // console.log(nextListElementSibling);
-console.log('nextListElementSibling = list.nextElementSibling:', nextListElementSibling);
+console.log('nextListElementSibling = list.nextElementSibling:', nextListElementSibling); //! <button class="button-2" style="background-color: green; color: yellow; box-shadow: rgb(150, 150, 150) 3px 3px 4px;">On</button>
 
 //? ❗️❗️❗️ DOM-колекції, 
 //? як-от childNodes і children 

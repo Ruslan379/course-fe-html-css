@@ -47,6 +47,7 @@ console.warn("Приклад пошуку елементів за селекто
 console.log(
     `%c
     <ul id="menu" class="menu">
+        <li style="color: blue;">logo</li>
         <li class="menu-item">home</li>
         <li class="menu-item">about</li>
         <li class="menu-item">gallery</li>
