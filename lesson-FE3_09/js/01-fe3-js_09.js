@@ -29,8 +29,8 @@ console.warn("Функціональний вираз (function expression):");
 const add = function() {
     console.log("Це функція 'add'");
 };
-console.log("typeof add:", typeof add);
-console.log("add:", add);
+console.log("typeof add:", typeof add); //! function
+console.log("add:", add); //! ƒ() { console.log("Це функція 'add'"); }
 console.log("---------------------------------------");
 
 
