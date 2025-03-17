@@ -95,6 +95,6 @@ console.log(
 //? використовується метод ❗️remove()❗️. 
 //? Він викликається на елементі elem, 
 //? який необхідно видалити.
-const text = document.querySelector('.text');
+const text = document.querySelector('.text1');
 text.remove();
 console.log("----------------------------------------------------------------------");

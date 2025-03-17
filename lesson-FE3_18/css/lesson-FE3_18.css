@@ -89,13 +89,21 @@ button {
 .image,
 .button-box,
 .box {
-    width: 25%;
+    width: 45%;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #c4ffd7;
 }
-h3 {
+
+
+h3,
+h4 {
     text-align: center;
+}
+
+
+h4 {
+    color: blue;
 }
 
 .usernames li {
@@ -106,6 +114,12 @@ h3 {
 
 .usernames li:not(:last-child) {
     margin-bottom: 12px;
+}
+
+.accent {
+    font-style: italic;
+    text-transform: uppercase;
+    color: red;
 }
 
 /* .image {
