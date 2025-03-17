@@ -89,9 +89,13 @@ button {
 .image,
 .button-box,
 .box {
+    width: 25%;
     padding: 10px;
     margin-bottom: 10px;
     background-color: #c4ffd7;
+}
+h3 {
+    text-align: center;
 }
 
 .usernames li {
