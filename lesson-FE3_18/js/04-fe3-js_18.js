@@ -4,7 +4,8 @@ console.log(
 );
 
 //! Метод insertAdjacentHTML()
-console.warn("Метод insertAdjacentHTML():");
+console.warn(`Метод insertAdjacentHTML(): \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_18/images/insert-adjacent.png"}`);
+
 //? ✳️ 
 //? ✴️
 
