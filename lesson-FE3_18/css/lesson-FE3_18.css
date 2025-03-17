@@ -87,15 +87,21 @@ button {
 .menu,
 .menu2,
 .image,
-.button-box {
+.button-box,
+.box {
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #c4d4ff;
+    background-color: #c4ffd7;
 }
 
-.button-box button {
-    color: tomato;
-    background-color: #fffac4;
+.usernames li {
+    padding: 8px;
+    border: 2px dashed tomato;
+    text-transform: uppercase;
+}
+
+.usernames li:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 /* .image {
