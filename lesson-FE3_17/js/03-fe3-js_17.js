@@ -4,7 +4,7 @@ console.log(
 );
 
 //! Методи elem.querySelector* 
-console.warn("Методи elem.querySelector* ");
+console.warn("Методи elem.querySelector*:");
 //? ✳️ Отже, ми вже знаємо що DOM-елемент
 //? - це об'єкт з властивостями і методами.
 //? Навчимось швидко знаходити елемент
