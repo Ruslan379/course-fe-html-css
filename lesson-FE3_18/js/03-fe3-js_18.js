@@ -114,6 +114,7 @@ const htmlString = `<p class="article-text">Nullam quis ante. Vestibulum dapibus
 //todo: Додаємо розмітку до вже існуючої за одну операцію.
 // article34.innerHTML = htmlString; //todo: видаляє всі елементи та додає htmlString
 article34.innerHTML += htmlString; //todo: додає htmlString до вже існуючих елементів
+// article34.innerHTML = article34.innerHTML + htmlString;
 
 //? ✴️ Використовуйте властивість elem.innerHTML 
 //? для додавання тільки тоді, 

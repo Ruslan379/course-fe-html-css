@@ -122,6 +122,15 @@ h4 {
     color: red;
 }
 
+.button-box {
+    text-align: center;
+}
+
+.button-box button {
+    color: tomato;
+    background-color: #fffac4;
+}
+
 /* .image {
     height: 250px;
 } */
