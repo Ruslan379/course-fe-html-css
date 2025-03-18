@@ -37,17 +37,17 @@ const image = document.createElement("img");
 image.src = "https://picsum.photos/id/17/320/240";
 image.alt = "Nature";
 console.log("image:", image); //! <img src="https://picsum.photos/id/17/320/240" alt="Nature" />
-console.log("----------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------");
 
 
 //! Додавання елементів
 console.warn("Додавання елементів:");
 console.log(
     `%c
-    🔸 element.append(el1, el2, ...)
-    🔸 element.prepend(el1, el2, ...)
-    🔸 element.after(el1, el2, ...)
-    🔸 element.before(el1, el2, ...)
+    🔸 element.append(el1, el2, ...) - після всіх дітей елемента
+    🔸 element.prepend(el1, el2, ...) - перед усіма дітьми елемента
+    🔸 element.after(el1, el2, ...) - після елемента
+    🔸 element.before(el1, el2, ...) - перед елементом
     `,
     'color: blue; font-size: 16px',
 );
@@ -64,23 +64,33 @@ console.log(
 //? 🔸 element.before(el1, el2, ...) - додає один або декілька елементів
 //?    ❗️перед елементом element❗️.
 //? ✴️ У всіх цих методах el - це елементи або рядки, в будь-якому поєднанні і кількості. Рядки додаються як текстові вузли.
-const list = document.querySelector(".usernames");
+const list1 = document.querySelector(".usernames");
 
 //todo: Додає елемент до кінця списку.
 const lastItem = document.createElement("li");
 lastItem.textContent = "Poly";
-list.append(lastItem);
+list1.append(lastItem);
 
 //todo: Додає елемент на початок списку.
 const firstItem = document.createElement("li");
 firstItem.textContent = "Ajax";
-list.prepend(firstItem);
+list1.prepend(firstItem);
+
+//todo: Додає елемент після списку.
+const afterElement = document.createElement("a");
+afterElement.textContent = "Read more...";
+list1.after(afterElement);
+
+//todo: Додає елемент перед списком.
+const beforeElement = document.createElement("h3");
+beforeElement.textContent = "Usernames";
+list1.before(beforeElement);
 
 //? ✳️ Якщо елемент для додавання вже знаходиться в DOM, 
 //? то він видаляється зі свого старого місця і додається у нове. 
 //? З цього випливає правило - один і той самий елемент 
 //? не може бути одночасно у двох місцях.
-console.log("----------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------");
 
 
 //! Видалення елементів
@@ -97,4 +107,4 @@ console.log(
 //? який необхідно видалити.
 const text = document.querySelector('.text1');
 text.remove();
-console.log("----------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------");

@@ -27,11 +27,18 @@ console.log(
 //? 🔸 "afterbegin" - всередині elem, перед усіма дітьми
 //? 🔸 "beforeend" - всередині elem, після усіх дітей
 //? 🔸 "afterend" - після elem
+//? ✳️❗️❗️❗️ "beforebegin" і "afterend" працюють тільки тоді,
+//? коли elem вже знаходиться в DOM-дереві.
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+const list4 = document.querySelector(".list4");
 
+const newTechnologies = ["React", "TypeScript", "Node.js"];
+const markup = newTechnologies
+    .map((technology) => `<li class="list-item new">${technology}</li>`)
+    .join("");
 
-
-
+list4.insertAdjacentHTML("beforebegin", "<h3>Popular technologies</h3>");
+list4.insertAdjacentHTML("afterbegin", '<li class="list-item new">C++</li>');
+list4.insertAdjacentHTML("beforeend", markup);
+list4.insertAdjacentHTML("afterend", '<a class="link4" href="">Read more...</a>');
 console.log("----------------------------------------------------------------------------------");
-
-//? ✳️
