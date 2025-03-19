@@ -21,6 +21,8 @@ console.log("article.innerHTML:", article31.innerHTML);
 
 const title31 = document.querySelector(".article31 .title31");
 console.log("title31.innerHTML:", title31.innerHTML);
+console.log("title31:", title31);
+
 
 const text31 = document.querySelector(".article31 .text31");
 console.log("text.innerHTML:", text31.innerHTML);
