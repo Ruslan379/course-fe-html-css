@@ -104,6 +104,13 @@ button {
     background-color: #fffac4;
 }
 
+button.accent {
+    color: green;
+}
+.btn {
+    width: 185px;
+}
+
 h3,
 h4 {
     text-align: center;
@@ -124,11 +131,7 @@ h4 {
     margin-bottom: 12px;
 }
 
-.accent {
-    font-style: italic;
-    text-transform: uppercase;
-    color: red;
-}
+
 
 
 
