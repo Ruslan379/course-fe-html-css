@@ -48,9 +48,12 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 const button1 = document.querySelector(".my-button-1");
 console.log("button1:", button1);
 
-button1.addEventListener("click", () => {
-    console.log("My button-1 was clicked");
-});
+button1.addEventListener(
+    "click",
+    () => {
+        console.log("My button-1 was clicked");
+    }
+);
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
@@ -63,7 +66,7 @@ console.log("button2:", button2);
 
 const handleClick1 = () => {
     console.log("My button-2 was clicked");
-    alert("My button-2 was clicked")
+    alert("My button-2 was clicked");
     button2.classList.toggle("accent");
 };
 
@@ -113,7 +116,7 @@ const clickBtn = document.querySelector(".js-target-btn");
 
 const handleClick2 = () => {
     console.log("click event listener callback");
-    alert("click event listener callback")
+    alert("click event listener callback");
     clickBtn.classList.toggle("accent");
 };
 

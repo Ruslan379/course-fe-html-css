@@ -36,12 +36,17 @@ console.warn("Дії браузера за замовчуванням:");
 //? і виконати дії по результатах перевірки.
 const form = document.querySelector(".register-form");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault(); //todo: ❗️скасовує перезавантаження сторінки❗️
-    const {
-        elements: { username, password }
-    } = event.currentTarget;
-    console.log("Username:", username.value);
-    console.log("Password:", password.value);
-});
+form.addEventListener(
+    "submit",
+    (event) => {
+        event.preventDefault(); //todo: ❗️скасовує перезавантаження сторінки❗️
+
+        const {
+            elements: { username, password }
+        } = event.currentTarget;
+
+        console.log("Username:", username.value);
+        console.log("Password:", password.value);
+    }
+);
 console.log("------------------------------------------------------------------------------");
