@@ -1,8 +1,8 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #dffffc;
-    --color-title-lesson: #006963;
+    --color-background-body: #fffcdf;
+    --color-title-lesson: #004299;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
@@ -92,9 +92,17 @@ button {
     width: 45%;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #c4ffd7;
+    background-color: #d4f4ff;
 }
 
+.box {
+    text-align: center;
+}
+
+.box button {
+    color: tomato;
+    background-color: #fffac4;
+}
 
 h3,
 h4 {
@@ -122,18 +130,7 @@ h4 {
     color: red;
 }
 
-.button-box {
-    text-align: center;
-}
 
-.button-box button {
-    color: tomato;
-    background-color: #fffac4;
-}
-
-/* .image {
-    height: 250px;
-} */
 
 .list-item {
     display: flex;
