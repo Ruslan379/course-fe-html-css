@@ -42,7 +42,9 @@
         <h2 class="title-section">
             1.Події.
             <br>
-            Методи addEventListener() і removeEventListener()​​.
+            Методи addEventListener()
+            <br>
+            і removeEventListener()​​.
         </h2>
         <div class="box">
             <button class="my-button-1">My button-1</button>
@@ -98,6 +100,60 @@
                 <input type="password" name="password" placeholder="Password">
                 <button class="btn" type="submit">Register</button>
             </form>
+        </div>
+        <div class="box">
+            <h3>Подія change​</h3>
+            <!--todo: Приклад-1: -->
+            <input 
+                class="input1" 
+                type="number" 
+                name="user-number" 
+                placeholder ="Your number..."
+            >
+            <input 
+                class="input2" 
+                type="password" 
+                name="user-password" 
+                placeholder="Your password..."
+            >
+            <hr>
+            <!--todo: Приклад-2: -->
+            <p>
+                Selected option value: <span class="value-output">none</span>
+            <p>
+            <p>
+                Selected option text: <span class="text-output">none</span>
+            <p>
+                <select class="pizza-select">
+                    <option value="four_meats">Four Meats</option>
+                    <option value="royal_cheese">Royal Cheese</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="smoked_salmon">Smoked Salmon</option>
+                </select>
+        </div>
+        <div class="box">
+            <h3>Подія input​​</h3>
+            <input type="text" class="text-input41" />
+            <p>Text field value: <span class="output"></span></p>
+        </div>
+        <div class="box">
+            <h3>Події focus і blur​​</h3>
+            <button
+                class="btn"
+                type="button" 
+                data-action="set"
+            >
+            Set focus to input
+            </button>
+            <button
+            class="btn"
+                type="button" 
+                data-action="remove"
+            >
+            Remove focus from input
+            </button>
+            <br><br>
+            <input type="text" class="text-input42" />
         </div>
         <button class="button-4">Off</button>
     </div>

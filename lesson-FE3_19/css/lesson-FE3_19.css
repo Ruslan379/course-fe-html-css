@@ -109,12 +109,14 @@ button.accent {
 }
 
 .btn {
-    width: 185px;
+    width: 90%;
 }
+
 input {
     width: 90%;
     margin-bottom: 5px;
 }
+
 h3,
 h4 {
     text-align: center;

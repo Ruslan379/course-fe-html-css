@@ -23,7 +23,8 @@ const handleClick1 = event => {
 };
 
 button1.addEventListener("click", handleClick1);
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
 
 //? ✴️ Параметр event - це і є об'єкт події,
 //? який автоматично передається першим аргументом
@@ -45,4 +46,4 @@ const handleClick2 = event => {
 };
 
 button2.addEventListener("click", handleClick2);
-console.log("------------------------------------------------------------------------------");
+console.log("-----------------------------------------------------");

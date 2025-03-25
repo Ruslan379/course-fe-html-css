@@ -1,5 +1,5 @@
 console.log(
-    '%c 3.Дії браузера за замовчуванням. Подія submit.',
+    '%c 3.Дії браузера за замовчуванням. \n   Подія submit.                  ',
     'color: white; background-color: #D33F49',
 );
 
@@ -19,7 +19,7 @@ console.log(
     `,
     'color: blue; font-size: 16px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . .");
 
 
 //! Подія submit
@@ -49,4 +49,4 @@ form.addEventListener(
         console.log("Password:", password.value);
     }
 );
-console.log("------------------------------------------------------------------------------");
+console.log("---------------------------------------");

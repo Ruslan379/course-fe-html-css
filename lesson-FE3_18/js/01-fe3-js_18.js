@@ -75,6 +75,12 @@ const lastItem2 = document.createElement("li");
 lastItem2.textContent = "Poly-2";
 list1.appendChild(lastItem2);
 
+//? ✴️ Різниця appendChild() та append()
+//? Метод.append()схожий, але він:
+//?   ✅ Приймає відразу кілька елементів або рядки
+//?   ✅ Не повертає доданий елемент
+//?   ✅ Працює з текстом без createTextNode()
+
 //todo: Додає елемент на початок списку.
 const firstItem = document.createElement("li");
 firstItem.textContent = "Ajax";

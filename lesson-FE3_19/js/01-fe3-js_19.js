@@ -1,5 +1,5 @@
 console.log(
-    '%c 1.Події. Методи addEventListener() і removeEventListener()​. ',
+    '%c 1.Події.                    \n   Методи addEventListener() \n   і removeEventListener()​.  ',
     'color: white; background-color: #D33F49',
 );
 
@@ -42,7 +42,7 @@ console.log(
     `,
     'color: blue; font-size: 16px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 //todo:
 const button1 = document.querySelector(".my-button-1");
@@ -54,7 +54,7 @@ button1.addEventListener(
         console.log("My button-1 was clicked");
     }
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 //? ✴️ Для колбека можна (і бажано)
@@ -71,7 +71,7 @@ const handleClick1 = () => {
 };
 
 button2.addEventListener("click", handleClick1);
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
 //? ✴️ На одному елементі може бути 
@@ -89,7 +89,7 @@ const thirdCallback = () => alert('Third callback!');
 button3.addEventListener("click", firstCallback);
 button3.addEventListener("click", secondCallback);
 button3.addEventListener("click", thirdCallback);
-console.log("------------------------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");
 
 
 //! Метод removeEventListener()​
@@ -108,11 +108,16 @@ console.log(
     `,
     'color: blue; font-size: 16px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
 
 const addListenerBtn = document.querySelector('.js-add');
 const removeListenerBtn = document.querySelector('.js-remove');
 const clickBtn = document.querySelector(".js-target-btn");
+
+console.log("addListenerBtn:", addListenerBtn);
+console.log("removeListenerBtn:", removeListenerBtn);
+console.log("clickBtn:", clickBtn);
 
 const handleClick2 = () => {
     console.log("click event listener callback");
@@ -129,4 +134,4 @@ removeListenerBtn.addEventListener("click", () => {
     clickBtn.removeEventListener("click", handleClick2);
     console.log("click event listener was removed from clickBtn");
 });
-console.log("------------------------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------------");

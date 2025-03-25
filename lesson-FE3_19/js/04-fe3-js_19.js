@@ -23,6 +23,7 @@ console.warn("Подія submit​:");
 //?❗️ Тому в прикладі ми отримуємо значення полів, 
 //?❗️ звертаючись до login.value і password.value.
 const registerForm = document.querySelector(".form");
+console.log("registerForm:", registerForm);
 
 registerForm.addEventListener("submit", handleSubmit);
 
@@ -39,7 +40,7 @@ function handleSubmit(event) {
     console.log(`Login: ${login}, Password: ${password}`);
     form.reset();
 };
-console.log("----------------------------------------------------------------------------------");
+console.log("-------------------------------------------------------------------------------------------------------------");
 
 
 //! Подія change​
@@ -54,3 +55,102 @@ console.warn("Подія change​​:");
 //? Для інших елементів, наприклад,
 //? select, чекбоксів і радіо-кнопок,
 //? подія change спрацьовує відразу під час вибору значення.
+// todo: Приклад-1:
+console.warn("Приклад-1​​:");
+const input1 = document.querySelector(".input1");
+console.log("input1:", input1);
+
+input1.addEventListener("change", setInput);
+
+function setInput(event) {
+    const inputOptionValue = event.currentTarget.value;
+    console.log("inputOptionValue:", inputOptionValue);
+
+    input1.value = inputOptionValue + 1000;
+};
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+// todo: Приклад-2:
+console.warn("Приклад-2​​:");
+const select = document.querySelector(".pizza-select");
+const textOutput = document.querySelector(".text-output");
+const valueOutput = document.querySelector(".value-output");
+
+console.log("select:", select);
+console.log("textOutput:", textOutput);
+console.log("valueOutput:", valueOutput);
+
+select.addEventListener("change", setOutput);
+
+function setOutput(event) {
+    const selectedOptionValue = event.currentTarget.value;
+    const selectedOptionIndex = event.currentTarget.selectedIndex;
+    const selectedOptionText = event.currentTarget.options[selectedOptionIndex].text;
+
+    textOutput.textContent = selectedOptionText;
+    valueOutput.textContent = selectedOptionValue;
+};
+console.log("-------------------------------------------------------------------------------------------------------------");
+
+
+//! Подія input​​
+console.warn("Подія input​​:");
+//? ✴️ Відбувається тільки на текстових полях і textarea,
+//? і створюється щоразу при зміні значення елемента,
+//? не чекаючи втрати фокусу.
+//? На практиці input - це найголовніша подія
+//? для роботи з текстовими полями форми.
+const textInput41 = document.querySelector(".text-input41");
+const output = document.querySelector(".output");
+
+console.log("textInput41:", textInput41);
+console.log("output:", output);
+
+const setTextFieldValue = (event) => {
+    output.textContent = event.currentTarget.value;
+};
+
+textInput41.addEventListener("input", setTextFieldValue);
+console.log("-------------------------------------------------------------------------------------------------------------");
+
+
+//! Події focus і blur
+console.warn("Події focus і blur​​:");
+//? ✴️ Елемент отримує фокус під час кліку миші
+//? або переходу клавішею Tab.
+//? Момент отримання і втрати фокусу
+//? - дуже важливий, отримуючи фокус,
+//? ми можемо завантажити дані для автозаповнення,
+//? почати відстежувати зміни тощо.
+//? Під час втрати фокусу - перевірити введені дані.
+//? ✴️ Під час фокусування елемента відбувається подія focus,
+//? а коли фокус зникає,
+//? наприклад, користувач клікає в іншому місці екрана,
+//? відбувається подія blur.
+//? Активувати або скасувати фокус можна програмно,
+//? викликавши в коді для елемента однойменні методи focus() і blur().
+const textInput42 = document.querySelector(".text-input42");
+const setFocusBtn = document.querySelector('[data-action="set"]');
+const removeFocusBtn = document.querySelector('[data-action="remove"]');
+
+console.log("textInput42:", textInput42);
+console.log("setFocusBtn:", setFocusBtn);
+console.log("removeFocusBtn:", removeFocusBtn);
+
+setFocusBtn.addEventListener("click", () => {
+    textInput42.focus();
+});
+
+removeFocusBtn.addEventListener("click", () => {
+    textInput42.blur();
+});
+
+textInput42.addEventListener("focus", () => {
+    textInput42.value = "This input has focus";
+});
+
+textInput42.addEventListener("blur", () => {
+    textInput42.value = "";
+});
+console.log("-------------------------------------------------------------------------------------------------------------");
