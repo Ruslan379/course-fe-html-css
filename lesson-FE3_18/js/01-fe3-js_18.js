@@ -67,9 +67,13 @@ console.log(
 const list1 = document.querySelector(".usernames");
 
 //todo: Додає елемент до кінця списку.
-const lastItem = document.createElement("li");
-lastItem.textContent = "Poly";
-list1.append(lastItem);
+const lastItem1 = document.createElement("li");
+lastItem1.textContent = "Poly-1";
+list1.append(lastItem1);
+
+const lastItem2 = document.createElement("li");
+lastItem2.textContent = "Poly-2";
+list1.appendChild(lastItem2);
 
 //todo: Додає елемент на початок списку.
 const firstItem = document.createElement("li");
