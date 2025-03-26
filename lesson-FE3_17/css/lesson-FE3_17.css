@@ -90,13 +90,15 @@ button {
 .button-box {
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
     background-color: #c4d4ff;
 }
 
 .button-box button {
-    color: tomato;
+    color: #ad00e2;
     background-color: #fffac4;
 }
+
 
 /* .image {
     height: 250px;

@@ -92,15 +92,14 @@ button {
     width: 45%;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
     background-color: #c4ffd7;
 }
-
 
 h3,
 h4 {
     text-align: center;
 }
-
 
 h4 {
     color: blue;
@@ -127,7 +126,7 @@ h4 {
 }
 
 .button-box button {
-    color: tomato;
+    color: #ad00e2;
     background-color: #fffac4;
 }
 
@@ -169,6 +168,7 @@ h4 {
 .list-item:not(:last-child) {
     margin-bottom: 8px;
 }
+
 
 /* ! */
 /* .part_1 {
