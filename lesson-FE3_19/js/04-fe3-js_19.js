@@ -29,7 +29,9 @@ registerForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault(); //todo: ❗️скасовує перезавантаження сторінки❗️
+    console.log("event.currentTarget:", event.currentTarget);
     const form = event.target;
+    console.log("form = event.target:", form);
     const login = form.elements.login.value;
     const password = form.elements.password.value;
 
