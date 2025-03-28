@@ -27,7 +27,8 @@ body {
     width: 480px;
     margin: 0 auto;
     padding: 0 15px;
-    border: 2px dashed #2a2a2a;
+    border: 5px solid tomato;
+    outline: 5px dashed #2a2a2a;
 }
 
 
