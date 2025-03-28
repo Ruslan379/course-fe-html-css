@@ -21,7 +21,9 @@ body {
 }
 
 /* ?============================================== */
-
+.section {
+    background-color: #e4ffff;
+}
 
 .container {
     width: 480px;
