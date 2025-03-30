@@ -1,5 +1,5 @@
 console.log(
-    '%c 1.Події.                    \n   Методи addEventListener() \n   і removeEventListener()​.  ',
+    '%c 1.Події клавіатури:       \n   Властивості key і code.​ \n   Клавіші-модифікатори.   ',
     'color: white; background-color: #D33F49',
 );
 

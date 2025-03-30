@@ -1,5 +1,5 @@
 console.log(
-    '%c 4.Прототипне наслідування.. ',
+    '%c 4.Прототипне наслідування. ',
     'color: white; background-color: #D33F49',
 );
 

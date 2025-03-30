@@ -4,10 +4,10 @@ console.log(
   "color: white; background-color: #D33F49",
 );
 
-//! ПРАКТИКА-19 (Урок-19_JS)
-//todo [Додаткове 19-1]
+//! ПРАКТИКА-20 (Урок-20_JS)
+//todo [Додаткове 20-1]
 console.log(
-  "%c [Додаткове 19-1] ",
+  "%c [Додаткове 20-1] ",
   "color: yellow; background-color: #2274A5",
 );
 
