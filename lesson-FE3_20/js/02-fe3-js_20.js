@@ -1,5 +1,5 @@
 console.log(
-    '%c 2.Події миші​:                     \n   Типи подій миші.​                \n   Порядок подій.                  \n   Кнопка миші.​                    \n   Координати: clientX/Y, pageX/Y. \n   Прокрутка.​                      ',
+    '%c 2.Події миші​:                     \n   Типи подій миші.​                \n   Порядок подій.                  \n   Кнопка миші.​                    \n   Координати: clientX/Y, pageX/Y. \n   Прокрутка (scroll).​             ',
     'color: white; background-color: #D33F49',
 );
 
@@ -12,7 +12,7 @@ console.warn("Події миші: \n https://uk.javascript.info/event-details")
 //? але й з інших пристроїв, 
 //? таких як телефони та планшети, 
 //? де вони емулюються для сумісності.
-console.log("--------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------");
 
 
 //! Типи подій миші
@@ -41,7 +41,7 @@ console.log(
     `,
     'color: blue; font-size: 16px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ");
 const myButton1 = document.querySelector(".my-button-1");
 console.log("myButton1:", myButton1);
 
@@ -52,7 +52,7 @@ function clickRightButton(event) {
     // console.log("event.currentTarget:", event.currentTarget);
     console.log("Клік правою кнопкою миші на <My button-1>");
 };
-console.log("--------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------");
 
 
 //! Порядок подій
@@ -66,7 +66,7 @@ console.warn("Порядок подій:");
 //? їх порядок фіксується.
 //? Тобто обробники викликаються в порядку: 
 //? mousedown → mouseup → click.
-console.log("--------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------");
 
 
 //! Кнопка миші
@@ -94,7 +94,7 @@ console.log(
     `,
     'color: blue; font-size: 16px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ");
 const myButton2 = document.querySelector(".my-button-2");
 console.log("myButton2:", myButton2);
 
@@ -106,7 +106,7 @@ function clickButton(event) {
     console.log(". . . . . . . . . . . . . . . . . .");
     
 };
-console.log("--------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------");
 
 
 //! Координати: clientX/Y, pageX/Y
@@ -121,11 +121,13 @@ console.warn("Координати clientX/Y:");
 const currentMouseCoordinatesWindow = document.getElementById("output-window");
 console.log("currentMouseCoordinatesWindow:", currentMouseCoordinatesWindow);
 
-document.addEventListener("mousemove", (event) => {
+document.addEventListener("mousemove", showCoordinatesClientXY);
+
+function showCoordinatesClientXY(event) {
     currentMouseCoordinatesWindow.textContent =
         `clientX: ${event.clientX}, clientY: ${event.clientY}`;
-});
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+};
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ");
 
 
 //! Координати pageX/Y
@@ -133,11 +135,13 @@ console.warn("Координати pageX/Y:");
 const currentMouseCoordinatesDocument = document.getElementById("output-document");
 console.log("currentMouseCoordinatesDocument:", currentMouseCoordinatesDocument);
 
-document.addEventListener("mousemove", (event) => {
+document.addEventListener("mousemove", showCoordinatesPagetXY);
+
+function showCoordinatesPagetXY(event)  {
     currentMouseCoordinatesDocument.textContent =
         `pageX: ${event.pageX}, pageY: ${event.pageY}`;
-});
-console.log("--------------------------------------------------------------");
+};
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ");
 
 
 //! Різниця між clientX/Y, pageX/Y
@@ -164,11 +168,11 @@ console.warn(`Різниця між clientX/Y, pageX/Y: \n ${((window.location.h
 //? Якщо сторінка довга і користувач може прокручувати її вниз, 
 //? використовуйте pageX/Y.
 //? Якщо прокручування не має значення – clientX/Y.
-console.log("--------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------");
 
 
-//! Прокрутка
-console.warn("Прокрутка:");
+//! Прокрутка (scroll)
+console.warn("Прокрутка (scroll):");
 //? ✴️ Подія scroll дозволяє реагувати
 //? на прокручування сторінки або елемента.
 //? Є багато цікавих речей, які при цьому можна зробити.
@@ -178,7 +182,12 @@ console.warn("Прокрутка:");
 //?    де в документі перебуває користувач
 //? 🔸 Завантажити більше даних,
 //?    коли користувач прокрутить сторінку вниз до кінця.
-// window.addEventListener('scroll', function () {
-//     document.getElementById('showScroll').innerHTML = window.pageYOffset + 'px';
-// });
-console.log("--------------------------------------------------------------");
+window.addEventListener("scroll", () => {
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    document.getElementById("scroll-info").textContent = `Прокрутка: ${scrollTop}px`;
+});
+//? ✳️ Як це працює:
+//? 🔸 window.addEventListener("scroll", callback) - відстежує подію scroll.
+//? 🔸 window.scrollY або document.documentElement.scrollTop – отримують поточну позицію прокручування.
+//?  🔸scrollTop - виводить на #scrollInfo кількість пікселів, на яку сторінка прокручена вниз.
+console.log("---------------------------------------------------------------------------");
