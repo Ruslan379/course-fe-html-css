@@ -110,10 +110,50 @@ console.log("--------------------------------------------------------------");
 
 
 //! Координати: clientX/Y, pageX/Y
-console.warn("Координати: clientX/Y, pageX/Y: \n https://uk.javascript.info/coordinates");
+console.warn("Координати clientX/Y і pageX/Y: \n https://uk.javascript.info/coordinates");
 //? ✴️ Усі події миші надають координати у двох варіантах:
 //? 🔸 Відносно Window: clientX та clientY.
 //? 🔸 Відносно Document: pageX та pageY.
+
+
+//! Координати clientX/Y
+console.warn("Координати clientX/Y:");
+const currentMouseCoordinatesWindow = document.getElementById("output-window");
+console.log("currentMouseCoordinatesWindow:", currentMouseCoordinatesWindow);
+
+document.addEventListener("mousemove", (event) => {
+    currentMouseCoordinatesWindow.textContent =
+        `clientX: ${event.clientX}, clientY: ${event.clientY}`;
+});
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+//! Координати pageX/Y
+console.warn("Координати pageX/Y:");
+const currentMouseCoordinatesDocument = document.getElementById("output-document");
+console.log("currentMouseCoordinatesDocument:", currentMouseCoordinatesDocument);
+
+document.addEventListener("mousemove", (event) => {
+    currentMouseCoordinatesDocument.textContent =
+        `pageX: ${event.pageX}, pageY: ${event.pageY}`;
+});
+console.log("--------------------------------------------------------------");
+
+
+//! Різниця між clientX/Y, pageX/Y
+console.warn(`Різниця між clientX/Y, pageX/Y: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE3_20/images/coordinates-clientXY-pageXY.jpg"}`);
+//? ✴️ Коли використати?
+//? 🔸 clientX/Y – якщо потрібні координати
+//?    всередині видимої частини сторінки
+//?    (наприклад, для роботи з element.getBoundingClientRect()).
+//? 🔸 pageX/Y – якщо важливо враховувати
+//?    прокручування сторінки
+//?    (наприклад, для позиціонування спливаючих вікон, підказок).
+//? ❗️❗️❗️ Підсумок:
+//? Якщо сторінка довга і користувач може прокручувати її вниз, 
+//? використовуйте pageX/Y.
+//? Якщо прокручування не має значення – clientX/Y.
+console.log("--------------------------------------------------------------");
 
 
 //! Прокрутка
