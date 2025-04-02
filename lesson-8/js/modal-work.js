@@ -70,3 +70,44 @@
 
 })();
 
+//! Додатковий функціонал – закриття модального вікна при натисканні клавіші <Escape>
+document.addEventListener("keydown", logKeyEscapeClick)
+
+function logKeyEscapeClick(event) {
+    if (event.code === "Escape") {
+        // console.log("Натиснута клавіша <Escape>");
+        toggleModal();
+    };
+}
+
+// function logBackdropClick() {
+//     if (isOnlyBackdrop) {
+//         console.log("Це клік в бєкдроп");
+//         toggleModal();
+//     };
+//     isOnlyBackdrop = true;
+// }
+
+// console.log("-----------------------------------------------------------------------------------------------------");
+// //! Клавіші-модифікатори
+// console.warn("Клавіші-модифікатори​:");
+// //? ✴️ Для обробки комбінації клавіш,
+// //? наприклад Ctrl + s або будь-якої іншої,
+// //? на об'єкті події є властивості
+// //? ctrlKey, altKey, shiftkey і metaKey,
+// //? що зберігають булеве значення,
+// //? яке сигналізує про те, чи була затиснута клавіша-модифікатор.
+// //? ✴️ Деякі комбінації клавіш 
+// //? можуть конфліктувати з поведінкою браузера за замовчуванням. 
+// //? Наприклад, Ctrl + d або Command + d робить закладку. 
+// //? Потрібно намагатися проектувати систему комбінацій сторінки таким чином,
+// //?  щоб вона не перетиналася із вбудованою у браузері. 
+// //? Але, у крайньому разі, поведінку за замовчуванням можна скасувати, 
+// //? викликавши метод event.preventDefault().
+// document.addEventListener("keydown", event => {
+//     event.preventDefault();
+//     if ((event.ctrlKey || event.metaKey) && event.code === "KeyS") {
+//         console.warn("«Ctrl + s» or «Command + s» combo");
+//     }
+// });
+// Escape
