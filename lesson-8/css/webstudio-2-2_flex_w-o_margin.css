@@ -1491,6 +1491,8 @@ body {
 }
 
 .card-item {
+    display: flex;
+    flex-direction: column; 
     /* padding-bottom: 20px; */
     /** для розташування без margin */
     /** var. 1, 2 */
