@@ -12,5 +12,15 @@
     function toggleModal() {
         refs.modal.classList.toggle("is-hidden");
         document.body.classList.toggle("no-scroll");
+    };
+
+    //! Додатковий функціонал – закриття модального вікна при натисканні клавіші <Escape>
+    document.addEventListener("keydown", logKeyEscapeClick)
+
+    function logKeyEscapeClick(event) {
+        if (event.code === "Escape") {
+            console.log("Натиснута клавіша <Escape>");
+            toggleModal();
+        };
     }
 })();
