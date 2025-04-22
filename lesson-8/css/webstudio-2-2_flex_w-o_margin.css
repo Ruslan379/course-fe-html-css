@@ -1562,6 +1562,11 @@ body {
 }
 
 .card-text-box {
+    /* ! */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+    /* ! */
     flex-grow: 1;
     padding: 20px 24px;
     /*todo ✅ border var. 2 - вірний */
@@ -1580,6 +1585,7 @@ body {
     line-height: 2.0;
     letter-spacing: 0.06em;
     color: var(--color-font-main);
+    /* outline: 2px dotted rgb(255, 247, 94); */
 }
 
 .card-description {
@@ -1589,4 +1595,5 @@ body {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--color-font-second);
+    /* outline: 2px dotted rgb(255, 247, 94); */
 }
