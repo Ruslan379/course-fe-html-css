@@ -41,11 +41,26 @@ const button2 = document.querySelector(".button2");
 console.log("button2:", button2);
 
 const handleClick2 = event => {
+    console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . .");
     // console.log("event: ", event);
-    console.log("event type: ", event.type);
-    console.log("event target: ", event.target);
-    console.log("event currentTarget: ", event.currentTarget);
+    console.log("event type(button2): ", event.type);
+    console.log("event target(button2): ", event.target);
+    console.log("event currentTarget(button2): ", event.currentTarget);
 };
 
-button2.addEventListener("click", handleClick2);
+button2.addEventListener("click", handleClick2); //! event.target завжди співпадає з event.currentTarget
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+const parent = document.querySelector(".part_2 .box");
+console.log("parent:", parent);
+
+const handleClick3 = event => {
+    console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . .");
+    // console.log("event: ", event);
+    console.log("event type(parent): ", event.type);
+    console.log("event target(parent): ", event.target);
+    console.log("event currentTarget(parent): ", event.currentTarget);
+};
+
+// parent.addEventListener("click", handleClick3); //! event.target може не співпадати з event.currentTarget
 console.log("-----------------------------------------------------");
