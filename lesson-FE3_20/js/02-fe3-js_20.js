@@ -48,8 +48,8 @@ console.log("myButton1:", myButton1);
 myButton1.addEventListener("contextmenu", clickRightButton);
 
 function clickRightButton(event) {
-    // console.log("event.target:", event.target);
-    // console.log("event.currentTarget:", event.currentTarget);
+    console.log("event.target:", event.target);
+    console.log("event.currentTarget:", event.currentTarget);
     console.log("Клік правою кнопкою миші на <My button-1>");
 };
 console.log("---------------------------------------------------------------------------");
