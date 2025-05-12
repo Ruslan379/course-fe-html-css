@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            href="https://img.icons8.com/plasticine/16/home.png" 
+            type="image/x-icon"
+            rel="shortcut icon" 
+        >
+        <style>
+            body {
+                padding-top: 8px;
+                display: flex;
+                flex-direction: column; /* Вертикальная основная ось */
+                /* Центрирование элементов по вертикали: */
+                /* justify-content: center;  */
+                align-items: center; /* Центрирование элементов по горизонтали */
+                /* Добавляем ШИРИНУ на весь экран (viewport height) */
+                /* Так будет горизонтальная полоса прокрутки: */
+                /* width: 100vw; */
+                /* Так НЕ будет горизонтальной полосы прокрутки: */
+                width: 100%;
+                /* Добавляем ВЫСОТУ на весь экран (viewport height) */
+                /* height: 100vh;  */
+                margin: 0px; /* Убираем внешние отступы */
+                /* padding-left: 10px; */
+                background-color: #f1ffeb;
+            }
+
+            /* Убираем стандартные отступы и маркеры для упорядоченных списков */
+            ul, ol{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                /* text-align: center; */
+                color: blueviolet;
+                font-size: 18px
+            }
+            li {
+                margin-bottom: 8px;
+            }
+            /* Убираем подчеркивание и стандартные стили для ссылок */
+            a {
+                text-decoration: none; /* Убираем подчеркивание */
+                color: inherit; /* Используем цвет текста родительского элемента (наследование цвета) */
+                cursor: pointer; /* Делаем курсор указателем для обозначения, что это кликабельный элемент */
+
+            }
+            /* Добавляем стили для ссылки при наведении */
+            a:hover {
+                text-decoration: underline; /* Добавляем подчеркивание при наведении */
+                color: tomato; /* Меняем цвет текста при наведении */
+            }
+
+            /* Список LOGO-посилань на головні сторінки курсів */
+            .courses-list {
+                display: flex;
+                gap: 24px;
+            }
+            .cours-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+            }
+            .active {
+                gap: 0;
+                font-weight: 700;
+                text-decoration: underline;
+            }
+        </style>
+        <title>JS for FE-3</title>
+    </head>
+
+    <body>
+        <!--! Список LOGO-посилань на головні сторінки курсів  -->
+        <ul class="courses-list">
+            <li class="cours-item">
+                <a class="cours-link" href="./index.html">
+                    <img
+                        src="https://img.icons8.com/fluency/48/home.png" 
+                        alt="FrontEnd-1"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-1
+                </a>
+            </li>
+            <li class="cours-item">
+                <a class="cours-link" href="./index2.html">
+                    <img
+                        src="https://img.icons8.com/emoji/48/house-emoji.png" 
+                        alt="FrontEnd-2"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-2
+                </a>
+            </li>
+            <li class="cours-item">
+                <a class="cours-link" href="./index3.html">
+                    <img
+                        src="https://img.icons8.com/plasticine/56/home.png" 
+                        alt="FrontEnd-3"
+                        width="48" 
+                        height="48" 
+                    />
+                    FrontEnd-3
+                </a>
+            </li>
+            <li class="cours-item">
+                <a class="cours-link active" href="./index4.html">
+                    <img 
+                        src="https://img.icons8.com/doodle/48/cottage--v1.png" 
+                        alt="FrontEnd-4" 
+                        width="56" 
+                        height="56" 
+                    />
+                    FrontEnd-4
+                </a>
+            </li>
+        </ul>
+        <!--! Привітання - абзац -->
+        <p 
+            style =
+                "
+                    text-align: center;
+                    color: blue;
+                    margin-bottom: 0;
+                    font-size: 20px;
+                "
+        >
+            Вітаю вас, шановні друзі!
+        </p>
+        <!--! Основний Заголовок h1 - Назва курсу -->
+        <h1 style ="color: red;text-align: center;"
+        >
+            це:
+            <br />
+            <strong>JavaScript </strong><i>course for <u>FRONTEND-4</u> groups</i>
+        </h1>
+        <h2 style ="color: green; text-align: center"
+        >
+            Я дуже радий бачити вас!
+        </h2>
+        <h3 style ="color: brown; text-align: center"
+        >
+            <u>Список уроків:</u>
+        </h3>
+        <!--! Список уроків -->
+        <ul style="padding: 5px">
+            <li><a href="./lesson-FE4_01/lesson-FE4_01.html">Урок-01. <b>Оптимізація подій.</b></a></li>
+            <li><a href="./lesson-FE4_02/lesson-FE4_02.html">Урок-02. <b>Бібліотека Lodash. Throttle і Debounce.</b></a></li>
+            <li><a href="./lesson-FE4_03/lesson-FE4_03.html">Урок-03. <b>Концепція Intersection Observer (Практика).</b></a></li>
+            <li><a href="./lesson-FE4_04/lesson-FE4_04.html">Урок-04. <b>Знайомство з Node.js та Пакетний менеджер npm.</b></a></li>
+            <li><a href="./lesson-FE4_05/lesson-FE4_05.html">Урок-05. <b>Бібліотеки та фрейморки.</b></a></li>
+            <li><a href="./lesson-FE4_06/lesson-FE4_06.html">Урок-06. <b>Модульність коду. Бандлер JS-модулів Parcel.</b></a></li>
+            <li><a href="./lesson-FE4_07/lesson-FE4_07.html">Урок-07. <b>Шаблонізація. Handlebars.</b></a></li>
+            <li><a href="./lesson-FE4_08/lesson-FE4_08.html">Урок-08. <b>Формат даних JSON.</b></a></li>
+            <li><a href="./lesson-FE4_09/lesson-FE4_09.html">Урок-09. <b>Веб-сховище.</b></a></li>
+            <li><a href="./lesson-FE4_10/lesson-FE4_10.html">Урок-10. <b>Асинхронність.</b></a></li>
+            <li><a href="./lesson-FE4_11/lesson-FE4_11.html">Урок-11. <b>Таймери.</b></a></li>
+            <li><a href="./lesson-FE4_12/lesson-FE4_12.html">Урок-12. <b>Дата та час.</b></a></li>
+            <li><a href="./lesson-FE4_13/lesson-FE4_13.html">Урок-13. <b>Проміси.</b></a></li>
+            <li><a href="./lesson-FE4_14/lesson-FE4_14.html">Урок-14. <b>Методи класу Promise. Цикл подій.</b></a></li>
+            <li><a href="./lesson-FE4_15/lesson-FE4_15.html">Урок-15. <b>HTTP запити 1. REST API.</b></a></li>
+            <li><a href="./lesson-FE4_16/lesson-FE4_16.html">Урок-16. <b>HTTP-запити 2. AJAX.</b></a></li>
+            <li><a href="./lesson-FE4_17/lesson-FE4_17.html">Урок-17. <b>Пагінація.</b></a></li>
+            <li><a href="./lesson-FE4_18/lesson-FE4_18.html">Урок-18. <b>CRUD взаємодії з ресурсами бекенду.</b></a></li>
+            <li><a href="./lesson-FE4_19/lesson-FE4_19.html">Урок-19. <b>Асинхронні функції async/await.</b></a></li>
+            <li><a href="./lesson-FE4_20/lesson-FE4_20.html">Урок-20. <b>Міні-проєкт: асинхронні функції async/await.</b></a></li>
+        </ul>
+        <hr align="center" color="#7f00d4" size="2" width="35%">
+        <br />
+        <br/>
+    </body>
+</html>

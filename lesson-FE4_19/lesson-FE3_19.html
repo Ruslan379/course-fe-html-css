@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-FE3-JS_19</title>
+    
+    <!-- <link href="https://img.icons8.com/ios/16/19.png" type="image/x-icon" rel="shortcut icon"> -->
+    <link href="https://img.icons8.com/officel/16/19.png" type="image/x-icon" rel="shortcut icon">
+
+
+    <!--! завантаження нормалізатора modern-normalize -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" 
+    />
+
+    <!--! завантаження шрифтів: 'Roboto' 400, 700 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+
+    <!--! файл reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!--! зовнішній файл стилів -->
+    <link rel="stylesheet" href="./css/lesson-FE3_19.css">
+
+</head>
+
+<body>
+    <h1 class="title-lesson">
+        Урок-JS-19.
+        <br>
+        “Події (частина 1).”
+    </h1>
+    <p class="information-hint">Щоб побачити результати роботи скриптів, відкрийте інструменти розробника <b>DevTools</b>!
+
+    <!--! 1.Події. Методи addEventListener() і removeEventListener()​. -->
+    <div class="part part_1">
+        <h2 class="title-section">
+            1.Події.
+            <br>
+            Методи addEventListener()
+            <br>
+            і removeEventListener()​​.
+        </h2>
+        <div class="box">
+            <button class="my-button-1">My button-1</button>
+            <button class="my-button-2">My button-2</button>
+            <button class="my-button-3">My button-3</button>
+        </div>
+        <div class="box">
+            <button class="btn js-add">Add Listener</button>
+            <button class="btn js-remove">Remove Listener</button>
+            <hr>
+            <button class="btn js-target-btn">Click me</button>
+        </div>
+        <button class="button-1">Off</button>
+    </div>
+
+    <!--! 2.Об'єкт події​.​ -->
+    <div class="part part_2">
+        <h2 class="title-section">
+            2.Об'єкт події​.
+        </h2>
+        <div class="box">
+            <button class="button1">Button-1</button>
+            <button class="button2">Button-2</button>
+        </div>
+        <button class="button-2">Off</button>
+    </div>
+
+    <!--! 3.Дії браузера за замовчуванням. Подія submit. ​-->
+    <div class="part part_3">
+        <h2 class="title-section">
+            3.Дії браузера за замовчуванням.
+            <br>
+            Подія submit.
+        </h2>
+        <div class="box">
+            <form class="register-form" autocomplete="off">
+                <input type="text" name="username" placeholder="Username" />
+                <input type="password" name="password" placeholder="Password" />
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        <button class="button-3">Off</button>
+
+    <!--! 4.Події елементів форм​ -->
+    <div class="part part_4">
+        <h2 class="title-section">
+            4.Події елементів форм.
+        </h2>
+        <div class="box">
+            <h3>Подія submit​</h3>
+            <form class="form" autocomplete="off">
+                <input type="text" name="login" placeholder="Login">
+                <input type="password" name="password" placeholder="Password">
+                <button class="btn" type="submit">Register</button>
+            </form>
+        </div>
+        <div class="box">
+            <h3>Подія change​</h3>
+            <!--todo: Приклад-1: -->
+            <input 
+                class="input1" 
+                type="number" 
+                name="user-number" 
+                placeholder ="Your number..."
+            >
+            <input 
+                class="input2" 
+                type="password" 
+                name="user-password" 
+                placeholder="Your password..."
+            >
+            <hr>
+            <!--todo: Приклад-2: -->
+            <p>
+                Selected option value: <span class="value-output">none</span>
+            <p>
+            <p>
+                Selected option text: <span class="text-output">none</span>
+            <p>
+                <select class="pizza-select">
+                    <option value="four_meats">Four Meats</option>
+                    <option value="royal_cheese">Royal Cheese</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="smoked_salmon">Smoked Salmon</option>
+                </select>
+        </div>
+        <div class="box">
+            <h3>Подія input​​</h3>
+            <input type="text" class="text-input41" />
+            <p>Text field value: <span class="output"></span></p>
+        </div>
+        <div class="box">
+            <h3>Події focus і blur​​</h3>
+            <button
+                class="btn"
+                type="button" 
+                data-action="set"
+            >
+            Set focus to input
+            </button>
+            <button
+            class="btn"
+                type="button" 
+                data-action="remove"
+            >
+            Remove focus from input
+            </button>
+            <br><br>
+            <input type="text" class="text-input42" />
+        </div>
+        <button class="button-4">Off</button>
+    </div>
+
+    <!--! 5. -->
+    <!-- <div class="part part_5">
+        <h2 class="title-section">
+            5.
+        </h2>
+        <button class="button-5">Off</button>
+    </div> -->
+
+    <!--! 6. -->
+    <!-- <div class="part part_6">
+        <h2 class="title-section">
+            6.
+        </h2>
+        <button class="button-6">Off</button>
+    </div> -->
+
+    <!--! 7. -->
+    <!-- <div class="part part_7">
+        <h2 class="title-section">
+            7.
+        </h2>
+        <button class="button-7">Off</button>
+    </div> -->
+
+    <!--! 8. -->
+    <!-- <div class="part part_8">
+        <h2 class="title-section">
+            8.
+        </h2>
+        <button class="button-8">Off</button>
+    </div> -->
+    
+
+
+
+
+
+    <!--? ____________________________________ -->
+    <!--! 0.Заголовок -->
+    <div class="part part_0">
+        <h2 class="title-section">0.Заголовок</h2>
+        
+    </div>
+
+
+
+
+
+    <!--? Підключення скриптів -->
+    <!--! Головний скрипт, який керує завантаженням усіх скриптів -->
+    <script src="./js/0_сontrol.js" type="module"></script>
+    
+    <!--! 1.Події. Методи addEventListener() і removeEventListener()​. -->
+    <!-- <script src="./js/01-fe3-js_19.js" type="module" defer></script> -->
+    <!-- <script src="./js/01-fe3-js_19.js"></script> -->
+    
+    <!--! 2.Об'єкт події​.​ -->
+    <!-- <script src="./js/02-fe3-js_19.js" type="module" defer></script> -->
+    
+    <!--! 3.Дії браузера за замовчуванням. Подія submit. ​-->
+    <!-- <script src="./js/03-fe3-js_19.js" type="module" defer></script> -->
+    
+    <!--! 4.Події елементів форм​ -->
+    <!-- <script src="./js/04-fe3-js_19.js" type="module" defer></script> -->
+    
+    <!--! 5. -->
+    <!-- <script src="./js/05-fe3-js_19.js" type="module" defer></script> -->
+    
+    <!--! 6. -->
+    <!-- <script src="./js/06-fe3-js_19.js" type="module" defer></script> -->
+    
+    <!--! 7. -->
+    <!-- <script src="./js/07-fe3-js_19.js" type="module" defer></script> -->
+    
+    <!--! 8. -->
+    <!-- <script src="./js/08-fe3-js_19.js" type="module" defer></script> -->
+    
+    
+    <!--todo Запитання -->
+    <!-- <script src="./js/09-questions.js" type="module" defer></script> -->
+    
+    <!--todo Практика -->
+    <!-- <script src="./js/10-practice.js" type="module" defer></script> -->
+</body>
+
+</html>
