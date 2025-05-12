@@ -83,6 +83,56 @@ button {
     /* box-shadow: 3px 3px 4px #969696; */ /* On */
 }
 
+.list,
+.menu,
+.menu2,
+.image,
+.button-box,
+.box {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #dfffdf;
+}
+
+.box {
+    text-align: center;
+}
+
+.box button {
+    color: #ad00e2;
+    background-color: #fffac4;
+}
+
+button.accent {
+    color: green;
+}
+
+#parent,
+#child,
+#descendant {
+    margin: 16px;
+    padding: 16px;
+    border: 4px solid #212121;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#parent {
+    background-color: #673ab7;
+}
+
+#child {
+    background-color: #448aff;
+}
+
+#descendant {
+    background-color: #ff9800;
+}
 
 /* ! */
 /* .part_1 {
