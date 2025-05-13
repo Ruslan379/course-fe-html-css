@@ -16,31 +16,74 @@ const descendant = document.querySelector("#descendant-2");
 
 parent.addEventListener("click", () => {
     alert(
-        "Parent-2 click handler. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
+        "PARENT-2 click handler. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
     );
-    console.log("Parent-2 click handler");
+    console.log("PARENT-2 click handler");
 });
 
 child.addEventListener("click", (event) => {
     event.stopImmediatePropagation(); //! зупиняє обробку подій на поточному елементі
     alert(
-        "Child-2 click handler. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
+        "CHILD-2 click handler. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
     );
-    console.log("Child-2 click handler");
+    console.log("CHILD-2 click handler");
 });
 
 descendant.addEventListener("click", (event) => {
     event.stopPropagation(); //! перешкоджає просуванню події далі
-    alert("Descendant-2 click handler");
-    console.log("Descendant-2 click handler");
+    alert("DESCENDANT-2 click handler");
+    console.log("DESCENDANT-2 click handler");
 });
-console.log("-----------------------------------------------------------");
 
 //? ✳️ Якщо елемент має декілька обробників на одну подію,
 //? то, навіть у разі припинення спливання,
 //? усі вони будуть виконані.
 //? Тобто метод stopPropagation() тільки перешкоджає просуванню події далі.
 
-//? ✴️ Якщо необхідно повністю зупинити обробку події, 
-//? використовується метод stopImmediatePropagation(). 
+//? ✴️ Якщо необхідно повністю зупинити обробку події,
+//? використовується метод stopImmediatePropagation().
 //? Він не тільки запобігає спливанню, але й зупиняє обробку подій на поточному елементі.
+console.log("------------------------------------------------------------------");
+
+
+//! Активний елемент (приклад-1)​
+console.warn("Активний елемент (приклад-1)​​:");
+//? ✳️ Розглянемо приклад, в якому є розмітка, яка складається
+//? з батьківського елемента div id="buttons-box"
+//? та вкладених в нього дочірніх елементів
+//? <button class="buttons-box-button">Button-N</button>.
+//? Треба вивести в консоль повідомлення про те,
+//? на якому з елементів відбувся клік:
+const buttonBox = document.getElementById("buttons-box");
+const button1 = document.querySelector(".buttons-box-button:nth-child(1)");
+const button2 = document.querySelector(".buttons-box-button:nth-child(2)");
+const button3 = document.querySelector(".buttons-box-button:nth-child(3)");
+
+console.log("Buttons box:", buttonBox);
+console.log("Button-1:", button1);
+console.log("Button-2:", button2);
+console.log("Button-3:", button3);
+
+buttonBox.addEventListener("click", (event) => {
+    event.target.classList.toggle("active");
+    console.log('Клік в "Buttons box"');
+});
+
+button1.addEventListener("click", (event) => {
+    event.stopPropagation(); //! перешкоджає просуванню події далі
+    event.target.classList.toggle("active");
+    console.log('Клік в "Button-1"');
+});
+
+button2.addEventListener("click", (event) => {
+    event.stopPropagation(); //! перешкоджає просуванню події далі
+    event.target.classList.toggle("active");
+    console.log('Клік в "Button-2"');
+});
+
+button3.addEventListener("click", (event) => {
+    event.stopPropagation(); //! перешкоджає просуванню події далі
+    event.target.classList.toggle("active");
+    console.log('Клік в "Button-3"');
+});
+console.log("------------------------------------------------------------------");

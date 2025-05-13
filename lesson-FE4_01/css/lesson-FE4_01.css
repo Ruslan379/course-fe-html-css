@@ -137,6 +137,36 @@ button.accent {
     background-color: #ff9800;
 }
 
+#buttons-box {
+    margin: 16px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    color: tomato;
+    outline: 1px solid tomato;
+}
+
+#buttons-box.active {
+    background-color: lightcyan;
+}
+
+.buttons-box-button {
+    /* width: 75%; */
+    padding: 10px 20px;
+}
+
+/* .buttons-box-button:nth-child(1) {
+    background-color: lightgreen;
+} */
+
+.buttons-box-button.active {
+    background-color: lightgreen;
+}
+
+
+
+
 /* ! */
 /* .part_1 {
     display: none;

@@ -28,8 +28,8 @@ const child = document.querySelector("#child-1");
 const descendant = document.querySelector("#descendant-1");
 
 parent.addEventListener("click", (event) => {
-    alert("Parent-1 click handler");
-    console.log("Parent-1 click handler");
+    alert("PARENT-1 click");
+    console.log("PARENT-1 click");
     //! Властивості event.target​ та event.currentTarget
     // console.log("event.target: ", event.target);
     // console.log("event.currentTarget: ", event.currentTarget);
@@ -37,13 +37,13 @@ parent.addEventListener("click", (event) => {
 });
 
 child.addEventListener("click", () => {
-    alert("Child-1 click handler");
-    console.log("Child-1 click handler");
+    alert("CHILD-1 click");
+    console.log("CHILD-1 click");
 });
 
 descendant.addEventListener("click", () => {
-    alert("Descendant-1 click handler");
-    console.log("Descendant-1 click handler");
+    alert("DESCENDANT-1 click");
+    console.log("DESCENDANT-1 click");
 });
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
