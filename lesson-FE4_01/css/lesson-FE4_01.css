@@ -1,7 +1,7 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #f3ffe8;
+    --color-background-body: #fce8ff;
     --color-title-lesson: #4b4200;
     --color-title-section: red;
     --color-title-subsection: blue;
@@ -81,6 +81,12 @@ button {
     /* background-color: green; */ /* On */
     box-shadow: 6px 6px 8px #636363;
     /* box-shadow: 3px 3px 4px #969696; */ /* On */
+}
+/*! --------------------------------------------- */
+
+
+h3 {
+    font-size: 1em;
 }
 
 .list,

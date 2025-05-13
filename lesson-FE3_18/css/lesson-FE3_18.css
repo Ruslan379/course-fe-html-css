@@ -82,6 +82,12 @@ button {
     box-shadow: 6px 6px 8px #636363;
     /* box-shadow: 3px 3px 4px #969696; */ /* On */
 }
+/*! --------------------------------------------- */
+
+
+h3 {
+    font-size: 1em;
+}
 
 .list, 
 .menu,
