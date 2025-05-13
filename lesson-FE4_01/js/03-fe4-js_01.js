@@ -46,18 +46,18 @@ descendant.addEventListener("click", (event) => {
 console.log("------------------------------------------------------------------");
 
 
-//! Активний елемент (приклад-1)​
-console.warn("Активний елемент (приклад-1)​​:");
+//! Активний елемент (приклад-1 (до))​
+console.warn("Активний елемент (приклад-1 (до))​​:");
 //? ✳️ Розглянемо приклад, в якому є розмітка, яка складається
 //? з батьківського елемента <div id="buttons-box>"
 //? та вкладених в нього дочірніх елементів
 //? <button class="buttons-box-button">Button-N</button>.
 //? Треба вивести в консоль повідомлення про те,
 //? на якому з елементів відбувся клік:
-const buttonBox = document.getElementById("buttons-box");
-const button1 = document.querySelector(".buttons-box-button:nth-child(1)");
-const button2 = document.querySelector(".buttons-box-button:nth-child(2)");
-const button3 = document.querySelector(".buttons-box-button:nth-child(3)");
+const buttonBox = document.querySelector(".part_3 #buttons-box");
+const button1 = document.querySelector(".part_3 .buttons-box-button:nth-child(1)");
+const button2 = document.querySelector(".part_3 .buttons-box-button:nth-child(2)");
+const button3 = document.querySelector(".part_3 .buttons-box-button:nth-child(3)");
 
 console.log("Buttons box:", buttonBox);
 console.log("Button-1:", button1);
