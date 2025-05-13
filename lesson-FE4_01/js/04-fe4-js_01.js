@@ -36,7 +36,30 @@ console.warn(`Делегування подій (після)​: \n ${((window.l
 //? ✳️ Такий підхід спрощує ініціалізацію слухачів однотипних елементів. 
 //? Можна додавати, видаляти або змінювати елементи, при цьому, 
 //? не потрібно вручну додавати або видаляти обробники подій.
-console.log("-----------------------------------------------------------");
+console.log("--------------------------------------------------------------------");
 
 //! Активний елемент (приклад-2 (після))​
 console.warn("Активний елемент (приклад-2 (після))​​​:");
+const buttonBox = document.querySelector(".part_4 #buttons-box");
+
+console.log("Buttons box:", buttonBox);
+
+buttonBox.addEventListener("click", (event) => {
+    event.target.classList.toggle("active");
+    console.log("event.target.tagName = ", event.target.tagName);
+    // console.log(`Клік в ${event.target.textContent}`);
+
+    switch (event.target.tagName) {
+        case "DIV":
+            console.log(`Клік в ${event.target.tagName} - Buttons box`);
+            break;
+        case "BUTTON":
+            console.log(`Клік в ${event.target.textContent}`);
+            break;
+        default:
+            console.warn("НЕ спрацював ЖОДЕН блок!"); //! інструкції default блока;
+    };
+    console.log(". . . . . . . . . . . . . . . . .");
+
+});
+console.log("--------------------------------------------------------------------");
