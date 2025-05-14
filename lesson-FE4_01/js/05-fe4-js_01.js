@@ -16,22 +16,18 @@ console.warn("Палітра кольорів​:");
 const colorPalette = document.querySelector(".color-palette");
 const output = document.querySelector(".output");
 
-colorPalette.addEventListener("click", selectColor);
-
-//todo: Тут відбувається «магія» делегування
-function selectColor(event) {
-    if (event.target.nodeName !== "BUTTON") {
-        return;
-    };
-
-    const selectedColor = event.target.dataset.color;
-    output.textContent = `Selected color: ${selectedColor}`;
-    output.style.color = selectedColor;
-    console.log(`Вибраний колір ${selectedColor}`);
-};
 
 //todo: Деякі допоміжні функції для рендерингу елементів палітри.
-createPaletteItems();
+function getRandomHexColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    };
+
+    return color;
+};
 
 function createPaletteItems() {
     const items = [];
@@ -47,14 +43,21 @@ function createPaletteItems() {
     colorPalette.append(...items);
 };
 
-function getRandomHexColor() {
-    const letters = "0123456789ABCDEF";
-    let color = "#";
+createPaletteItems();
 
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+
+//todo: Тут відбувається «магія» делегування
+colorPalette.addEventListener("click", selectColor);
+
+function selectColor(event) {
+    // console.log("event.target.nodeName = ", event.target.nodeName); 
+    if (event.target.nodeName !== "BUTTON") {
+        return;
     };
 
-    return color;
+    const selectedColor = event.target.dataset.color;
+    output.textContent = `Selected color: ${selectedColor}`;
+    output.style.color = selectedColor;
+    console.log(`Вибраний колір ${selectedColor}`);
 };
-
+console.log("--------------------------------------------------------------------");
