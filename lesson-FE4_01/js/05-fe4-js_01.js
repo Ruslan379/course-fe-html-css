@@ -60,4 +60,4 @@ function selectColor(event) {
     output.style.color = selectedColor;
     console.log(`Вибраний колір ${selectedColor}`);
 };
-console.log("--------------------------------------------------------------------");
+console.log("-----------------------");
