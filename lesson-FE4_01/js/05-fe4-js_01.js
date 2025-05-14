@@ -50,10 +50,16 @@ createPaletteItems();
 colorPalette.addEventListener("click", selectColor);
 
 function selectColor(event) {
-    // console.log("event.target.nodeName = ", event.target.nodeName); 
+    // console.log("event.target.nodeName = ", event.target.nodeName);
+    //todo: var.1
     if (event.target.nodeName !== "BUTTON") {
         return;
     };
+
+    //todo: var.2
+    // if (event.target === event.currentTarget) {
+    //     return;
+    // };
 
     const selectedColor = event.target.dataset.color;
     output.textContent = `Selected color: ${selectedColor}`;
