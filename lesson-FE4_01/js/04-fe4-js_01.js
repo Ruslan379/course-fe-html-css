@@ -40,15 +40,16 @@ console.log("-------------------------------------------------------------------
 
 //! Активний елемент (приклад-2 (після))​
 console.warn("Активний елемент (приклад-2 (після))​​​:");
-const buttonBox = document.querySelector(".part_4 #buttons-box");
+const buttonBox = document.querySelector(".part_4 #buttons-box"); //! 🔸1️⃣
 
 console.log("Buttons box:", buttonBox);
 
-buttonBox.addEventListener("click", (event) => {
-    event.target.classList.toggle("active");
-    console.log("event.target.tagName = ", event.target.tagName);
+buttonBox.addEventListener("click", (event) => { //! 🔸2️⃣
+    // console.log("event.target:", event.target); //! 🔸3️⃣
     // console.log(`Клік в ${event.target.textContent}`);
-
+    
+    console.log("event.target.tagName = ", event.target.tagName);
+    
     switch (event.target.tagName) {
         case "DIV":
             console.log(`Клік в ${event.target.tagName} - Buttons box`);
@@ -59,7 +60,9 @@ buttonBox.addEventListener("click", (event) => {
         default:
             console.warn("НЕ спрацював ЖОДЕН блок!"); //! інструкції default блока;
     };
-    console.log(". . . . . . . . . . . . . . . . .");
 
+    event.target.classList.toggle("active"); //! додаємо/прибираємо клас для стилізації активного елемента;
+
+    console.log(". . . . . . . . . . . . . . . . .");
 });
 console.log("--------------------------------------------------------------------");
