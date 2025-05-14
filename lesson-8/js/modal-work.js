@@ -29,7 +29,7 @@
 
 
     //! Логіка кліків в бєкдроп та модальне вікно
-    isOnlyBackdrop = true;
+    let isOnlyBackdrop = true;
     
     //! Клік в бєкдроп
     refs.backdrop.addEventListener("click", logBackdropClick);
