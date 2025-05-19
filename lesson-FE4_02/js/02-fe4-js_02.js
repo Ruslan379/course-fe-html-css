@@ -46,6 +46,8 @@ console.warn("Throttle і Debounce​:");
 
 //! Throttle
 console.warn("Throttle​:");
+console.warn(`Throttle​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_02/images/throttle.png"}`);
+
 //? ✴️ Прийом throttle контролює кількість разів, 
 //? яку функція може бути викликана протягом певного проміжку часу. 
 //? Тобто дозволяє викликати функцію не частіше 
