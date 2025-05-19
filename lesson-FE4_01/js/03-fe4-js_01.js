@@ -22,7 +22,7 @@ parent.addEventListener("click", () => {
 });
 
 child.addEventListener("click", (event) => {
-    event.stopImmediatePropagation(); //! зупиняє обробку подій на поточному елементі
+    event.stopImmediatePropagation(); //! зупиняє обробку ВСІХ подій на поточному елементі
     alert(
         "CHILD-2 click handler. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
     );
