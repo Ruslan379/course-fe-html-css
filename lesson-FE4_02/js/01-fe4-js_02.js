@@ -35,16 +35,20 @@ console.log("-------------------------------------------------------------------
 
 //! Використання бібліотеки Lodash (документація)
 console.warn("Використання бібліотеки Lodash (документація)): \n https://lodash.com/docs/4.17.15");
+console.log("");
+
+
 //todo: “Math” Methods --> (_.add(augend, addend))
 console.log(
     '%c “Math” Methods --> (_.add(augend, addend)) ',
     'color: white; background-color:rgb(0, 136, 100)',
 );
-console.warn("Використання бібліотеки Lodash (Math” Methods --> (_.add)): \n https://lodash.com/docs/4.17.15#add");
+console.warn("Використання бібліотеки Lodash (“Math” Methods --> (_.add)): \n https://lodash.com/docs/4.17.15#add");
 //? ✳️ Цей метод додає два числа (рахує суму двох чисел).
 const sum = _.add(10, 5);
 console.log("sum:", sum); //! 15
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
 
 //todo: “Object” Methods --> (_.findKey(object, [predicate=_.identity]))
 console.log(
@@ -61,4 +65,24 @@ const users = {
     pebbles: { 'age': 1, 'active': true }
 };
 console.log("Властивість, де age < 40:", _.findKey(users, function (o) { return o.age < 40; })); //! 'barney' (порядок ітерації не гарантовано)
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+//todo: “String” Methods --> _.startCase([string=""])
+console.log(
+    '%c “String” Methods --> _.startCase([string=""]) ',
+    'color: white; background-color:rgb(0, 136, 100)',
+);
+console.warn("Використання бібліотеки Lodash (“String” Methods --> (.startCase): \n https://lodash.com/docs/4.17.15#startCase");
+//? ✳️ Перетворює рядок на початковий регістр..
+const startCase = document.getElementById("start-case");
+console.log("startCase:", startCase);
+
+let startCaseTextContent = startCase.textContent;
+console.log("startCase.textContent:", startCaseTextContent);
+
+const NewStartCaseTextContent = _.startCase(startCaseTextContent);
+console.log("_.startCase(startCase.textContent):", NewStartCaseTextContent);
+
+startCase.textContent = NewStartCaseTextContent;
 console.log("-------------------------------------------------------------------");

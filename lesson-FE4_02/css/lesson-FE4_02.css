@@ -115,6 +115,11 @@ button.accent {
     color: green;
 }
 
+/*? Бібліотека Lodash" */
+/* .start-case {
+    margin-bottom: 10px;
+} */
+
 /*? Подія "scroll" */
 .cta {
     display: flex;
