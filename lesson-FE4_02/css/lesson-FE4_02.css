@@ -1,8 +1,8 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #fce8ff;
-    --color-title-lesson: #4b4200;
+    --color-background-body: #fdffe8;
+    --color-title-lesson: #120099;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
@@ -115,10 +115,6 @@ button.accent {
     color: green;
 }
 
-/*? Бібліотека Lodash" */
-/* .start-case {
-    margin-bottom: 10px;
-} */
 
 /*? Подія "scroll" */
 .cta {
@@ -160,6 +156,9 @@ button.accent {
     font-size: 48px;
     font-family: monospace;
 }
+
+/*? Throttle */
+
 
 
 

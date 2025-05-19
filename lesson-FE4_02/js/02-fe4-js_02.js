@@ -1,5 +1,5 @@
 console.log(
-    '%c 2.2.Балакучі події (Chatty events) ',
+    '%c 2.Балакучі події (Chatty events) ',
     'color: white; background-color: #D33F49',
 );
 
@@ -33,4 +33,4 @@ document.addEventListener("scroll", () => {
     output.textContent = scrollEventCounter;
     console.log("scrollEventCounter:", scrollEventCounter); //!
 });
-console.log("-----------------------------------------------------------");
+console.log("-------------------------------------");
