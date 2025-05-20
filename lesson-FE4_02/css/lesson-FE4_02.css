@@ -118,6 +118,7 @@ button.accent {
 
 /*? Подія "scroll" */
 /*? Throttle */
+/*? Debounce */
 .cta {
     display: flex;
     justify-content: center;
@@ -149,7 +150,9 @@ button.accent {
 }
 
 /*? Throttle */
-.box2-in-box {
+/*? Debounce */
+.box2-in-box,
+.box3-in-box {
     min-width: 160px;
     display: inline-flex;
     flex-direction: column;
@@ -172,7 +175,9 @@ button.accent {
     font-family: monospace;
 }
 
-/*? Throttle */
+.part_4 .box {
+    width: auto;
+}
 
 
 

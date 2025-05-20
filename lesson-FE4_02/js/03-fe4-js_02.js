@@ -47,17 +47,18 @@ const eventCounter = {
     vanilla: 0,
     throttled: 0
 };
+let { vanilla, throttled } = eventCounter;
 
 document.addEventListener("scroll", () => {
-    eventCounter.vanilla += 1;
-    vanillaOutput.textContent = eventCounter.vanilla;
+    vanilla += 1;
+    vanillaOutput.textContent = vanilla;
 });
 
 document.addEventListener(
     "scroll",
     _.throttle(() => {
-        eventCounter.throttled += 1;
-        throttledOutput.textContent = eventCounter.throttled;
+        throttled += 1;
+        throttledOutput.textContent = throttled;
     }, 300)
 );
 console.log("-----------------------------------------------------------");
