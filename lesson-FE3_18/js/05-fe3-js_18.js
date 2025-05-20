@@ -23,7 +23,7 @@ console.log('image.hasAttribute("src"):', image.hasAttribute("src")); //! true
 //todo: Отримуємо значення атрибута
 console.log('image.getAttribute("alt"):', image.getAttribute("alt")); //! "Rocks and waterfall"
 
-//todo: Всановлюємо або змінюємо атрибут та його значення:
+//todo: Встановлюємо або змінюємо атрибут та його значення:
 image.setAttribute("alt", "Amazing nature");
 console.log('image.getAttribute("alt"):', image.getAttribute("alt")); //! Amazing nature
 
