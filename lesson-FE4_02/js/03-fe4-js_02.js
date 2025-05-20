@@ -5,9 +5,9 @@ console.log(
 
 //! Throttle і Debounce
 console.warn("Throttle і Debounce​:");
-//? ✴️ Throttle і Debounce - це два схожих, 
-//? але різних за поведінкою прийоми, 
-//? що дозволяють контролювати кількість разів, 
+//? ✴️ Throttle і Debounce - це два схожих,
+//? але різних за поведінкою прийоми,
+//? що дозволяють контролювати ❗️кількість разів❗️, 
 //? яку ми дозволяємо виконувати функції з часом. 
 //? Використовуємо їх реалізацію з бібліотеки Lodash.
 
@@ -35,6 +35,29 @@ document.addEventListener(
     "scroll",
     _.throttle(() => {
         console.log("Виклик обробника прокрутки кожні 300ms");
+    }, 300)
+);
+console.log("-----------------------------------------------------------");
+
+
+//! Throttle (Scroll me)
+const vanillaOutput = document.querySelector(".part_3 .output.vanilla");
+const throttledOutput = document.querySelector(".part_3 .output.throttled");
+const eventCounter = {
+    vanilla: 0,
+    throttled: 0
+};
+
+document.addEventListener("scroll", () => {
+    eventCounter.vanilla += 1;
+    vanillaOutput.textContent = eventCounter.vanilla;
+});
+
+document.addEventListener(
+    "scroll",
+    _.throttle(() => {
+        eventCounter.throttled += 1;
+        throttledOutput.textContent = eventCounter.throttled;
     }, 300)
 );
 console.log("-----------------------------------------------------------");
