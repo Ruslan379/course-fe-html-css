@@ -41,6 +41,7 @@ console.log("-----------------------------------------------------------");
 
 
 //! Throttle (Scroll me)
+console.warn("Throttle (Scroll me)​:");
 const vanillaOutput = document.querySelector(".part_3 .output.vanilla");
 const throttledOutput = document.querySelector(".part_3 .output.throttled");
 const eventCounter = {

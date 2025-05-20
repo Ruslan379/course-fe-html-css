@@ -151,8 +151,10 @@ button.accent {
 
 /*? Throttle */
 /*? Debounce */
+/*? Режими методу Debounce​ */
 .box2-in-box,
-.box3-in-box {
+.box3-in-box,
+.box4-in-box {
     min-width: 160px;
     display: inline-flex;
     flex-direction: column;
