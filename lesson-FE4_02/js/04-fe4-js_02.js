@@ -5,6 +5,13 @@ console.log(
 
 //! Debounce (відкладений виклик)
 console.warn(`Debounce: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_02/images/debounce.png"}`);
+//? ❗️❗️❗️ Debounce - функцію буде викликано лише після того,
+//?     як подія припиниться на заданий час.
+//? 📍 Використання Debounce:
+//? 🔸 Автопідказки під час введення в поле пошуку.
+//? 🔸 Перевірка даних форми.
+//? 🔸 Підвантаження даних після того, як користувач перестав друкувати.
+
 //? ✴️ Прийом debounce гарантує, 
 //? що функція буде викликана лише у тому разі, 
 //? якщо між подіями буде пауза N мілісекунд. 
@@ -52,9 +59,13 @@ console.log("---------------------------------------------------------");
 console.warn("Input (with debounce)​:");
 const input = document.querySelector(".part_4 .input");
 console.log("input:", input); //!
-
+//todo: Відправка запиту без debounce
+// input.addEventListener("input", () => {
+//     console.log("Відправка запиту без debounce:", input.value);
+// });
+//todo: Відправка запиту з debounce
 input.addEventListener("input", _.debounce(() => {
-    console.log("Отправка запроса:", input.value);
+    console.log("Відправка запиту з debounce:", input.value);
 }, 500));
 console.log("---------------------------------------------------------");
 
@@ -64,13 +75,13 @@ console.warn(`Режими методу Debounce: \n ${((window.location.href).s
 //? ✴️ За замовчуванням метод debounce працює у режимі,
 //? коли функція викликається через N мілісекунд
 //? після паузи між потоками подій.
-//? Цей режим називається trailing edge (в кінці).
+//? Цей режим називається ❗️trailing❗️ edge (в кінці).
 //? Існують завдання, коли функцію потрібно викликати
 //? відразу під час настання першої події в потоці,
 //? а потім ігнорувати усі наступні події до паузи між ними,
 //? наприклад, - 300 мілісекунд.
 //? а старті наступного потоку подій ця поведінка повторюється.
-//? Такий режим називається leading edge (на початку).
+//? Такий режим називається ❗️leading❗️ edge (на початку).
 //? ✳️ На практиці режим leading може застосовуватись,
 //? наприклад, у разі, коли необхідно виконати функцію
 //? відправлення запиту на сервер при першому натисканні кнопки,
@@ -81,18 +92,19 @@ const throttledOutput4 = document.querySelector(".trailing-leading .output.throt
 const trailingOutput4 = document.querySelector(".trailing-leading .output.trailing");
 const leadingOutput4 = document.querySelector(".trailing-leading .output.leading");
 const eventCounter4 = {
-    vanilla: 0,
-    throttled: 0,
-    trailing: 0,
-    leading: 0
+    vanilla4: 0,
+    throttled4: 0,
+    trailing4: 0,
+    leading4: 0
 };
 
+let { vanilla4, throttled4, trailing4, leading4 } = eventCounter4;
 //! Trailing debounce
 document.addEventListener(
     "scroll",
     _.debounce(() => {
-        eventCounter4.trailing += 1;
-        trailingOutput4.textContent = eventCounter4.trailing;
+        trailing4 += 1;
+        trailingOutput4.textContent = trailing4;
     }, 300)
 );
 
@@ -101,8 +113,8 @@ document.addEventListener(
     "scroll",
     _.debounce(
         () => {
-            eventCounter4.leading += 1;
-            leadingOutput4.textContent = eventCounter4.leading;
+            leading4 += 1;
+            leadingOutput4.textContent = leading4;
         },
         300,
         { trailing: false, leading: true }
@@ -110,15 +122,15 @@ document.addEventListener(
 );
 
 document.addEventListener("scroll", () => {
-    eventCounter4.vanilla += 1;
-    vanillaOutput4.textContent = eventCounter4.vanilla;
+    vanilla4 += 1;
+    vanillaOutput4.textContent = vanilla4;
 });
 
 document.addEventListener(
     "scroll",
     _.throttle(() => {
-        eventCounter4.throttled += 1;
-        throttledOutput4.textContent = eventCounter4.throttled;
+        throttled4 += 1;
+        throttledOutput4.textContent = throttled4;
     }, 300)
 );
 console.log("---------------------------------------------------------");
