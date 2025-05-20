@@ -97,8 +97,8 @@ const eventCounter4 = {
     trailing4: 0,
     leading4: 0
 };
-
 let { vanilla4, throttled4, trailing4, leading4 } = eventCounter4;
+
 //! Trailing debounce
 document.addEventListener(
     "scroll",
