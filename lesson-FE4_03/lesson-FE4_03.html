@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-FE4-JS_02</title>
+    
+    <!-- <link href="https://img.icons8.com/ios/16/2.png" type="image/x-icon" rel="shortcut icon"> -->
+    <link href="https://img.icons8.com/officel/16/2.png" type="image/x-icon" rel="shortcut icon">
+
+
+    <!--! завантаження нормалізатора modern-normalize -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" 
+    />
+
+    <!--! завантаження шрифтів: 'Roboto' 400, 700 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+
+    <!--! файл reset.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!--! зовнішній файл стилів -->
+    <link rel="stylesheet" href="./css/lesson-FE4_02.css">
+
+</head>
+
+<body>
+    <h1 class="title-lesson">
+        Урок-FE4-JS-02.
+        <br> 
+        “Бібліотека Lodash.
+        <br> 
+        Throttle і Debounce.”
+    </h1>
+    <p class="information-hint">Щоб побачити результати роботи скриптів, відкрийте інструменти розробника <b>DevTools</b>!
+
+    <!--! 1.Бібліотека Lodash -->
+    <div class="part part_1">
+        <h2 class="title-section">
+            1.Бібліотека <a href="https://lodash.com">Lodash</a>.
+        </h2>
+        <div class="box">
+            <h3 id="start-case">start case</h3>
+        </div>
+        
+        <button class="button-1">Off</button>
+    </div>
+
+    <!--! 2.Балакучі події (Chatty events) -->
+    <div class="part part_2">
+        <h2 class="title-section">
+            2.Балакучі події (Chatty events).
+        </h2>
+        <div class="box">
+            <h3 class="cta">Scroll me</h3>
+            <div class="event-counter">
+                <div class="box-in-box">
+                    <p>Number of scroll events</p>
+                    <span class="output">0</span>
+                </div>
+            </div>
+        </div>
+        <button class="button-2">Off</button>
+    </div>
+
+    <!--! 3.Throttle (обмежувач частоти) -->
+    <div class="part part_3">
+        <h2 class="title-section">
+            3.<a href="./images/throttle.png">Throttle (обмежувач частоти)</a>.
+        </h2>
+        <div class="box">
+            <h3 class="cta">Scroll me (throttle)</h3>
+            <div class="event-counter">
+                <div class="box2-in-box">
+                    <p>No timing function</p>
+                    <span class="output vanilla">0</span>
+                </div>
+                <div class="box2-in-box">
+                    <p>Throttled</p>
+                    <span class="output throttled">0</span>
+                </div>
+            </div>
+        </div>
+        <button class="button-3">Off</button>
+    </div>
+
+    <!--! 4.Debounce (відкладений виклик) -->
+    <div class="part part_4">
+        <h2 class="title-section">
+            4.<a href="./images/debounce.png">Debounce (відкладений виклик)</a>.
+        </h2>
+
+        <div class="box">
+            <h3 class="cta">Scroll me (throttle & debounce)</h3>
+            <div class="event-counter">
+                <div class="box3-in-box">
+                    <p>No timing function</p>
+                    <span class="output vanilla">0</span>
+                </div>
+                <div class="box3-in-box">
+                    <p>Throttled</p>
+                    <span class="output throttled">0</span>
+                </div>
+                <div class="box3-in-box">
+                    <p>Debounced</p>
+                    <span class="output debounced">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3 class="cta">Input (with debounce)</h3>
+            <input class="input" type="text">
+        </div>
+
+        <div class="box trailing-leading">
+            <h3 class="cta">Scroll me (throttle, Trailing Debounce, Leading debounce)</h3>
+            <div class="event-counter">
+                <div class="box4-in-box">
+                    <p>No timing function</p>
+                    <span class="output vanilla">0</span>
+                </div>
+            
+                <div class="box4-in-box">
+                    <p>Throttled</p>
+                    <span class="output throttled">0</span>
+                </div>
+            
+                <div class="box4-in-box">
+                    <p>Trailing debounce</p>
+                    <span class="output trailing">0</span>
+                </div>
+            
+                <div class="box4-in-box">
+                    <p>Leading debounce</p>
+                    <span class="output leading">0</span>
+                </div>
+            </div>
+        </div>
+        <button class="button-4">Off</button>
+    </div>
+
+
+    <!--! 5. -->
+    <!-- <div class="part part_5">
+        <h2 class="title-section">
+            5.
+        </h2>
+        <button class="button-5">Off</button>
+    </div> -->
+
+    <!--! 6. -->
+    <!-- <div class="part part_6">
+        <h2 class="title-section">
+            6.
+        </h2>
+        <button class="button-6">Off</button>
+    </div> -->
+    
+    <!--! 7. -->
+    <!-- <div class="part part_7">
+        <h2 class="title-section">
+            7.
+        </h2>
+        <button class="button-7">Off</button>
+    </div> -->
+    
+    <!--! 8. -->
+    <!-- <div class="part part_8">
+        <h2 class="title-section">
+            8.
+        </h2>
+        <button class="button-8">Off</button>
+    </div> -->
+
+
+
+
+
+    <!--? ____________________________________ -->
+    <!--! 0.Заголовок -->
+    <div class="part part_0">
+        <h2 class="title-section">0.Заголовок</h2>
+
+    </div>
+
+
+
+
+
+    <!--? Підключення скриптів -->
+    <!--! Підключення бібліотеки Lodash -->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer">
+    </script>
+    
+    <!--! Головний скрипт, який керує завантаженням усіх скриптів -->
+    <script src="./js/0_сontrol.js" type="module"></script>
+    
+    <!--! 1. -->
+    <!-- <script src="./js/01-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 2.​ -->
+    <!-- <script src="./js/02-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 3. ​-->
+    <!-- <script src="./js/03-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 4.​ -->
+    <!-- <script src="./js/04-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 5. -->
+    <!-- <script src="./js/05-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 6. -->
+    <!-- <script src="./js/06-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 7. -->
+    <!-- <script src="./js/07-fe4-js_02.js" type="module" defer></script> -->
+    
+    <!--! 8. -->
+    <!-- <script src="./js/08-fe4-js_02.js" type="module" defer></script> -->
+    
+    
+    <!--todo Запитання -->
+    <!-- <script src="./js/09-questions.js" type="module" defer></script> -->
+    
+    <!--todo Практика -->
+    <!-- <script src="./js/10-practice.js" type="module" defer></script> -->
+    
+</body>
+
+</html>
