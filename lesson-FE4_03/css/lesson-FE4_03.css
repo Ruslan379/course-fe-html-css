@@ -118,6 +118,7 @@ button.accent {
 
 /*? 2.Відкладене завантаженняї (Chatty events) */
 .blur-up {
+    width: 100%;
     filter: blur(10px);
     transition: filter 400ms;
 }
