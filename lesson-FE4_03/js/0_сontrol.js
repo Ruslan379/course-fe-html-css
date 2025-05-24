@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // const button7 = document.querySelector('.button-7');
     // const button8 = document.querySelector('.button-8');
 
+    //todo: Додаткова логіка для <Урок-FE4-JS-02 -> Розділ.1>
+    const boxPart1 = document.querySelector('.part_1 .box');
+    // console.log("boxPart1:", boxPart1); //!
+    
+    if (button1.textContent === 'Off') {
+        boxPart1.style.display = 'none';
+    };
+    //todo: _________________________________________________
+
     //! Функція для завантаження та виконання скрипту
     const loadAndExecuteScript = (scriptSrc) => {
         const existingScript = document.querySelector(`script[data-src="${scriptSrc}"]`);
@@ -60,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
             button1.style.backgroundColor = '#b70000';
             button1.style.color = 'white';
             button1.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+            //todo: Додаткова логіка для <Урок-FE4-JS-02 -> Розділ.1
+            boxPart1.style.display = 'none';
         }
     });
 

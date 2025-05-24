@@ -33,4 +33,5 @@ document.addEventListener("scroll", () => {
     output.textContent = scrollEventCounter;
     console.log("scrollEventCounter:", scrollEventCounter); //!
 });
-console.log("-------------------------------------");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log("-------------------------------------------------------------------");
