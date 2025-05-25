@@ -58,7 +58,8 @@ console.log(
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
-const listWithId = document.querySelector('#menu');
+const listWithId = document.querySelector('#menu'); //todo: var.1
+// const listWithId = document.getElementById('menu'); //todo: var.2
 listWithId.style.textTransform = 'uppercase'; //todo: зміна властивості:  text-transform: uppercase;
 listWithId.style.fontSize = '24px'; //todo: зміна властивості:  font-size: 24px;
 console.log("listWithId = document.querySelector('#menu'):", listWithId);
