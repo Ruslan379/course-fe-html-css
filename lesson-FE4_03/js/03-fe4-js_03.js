@@ -36,8 +36,8 @@ console.log(
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
-//! Приклад використання Intersection Observer
-console.warn("Приклад використання Intersection Observer:");
+//! Простий приклад використання Intersection Observer
+console.warn("Простий приклад використання Intersection Observer:");
 const target = document.getElementById("target");
 
 const observer = new IntersectionObserver(
@@ -59,5 +59,4 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(target);
-
 console.log("-----------------------------------------------------------------");
