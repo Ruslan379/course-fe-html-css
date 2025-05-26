@@ -130,9 +130,13 @@ button.accent {
 /*? 3.Відкладене завантаження (з концепцією Intersection Observer) */
 .box-observer {
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: red;
+    margin: 1000px 0; /*! для того, щоб був скрол */
     background: lightblue;
-    margin: 1000px 0;
-    /* для того, щоб був скрол */
     outline: 1px solid red;
 }
 
