@@ -27,9 +27,9 @@ console.log(
     IntersectionObserver(callback, options):
     🔸 callback - функція, що викликається при кожному вході/виході елемента в зону видимості.
     🔸 options може містити:
-    🔸 root: елемент-контейнер, щодо якого вести спостереження (за умовчанням viewport);
-    🔸 threshold: частка видимості елемента (0 - навіть 1px, 1.0 - повністю);
-    🔸 rootMargin: відступи навколо root.
+        🔸 root: елемент-контейнер, щодо якого вести спостереження (за умовчанням viewport);
+        🔸 threshold: частка видимості елемента (0 - навіть 1px, 1.0 - повністю);
+        🔸 rootMargin: відступи навколо root.
     `,
     'color: blue; font-size: 18px',
 );
@@ -40,20 +40,23 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .")
 console.warn("Приклад використання Intersection Observer:");
 const target = document.getElementById("target");
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            console.log("Елемент видно!");
-            target.style.background = "lightgreen";
-
-        } else {
-            console.log("Елемент пішов із зони видимості...");
-            target.style.background = "yellow";
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log("Елемент видно!");
+                target.style.background = "lightgreen";
+            } else {
+                console.log("Елемент пішов із зони видимості...");
+                target.style.background = "yellow";
+            }
         }
-    });
-}, {
-    threshold: 0.5 //todo: викликається, коли 50% об'єкта видно
-});
+        );
+    },
+    {
+        threshold: 0.5, //todo: викликається, коли 50% об'єкта видно
+    }
+);
 
 observer.observe(target);
 
