@@ -127,8 +127,14 @@ button.accent {
     filter: blur(0);
 }
 
-
-
+/*? 3.Відкладене завантаження (з концепцією Intersection Observer) */
+.box-observer {
+    height: 200px;
+    background: lightblue;
+    margin: 1000px 0;
+    /* для того, щоб був скрол */
+    outline: 1px solid red;
+}
 
 /* ! */
 /* .part_1 {
