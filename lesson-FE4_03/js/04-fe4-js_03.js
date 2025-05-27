@@ -28,7 +28,7 @@ const observer1 = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.9, //todo: викликається, коли 50% об'єкта видно
+        threshold: 0.9, //todo: викликається, коли 90% об'єкта видно
     }
 );
 
