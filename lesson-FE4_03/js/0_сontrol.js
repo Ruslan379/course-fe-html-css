@@ -26,12 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const button2 = document.querySelector('.button-2');
     const button3 = document.querySelector('.button-3');
     const button4 = document.querySelector('.button-4');
+    //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.4>
+    const button41 = document.querySelector('.button-41');
     // const button5 = document.querySelector('.button-5');
     // const button6 = document.querySelector('.button-6');
     // const button7 = document.querySelector('.button-7');
     // const button8 = document.querySelector('.button-8');
 
-    //todo: Додаткова логіка для <Урок-FE4-JS-02 -> Розділ.1>
+    //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.1>
     const boxPart1 = document.querySelector('.part_1 .box');
     // console.log("boxPart1:", boxPart1); //!
     
@@ -69,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button1.style.backgroundColor = '#b70000';
             button1.style.color = 'white';
             button1.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
-            //todo: Додаткова логіка для <Урок-FE4-JS-02 -> Розділ.1
+            //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.1
             boxPart1.style.display = 'none';
         }
     });
@@ -119,6 +121,23 @@ document.addEventListener('DOMContentLoaded', () => {
             button4.style.backgroundColor = '#b70000';
             button4.style.color = 'white';
             button4.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+        }
+    });
+
+    //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.4>
+    //! Оброблювач події для Кнопки-41
+    button41.addEventListener('click', () => {
+        if (button41.textContent === 'Off') {
+            button41.textContent = 'On';
+            button41.style.backgroundColor = 'green';
+            button41.style.color = 'yellow';
+            button41.style.boxShadow = '3px 3px 4px #969696';
+            loadAndExecuteScript('./js/04-fe4-js_03.js'); //!
+        } else {
+            button41.textContent = 'Off';
+            button41.style.backgroundColor = '#b70000';
+            button41.style.color = 'white';
+            button41.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
         }
     });
 

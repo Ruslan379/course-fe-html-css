@@ -17,14 +17,19 @@ const loadImage = (img) => {
     img.src = img.dataset.src;
 };
 
-const observer1 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            loadImage(entry.target);
-            observer1.unobserve(entry.target);
-        }
-    });
-});
+const observer1 = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                loadImage(entry.target);
+                observer1.unobserve(entry.target);
+            }
+        });
+    },
+    {
+        threshold: 0.9, //todo: викликається, коли 50% об'єкта видно
+    }
+);
 
 images.forEach(img => observer1.observe(img));
 console.log("-----------------------------------------------------------------");
