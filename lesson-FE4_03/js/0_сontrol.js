@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const button4 = document.querySelector('.button-4');
     //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.4>
     const button41 = document.querySelector('.button-41');
-    // const button5 = document.querySelector('.button-5');
+    const button5 = document.querySelector('.button-5');
+    //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.5>
+    const button51 = document.querySelector('.button-51');
     // const button6 = document.querySelector('.button-6');
     // const button7 = document.querySelector('.button-7');
     // const button8 = document.querySelector('.button-8');
@@ -142,20 +144,37 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //! Оброблювач події для Кнопки-5
-    // button5.addEventListener('click', () => {
-    //     if (button5.textContent === 'Off') {
-    //         button5.textContent = 'On';
-    //         button5.style.backgroundColor = 'green';
-    //         button5.style.color = 'yellow';
-    //         button5.style.boxShadow = '3px 3px 4px #969696';
-    //         loadAndExecuteScript('./js/05-fe4-js_03.js'); //!
-    //     } else {
-    //         button5.textContent = 'Off';
-    //         button5.style.backgroundColor = '#b70000';
-    //         button5.style.color = 'white';
-    //         button5.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
-    //     }
-    // });
+    button5.addEventListener('click', () => {
+        if (button5.textContent === 'Off') {
+            button5.textContent = 'On';
+            button5.style.backgroundColor = 'green';
+            button5.style.color = 'yellow';
+            button5.style.boxShadow = '3px 3px 4px #969696';
+            loadAndExecuteScript('./js/05-fe4-js_03.js'); //!
+        } else {
+            button5.textContent = 'Off';
+            button5.style.backgroundColor = '#b70000';
+            button5.style.color = 'white';
+            button5.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+        }
+    });
+
+    //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.4>
+    //! Оброблювач події для Кнопки-51
+    button51.addEventListener('click', () => {
+        if (button51.textContent === 'Off') {
+            button51.textContent = 'On';
+            button51.style.backgroundColor = 'green';
+            button51.style.color = 'yellow';
+            button51.style.boxShadow = '3px 3px 4px #969696';
+            loadAndExecuteScript('./js/05-fe4-js_03.js'); //!
+        } else {
+            button51.textContent = 'Off';
+            button51.style.backgroundColor = '#b70000';
+            button51.style.color = 'white';
+            button51.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+        }
+    });
 
     //! Оброблювач події для Кнопки-6
     // button6.addEventListener('click', () => {

@@ -1,10 +1,10 @@
 console.log(
-    '%c 4.Приклади використання Intersection Observer ',
+    '%c 4.Використання Intersection Observer.          \n   Приклад-1: Lazy-loading зображень та тексту. ',
     'color: white; background-color: #D33F49',
 );
 
-//! Приклад-1. Lazy-loading зображень 
-console.warn("Приклад-1. Lazy-loading зображень:");
+//! Приклад-1. Lazy-loading зображень та тексту 
+console.warn("Приклад-1. Lazy-loading зображень та тексту:");
 //? 📌 Як це працює:
 //?    🔸 Всі <img> мають атрибут data-src, який містить шлях до зображення.
 //?    🔸 Зображення спочатку не завантажуються, оскільки src не встановлено або є зображення-заглушка.
@@ -60,21 +60,4 @@ const observer11 = new IntersectionObserver(
 );
 
 texts.forEach(text => observer11.observe(text));
-console.log("-----------------------------------------------------------------");
-
-
-
-//! Приклад-2.Анімація елементів при появі 
-console.warn("Приклад-2.Анімація елементів при появі :");
-const sections = document.querySelectorAll(".animate");
-
-const observer2 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-        }
-    });
-}, { threshold: 0.2 });
-
-sections.forEach(section => observer2.observe(section));
 console.log("-----------------------------------------------------------------");

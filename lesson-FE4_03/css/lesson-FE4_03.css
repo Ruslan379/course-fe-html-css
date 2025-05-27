@@ -140,20 +140,25 @@ button.accent {
     outline: 1px solid red;
 }
 
-/*? 3.Додаткова кнопка button-41 */
-.button-41 {
+/*? 3.Додаткові кнопки button-41 та button-51 */
+.button-41,
+.button-51 {
     margin-bottom: 10px;
+}
+
+.button-5 {
+    margin-top: 100px;
 }
 
 /*? 4.Приклад-2.Анімація елементів при появі */
 section {
-    height: 50vh;
+    height: 100vh;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     font-size: 2rem;
-    /* opacity: 0; */
-    transform: translateY(150px);
+    opacity: 0;
+    transform: translateY(100px);
     transition: all 0.6s ease-out;
     outline: 1px solid red;
 }
