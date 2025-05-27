@@ -23,6 +23,7 @@ const observer1 = new IntersectionObserver(
             if (entry.isIntersecting) {
                 loadImage(entry.target);
                 observer1.unobserve(entry.target);
+                console.log(`Елемент ${entry.target.alt} видно!`);
             }
         });
     },
