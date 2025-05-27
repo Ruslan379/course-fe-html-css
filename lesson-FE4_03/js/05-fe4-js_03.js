@@ -7,13 +7,20 @@ console.log(
 console.warn("Приклад-2. Анімація елементів при появі:");
 const sections = document.querySelectorAll(".animate");
 
-const observer2 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
+const observer2 = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                console.log(`Секція ${entry.target.textContent} з'явилась!`);
+            }
         }
-    });
-}, { threshold: 0.2 });
+        );
+    },
+    {
+        threshold: 0.2, //todo: викликається, коли 20% об'єкта видно
+    }
+);
 
 sections.forEach(section => observer2.observe(section));
-console.log("-----------------------------------------------------------------");
+console.log("---------------------------------------------");
