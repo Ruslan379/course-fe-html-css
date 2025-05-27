@@ -10,6 +10,7 @@ console.warn("Приклад-1. Lazy-loading зображень:");
 //?    🔸 Зображення спочатку не завантажуються, оскільки src не встановлено або є зображення-заглушка.
 //?    🔸 Коли зображення вперше потрапляє в зону видимості, спрацьовує IntersectionObserver і скрипт підставляє src = data - src, завантажуючи картинку.
 //? ✳️ Такий підхід економить ресурси та покращує продуктивність сайту.
+//todo: Зображення
 // const images = document.querySelectorAll('img[data-src]');
 const images = document.querySelectorAll('.image-observer');
 
@@ -34,6 +35,33 @@ const observer1 = new IntersectionObserver(
 
 images.forEach(img => observer1.observe(img));
 console.log("-----------------------------------------------------------------");
+
+
+//todo: Текст
+const texts = document.querySelectorAll('.text-observer');
+
+const observer11 = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log("ТЕКСТ видно!");
+                entry.target.style.color = "red";
+                // entry.target.style.background = "lightgreen";
+            } else {
+                console.log("ТЕКСТ пішов із зони видимості...");
+                entry.target.style.color = "lightgrey";
+            }
+        }
+        );
+    },
+    {
+        threshold: 0.6, //todo: викликається, коли 60% об'єкта видно
+    }
+);
+
+texts.forEach(text => observer11.observe(text));
+console.log("-----------------------------------------------------------------");
+
 
 
 //! Приклад-2.Анімація елементів при появі 

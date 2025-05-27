@@ -145,7 +145,31 @@ button.accent {
     margin-bottom: 10px;
 }
 
+/*? 4.Приклад-2.Анімація елементів при появі */
+section {
+    height: 50vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 2rem;
+    /* opacity: 0; */
+    transform: translateY(150px);
+    transition: all 0.6s ease-out;
+    outline: 1px solid red;
+}
 
+section:nth-child(odd) {
+    background-color: #fdfbba;
+}
+
+section:nth-child(even) {
+    background-color: #c0e0ff;
+}
+
+section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 
