@@ -135,11 +135,12 @@ button.accent {
     align-items: center;
     font-size: 2em;
     color: red;
-    margin: 1000px 0; /*! для того, щоб був скрол */
+    margin: 50vh 0; /*! для того, щоб був скрол */
     background: lightblue;
     outline: 1px solid red;
 }
 
+/*! ПРИХОВАТИ для демонстрації відстеження "box-target" у вікні [scrollContainer] */
 #box-rootMargin {
     position: fixed;
     width: 100vw;
@@ -152,6 +153,13 @@ button.accent {
     background-color: #63636336;
 }
 
+/*! ВІДКРИТИ (і в JS) для демонстрації відстеження "box-target" у вікні [scrollContainer] */
+/* #scrollContainer {
+    outline: 1px solid green;
+    width: 50vw;
+    height: 50vh;
+    overflow-y: scroll;
+} */
 
 /*? 3.Додаткові кнопки button-41 та button-51 */
 .button-41,
@@ -166,9 +174,6 @@ button.accent {
 /*? 4.Приклад-2.Анімація елементів при появі */
 section {
     height: 100vh;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     font-size: 2rem;
     opacity: 0;
     transform: translateY(100px);
