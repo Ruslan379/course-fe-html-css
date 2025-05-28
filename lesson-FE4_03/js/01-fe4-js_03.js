@@ -14,6 +14,7 @@ if (button1.textContent === 'On') {
 };
 //todo: _________________________________________________
 
+
 //! Відкладене завантаження («above the fold» і «below the fold»)
 console.warn(`Відкладене завантаження («above the fold» і «below the fold»)​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_03/images/page-fold.png"}`);
 console.warn("Lazy Loading (ліниве завантаження). \n Пояснення та практичні приклади на JavaScript. Атрибут loading: \n https://www.youtube.com/watch?v=IdUbsiQUxa4");
