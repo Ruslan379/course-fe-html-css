@@ -18,6 +18,8 @@ if (button3.textContent === 'On') {
 //! Відкладене завантаження (з концепцією Intersection Observer)
 console.warn(`Відкладене завантаження (з концепцією Intersection Observer)​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_03/images/observer-concept.gif"}`);
 console.warn("Документація Intersection Observer: \n https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver");
+console.warn("Прості рішення для складних завдань \n із Intersection Observer API: \n https://www.youtube.com/watch?v=ZYqBZmU-tA0");
+console.warn("Синтаксис Intersection Observer:");
 //? ✴️ Intersection Observer API
 //? – це сучасна веб-технологія JavaScript,
 //? яка дозволяє асинхронно відстежувати
