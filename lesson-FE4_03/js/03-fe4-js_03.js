@@ -5,6 +5,7 @@ console.log(
 
 //! Відкладене завантаження (з концепцією Intersection Observer)
 console.warn(`Відкладене завантаження (з концепцією Intersection Observer)​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_03/images/observer-concept.gif"}`);
+console.warn("Документація Intersection Observer: \n https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver");
 //? ✴️ Intersection Observer API
 //? – це сучасна веб-технологія JavaScript,
 //? яка дозволяє асинхронно відстежувати

@@ -1,5 +1,5 @@
 console.log(
-    '%c 1.Відкладене завантаження ',
+    '%c 1.Відкладене завантаження.                   \n  Відкладене завантаження (з loading="lazy"). ',
     'color: white; background-color: #D33F49',
 );
 
@@ -16,6 +16,9 @@ if (button1.textContent === 'On') {
 
 //! Відкладене завантаження («above the fold» і «below the fold»)
 console.warn(`Відкладене завантаження («above the fold» і «below the fold»)​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_03/images/page-fold.png"}`);
+console.warn("Lazy Loading (ліниве завантаження). \n Пояснення та практичні приклади на JavaScript. Атрибут loading: \n https://www.youtube.com/watch?v=IdUbsiQUxa4");
+console.warn('Підтримка браузерами атрибуту loading="lazy": \n https://caniuse.com/?search=loading%3D%22lazy%22');
+
 //? ✴️ Веб-сторінки містять велику кількість зображень,
 //? які збільшують розмір сторінок і впливають на швидкість їх завантаження.
 //? Більшість зображень знаходяться за межами першого екрану
@@ -38,8 +41,8 @@ console.warn(`Відкладене завантаження («above the fold» 
 //? у верхній частині сторінки.
 
 
-//! Відкладене завантаження (lazy-loading)
-console.warn("Відкладене завантаження (lazy-loading):");
+//! Відкладене завантаження (з loading="lazy")
+console.warn('Відкладене завантаження (з loading="lazy"):');
 //? ✴️ Відкладене завантаження (lazy-loading)
 //? - це прийом, який відкладає завантаження
 //? некритичних ресурсів під час завантаження сторінки.
