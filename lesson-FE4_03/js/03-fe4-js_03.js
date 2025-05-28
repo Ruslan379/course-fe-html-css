@@ -3,6 +3,17 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
+//todo: Додаткова логіка для <Урок-FE4-JS-02 -> Розділ.1>
+const button3 = document.querySelector('.button-3');
+const boxRootMargin = document.getElementById('box-rootMargin');
+// console.log("button1:", button1); //!
+// console.log("boxRootMargin:", boxRootMargin); //!
+
+if (button3.textContent === 'On') {
+    boxRootMargin.style.display = 'block';
+};
+//todo: _________________________________________________
+
 //! Відкладене завантаження (з концепцією Intersection Observer)
 console.warn(`Відкладене завантаження (з концепцією Intersection Observer)​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_03/images/observer-concept.gif"}`);
 console.warn("Документація Intersection Observer: \n https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver/IntersectionObserver");
@@ -28,7 +39,7 @@ console.log(
     IntersectionObserver(callback, options):
     🔸 callback - функція, що викликається при кожному вході/виході елемента в зону видимості.
     🔸 options може містити:
-        🔸 root: елемент-контейнер, щодо якого вести спостереження (за умовчанням viewport);
+        🔸 root: елемент-контейнер, щодо якого вести спостереження (за умовчанням viewport, root: null);
         🔸 threshold: частка видимості елемента (0 - навіть 1px, 1.0 - повністю);
         🔸 rootMargin: відступи навколо root.
     `,
@@ -55,7 +66,9 @@ const observer = new IntersectionObserver(
         );
     },
     {
+        root: null, 
         threshold: 0.5, //todo: викликається, коли 50% об'єкта видно
+        rootMargin: '0px 0px -50% 0px'  //todo: знизу зменшили зону на 50% висоти в'юпорту
     }
 );
 

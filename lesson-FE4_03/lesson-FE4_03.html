@@ -260,21 +260,21 @@
     <!--! 3.Відкладене завантаження (з концепцією Intersection Observer) -->
     <div class="part part_3">
         <h2 class="title-section">
-            <h2 class="title-section">
-                3.Відкладене завантаження
-                <br>
-                (з <a href="./images/observer-concept.gif">концепцією Intersection Observer</a>).
-            </h2>
+            3.Відкладене завантаження
+            <br>
+            (з <a href="./images/observer-concept.gif">концепцією Intersection Observer</a>).
         </h2>
+        <button class="button-3" style="margin-bottom: 10px;">Off</button>
         <div class="box">
+            <div id="box-rootMargin"></div> <!-- todo: Для зменшення знизу зони на 50% висоти в'юпорту -->
             <div 
-                class="box-observer" 
+                class="box-target" 
                 id="target"
             >
                 Стежимо за мною!
             </div>
         </div>
-        <button class="button-3">Off</button>
+        <!-- <button class="button-3">Off</button> -->
     </div>
 
     <!--! 4.Приклади використання Intersection Observer -->

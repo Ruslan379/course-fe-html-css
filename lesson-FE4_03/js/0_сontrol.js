@@ -44,6 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     //todo: _________________________________________________
 
+    //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.3>
+    const boxRootMargin = document.getElementById('box-rootMargin');
+    // console.log("boxRootMargin:", boxRootMargin); //!
+
+    if (button3.textContent === 'Off') {
+        boxRootMargin.style.display = 'none';
+    };
+    //todo: _________________________________________________
+
     //! Функція для завантаження та виконання скрипту
     const loadAndExecuteScript = (scriptSrc) => {
         const existingScript = document.querySelector(`script[data-src="${scriptSrc}"]`);
@@ -107,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
             button3.style.backgroundColor = '#b70000';
             button3.style.color = 'white';
             button3.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+            //todo: Додаткова логіка для <Урок-FE4-JS-03 -> Розділ.3
+            boxRootMargin.style.display = 'none';
         }
     });
 
