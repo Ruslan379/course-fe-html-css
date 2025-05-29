@@ -161,7 +161,7 @@ button.accent {
     overflow-y: scroll;
 } */
 
-/*? 3.Додаткові кнопки button-41 та button-51 */
+/*? 4.Додаткові кнопки button-41 та button-51 */
 .button-41,
 .button-51 {
     margin-bottom: 10px;
@@ -171,7 +171,12 @@ button.accent {
     margin-top: 100px;
 }
 
-/*? 4.Приклад-2.Анімація елементів при появі */
+.text-observer {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+/*? 5.Приклад-2.Анімація елементів при появі */
 section {
     height: 100vh;
     font-size: 2rem;

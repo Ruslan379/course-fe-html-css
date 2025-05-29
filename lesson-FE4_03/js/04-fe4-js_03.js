@@ -47,7 +47,7 @@ const observerTxt = new IntersectionObserver(
             if (entry.isIntersecting) {
                 console.log("ТЕКСТ видно!");
                 entry.target.style.color = "red";
-                // entry.target.style.background = "lightgreen";
+                entry.target.style.background = "lightgreen";
             } else {
                 console.log("ТЕКСТ пішов із зони видимості...");
                 entry.target.style.color = "lightgrey";
