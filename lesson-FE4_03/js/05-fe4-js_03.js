@@ -7,14 +7,16 @@ console.log(
 console.warn("Приклад-2. Анімація елементів при появі:");
 const sections = document.querySelectorAll(".animate");
 
-const observer2 = new IntersectionObserver(
+const observer = new IntersectionObserver(
     entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("in-view");
-                console.log(`Секція ${entry.target.textContent} з'явилась!`);
+        entries.forEach(
+            entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("in-view");
+                    observer.unobserve(entry.target); //todo: Видаляє елемент зі списку відслідковуваних елементів
+                    console.log(`Секція ${entry.target.textContent} з'явилась!`);
+                }
             }
-        }
         );
     },
     {
@@ -22,5 +24,5 @@ const observer2 = new IntersectionObserver(
     }
 );
 
-sections.forEach(section => observer2.observe(section));
+sections.forEach(section => observer.observe(section));
 console.log("---------------------------------------------");

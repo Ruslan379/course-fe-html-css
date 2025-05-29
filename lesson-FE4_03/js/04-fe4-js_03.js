@@ -19,12 +19,12 @@ const loadImage = (img) => {
     img.src = img.dataset.src;
 };
 
-const observer1 = new IntersectionObserver(
+const observerImg = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 loadImage(entry.target);
-                observer1.unobserve(entry.target); //todo: Видаляє елемент зі списку відслідковуваних елементів
+                observerImg.unobserve(entry.target); //todo: Видаляє елемент зі списку відслідковуваних елементів
                 console.log(`Елемент ${entry.target.alt} видно!`);
             }
         });
@@ -34,14 +34,14 @@ const observer1 = new IntersectionObserver(
     }
 );
 
-images.forEach(img => observer1.observe(img));
+images.forEach(img => observerImg.observe(img));
 console.log("-----------------------------------------------------------------");
 
 
 //todo: Відстежування текстів
 const texts = document.querySelectorAll('.text-observer');
 
-const observer11 = new IntersectionObserver(
+const observerTxt = new IntersectionObserver(
     (entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -60,5 +60,5 @@ const observer11 = new IntersectionObserver(
     }
 );
 
-texts.forEach(text => observer11.observe(text));
+texts.forEach(text => observerTxt.observe(text));
 console.log("-----------------------------------------------------------------");
