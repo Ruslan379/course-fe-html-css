@@ -28,7 +28,7 @@ image.setAttribute("alt", "Amazing nature");
 console.log('image.getAttribute("alt"):', image.getAttribute("alt")); //! Amazing nature
 
 image.setAttribute("width", "320");
-console.log('image.getAttribute("width"):', image.getAttribute("width")); //! 350
+console.log('image.getAttribute("width"):', image.getAttribute("width")); //! 320
 
 //todo: Видаляємо атрибут:
 image.removeAttribute("height");
