@@ -17,6 +17,8 @@ console.warn("Встановлення Node.js: \n https://nodejs.org/en/downloa
 //? Node.js також має велику кількість розширень (модулів),
 //? які дозволяють легко додавати різноманітні функції до ваших додатків.
 
+
+
 console.warn("Перевірка версії Node.js:");
 console.log(
     `%c
@@ -58,6 +60,36 @@ console.log(
     mv — переіменовує/переміщує файл або папку
     rm — видаляє файл або папку
     mkdir — створює нову папку
+    `,
+    'color: blue; font-size: 18px',
+);
+
+//! JavaScript поза браузером - REPL (read-eval-print loop)
+//? ✳️ Node.js дозволяє виконувати JavaScript-код поза браузером.
+//? Відкрийте будь-який термінал і виконайте команду node,
+//? запуститься REPL (read-eval-print loop)
+//? - інтерактивне середовище виконання JS-коду:
+console.warn("JavaScript поза браузером - REPL (read-eval-print loop):");
+console.log(
+    `%c
+    $ node
+    Welcome to Node.js v20.17.0.
+    Type ".help" for more information.
+    >
+    (To exit, press Ctrl+C again or Ctrl+D or type .exit)
+    >const message = "Hello world!"
+    `,
+    'color: blue; font-size: 18px',
+);
+
+console.log(
+    `%c
+    > const message = "Hello world!"
+    undefined
+    > console.log(message)
+    Hello world!
+    undefined
+    >
     `,
     'color: blue; font-size: 18px',
 );
