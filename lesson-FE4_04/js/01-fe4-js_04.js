@@ -3,7 +3,7 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
-//! Node.js
+//! Встановлення Node.js
 console.warn("Встановлення Node.js: \n https://nodejs.org/en/download/");
 //? ✴️ Node.js — це відкрите середовище виконання JavaScript,
 //? яке дозволяє виконувати JavaScript на стороні сервера.
@@ -18,7 +18,7 @@ console.warn("Встановлення Node.js: \n https://nodejs.org/en/downloa
 //? які дозволяють легко додавати різноманітні функції до ваших додатків.
 
 
-
+//! Перевірка версії Node.js
 console.warn("Перевірка версії Node.js:");
 console.log(
     `%c
@@ -26,17 +26,23 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
-console.log("----------------------------------");
+console.log("--------------------------------------------------------------------------------------");
 
-console.warn("Створення нового файла (test.js):");
+
+
+//! Створення нового файла test.js
+console.warn("Створення нового файла test.js:");
 console.log(
     `%c
     touch test.js
     `,
     'color: blue; font-size: 18px',
 );
-console.log("----------------------------------");
+console.log("--------------------------------------------------------------------------------------");
 
+
+
+//! Запуск файлу test.js
 console.warn("Запуск файлу test.js:");
 console.log(
     `%c
@@ -44,8 +50,11 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
-console.log("----------------------------------");
+console.log("--------------------------------------------------------------------------------------");
 
+
+
+//! Основні команди
 console.warn("Основні команди:");
 console.log(
     `%c
@@ -63,13 +72,15 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
+console.log("--------------------------------------------------------------------------------------");
+
 
 //! JavaScript поза браузером - REPL (read-eval-print loop)
+console.warn("JavaScript поза браузером - REPL (read-eval-print loop):");
 //? ✳️ Node.js дозволяє виконувати JavaScript-код поза браузером.
 //? Відкрийте будь-який термінал і виконайте команду node,
 //? запуститься REPL (read-eval-print loop)
 //? - інтерактивне середовище виконання JS-коду:
-console.warn("JavaScript поза браузером - REPL (read-eval-print loop):");
 console.log(
     `%c
     $ node
@@ -81,7 +92,11 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
+console.log("--------------------------------------------------------------------------------------");
 
+
+//! Приклад використання REPL (read-eval-print loop)
+console.warn("Приклад використання REPL (read-eval-print loop):");
 console.log(
     `%c
     > const message = "Hello world!"
