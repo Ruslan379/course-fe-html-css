@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const button3 = document.querySelector('.button-3');
     const button4 = document.querySelector('.button-4');
     const button5 = document.querySelector('.button-5');
-    const button6 = document.querySelector('.button-6');
+    // const button6 = document.querySelector('.button-6');
     // const button7 = document.querySelector('.button-7');
     // const button8 = document.querySelector('.button-8');
 
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button1.style.backgroundColor = 'green';
             button1.style.color = 'yellow';
             button1.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/01-fe4-js_04.js'); //!
+            loadAndExecuteScript('./js/01-fe4-js_05.js'); //!
         } else {
             button1.textContent = 'Off';
             button1.style.backgroundColor = '#b70000';
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button2.style.backgroundColor = 'green';
             button2.style.color = 'yellow';
             button2.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/02-fe4-js_04.js'); //!
+            loadAndExecuteScript('./js/02-fe4-js_05.js'); //!
         } else {
             button2.textContent = 'Off';
             button2.style.backgroundColor = '#b70000';
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button3.style.backgroundColor = 'green';
             button3.style.color = 'yellow';
             button3.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/03-fe4-js_04.js'); //!
+            loadAndExecuteScript('./js/03-fe4-js_05.js'); //!
         } else {
             button3.textContent = 'Off';
             button3.style.backgroundColor = '#b70000';
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button4.style.backgroundColor = 'green';
             button4.style.color = 'yellow';
             button4.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/04-fe4-js_04.js'); //!
+            loadAndExecuteScript('./js/04-fe4-js_05.js'); //!
         } else {
             button4.textContent = 'Off';
             button4.style.backgroundColor = '#b70000';
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
             button5.style.backgroundColor = 'green';
             button5.style.color = 'yellow';
             button5.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/05-fe4-js_04.js'); //!
+            loadAndExecuteScript('./js/05-fe4-js_05.js'); //!
         } else {
             button5.textContent = 'Off';
             button5.style.backgroundColor = '#b70000';
@@ -128,20 +128,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //! Оброблювач події для Кнопки-6
-    button6.addEventListener('click', () => {
-        if (button6.textContent === 'Off') {
-            button6.textContent = 'On';
-            button6.style.backgroundColor = 'green';
-            button6.style.color = 'yellow';
-            button6.style.boxShadow = '3px 3px 4px #969696';
-            loadAndExecuteScript('./js/06-fe4-js_04.js'); //!
-        } else {
-            button6.textContent = 'Off';
-            button6.style.backgroundColor = '#b70000';
-            button6.style.color = 'white';
-            button6.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
-        }
-    });
+    // button6.addEventListener('click', () => {
+    //     if (button6.textContent === 'Off') {
+    //         button6.textContent = 'On';
+    //         button6.style.backgroundColor = 'green';
+    //         button6.style.color = 'yellow';
+    //         button6.style.boxShadow = '3px 3px 4px #969696';
+    //         loadAndExecuteScript('./js/06-fe4-js_05.js'); //!
+    //     } else {
+    //         button6.textContent = 'Off';
+    //         button6.style.backgroundColor = '#b70000';
+    //         button6.style.color = 'white';
+    //         button6.style.boxShadow = 'inset 0 0 21px 3px #474747, 6px 6px 8px #636363';
+    //     }
+    // });
 
     //! Оброблювач події для Кнопки-7
     // button7.addEventListener('click', () => {
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //         button7.style.backgroundColor = 'green';
     //         button7.style.color = 'yellow';
     //         button7.style.boxShadow = '3px 3px 4px #969696';
-    //         loadAndExecuteScript('./js/07-fe4-js_04.js'); //!
+    //         loadAndExecuteScript('./js/07-fe4-js_05.js'); //!
     //     } else {
     //         button7.textContent = 'Off';
     //         button7.style.backgroundColor = '#b70000';
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //         button8.style.backgroundColor = 'green';
     //         button8.style.color = 'yellow';
     //         button8.style.boxShadow = '3px 3px 4px #969696';
-    //         loadAndExecuteScript('./js/08-fe4-js_04.js'); //!
+    //         loadAndExecuteScript('./js/08-fe4-js_05.js'); //!
     //     } else {
     //         button8.textContent = 'Off';
     //         button8.style.backgroundColor = '#b80000';
