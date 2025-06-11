@@ -9,21 +9,31 @@ console.warn("Бібліотека PNotify на GitHub: \n https://sciactive.git
 
 
 //! Встановлення бібліотеки PNotify
-console.warn("Встановлення бібліотеки nanoid:")
+console.warn("Встановлення бібліотеки PNotify:")
 console.log(
     `%c
     npm i pnotify
+    або
+    npm install --save-dev @pnotify/core
     `,
     'color: blue; font-size: 18px',
 );
-console.log("-------------------------------------------------------------------");
+console.log("------------------------------------------------------------------------------------------------------------------");
 
 
 //! Використання бібліотеки PNotify
-console.warn("Використання бібліотеки nanoid:")
+console.warn("Використання бібліотеки PNotify:")
 console.log(
     `%c
-    
+    import { alert, defaultModules } from '@pnotify/core/dist/PNotify.js';
+    import * as PNotifyMobile from '@pnotify/mobile/dist/PNotifyMobile.js';
+
+    defaultModules.set(PNotifyMobile, {});
+
+    alert({
+        text: 'Моя перша нотифікація!'
+    });
     `,
     'color: blue; font-size: 18px',
 );
+console.log("------------------------------------------------------------------------------------------------------------------");
