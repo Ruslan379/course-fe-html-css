@@ -13,8 +13,6 @@ console.warn("Встановлення бібліотеки Chart.js:")
 console.log(
     `%c
     npm i chart.js
-    або
-    npm install --save-dev @pnotify/core
     `,
     'color: blue; font-size: 18px',
 );
@@ -25,14 +23,45 @@ console.log("-------------------------------------------------------------------
 console.warn("Використання бібліотеки Chart.js: \n https://www.chartjs.org/docs/latest/getting-started/usage.html");
 console.log(
     `%c
-    import { alert, defaultModules } from '@pnotify/core/dist/PNotify.js';
-    import * as PNotifyMobile from '@pnotify/mobile/dist/PNotifyMobile.js';
+        HTML:
+    <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("------------------------------------------------------------------------------------------------------------------");
 
-    defaultModules.set(PNotifyMobile, {});
+console.log(
+    `%c
+            JS (src/main.js):
+    import Chart from 'chart.js/auto'
 
-    alert({
-        text: 'Моя перша нотифікація!'
-    });
+    (async function () {
+        const data = [
+            { year: 2010, count: 10 },
+            { year: 2011, count: 20 },
+            { year: 2012, count: 15 },
+            { year: 2013, count: 25 },
+            { year: 2014, count: 22 },
+            { year: 2015, count: 30 },
+            { year: 2016, count: 28 },
+        ];
+
+        new Chart(
+        document.getElementById('acquisitions'),
+        {
+            type: 'bar',
+            data: {
+            labels: data.map(row => row.year),
+            datasets: [
+                {
+                    label: 'Acquisitions by year',
+                    data: data.map(row => row.count)
+                }
+            ]
+            }
+        }
+        );
+    })();
     `,
     'color: blue; font-size: 18px',
 );
