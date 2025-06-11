@@ -4,26 +4,36 @@ console.log(
 );
 
 //! Бібліотека Chart.js
-console.warn("Бібліотека Chart.js:");
-console.warn(`Зображення​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_04/images/image-1.png"}`);
-console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
-
-//? ✴️
-//? ✳️ 
-
-//?     📌 ---:
-//? 🔸 ООО.
-//? 🔸 ООО.
-//? 🔸 ООО.
+console.warn("Бібліотека Chart.js: \n https://www.chartjs.org");
+console.warn("Бібліотека Chart.js на NPM: \n https://www.npmjs.com/package/chart.js");
 
 
+//! Встановлення бібліотеки Chart.js
+console.warn("Встановлення бібліотеки Chart.js:")
 console.log(
     `%c
-    <
-        ......
-    />
+    npm i chart.js
+    або
+    npm install --save-dev @pnotify/core
     `,
     'color: blue; font-size: 18px',
 );
+console.log("------------------------------------------------------------------------------------------------------------------");
 
-console.log("-------------------------------------------------------------------");
+
+//! Використання бібліотеки Chart.js
+console.warn("Використання бібліотеки Chart.js: \n https://www.chartjs.org/docs/latest/getting-started/usage.html");
+console.log(
+    `%c
+    import { alert, defaultModules } from '@pnotify/core/dist/PNotify.js';
+    import * as PNotifyMobile from '@pnotify/mobile/dist/PNotifyMobile.js';
+
+    defaultModules.set(PNotifyMobile, {});
+
+    alert({
+        text: 'Моя перша нотифікація!'
+    });
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("------------------------------------------------------------------------------------------------------------------");
