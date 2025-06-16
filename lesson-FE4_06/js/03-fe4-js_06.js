@@ -73,3 +73,60 @@ console.log(
 );
 console.log("---------------------------------------------------------------------------------------------");
 
+
+//! Імпорт всього як об'єкта (Namespace import)
+console.warn("Імпорт всього як об'єкта (Namespace import):");
+console.log(
+    `%c
+        //? Файл myModule.js
+    const sqrt = Math.sqrt;
+    export const square = x => x * x;
+    export const diag = (x, y) => sqrt(square(x) + square(y));
+        //? або
+    const sqrt = Math.sqrt;
+    const square = x => x * x;
+    const diag = (x, y) => sqrt(square(x) + square(y));
+    export { square, diag };
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("---------------------------------------------------------------------------------------------");
+
+console.log(
+    `%c
+        //? Файл index.js
+    import * as myModule from './myModule.js';
+    console.log(myModule.square(11)); //! 121
+    console.log(myModule.diag(4, 3)); //! 5
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("---------------------------------------------------------------------------------------------");
+
+
+//! Експорт за замовчуванням (Default export)
+console.warn("Експорт за замовчуванням (Default export):");
+console.log(
+    `%c
+        //? myFunc.js
+    export default function myFunc () { ... };
+
+        //? myClass.js
+    export default class MyClass { ... };
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("---------------------------------------------------------------------------------------------");
+
+console.log(
+    `%c
+        //? Файл index.js
+    import myFunc from './myFunc.js';
+    import MyClass from './myClass.js';
+
+    myFunc();
+    const inst = new MyClass();
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("---------------------------------------------------------------------------------------------");
