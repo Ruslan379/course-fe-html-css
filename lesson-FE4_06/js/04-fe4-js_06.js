@@ -32,12 +32,24 @@ console.warn("Деплой проекту з Vite на GitHub (Варіант �
 //? ✳️ Повна інструкція по встановленню та налаштуванню тут:
 //? https://drive.google.com/drive/folders/1pQ3TWNivbFBWMtkjjIR3xHscc6Y3GGNu?usp=sharing
 
+//? ✳️ Посилання на репозиторій проекту hw-js-vite на GitHub:
+//? https://github.com/Ruslan379/hw-js-vite
+
+//? ✳️ Посилання на ЖИВУ сторінку проекту hw-js-vite:
+//? https://ruslan379.github.io/hw-js-vite/
+
 console.log(
     `%c
     1.Використовуємо проект hw-js-vite створений за допомогою бандлера Vite.
     
     2.Повна інструкція по встановленню та налаштуванню тут:
     https://drive.google.com/drive/folders/1pQ3TWNivbFBWMtkjjIR3xHscc6Y3GGNu?usp=sharing
+
+    3.Посилання на репозиторій проекту hw-js-vite на GitHub:
+    https://github.com/Ruslan379/hw-js-vite
+
+    4.Посилання на ЖИВУ сторінку проекту hw-js-vite:
+    https://ruslan379.github.io/hw-js-vite/
     `,
     'color: blue; font-size: 18px',
 );
