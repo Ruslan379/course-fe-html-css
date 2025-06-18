@@ -21,4 +21,46 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
-console.log("---------------------------------------------------------------------------------------------");
+console.log("--------------------------------------------------------------------------------------------------------------------------------------");
+
+
+
+//! Деплой проекту з Vite на GitHub (Варіант №1):
+console.warn("Деплой проекту з Vite на GitHub (Варіант №1):")
+//? ✳️ Використовуємо проект hw-js-vite створений за допомогою бандлера Vite.
+
+//? ✳️ Повна інструкція по встановленню та налаштуванню тут:
+//? https://drive.google.com/drive/folders/1pQ3TWNivbFBWMtkjjIR3xHscc6Y3GGNu?usp=sharing
+
+console.log(
+    `%c
+    1.Використовуємо проект hw-js-vite створений за допомогою бандлера Vite.
+    
+    2.Повна інструкція по встановленню та налаштуванню тут:
+    https://drive.google.com/drive/folders/1pQ3TWNivbFBWMtkjjIR3xHscc6Y3GGNu?usp=sharing
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("--------------------------------------------------------------------------------------------------------------------------------------");
+
+
+
+//! Деплой проекту з Vite на GitHub (Варіант №2):
+console.warn("Деплой проекту з Vite на GitHub (Варіант №2):")
+//? ✳️ Використовуємо готовий шаблон за адресою:
+//? https://github.com/Tate-T/Vite_vanilla-app-template
+
+//? ✳️ Повна інструкція по встановленню та налаштуванню тут:
+//? https://drive.google.com/drive/folders/1E8EZJywn2gsug2MsccqwGXdIQu2H81rY?usp=sharing
+
+console.log(
+    `%c
+    1.Використовуємо готовий шаблон за адресою:
+    https://github.com/Tate-T/Vite_vanilla-app-template
+
+    2.Повна інструкція по встановленню та налаштуванню тут:
+    https://drive.google.com/drive/folders/1E8EZJywn2gsug2MsccqwGXdIQu2H81rY?usp=sharing
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("--------------------------------------------------------------------------------------------------------------------------------------");
