@@ -14,7 +14,7 @@ console.warn("Експорт та імпорт в ECMAScript Modules (ESM):");
 //? такими як Webpack, Parcel, Rollup, Vite та іншими.
 console.log(
     `%c
-    EECMAScript Modules (ESM) використовуються
+    ECMAScript Modules (ESM) використовуються
     в поєднанні з інструментами збірки модулів,
     такими як Webpack, Parcel, Rollup, Vite та іншими.
     `,
