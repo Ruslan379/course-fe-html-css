@@ -36,10 +36,8 @@ console.warn("Приклад експорту та імпорту в CommonJS Mo
 console.log(
     `%c
         //? Файл greeter.js
-    const helloMessage = 'Hello';
-    const goodbyeMessage = 'Goodbye';
-    const hello = () => helloMessage + " world!";
-    const goodbye = () => goodbyeMessage + " my friend!";
+    const hello = (message) => message + " world!";
+    const goodbye = (message) => message + " my friend!";
 
     module.exports = {
         hello,
@@ -54,8 +52,11 @@ console.log(
     `%c
         //? Файл index.js
     const greeter = require('./greeter.js');
-    console.log(greeter.hello()); //! "Hello world!"
-    console.log(greeter.goodbye()); //! "Goodbye my friend!"
+    
+    const helloMessage = 'Hello';
+    const goodbyeMessage = 'Goodbye';
+    console.log(greeter.hello(helloMessage)); //! "Hello world!"
+    console.log(greeter.goodbye(goodbyeMessage)); //! "Goodbye my friend!"
     `,
     'color: blue; font-size: 18px',
 );
