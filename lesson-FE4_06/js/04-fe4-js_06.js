@@ -10,13 +10,13 @@ console.warn("Vite - звидка збірка JavaScript проектів. По
 console.warn("Vite – збиральник нового покоління: \n https://www.youtube.com/playlist?list=PL-FhWbGlJPfZg649Ukk5vPa4nUjHhQ6o3");
 
 
-//! Встановлення Vite та ініціалізація проекту:
-console.warn("Встановлення Vite та ініціалізація проекту::")
+//! Створення та ініціалізація проекту за допомогою бандлера Vite:
+console.warn("Створення та ініціалізація проекту за допомогою бандлера Vite:")
 console.log(
     `%c
-    npm init vite@latest vite-project -- --template vanilla
+    npm init vite@latest hw-js-vite -- --template vanilla
 
-    cd vite-project
+    cd hw-js-vite
     npm install
     `,
     'color: blue; font-size: 18px',
