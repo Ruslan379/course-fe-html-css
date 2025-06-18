@@ -1,5 +1,5 @@
 console.log(
-    '%c 4.Бандлер (збиральник) JS модулів Vite ',
+    '%c 4.Бандлер (збиральник) JS модулів Vite. \n   Деплой проекту з Vite на GitHub.      ',
     'color: white; background-color: #D33F49',
 );
 
