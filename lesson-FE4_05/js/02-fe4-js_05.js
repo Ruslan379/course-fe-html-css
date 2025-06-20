@@ -30,3 +30,8 @@ console.log(
     'color: blue; font-size: 18px',
 );
 console.log("----------------------------------------------------------------------------------");
+
+
+//! Приклад підключення та вікористання біліотек в проєкті з Vite
+console.warn("Приклад підключення та вікористання біліотек в проєкті з Vite: \n  https://github.com/Ruslan379/vite-course-fe4-libraries \n  https://ruslan379.github.io/vite-course-fe4-libraries/");
+console.log("----------------------------------------------------------------------------------");
