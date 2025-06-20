@@ -5,7 +5,7 @@ console.log(
 
 //! Бандлер (збиральник) JS модулів Vite
 console.warn("Бандлер (збиральник) JS модулів Vite:");
-console.warn("Документація Vite : \n https://vite-docs-ru.vercel.app/guide");
+console.warn("Документація Vite : \n https://vite-docs-ru.vercel.app/guide/");
 console.warn("Vite - звидка збірка JavaScript проектів. Повний курс: \n https://www.youtube.com/watch?v=evmIHSAn1AU");
 console.warn("Vite – збиральник нового покоління: \n https://www.youtube.com/playlist?list=PL-FhWbGlJPfZg649Ukk5vPa4nUjHhQ6o3");
 
