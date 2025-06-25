@@ -19,7 +19,7 @@ console.log("-------------------------------------------------------------------
 
 
 //! Використання бібліотеки BasicLightbox
-console.warn("Використання бібліотеки Chart.js: \n https://www.npmjs.com/package/basiclightbox#instance-api");
+console.warn("Використання бібліотеки BasicLightbox: \n https://www.npmjs.com/package/basiclightbox#instance-api");
 console.log(
     `%c
         HTML:
