@@ -211,9 +211,11 @@ body {
 /* ✅ */
 .part_5 .icon3:hover {
     fill: #b2ff85;
+    fill-opacity: 0.7;
     stroke: crimson;
+    stroke-opacity: 0.5;
     /* stroke-width: 2; */
-    background-color: rgb(252, 156, 255);
+    background-color: #9ccfff;
 }
 
 
