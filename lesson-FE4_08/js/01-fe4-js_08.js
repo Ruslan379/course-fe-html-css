@@ -28,7 +28,7 @@ console.warn("Формат JSON:");
 
 console.log(
     `%c
-        файл user.json:
+        Імпорт файла user.json:
 
     {
         "name": "Josh",
@@ -46,11 +46,43 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
+console.log("---------------------------------------------------------------------------------------------------------------");
 
-//? ✳️ файл user.json:
+
+//! Імпорт файла user.json (var.1):
+console.warn("Імпорт файла user.json (var.1):");
+//todo: var.1 - Так працює тільки в проєкті з бандлером Vite:
 // import userJSON from "../json/user.json"
 // console.log("userJSON:", userJSON);
+console.log(
+    `%c
+    import userJSON from "../json/user.json"
+    `,
+    'color: blue; font-size: 18px',
+);
+console.warn('var.1 - Так працює тільки в проєкті з бандлером Vite: \n https://ruslan379.github.io/hw-js-vite/page/lesson-07.html');
+console.log("---------------------------------------------------------------------------------------------------------------");
 
+
+//! Імпорт файла user.json (var.2) - працює тільки при запуску через Live Server (в VS Code):
+async function fetchJSON() {
+    const userJSON = await fetch('./json/user.json');
+    console.warn("Імпорт файла user.json (var.2) - працює тільки при запуску через Live Server (в VS Code):");
+    // console.log("userJSON:", userJSON);
+
+    const userJSONtext = await userJSON.text();
+    console.log("userJSONtext:", userJSONtext);
+
+    const userJSONobj = JSON.parse(userJSONtext)
+
+    console.log('Об\'єкт із JSON-файлу <user.json>:', userJSONobj);
+
+    console.log("---------------------------------------------------------------------------------------------------------------");
+};
+fetchJSON();
+
+
+//! Імпорт файла user.json (var.3) - працює тільки при запуску через Live Server (в VS Code):
 fetch('./json/user.json')
     .then(response => {
         if (!response.ok) {
@@ -59,13 +91,19 @@ fetch('./json/user.json')
         return response.json();
     })
     .then(data => {
+        console.warn("Імпорт файла user.json (var.3) - працює тільки при запуску через Live Server (в VS Code):");
         console.log('Об\'єкт із JSON:', data);
         console.log('Ім\'я користувача.\:', data.name);
+        console.log("---------------------------------------------------------------------------------------------------------------");
+
     })
     .catch(error => {
         console.error('Помилка:', error);
     });
+console.log("---------------------------------------------------------------------------------------------------------------");
 
-
-
-console.log("-------------------------------------------------------------------");
+//? ✳️ Javascript і JSON чудово працюють разом,
+//? завдяки методам вбудованого класу JSON,
+//? які перетворюють JavaScript об'єкт у JSON і навпаки.
+//? Незалежно від того, що у вас є,
+//? можна легко отримати зворотне.
