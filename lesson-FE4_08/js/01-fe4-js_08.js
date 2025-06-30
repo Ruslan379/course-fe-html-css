@@ -1,5 +1,5 @@
 console.log(
-    '%c 1.Формат JSON. ',
+    '%c 1.Формат JSON ',
     'color: white; background-color: #D33F49',
 );
 

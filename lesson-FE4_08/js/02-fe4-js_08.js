@@ -1,5 +1,5 @@
 console.log(
-    '%c 2.Метод JSON.stringify(). ',
+    '%c 2.Метод JSON.stringify() ',
     'color: white; background-color: #D33F49',
 );
 
@@ -24,7 +24,9 @@ const dog1 = {
     isHappy: true,
 };
 
-const dogJSON1 = JSON.stringify(dog1);
+console.log("dog1:", dog1);
+
+export const dogJSON1 = JSON.stringify(dog1);
 console.log("dogJSON1:", dogJSON1);  //! "{"name":"Mango","age":3,"isHappy":true}"
 console.log("--------------------------------------------------");
 

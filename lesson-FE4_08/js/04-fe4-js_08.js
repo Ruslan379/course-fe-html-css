@@ -1,5 +1,5 @@
 console.log(
-    '%c 4.Обробка помилок. ',
+    '%c 4.Обробка помилок ',
     'color: white; background-color: #D33F49',
 );
 
