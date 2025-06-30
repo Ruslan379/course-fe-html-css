@@ -4,26 +4,23 @@ console.log(
 );
 
 //! Метод JSON.parse()
-console.warn("Метод JSON.parse():");
-console.warn(`Зображення​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_04/images/image-1.png"}`);
-console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
-
-//? ✴️
-//? ✳️ 
-
-//?     📌 ---:
-//? 🔸 ООО.
-//? 🔸 ООО.
-//? 🔸 ООО.
-
-
 console.log(
     `%c
-    <
-        ......
-    />
+    JSON.parse(json)
     `,
     'color: blue; font-size: 18px',
 );
+console.log("--------------------------------------------------");
 
-console.log("-------------------------------------------------------------------");
+//? ✴️ Щоб отримати з JSON валідне JavaScript значення,
+//? його необхідно розпарсити (parse).
+//? Це операція зворотна перетворенню в рядок (stringify).
+//? Тепер, коли dog - це валідний об'єкт,
+//? з ним можна працювати звичайним чином.
+const dogJSON = '{"name":"Mango","age":3,"isHappy":true}';
+
+const dog = JSON.parse(dogJSON);
+console.log("dog:", dog); //! {name: "Mango", age: 3, isHappy: true}
+console.log("dog.name:", dog.name); //! "Mango"
+console.log("--------------------------------------------------");
+
