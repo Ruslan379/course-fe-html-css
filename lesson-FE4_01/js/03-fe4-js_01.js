@@ -10,35 +10,36 @@ console.warn("Припинення спливання​:");
 //? Але будь-який проміжний обробник може вирішити, 
 //? що подія повністю оброблена і зупинити спливання, 
 //? викликавши метод stopPropagation().
-const parent = document.querySelector("#parent-2");
-const child = document.querySelector("#child-2");
-const descendant = document.querySelector("#descendant-2");
+const parent2 = document.querySelector("#parent-2");
+const child2 = document.querySelector("#child-2");
+const descendant2 = document.querySelector("#descendant-2");
 
-parent.addEventListener("click", () => {
+parent2.addEventListener("click", () => {
     alert(
         "PARENT-2 click. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
     );
     console.log("PARENT-2 click");
 });
 
-child.addEventListener("click", (event) => {
+child2.addEventListener("click", (event) => {
     //! зупиняє обробку ВСІХ подій,
     //! тобто зупиняє і спливання, і виклик інших оброблювачів на поточному елементі
     event.stopImmediatePropagation();
+    // event.stopPropagation(); //! перешкоджає просуванню події далі
     alert(
         "CHILD-2 click-1. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
     );
     console.log("CHILD-2 click-1");
 });
 
-child.addEventListener("click", (event) => {
+child2.addEventListener("click", (event) => {
     alert(
         "CHILD-2 click-2. \n Це сповіщення не з'явиться при натисканні на Descendant-2, подія не дійде сюди!"
     );
     console.log("CHILD-2 click-2");
 });
 
-descendant.addEventListener("click", (event) => {
+descendant2.addEventListener("click", (event) => {
     event.stopPropagation(); //! перешкоджає просуванню події далі
     alert("DESCENDANT-2 click");
     console.log("DESCENDANT-2 click");

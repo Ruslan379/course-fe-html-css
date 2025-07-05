@@ -23,11 +23,11 @@ console.warn(`Спливання подій​: \n ${((window.location.href).spl
 //? і так далі вгору по ланцюжку предків до window.
 //? Тому, якщо в прикладі клікнути на #descendant,
 //? то послідовно виведуться alert для descendant → child → parent.
-const parent = document.querySelector("#parent-1");
-const child = document.querySelector("#child-1");
-const descendant = document.querySelector("#descendant-1");
+const parent1 = document.querySelector("#parent-1");
+const child1 = document.querySelector("#child-1");
+const descendant1 = document.querySelector("#descendant-1");
 
-parent.addEventListener("click", (event) => {
+parent1.addEventListener("click", (event) => {
     alert("PARENT-1 click");
     console.log("PARENT-1 click");
     //! Властивості event.target​ та event.currentTarget
@@ -36,12 +36,12 @@ parent.addEventListener("click", (event) => {
     // console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 });
 
-child.addEventListener("click", () => {
+child1.addEventListener("click", () => {
     alert("CHILD-1 click");
     console.log("CHILD-1 click");
 });
 
-descendant.addEventListener("click", () => {
+descendant1.addEventListener("click", () => {
     alert("DESCENDANT-1 click");
     console.log("DESCENDANT-1 click");
 });
