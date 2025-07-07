@@ -4,26 +4,19 @@ console.log(
 );
 
 //! Зберігання даних
-console.warn("Зберігання даних:");
-console.warn(`Зображення​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_04/images/image-1.png"}`);
-console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
-
-//? ✴️
-//? ✳️ 
-
-//?     📌 ---:
-//? 🔸 ООО.
-//? 🔸 ООО.
-//? 🔸 ООО.
-
-
+console.warn(`Зберігання даних​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_09/images/setItem-local-storage.jpg"}`);
+//? ✴️ Для зберігання даних використовється метод setItem(key, value),
+//? задяки якому можна додати новий запис у вигляді пари ключ:значення.
 console.log(
     `%c
-    <
-        ......
-    />
+    localStorage.setItem("ui-theme", "light");
+    localStorage.setItem("sidebar", "expanded");
+    localStorage.setItem("notification-level", "mute");
     `,
     'color: blue; font-size: 18px',
 );
 
-console.log("-------------------------------------------------------------------");
+localStorage.setItem("ui-theme", "light");
+localStorage.setItem("sidebar", "expanded");
+localStorage.setItem("notification-level", "mute");
+console.log("-----------------------------------------------------------------------------------");
