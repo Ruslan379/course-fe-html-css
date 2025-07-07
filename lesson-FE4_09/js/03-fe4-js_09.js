@@ -1,5 +1,5 @@
 console.log(
-    '%c 3.Читання даних. ',
+    '%c 3.Читання даних ',
     'color: white; background-color: #D33F49',
 );
 

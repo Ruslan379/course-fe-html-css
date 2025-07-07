@@ -1,5 +1,5 @@
 console.log(
-    '%c 4.Видалення даних. ',
+    '%c 4.Видалення даних ',
     'color: white; background-color: #D33F49',
 );
 
@@ -22,4 +22,4 @@ console.log('localStorage.getItem("new-ui-theme"):', localStorage.getItem("new-u
 
 localStorage.removeItem("new-ui-theme");
 console.log('localStorage.getItem("new-ui-theme"):', localStorage.getItem("new-ui-theme")); //! null
-console.log("-------------------------------------------------------------------");
+console.log("------------------------------------------------------------------------------------------------");

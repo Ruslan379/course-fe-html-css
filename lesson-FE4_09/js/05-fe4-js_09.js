@@ -1,29 +1,40 @@
 console.log(
-    '%c 5.Очищення сховища. ',
+    '%c 5.Очищення сховища ',
     'color: white; background-color: #D33F49',
 );
 
 //! Очищення сховища
-console.warn("Очищення сховища:");
-console.warn(`Зображення​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_04/images/image-1.png"}`);
-console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
-
-//? ✴️
-//? ✳️ 
-
-//?     📌 ---:
-//? 🔸 ООО.
-//? 🔸 ООО.
-//? 🔸 ООО.
-
-
+//? ✴️ Операція повного очищення сховища - небезпечна,
+//? оскільки може порушити записи, зроблені
+//? іншими розробниками проекту.
+//? Проте, якщо ви хочете повністю очистити сховище,
+//? потрібно викликати метод clear().
 console.log(
     `%c
-    <
-        ......
-    />
+    localStorage.setItem("ui-theme", "light");
+    localStorage.setItem("sidebar", "expanded");
+    localStorage.setItem("notification-level", "mute");
+    console.log(localStorage.getItem("ui-theme")); //! "light"
+    console.log(localStorage.getItem("sidebar")); //! "expanded"
+    console.log(localStorage.getItem("notification-level")); //! "mute"
+    
+    localStorage.clear();
+    console.log(localStorage.getItem("ui-theme")); //! null
+    console.log(localStorage.getItem("sidebar")); //! null
+    console.log(localStorage.getItem("notification-level")); //! null
     `,
     'color: blue; font-size: 18px',
 );
 
+localStorage.setItem("ui-theme", "light");
+localStorage.setItem("sidebar", "expanded");
+localStorage.setItem("notification-level", "mute");
+console.log(localStorage.getItem("ui-theme")); //! "light"
+console.log(localStorage.getItem("sidebar")); //! "expanded"
+console.log(localStorage.getItem("notification-level")); //! "mute"
+
+localStorage.clear();
+console.log(localStorage.getItem("ui-theme")); //! null
+console.log(localStorage.getItem("sidebar")); //! null
+console.log(localStorage.getItem("notification-level")); //! null
 console.log("-------------------------------------------------------------------");

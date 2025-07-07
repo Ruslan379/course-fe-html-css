@@ -1,5 +1,5 @@
 console.log(
-    '%c 2.Зберігання даних. ',
+    '%c 2.Зберігання даних ',
     'color: white; background-color: #D33F49',
 );
 
