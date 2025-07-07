@@ -4,26 +4,22 @@ console.log(
 );
 
 //! Видалення даних
-console.warn("Видалення даних:");
-console.warn(`Зображення​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_04/images/image-1.png"}`);
-console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
-
-//? ✴️
-//? ✳️ 
-
-//?     📌 ---:
-//? 🔸 ООО.
-//? 🔸 ООО.
-//? 🔸 ООО.
-
+//? ✴️ Метод removeItem(key) видаляє зі сховища вже існуючий запис з ключем key.
 
 console.log(
     `%c
-    <
-        ......
-    />
+    localStorage.setItem("new-ui-theme", "dark");
+    console.log(localStorage.getItem("new-ui-theme")); // "dark"
+
+    localStorage.removeItem("new-ui-theme");
+    console.log(localStorage.getItem("new-ui-theme")); // null
     `,
     'color: blue; font-size: 18px',
 );
 
+localStorage.setItem("new-ui-theme", "dark");
+console.log('localStorage.getItem("new-ui-theme"):', localStorage.getItem("new-ui-theme")); //! "dark"
+
+localStorage.removeItem("new-ui-theme");
+console.log('localStorage.getItem("new-ui-theme"):', localStorage.getItem("new-ui-theme")); //! null
 console.log("-------------------------------------------------------------------");

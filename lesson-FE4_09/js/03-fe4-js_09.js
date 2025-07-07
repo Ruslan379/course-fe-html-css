@@ -45,3 +45,8 @@ const savedSettings = localStorage.getItem("settings");
 const parsedSettings = JSON.parse(savedSettings);
 console.log("parsedSettings:", parsedSettings); //! settings2 object
 console.log("--------------------------------------------------------------------------------");
+
+//? ❗️❗️❗️ Не забувайте використовувати конструкцію try...catch
+//? з методом JSON.parse(), щоб уникнути «падіння» скрипту,
+//? якщо раптом прочитали невалідний JSON.
+
