@@ -39,13 +39,13 @@ console.log(
     'color: blue; font-size: 18px',
 );
 
-const settings = {
-    theme: "dark",
-    isAuthenticated: true,
-    options: [1, 2, 3],
-};
+// const settings = {
+//     theme: "dark",
+//     isAuthenticated: true,
+//     options: [1, 2, 3],
+// };
 
-console.log("JSON.stringify(settings):", JSON.stringify(settings));
+// console.log("JSON.stringify(settings):", JSON.stringify(settings));
 
-localStorage.setItem("settings", JSON.stringify(settings));
+// localStorage.setItem("settings", JSON.stringify(settings));
 console.log("-----------------------------------------------------------------------------------------------");
