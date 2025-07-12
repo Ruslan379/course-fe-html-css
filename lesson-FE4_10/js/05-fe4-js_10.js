@@ -1,10 +1,10 @@
 console.log(
-    '%c 5.Module-1. ',
+    '%c 5.Таймер: setInterval(). ',
     'color: white; background-color: #D33F49',
 );
 
-//! Module-1
-console.warn("Module-1:");
+//! Таймер: setInterval()
+console.warn("Таймер: setInterval():");
 
 //? ✴️
 //? ✳️ 
