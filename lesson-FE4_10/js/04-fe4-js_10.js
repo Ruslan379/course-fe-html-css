@@ -36,10 +36,14 @@ const button = document.querySelector(".btn-set-interval");
 
 const onClick = () => {
     const timerId = setTimeout(() => {
-        console.log("Клік в кнопку <Click setInterval>");
-    }, 2000);
+        console.log("Реакція на клік в кнопку <Click setInterval> через 5 секунд");
+    }, 5000);
 
     console.log("timerId:", timerId);
+
+    //! Що спрацює раніше: console.warn() або setTimeout(() => {console.log()}, 5000);
+    // alert("⏳ Підтвердіть продовження віконання коду!"); //!
+    // console.warn("✅ Підтвердено продовження віконання коду!"); //!
 };
 
 button.addEventListener("click", onClick);
