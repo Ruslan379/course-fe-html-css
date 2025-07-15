@@ -187,6 +187,7 @@ body {
     /** transition-property */
     /* transition-property: all; */
     /* transition-property: background-color; */
+    /* transition-property: transform; */
     /* transition-property: background-color, transform; */
     /** transition-duration */
     /* transition-duration: 0ms; */
