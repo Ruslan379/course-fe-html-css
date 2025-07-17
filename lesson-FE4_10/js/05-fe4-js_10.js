@@ -28,17 +28,26 @@ console.warn("Приклад-1: setInterval():");
 const startBtn = document.querySelector(".js-start");
 const stopBtn = document.querySelector(".js-stop");
 let timerId = null;
+let counter = "";
 
 startBtn.addEventListener("click", () => {
     timerId = setInterval(() => {
-        console.log(`Генерація випадкового числа: ${Math.random()}; (id: ${timerId})`);
-        // clearTimeout(timerId); //! ✅❌ Видалення таймера
+        // counter++; //! лічильник часу
+        console.log(`${counter} Генерація випадкового числа: ${Math.random()}, id: ${timerId}`);
+        // clearTimeout(timerId); //! ✅❌ Видалення/зупинення таймера
+
+        //! ✅❌ Видалення/зупинення таймера за умовою
+        const stopCounter = 10;
+        if (counter === stopCounter) {
+            clearTimeout(timerId);
+            console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${stopCounter}-ій секунді!`);
+        };
     }, 1000);
 });
 
-
+//! ✅❌ Видалення/зупинення таймера кнопкою
 stopBtn.addEventListener("click", () => {
     clearInterval(timerId);
-    console.log(`Інтервал з ідентифікатором ${timerId} зупинено!`);
+    console.warn(`Інтервал з ідентифікатором ${timerId} зупинено!`);
 });
 console.log("----------------------------------------------------------------------------------------------------");
