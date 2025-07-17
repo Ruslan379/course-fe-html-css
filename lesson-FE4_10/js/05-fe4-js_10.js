@@ -32,6 +32,7 @@ let timerId = null;
 startBtn.addEventListener("click", () => {
     timerId = setInterval(() => {
         console.log(`Генерація випадкового числа: ${Math.random()}; (id: ${timerId})`);
+        // clearTimeout(timerId); //! ✅❌ Видалення таймера
     }, 1000);
 });
 

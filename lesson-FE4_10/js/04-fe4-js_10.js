@@ -59,9 +59,11 @@ console.warn("Приклад-2: setTimeout():");
 //? Тому в консоль нічого не виведеться.
 const greet = () => {
     console.log("Hello!");
+    clearTimeout(timerId); //! ✅ Видалення таймера
 };
 
 const timerId = setTimeout(greet, 2000);
 
-clearTimeout(timerId);
+//! ❌ Видалення таймера
+// clearTimeout(timerId);
 console.log("-------------------------------------------------------------------------------------------------");
