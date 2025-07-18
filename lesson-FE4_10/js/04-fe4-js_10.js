@@ -1,5 +1,5 @@
 console.log(
-    '%c 4.Таймер: setTimeout(). ',
+    '%c 4.Таймер: setTimeout() ',
     'color: white; background-color: #D33F49',
 );
 

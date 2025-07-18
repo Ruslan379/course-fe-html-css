@@ -1,5 +1,5 @@
 console.log(
-    '%c 5.Таймер: setInterval(). ',
+    '%c 5.Таймер: setInterval() ',
     'color: white; background-color: #D33F49',
 );
 

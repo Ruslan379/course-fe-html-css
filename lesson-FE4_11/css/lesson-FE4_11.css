@@ -1,8 +1,8 @@
 :root {
     /** ============ CSS-змінні ============ */
     --color-font-body: #220c0c;
-    --color-background-body: #f1ffe8;
-    --color-title-lesson: #4c8600;
+    --color-background-body: #c3f9ffb9;
+    --color-title-lesson: #fff369;
     --color-title-section: red;
     --color-title-subsection: blue;
 }
@@ -27,7 +27,9 @@ body {
 .title-lesson {
     text-align: center;
     color: var(--color-title-lesson);
-    text-shadow: 4px 2px 6px #43300088;
+    text-shadow:
+        1px 1px 2px #1a130088,
+        4px 2px 6px #43300088;
     /* ! for position: fixed */
     margin-bottom: 20px;
 }

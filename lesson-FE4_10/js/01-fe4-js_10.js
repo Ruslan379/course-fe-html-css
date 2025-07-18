@@ -1,5 +1,5 @@
 console.log(
-    '%c 1.Що таке асинхронність?. ',
+    '%c 1.Що таке асинхронність? ',
     'color: white; background-color: #D33F49',
 );
 

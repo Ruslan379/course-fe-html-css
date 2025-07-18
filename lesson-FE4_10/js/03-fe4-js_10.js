@@ -1,5 +1,5 @@
 console.log(
-    '%c 3.Багатопотоковість. ',
+    '%c 3.Багатопотоковість ',
     'color: white; background-color: #D33F49',
 );
 

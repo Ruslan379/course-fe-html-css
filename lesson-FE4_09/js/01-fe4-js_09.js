@@ -78,3 +78,7 @@ console.log(
     'color: blue; font-size: 18px',
 );
 console.log("-------------------------------------------------------------------------------------------------");
+
+
+//! Інтерфейс localStorage
+console.warn(`Інтерфейс localStorage​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_09/images/interface-local-storage.jpg"}`);
