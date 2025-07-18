@@ -16,11 +16,11 @@ console.log(
     'color: blue; font-size: 18px',
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
-let seconds = 10;
-let timerId = setTimeout(
-    function () {
-        console.log("Time's up!");
-    }, seconds * 1000);
+// let seconds = 10;
+// let timerId = setTimeout(
+//     function () {
+//         console.log("Time's up!");
+//     }, seconds * 1000);
 console.log("----------------------------------------------------------------------------------------------------");
 
 
@@ -121,4 +121,77 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 // };
 
 // console.log("timerId:", timerId);
+console.log("----------------------------------------------------------------------------------------------------");
+
+
+//! КРОК-4.Додамо умову припинення таймеру
+console.warn("КРОК-4.Додамо умову припинення таймеру:")
+console.log(
+    `%c
+    const timeBeforeStart = 1000; //! час між відліками
+
+    const iterations = 10; //! кількість ітерацій
+
+    const stopCounter = 5; //! кількість ітерацій до припинення таймеру
+
+    for (let index = 0; index < iterations; index++) {
+        timerId = setTimeout(
+            function workingFunction() {
+                console.log(
+                (iterations - index),
+                "Спрацювала функція workingFunction()",
+                "id:",
+                timerId
+                );
+                
+                //! Умова припинення таймеру:
+                if (index + 1 === stopCounter) {
+                    console.error(
+                    "Інтервал з ідентифікатором",
+                    timerId,
+                    "зупинено на",
+                    index + 1,
+                    "-ій ітерації!"
+                    );
+                };
+
+            }, index * timeBeforeStart);
+
+        //! Умова припинення таймеру:
+        if (index === stopCounter) {
+            clearTimeout(timerId);
+            break;
+        };
+    };
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+let timerId;
+
+const timeBeforeStart = 1000; //! час між відліками
+const iterations = 10; //! кількість ітерацій
+const stopCounter = 5; //! кількість ітерацій до припинення таймеру
+for (let index = 0; index < iterations; index++) {
+    timerId = setTimeout(
+        function workingFunction() {
+            console.log((iterations - index), "Спрацювала функція workingFunction()", "id:", timerId);
+            // clearTimeout(timerId); //! ✅❌ Видалення таймера - таймер видаляється після кожної ітерації
+            //! Умова припинення таймеру:
+            if (index + 1 === stopCounter) {
+                console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${index + 1}-ій ітерації!`);
+                // console.error("Інтервал з ідентифікатором", timerId, "зупинено на", index + 1,"-ій ітерації!");
+            };
+        }, index * timeBeforeStart);
+    
+    // clearTimeout(timerId); //! ❌✅ Видалення таймера - таймер не спрацюэ зовсім
+
+    //! Умова припинення таймеру:
+    if (index === stopCounter) {
+        clearTimeout(timerId);
+        break;
+    };
+};
+
+console.log("timerId:", timerId);
 console.log("----------------------------------------------------------------------------------------------------");
