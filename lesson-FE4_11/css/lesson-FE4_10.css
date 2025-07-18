@@ -1,0 +1,161 @@
+:root {
+    /** ============ CSS-змінні ============ */
+    --color-font-body: #220c0c;
+    --color-background-body: #f1ffe8;
+    --color-title-lesson: #4c8600;
+    --color-title-section: red;
+    --color-title-subsection: blue;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 1.2rem;
+    /* padding: 20px 20px 150px; */
+    padding: 20px 0px 150px;
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 20px; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+    color: var(--color-font-body);
+    background-color: var(--color-background-body);
+}
+
+.title-lesson {
+    text-align: center;
+    color: var(--color-title-lesson);
+    text-shadow: 4px 2px 6px #43300088;
+    /* ! for position: fixed */
+    margin-bottom: 20px;
+}
+
+.title-section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--color-title-section);
+    text-shadow: 4px 2px 6px #a17301bd;
+}
+
+.title-subsection {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: var(--color-title-subsection);
+    text-shadow: 4px 2px 6px #0114a1bd;
+}
+
+.information-hint {
+    font-family: Helvetica;
+    font-style: italic;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: darkred;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 20px;
+    /* min-height: 100vh; */
+    /* width: 100vw; */
+    /* outline: 1px solid red; */
+}
+
+/* *======================================= */
+/*? Загальні властивості кнопок */
+button {
+    padding: 5px 10px;
+    font-family: monospace;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: gray;
+    color: white;
+    /* color: yellow; */ /* On */
+    background-color: red; /* #b70000 */
+    /* background-color: green; */ /* On */
+    box-shadow: 6px 6px 8px #636363;
+    /* box-shadow: 3px 3px 4px #969696; */ /* On */
+}
+/*! --------------------------------------------- */
+
+
+h3 {
+    font-size: 1em;
+}
+
+.list,
+.menu,
+.menu2,
+.image,
+.button-box,
+.box {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #dfffdf;
+}
+
+.box {
+    text-align: center;
+}
+
+.box button {
+    color: #ad00e2;
+    background-color: #fffac4;
+}
+
+button.accent {
+    color: green;
+}
+
+
+
+
+/* ! */
+/* .part_1 {
+    display: none;
+} */
+/*! 1.Підключення скриптів */
+
+
+/* .part_2 {
+    display: none;
+} */
+/*! 2.Підключення декількох скриптів */
+
+
+/* .part_3 {
+    display: none;
+} */
+/*! 3.Виведення даних в консоль розробника. */
+/*! Оголошення змінних */
+
+
+/* .part_4 {
+    display: none;
+} */
+/*! 4.Tипи даних. Спеціальні значення. Оператор typeof */
+
+
+/* .part_5 {
+    display: none;
+} */
+/*! 5.Взаємодія з користувачем. Отримання даних */
+
+
+
+
+
+/*? ______________________________________________________ */
+/* ! */
+.part_0 {
+    display: none;
+}
+/*! 0.Заголовок */
