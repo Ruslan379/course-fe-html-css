@@ -30,6 +30,7 @@ const stopBtn = document.querySelector(".js-stop");
 let timerId = null;
 let counter = "";
 
+//! ✅ Старт таймера кнопкою
 startBtn.addEventListener("click", () => {
     timerId = setInterval(() => {
         // counter++; //! лічильник часу
