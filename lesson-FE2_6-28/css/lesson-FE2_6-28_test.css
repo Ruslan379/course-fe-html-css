@@ -1054,14 +1054,14 @@ body {
 .part_14 .box.rotate-x {
     transform: rotateX(60deg);
     /**  Анимация-2  */
-    /* animation: rotateX-14 1500ms infinite alternate ease-in-out 1000ms; */
+    animation: rotateX-14 1500ms infinite alternate ease-in-out 1000ms;
     background-color: orange;
 }
 
 .part_14 .box.rotate-y {
     transform: rotateY(60deg);
     /**  Анимация-2  */
-    /* animation: rotateY-14 1500ms infinite alternate ease-in-out 1000ms; */
+    animation: rotateY-14 1500ms infinite alternate ease-in-out 1000ms;
     background-color: teal;
 }
 
@@ -1129,14 +1129,14 @@ body {
 .part_15 .box.rotate-x {
     transform: perspective(400px) rotateX(45deg);
     /**  Анимация-2  */
-    /* animation: rotateX-15 1500ms infinite alternate ease-in-out 1000ms; */
+    animation: rotateX-15 1500ms infinite alternate ease-in-out 1000ms;
     background-color: red;
 }
 
 .part_15 .box.rotate-y {
     transform: perspective(400px) rotateY(45deg);
     /**  Анимация-2  */
-    /* animation: rotateY-15 1500ms infinite alternate ease-in-out 1000ms; */
+    animation: rotateY-15 1500ms infinite alternate ease-in-out 1000ms;
     background-color: blue;
 }
 
@@ -1196,7 +1196,7 @@ body {
     /*?  Анимация-1  */
     transition: transform 1s ease-in-out;
     /**  Анимация-2  */
-    /* animation: rotateY-16 3000ms infinite alternate backwards ease-in-out 1000ms; */
+    animation: rotateY-16 3000ms infinite alternate backwards ease-in-out 1000ms;
 }
 
 .part_16 .box:nth-child(1) {
