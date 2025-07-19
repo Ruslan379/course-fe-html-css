@@ -16,7 +16,7 @@ console.log(
 
 console.log(
     `%c
-    const timerId = setInterval(callback, delay, arg1, arg2, ...);
+    const intervalId = setInterval(callback, delay, arg1, arg2, ...);
     `,
     'color: blue; font-size: 18px',
 );
@@ -25,30 +25,30 @@ console.log("-------------------------------------------------------------------
 
 //! Приклад-1: setInterval()
 console.warn("Приклад-1: setInterval():");
-const startBtn = document.querySelector(".js-start");
-const stopBtn = document.querySelector(".js-stop");
-let timerId = null;
-let counter = "";
+const startBtn = document.querySelector(".btn-start");
+const stopBtn = document.querySelector(".btn-stop");
+let intervalId = null;
 
 //! ✅ Старт таймера кнопкою
 startBtn.addEventListener("click", () => {
-    timerId = setInterval(() => {
-        // counter++; //! лічильник часу
-        console.log(`${counter} Генерація випадкового числа: ${Math.random()}, id: ${timerId}`);
-        // clearTimeout(timerId); //! ✅❌ Видалення/зупинення таймера
+    let counter = "";
+    intervalId = setInterval(() => {
+        counter++; //! лічильник часу
+        console.log(`${counter} Генерація випадкового числа: ${Math.random()}, id: ${intervalId}`);
+        // clearTimeout(intervalId); //! ✅❌ Видалення/зупинення таймера
 
         //! ✅❌ Видалення/зупинення таймера за умовою
         const stopCounter = 10;
         if (counter === stopCounter) {
-            clearTimeout(timerId);
-            console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${stopCounter}-ій секунді!`);
+            clearTimeout(intervalId);
+            console.error(`Інтервал з ідентифікатором ${intervalId} зупинено на ${stopCounter}-ій секунді!`);
         };
     }, 1000);
 });
 
 //! ✅❌ Видалення/зупинення таймера кнопкою
 stopBtn.addEventListener("click", () => {
-    clearInterval(timerId);
-    console.warn(`Інтервал з ідентифікатором ${timerId} зупинено!`);
+    clearInterval(intervalId);
+    console.warn(`Інтервал з ідентифікатором ${intervalId} зупинено!`);
 });
 console.log("----------------------------------------------------------------------------------------------------");
