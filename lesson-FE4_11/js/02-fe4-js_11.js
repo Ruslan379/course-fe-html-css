@@ -215,7 +215,10 @@ const startBtn = document.getElementById("start-set-interval"); //! кнопка
 const stopBtn = document.getElementById("stop-set-interval"); //! кнопка <Stop setInterval>
 
 function createInterval() {
-    let count = 0; //! початковий стан лічильник часу
+    let count = 0; //! початковий стан лічильник часу для ПРЯМОГО відліку
+    // let count = 100; //? початковий стан лічильник часу для ЗВОРОТНОГО відліку
+    const countInitialReverse = count; //?  для ЗВОРОТНОГО відліку
+
     let stopCounter = parseInt(input.value);
     if (!stopCounter || stopCounter < 1 || stopCounter > 20) {
         infoInput.style.color = "red"
@@ -226,11 +229,13 @@ function createInterval() {
     console.log("Кількість ітерацій до зупинення (stopCounter):", stopCounter); //!
 
     intervalId = setInterval(() => {
-        count++;
+        count++; //! для ПРЯМОГО відліку
         console.log(`⏱️ ${count} - відлік часу в секундах, id: ${intervalId}`);
+        // count--; //?  для ЗВОРОТНОГО відліку
 
         //! Умова зупинення таймеру:
-        if (count >= stopCounter) {
+        if (count >= stopCounter) { //! для ПРЯМОГО відліку
+        // if (count <= countInitialReverse - stopCounter) { //?  для зворотного відліку
             clearInterval(intervalId);
             console.error(`🚫⏱️ Інтервал з ідентифікатором ${intervalId} зупинено на ${stopCounter}-ій ітерації!`);
         };
