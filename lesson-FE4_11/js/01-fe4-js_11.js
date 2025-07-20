@@ -32,25 +32,28 @@ console.log("-------------------------------------------------------------------
 console.warn("КРОК-1.1.Створюємо простий таймер відкладеного старту:")
 console.log(
     `%c
-    function workingFunction() {
-        console.log("Спрацювала функція workingFunction()");
+    const timeBeforeStart = 3000; //! час до старту
+
+    function timeСount() {
+        console.log(
+            "Спрацювала функція timeСount() через",
+            timeBeforeStart/1000,
+            "секунди"
+        );
     };
-
-    const timeBeforeStart = 1000; //! час до старту
-
-    const timerId = setTimeout(workingFunction, timeBeforeStart);
-
-    console.log("timerId:", timerId);
+    
+    const timerId = setTimeout(timeСount, timeBeforeStart);
     `,
     'color: blue; font-size: 18px',
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
-// function workingFunction() {
-//     console.log("Спрацювала функція workingFunction()");
+// const timeBeforeStart = 3000; //! час до старту
+
+// function timeСount() {
+//     console.log("Спрацювала функція timeСount() через", timeBeforeStart/1000, "секунди");
 // };
-// const timeBeforeStart = 1000; //! час до старту
-// const timerId = setTimeout(workingFunction, timeBeforeStart);
-// console.log("timerId:", timerId);
+
+// const timerId = setTimeout(timeСount, timeBeforeStart);
 console.log("----------------------------------------------------------------------------------------------------");
 
 
@@ -58,16 +61,16 @@ console.log("-------------------------------------------------------------------
 console.warn("КРОК-1.2.Зробимо таймер прямого відліку:")
 console.log(
     `%c
+    let timerId;
     const timeBeforeStart = 1000; //! час між відліками
-
     const iterations = 10; //! кількість ітерацій
 
     for (let index = 1; index <= iterations; index++) {
     timerId = setTimeout(
-        function workingFunction() {
+        function timeСount() {
             console.log(
                 index,
-                "Спрацювала функція workingFunction()"
+                "Спрацювала функція timeСount()"
             );
         }, index * timeBeforeStart);
     };
@@ -76,18 +79,15 @@ console.log(
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 // let timerId;
-
 // const timeBeforeStart = 1000; //! час між відліками
 // const iterations = 10; //! кількість ітерацій
+
 // for (let index = 1; index <= iterations; index++) {
 //     timerId = setTimeout(
-//         function workingFunction() {
-//             // console.log(`${index} Спрацювала функція workingFunction()`);
-//             console.log(index, "Спрацювала функція workingFunction()");
+//         function timeСount() {
+//             console.log(index, "Спрацювала функція timeСount()");
 //         }, index * timeBeforeStart);
 // };
-
-// console.log("timerId:", timerId);
 console.log("----------------------------------------------------------------------------------------------------");
 
 
@@ -95,16 +95,16 @@ console.log("-------------------------------------------------------------------
 console.warn("КРОК-1.3.Зробимо таймер зворотного відліку:")
 console.log(
     `%c
+    let timerId;
     const timeBeforeStart = 1000; //! час між відліками
-
     const iterations = 10; //! кількість ітерацій
 
     for (let index = 0; index < iterations; index++) {
         timerId = setTimeout(
-            function workingFunction() {
+            function timeСount() {
                 console.log(
                     (iterations - index),
-                    "Спрацювала функція workingFunction()"
+                    "Спрацювала функція timeСount()"
                 );
             }, index * timeBeforeStart);
     };
@@ -113,18 +113,15 @@ console.log(
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 // let timerId;
-
 // const timeBeforeStart = 1000; //! час між відліками
 // const iterations = 10; //! кількість ітерацій
+
 // for (let index = 0; index < iterations; index++) {
 //     timerId = setTimeout(
-//         function workingFunction() {
-//             // console.log(`${iterations - index} Спрацювала функція workingFunction()`);
-//             console.log((iterations - index), "Спрацювала функція workingFunction()");
+//         function timeСount() {
+//             console.log((iterations - index), "Спрацювала функція timeСount()");
 //         }, index * timeBeforeStart);
 // };
-
-// console.log("timerId:", timerId);
 console.log("----------------------------------------------------------------------------------------------------");
 
 
@@ -132,18 +129,17 @@ console.log("-------------------------------------------------------------------
 console.warn("КРОК-1.4.Додамо умову зупинення таймеру:")
 console.log(
     `%c
+    let timerId;
     const timeBeforeStart = 1000; //! час між відліками
-
     const iterations = 10; //! кількість ітерацій
-
     const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
 
     for (let index = 0; index < iterations; index++) {
         timerId = setTimeout(
-            function workingFunction() {
+            function timeСount() {
                 console.log(
                     (iterations - index),
-                    "Спрацювала функція workingFunction()",
+                    "Спрацювала функція timeСount()",
                     "id:",
                     timerId
                 );
@@ -172,19 +168,17 @@ console.log(
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 // let timerId;
-
 // const timeBeforeStart = 1000; //! час між відліками
 // const iterations = 10; //! кількість ітерацій
 // const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
 // for (let index = 0; index < iterations; index++) {
 //     timerId = setTimeout(
-//         function workingFunction() {
-//             console.log((iterations - index), "Спрацювала функція workingFunction()", "id:", timerId);
+//         function timeСount() {
+//             console.log((iterations - index), "Спрацювала функція timeСount()", "id:", timerId);
 //             // clearTimeout(timerId); //! ✅❌ Видалення таймера - таймер видаляється після кожної ітерації
 //             //! Умова зупинення таймеру:
 //             if (index + 1 === stopCounter) {
 //                 console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${index + 1}-ій ітерації!`);
-//                 // console.error("Інтервал з ідентифікатором", timerId, "зупинено на", index + 1,"-ій ітерації!");
 //             };
 //         }, index * timeBeforeStart);
     
@@ -196,8 +190,6 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 //         break;
 //     };
 // };
-
-// console.log("timerId:", timerId);
 console.log("----------------------------------------------------------------------------------------------------");
 
 
@@ -209,7 +201,6 @@ console.log(
     const stopBtn = document.getElementById("stop-set-timeout");
 
     let timerId;
-
     const timeBeforeStart = 1000; //! час між відліками
     const iterations = 10; //! кількість ітерацій
     const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
@@ -218,10 +209,10 @@ console.log(
     startBtn.addEventListener("click", () => {
         for (let index = 0; index < iterations; index++) {
             timerId = setTimeout(
-                function workingFunction() {
+                function timeСount() {
                     console.log(
                         (iterations - index),
-                        "Спрацювала функція workingFunction()",
+                        "Спрацювала функція timeСount()",
                         "id:",
                         timerId
                     );
@@ -250,7 +241,11 @@ console.log(
     //! ❌ Видалення/зупинення таймера кнопкою - НЕМОЖЛИВО❗️❗️❗️
     stopBtn.addEventListener("click", () => {
         clearTimeout(timerId);
-        console.warn("Інтервал з ідентифікатором", timerId, "зупинено!");
+        console.warn(
+            "Інтервал з ідентифікатором",
+            timerId,
+            "зупинено!"
+        );
     });
     `,
     'color: blue; font-size: 18px',
@@ -260,23 +255,20 @@ const startBtn = document.getElementById("start-set-timeout");
 const stopBtn = document.getElementById("stop-set-timeout");
 
 let timerId;
-
 const timeBeforeStart = 1000; //! час між відліками
 const iterations = 10; //! кількість ітерацій
 const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
-// let stopInterval = false; //! прапорець зупинення таймеру по кліку на кнопку
 
 //! ✅ Старт таймера кнопкою
 startBtn.addEventListener("click", () => {
     for (let index = 0; index < iterations; index++) {
         timerId = setTimeout(
-            function workingFunction() {
-                console.log((iterations - index), "Спрацювала функція workingFunction()", "id:", timerId);
+            function timeСount() {
+                console.log((iterations - index), "Спрацювала функція timeСount()", "id:", timerId);
 
                 //! Умова зупинення таймеру:
                 if (index + 1 === stopCounter) {
                     console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${index + 1}-ій ітерації!`);
-                    // console.error("Інтервал з ідентифікатором", timerId, "зупинено на", index + 1,"-ій ітерації!");
                 };
             }, index * timeBeforeStart);
 
@@ -294,6 +286,4 @@ stopBtn.addEventListener("click", () => {
     clearTimeout(timerId);
     console.warn(`Інтервал з ідентифікатором ${timerId} зупинено!`);
 });
-
-console.log("timerId:", timerId);
 console.log("----------------------------------------------------------------------------------------------------");
