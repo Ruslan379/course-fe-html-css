@@ -1,5 +1,5 @@
 console.log(
-    '%c 2.Створення дати. 7 аргументів. ',
+    '%c 2.Створення дати:                     \n   Клас Date - new Date(7 аргументів). ',
     'color: white; background-color: #D33F49',
 );
 
