@@ -1,10 +1,10 @@
 console.log(
-    '%c 4.Методи Date. Геттери. ',
+    '%c 4.Методи Date: Геттери. ',
     'color: white; background-color: #D33F49',
 );
 
-//! Методи Date. Геттери
-console.warn("Методи Date. Геттери:");
+//! Методи Date: Геттери
+console.warn("Методи Date: Геттери:");
 
 //? ✴️
 //? ✳️ 
