@@ -214,6 +214,11 @@ const input = document.getElementById("stop-counter");
 const startBtn = document.getElementById("start-set-interval"); //! кнопка <Start setInterval>
 const stopBtn = document.getElementById("stop-set-interval"); //! кнопка <Stop setInterval>
 
+//! Звук
+const alert = document.getElementById('alert');
+const beep = document.getElementById('beep');
+const final = document.getElementById('final');
+
 function createInterval() {
     let count = 0; //! початковий стан лічильник часу для ПРЯМОГО відліку
     // let count = 100; //? початковий стан лічильник часу для ЗВОРОТНОГО відліку
@@ -224,6 +229,7 @@ function createInterval() {
         infoInput.style.color = "red"
         infoInput.textContent = "Введіть число від 1 до 20!";
         console.error("Введіть число від 1 до 20!");
+        alert.play()
         return;
     };
     console.log("Кількість ітерацій до зупинення (stopCounter):", stopCounter); //!
@@ -232,6 +238,7 @@ function createInterval() {
         count++; //! для ПРЯМОГО відліку
         console.log(`⏱️ ${count} - відлік часу в секундах, id: ${intervalId}`);
         // count--; //?  для ЗВОРОТНОГО відліку
+        beep.play();
 
         //! Умова зупинення таймеру:
         if (count >= stopCounter) { //! для ПРЯМОГО відліку
@@ -249,5 +256,6 @@ startBtn.addEventListener("click", createInterval);
 stopBtn.addEventListener("click", () => {
     clearInterval(intervalId);
     console.warn(`⚠️⏱️Інтервал з ідентифікатором ${intervalId} зупинено повністю!`);
+    setTimeout(() => final.play(), 500);
 });
 console.log("----------------------------------------------------------------------------------------------------");
