@@ -39,3 +39,39 @@ console.log("date.toLocaleString():", date.toLocaleString()); //! "16.03.2030, 1
 
 console.log("date.getTime():", date.getTime()); //! 1899894300000
 console.log("-------------------------------------------------------------------------------------------");
+
+
+//! Новий стандарт форматування дати
+console.warn("Новий стандарт форматування дати:");
+//? ✴️ У всіх браузерах, крім IE10-, підтримується новий стандарт,
+//? який додає спеціальні методи для форматування дат.
+
+//? ✴️ Це робиться викликом date.toLocaleString (locale, opts),
+//? в якому можна задати багато налаштувань.
+//? Він дозволяє вказати, які параметри дати потрібно вивести,
+//? і ряд налаштувань виведення, після чого інтерпретатор сам сформує рядок.
+
+// const newStandardDateFormatting = new Date();
+const newStandardDateFormatting = new Date("March 16, 2030 14:25:00");
+console.log("date: ", date); //! Sat Mar 16 2030 14:25:00 GMT+0200 (Восточная Европа, стандартное время)
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . .");
+
+//? Формат виведення:
+const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+};
+
+//! Україна
+const localeUk = newStandardDateFormatting.toLocaleString('Uk-uk', options);
+console.log("localeUk_Україна:", localeUk); //! суботу, 16 бер. 2030 р., 14:25
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . .");
+
+//! USA
+const localeUs = newStandardDateFormatting.toLocaleString('en-US', options);
+console.log("localeUs_Україна:", localeUs); //! Saturday, Mar 16, 2030, 02:25 PM
+console.log("-------------------------------------------------------------------------------------------");
