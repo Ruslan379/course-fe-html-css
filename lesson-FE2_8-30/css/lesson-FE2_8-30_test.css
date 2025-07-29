@@ -71,7 +71,7 @@ body {
     animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1); /*! 3.Функція розподілу часу */
     animation-delay: 0ms; /*! 4.Затримка перед початком анімації */
     animation-iteration-count: 1; /*! 5.Кількість повних повторень анімації (або постійно - infinite)*/
-    /* animation-iteration-count: infinite; */ 
+    /* animation-iteration-count: infinite;  */
     animation-direction: normal; /*! 6.Напрямок відтворення анімації*/
     /* animation-direction: alternate; */
 }
@@ -79,15 +79,15 @@ body {
 /** Анімація-2 - зміна стану + тригер */
 @keyframes changeBgColor {
     0% {
-        background-color: teal;
+        background-color: red;
     }
 
     50% {
-        background-color: orange;
+        background-color: green;
     }
 
     100% {
-        background-color: deepskyblue;
+        background-color: blue;
     }
 }
 
