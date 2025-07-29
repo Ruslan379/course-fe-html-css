@@ -66,14 +66,13 @@ body {
     height: 400px;
     outline: 4px double #1000c4;
     /** Анімація-2 - шлях */
-    /*! 1.Назва анімації */
-    animation-name: changeBgColor;
-    animation-duration: 3000ms;
-    animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
-    animation-delay: 0ms;
-    animation-iteration-count: 1;
-    /* animation-iteration-count: infinite; */
-    animation-direction: normal;
+    animation-name: changeBgColor; /*! 1.Назва анімації */
+    animation-duration: 3000ms; /*! 2.Тривалість анімації */
+    animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1); /*! 3.Функція розподілу часу */
+    animation-delay: 0ms; /*! 4.Затримка перед початком анімації */
+    animation-iteration-count: 1; /*! 5.Кількість повних повторень анімації (або постійно - infinite)*/
+    /* animation-iteration-count: infinite; */ 
+    animation-direction: normal; /*! 6.Напрямок відтворення анімації*/
     /* animation-direction: alternate; */
 }
 
@@ -114,7 +113,7 @@ body {
     animation-timing-function: cubic-bezier(0.83, -0.08, 0.32, 1);
     /*! 4.Затримка перед початком анімації */
     animation-delay: 0ms;
-    /*! 5.Кількість повних повторень анімації (або постійно)*/
+    /*! 5.Кількість повних повторень анімації (або постійно - infinite)*/
     animation-iteration-count: 1;
     /* animation-iteration-count: infinite; */
     /*! 6.Напрямок відтворення анімації*/
