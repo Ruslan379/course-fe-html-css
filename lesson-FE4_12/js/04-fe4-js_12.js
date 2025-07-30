@@ -78,7 +78,6 @@ console.log("getTime():", date.getTime());
 console.log("------------------------------------------------------------------------------------------------------------------------");
 
 
-
 //! Приклад форматування поточної дати
 console.warn("Приклад форматування поточної дати:");
 const currentDate = new Date();
@@ -102,45 +101,59 @@ result += currentDate.getMilliseconds() + ''; //! мілісекунди
 //? Рядок повинен показати поточу дату та час:
 console.log(result); //! ...  значення будуть змінюватися
 //! Дата: 27/7/2025,
-//! День тижня: 1,
+//! День тижня: неділя,
 //! Час: 17:3:41:541
 
 //? Функция конвертує день тижня у звичний нам рядковий формат:
-function convertDayOfWeek(dayOfWeek) {
-    console.error("currentDate.getDay():", dayOfWeek); //!
-    let dayOfWeekString = "";
+// todo: var.1
+// function convertDayOfWeek(dayOfWeek) {
+//     console.error("currentDate.getDay():", dayOfWeek); //!
+//     let dayOfWeekString = "";
 
-    switch (dayOfWeek) {
-        case 0:
-            dayOfWeekString = "неділя";
-            break;
-        case 1:
-            dayOfWeekString = "понеділок";
-            break;
-        case 2:
-            dayOfWeekString = "вівторок";
-            break;
-        case 3:
-            dayOfWeekString = "середа";
-            break;
-        case 4:
-            dayOfWeekString = "четвер";
-            break;
-        case 5:
-            dayOfWeekString = "п'ятниця";
-            break;
-        case 6:
-            dayOfWeekString = "субота";
-            break;
-        default:
-            console.warn("ERROR"); //! інструкції default блока;
-    };
-    // console.log("День тижня:", dayOfWeekString); //!
-    return dayOfWeekString;
+//     switch (dayOfWeek) {
+//         case 0:
+//             dayOfWeekString = "неділя";
+//             break;
+//         case 1:
+//             dayOfWeekString = "понеділок";
+//             break;
+//         case 2:
+//             dayOfWeekString = "вівторок";
+//             break;
+//         case 3:
+//             dayOfWeekString = "середа";
+//             break;
+//         case 4:
+//             dayOfWeekString = "четвер";
+//             break;
+//         case 5:
+//             dayOfWeekString = "п'ятниця";
+//             break;
+//         case 6:
+//             dayOfWeekString = "субота";
+//             break;
+//         default:
+//             console.warn("ERROR"); //! інструкції default блока;
+//     };
+//     // console.log("День тижня:", dayOfWeekString); //!
+//     return dayOfWeekString;
+// };
+
+// todo: var.2 (приклад Валерія Шмідта)
+function convertDayOfWeek(dayOfWeek) {
+    const week = [
+        'Неділя',
+        'Понеділок',
+        'Вівторок',
+        'Середа',
+        'Четверг',
+        "П'ятниця",
+        'Субота'
+    ];
+    return week[dayOfWeek];
 };
 // convertDayOfWeek(currentDate.getDay());
 console.log("------------------------------------------------------------------------------------------------------------------------");
-
 
 
 //! Геттери у форматі UTC
