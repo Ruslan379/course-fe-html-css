@@ -116,7 +116,7 @@ button.accent {
 }
 
 
-/*? 2.Відкладене завантаженняї (Chatty events) */
+/*? 2.Відкладене завантаженняї (з бібліотекою LazySizes) */
 .blur-up {
     width: 100%;
     filter: blur(10px);
