@@ -118,3 +118,21 @@ setTimeout(() => {
 //? а через дві секунди, щойно буде викликаний resolve() або reject(), 
 //? проміс перейде у стан fulfilled або rejected, і ми зможемо його обробити.
 console.log("-----------------------------------------------------------------------------------");
+
+
+
+//! Метод then()
+// console.warn(`Метод then()​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_13/images/method-then.png"}`);
+// promise.then(
+//     //! onResolve will run third or not at all
+//     value => {
+//         console.log("onResolve call inside promise.then()");
+//         console.log("promise_setTimeout:", promise);
+//         console.log("✅ value:", value); //! "Success! Value passed to resolve function"
+//     },
+//     //! onReject will run third or not at all
+//     error => {
+//         console.log("onReject call inside promise.then()");
+//         console.log("❌ error:", error); //! "Error! Error passed to reject function"
+//     }
+// );
