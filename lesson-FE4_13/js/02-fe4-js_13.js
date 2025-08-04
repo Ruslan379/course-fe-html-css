@@ -19,7 +19,7 @@ function fetchUserInfo1() {
     setTimeout(() => {
         // fetch() //! очікуємо дані з серверу
         const data1 = { id: 1, name: 'Alex' };
-        // return data;
+        // return data1; //! так не працює
         userData1 = data1;
         console.log("userData1:", userData1); //! {id: 1, name: 'Alex'}
     }, 1000);
@@ -50,7 +50,6 @@ function run2() {
     fetchUserInfo2((userInfo2) => {
         console.log("userInfo2:", userInfo2); //! null
     });
-    
 };
 
 run2();
