@@ -4,8 +4,7 @@ console.log(
 );
 
 //! Метод catch()
-//! Метод then()
-console.warn(`Метод catch()​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_13/images/method-then.png"}`);
+console.warn(`Метод catch()​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_13/images/method-catch.png"}`);
 //? ✴️ На практиці в методі then() обробляють
 //? тільки успішне виконання промісу,
 //? а помилку його виконання у спеціальному
