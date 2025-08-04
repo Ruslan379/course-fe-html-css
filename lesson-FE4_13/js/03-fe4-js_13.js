@@ -61,7 +61,7 @@ console.log(". . . . . . . . . . . . . . . . . .");
 promise.then(
     //todo: onResolve виконається третім етапом або не виконається взагалі
     value => {
-        console.log("Виклик onResolve всередині promise.then()");
+        console.log("Виклик onResolve всередині promise.then():");
         console.log("promise_onResolve:", promise); //* Promise {<fulfilled>: '✅ Success! Value passed to resolve function'}
         console.log("✅ value:", value); //* "✅ Success! Value passed to resolve function"
     },
