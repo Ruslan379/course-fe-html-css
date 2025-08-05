@@ -15,14 +15,14 @@ const fetchUserFromServer1 = (username, onSuccess, onError) => {
 
     setTimeout(() => {
         //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
-        const isSuccess = true; //* ✅
-        // const isSuccess = false; //! ❌
+        // const isSuccess = true; //* ✅
+        const isSuccess = false; //! ❌
 
         if (isSuccess) {
-            onSuccess("✅ success");
+            onSuccess("✅ success-1");
             console.log("-------------------------------------------------");
         } else {
-            onError("❌ error");
+            onError("❌ error-1");
             console.log("-------------------------------------------------");
         };
     }, 2000);
@@ -56,13 +56,13 @@ const fetchUserFromServer2 = username => {
 
         setTimeout(() => {
             //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
-            // const isSuccess = true; //* ✅
-            const isSuccess = false; //! ❌
+            const isSuccess = true; //* ✅
+            // const isSuccess = false; //! ❌
 
             if (isSuccess) {
-                resolve("success value");
+                resolve("✅ success-2");
             } else {
-                reject("error");
+                reject("❌ error-2");
             }
         }, 2000);
     });
