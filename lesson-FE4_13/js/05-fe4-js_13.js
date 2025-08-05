@@ -25,7 +25,7 @@ console.log(
     `,
     'color: blue; font-size: 18px',
 );
-console.log("-----------------------------------------------------------------------------------");
+console.log("-------------------------------------------------------------------------------------");
 
 
 //! ПРИКЛАД використання методу finally()
@@ -61,5 +61,5 @@ promise
         console.log("❌ error:", error); //! "❌ Error! Error passed to reject function"
     })
     //todo: Виконається ОБОВ'ЯЗКОВО четвертим етапом незалежно від стану (fulfilled або rejected)
-    .finally(() => console.log("⚠️Promise settled...")); //todo: "⚠️Promise settled..."
-console.log("-----------------------------------------------------------------------------------");
+    .finally(() => console.log("⚠️ Promise settled...")); //todo: "⚠️ Promise settled..."
+console.log("-------------------------------------------------------------------------------------");
