@@ -52,7 +52,7 @@ setTimeout(() => {
 //? щоб вона не приймала колбеки, а повертала проміс.
 const fetchUserFromServer2 = username => {
     return new Promise((resolve, reject) => {
-        console.log(`Fetching data-2 for ${username}`);
+        console.log(`Fetching data-2 for ${username}:`);
 
         setTimeout(() => {
             //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
