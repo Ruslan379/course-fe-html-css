@@ -43,33 +43,33 @@ fetchUserFromServer1("Mango", onFetchSuccess1, onFetchError1);
 //! ПРИКЛАД-2: Промісифікована Асинхронна функція
 setTimeout(() => { 
     console.warn("ПРИКЛАД-2: Промісифікована Асинхронна функція:");
-//? ✴️ Краще, якщо функція не зважає на той код, який буде
-//? використовувати її результат. Вона просто виконує якусь операцію
-//? і повертає результат своєї роботи у зовнішній код.
-//? Для того щоб повернути результат асинхронної операції,
-//? з функції необхідно повернути проміс.
-//? Промісифікація - це перетворення функції з колбеками таким чином,
-//? щоб вона не приймала колбеки, а повертала проміс.
-const fetchUserFromServer2 = username => {
-    return new Promise((resolve, reject) => {
-        console.log(`Fetching data-2 for ${username}:`);
-
-        setTimeout(() => {
-            //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
-            const isSuccess = true; //* ✅
-            // const isSuccess = false; //! ❌
-
-            if (isSuccess) {
-                resolve("✅ success-2");
-            } else {
-                reject("❌ error-2");
-            }
-        }, 2000);
-    });
-};
-
-fetchUserFromServer2("Mango")
-    .then(user => console.log("user_fetchUserFromServer2:", user))
-    .catch(error => console.error("error_fetchUserFromServer2:", error));
+    //? ✴️ Краще, якщо функція не зважає на той код, який буде
+    //? використовувати її результат. Вона просто виконує якусь операцію
+    //? і повертає результат своєї роботи у зовнішній код.
+    //? Для того щоб повернути результат асинхронної операції,
+    //? з функції необхідно повернути проміс.
+    //? Промісифікація - це перетворення функції з колбеками таким чином,
+    //? щоб вона не приймала колбеки, а повертала проміс.
+    const fetchUserFromServer2 = username => {
+        return new Promise((resolve, reject) => {
+            console.log(`Fetching data-2 for ${username}:`);
+        
+            setTimeout(() => {
+                //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
+                const isSuccess = true; //* ✅
+                // const isSuccess = false; //! ❌
+            
+                if (isSuccess) {
+                    resolve("✅ success-2");
+                } else {
+                    reject("❌ error-2");
+                }
+            }, 2000);
+        });
+    };
+    
+    fetchUserFromServer2("Mango")
+        .then(user => console.log("user_fetchUserFromServer2:", user))
+        .catch(error => console.error("error_fetchUserFromServer2:", error));
 }, 2500);
 // console.log("-------------------------------------------------");

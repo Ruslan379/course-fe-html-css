@@ -48,7 +48,7 @@ function fetchUserInfo2(callback) {
 
 function run2() {
     fetchUserInfo2((userInfo2) => {
-        console.log("userInfo2:", userInfo2); //! null
+        console.log("userInfo2:", userInfo2); //! {id: 1, name: 'Alex'}
     });
 };
 
