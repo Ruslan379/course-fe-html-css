@@ -29,8 +29,8 @@ console.log("-------------------------------------------------------------------
 //! ПРИКЛАД використання методу catch()
 console.warn("ПРИКЛАД використання методу catch():");
 //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
-const isSuccess = true; //* ✅
-// const isSuccess = false; //! ❌
+// const isSuccess = true; //* ✅
+const isSuccess = false; //! ❌
 
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {

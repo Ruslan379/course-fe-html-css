@@ -15,8 +15,8 @@ const fetchUserFromServer1 = (username, onSuccess, onError) => {
 
     setTimeout(() => {
         //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
-        // const isSuccess = true; //* ✅
-        const isSuccess = false; //! ❌
+        const isSuccess = true; //* ✅
+        // const isSuccess = false; //! ❌
 
         if (isSuccess) {
             onSuccess("✅ success-1");
@@ -53,12 +53,12 @@ setTimeout(() => {
     const fetchUserFromServer2 = username => {
         return new Promise((resolve, reject) => {
             console.log(`Fetching data-2 for ${username}:`);
-        
+
             setTimeout(() => {
                 //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
                 const isSuccess = true; //* ✅
                 // const isSuccess = false; //! ❌
-            
+
                 if (isSuccess) {
                     resolve("✅ success-2");
                 } else {
@@ -67,7 +67,7 @@ setTimeout(() => {
             }, 2000);
         });
     };
-    
+
     fetchUserFromServer2("Mango")
         .then(user => console.log("user_fetchUserFromServer2:", user))
         .catch(error => console.error("error_fetchUserFromServer2:", error));

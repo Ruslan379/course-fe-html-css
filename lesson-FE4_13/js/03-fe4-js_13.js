@@ -41,8 +41,8 @@ console.log("-------------------------------------------------------------------
 //! ПРИКЛАД використання методу then()
 console.warn("ПРИКЛАД використання методу then():");
 //todo: Змініть значення змінної isSuccess, щоб викликати resolve або reject:
-// const isSuccess = true; //* ✅
-const isSuccess = false; //! ❌
+const isSuccess = true; //* ✅
+// const isSuccess = false; //! ❌
 
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
