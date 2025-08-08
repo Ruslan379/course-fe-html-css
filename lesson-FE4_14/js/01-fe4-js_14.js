@@ -64,7 +64,7 @@ const promiseB = makePromise("promiseB value", 3000);
 //*
 Promise.all([promiseA, promiseB])
     .then(value => console.log("✅ Promise.all([promiseA, promiseB]).then(value):", value)) ///! ["promiseA value", "promiseB value"] (var.1, var.2)
-    .catch(error => console.log(error));
+    .catch(error => console.log(error)); //! ❌ Error!(var.1, var.2)
 
 // //todo: Виміряємо час роботи промісу:
 // function promiseAll() {
@@ -81,8 +81,8 @@ Promise.all([promiseA, promiseB])
 //             //todo: Результат вимірювання часу
 //             console.log(`Promise.all зайняв = ${end - start} мс`); //! 3015 мс
 //             console.log("------------------------------------------------------------------------------------------");
-//         }) 
-//         .catch(error => console.log(error));
+//         })
+//         .catch(error => console.log(error)); //! ❌ Error!(var.1, var.2)
 // };
 // promiseAll();
 // console.log("------------------------------------------------------------------------------------------");

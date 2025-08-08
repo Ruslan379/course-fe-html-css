@@ -17,10 +17,6 @@ console.log(
 //? або буде відхилений, проміс, що повертається,
 //? перейде у стан resolved або rejected,
 //? а всі інші будуть відкинуті.
-//? ✳️ Колбек методу then() або catch() 
-//? буде викликаний через одну секунду, 
-//? коли виконається promiseA. 
-//? Другий проміс promiseB буде проігнорований.
 const delayTime = 3000; //* ✅
 // const delayTime = 2500; //! ✅❌
 // const delayTime = 500; //! ❌❌
@@ -48,7 +44,7 @@ const promiseB = makePromise("promiseB value", 3000);
 //*
 Promise.race([promiseA, promiseB])
     .then(value => console.log("✅ Promise.race([promiseA, promiseB]).then(value):", value)) //! "promiseA value"(var.1) або "promiseB value"(var.2)
-    .catch(error => console.log(error));
+    .catch(error => console.log(error)); //! ❌ Error!(var.1, var.2)
 
 //todo: Виміряємо час роботи промісу:
 // function promiseRace() {
