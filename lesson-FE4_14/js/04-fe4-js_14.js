@@ -76,6 +76,7 @@ setTimeout(() => {
         console.log(result.message);
     } else {
         console.error(result.message); //! ❌ Guest name must not be empty
+        console.log("------------------------------------------------------------------------");
     };
 }, 0);
 console.log("------------------------------------------------------------------------");
