@@ -35,7 +35,7 @@ Promise.reject("❌❌ ERROR from from Promise.resolve")
     });
 // console.log("------------------------------------------------------------------------");
 
-//! Рефакторинг коду
+//! Код до рефакторингу
 //? ✳️ Ці методи використовуються для промісифікаціі функцій,
 //? коли необхідно побудувати ланцюжок промісів
 //? і вже є початкове значення.
@@ -46,7 +46,7 @@ const makeGreeting = guestName => {
             success: false,
             message: "❌ Guest name must not be empty",
         };
-    }
+    };
 
     return {
         success: true,
@@ -56,7 +56,7 @@ const makeGreeting = guestName => {
 
 //* ✅
 setTimeout(() => {
-    console.warn("Виконаємо рефакторинг наступного коду:");
+    console.warn("Код до рефакторингу:");
     const result = makeGreeting("Mango");
     console.log("result:", result); //! {success: true, message: '✅ Welcome Mango'}
 
@@ -79,4 +79,70 @@ setTimeout(() => {
         console.log("------------------------------------------------------------------------");
     };
 }, 0);
-console.log("------------------------------------------------------------------------");
+// console.log("------------------------------------------------------------------------");
+
+
+//! Код після рефакторингу (крок-1)
+//? ✳️ Використовуючи колбек, відпадає необхідність
+//? повертати складні об'єкти зі статусом операції
+//? і перевіряти його у зовнішньому коді.
+const makeGreeting1 = (guestName, onSuccess, onError) => {
+    if (guestName === "" || guestName === undefined) {
+        return onError("❌1️⃣ Guest name must not be empty");
+    }
+    onSuccess(`✅1️⃣ Welcome ${guestName}`);
+};
+
+//* ✅1️⃣
+setTimeout(() => {
+    console.warn("Код після рефакторингу (крок-1):");
+    makeGreeting1(
+        "Mango",
+        greeting => console.log(greeting), //* ✅1️⃣ Welcome Mango
+        error => console.error(error)
+    );
+}, 0);
+
+//! ❌1️⃣
+setTimeout(() => {
+    makeGreeting1(
+        "",
+        greeting => console.log(greeting),
+        error => {
+            console.error(error); //! ❌1️⃣ Guest name must not be empty
+            console.log("------------------------------------------------------------------------");
+        }
+    );
+}, 0);
+// console.log("------------------------------------------------------------------------");
+
+
+//! Код після рефакторингу (крок-2)
+//? ✳️ Останнім кроком буде промісифікація функції makeGreeting()
+//? для того, щоб повністю усунути її залежність від зовнішнього коду:
+const makeGreeting2 = guestName => {
+    if (guestName === "" || guestName === undefined) {
+        return Promise.reject("❌2️⃣ Guest name must not be empty");
+    }
+
+    return Promise.resolve(`✅2️⃣ Welcome ${guestName}`);
+};
+
+//* ✅2️⃣
+setTimeout(() => {
+    console.warn("Код після рефакторингу (крок-2):");
+    makeGreeting2("Mango")
+        .then(greeting => console.log(greeting)) //* ✅2️⃣ Welcome Mango
+        .catch(error => console.error(error));
+}, 0);
+
+//! ❌2️⃣
+setTimeout(() => {
+    makeGreeting2("")
+        .then(greeting => console.log(greeting))
+        .catch(error => {
+            console.error(error); //! ❌2️⃣ Guest name must not be empty
+            console.log("------------------------------------------------------------------------");
+        });
+}, 0);
+// console.log("------------------------------------------------------------------------");
