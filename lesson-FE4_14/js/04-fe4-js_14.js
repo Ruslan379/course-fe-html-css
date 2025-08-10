@@ -18,7 +18,7 @@ new Promise(resolve => resolve("✅ SUCCESS value from new Promise"))
 Promise.resolve("✅✅ SUCCESS value from Promise.resolve")
     .then(value => {
         console.log("Promise.resolve:", value)
-        console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+        console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
     }
 );
 
@@ -31,8 +31,51 @@ new Promise((resolve, reject) => reject("❌ ERROR from new Promise"))
 Promise.reject("❌❌ ERROR from from Promise.resolve")
     .catch(error => {
         console.error("Promise.resolve:", error);
-        console.log("----------------------------------------------------------");
+        console.log("------------------------------------------------------------------------");
     });
-// console.log("----------------------------------------------------------");
+// console.log("------------------------------------------------------------------------");
 
+//! Рефакторинг коду
+//? ✳️ Ці методи використовуються для промісифікаціі функцій,
+//? коли необхідно побудувати ланцюжок промісів
+//? і вже є початкове значення.
+//! Виконаємо рефакторинг наступного коду:
+const makeGreeting = guestName => {
+    if (guestName === "" || guestName === undefined) {
+        return {
+            success: false,
+            message: "❌ Guest name must not be empty",
+        };
+    }
 
+    return {
+        success: true,
+        message: `✅ Welcome ${guestName}`,
+    };
+};
+
+//* ✅
+setTimeout(() => {
+    console.warn("Виконаємо рефакторинг наступного коду:");
+    const result = makeGreeting("Mango");
+    console.log("result:", result); //! {success: true, message: '✅ Welcome Mango'}
+
+    if (result.success) {
+        console.log(result.message); //* ✅ Welcome Mango
+    } else {
+        console.error(result.message);
+    };
+}, 0);
+
+//! ❌
+setTimeout(() => {
+    const result = makeGreeting("");
+    console.log("result:", result); //! {success: false, message: '❌ Guest name must not be empty'}
+
+    if (result.success) {
+        console.log(result.message);
+    } else {
+        console.error(result.message); //! ❌ Guest name must not be empty
+    };
+}, 0);
+console.log("------------------------------------------------------------------------");
