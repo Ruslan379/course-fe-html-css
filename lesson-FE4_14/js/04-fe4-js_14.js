@@ -9,7 +9,7 @@ console.warn("new Promise ----> Promise.resolve() і Promise.reject():");
 //? що миттєво успішно виконуються або відхиляються.
 //? Працюють аналогічно new Promise() за винятком
 //? можливості вказати затримку, але мають коротший синтаксис.
-//! ✳️ Fulfilled promise
+//* ✅ Fulfilled promise
 new Promise(resolve => resolve("✅ SUCCESS value from new Promise"))
     .then(value =>
     console.log("new Promise:", value)
@@ -22,7 +22,7 @@ Promise.resolve("✅✅ SUCCESS value from Promise.resolve")
     }
 );
 
-//! ✳️ Rejected promise
+//! ❌ Rejected promise
 new Promise((resolve, reject) => reject("❌ ERROR from new Promise"))
     .catch(error =>
     console.error("new Promise:", error)
