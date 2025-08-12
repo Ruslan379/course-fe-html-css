@@ -3,7 +3,6 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
-
 //! Promise.allSettled(promises)
 //? ✴️ Метод Promise.allSettled(promises)
 //? виконує всі проміси з переданого масиву
@@ -53,7 +52,6 @@ const promiseA = makePromise("promiseA value", 1000); //* ✅
 const promiseB = makePromise("promiseB value", 3000); //! ❌
 const promiseC = makePromise("promiseС value", 2000); //* ✅
 
-
 Promise.allSettled([promiseA, promiseB, promiseC])
     .then(value => console.log("Promise.allSettled([promiseA, promiseB, promiseC]).then(value):\n", value))
     // .catch(error => console.log(error)) 
@@ -74,6 +72,7 @@ Promise.allSettled([promiseA, promiseB, promiseC])
 //? — і успішних, і з помилками.
 setTimeout(() => {
     console.warn("ПРИКЛАД анімаційної версії в консолі:");
+
     function delayedPromise(name, delay, shouldReject = false) {
         console.log(`⏳ ${name} запущено, затримка: ${delay} мс`);
 
@@ -88,7 +87,7 @@ setTimeout(() => {
                 }
             }, delay);
         });
-    }
+    };
 
     //! Створюємо масив промісів з різним часом виконання:
     const promises = [
