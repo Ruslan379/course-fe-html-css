@@ -63,7 +63,7 @@ console.warn("Деплой проекту з Vite на GitHub (Варіант �
 //? https://github.com/Tate-T/Vite_vanilla-app-template
 
 //? ✳️ Повна інструкція по встановленню та налаштуванню тут:
-//? https://drive.google.com/drive/folders/1E8EZJywn2gsug2MsccqwGXdIQu2H81rY?usp=sharing
+//? https://drive.google.com/drive/u/1/folders/1pQ3TWNivbFBWMtkjjIR3xHscc6Y3GGNu
 
 console.log(
     `%c
@@ -71,7 +71,7 @@ console.log(
     https://github.com/Tate-T/Vite_vanilla-app-template
 
     2.Повна інструкція по встановленню та налаштуванню тут:
-    https://drive.google.com/drive/folders/1E8EZJywn2gsug2MsccqwGXdIQu2H81rY?usp=sharing
+    https://drive.google.com/drive/u/1/folders/1pQ3TWNivbFBWMtkjjIR3xHscc6Y3GGNu
     `,
     'color: blue; font-size: 18px',
 );
