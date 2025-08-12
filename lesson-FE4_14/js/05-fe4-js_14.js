@@ -66,3 +66,53 @@ Promise.allSettled([promiseA, promiseB, promiseC])
 //*     2: { status: 'fulfilled', value: 'promiseC value' }
 //? ]
 // console.log("-----------------------------------------------------------------------------------------");
+
+
+//! ПРИКЛАД анімаційної версії в консолі,
+//? щоб було видно, що Promise.allSettled
+//? дійсно чекає на завершення всіх промісів
+//? — і успішних, і з помилками.
+setTimeout(() => {
+    console.warn("ПРИКЛАД анімаційної версії в консолі:");
+    function delayedPromise(name, delay, shouldReject = false) {
+        console.log(`⏳ ${name} запущено, затримка: ${delay} мс`);
+
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                if (shouldReject) {
+                    console.log(`❌ ${name} завершився з помилкою`);
+                    reject(`Помилка в ${name}`);
+                } else {
+                    console.log(`✅ ${name} успішно виконано`);
+                    resolve(`Результат ${name}`);
+                }
+            }, delay);
+        });
+    }
+
+    //! Створюємо масив промісів з різним часом виконання:
+    const promises = [
+        delayedPromise('Завдання 1', 2000), //* ✅
+        delayedPromise('Завдання 2', 1000, true), //! ❌
+        delayedPromise('Завдання 3', 3000), //* ✅
+        delayedPromise('Завдання 4', 1500, true), //! ❌
+        delayedPromise('Завдання 5', 2500) //* ✅
+    ];
+
+    console.log('\n--- Очікування всіх промісів с Promise.allSettled ---\n');
+
+    Promise.allSettled(promises)
+        .then(results => {
+            console.log('\n=== Підсумок виконання всіх завдань ===');
+            results.forEach((result, index) => {
+                if (result.status === 'fulfilled') {
+                    console.log(`Проміс ${index + 1}: ✅ Успіх → ${result.value}`);
+                } else {
+                    console.log(`Проміс ${index + 1}: ❌ Помилка → ${result.reason}`);
+                };
+            });
+        })
+        .finally(() => { console.log("-------------------------------------------------------------------------------------"); });
+
+}, 5000);
+// console.log("-----------------------------------------------------------------------------------------");
