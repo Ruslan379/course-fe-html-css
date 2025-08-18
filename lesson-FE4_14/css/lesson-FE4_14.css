@@ -95,7 +95,8 @@ h3 {
 .image,
 .button-box,
 .box {
-    width: 45%;
+    min-width: 45%;
+    width: max-content;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -113,6 +114,82 @@ h3 {
 
 button.accent {
     color: green;
+}
+
+ /*! ПРИКЛАД анімаційної версії в браузері */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.tasks {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.task {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color: #afffaf;
+    position: relative;
+}
+
+.indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: gray;
+}
+
+/*? миготіння при очікуванні */
+.blinking {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+/*? статуси */
+.success .indicator {
+    background-color: #4caf50;
+    animation: none;
+}
+
+.error .indicator {
+    background-color: #f44336;
+    animation: none;
+}
+
+.results {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #afffaf;
+    width: 400px;
+    border-radius: 8px;
+}
+
+.results h4 {
+    margin-top: 0;
+}
+
+.result-item {
+    margin: 5px 0;
 }
 
 

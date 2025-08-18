@@ -113,5 +113,70 @@ setTimeout(() => {
         })
         .finally(() => { console.log("-------------------------------------------------------------------------------------"); });
 
-}, 5000);
+}, 5100);
+// console.log("-----------------------------------------------------------------------------------------");
+
+
+//! ПРИКЛАД анімаційної версії в браузері
+setTimeout(() => {
+    console.warn("ПРИКЛАД анімаційної версії в браузері:");
+    function delayedPromise(name, delay, shouldReject = false) {
+        const taskEl = document.querySelector(`[data-task="${name}"]`);
+        const indicator = taskEl.querySelector(".indicator");
+
+        return new Promise((resolve, reject) => {
+            indicator.classList.add("blinking");
+            setTimeout(() => {
+                indicator.classList.remove("blinking");
+                if (shouldReject) {
+                    taskEl.classList.add("error");
+                    reject(`Помилка в ${name}`);
+                } else {
+                    taskEl.classList.add("success");
+                    resolve(`Результат ${name}`);
+                }
+            }, delay);
+        });
+    }
+
+    const tasksData = [
+        { name: "Завдання-1", delay: 2000, fail: false }, //* ✅
+        { name: "Завдання-2", delay: 1000, fail: true }, //! ❌
+        { name: "Завдання-3", delay: 3000, fail: false }, //* ✅
+        { name: "Завдання-4", delay: 1500, fail: true }, //! ❌
+        { name: "Завдання-5", delay: 2500, fail: false }, //* ✅
+    ];
+
+    const tasksContainer = document.getElementById("tasks");
+    
+    tasksData.forEach(task => {
+        tasksContainer.innerHTML += `
+        <div class="task" data-task="${task.name}">
+            <div class="indicator"></div>
+            <div>${task.name}</div>
+        </div>
+        `;
+    });
+
+    const promises = tasksData.map(t => delayedPromise(t.name, t.delay, t.fail));
+
+    Promise.allSettled(promises)
+        .then(results => {
+            const resultsList = document.getElementById("results-list");
+            results.forEach((result, index) => {
+                const text =
+                    result.status === "fulfilled"
+                        ? `✅ ${tasksData[index].name}: ${result.value}`
+                        : `❌ ${tasksData[index].name}: ${result.reason}`;
+                const resultItem = document.createElement("div");
+                resultItem.className = "result-item";
+                resultItem.textContent = text;
+                resultsList.appendChild(resultItem);
+            });
+        })
+        .finally(() => {
+            console.log("Розмітка готова!");
+            console.log("-------------------------------------------------------------------------------------");
+        });
+}, 10500);
 // console.log("-----------------------------------------------------------------------------------------");
