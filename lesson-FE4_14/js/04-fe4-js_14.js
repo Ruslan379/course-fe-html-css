@@ -17,7 +17,8 @@ new Promise(resolve => resolve("✅ SUCCESS value from new Promise"))
 
 Promise.resolve("✅✅ SUCCESS value from Promise.resolve")
     .then(value => {
-        console.log("Promise.resolve:", value)
+        console.log("Promise.resolve:", value);
+        console.log("typeof Promise.resolve:", typeof value); //! string
         console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
     }
 );
@@ -34,6 +35,7 @@ Promise.reject("❌❌ ERROR from from Promise.resolve")
         console.log("------------------------------------------------------------------------");
     });
 // console.log("------------------------------------------------------------------------");
+
 
 //! Код до рефакторингу
 //? ✳️ Ці методи використовуються для промісифікаціі функцій,
