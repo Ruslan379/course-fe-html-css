@@ -29,7 +29,7 @@ function createStars() {
 //todo: функція-проміс: запалює зірку на випадковий час
 function starPromise(star) {
     return new Promise((resolve) => {
-        const delay = 3000 + Math.random() * 4000; // 1-5 сек
+        const delay = 3000 + Math.random() * 4000; //! 3-8 сек
         const colors = ["#fff", "#ffd700", "#ff69b4", "#87ceeb", "#00ffcc"];
         const color = colors[Math.floor(Math.random() * colors.length)];
 
