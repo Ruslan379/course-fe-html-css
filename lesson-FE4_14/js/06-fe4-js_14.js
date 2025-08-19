@@ -23,13 +23,13 @@ function createStars() {
         star.style.top = Math.random() * 100 + "vh";
         sky.appendChild(star);
         stars.push(star);
-    }
-}
+    };
+};
 
 //todo: функція-проміс: запалює зірку на випадковий час
 function starPromise(star) {
-    return new Promise((resolve) => {
-        const delay = 3000 + Math.random() * 4000; //! 3-8 сек
+    return new Promise((resolve) => { //! var.1
+        const delay = 3000 + Math.random() * 5000; //? 3-8 сек
         const colors = ["#fff", "#ffd700", "#ff69b4", "#87ceeb", "#00ffcc"];
         const color = colors[Math.floor(Math.random() * colors.length)];
 
@@ -41,10 +41,13 @@ function starPromise(star) {
             //todo: зірка згасла
             star.classList.remove("glow");
             star.style.opacity = 0.2;
-            resolve(`Зірка згасла через ${Math.round(delay / 1000)}с`);
+            resolve(`Зірка згасла через ${Math.round(delay / 1000)}с`); //! var.1
+            // const promisStar = Promise.resolve(`Зірка згасла через ${Math.round(delay / 1000)}с`); //! var.2
+            // console.log("promisStar:", promisStar); //! var.2
+            // return promisStar; //! var.2
         }, delay);
-    });
-}
+    }); //! var.1
+};
 
 startBtn.addEventListener("click", () => {
     console.log("🌟 Зірки засвітилися!");
@@ -53,12 +56,13 @@ startBtn.addEventListener("click", () => {
 
     const promises = stars.map(star => starPromise(star));
 
-    Promise.allSettled(promises).then(results => {
-        statusEl.textContent = "✨ Усі зірки згасли...";
-        console.log("Итог:", results);
-    });
+    Promise.allSettled(promises)
+        .then(results => {
+            statusEl.textContent = "✨ Усі зірки згасли...";
+            console.log("Усі зірки:", results); //! var.1
+        });
 });
 
 //todo: створюємо зірки під час завантаження
 createStars();
-console.log("-------------------------------------------------------");
+console.log("--------------------------------------------------------------");
