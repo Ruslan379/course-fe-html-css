@@ -193,6 +193,88 @@ button.accent {
 }
 
 
+/*! "Зоряне небо" на промісах */
+.box.stars {
+    width: 100vw;
+    height: 100vh;
+    margin: 5px 0 10px;
+    background: radial-gradient(ellipse at center, #000 0%, #020111 100%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin: 10px;
+}
+
+#sky {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: gray;
+    opacity: 0.3;
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.glow {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(2);
+    }
+}
+
+#controls {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    text-align: center;
+}
+
+button#controls {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#status {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffd700;
+}
+
+
+
+
 
 
 /* ! */
