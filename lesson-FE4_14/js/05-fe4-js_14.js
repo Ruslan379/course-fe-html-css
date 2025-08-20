@@ -120,7 +120,7 @@ setTimeout(() => {
 //! ПРИКЛАД анімаційної версії в браузері
 setTimeout(() => {
     console.warn("ПРИКЛАД анімаційної версії в браузері:");
-    function delayedPromise(name, delay, shouldReject = false) {
+    function delayedPromise(name, delay, shouldReject) {
         const taskEl = document.querySelector(`[data-task="${name}"]`);
         const indicator = taskEl.querySelector(".indicator");
 
@@ -148,7 +148,7 @@ setTimeout(() => {
     ];
 
     const tasksContainer = document.getElementById("tasks");
-    
+
     tasksData.forEach(task => {
         tasksContainer.innerHTML += `
         <div class="task" data-task="${task.name}">
@@ -158,7 +158,7 @@ setTimeout(() => {
         `;
     });
 
-    const promises = tasksData.map(t => delayedPromise(t.name, t.delay, t.fail));
+    const promises = tasksData.map(task => delayedPromise(task.name, task.delay, task.fail));
 
     Promise.allSettled(promises)
         .then(results => {
