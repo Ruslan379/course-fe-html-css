@@ -45,7 +45,7 @@ console.log(
 //?    - адресу(наприклад, /users/1 — це конкретний користувач).
 //? 🔸 Кожен запит є незалежним одив від одного.
 
-//? ✴️ REST API - бекенд побудований за принципом REST,
+//? 3️⃣✴️ REST API - бекенд побудований за принципом REST,
 //? або API, побудований за принципами REST.
 //? Він дозволяє клієнту(браузеру, програмі, іншому серверу)
 //? спілкуватися з сервером через HTTP - запити.
@@ -66,7 +66,7 @@ console.log("-------------------------------------------------------------------
 
 //! Приклади REST API запитів:
 console.warn("Приклади REST API запитів:");
-console.log("Отримати список користувачів:");
+console.log("1️⃣ Отримати список користувачів:");
 console.log(
     `%c
     GET https://example.com/api/users
@@ -77,9 +77,103 @@ console.log("Відповідь cервера (JSON):");
 console.log(
     `%c
     [
-        { "id": 1, "name": "Alice" },
-        { "id": 2, "name": "Bob" }
+        {
+            "id": 1,
+            "name": "Alice",
+            "email": "alice@example.com",
+            "age": 25
+        },
+        {
+            "id": 2,
+            "name": "Bob",
+            "email": "bob@example.com",
+            "age": 27
+        }
     ]
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+console.log("2️⃣ Отримати конкретного користувача (id: 1):");
+console.log(
+    `%c
+    GET https://example.com/api/users/1
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("Відповідь cервера (JSON):");
+console.log(
+    `%c
+    {
+        "id": 1,
+        "name": "Alice",
+        "email": "alice@example.com",
+        "age": 25
+    }
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+console.log("3️⃣ Створити нового користувача:");
+console.log(
+    `%c
+    POST https://api.example.com/users
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("Тіло запиту (JSON):");
+console.log(
+    `%c
+    {
+        "name": "Charlie",
+        "email": "charlie@example.com",
+        "age": 30
+    }
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("Відповідь cервера (JSON):");
+console.log(
+    `%c
+    {
+        "id": 3,
+        "name": "Charlie",
+        "email": "charlie@example.com",
+        "age": 30
+    }
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+
+console.log("4️⃣ Оновити дані користувача (наприклад, ім'я):");
+console.log(
+    `%c
+    PATCH https://api.example.com/users/1
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("Тіло запиту (JSON):");
+console.log(
+    `%c
+    {
+        "name": "Alice Cooper",
+    }
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("Відповідь cервера (JSON):");
+console.log(
+    `%c
+    {
+        "id": 1,
+        "name": "Alice Cooper",
+        "email": "alice@example.com",
+        "age": 25
+    }
     `,
     'color: blue; font-size: 18px',
 );
