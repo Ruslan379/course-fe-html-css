@@ -9,8 +9,37 @@ console.log(
 //? про результат операції. Коди діляться на групи:
 console.warn(`Групи кодів відповідей​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_15/images/response-codes-1.png"}`);
 console.warn(`Коди відповідей​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_15/images/response-codes-2.png"}`);
-console.log("-------------------------------------------------------------------");
+console.log("----------------------------------------------------------------------------");
 
 
 //! Запит-Відповідь
 console.warn("Запит-Відповідь:");
+//? ✴️ Припустимо у нас є застосунок, який дозволяє
+//? переглядати, створювати, редагувати і видаляти
+//? користувачів, бекенд якого розміщений на
+//? https://jsonplaceholder.typicode.com.
+//? Використовуючи отримані знання, опишемо ❗️псевдокодом❗️
+//? процес запит-відповідь до бекенду.
+
+//? ✳️ Якщо ми хочемо отримати дані про всіх клієнтів,
+//? GET запит буде виглядати наступним чином:
+console.log("1️⃣ Запит до cервера (список всіх користувачів):");
+console.log(
+    `%c
+    GET https://jsonplaceholder.typicode.com/users
+    Accept: application/json
+    `,
+    'color: blue; font-size: 18px',
+);
+//? ✳️ На що сервер відправить нам таку відповідь:
+console.log("Відповідь cервера:");
+console.log(
+    `%c
+    Status: 200 OK
+    Content-Type: application/json
+    Body: JSON-дані про всіх користувачів
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
