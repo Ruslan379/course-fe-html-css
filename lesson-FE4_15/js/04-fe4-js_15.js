@@ -9,7 +9,7 @@ console.log(
 //? про результат операції. Коди діляться на групи:
 console.warn(`Групи кодів відповідей​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_15/images/response-codes-1.png"}`);
 console.warn(`Коди відповідей​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_15/images/response-codes-2.png"}`);
-console.log("----------------------------------------------------------------------------");
+console.log("-----------------------------------------------------------------------------------------");
 
 
 //! Запит-Відповідь
@@ -32,14 +32,69 @@ console.log(
     'color: blue; font-size: 18px',
 );
 //? ✳️ На що сервер відправить нам таку відповідь:
-console.log("Відповідь cервера:");
+console.log("Відповідь cервера (список всіх користувачів):");
 console.log(
     `%c
     Status: 200 OK
     Content-Type: application/json
-    Body: JSON-дані про всіх користувачів
+    Body: JSON-дані про всіх користувачів (масив об'єктів):
+    https://jsonplaceholder.typicode.com/users
     `,
     'color: blue; font-size: 18px',
 );
-console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
 
+console.log("2️⃣ Запит до cервера (користувач з id:3):");
+console.log(
+    `%c
+    GET https://jsonplaceholder.typicode.com/users/3
+    Accept: application/json
+    `,
+    'color: blue; font-size: 18px',
+);
+//? ✳️ На що сервер відправить нам таку відповідь:
+console.log("Відповідь cервера (користувач з id:3):");
+console.log(
+    `%c
+    Status: 200 OK
+    Content-Type: application/json
+    Body: JSON-дані користувача з id:3 (об'єкт):
+    https://jsonplaceholder.typicode.com/users/3
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+
+//? ✳️ Для того щоб додати нового клієнта, виконуємо POST запит:
+console.log("3️⃣ Запит до cервера (додати нового користувача):");
+console.log(
+    `%c
+    POST https://jsonplaceholder.typicode.com/users
+    Accept: application/json
+    Body: {
+            "name": "Veda Kong",
+            "username": "Efremova",
+            "email": "Vedakong@freemail.net"
+           }
+    `,
+    'color: blue; font-size: 18px',
+);
+//? ✳️ Сервер додає унікальний ідентифікатор
+//? і повертає увесь об'єкт як результат.
+//? І відправить нам таку відповідь :
+console.log("Відповідь cервера (додати нового користувача):");
+console.log(
+    `%c
+    Status: 201 OK
+    Content-Type: application/json
+    Body: JSON-дані нового користувача (об'єкт):
+    {
+        "name": "Veda Kong",
+        "username": "Efremova",
+        "email": "Vedakong@freemail.net",
+        "id": 11
+    }
+    `,
+    'color: blue; font-size: 18px',
+);
+console.log("-----------------------------------------------------------------------------------------");

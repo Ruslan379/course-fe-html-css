@@ -66,7 +66,7 @@ console.log("-------------------------------------------------------------------
 
 //! Приклади REST API запитів:
 console.warn("Приклади REST API запитів:");
-console.log("1️⃣ 'Отримати список користувачів':");
+console.log("1️⃣ Отримати список користувачів:");
 console.log(
     `%c
     GET https://example.com/api/users
