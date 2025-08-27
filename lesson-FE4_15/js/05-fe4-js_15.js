@@ -23,6 +23,6 @@ console.warn("Pixabay: https://pixabay.com/api/docs"); //! Бортник Вла
 console.warn("News API: https://newsapi.org"); //! Шпег Михайло
 console.warn("The Open Movie Database (OMDb) API: https://www.omdbapi.com/"); //! Шмідт Валерій
 console.warn("The Movie Database (TMDB) API: https://developer.themoviedb.org/reference/intro/getting-started"); //! Шмідт Валерій
-console.warn("Weather API: https://openweathermap.org/api"); //! Олексюк Тимофій
+console.warn("Open Weather API: https://openweathermap.org/api"); //! Олексюк Тимофій
 console.warn("JSONPlaceholder: https://jsonplaceholder.typicode.com/todos"); //! Спєвак Давид 
 console.log("--------------------------------------------------------------------------------------------------");
