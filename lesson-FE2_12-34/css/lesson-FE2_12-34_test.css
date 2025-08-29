@@ -67,7 +67,11 @@ body {
 /** 01. Від 0 (320px) (до 599px) - orange */
 /*? Загальні стилі container */
 .container {
+/* .container1 { */
     min-width: 320px;
+    /* width: 320px; */
+    /* width: 100%; */
+    /* width: 100vw; */
     /* ! ширина в'юпорту, нижче якої дизайн не підтримується */
     margin: 0 auto;
     padding-top: 20px;
