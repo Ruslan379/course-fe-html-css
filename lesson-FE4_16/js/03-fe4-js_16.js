@@ -44,7 +44,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
     .then(response => {
         if (!response.ok) {
             throw new Error(response.status);
-        }
+        };
         return response.json();
     })
     .then(data => {
@@ -64,7 +64,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
 
 
 //! Вкладка Network
-
 setTimeout(() => {
     console.warn(`Вкладка Network-1​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_16/images/network-tab-1.jpg"}`);
     console.warn(`Вкладка Network-2​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_16/images/network-tab-2.png"}`);
