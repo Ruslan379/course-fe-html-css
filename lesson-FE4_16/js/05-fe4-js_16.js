@@ -4,26 +4,54 @@ console.log(
 );
 
 //! Помилка новачка
-console.warn("Помилка новачка:");
-console.warn(`Зображення​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_04/images/image-1.png"}`);
-console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
-
-//? ✴️
-//? ✳️ 
-
-//?     📌 ---:
-//? 🔸 ООО.
-//? 🔸 ООО.
-//? 🔸 ООО.
-
-
+//? - спробу використовувати дані HTTP-запиту поза колбеком методу then().
+//? Новачок намагається записати «результат fetch» у зовнішню змінну
+//? і використовувати її нижче у коді, відразу після виклику методу fetch():
 console.log(
     `%c
-    <
-        ......
-    />
+    let globalVariable; //! undefined
+
+    //! Ініціалізація отримання даних.
+    fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => response.json())
+        .then(users => {
+            console.log("users inside then callback: ", users);
+
+            //! Запис результату в глобальну змінну:
+            globalVariable = users;
+
+            //! Тут все гаразд, дані знаходяться в змінній:
+            console.log(
+                "globalVariable всередині функції fetch callback:",
+                globalVariable
+            );
+        });
+
+    //! Тут немає асинхронних даних:
+    console.log(
+        "globalVariable поза fetch:",
+        globalVariable
+    ); //! undefined
     `,
     'color: blue; font-size: 18px',
 );
+let globalVariable; //! undefined
 
-console.log("-------------------------------------------------------------------");
+//! Ініціалізація отримання даних.
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(users => {
+        console.log("users inside then callback: ", users);
+
+        //! Запис результату в глобальну змінну:
+        globalVariable = users;
+
+        //! Тут все гаразд, дані знаходяться в змінній:
+        console.log("globalVariable всередині функції fetch callback: ", globalVariable);
+        console.log("-------------------------------------------------------------------------------------------------------------");
+
+    });
+
+//! Тут немає асинхронних даних:
+console.log("globalVariable поза fetch: ", globalVariable); //! undefined
+// console.log("-------------------------------------------------------------------------------------------------------------");
