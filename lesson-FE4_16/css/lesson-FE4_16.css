@@ -120,19 +120,22 @@ button.accent {
 .box {
     text-align: left;
 }
-.btn {
+.btn,
+.btn5 {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.user-list {
+.user-list,
+.user-list5 {
     /* margin: 0; */
     /* list-style: none; */
     padding: 24px;
 }
 
-.user-list li:not(:last-child) {
+.user-list li:not(:last-child),
+.user-list5 li:not(:last-child) {
     margin-bottom: 16px;
 }
 
