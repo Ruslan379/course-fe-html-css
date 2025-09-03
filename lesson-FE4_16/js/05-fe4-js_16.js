@@ -34,12 +34,12 @@ const userList = document.querySelector(".user-list");
 fetchUsersBtn.addEventListener("click", fetchUsers);
 
 function fetchUsers() {
-    fetchAllUsers()
+    fetchData()
         .then((users) => renderUsers(users))
         .catch((error) => console.log(error));
 };
 
-function fetchAllUsers() {
+function fetchData() {
     return fetch("https://jsonplaceholder.typicode.com/users")
         .then((response) => {
             if (!response.ok) {
@@ -65,7 +65,7 @@ function renderUsers(users) {
     console.log("markup:", markup);
     console.log("----------------------------------------------------------------------");
 };
-//? ✳️ Зверніть увагу на те, що функція fetchAllUsers() 
+//? ✳️ Зверніть увагу на те, що функція fetchData() 
 //? повертає проміс, тому до результату її виклику 
 //? ми додаємо ланцюжок методів then() і catch().
 // console.log("----------------------------------------------------------------------");
