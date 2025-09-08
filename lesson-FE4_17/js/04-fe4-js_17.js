@@ -71,6 +71,7 @@ function createSearchParams() {
 
 //! Функція створює запит і повертає відповідь
 function fetchData(url) {
+    console.log("url --> fetchData:", url);
     return fetch(url) //todo: var.2 
         .then((response) => {
             if (!response.ok) {
