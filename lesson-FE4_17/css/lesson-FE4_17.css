@@ -123,7 +123,8 @@ button.accent {
     
 }
 .fetch-btn2,
-.fetch-btn3 {
+.fetch-btn3,
+.fetch-btn4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -137,22 +138,32 @@ button.accent {
 .post-title::first-letter {
     text-transform: uppercase
 }
+
 .posts-list2,
-.posts-list3 {
-    /* margin: 0; */
-    /* list-style: none; */
+.posts-list3,
+.posts-list4 {
     padding: 24px;
 }
 
 .posts-list2 li,
-.posts-list3 li {
+.posts-list3 li,
+.posts-list4 li {
     padding: 5px 10px;
     outline: auto;
 }
 
 .posts-list2 li:not(:last-child),
-.posts-list3 li:not(:last-child) {
+.posts-list3 li:not(:last-child),
+.posts-list4 li:not(:last-child) {
     margin-bottom: 16px;
+}
+
+.pagination-buttons {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 20px;
 }
 
 
