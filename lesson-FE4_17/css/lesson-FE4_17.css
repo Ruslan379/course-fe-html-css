@@ -122,7 +122,8 @@ button.accent {
     text-align: left;
     
 }
-.fetch-btn {
+.fetch-btn2,
+.fetch-btn3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -136,18 +137,21 @@ button.accent {
 .post-title::first-letter {
     text-transform: uppercase
 }
-.posts-list {
+.posts-list2,
+.posts-list3 {
     /* margin: 0; */
     /* list-style: none; */
     padding: 24px;
 }
 
-.posts-list li {
+.posts-list2 li,
+.posts-list3 li {
     padding: 5px 10px;
     outline: auto;
 }
 
-.posts-list li:not(:last-child) {
+.posts-list2 li:not(:last-child),
+.posts-list3 li:not(:last-child) {
     margin-bottom: 16px;
 }
 

@@ -29,8 +29,8 @@ console.warn("Параметр кількісті елементів на сто
 //? ✳️ По кліку на кнопку «Fetch N posts» 
 //? зробимо GET-запит і виведемо 
 //? список N постів згідно заданої кількості:
-const fetchPostsBtn = document.querySelector(".fetch-btn");
-const postList = document.querySelector(".posts-list");
+const fetchPostsBtn = document.querySelector(".fetch-btn2");
+const postList = document.querySelector(".posts-list2");
 
 fetchPostsBtn.addEventListener("click", fetchPosts);
 
