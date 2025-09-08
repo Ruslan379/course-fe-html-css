@@ -166,7 +166,14 @@ button.accent {
     gap: 20px;
 }
 
-
+/* ? Блокування кнопок <⇐ Prev> та <Next ⇒> */
+#prev:disabled,
+#next:disabled {
+    color: #ededed;
+    border-color: #3f3f3f;
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+}
 
 /* ! */
 /* .part_1 {

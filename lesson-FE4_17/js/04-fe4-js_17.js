@@ -10,17 +10,26 @@ console.log(
 //? Після кожного успішного запиту, в колбек методу then() 
 //? будемо збільшувати значення page на одиницю. 
 //? Складаючи параметри запиту, використовуємо її значення.
-//? ✳️ 
-
 const fetchPostsBtn = document.querySelector(".fetch-btn4");
 const postList = document.querySelector(".posts-list4");
 const fetchPostsPrevBtn = document.getElementById("prev");
 const fetchPostsNextBtn = document.getElementById("next");
 
-//! Контролює кількість груп
+//! Кількість елементів у колекції:
+const numberElements = 100;
+
+//! Контролює кількість груп (сторінок):
+// let page = 1;
 let page = 3;
-//! Контролює кількість елементів у групі
+// let page = 13;
+
+//! Контролює кількість елементів у групі (на сторінці):
 let perPage = 4;
+// let perPage = 8;
+
+//! Кількість груп (сторінок):
+const numberPages = Math.ceil(numberElements / perPage);
+console.log("Кількість груп (сторінок):", numberPages);
 // ____________________________________________________________________________
 
 fetchPostsBtn.addEventListener("click", fetchPosts);
@@ -29,6 +38,9 @@ fetchPostsNextBtn.addEventListener("click", fetchPostsNext);
 
 //! Функція збирає ВСЕ при першому запиту: параметри рядка запиту, обробляє запит, додає розмітку
 function fetchPosts() {
+    console.log("page:", page);
+    if (page === 1) fetchPostsPrevBtn.setAttribute("disabled", "");  //! блокуємо кнопку <⇐ Prev>
+    if (page === numberPages) fetchPostsNextBtn.setAttribute("disabled", "");  //! блокуємо кнопку <Next ⇒>
     const url = createSearchParams();
     fetchData(url)
         .then((posts) => renderPosts(posts))
@@ -37,7 +49,9 @@ function fetchPosts() {
 
 //! Функція збирає ВСЕ при Prev-запиту: параметри рядка запиту, обробляє запит, додає розмітку
 function fetchPostsPrev() {
+    if (page === numberPages) fetchPostsNextBtn.removeAttribute("disabled"); //! розблокуємо кнопку <Next ⇒>
     page -= 1;
+    if (page === 1) fetchPostsPrevBtn.setAttribute("disabled", "");  //! блокуємо кнопку <⇐ Prev>
     const url = createSearchParams();
     fetchData(url)
         .then((posts) => renderPosts(posts))
@@ -46,7 +60,9 @@ function fetchPostsPrev() {
 
 //! Функція збирає ВСЕ при Next-запиту: параметри рядка запиту, обробляє запит, додає розмітку
 function fetchPostsNext() {
+    if (page === 1) fetchPostsPrevBtn.removeAttribute("disabled"); //! розблокуємо кнопку <⇐ Prev>
     page += 1;
+    if (page === numberPages) fetchPostsNextBtn.setAttribute("disabled", "");  //! блокуємо кнопку <Next ⇒>
     const url = createSearchParams();
     fetchData(url)
         .then((posts) => renderPosts(posts))
@@ -98,7 +114,6 @@ function renderPosts(posts) {
     console.log("markup:", markup);
     postList.innerHTML = markup; //todo: var.1
     // postList.insertAdjacentHTML("beforeend", markup); //todo: var.2
-    console.log("----------------------------------------------------------------------------------------------------------");
+    console.log("---------------------------------------------------------------------------------------------------------------------");
 };
-
-console.log("-------------------------------------------------------------------");
+console.log("---------------------------------------------------------------------------------------------------------------------");
