@@ -118,24 +118,36 @@ button.accent {
 
  /*! Робота з публічним REST API */
 .box {
+    width: 60%;
     text-align: left;
+    
 }
-.btn,
-.btn5 {
+.fetch-btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-.user-list,
-.user-list5 {
+.post-title {
+    font-size: 1.4em;
+    text-align: center;
+    color: brown;
+    /* text-indent: 20px; */
+}
+.post-title::first-letter {
+    text-transform: uppercase
+}
+.posts-list {
     /* margin: 0; */
     /* list-style: none; */
     padding: 24px;
 }
 
-.user-list li:not(:last-child),
-.user-list5 li:not(:last-child) {
+.posts-list li {
+    padding: 5px 10px;
+    outline: auto;
+}
+
+.posts-list li:not(:last-child) {
     margin-bottom: 16px;
 }
 
