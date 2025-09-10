@@ -18,14 +18,14 @@ const fetchPostsNextBtn = document.getElementById("next");
 //! Кількість елементів у колекції:
 const numberElements = 100;
 
-//! Контролює кількість груп (сторінок):
-// let page = 1;
-let page = 3;
-// let page = 13;
-
 //! Контролює кількість елементів у групі (на сторінці):
 let perPage = 4;
 // let perPage = 8;
+
+//! Контролює номер групи (сторіноки):
+// let page = 1;
+let page = 3;
+// let page = 13;
 
 //! Кількість груп (сторінок):
 const numberPages = Math.ceil(numberElements / perPage);

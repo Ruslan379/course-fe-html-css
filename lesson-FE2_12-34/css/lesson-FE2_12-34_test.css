@@ -240,8 +240,9 @@ body {
     align-items: center;
     gap: 5px;
     min-width: 320px;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
+    outline: auto red;
 }
 
 /*? Загальні стилі element3 */
@@ -285,6 +286,7 @@ body {
 @media screen and (min-width: 768px) {
     .container3 {
         /*? зміни властивостей та додаткові властивості */
+        max-width: 768px; /* ! */
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -305,6 +307,7 @@ body {
 @media screen and (min-width: 1024px) {
     .container3 {
         /*? зміна властивості */
+        max-width: 1024px; /* ! */
         gap: 20px;
         /*! Адаптивна (adaptive) верстка */
         /*? зміни властивостей та додаткові властивості */
