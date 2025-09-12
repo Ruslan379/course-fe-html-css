@@ -1,5 +1,5 @@
 console.log(
-    '%c 2.Використання бібліотекі Handlebars в проєкті з бандлером Vite. ',
+    '%c 2.Використання бібліотеки Handlebars в проєкті з бандлером Vite. ',
     'color: white; background-color: #D33F49',
 );
 
