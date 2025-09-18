@@ -9,7 +9,7 @@ console.warn(`Зображення​​: \n ${((window.location.href).split('/'
 console.warn("Посилання: \n https://caniuse.com/?search=loading%3D%22lazy%22");
 
 //? ✴️
-
+//? ✳️ 
 
 //?     📌 ---:
 //? 🔸 ООО.
