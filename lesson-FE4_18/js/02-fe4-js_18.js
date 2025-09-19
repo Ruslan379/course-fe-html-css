@@ -29,12 +29,12 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 //? Ресурс не змінюється - це шлях до цілої колекції,
 //? а значення параметра змінюється для кожного її елемента.
 //! Змініть це число, щоб отримати різні публікації.
-const postId = 1;
+const postId = 13;
 
 setTimeout(() => {
   fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
     .then(response => response.json())
-    .then(post => console.log("post:", post))
+    .then(post => console.log(`post №${postId}:`, post))
     .catch(error => console.log(error))
     .finally(() => console.log("-----------------------------------------------------------------------------------------------------"));
 }, 100);
