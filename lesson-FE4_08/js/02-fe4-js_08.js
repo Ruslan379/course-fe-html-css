@@ -26,7 +26,8 @@ const dog1 = {
 
 console.log("dog1:", dog1);
 
-export const dogJSON1 = JSON.stringify(dog1);
+const dogJSON1 = JSON.stringify(dog1);
+export { dogJSON1 };
 console.log("dogJSON1:", dogJSON1);  //! "{"name":"Mango","age":3,"isHappy":true}"
 console.log("--------------------------------------------------");
 
