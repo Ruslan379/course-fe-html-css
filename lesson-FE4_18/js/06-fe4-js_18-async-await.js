@@ -12,19 +12,10 @@ console.warn("json-server: \n https://www.npmjs.com/package/json-server");
 //? сортування, зв'язки _embed / _expand, 
 //? перезаписує db.json при змінах (за умовчанням при --watch).
 
-// console.log(
-//     `%c
-//     <
-//         ......
-//     />
-//     `,
-//     'color: blue; font-size: 18px',
-// );
-
-//? ✳️ Приклади запитів із fetch (клієнт)
+//? ✳️ Приклади запитів з fetch (клієнт)
 //! GET (отримати всіх користувачів):
 async function getUsers() {
-    const res = await fetch('http://localhost:3000/users/1');
+    const res = await fetch('http://localhost:3000/users');
     const users = await res.json();
     console.log("GET(отримати всіх користувачів):", users);
     console.log("---------------------------------------------------------------------------------------------------------------");
@@ -59,7 +50,7 @@ async function updateUserPUT() {
     console.log("---------------------------------------------------------------------------------------------------------------");
 };
 setTimeout(() => { updateUserPUT() }, 400);
-// updateUserPUT();
+
 
 //! PATCH (часткове оновлення ресурсу (користувача)):
 async function updateUserPATCH() {
