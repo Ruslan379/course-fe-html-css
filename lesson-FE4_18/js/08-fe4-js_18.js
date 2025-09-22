@@ -14,7 +14,7 @@ async function getAllPosts() {
         .then(response => response.json())
         .then(posts => console.log("GET (отримати всі пости):", posts))
         .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . "));
+        .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
 setTimeout(() => { getAllPosts() }, 0);
 
