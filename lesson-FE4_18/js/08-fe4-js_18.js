@@ -114,7 +114,7 @@ setTimeout(() => { updatePostPATCH() }, 600);
 
 
 //! DELETE (видалення ресурсу (поста) з id:9):
-async function deleteUser() {
+async function deletePost() {
     const postIdToDelete = 9;
     // const postIdToDelete = "****"; //! для перевірки видалення постів
 
@@ -132,5 +132,5 @@ async function deleteUser() {
         .catch(error => console.log(error))
         .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
-setTimeout(() => { deleteUser() }, 800);
+setTimeout(() => { deletePost() }, 800);
 console.log("-----------------------------------------------------------------------------------------------------------------------");
