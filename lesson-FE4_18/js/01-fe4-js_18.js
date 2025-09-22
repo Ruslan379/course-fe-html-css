@@ -1,10 +1,10 @@
 console.log(
-    '%c 1.CRUD. ',
+    '%c 1.Операції CRUD. ',
     'color: white; background-color: #D33F49',
 );
 
-//! CRUD
-console.warn(`CRUD: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_18/images/crud.png"}`);
+//! Операції CRUD
+console.warn(`Операції CRUD: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_18/images/crud.png"}`);
 
 //? ✴️ Для взаємодії з ресурсами бекенду
 //? використовується чотири операції:

@@ -1,119 +1,19 @@
 console.log(
-    '%c 6.json-server ',
+    '%c 6.Створення персонального сервера баз даних з json-server ',
     'color: white; background-color: #D33F49',
 );
 
-//! json-server
-console.warn("json-server: \n https://www.npmjs.com/package/json-server");
-//? ✴️ json-server – це легка бібліотека для швидкого 
-//? прототипування REST API на основі JSON-файлу (db.json). 
-//? Дуже зручно для фейкового бекенда під час розробки фронтенду: 
-//? підтримує GET/POST/PUT/PATCH/DELETE, фільтри, пагінацію, 
-//? сортування, зв'язки _embed / _expand, 
+//! Бібліотека json-server на npm
+console.warn("Бібліотека json-server на npm: \n https://www.npmjs.com/package/json-server");
+//? ✴️ json-server – це легка бібліотека для швидкого
+//? прототипування REST API на основі JSON-файлу (db.json).
+//? Дуже зручно для фейкового бекенда під час розробки фронтенду:
+//? підтримує GET/POST/PUT/PATCH/DELETE, фільтри, пагінацію,
+//? сортування, зв'язки _embed / _expand,
 //? перезаписує db.json при змінах (за умовчанням при --watch).
 
-//? ✳️ Приклади запитів з fetch (клієнт)
-//! GET (отримати всіх користувачів):
-async function getUsers() {
-    fetch('http://localhost:3000/users')
-        .then(response => response.json())
-        .then(users => console.log("GET (отримати всіх користувачів):", users))
-        .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
-};
-setTimeout(() => { getUsers() }, 0);
 
+//! Бібліотека json-server на npm
+console.warn("Module-1:");
 
-//! POST (створити нового користувача):
-async function createUser() {
-    const requestBody = {
-        name: "Ivan",
-        email: "ivan@example.com",
-    };
-
-    const options = {
-        method: "POST", //! операція CREATE, створення
-        body: JSON.stringify(requestBody), //! конвертація даних у JSON-формат
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-        },
-    };
-
-    fetch("http://localhost:3000/users", options)
-        .then(response => response.json())
-        .then(user => console.log(`${options.method} (створити нового користувача):`, user))
-        .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
-};
-setTimeout(() => { createUser() }, 200);
-
-
-//! PUT (заміна всього ресурсу (користувача)):
-async function updateUserPUT() {
-    const requestBody = {
-        id: 1,
-        name: "New name",
-        email: "new@example.com",
-    };
-
-    const options = {
-        method: "PUT", //! операція UPDATE, оновлення
-        body: JSON.stringify(requestBody), //! конвертація даних у JSON-формат
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-        },
-    };
-
-    fetch(`http://localhost:3000/users/${requestBody.id}`, options)
-        .then(response => response.json())
-        .then(user => console.log(`${options.method} (заміна всього ресурсу (користувача) з id:${requestBody.id}):`, user))
-        .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
-};
-setTimeout(() => { updateUserPUT() }, 400);
-
-
-//! PATCH (часткове оновлення ресурсу (користувача)):
-async function updateUserPATCH() {
-    const requestBody = {
-        id: 2,
-        name: "Updated name",
-    };
-
-    const options = {
-        method: "PATCH", //! операція UPDATE, оновлення
-        body: JSON.stringify(requestBody), //! конвертація даних у JSON-формат
-        headers: {
-            "Content-Type": "application/json; charset=UTF-8",
-        },
-    };
-
-    fetch(`http://localhost:3000/users/${requestBody.id}`, options)
-        .then(response => response.json())
-        .then(user => console.log(`${options.method} (часткове оновлення ресурсу (користувача) з id:${requestBody.id}):`, user))
-        .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
-};
-setTimeout(() => { updateUserPATCH() }, 600);
-
-
-//! DELETE (видалення ресурсу (користувача)):
-async function deleteUser() {
-    const postIdToDelete = 3;
-
-    const options = {
-        method: "DELETE", //! операція DELETE, видалення
-    };
-
-    fetch(`http://localhost:3000/users/${postIdToDelete}`, options)
-        .then(response => {
-            console.log("Статус:", response.status);
-            return response;
-        })
-        .then(response => response.json())
-        .then(user => console.log(`${options.method} (видалення ресурсу (користувача) з id:${postIdToDelete}):`, user))
-        .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
-};
-setTimeout(() => { deleteUser() }, 800);
 console.log("-----------------------------------------------------------------------------------------------------------------------");
