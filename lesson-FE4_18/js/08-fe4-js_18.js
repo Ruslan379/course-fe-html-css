@@ -19,16 +19,16 @@ async function getAllPosts() {
 setTimeout(() => { getAllPosts() }, 0);
 
 
-//! GET (отримати пост №9):
+//! GET (отримати пост з id:9):
 async function getPost() {
     const postId = 9;
     // const postId = "****"; //! для перевірки нових або змінених постів
 
     fetch(`http://localhost:3000/posts/${postId}`)
         .then(response => response.json())
-        .then(post => console.log(`GET (отримати пост №${postId}):`, post))
+        .then(post => console.log(`GET (отримати пост з id:${postId}):`, post))
         .catch(error => console.log(error))
-        .finally(() => console.log("-----------------------------------------------------------------------------------------------------"));
+        .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
 setTimeout(() => { getPost() }, 100);
 
@@ -52,17 +52,20 @@ async function createPost() {
         .then(response => response.json())
         .then(post => console.log(`${options.method} (створити новий пост):`, post))
         .catch(error => console.log(error))
-        .finally(() => console.log("-------------------------------------------------------------------------------------------"));
+        .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
 setTimeout(() => { createPost() }, 200);
 
 
-//! PUT (заміна всього ресурсу (користувача)):
-async function updateUserPUT() {
+//! PUT (заміна всього ресурсу (поста)):
+async function updatePostPUT() {
     const requestBody = {
-        id: 1,
-        name: "New name",
-        email: "new@example.com",
+        // userId: 1, //? не додаємо цієї властивості
+        id: 5, //! змінюй для заміни різніх постів
+        title: "Report on modern science",
+        // body: "rerum voluptatem ullam culpa adipisciassumenda", //? не додаємо цієї властивості
+        author: "Vir Norin",
+        email: "VirNorin@example.com"
     };
 
     const options = {
@@ -73,20 +76,24 @@ async function updateUserPUT() {
         },
     };
 
-    fetch(`http://localhost:3000/users/${requestBody.id}`, options)
+    fetch(`http://localhost:3000/posts/${requestBody.id}`, options)
         .then(response => response.json())
-        .then(user => console.log(`${options.method} (заміна всього ресурсу (користувача) з id:${requestBody.id}):`, user))
+        .then(post => console.log(`${options.method} (заміна всього ресурсу (поста) з id:${requestBody.id}):`, post))
         .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
+        .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
-// setTimeout(() => { updateUserPUT() }, 400);
+setTimeout(() => { updatePostPUT() }, 400);
 
 
-//! PATCH (часткове оновлення ресурсу (користувача)):
-async function updateUserPATCH() {
+//! PATCH (часткове оновлення ресурсу (поста)):
+async function updatePostPATCH() {
     const requestBody = {
-        id: 2,
-        name: "Updated name",
+        userId: 1, //? додаємо цю властивість
+        id: 5, //! змінюй для заміни різніх постів
+        title: "NEW report on modern science", //todo: змінюємо цю властивість
+        body: "rerum voluptatem ullam culpa adipisciassumenda", //? додаємо цю властивість
+        // author: "Vir Norin", //? НЕ змінюємо цю властивість
+        // email: "VirNorin@example.com" //? НЕ змінюємо цю властивість
     };
 
     const options = {
@@ -97,32 +104,33 @@ async function updateUserPATCH() {
         },
     };
 
-    fetch(`http://localhost:3000/users/${requestBody.id}`, options)
+    fetch(`http://localhost:3000/posts/${requestBody.id}`, options)
         .then(response => response.json())
-        .then(user => console.log(`${options.method} (часткове оновлення ресурсу (користувача) з id:${requestBody.id}):`, user))
+        .then(post => console.log(`${options.method} (часткове оновлення ресурсу (поста) з id:${requestBody.id}):`, post))
         .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
+        .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
-// setTimeout(() => { updateUserPATCH() }, 600);
+setTimeout(() => { updatePostPATCH() }, 600);
 
 
-//! DELETE (видалення ресурсу (користувача)):
+//! DELETE (видалення ресурсу (поста) з id:9):
 async function deleteUser() {
-    const postIdToDelete = 3;
+    const postIdToDelete = 9;
+    // const postIdToDelete = "****"; //! для перевірки видалення постів
 
     const options = {
         method: "DELETE", //! операція DELETE, видалення
     };
 
-    fetch(`http://localhost:3000/users/${postIdToDelete}`, options)
+    fetch(`http://localhost:3000/posts/${postIdToDelete}`, options)
         .then(response => {
             console.log("Статус:", response.status);
             return response;
         })
         .then(response => response.json())
-        .then(user => console.log(`${options.method} (видалення ресурсу (користувача) з id:${postIdToDelete}):`, user))
+        .then(post => console.log(`${options.method} (видалення ресурсу (поста) з id:${postIdToDelete}):`, post))
         .catch(error => console.log(error))
-        .finally(() => console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."));
+        .finally(() => console.log("-----------------------------------------------------------------------------------------------------------------------"));
 };
-// setTimeout(() => { deleteUser() }, 800);
+setTimeout(() => { deleteUser() }, 800);
 console.log("-----------------------------------------------------------------------------------------------------------------------");
