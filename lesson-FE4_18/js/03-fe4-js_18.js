@@ -51,7 +51,7 @@ const options = {
 
 fetch("https://jsonplaceholder.typicode.com/posts", options)
     .then(response => response.json())
-    .then(res => console.log("Відповідь сервера на POST:", res))
+    .then(post => console.log("Відповідь сервера на POST:", post))
     .catch(error => console.log(error))
     .finally(() => console.log("-------------------------------------------------------------------------------------------"));
 
