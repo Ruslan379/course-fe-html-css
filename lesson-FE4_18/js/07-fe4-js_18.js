@@ -6,7 +6,7 @@ console.log(
 //! Приклади HTTP-запитів з CRUD з використанням json-server
 console.warn("Для демонстрації прикладів необхідно запустити json-server за адресою: http://localhost:3000");
 //! GET (отримати всіх користувачів):
-async function getUsers() {
+function getUsers() {
     fetch('http://localhost:3000/users')
         .then(response => response.json())
         .then(users => console.log("GET (отримати всіх користувачів):", users))
@@ -17,7 +17,7 @@ setTimeout(() => { getUsers() }, 0);
 
 
 //! POST (створити нового користувача):
-async function createUser() {
+function createUser() {
     const requestBody = {
         name: "Ivan",
         email: "ivan@example.com",
@@ -41,7 +41,7 @@ setTimeout(() => { createUser() }, 200);
 
 
 //! PUT (заміна всього ресурсу (користувача)):
-async function updateUserPUT() {
+function updateUserPUT() {
     const requestBody = {
         id: 1,
         name: "New name",
@@ -66,7 +66,7 @@ setTimeout(() => { updateUserPUT() }, 400);
 
 
 //! PATCH (часткове оновлення ресурсу (користувача)):
-async function updateUserPATCH() {
+function updateUserPATCH() {
     const requestBody = {
         id: 2,
         name: "Updated name",
@@ -90,7 +90,7 @@ setTimeout(() => { updateUserPATCH() }, 600);
 
 
 //! DELETE (видалення ресурсу (користувача)):
-async function deleteUser() {
+function deleteUser() {
     const postIdToDelete = 3;
 
     const options = {

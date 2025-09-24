@@ -9,7 +9,7 @@ console.warn("Для демонстрації прикладів необхід�
 console.warn(`json-server з файлом db-jsonplaceholder-posts.json: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_18/images/emulating-jsonplaceholder-posts.jpg"}`);
 
 //! GET (отримати всі пости):
-async function getAllPosts() {
+function getAllPosts() {
     fetch("http://localhost:3000/posts")
         .then(response => response.json())
         .then(posts => console.log("GET (отримати всі пости):", posts))
@@ -20,7 +20,7 @@ setTimeout(() => { getAllPosts() }, 0);
 
 
 //! GET (отримати пост з id:9):
-async function getPost() {
+function getPost() {
     const postId = 9;
     // const postId = "****"; //! для перевірки нових або змінених постів
 
@@ -34,7 +34,7 @@ setTimeout(() => { getPost() }, 100);
 
 
 //! POST (створити новий пост):
-async function createPost() {
+function createPost() {
     const requestBody = {
         author: "Fay Rodis",
         title: "Treatise on Inferno",
@@ -58,7 +58,7 @@ setTimeout(() => { createPost() }, 200);
 
 
 //! PUT (заміна всього ресурсу (поста)):
-async function updatePostPUT() {
+function updatePostPUT() {
     const requestBody = {
         // userId: 1, //? не додаємо цієї властивості
         id: 5, //! змінюй для заміни різніх постів
@@ -86,7 +86,7 @@ setTimeout(() => { updatePostPUT() }, 400);
 
 
 //! PATCH (часткове оновлення ресурсу (поста)):
-async function updatePostPATCH() {
+function updatePostPATCH() {
     const requestBody = {
         userId: 1, //? додаємо цю властивість
         id: 5, //! змінюй для заміни різніх постів
@@ -114,7 +114,7 @@ setTimeout(() => { updatePostPATCH() }, 600);
 
 
 //! DELETE (видалення ресурсу (поста) з id:9):
-async function deletePost() {
+function deletePost() {
     const postIdToDelete = 9;
     // const postIdToDelete = "****"; //! для перевірки видалення постів
 
