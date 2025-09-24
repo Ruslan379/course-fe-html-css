@@ -5,7 +5,7 @@ console.log(
 
 
 //! Використання json-server замість JSONPlaceholder API. Приклади HTTP-запитів
-console.warn("Для демонстрації прикладів необхідно: \n  замінити всі дані в файлі db.json \n  на дані з файла db-jsonplaceholder-posts.json, \n  а потім запустити json-server за адресою: \n  http://localhost:3000 ");
+console.warn("Для демонстрації прикладів необхідно: \n  замінити всі дані в файлі db.json \n  на дані з файла db-jsonplaceholder-posts.json, \n  а потім запустити json-server за адресою: \n  http://localhost:3000");
 console.warn(`json-server з файлом db-jsonplaceholder-posts.json: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_18/images/emulating-jsonplaceholder-posts.jpg"}`);
 
 //! GET (отримати всі пости):
