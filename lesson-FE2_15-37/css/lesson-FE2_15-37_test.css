@@ -142,8 +142,13 @@ body {
     margin: 0 auto;
     width: 320px;
     height: 240px;
+    /* width: 640px; */
+    /* height: 480px; */
     background-image: url("https://picsum.photos/id/235/320/240");
+    background-repeat: no-repeat;
     background-size: 320px 240px;
+    /* background-size: cover; */
+    outline: 1px solid tomato;
 }
 
 /*? 2x screens, retina. Перевизначаємо шлях до 2x зображення: 640x480 image */
