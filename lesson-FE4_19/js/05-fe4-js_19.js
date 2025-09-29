@@ -1,18 +1,10 @@
 console.log(
-    '%c 6.json-server ',
+    '%c 5.Приклади CRUD HTTP-запитів з async/await \n   та використанням json-server             ',
     'color: white; background-color: #D33F49',
 );
 
-//! json-server
-console.warn("json-server: \n https://www.npmjs.com/package/json-server");
-//? ✴️ json-server – це легка бібліотека для швидкого 
-//? прототипування REST API на основі JSON-файлу (db.json). 
-//? Дуже зручно для фейкового бекенда під час розробки фронтенду: 
-//? підтримує GET/POST/PUT/PATCH/DELETE, фільтри, пагінацію, 
-//? сортування, зв'язки _embed / _expand, 
-//? перезаписує db.json при змінах (за умовчанням при --watch).
-
-//? ✳️ Приклади запитів з fetch (клієнт)
+//! Приклади CRUD HTTP-запитів з async/await та використанням json-server
+console.warn("Для демонстрації прикладів необхідно: \n  замінити всі дані в файлі db.json \n  на дані з файла db-start.json, \n  а потім запустити json-server за адресою: \n  http://localhost:3000");
 //! GET (отримати всіх користувачів):
 async function getUsers() {
     const res = await fetch('http://localhost:3000/users');
