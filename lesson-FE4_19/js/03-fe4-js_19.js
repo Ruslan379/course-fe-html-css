@@ -74,5 +74,39 @@ setTimeout(() => {
 
     fetchUsers()
         .then(users => console.log("users:", users))
-        .catch(error => console.log(error));
+        .catch(error => console.log(error))
+        .finally(() => console.log("----------------------------------------------------------------------------------------------------------------------------------"));
 }, 100);
+
+
+//! Обробка помилок в async/await. Варіант №2-1❌.
+//? ✴️ Так працювати не буде 
+//? - await можна використовувати 
+//? тільки в тілі асинхронної функції.
+setTimeout(() => {
+    console.warn(`Варіант №2-1❌. \n  Так працювати не буде \n  - await можна використовувати \n  тільки в тілі асинхронної функції:`);
+    console.error(
+        `%c
+    const fetchUsers = async () => {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const users = await response.json();
+        return users;
+    };
+
+    //! ❌ SyntaxError: await is only valid in async function
+    const users = await fetchUsers();
+    `,
+        'color: blue; font-size: 18px',
+    );
+    const fetchUsers = async () => {
+        const response = await fetch("https://jsonplaceholder.typicode.com/users");
+        const users = await response.json();
+        return users;
+    };
+
+    //! ❌ SyntaxError: await is only valid in async function
+    // const users = await fetchUsers();
+    console.log("----------------------------------------------------------------------------------------------------------------------------------");
+}, 300);
+
+
