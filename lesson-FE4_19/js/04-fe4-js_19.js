@@ -1,5 +1,5 @@
 console.log(
-    '%c 4.Паралельні запити. ',
+    '%c 4.Паралельні запити з async/await. ',
     'color: white; background-color: #D33F49',
 );
 
@@ -22,10 +22,13 @@ const fetchUsers = async () => {
     const secondUser = await secondResponse.json();
     const thirdUser = await thirdResponse.json();
 
-    console.log(firstUser, secondUser, thirdUser);
-    console.log("----------------------------------------------------------------------------------------------------------");
-
+    // console.log(firstUser, secondUser, thirdUser);
+    console.log("firstUser  1️⃣:", firstUser);
+    console.log("secondUser 2️⃣:", secondUser);
+    console.log("thirdUser  3️⃣:", thirdUser);
+    console.log("------------------------------------------------------------------------------------------------------------------------");
 };
-
 fetchUsers();
 // console.log("----------------------------------------------------------------------------------------------------------");
+
+
