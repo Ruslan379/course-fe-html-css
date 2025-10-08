@@ -116,45 +116,25 @@ button.accent {
     color: green;
 }
 
- /*! Робота з публічним REST API */
+
+/*! Приклад паралельних запитів з async/await та конструкцією try...catch */
 .box {
-    width: 60%;
+    width: 70%;
     text-align: left;
     
 }
-.fetch-btn2,
-.fetch-btn3,
-.fetch-btn4 {
+
+.btn {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.post-title {
-    font-size: 1.4em;
-    text-align: center;
-    color: brown;
-    /* text-indent: 20px; */
-}
-.post-title::first-letter {
-    text-transform: uppercase
+    margin: 0 auto 15px;
 }
 
-.posts-list2,
-.posts-list3,
-.posts-list4 {
-    padding: 24px;
-}
-
-.posts-list2 li,
-.posts-list3 li,
-.posts-list4 li {
+.user-list li {
     padding: 5px 10px;
     outline: auto;
 }
 
-.posts-list2 li:not(:last-child),
-.posts-list3 li:not(:last-child),
-.posts-list4 li:not(:last-child) {
+.user-list li:not(:last-child) {
     margin-bottom: 16px;
 }
 
@@ -166,14 +146,6 @@ button.accent {
     gap: 20px;
 }
 
-/* ? Блокування кнопок <⇐ Prev> та <Next ⇒> */
-#prev:disabled,
-#next:disabled {
-    color: #ededed;
-    border-color: #3f3f3f;
-    background-color: #9e9e9e;
-    cursor: not-allowed;
-}
 
 /* ! */
 /* .part_1 {

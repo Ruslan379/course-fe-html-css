@@ -51,14 +51,14 @@ setTimeout(() => {
         const baseUrl = "https://jsonplaceholder.typicode.com";
         const userIds = [1, 2, 3];
 
-        //! 1. Створюємо масив промісів
+        //! 1.Створюємо масив промісів
         const arrayOfPromises = userIds.map(async userId => {
             const response = await fetch(`${baseUrl}/users/${userId}`);
             return response.json();
         });
         console.log("arrayOfPromises:", arrayOfPromises);
 
-        //! 2. Запускаємо усі проміси паралельно і чекаємо на їх завершення
+        //! 2.Запускаємо усі проміси паралельно і чекаємо на їх завершення
         const users = await Promise.all(arrayOfPromises);
         console.log("All users 1️⃣2️⃣3️⃣:", users);
         console.log("------------------------------------------------------------------------------------------------------------------------");
@@ -69,9 +69,11 @@ setTimeout(() => {
 
 
 //! Приклад паралельних запитів з async/await та конструкцією try...catch
-console.warn("Приклад паралельних запитів з async/await та конструкцією try...catch:");
-//? ✴️ додали кнопку, клікаючи на яку, виконується запит, і обробили можливу помилку конструкцією try...catch. Це стандартний AJAX-код з використанням асинхронних функцій.
+//? ✴️ Створимо приклад з кнопкою, клікаючи на яку, виконується запит,
+//? і обробляє можливу помилку конструкцією try...catch. 
+//? Це стандартний AJAX-код з використанням асинхронних функцій.
 setTimeout(() => {
+    console.warn("Приклад паралельних запитів з async/await та конструкцією try...catch:");
     const fetchUsersBtn = document.querySelector(".btn");
     const userList = document.querySelector(".user-list");
 
@@ -86,21 +88,22 @@ setTimeout(() => {
             }
     });
     
+    //! Функція робить запити та повертає відповідь сервера
     async function fetchUsers() {
         const baseUrl = "https://jsonplaceholder.typicode.com";
         const userIds = [1, 2, 3, 4, 5];
-
-        //! 1. Створюємо масив промісів
+        //! 1.Створюємо масив промісів
         const arrayOfPromises = userIds.map(async (userId) => {
             const response = await fetch(`${baseUrl}/users/${userId}`);
             return response.json();
         });
-        //! 2. Запускаємо усі проміси паралельно і чекаємо на їх завершення
+        //! 2.Запускаємо усі проміси паралельно і чекаємо на їх завершення
         const users = await Promise.all(arrayOfPromises);
+        console.log("All users 1️⃣2️⃣3️⃣4️⃣5️⃣:", users);
         return users;
-    }
-    
-    //! 3. Будуємо розмітку
+    };
+
+    //! Функція будує розмітку
     function renderUserListItems(users) {
         const markup = users
             .map(
@@ -115,6 +118,7 @@ setTimeout(() => {
             )
             .join("");
         userList.innerHTML = markup;
+        console.log("------------------------------------------------------------------------------------------------------------------------");
     }
 }, 700);
 // console.log("----------------------------------------------------------------------------------------------------------");
