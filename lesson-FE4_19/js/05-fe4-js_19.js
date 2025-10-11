@@ -87,7 +87,6 @@ async function deleteUser() {
     } catch (error) {
         console.log(error.message);
     };
-    
 };
 setTimeout(() => { deleteUser() }, 800);
 console.log("---------------------------------------------------------------------------------------------------------------");
