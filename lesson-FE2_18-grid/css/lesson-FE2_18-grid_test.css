@@ -227,8 +227,6 @@ body {
 /*! 6.Робота з розмірами в CSS Grid */
 .part_6 .container {
     width: 1000px; /* ! */
-    /* * */
-    /* height: 1000px; */
     margin: 0 auto;
     display: grid;
     /* ! */
@@ -253,10 +251,6 @@ body {
     /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*3-100px-40.02px)/3=266.66px */
     grid-template-columns: 100px auto 2fr 1fr;
     /*?_(6-1) ❗️❗️ <div class="grid-item">2-Ggid</div> */
-    /** Всі 9-ть елементів однакові при наявності контейнеру 1000px X 1000px */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-rows: repeat(3, 1fr); */
-    /* grid-auto-columns: 1fr; */
 }
 
 
@@ -267,6 +261,8 @@ body {
 /*! 7.Функція repeat в СSS Grid */
 .part_7 .container {
     width: 1000px;
+    /* * */
+    /* height: 1000px; */
     margin: 0 auto;
     display: grid;
     gap: 20px;
@@ -292,6 +288,8 @@ body {
     /*?_(6)_  5 (п'ять) колонок з шириною 100px 260px 260px 260px 40px(або 353.55px) */
     /*?     ❗️ 1fr (одна наша фракція) = (1000px-20px*4-100px-40px)/3=260px */
     grid-template-columns: 100px repeat(3, 1fr) auto;
+    /** Всі 9-ть елементів однакові при наявності контейнеру 1000px X 1000px */
+        /* grid-template-columns: repeat(3, 1fr); */
 }
 
 
