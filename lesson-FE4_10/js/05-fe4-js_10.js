@@ -31,7 +31,7 @@ let intervalId = null;
 
 //! ✅ Старт таймера кнопкою
 startBtn.addEventListener("click", () => {
-    let counter = "";
+    let counter = 0;
     intervalId = setInterval(() => {
         counter++; //! лічильник часу
         console.log(`${counter} Генерація випадкового числа: ${Math.random()}, id: ${intervalId}`);
