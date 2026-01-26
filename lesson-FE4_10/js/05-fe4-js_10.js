@@ -33,7 +33,7 @@ let intervalId = null;
 startBtn.addEventListener("click", () => {
     let counter = 0;
     intervalId = setInterval(() => {
-        counter++; //! лічильник часу
+        counter++; //! лічильник ітерацій
         console.log(`${counter} Генерація випадкового числа: ${Math.random()}, id: ${intervalId}`);
         // clearTimeout(intervalId); //! ✅❌ Видалення/зупинення таймера
 
