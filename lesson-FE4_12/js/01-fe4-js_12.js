@@ -129,7 +129,7 @@ console.log("typeof timestampDateParse:", typeof timestampDateParse); //! number
 
 //! ✳️ Формат недійсний, повертає NaN:
 const timestampDateParseError = Date.parse("2030-03-16T14:25:00.000+Z");
-console.log('timestampDateParseError = Date.parse("2030-03-16T14:25:00.000+Z")"):', timestampDateParseError);  //! NaN
+console.log('timestampDateParseError = Date.parse("2030-03-16T14:25:00.000+Z"):', timestampDateParseError);  //! NaN
 
 //? ✳️ Формат рядка повинен бути:
 //? YYYY - MM - DDTHH: mm: ss.sssZ,
