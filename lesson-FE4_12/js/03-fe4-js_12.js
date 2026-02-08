@@ -27,7 +27,7 @@ console.log(
 //? і результатом буде об'єкт, що описує зазначену дату і час.
 const startDate0 = new Date(0); //! дата початку відліку часу - 1 січня 1970 року - Unix час - timestamp
 console.log("startDate0 = new Date(0):", startDate0); //! Thu Jan 01 1970 03:00:00 GMT+0300 (Восточная Европа, стандартное время)
-const startDate1000 = new Date(1000); Number
+const startDate1000 = new Date(1000); 
 
 //! Повертає числове значення цієї дати (timestamp) - кількість мілісекунд, що минула з півночі 1 січня 1970 року.
 console.log("startDate1000 = new Date(1000):", startDate1000); //! Thu Jan 01 1970 03:00:01 GMT+0300 (Восточная Европа, стандартное время)
