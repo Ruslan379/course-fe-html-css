@@ -101,7 +101,7 @@ objA.age = 3;
 console.log("objA:", objA); //! {name: 'Mango', age: 3}
 
 //? ✳️ objB також змінилось, тому що objB,
-//? як і arrA, просто містять посилання на 
+//? як і objA, просто містять посилання на 
 //? одне і те ж саме місце в пам'яті:
 console.log("objB:", objB); //! {name: 'Mango', age: 3}
 console.log(". . . . . . . . . . . . . . . . .");
