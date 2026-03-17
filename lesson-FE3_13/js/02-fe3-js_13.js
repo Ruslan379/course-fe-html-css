@@ -23,7 +23,7 @@ console.log("`  `  `  `  `  `  `  `  `  `");
 
 const [red1, green1, blue1] = rgb1;
 
-console.log(`Red1:${red1}, Green1:${green1}, Blue1:${blue1}`); //! 'Red:200, Green:255, Blue:100'
+console.log(`Red1:${red1}, Green1:${green1}, Blue1:${blue1}`); //! 'Red1:200, Green1:255, Blue1:100'
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . .");
 
 
