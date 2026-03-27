@@ -12,8 +12,12 @@ console.warn("Метод split():");
 //? Роздільником може бути один або декілька символів.
 const string = "Mango";
 console.log('string:', string);
-const stringToArr = string.split("");
-console.log('string.split(""):', stringToArr); //! ['M', 'a', 'n', 'g', 'o']
+
+const stringToArr1 = string.split("");
+console.log('string.split(""):', stringToArr1); //! ['M', 'a', 'n', 'g', 'o']
+
+const stringToArr2 = string.split("n");
+console.log('string.split("n"):', stringToArr2); //! ['Ma', 'go']
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . .");
 
 const message = "JavaScript - це цікаво";
