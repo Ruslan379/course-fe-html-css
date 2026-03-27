@@ -50,7 +50,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
         //! Тут все гаразд, дані знаходяться в змінній:
         console.log("globalVariable всередині функції fetch callback: ", globalVariable);
         console.log("-------------------------------------------------------------------------------------------------------------");
-
     });
 
 //! Тут немає асинхронних даних:
