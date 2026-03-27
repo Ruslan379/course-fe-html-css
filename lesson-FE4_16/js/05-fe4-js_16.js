@@ -49,18 +49,32 @@ function fetchData() {
         })
 };
 
+//todo: var.1
+// function renderUsers(users) {
+//     const markup = users
+//         .map((user) => {
+//             return `
+//                 <li>
+//                     <p><b>Name</b>: ${user.name}</p>
+//                     <p><b>Email</b>: ${user.email}</p>
+//                     <p><b>Company</b>: ${user.company.name}</p>
+//                 </li>
+//             `;
+//         })
+//         .join("");
+
+//todo: var.2
 function renderUsers(users) {
     const markup = users
-        .map((user) => {
-            return `
-                <li>
-                    <p><b>Name</b>: ${user.name}</p>
-                    <p><b>Email</b>: ${user.email}</p>
-                    <p><b>Company</b>: ${user.company.name}</p>
-                </li>
-            `;
-        })
-        .join("");
+        .map(user =>
+            `
+            <li>
+                <p><b>Name</b>: ${user.name}</p>
+                <p><b>Email</b>: ${user.email}</p>
+                <p><b>Company</b>: ${user.company.name}</p>
+            </li>
+        `
+        ).join("");
     userList.insertAdjacentHTML("beforeend", markup);
     console.log("markup:", markup);
     console.log("----------------------------------------------------------------------");
