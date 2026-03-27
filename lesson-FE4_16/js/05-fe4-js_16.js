@@ -68,12 +68,12 @@ function renderUsers(users) {
     const markup = users
         .map(user =>
             `
-            <li>
-                <p><b>Name</b>: ${user.name}</p>
-                <p><b>Email</b>: ${user.email}</p>
-                <p><b>Company</b>: ${user.company.name}</p>
-            </li>
-        `
+                <li>
+                    <p><b>Name</b>: ${user.name}</p>
+                    <p><b>Email</b>: ${user.email}</p>
+                    <p><b>Company</b>: ${user.company.name}</p>
+                </li>
+            `
         ).join("");
     userList.insertAdjacentHTML("beforeend", markup);
     console.log("markup:", markup);
