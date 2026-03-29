@@ -29,13 +29,24 @@ console.log(
   "%c [2] ",
   "color: yellow; background-color: #2274A5",
 );
-//? Розділити початковий масив arrayIn будь якої довжини
-//? на масиви по n=5 елементів, та скласти з них вихідний масив масивів finalArr
+//? Сформуфати початковий масив arrayIn будь якої довжини, наприклад, m=13,
+//? та розділити його на масиви по n=5 елементів,
+//? і скласти з них вихідний масив масивів finalArr
+let arrayIn = [];
+const m = 13;
+// const m = 21;
 const n = 5;
 // const n = 3;
-const arrayIn = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130];
-console.log("arrayIn:", arrayIn);
 //! Код виконаного завдання
+//todo-1: Використовуємо готовий масив:
+// arrayIn = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130];
+
+//todo-2: Формуємо масив з m елементів:
+for (let i = 1; i <= m; i++) {
+  arrayIn.push(i*10);
+};
+console.log("arrayIn:", arrayIn);
+
 let finalArrlength = Math.ceil(arrayIn.length / n);
 console.log("finalArrlength:", finalArrlength);
 
@@ -54,6 +65,7 @@ for (let i = 0; i < finalArrlength; i++) {
 };
 console.log("finalArr:", finalArr);
 
+//todo: логіка роботи циклів
 // n = 5:
 // i = 1, j = 1 --- 5
 // i = 2, j = 6 --- 10
