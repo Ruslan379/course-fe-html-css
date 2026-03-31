@@ -27,12 +27,12 @@ console.log(
 //? в алфавітному порядку.
 //? Підкреслення в іменах параметрів специфічні
 //? для цього бекенду, це не якийсь стандарт.
-const fetchUsersBtn = document.querySelector(".btn5");
+const getUsersBtn = document.querySelector(".btn5");
 const userList = document.querySelector(".user-list5");
 
-fetchUsersBtn.addEventListener("click", fetchUsers);
+getUsersBtn.addEventListener("click", getUsers);
 
-function fetchUsers() {
+function getUsers() {
     fetchAllUsers()
         .then((users) => renderUsers(users))
         .catch((error) => console.log(error));
