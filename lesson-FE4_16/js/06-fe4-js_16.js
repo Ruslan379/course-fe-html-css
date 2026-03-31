@@ -40,6 +40,7 @@ function fetchUsers() {
 
 function fetchAllUsers() {
     return fetch("https://jsonplaceholder.typicode.com/users?_limit=5&_sort=name")
+    // return fetch(createSearchParams())
         .then((response) => {
             if (!response.ok) {
                 throw new Error(response.status);
@@ -96,6 +97,7 @@ function createSearchParams() {
     const url = `${BaseURL}users?${searchParams}`;
     console.log("url:", url); //! "https://jsonplaceholder.typicode.com/users?_limit=5&_sort=name"
     console.log("--------------------------------------------------------------------------------------------------------------------------");
+    return url;
 };
 //? ✳️ У рядковому вигляді властивості об'єкта 
 //? стануть параметрами та їх значеннями. 
