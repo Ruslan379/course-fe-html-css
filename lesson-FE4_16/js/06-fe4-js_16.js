@@ -84,7 +84,9 @@ function createSearchParams() {
     console.warn("Клас URLSearchParams:");
 
     const BaseURL = "https://jsonplaceholder.typicode.com/";
+    const ENDPOINT = "users";
     console.log("BaseURL:", BaseURL); //! "https://jsonplaceholder.typicode.com/"
+    console.log("ENDPOINT:", ENDPOINT); //! "users"
 
     const searchParams = new URLSearchParams(
         {
@@ -94,7 +96,7 @@ function createSearchParams() {
     );
     console.log("searchParams.toString():", searchParams.toString()); //! "_limit=5&_sort=name"
     
-    const url = `${BaseURL}users?${searchParams}`;
+    const url = `${BaseURL}${ENDPOINT}?${searchParams}`;
     console.log("url:", url); //! "https://jsonplaceholder.typicode.com/users?_limit=5&_sort=name"
     console.log("--------------------------------------------------------------------------------------------------------------------------");
     return url;
