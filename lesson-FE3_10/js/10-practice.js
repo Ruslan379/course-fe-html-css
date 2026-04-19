@@ -51,77 +51,74 @@ function arrayAll(arr1, arr2, callback1, callback2) {
   //* arr1 це array1
   //* arr2 це array2
 
-  const result1 = callback1(arr1)
-  console.log("result1:", result1)
-  const result2 = callback2(arr2)
-  console.log("result2:", result2)
+  const result1 = callback1(arr1);
+  // console.log("result1:", result1);
+  const result2 = callback2(arr2);
+  // console.log("result2:", result2);
 
-  const arrayAll = result1.concat(result2)
-  return arrayAll
+  const arrayAll = result1.concat(result2);
+  return arrayAll;
 }
 
 function toUpperCase1(arr) {
   // console.log("вхідний масив:", arr) 
-  const resultJoin = arr.join(" ")
-  // console.log("resultJoin:", resultJoin)
+  const resultJoin = arr.join(" ");
+  // console.log("resultJoin:", resultJoin);
+  const resultToUpper = resultJoin.toUpperCase();
+  // console.log("resultToUpper:", resultToUpper);
+  const resultArray = resultToUpper.split(" ");
+  // console.log("resultArray:", resultArray);
+  return resultArray;
+};
 
-  const resultToUpper = resultJoin.toUpperCase()
-  // console.log("resultToUpper:", resultToUpper)
-
-  const resultArray = resultToUpper.split(" ")
-  // console.log("resultArray:", resultArray)
-  return resultArray
-}
-
-// const result2 = toUpperCase(array2)
-// console.log("result2:", result2)
+// const result2 = toUpperCase(array2);
+// console.log("result2:", result2);
 
 function toLowerCase1(arr) {
-  const resultJoin = arr.join(" ")
-  // console.log("resultJoin:", resultJoin)
-
-  const resultToLower = resultJoin.toLowerCase()
-  // console.log("resultToLower:", resultToLower)
-
-  const resultArray = resultToLower.split(" ")
-
-  // console.log("resultArray:", resultArray)
-
-  return resultArray
+  const resultJoin = arr.join(" ");
+  // console.log("resultJoin:", resultJoin);
+  const resultToLower = resultJoin.toLowerCase();
+  // console.log("resultToLower:", resultToLower);
+  const resultArray = resultToLower.split(" ");
+  // console.log("resultArray:", resultArray);
+  return resultArray;
 }
 
-// const result3 = toLowerCase(array1)
-// console.log("result3:", result3)
+// const result3 = toLowerCase(array1);
+// console.log("result3:", result3);
 
-const result11 = arrayAll(array1, array2, toLowerCase1, toUpperCase1)
-console.log("result11:", result11)  //["a1", "b1", "c1", "A2", "B2", "C2" ]
+const result11 = arrayAll(array1, array2, toLowerCase1, toUpperCase1);
+console.log("result11:", result11)  //! ["a1", "b1", "c1", "A2", "B2", "C2" ];
 
 
 
 // todo:2 --------------------------------------
 function toUpperCase2(arr) {
+  const resultArray = [];
+  for (let element of arr) {
+    element = element.toUpperCase()
+    // console.log("element:", element);
+    resultArray.push(element);
+  };
+  return resultArray;
+};
 
-  // return resultArray
-}
-
-// const result2 = toUpperCase(array2)
-// console.log("result2:", result2)
+const result2 = toUpperCase2(array2);
+// console.log("result2:", result2);
 
 function toLowerCase2(arr) {
   const resultArray = [];
   for (let element of arr) {
     element = element.toLowerCase()
-    console.log("element:", element);
+    // console.log("element:", element);
     resultArray.push(element);
-  }
+  };
   return resultArray;
 };
 
 const result3 = toLowerCase2(array1);
-console.log("result3:", result3);
+// console.log("result3:", result3);
 
-
-// const result22 = arrayAll(array1, array2, toLowerCase2, toUpperCase2)
-// console.log("result22:", result22)  //["a1", "b1", "c1", "A2", "B2", "C2" ]
-
+const result22 = arrayAll(array1, array2, toLowerCase2, toUpperCase2)
+console.log("result22:", result22)  //! ["a1", "b1", "c1", "A2", "B2", "C2" ]
 console.log("-----------------------------------------");
