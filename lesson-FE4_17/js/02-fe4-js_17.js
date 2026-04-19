@@ -54,12 +54,12 @@ function renderPosts(posts) {
   const markup = posts
     .map(({ id, title, body, userId }) => {
       return `
-              <li>
-                  <h3 class="post-title">${title.slice(0, 30)}</h3>
-                  <p><b>Post id</b>: ${id}</p>
-                  <p><b>Author id</b>: ${userId}</p>
-                  <p class="post-body">${body}</p>
-              </li>
+                <li>
+                    <h3 class="post-title">${title.slice(0, 30)}</h3>
+                    <p><b>Post id</b>: ${id}</p>
+                    <p><b>Author id</b>: ${userId}</p>
+                    <p class="post-body">${body}</p>
+                </li>
             `;
     })
     .join("");

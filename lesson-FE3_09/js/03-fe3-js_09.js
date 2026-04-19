@@ -12,8 +12,7 @@ console.warn("Псевдомасив arguments:");
 //? Псевдомасив arguments - колекція з властивістю length
 //? і можливістю звернутися до елементу за індексом,
 //? але відсутністю більшості методів для роботи з масивом.
-const multiply = function () {
-    console.log("arguments:", arguments);
+const multiply = function() {
     let total = 1;
     for (const argument of arguments) {
         console.log("total:", total);

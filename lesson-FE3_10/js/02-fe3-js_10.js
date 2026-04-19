@@ -93,9 +93,7 @@ registerGuest2(
 );
 
 //todo: Передаємо інлайн функцію notify2 у якості колбека:
-registerGuest2(
-    "Полі",
-    function notify2(nameNotify2) {
+registerGuest2("Полі", function notify2(nameNotify2) {
     console.log(`Шановний(а) ${nameNotify2}, ваш номер буде готовий за 30 хвилин.`);
 });
 console.log("-------------------------------------------------------");
