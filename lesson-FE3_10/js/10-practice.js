@@ -108,12 +108,17 @@ function toUpperCase2(arr) {
 // console.log("result2:", result2)
 
 function toLowerCase2(arr) {
+  const resultArray = [];
+  for (let element of arr) {
+    element = element.toLowerCase()
+    console.log("element:", element);
+    resultArray.push(element);
+  }
+  return resultArray;
+};
 
-  // return resultArray
-}
-
-// const result3 = toLowerCase(array1)
-// console.log("result3:", result3)
+const result3 = toLowerCase2(array1);
+console.log("result3:", result3);
 
 
 // const result22 = arrayAll(array1, array2, toLowerCase2, toUpperCase2)
