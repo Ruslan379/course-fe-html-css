@@ -88,6 +88,7 @@ list1.prepend(firstItem);
 
 //todo: Додає елемент після списку.
 const afterElement = document.createElement("a");
+afterElement.href = "#";
 afterElement.textContent = "Read more...";
 list1.after(afterElement);
 
