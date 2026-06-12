@@ -148,7 +148,7 @@ console.warn("Керування кешем:");
 //? вже використаних пакетів.
 console.log(
     `%c
-    npm cache clean
+    npm cache clean --force
     `,
     'color: blue; font-size: 18px',
 );
