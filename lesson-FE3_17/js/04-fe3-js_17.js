@@ -101,11 +101,21 @@ const elementLast = document.querySelector(".menu-itemLast");
 const textElementLast = elementLast.textContent;
 console.log("textElementLast = elementLast.textContent:", textElementLast); //! blog
 
-//todo: Змінюємо властивості:
-elementLast.style.fontSize = "24px";
-elementLast.style.textAlign = "center";
-elementLast.style.color = "tomato";
-elementLast.style.backgroundColor = "teal";
+//todo var.1. Змінюємо властивості:
+// elementLast.style.fontSize = "24px";
+// elementLast.style.textAlign = "center";
+// elementLast.style.color = "tomato";
+// elementLast.style.backgroundColor = "teal";
+
+//todo var.2. Змінюємо властивості:
+const newStyle = {
+    fontSize: "24px",
+    textAlign: "center",
+    color: "tomato",
+    backgroundColor: "teal",
+};
+Object.assign(elementLast.style, newStyle);
+
 console.log("`  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `  `");
 
 console.log("elementFirst:", elementLast); //! <li class="menu-itemLast" style="font-size: 24px; text-align: center; color: tomato; background-color: teal;">blog</li>
