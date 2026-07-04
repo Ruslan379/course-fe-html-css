@@ -53,7 +53,7 @@ console.warn("КРОК-3.В файлі main.js імпортуємо бібліо
 console.log(
     `%c
     import Handlebars from "handlebars";
-    import cardTemplate1 from "./template.hbs?raw";
+    import cardTemplate from "./template.hbs?raw";
     `,
     'color: blue; font-size: 18px',
 );
@@ -85,7 +85,7 @@ console.log("-------------------------------------------------------------------
 console.warn("КРОК-5.В файлі main.js cтворюємо функцію-шаблон template яка допоможе створити розмітку для HTML:");
 console.log(
     `%c
-    const template = Handlebars.compile(cardTemplate1);
+    const template = Handlebars.compile(cardTemplate);
     `,
     'color: blue; font-size: 18px',
 );
