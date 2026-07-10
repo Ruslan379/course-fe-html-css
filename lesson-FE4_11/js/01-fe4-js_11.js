@@ -306,7 +306,7 @@ function сorrectRemovalTimers() {
     // const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
     let timerIds = [];
 
-    // //! ✅ Старт таймера кнопкою
+    //! ✅ Старт таймера кнопкою
     startBtn.addEventListener("click", () => {
         timerIds.forEach(id => clearTimeout(id));
         timerIds = [];
@@ -332,5 +332,3 @@ function сorrectRemovalTimers() {
 };
 // сorrectRemovalTimers();
 console.log("----------------------------------------------------------------------------------------------------");
-
-
