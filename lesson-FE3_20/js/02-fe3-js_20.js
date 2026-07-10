@@ -191,3 +191,7 @@ window.addEventListener("scroll", () => {
 //? 🔸 window.scrollY або document.documentElement.scrollTop – отримують поточну позицію прокручування.
 //?  🔸scrollTop - виводить на #scrollInfo кількість пікселів, на яку сторінка прокручена вниз.
 console.log("---------------------------------------------------------------------------");
+
+
+//! Приклад "Пересуньте м’яч по полю"
+console.warn('Приклад "Пересуньте м’яч по полю": \n https://uk.javascript.info/task/move-ball-field');
