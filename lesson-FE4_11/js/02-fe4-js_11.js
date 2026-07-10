@@ -24,8 +24,8 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 // let intervalId = setInterval(
 //     function () {
-//     seconds++;
-//     console.log("seconds:", seconds);
+//         seconds++;
+//         console.log("seconds:", seconds);
 //     },
 //     1000
 // );
