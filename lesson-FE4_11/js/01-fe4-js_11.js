@@ -194,7 +194,7 @@ console.log("-------------------------------------------------------------------
 
 
 //! ❌КРОК-1.5.Додамо кнопки керування стартом та зупиненням таймеру
-console.warn("❌КРОК-1.5.Додамо кнопки керування стартом та зупиненням таймеру:")
+// console.warn("❌КРОК-1.5.Додамо кнопки керування стартом та зупиненням таймеру:");
 console.log(
     `%c
     const startBtn = document.getElementById("start-set-timeout");
@@ -238,7 +238,7 @@ console.log(
         };
     });
 
-    //! ❌ Видалення/зупинення таймера кнопкою - НЕМОЖЛИВО❗️❗️❗️
+    //! ❌ Видалення/зупинення всіх таймерів кнопкою - НЕМОЖЛИВО❗️❗️❗️ Видаляється ільки останній 🙁
     stopBtn.addEventListener("click", () => {
         clearTimeout(timerId);
         console.warn(
@@ -251,72 +251,86 @@ console.log(
     'color: blue; font-size: 18px',
 );
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
-// const startBtn = document.getElementById("start-set-timeout");
-// const stopBtn = document.getElementById("stop-set-timeout");
+function inсorrectRemovalTimers() {
+    console.warn("❌КРОК-1.5.Додамо кнопки керування стартом та зупиненням таймеру:");
+    const startBtn = document.getElementById("start-set-timeout");
+    const stopBtn = document.getElementById("stop-set-timeout");
 
-// let timerId;
-// const timeBeforeStart = 1000; //! час між відліками
-// const iterations = 10; //! кількість ітерацій
-// const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
+    let timerId;
+    const timeBeforeStart = 1000; //! час між відліками
+    const iterations = 10; //! кількість ітерацій
+    const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
 
-// //! ✅ Старт таймера кнопкою
-// startBtn.addEventListener("click", () => {
-//     for (let index = 0; index < iterations; index++) {
-//         timerId = setTimeout(
-//             function timeСount() {
-//                 console.log((iterations - index), "Спрацювала функція створення таймеру", "id:", timerId);
+    //! ✅ Старт таймера кнопкою
+    startBtn.addEventListener("click", () => {
+        for (let index = 0; index < iterations; index++) {
+            timerId = setTimeout(
+                function timeСount() {
+                    console.log((iterations - index), "Спрацювала функція створення таймеру", "id:", timerId);
 
-//                 //! Умова зупинення таймеру:
-//                 if (index + 1 === stopCounter) {
-//                     console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${index + 1}-ій ітерації!`);
-//                 };
-//             }, index * timeBeforeStart);
+                    //! Умова зупинення таймеру:
+                    if (index + 1 === stopCounter) {
+                        console.error(`Інтервал з ідентифікатором ${timerId} зупинено на ${index + 1}-ій ітерації!`);
+                    };
+                }, index * timeBeforeStart);
 
-//         //! Умова зупинення таймеру:
-//         if (index === stopCounter) {
-//             clearTimeout(timerId);
-//             return;
-//         };
-//         console.log("❗️❗️❗️ Кінець роботи циклу...");
-//     };
-// });
+            //! Умова зупинення таймеру:
+            if (index === stopCounter) {
+                clearTimeout(timerId);
+                return;
+            };
+            console.log("❗️❗️❗️ Кінець роботи циклу...");
+        };
+    });
 
-// //! ❌ Видалення/зупинення таймера кнопкою - НЕМОЖЛИВО❗️❗️❗️
-// stopBtn.addEventListener("click", () => {
-//     clearTimeout(timerId);
-//     console.warn(`Інтервал з ідентифікатором ${timerId} зупинено!`);
-// });
+    //! ❌ Видалення/зупинення всіх таймерів кнопкою - НЕМОЖЛИВО❗️❗️❗️ Видаляється ільки останній 🙁
+    stopBtn.addEventListener("click", () => {
+        clearTimeout(timerId);
+        console.warn(`Інтервал з ідентифікатором ${timerId} зупинено!`);
+    });
+};
+inсorrectRemovalTimers();
 console.log("----------------------------------------------------------------------------------------------------");
 
 
 //! ✅КРОК-1.5-1.Додамо кнопки керування стартом та зупиненням таймеру
-console.warn("✅КРОК-1.5-1.Додамо кнопки керування стартом та зупиненням таймеру:")
-const startBtn = document.getElementById("start-set-timeout");
-const stopBtn = document.getElementById("stop-set-timeout");
+// console.warn("✅КРОК-1.5-1.Додамо кнопки керування стартом та зупиненням таймеру:")
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .");
+function сorrectRemovalTimers() {
+    console.warn("✅КРОК-1.5-1.Додамо кнопки керування стартом та зупиненням таймеру:")
+    const startBtn = document.getElementById("start-set-timeout");
+    const stopBtn = document.getElementById("stop-set-timeout");
 
-const timeBeforeStart = 1000; //! час між відліками
-const iterations = 10; //! кількість ітерацій
-// const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
-let timerIds = [];
+    const timeBeforeStart = 1000; //! час між відліками
+    const iterations = 10; //! кількість ітерацій
+    // const stopCounter = 5; //! кількість ітерацій до зупинення таймеру
+    let timerIds = [];
 
-startBtn.addEventListener("click", () => {
-    timerIds.forEach(id => clearTimeout(id));
-    timerIds = [];
+    // //! ✅ Старт таймера кнопкою
+    startBtn.addEventListener("click", () => {
+        timerIds.forEach(id => clearTimeout(id));
+        timerIds = [];
 
-    for (let index = 0; index < iterations; index++) {
-        let id = setTimeout(() => {
-            console.log((iterations - index), "Спрацювала функція створення таймеру", "id:", id);
-        }, index * timeBeforeStart);
+        for (let index = 0; index < iterations; index++) {
+            let id = setTimeout(() => {
+                console.log((iterations - index), "Спрацювала функція створення таймеру", "id:", id);
+            }, index * timeBeforeStart);
 
-        timerIds.push(id);
-    }
-});
-
-stopBtn.addEventListener("click", () => {
-    timerIds.forEach(id => {
-        console.log("Видаляємо таймер", "id:", id);
-        clearTimeout(id);
+            timerIds.push(id);
+        };
     });
-    timerIds = [];
-    console.warn("Всі таймери зупинено!");
-});
+
+    //! ✅ Видалення/зупинення таймера кнопкою - МОЖЛИВО❗️❗️❗️
+    stopBtn.addEventListener("click", () => {
+        timerIds.forEach(id => {
+            console.log("Видаляємо таймер", "id:", id);
+            clearTimeout(id);
+        });
+        timerIds = [];
+        console.warn("Всі таймери зупинено!");
+    });
+};
+// сorrectRemovalTimers();
+console.log("----------------------------------------------------------------------------------------------------");
+
+
