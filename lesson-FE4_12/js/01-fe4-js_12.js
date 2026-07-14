@@ -74,7 +74,7 @@ console.log(
     new Date("2030-03-16 14:25:00");
     new Date("2030-03-16T14:25:00");
 
-    new Date("Sat Mar 16 2030 19:25:00 GMT+0200");
+    new Date("Sat Mar 16 2030 14:25:00 GMT+0200");
     `,
     'color: blue; font-size: 18px',
 );
