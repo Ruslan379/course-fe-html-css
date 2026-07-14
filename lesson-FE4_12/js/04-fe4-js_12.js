@@ -83,7 +83,9 @@ console.warn("Приклад форматування поточної дати:
 const currentDate = new Date();
 
 //? Час в мс з початку епохи Unix: ....  значення будуть змінюватися
-console.log(`Час в мс з початку епохи Unix: ${currentDate.getTime()}`);
+console.log(`Час в мс з початку епохи Unix (var.1): ${currentDate.getTime()}`); //todo: var.1 
+console.log(`Час в мс з початку епохи Unix (var.2): ${new Date().getTime()}`); //todo: var.2 
+console.log(`Час в мс з початку епохи Unix (var.3): ${Date.now()}`); //todo: var.3 
 
 let result = ' Дата: ';
 
