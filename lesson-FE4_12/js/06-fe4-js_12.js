@@ -94,5 +94,5 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 //! USA
 const localeUs = newStandardDateFormatting.toLocaleString('en-US', options);
-console.log("localeUs_Україна:", localeUs); //! Saturday, Mar 16, 2030, 02:25 PM
+console.log("localeUs_USA:", localeUs); //! Saturday, Mar 16, 2030, 02:25 PM
 console.log("-------------------------------------------------------------------------------------------");
