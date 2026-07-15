@@ -3,6 +3,15 @@ console.log(
     'color: white; background-color: #D33F49',
 );
 
+//! Популярні бібліотеки для роботи з датою
+console.warn("📕 Популярні бібліотеки для роботи з датою:");
+console.warn("date-fns: \n https://date-fns.org/");
+console.warn("Day.js ​​: \n https://day.js.org/");
+console.warn("Luxon: \n https://moment.github.io/luxon");
+console.warn("Moment.js: \n https://momentjs.com/");
+console.log("-------------------------------------------------------------------------------------------");
+
+
 //! Форматування дати
 //? ✴️ Об'єкт дати може бути представлений
 //? у різних рядкових і числових форматах.
@@ -95,4 +104,25 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 //! USA
 const localeUs = newStandardDateFormatting.toLocaleString('en-US', options);
 console.log("localeUs_USA:", localeUs); //! Saturday, Mar 16, 2030, 02:25 PM
+console.log("-------------------------------------------------------------------------------------------");
+
+
+//! Temporal
+console.warn("Temporal:");
+//? ✳️ Temporal - це новий сучасний API для роботи з датою та часом,
+//? який поступово впроваджується у JavaScript.
+//? Він призначений замінити незручний об'єкт Date.
+//? ✴️ Поки що підтримується не всіма браузерами, тому частіше використовують поліфіл.
+
+const TemporalNowObj = Temporal.Now;
+console.log("TemporalNowObj:", TemporalNowObj); //! 
+
+const today = Temporal.Now.plainDateISO();
+console.log("today:", today); //!
+
+const todayDayOfWeek = Temporal.Now.plainDateISO().dayOfWeek;
+console.log("todayDayOfWeek:", todayDayOfWeek); //!
+
+const todayMonth = Temporal.Now.plainDateISO().month;
+console.log("todayMonth:", todayMonth); //!
 console.log("-------------------------------------------------------------------------------------------");

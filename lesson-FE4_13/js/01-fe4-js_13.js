@@ -5,7 +5,7 @@ console.log(
 
 //! Що таке проміс
 console.warn(`Інструкція «if...else»​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_13/images/if...else.jpg"}`);
-console.warn(`Інструкція «if...else»​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_13/images/promise.jpg"}`);
+console.warn(`Приклад з промісом (обіцянкою) ​​: \n ${((window.location.href).split('/')).slice(0, -2).join('/') + '/'}${"lesson-FE4_13/images/promise.jpg"}`);
 //? ✴️ Проміс (Promise) – це Обіцянка.
 //? ✳️ Розглянемо приклад обіцянки із життя.
 //? Сім'я відпочиває на природі.
