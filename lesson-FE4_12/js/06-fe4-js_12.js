@@ -59,16 +59,37 @@ console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 //? Формат виведення:
 const options = {
     weekday: 'long',
+    // weekday: 'short',
+    // weekday: 'narrow',
+    
     year: 'numeric',
+    // year: "2-digit",
+
     month: 'short',
+    // month: 'long',
+    // month: "narrow",
+    // month: 'numeric',
+    // month: '2-digit',
+    
     day: 'numeric',
     hour: '2-digit',
     minute: '2-digit',
+
+    // hour12: true, //! Для країн, де використовується AM/PM
+
+    timeZone: "Europe/Kyiv",
+    // timeZone: "Asia/Tokyo",
+    // timeZone: "America/New_York",
 };
 
 //! Україна
 const localeUk = newStandardDateFormatting.toLocaleString('Uk-uk', options);
-console.log("localeUk_Україна:", localeUk); //! суботу, 16 бер. 2030 р., 14:25
+console.log("localeUk_Україна:", localeUk); //! субота, 16 бер. 2030 р., 14:25
+console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . .");
+
+//! Великобританія
+const localeGB = newStandardDateFormatting.toLocaleString('en-GB', options);
+console.log("localeUk_Великобританія:", localeGB); //! Saturday, 16 Mar 2030, 14:25
 console.log(". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .  . . . . . . . . . . . . . . .");
 
 //! USA
