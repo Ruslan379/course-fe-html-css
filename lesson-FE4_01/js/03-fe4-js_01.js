@@ -82,12 +82,19 @@ console.log("Button-2:", button2);
 console.log("Button-3:", button3);
 
 buttonBox.addEventListener("click", (event) => {
-    event.target.classList.toggle("active");
     console.log('Клік в "Buttons box"');
+
+    // event.currentTarget.classList.toggle("active");
+
+    setTimeout(() => {
+        event.target.classList.toggle("active");
+    }, 1500);
+
+    // event.target.classList.toggle("active");
 });
 
 button1.addEventListener("click", (event) => {
-    event.stopPropagation(); //! перешкоджає просуванню події далі
+    // event.stopPropagation(); //! перешкоджає просуванню події далі
     event.target.classList.toggle("active");
     console.log('Клік в "Button-1"');
 });
